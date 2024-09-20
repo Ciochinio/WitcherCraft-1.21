@@ -1,30 +1,1295 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "PauseMenuKeybindPress",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pause_menu_keybind_press",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/network/PauseMenuKeybindPressMessage.java"
+        ]
+      },
+      "path": "~/Pause Menu "
+    },
+    {
+      "name": "PauseMenuGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pause_menu_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/client/gui/PauseMenuGUIScreen.java",
+          "src/main/java/net/redboltmedia/witchercraft/network/PauseMenuGUIButtonMessage.java",
+          "src/main/java/net/redboltmedia/witchercraft/world/inventory/PauseMenuGUIMenu.java"
+        ]
+      },
+      "path": "~/Pause Menu "
+    },
+    {
+      "name": "MeditationGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meditation_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/client/gui/MeditationGuiScreen.java",
+          "src/main/java/net/redboltmedia/witchercraft/network/MeditationGuiButtonMessage.java",
+          "src/main/java/net/redboltmedia/witchercraft/world/inventory/MeditationGuiMenu.java"
+        ]
+      },
+      "path": "~/Meditation"
+    },
+    {
+      "name": "MeditationGuiOpen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meditation_gui_open",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MeditationGuiOpenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Meditation"
+    },
+    {
+      "name": "PauseMenuGuiOpen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pause_menu_gui_open",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/PauseMenuGuiOpenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Pause Menu "
+    },
+    {
+      "name": "MeditateNoon",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meditate_noon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MeditateNoonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Meditation"
+    },
+    {
+      "name": "MeditateSunrise",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meditate_sunrise",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MeditateSunriseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Meditation"
+    },
+    {
+      "name": "MeditateMidnight",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meditate_midnight",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MeditateMidnightProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Meditation"
+    },
+    {
+      "name": "MeditateSunset",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meditate_sunset",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MeditateSunsetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Meditation"
+    },
+    {
+      "name": "AlchemyGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alchemy_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/client/gui/AlchemyGuiScreen.java",
+          "src/main/java/net/redboltmedia/witchercraft/world/inventory/AlchemyGuiMenu.java",
+          "src/main/java/net/redboltmedia/witchercraft/network/AlchemyGuiButtonMessage.java"
+        ]
+      },
+      "path": "~/Alchemy/AlchemyMenu"
+    },
+    {
+      "name": "AlchemyGuiOpen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alchemy_gui_open",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/AlchemyGuiOpenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Alchemy/AlchemyMenu"
+    },
+    {
+      "name": "PauseMenuGuiBlind",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pause_menu_gui_blind",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/PauseMenuGuiBlindProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Pause Menu "
+    },
+    {
+      "name": "PauseMenuGuiBackButton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pause_menu_gui_back_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/PauseMenuGuiBackButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Pause Menu "
+    },
+    {
+      "name": "CraftPotion",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_potion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CraftPotionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Alchemy/AlchemyMenu"
+    },
+    {
+      "name": "CraftOil",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_oil",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CraftOilProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Alchemy/AlchemyMenu"
+    },
+    {
+      "name": "CraftBomb",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_bomb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CraftBombProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Alchemy/AlchemyMenu"
+    },
+    {
+      "name": "AlchemyMenuBrewButton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alchemy_menu_brew_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/AlchemyMenuBrewButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Alchemy/AlchemyMenu"
+    },
+    {
+      "name": "GoldenOriole",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_oriole",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/witchercraft/models/item/golden_oriole.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/GoldenOrioleItem.java"
+        ]
+      },
+      "path": "~/Alchemy/Potions/GoldenOriole"
+    },
+    {
+      "name": "WhiteHoney",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "white_honey",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/item/WhiteHoneyItem.java",
+          "src/main/resources/assets/witchercraft/models/item/white_honey.json"
+        ]
+      },
+      "path": "~/Alchemy/Potions/WhiteHoney"
+    },
+    {
+      "name": "Blizzard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blizzard",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/witchercraft/models/item/blizzard.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/BlizzardItem.java"
+        ]
+      },
+      "path": "~/Alchemy/Potions/Blizzard"
+    },
+    {
+      "name": "Cat",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/item/CatItem.java",
+          "src/main/resources/assets/witchercraft/models/item/cat.json"
+        ]
+      },
+      "path": "~/Alchemy/Potions/Cat"
+    },
+    {
+      "name": "Swallow",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swallow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/item/SwallowItem.java",
+          "src/main/resources/assets/witchercraft/models/item/swallow.json"
+        ]
+      },
+      "path": "~/Alchemy/Potions/Swallow"
+    },
+    {
+      "name": "FullMoon",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "full_moon",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/witchercraft/models/item/full_moon.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/FullMoonItem.java"
+        ]
+      },
+      "path": "~/Alchemy/Potions/FullMoon"
+    },
+    {
+      "name": "Thunderbolt",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thunderbolt",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/witchercraft/models/item/thunderbolt.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/ThunderboltItem.java"
+        ]
+      },
+      "path": "~/Alchemy/Potions/Thunderbolt"
+    },
+    {
+      "name": "WhiteRaffardsDecoction",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "white_raffards_decoction",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/item/WhiteRaffardsDecoctionItem.java",
+          "src/main/resources/assets/witchercraft/models/item/white_raffards_decoction.json"
+        ]
+      },
+      "path": "~/Alchemy/Potions/WhiteRaffardsDecoction"
+    },
+    {
+      "name": "TawnyOwl",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tawny_owl",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/witchercraft/models/item/tawny_owl.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/TawnyOwlItem.java"
+        ]
+      },
+      "path": "~/Alchemy/Potions/TawnyOwl"
+    },
+    {
+      "name": "Gadwall",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gadwall",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/item/GadwallItem.java",
+          "src/main/resources/assets/witchercraft/models/item/gadwall.json"
+        ]
+      },
+      "path": "~/Alchemy/Potions/Gadwall"
+    },
+    {
+      "name": "Rook",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rook",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/witchercraft/models/item/rook.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/RookItem.java"
+        ]
+      },
+      "path": "~/Alchemy/Potions/Rook"
+    },
+    {
+      "name": "KillerWhale",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "killer_whale",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/witchercraft/models/item/killer_whale.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/KillerWhaleItem.java"
+        ]
+      },
+      "path": "~/Alchemy/Potions/KillerWhale"
+    },
+    {
+      "name": "PetrisPhilter",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petris_philter",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/witchercraft/models/item/petris_philter.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/PetrisPhilterItem.java"
+        ]
+      },
+      "path": "~/Alchemy/Potions/PetrisPhilter"
+    },
+    {
+      "name": "DevilsPuffball",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "devils_puffball",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/witchercraft/models/item/devils_puffball.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/DevilsPuffballItem.java"
+        ]
+      },
+      "path": "~/Alchemy/Bombs/DevilsPuffball"
+    },
+    {
+      "name": "DancingStar",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dancing_star",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/item/DancingStarItem.java",
+          "src/main/resources/assets/witchercraft/models/item/dancing_star.json"
+        ]
+      },
+      "path": "~/Alchemy/Bombs/DancingStar"
+    },
+    {
+      "name": "Grapeshot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grapeshot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/witchercraft/models/item/grapeshot.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/GrapeshotItem.java"
+        ]
+      },
+      "path": "~/Alchemy/Bombs/Grapeshot"
+    },
+    {
+      "name": "NorthernWind",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "northern_wind",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/item/NorthernWindItem.java",
+          "src/main/resources/assets/witchercraft/models/item/northern_wind.json"
+        ]
+      },
+      "path": "~/Alchemy/Bombs/NorthernWind"
+    },
+    {
+      "name": "Samum",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "samum",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/item/SamumItem.java",
+          "src/main/resources/assets/witchercraft/models/item/samum.json"
+        ]
+      },
+      "path": "~/Alchemy/Bombs/Samum"
+    },
+    {
+      "name": "DimeritiumBomb",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dimeritium_bomb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/item/DimeritiumBombItem.java",
+          "src/main/resources/assets/witchercraft/models/item/dimeritium_bomb.json"
+        ]
+      },
+      "path": "~/Alchemy/Bombs/DimeritiumBomb"
+    },
+    {
+      "name": "InsectoidOil",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "insectoid_oil",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/witchercraft/models/item/insectoid_oil.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/InsectoidOilItem.java"
+        ]
+      },
+      "path": "~/Alchemy/Oils/InsectoidOil"
+    },
+    {
+      "name": "NecrophageOil",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "necrophage_oil",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/witchercraft/models/item/necrophage_oil.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/NecrophageOilItem.java"
+        ]
+      },
+      "path": "~/Alchemy/Oils/NecrophageOil"
+    },
+    {
+      "name": "HangedMansVenom",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hanged_mans_venom",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/witchercraft/models/item/hanged_mans_venom.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/HangedMansVenomItem.java"
+        ]
+      },
+      "path": "~/Alchemy/Oils/HangedMansVenom"
+    },
+    {
+      "name": "SpecterOil",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "specter_oil",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/witchercraft/models/item/specter_oil.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/SpecterOilItem.java"
+        ]
+      },
+      "path": "~/Alchemy/Oils/SpecterOil"
+    },
+    {
+      "name": "OgroidOil",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ogroid_oil",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/item/OgroidOilItem.java",
+          "src/main/resources/assets/witchercraft/models/item/ogroid_oil.json"
+        ]
+      },
+      "path": "~/Alchemy/Oils/OgroidOil"
+    },
+    {
+      "name": "BeastOil",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beast_oil",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/item/BeastOilItem.java",
+          "src/main/resources/assets/witchercraft/models/item/beast_oil.json"
+        ]
+      },
+      "path": "~/Alchemy/Oils/BeastOil"
+    },
+    {
+      "name": "DraconidOil",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "draconid_oil",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/witchercraft/models/item/draconid_oil.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/DraconidOilItem.java"
+        ]
+      },
+      "path": "~/Alchemy/Oils/DraconidOil"
+    },
+    {
+      "name": "WitcherCraft",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "witcher_craft",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Aether",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aether",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/witchercraft/models/item/aether.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/AetherItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "Hydragenum",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hydragenum",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/item/HydragenumItem.java",
+          "src/main/resources/assets/witchercraft/models/item/hydragenum.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "Quebrith",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quebrith",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/item/QuebrithItem.java",
+          "src/main/resources/assets/witchercraft/models/item/quebrith.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "Rebis",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rebis",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/item/RebisItem.java",
+          "src/main/resources/assets/witchercraft/models/item/rebis.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "Vermilion",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vermilion",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/witchercraft/models/item/vermilion.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/VermilionItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "Vitriol",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vitriol",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/item/VitriolItem.java",
+          "src/main/resources/assets/witchercraft/models/item/vitriol.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "WhiteGull",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "white_gull",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/witchercraft/models/item/white_gull.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/WhiteGullItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "Saletpeter",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "saletpeter",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/witchercraft/models/item/saletpeter.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/SaletpeterItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "Tallow",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tallow",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/witchercraft/models/item/tallow.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/TallowItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "RelictOil",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "relict_oil",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/witchercraft/models/item/relict_oil.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/RelictOilItem.java"
+        ]
+      },
+      "path": "~/Alchemy/Oils/RelictOil"
+    },
+    {
+      "name": "CursedOil",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cursed_oil",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/item/CursedOilItem.java",
+          "src/main/resources/assets/witchercraft/models/item/cursed_oil.json"
+        ]
+      },
+      "path": "~/Alchemy/Oils/CursedOnesOil"
+    },
+    {
+      "name": "VampireOil",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vampire_oil",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/item/VampireOilItem.java",
+          "src/main/resources/assets/witchercraft/models/item/vampire_oil.json"
+        ]
+      },
+      "path": "~/Alchemy/Oils/VampireOil"
+    },
+    {
+      "name": "GlossaryMenuGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glossary_menu_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/world/inventory/GlossaryMenuGuiMenu.java",
+          "src/main/java/net/redboltmedia/witchercraft/client/gui/GlossaryMenuGuiScreen.java",
+          "src/main/java/net/redboltmedia/witchercraft/network/GlossaryMenuGuiButtonMessage.java"
+        ]
+      },
+      "path": "~/Glossary"
+    },
+    {
+      "name": "GlossaryMenuGuiOpen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glossary_menu_gui_open",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/GlossaryMenuGuiOpenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Glossary"
+    },
+    {
+      "name": "BestiaryMenuGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bestiary_menu_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/client/gui/BestiaryMenuGuiScreen.java",
+          "src/main/java/net/redboltmedia/witchercraft/network/BestiaryMenuGuiButtonMessage.java",
+          "src/main/java/net/redboltmedia/witchercraft/world/inventory/BestiaryMenuGuiMenu.java"
+        ]
+      },
+      "path": "~/Bestiary"
+    },
+    {
+      "name": "PauseMenuGuiBlindEnd",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pause_menu_gui_blind_end",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/PauseMenuGuiBlindEndProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Pause Menu "
+    },
+    {
+      "name": "BestiaryMenuGuiOpen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bestiary_menu_gui_open",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/BestiaryMenuGuiOpenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Bestiary"
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {},
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.witchercraft.gadwall": "Gadwall",
+      "item.witchercraft.killer_whale": "Killer Whale",
+      "item.witchercraft.relict_oil": "Relict Oil",
+      "item.witchercraft.blizzard": "Blizzard",
+      "item.witchercraft.beast_oil": "Beast Oil",
+      "item.witchercraft.dimeritium_bomb": "Dimeritium Bomb",
+      "gui.witchercraft.alchemy_gui.button_back": "Back",
+      "item.witchercraft.rook": "Rook",
+      "gui.witchercraft.meditation_gui.button_sunrise": "Sunrise",
+      "item.witchercraft.white_raffards_decoction": "White Raffards Decoction",
+      "item.witchercraft.tawny_owl": "Tawny Owl",
+      "item.witchercraft.rebis": "Rebis",
+      "item.witchercraft.quebrith": "Quebrith",
+      "item.witchercraft.petris_philter": "Petris Philter",
+      "item.witchercraft.hanged_mans_venom": "Hanged Mans Venom",
+      "item_group.witchercraft.witcher_craft": "Witcher Craft",
+      "gui.witchercraft.glossary_menu_gui.button_back": "Back",
+      "gui.witchercraft.meditation_gui.button_sunset": "Sunset",
+      "item.witchercraft.necrophage_oil": "Necrophage Oil",
+      "item.witchercraft.devils_puffball": "Devils Puffball",
+      "item.witchercraft.dancing_star": "Dancing Star",
+      "item.witchercraft.cursed_oil": "Cursed Oil",
+      "item.witchercraft.vermilion": "Vermilion",
+      "item.witchercraft.cat": "Cat",
+      "key.witchercraft.pause_menu_keybind_press": "Pause Menu ",
+      "item.witchercraft.samum": "Samum",
+      "item.witchercraft.white_gull": "White Gull",
+      "gui.witchercraft.pause_menu_gui.button_alchemy": "Alchemy",
+      "item.witchercraft.tallow": "Tallow",
+      "item.witchercraft.northern_wind": "Northern Wind",
+      "item.witchercraft.saletpeter": "Saletpeter",
+      "gui.witchercraft.meditation_gui.button_noon": "Noon",
+      "item.witchercraft.draconid_oil": "Draconid Oil",
+      "gui.witchercraft.meditation_gui.button_back": "Back",
+      "gui.witchercraft.pause_menu_gui.button_bestiary": "Bestiary",
+      "item.witchercraft.vitriol": "Vitriol",
+      "item.witchercraft.specter_oil": "Specter Oil",
+      "item.witchercraft.white_honey": "White Honey",
+      "gui.witchercraft.pause_menu_gui.button_character": "Character",
+      "item.witchercraft.ogroid_oil": "Ogroid Oil",
+      "item.witchercraft.thunderbolt": "Thunderbolt",
+      "item.witchercraft.hydragenum": "Hydragenum",
+      "gui.witchercraft.glossary_menu_gui.tooltip_cwel": "cwel",
+      "gui.witchercraft.pause_menu_gui.button_meditation": "Meditation",
+      "item.witchercraft.golden_oriole": "Golden Oriole",
+      "item.witchercraft.swallow": "Swallow",
+      "item.witchercraft.vampire_oil": "Vampire Oil",
+      "gui.witchercraft.meditation_gui.button_midnight": "Midnight",
+      "gui.witchercraft.pause_menu_gui.button_glossary": "Glossary",
+      "item.witchercraft.full_moon": "Full Moon",
+      "gui.witchercraft.bestiary_menu_gui.button_back": "Back",
+      "item.witchercraft.insectoid_oil": "Insectoid Oil",
+      "item.witchercraft.grapeshot": "Grapeshot",
+      "item.witchercraft.aether": "Aether",
+      "gui.witchercraft.alchemy_gui.button_brew": "Brew"
+    }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Alchemy",
+        "children": [
+          {
+            "name": "Potions",
+            "children": [
+              {
+                "name": "GoldenOriole",
+                "children": []
+              },
+              {
+                "name": "WhiteHoney",
+                "children": []
+              },
+              {
+                "name": "Blizzard",
+                "children": []
+              },
+              {
+                "name": "Cat",
+                "children": []
+              },
+              {
+                "name": "Swallow",
+                "children": []
+              },
+              {
+                "name": "FullMoon",
+                "children": []
+              },
+              {
+                "name": "Thunderbolt",
+                "children": []
+              },
+              {
+                "name": "WhiteRaffardsDecoction",
+                "children": []
+              },
+              {
+                "name": "TawnyOwl",
+                "children": []
+              },
+              {
+                "name": "Gadwall",
+                "children": []
+              },
+              {
+                "name": "Rook",
+                "children": []
+              },
+              {
+                "name": "KillerWhale",
+                "children": []
+              },
+              {
+                "name": "PetrisPhilter",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Bombs",
+            "children": [
+              {
+                "name": "DevilsPuffball",
+                "children": []
+              },
+              {
+                "name": "DancingStar",
+                "children": []
+              },
+              {
+                "name": "Grapeshot",
+                "children": []
+              },
+              {
+                "name": "NorthernWind",
+                "children": []
+              },
+              {
+                "name": "Samum",
+                "children": []
+              },
+              {
+                "name": "DimeritiumBomb",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Oils",
+            "children": [
+              {
+                "name": "InsectoidOil",
+                "children": []
+              },
+              {
+                "name": "NecrophageOil",
+                "children": []
+              },
+              {
+                "name": "VampireOil",
+                "children": []
+              },
+              {
+                "name": "HangedMansVenom",
+                "children": []
+              },
+              {
+                "name": "SpecterOil",
+                "children": []
+              },
+              {
+                "name": "OgroidOil",
+                "children": []
+              },
+              {
+                "name": "BeastOil",
+                "children": []
+              },
+              {
+                "name": "DraconidOil",
+                "children": []
+              },
+              {
+                "name": "RelictOil",
+                "children": []
+              },
+              {
+                "name": "CursedOnesOil",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "AlchemyMenu",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Signs",
+        "children": []
+      },
+      {
+        "name": "Weapons",
+        "children": []
+      },
+      {
+        "name": "Armor",
+        "children": []
+      },
+      {
+        "name": "Mobs",
+        "children": []
+      },
+      {
+        "name": "Pause Menu ",
+        "children": []
+      },
+      {
+        "name": "Meditation",
+        "children": []
+      },
+      {
+        "name": "Glossary",
+        "children": []
+      },
+      {
+        "name": "Bestiary",
+        "children": []
+      },
+      {
+        "name": "Items",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "witchercraft",
     "modName": "WitcherCraft",
     "version": "1.0.0",
-    "author": "cioch, MCreator",
-    "websiteURL": "https://mcreator.net",
+    "author": "Ciochu, RedBoltMedia",
+    "websiteURL": "https://redboltmedia.net",
     "license": "Not specified",
     "serverSideOnly": false,
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.20.1",
+    "currentGenerator": "neoforge-1.20.6",
+    "credits": "hm",
     "modElementsPackage": "net.redboltmedia.witchercraft"
   },
-  "mcreatorVersion": 202400229712
+  "mcreatorVersion": 202400232117
 }

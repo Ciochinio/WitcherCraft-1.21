@@ -1,0 +1,97 @@
+{
+  "_fv": 66,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": true,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_midnight",
+          "text": "Midnight",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "MeditateMidnight"
+          },
+          "width": 67,
+          "height": 20,
+          "x": 178,
+          "y": 184
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_sunrise",
+          "text": "Sunrise",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "MeditateSunrise"
+          },
+          "width": 66,
+          "height": 20,
+          "x": 97,
+          "y": 112
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_sunset",
+          "text": "Sunset",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "MeditateSunset"
+          },
+          "width": 66,
+          "height": 20,
+          "x": 268,
+          "y": 112
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_noon",
+          "text": "Noon",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "MeditateNoon"
+          },
+          "width": 66,
+          "height": 20,
+          "x": 178,
+          "y": 58
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_back",
+          "text": "Back",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "PauseMenuGuiBackButton"
+          },
+          "width": 46,
+          "height": 20,
+          "x": 376,
+          "y": 211
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 12,
+      "oy": 6,
+      "snapOnGrid": true
+    }
+  }
+}

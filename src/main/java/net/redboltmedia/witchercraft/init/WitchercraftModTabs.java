@@ -1,0 +1,61 @@
+
+/*
+ *    MCreator note: This file will be REGENERATED on each build.
+ */
+package net.redboltmedia.witchercraft.init;
+
+import net.redboltmedia.witchercraft.WitchercraftMod;
+
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
+
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.Registries;
+
+public class WitchercraftModTabs {
+	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, WitchercraftMod.MODID);
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> WITCHER_CRAFT = REGISTRY.register("witcher_craft",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.witchercraft.witcher_craft")).icon(() -> new ItemStack(WitchercraftModItems.GADWALL.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(WitchercraftModItems.GOLDEN_ORIOLE.get());
+				tabData.accept(WitchercraftModItems.WHITE_HONEY.get());
+				tabData.accept(WitchercraftModItems.BLIZZARD.get());
+				tabData.accept(WitchercraftModItems.CAT.get());
+				tabData.accept(WitchercraftModItems.SWALLOW.get());
+				tabData.accept(WitchercraftModItems.FULL_MOON.get());
+				tabData.accept(WitchercraftModItems.THUNDERBOLT.get());
+				tabData.accept(WitchercraftModItems.WHITE_RAFFARDS_DECOCTION.get());
+				tabData.accept(WitchercraftModItems.TAWNY_OWL.get());
+				tabData.accept(WitchercraftModItems.GADWALL.get());
+				tabData.accept(WitchercraftModItems.ROOK.get());
+				tabData.accept(WitchercraftModItems.KILLER_WHALE.get());
+				tabData.accept(WitchercraftModItems.PETRIS_PHILTER.get());
+				tabData.accept(WitchercraftModItems.DEVILS_PUFFBALL.get());
+				tabData.accept(WitchercraftModItems.DANCING_STAR.get());
+				tabData.accept(WitchercraftModItems.GRAPESHOT.get());
+				tabData.accept(WitchercraftModItems.NORTHERN_WIND.get());
+				tabData.accept(WitchercraftModItems.SAMUM.get());
+				tabData.accept(WitchercraftModItems.DIMERITIUM_BOMB.get());
+				tabData.accept(WitchercraftModItems.INSECTOID_OIL.get());
+				tabData.accept(WitchercraftModItems.NECROPHAGE_OIL.get());
+				tabData.accept(WitchercraftModItems.HANGED_MANS_VENOM.get());
+				tabData.accept(WitchercraftModItems.SPECTER_OIL.get());
+				tabData.accept(WitchercraftModItems.OGROID_OIL.get());
+				tabData.accept(WitchercraftModItems.BEAST_OIL.get());
+				tabData.accept(WitchercraftModItems.DRACONID_OIL.get());
+				tabData.accept(WitchercraftModItems.AETHER.get());
+				tabData.accept(WitchercraftModItems.HYDRAGENUM.get());
+				tabData.accept(WitchercraftModItems.QUEBRITH.get());
+				tabData.accept(WitchercraftModItems.REBIS.get());
+				tabData.accept(WitchercraftModItems.VERMILION.get());
+				tabData.accept(WitchercraftModItems.VITRIOL.get());
+				tabData.accept(WitchercraftModItems.WHITE_GULL.get());
+				tabData.accept(WitchercraftModItems.SALETPETER.get());
+				tabData.accept(WitchercraftModItems.TALLOW.get());
+				tabData.accept(WitchercraftModItems.RELICT_OIL.get());
+				tabData.accept(WitchercraftModItems.CURSED_OIL.get());
+			})
+
+					.build());
+}

@@ -1,0 +1,100 @@
+{
+  "_fv": 66,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": true,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_meditation",
+          "text": "Meditation",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "MeditationGuiOpen"
+          },
+          "width": 77,
+          "height": 20,
+          "x": 342,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_character",
+          "text": "Character",
+          "isUndecorated": false,
+          "width": 77,
+          "height": 20,
+          "x": 259,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_alchemy",
+          "text": "Alchemy",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "AlchemyGuiOpen"
+          },
+          "width": 76,
+          "height": 20,
+          "x": 177,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_glossary",
+          "text": "Glossary",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GlossaryMenuGuiOpen"
+          },
+          "width": 77,
+          "height": 20,
+          "x": 12,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_bestiary",
+          "text": "Bestiary",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "BestiaryMenuGuiOpen"
+          },
+          "width": 77,
+          "height": 20,
+          "x": 94,
+          "y": 134
+        }
+      }
+    ],
+    "onOpen": {
+      "name": "PauseMenuGuiBlind"
+    },
+    "onClosed": {
+      "name": "PauseMenuGuiBlindEnd"
+    },
+    "gridSettings": {
+      "sx": 15,
+      "sy": 18,
+      "ox": 7,
+      "oy": 14,
+      "snapOnGrid": true
+    }
+  }
+}

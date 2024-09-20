@@ -1,0 +1,43 @@
+{
+  "_fv": 66,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": true,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_back",
+          "text": "Back",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "PauseMenuGuiBackButton"
+          },
+          "width": 46,
+          "height": 20,
+          "x": 375,
+          "y": 206
+        }
+      }
+    ],
+    "onOpen": {
+      "name": "PauseMenuGuiBlind"
+    },
+    "onClosed": {
+      "name": "PauseMenuGuiBlindEnd"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}
