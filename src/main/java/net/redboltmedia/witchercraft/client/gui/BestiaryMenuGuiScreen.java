@@ -41,7 +41,7 @@ public class BestiaryMenuGuiScreen extends AbstractContainerScreen<BestiaryMenuG
 		return true;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("witchercraft:textures/screens/bestiary_menu_gui.png");
+	private static final ResourceLocation texture = ResourceLocation.parse("witchercraft:textures/screens/bestiary_menu_gui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {

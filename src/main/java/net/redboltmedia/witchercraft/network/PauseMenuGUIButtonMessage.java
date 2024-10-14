@@ -28,7 +28,7 @@ import java.util.HashMap;
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public record PauseMenuGUIButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
 
-	public static final Type<PauseMenuGUIButtonMessage> TYPE = new Type<>(new ResourceLocation(WitchercraftMod.MODID, "pause_menu_gui_buttons"));
+	public static final Type<PauseMenuGUIButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(WitchercraftMod.MODID, "pause_menu_gui_buttons"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, PauseMenuGUIButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, PauseMenuGUIButtonMessage message) -> {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);

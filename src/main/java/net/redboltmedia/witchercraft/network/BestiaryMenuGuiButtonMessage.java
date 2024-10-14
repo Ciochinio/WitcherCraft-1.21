@@ -25,7 +25,7 @@ import java.util.HashMap;
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public record BestiaryMenuGuiButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
 
-	public static final Type<BestiaryMenuGuiButtonMessage> TYPE = new Type<>(new ResourceLocation(WitchercraftMod.MODID, "bestiary_menu_gui_buttons"));
+	public static final Type<BestiaryMenuGuiButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(WitchercraftMod.MODID, "bestiary_menu_gui_buttons"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, BestiaryMenuGuiButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, BestiaryMenuGuiButtonMessage message) -> {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);

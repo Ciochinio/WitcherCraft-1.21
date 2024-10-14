@@ -25,7 +25,7 @@ import java.util.HashMap;
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public record GlossaryMenuGuiButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
 
-	public static final Type<GlossaryMenuGuiButtonMessage> TYPE = new Type<>(new ResourceLocation(WitchercraftMod.MODID, "glossary_menu_gui_buttons"));
+	public static final Type<GlossaryMenuGuiButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(WitchercraftMod.MODID, "glossary_menu_gui_buttons"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, GlossaryMenuGuiButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, GlossaryMenuGuiButtonMessage message) -> {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);

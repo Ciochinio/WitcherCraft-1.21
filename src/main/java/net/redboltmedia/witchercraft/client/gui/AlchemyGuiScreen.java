@@ -42,7 +42,7 @@ public class AlchemyGuiScreen extends AbstractContainerScreen<AlchemyGuiMenu> {
 		return true;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("witchercraft:textures/screens/alchemy_gui.png");
+	private static final ResourceLocation texture = ResourceLocation.parse("witchercraft:textures/screens/alchemy_gui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {

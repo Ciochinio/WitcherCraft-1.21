@@ -41,7 +41,7 @@ public class GlossaryMenuGuiScreen extends AbstractContainerScreen<GlossaryMenuG
 		return true;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("witchercraft:textures/screens/glossary_menu_gui.png");
+	private static final ResourceLocation texture = ResourceLocation.parse("witchercraft:textures/screens/glossary_menu_gui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {

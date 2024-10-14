@@ -1040,10 +1040,10 @@
       "item.witchercraft.gadwall": "Gadwall",
       "item.witchercraft.killer_whale": "Killer Whale",
       "item.witchercraft.relict_oil": "Relict Oil",
-      "item.witchercraft.blizzard": "Blizzard",
       "item.witchercraft.beast_oil": "Beast Oil",
-      "item.witchercraft.dimeritium_bomb": "Dimeritium Bomb",
+      "item.witchercraft.blizzard": "Blizzard",
       "gui.witchercraft.alchemy_gui.button_back": "Back",
+      "item.witchercraft.dimeritium_bomb": "Dimeritium Bomb",
       "item.witchercraft.rook": "Rook",
       "gui.witchercraft.meditation_gui.button_sunrise": "Sunrise",
       "item.witchercraft.white_raffards_decoction": "White Raffards Decoction",
@@ -1287,9 +1287,9 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "neoforge-1.20.6",
+    "currentGenerator": "neoforge-1.21.1",
     "credits": "hm",
     "modElementsPackage": "net.redboltmedia.witchercraft"
   },
-  "mcreatorVersion": 202400232117
+  "mcreatorVersion": 202400340615
 }

@@ -29,7 +29,7 @@ import java.util.HashMap;
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public record MeditationGuiButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
 
-	public static final Type<MeditationGuiButtonMessage> TYPE = new Type<>(new ResourceLocation(WitchercraftMod.MODID, "meditation_gui_buttons"));
+	public static final Type<MeditationGuiButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(WitchercraftMod.MODID, "meditation_gui_buttons"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, MeditationGuiButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, MeditationGuiButtonMessage message) -> {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);

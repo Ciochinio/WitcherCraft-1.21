@@ -26,7 +26,7 @@ import java.util.HashMap;
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public record AlchemyGuiButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
 
-	public static final Type<AlchemyGuiButtonMessage> TYPE = new Type<>(new ResourceLocation(WitchercraftMod.MODID, "alchemy_gui_buttons"));
+	public static final Type<AlchemyGuiButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(WitchercraftMod.MODID, "alchemy_gui_buttons"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, AlchemyGuiButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, AlchemyGuiButtonMessage message) -> {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);
