@@ -15,7 +15,7 @@
     "isCuredByMilk": true,
     "isProtectedByTotem": true,
     "isCuredbyHoney": false,
-    "onStarted": {
+    "onExpired": {
       "name": "PassiveHealthRegenStart"
     }
   }

@@ -43,5 +43,10 @@ public class WitchercraftPlayerBaseStatsProcedure {
 			_vars.witchercraftAttackSpeed = 0;
 			_vars.syncPlayerVariables(entity);
 		}
+		{
+			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
+			_vars.witchercraftPassiveHealthRegeneration = 0;
+			_vars.syncPlayerVariables(entity);
+		}
 	}
 }

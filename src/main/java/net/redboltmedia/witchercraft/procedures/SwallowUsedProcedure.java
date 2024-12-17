@@ -14,13 +14,9 @@ public class SwallowUsedProcedure {
 		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(MobEffects.ABSORPTION)) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.SWALLOW_EFFECT, 7200, 0));
-			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.PASSIVE_HEALTH_REGEN, 30, 0));
 		} else {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.SWALLOW_EFFECT, 3600, 0));
-			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.PASSIVE_HEALTH_REGEN, 30, 0));
 		}
 	}
 }

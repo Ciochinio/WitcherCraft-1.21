@@ -26,16 +26,13 @@ public class PassiveHealthRegenStartProcedure {
 			}
 		}
 		if (entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(WitchercraftModMobEffects.PASSIVE_HEALTH_REGEN) && (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) > 0) {
-			WitchercraftMod.queueServerWork(20, () -> {
-				if (!(entity instanceof LivingEntity _livEnt3 && _livEnt3.hasEffect(WitchercraftModMobEffects.PASSIVE_HEALTH_REGEN_COOLDOWN)) && (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) > 0) {
-					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.PASSIVE_HEALTH_REGEN_COOLDOWN, 60, 0));
+			WitchercraftMod.queueServerWork(40, () -> {
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) > 0) {
 					if (entity instanceof LivingEntity _entity)
 						_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumPassiveHealthRegeneration));
 				}
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.PASSIVE_HEALTH_REGEN, 30, 0));
-				PassiveHealthRegenStartProcedure.execute(world, entity);
+					_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.PASSIVE_HEALTH_REGEN, 45, 0));
 			});
 		}
 	}

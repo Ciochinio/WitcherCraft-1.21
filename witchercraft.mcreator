@@ -1426,10 +1426,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -1749,19 +1745,6 @@
       "path": "~/Character/Stats/VariableStats/PassiveRegeneration"
     },
     {
-      "name": "PassiveHealthRegenCooldown",
-      "type": "potioneffect",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "passive_health_regen_cooldown",
-      "metadata": {
-        "files": [
-          "src/main/java/net/redboltmedia/witchercraft/potion/PassiveHealthRegenCooldownMobEffect.java"
-        ]
-      },
-      "path": "~/Character/Stats/VariableStats/PassiveRegeneration"
-    },
-    {
       "name": "SwallowEffect",
       "type": "potioneffect",
       "compiles": true,
@@ -1909,10 +1892,10 @@
   "language_map": {
     "en_us": {
       "item.witchercraft.gadwall": "Gadwall",
-      "item.witchercraft.killer_whale": "Killer Whale",
       "item.witchercraft.relict_oil": "Relict Oil",
-      "item.witchercraft.blizzard": "Blizzard",
+      "item.witchercraft.killer_whale": "Killer Whale",
       "item.witchercraft.beast_oil": "Beast Oil",
+      "item.witchercraft.blizzard": "Blizzard",
       "gui.witchercraft.alchemy_gui.button_back": "Back",
       "item.witchercraft.dimeritium_bomb": "Dimeritium Bomb",
       "item.witchercraft.rook": "Rook",
@@ -1959,7 +1942,6 @@
       "item.witchercraft.vitriol": "Vitriol",
       "item.witchercraft.specter_oil": "Specter Oil",
       "item.witchercraft.white_honey": "White Honey",
-      "effect.witchercraft.passive_health_regen_cooldown": "Passive Health Regen Cooldown",
       "gui.witchercraft.pause_menu_gui.button_character": "Character",
       "item.witchercraft.ogroid_oil": "Ogroid Oil",
       "gui.witchercraft.character_gui.tooltip_123": "123",
