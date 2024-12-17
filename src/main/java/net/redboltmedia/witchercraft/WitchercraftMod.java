@@ -3,7 +3,9 @@ package net.redboltmedia.witchercraft;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
+import net.redboltmedia.witchercraft.network.WitchercraftModVariables;
 import net.redboltmedia.witchercraft.init.WitchercraftModTabs;
+import net.redboltmedia.witchercraft.init.WitchercraftModMobEffects;
 import net.redboltmedia.witchercraft.init.WitchercraftModMenus;
 import net.redboltmedia.witchercraft.init.WitchercraftModItems;
 
@@ -43,7 +45,9 @@ public class WitchercraftMod {
 		WitchercraftModItems.REGISTRY.register(modEventBus);
 
 		WitchercraftModTabs.REGISTRY.register(modEventBus);
+		WitchercraftModVariables.ATTACHMENT_TYPES.register(modEventBus);
 
+		WitchercraftModMobEffects.REGISTRY.register(modEventBus);
 		WitchercraftModMenus.REGISTRY.register(modEventBus);
 
 		// Start of user code block mod init

@@ -370,20 +370,6 @@
       "path": "~/Alchemy/AlchemyMenu"
     },
     {
-      "name": "GoldenOriole",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "golden_oriole",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/witchercraft/models/item/golden_oriole.json",
-          "src/main/java/net/redboltmedia/witchercraft/item/GoldenOrioleItem.java"
-        ]
-      },
-      "path": "~/Alchemy/Potions/GoldenOriole"
-    },
-    {
       "name": "WhiteHoney",
       "type": "item",
       "compiles": true,
@@ -1029,9 +1015,894 @@
         ]
       },
       "path": "~/Bestiary"
+    },
+    {
+      "name": "GoldenOrioleEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_oriole_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/GoldenOrioleEffectMobEffect.java"
+        ]
+      },
+      "path": "~/Alchemy/Potions/GoldenOriole"
+    },
+    {
+      "name": "GoldenOriole",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_oriole",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/witchercraft/models/item/golden_oriole.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/GoldenOrioleItem.java"
+        ]
+      },
+      "path": "~/Alchemy/Potions/GoldenOriole"
+    },
+    {
+      "name": "GoldenOrioleUsed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_oriole_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/GoldenOrioleUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Alchemy/Potions/GoldenOriole"
+    },
+    {
+      "name": "GoldenOrioleEffectActive",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_oriole_effect_active",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/GoldenOrioleEffectActiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Alchemy/Potions/GoldenOriole"
+    },
+    {
+      "name": "WhiteHoneyPlayerUsed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "white_honey_player_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/WhiteHoneyPlayerUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Alchemy/Potions/WhiteHoney"
+    },
+    {
+      "name": "BlizzardUsed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blizzard_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/BlizzardUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Alchemy/Potions/Blizzard"
+    },
+    {
+      "name": "WitchercraftPlayerStats",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "witchercraft_player_stats",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/WitchercraftPlayerStatsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character/Commands"
+    },
+    {
+      "name": "Witchercraftstats",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "witchercraftstats",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/command/WitchercraftstatsCommand.java"
+        ]
+      },
+      "path": "~/Character/Commands"
+    },
+    {
+      "name": "CharacterGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/client/gui/CharacterGuiScreen.java",
+          "src/main/java/net/redboltmedia/witchercraft/network/CharacterGuiButtonMessage.java",
+          "src/main/java/net/redboltmedia/witchercraft/world/inventory/CharacterGuiMenu.java"
+        ]
+      },
+      "path": "~/Character/Gui"
+    },
+    {
+      "name": "CharacterGuiOpen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_gui_open",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterGuiOpenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Character/Gui"
+    },
+    {
+      "name": "CharacterGuiMovementSpeed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_gui_movement_speed",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterGuiMovementSpeedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character/Gui"
+    },
+    {
+      "name": "MovementSpeed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "movement_speed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MovementSpeedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character/Stats/VariableStats/MovementSpeed"
+    },
+    {
+      "name": "AttackSpeed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "attack_speed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/AttackSpeedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character/Stats/VariableStats/AttackSpeed"
+    },
+    {
+      "name": "BlizzardEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blizzard_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/BlizzardEffectMobEffect.java"
+        ]
+      },
+      "path": "~/Alchemy/Potions/Blizzard"
+    },
+    {
+      "name": "CharacterGuiAttackSpeed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_gui_attack_speed",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterGuiAttackSpeedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character/Gui"
+    },
+    {
+      "name": "CritChance",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crit_chance",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CritChanceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Character/Stats/VariableStats/CritChance"
+    },
+    {
+      "name": "CharacterGuiCritChance",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_gui_crit_chance",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterGuiCritChanceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character/Gui"
+    },
+    {
+      "name": "CharacterGuiCritDamage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_gui_crit_damage",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterGuiCritDamageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character/Gui"
+    },
+    {
+      "name": "CritDamage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crit_damage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CritDamageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character/Stats/VariableStats/CritDamage"
+    },
+    {
+      "name": "WitchercraftPlayerBaseStats",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "witchercraft_player_base_stats",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/WitchercraftPlayerBaseStatsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character/Stats/Stat Reload"
+    },
+    {
+      "name": "WitchercraftPlayerStatCheck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "witchercraft_player_stat_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/WitchercraftPlayerStatCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character/Stats/Stat Reload"
+    },
+    {
+      "name": "WitchercraftPlayerStatReload",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "witchercraft_player_stat_reload",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/WitchercraftPlayerStatReloadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Character/Stats/Stat Reload"
+    },
+    {
+      "name": "PlayerModelDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_model_display",
+      "metadata": {
+        "return_type": "entity",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/PlayerModelDisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character/Gui"
+    },
+    {
+      "name": "CatEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cat_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/CatEffectMobEffect.java"
+        ]
+      },
+      "path": "~/Alchemy/Potions/Cat"
+    },
+    {
+      "name": "CatUsed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cat_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CatUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Alchemy/Potions/Cat"
+    },
+    {
+      "name": "FullMoonEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "full_moon_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/FullMoonEffectMobEffect.java"
+        ]
+      },
+      "path": "~/Alchemy/Potions/FullMoon"
+    },
+    {
+      "name": "FullMoonUsed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "full_moon_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/FullMoonUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Alchemy/Potions/FullMoon"
+    },
+    {
+      "name": "Health",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "health",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/HealthProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character/Stats/VariableStats/Health"
+    },
+    {
+      "name": "CharacterGuiHealth",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_gui_health",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterGuiHealthProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character/Gui"
+    },
+    {
+      "name": "ThunderboltEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thunderbolt_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/ThunderboltEffectMobEffect.java"
+        ]
+      },
+      "path": "~/Alchemy/Potions/Thunderbolt"
+    },
+    {
+      "name": "ThunderboltUsed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thunderbolt_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/ThunderboltUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Alchemy/Potions/Thunderbolt"
+    },
+    {
+      "name": "AdditionalDamage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "additional_damage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/AdditionalDamageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Character/Stats/VariableStats/AdditionalDamage"
+    },
+    {
+      "name": "CritHit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crit_hit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CritHitProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Character/Stats/VariableStats"
+    },
+    {
+      "name": "WhiteRaffardsDecoctionEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "white_raffards_decoction_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/WhiteRaffardsDecoctionEffectMobEffect.java"
+        ]
+      },
+      "path": "~/Alchemy/Potions/WhiteRaffardsDecoction"
+    },
+    {
+      "name": "WhiteRaffardsDecoctionUsed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "white_raffards_decoction_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/WhiteRaffardsDecoctionUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Alchemy/Potions/WhiteRaffardsDecoction"
+    },
+    {
+      "name": "KillerWhaleEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "killer_whale_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/KillerWhaleEffectMobEffect.java"
+        ]
+      },
+      "path": "~/Alchemy/Potions/KillerWhale"
+    },
+    {
+      "name": "KillerWhaleUsed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "killer_whale_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/KillerWhaleUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Alchemy/Potions/KillerWhale"
+    },
+    {
+      "name": "KillerWhaleActive",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "killer_whale_active",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/KillerWhaleActiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Alchemy/Potions/KillerWhale"
+    },
+    {
+      "name": "PassiveHealthRegen",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "passive_health_regen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/PassiveHealthRegenMobEffect.java"
+        ]
+      },
+      "path": "~/Character/Stats/VariableStats/PassiveRegeneration"
+    },
+    {
+      "name": "PassiveHealthRegenCooldown",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "passive_health_regen_cooldown",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/PassiveHealthRegenCooldownMobEffect.java"
+        ]
+      },
+      "path": "~/Character/Stats/VariableStats/PassiveRegeneration"
+    },
+    {
+      "name": "SwallowEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swallow_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/SwallowEffectMobEffect.java"
+        ]
+      },
+      "path": "~/Alchemy/Potions/Swallow"
+    },
+    {
+      "name": "SwallowUsed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swallow_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/SwallowUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Alchemy/Potions/Swallow"
+    },
+    {
+      "name": "PassiveHealthRegenStart",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "passive_health_regen_start",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/PassiveHealthRegenStartProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Character/Stats/VariableStats/PassiveRegeneration"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "witchercraftMovementSpeed",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0.0"
+    },
+    {
+      "name": "witchercraftHealth",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0.0"
+    },
+    {
+      "name": "witchercraftArmor",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0.0"
+    },
+    {
+      "name": "witchercraftAdditionalDamage",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0.0"
+    },
+    {
+      "name": "witchercraftCritChance",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0.0"
+    },
+    {
+      "name": "witchercraftCritDamage",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0.0"
+    },
+    {
+      "name": "witchercraftAttackSpeed",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "sumCritChance",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "sumCritDamage",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "witchercraftBaseMovementSpeed",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "witchercraftBaseHealth",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "witchercraftBaseAttackSpeed",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "witchercraftPassiveHealthRegeneration",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "sumPassiveHealthRegeneration",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    }
+  ],
   "sound_elements": [],
   "tag_elements": {},
   "tab_element_order": {},
@@ -1040,52 +1911,69 @@
       "item.witchercraft.gadwall": "Gadwall",
       "item.witchercraft.killer_whale": "Killer Whale",
       "item.witchercraft.relict_oil": "Relict Oil",
-      "item.witchercraft.beast_oil": "Beast Oil",
       "item.witchercraft.blizzard": "Blizzard",
+      "item.witchercraft.beast_oil": "Beast Oil",
       "gui.witchercraft.alchemy_gui.button_back": "Back",
       "item.witchercraft.dimeritium_bomb": "Dimeritium Bomb",
       "item.witchercraft.rook": "Rook",
       "gui.witchercraft.meditation_gui.button_sunrise": "Sunrise",
       "item.witchercraft.white_raffards_decoction": "White Raffards Decoction",
       "item.witchercraft.tawny_owl": "Tawny Owl",
+      "gui.witchercraft.character_gui.label_attack_speed": "Attack Speed",
       "item.witchercraft.rebis": "Rebis",
       "item.witchercraft.quebrith": "Quebrith",
+      "effect.witchercraft.swallow_effect": "Swallow Effect",
       "item.witchercraft.petris_philter": "Petris Philter",
+      "gui.witchercraft.character_gui.label_crit_damage": "Crit Damage",
       "item.witchercraft.hanged_mans_venom": "Hanged Mans Venom",
       "item_group.witchercraft.witcher_craft": "Witcher Craft",
       "gui.witchercraft.glossary_menu_gui.button_back": "Back",
       "gui.witchercraft.meditation_gui.button_sunset": "Sunset",
       "item.witchercraft.necrophage_oil": "Necrophage Oil",
+      "gui.witchercraft.character_gui.label_crit_chance": "Crit Chance",
+      "effect.witchercraft.killer_whale_effect": "Killer Whale ",
       "item.witchercraft.devils_puffball": "Devils Puffball",
       "item.witchercraft.dancing_star": "Dancing Star",
+      "effect.witchercraft.blizzard_effect": "Blizzard Effect",
       "item.witchercraft.cursed_oil": "Cursed Oil",
       "item.witchercraft.vermilion": "Vermilion",
       "item.witchercraft.cat": "Cat",
       "key.witchercraft.pause_menu_keybind_press": "Pause Menu ",
+      "gui.witchercraft.character_gui.label_health": "Health",
+      "effect.witchercraft.white_raffards_decoction_effect": "White Raffards Decoction",
       "item.witchercraft.samum": "Samum",
+      "effect.witchercraft.golden_oriole_effect": "Golden Oriole",
       "item.witchercraft.white_gull": "White Gull",
       "gui.witchercraft.pause_menu_gui.button_alchemy": "Alchemy",
       "item.witchercraft.tallow": "Tallow",
+      "effect.witchercraft.thunderbolt_effect": "Thunderbolt",
       "item.witchercraft.northern_wind": "Northern Wind",
+      "effect.witchercraft.full_moon_effect": "Full Moon ",
       "item.witchercraft.saletpeter": "Saletpeter",
+      "gui.witchercraft.character_gui.label_movement_speed": "Movement Speed:",
       "gui.witchercraft.meditation_gui.button_noon": "Noon",
       "item.witchercraft.draconid_oil": "Draconid Oil",
       "gui.witchercraft.meditation_gui.button_back": "Back",
+      "effect.witchercraft.passive_health_regen": "Passive Health Regen",
       "gui.witchercraft.pause_menu_gui.button_bestiary": "Bestiary",
       "item.witchercraft.vitriol": "Vitriol",
       "item.witchercraft.specter_oil": "Specter Oil",
       "item.witchercraft.white_honey": "White Honey",
+      "effect.witchercraft.passive_health_regen_cooldown": "Passive Health Regen Cooldown",
       "gui.witchercraft.pause_menu_gui.button_character": "Character",
       "item.witchercraft.ogroid_oil": "Ogroid Oil",
+      "gui.witchercraft.character_gui.tooltip_123": "123",
+      "gui.witchercraft.character_gui.button_back": "Back",
       "item.witchercraft.thunderbolt": "Thunderbolt",
       "item.witchercraft.hydragenum": "Hydragenum",
       "gui.witchercraft.glossary_menu_gui.tooltip_cwel": "cwel",
       "gui.witchercraft.pause_menu_gui.button_meditation": "Meditation",
-      "item.witchercraft.golden_oriole": "Golden Oriole",
       "item.witchercraft.swallow": "Swallow",
       "item.witchercraft.vampire_oil": "Vampire Oil",
+      "item.witchercraft.golden_oriole": "Golden Oriole",
       "gui.witchercraft.meditation_gui.button_midnight": "Midnight",
       "gui.witchercraft.pause_menu_gui.button_glossary": "Glossary",
+      "effect.witchercraft.cat_effect": "Cat ",
       "item.witchercraft.full_moon": "Full Moon",
       "gui.witchercraft.bestiary_menu_gui.button_back": "Back",
       "item.witchercraft.insectoid_oil": "Insectoid Oil",
@@ -1272,6 +2160,65 @@
       {
         "name": "Items",
         "children": []
+      },
+      {
+        "name": "Character",
+        "children": [
+          {
+            "name": "Stats",
+            "children": [
+              {
+                "name": "ConstStats",
+                "children": []
+              },
+              {
+                "name": "VariableStats",
+                "children": [
+                  {
+                    "name": "MovementSpeed",
+                    "children": []
+                  },
+                  {
+                    "name": "AttackSpeed",
+                    "children": []
+                  },
+                  {
+                    "name": "CritChance",
+                    "children": []
+                  },
+                  {
+                    "name": "CritDamage",
+                    "children": []
+                  },
+                  {
+                    "name": "Health",
+                    "children": []
+                  },
+                  {
+                    "name": "AdditionalDamage",
+                    "children": []
+                  },
+                  {
+                    "name": "PassiveRegeneration",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "Stat Reload",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Commands",
+            "children": []
+          },
+          {
+            "name": "Gui",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -1291,5 +2238,5 @@
     "credits": "hm",
     "modElementsPackage": "net.redboltmedia.witchercraft"
   },
-  "mcreatorVersion": 202400340615
+  "mcreatorVersion": 202400342716
 }

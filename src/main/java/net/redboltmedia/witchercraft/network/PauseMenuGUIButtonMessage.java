@@ -4,6 +4,7 @@ package net.redboltmedia.witchercraft.network;
 import net.redboltmedia.witchercraft.world.inventory.PauseMenuGUIMenu;
 import net.redboltmedia.witchercraft.procedures.MeditationGuiOpenProcedure;
 import net.redboltmedia.witchercraft.procedures.GlossaryMenuGuiOpenProcedure;
+import net.redboltmedia.witchercraft.procedures.CharacterGuiOpenProcedure;
 import net.redboltmedia.witchercraft.procedures.BestiaryMenuGuiOpenProcedure;
 import net.redboltmedia.witchercraft.procedures.AlchemyGuiOpenProcedure;
 import net.redboltmedia.witchercraft.WitchercraftMod;
@@ -65,6 +66,10 @@ public record PauseMenuGUIButtonMessage(int buttonID, int x, int y, int z) imple
 		if (buttonID == 0) {
 
 			MeditationGuiOpenProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 1) {
+
+			CharacterGuiOpenProcedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 2) {
 

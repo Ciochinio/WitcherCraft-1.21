@@ -31,6 +31,9 @@
           "name": "button_character",
           "text": "Character",
           "isUndecorated": false,
+          "onClick": {
+            "name": "CharacterGuiOpen"
+          },
           "width": 77,
           "height": 20,
           "x": 259,

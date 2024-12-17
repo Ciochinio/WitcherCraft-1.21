@@ -51,7 +51,6 @@ import net.minecraft.world.item.Item;
 
 public class WitchercraftModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(WitchercraftMod.MODID);
-	public static final DeferredItem<Item> GOLDEN_ORIOLE = REGISTRY.register("golden_oriole", GoldenOrioleItem::new);
 	public static final DeferredItem<Item> WHITE_HONEY = REGISTRY.register("white_honey", WhiteHoneyItem::new);
 	public static final DeferredItem<Item> BLIZZARD = REGISTRY.register("blizzard", BlizzardItem::new);
 	public static final DeferredItem<Item> CAT = REGISTRY.register("cat", CatItem::new);
@@ -89,6 +88,7 @@ public class WitchercraftModItems {
 	public static final DeferredItem<Item> RELICT_OIL = REGISTRY.register("relict_oil", RelictOilItem::new);
 	public static final DeferredItem<Item> CURSED_OIL = REGISTRY.register("cursed_oil", CursedOilItem::new);
 	public static final DeferredItem<Item> VAMPIRE_OIL = REGISTRY.register("vampire_oil", VampireOilItem::new);
+	public static final DeferredItem<Item> GOLDEN_ORIOLE = REGISTRY.register("golden_oriole", GoldenOrioleItem::new);
 	// Start of user code block custom items
 	// End of user code block custom items
 }

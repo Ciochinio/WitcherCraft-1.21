@@ -84,6 +84,10 @@ public class PauseMenuGUIScreen extends AbstractContainerScreen<PauseMenuGUIMenu
 		guistate.put("button:button_meditation", button_meditation);
 		this.addRenderableWidget(button_meditation);
 		button_character = Button.builder(Component.translatable("gui.witchercraft.pause_menu_gui.button_character"), e -> {
+			if (true) {
+				PacketDistributor.sendToServer(new PauseMenuGUIButtonMessage(1, x, y, z));
+				PauseMenuGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
+			}
 		}).bounds(this.leftPos + 133, this.topPos + 97, 77, 20).build();
 		guistate.put("button:button_character", button_character);
 		this.addRenderableWidget(button_character);

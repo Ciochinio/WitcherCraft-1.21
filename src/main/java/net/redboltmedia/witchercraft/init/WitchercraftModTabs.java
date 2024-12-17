@@ -18,7 +18,6 @@ public class WitchercraftModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, WitchercraftMod.MODID);
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> WITCHER_CRAFT = REGISTRY.register("witcher_craft",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.witchercraft.witcher_craft")).icon(() -> new ItemStack(WitchercraftModItems.GADWALL.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(WitchercraftModItems.GOLDEN_ORIOLE.get());
 				tabData.accept(WitchercraftModItems.WHITE_HONEY.get());
 				tabData.accept(WitchercraftModItems.BLIZZARD.get());
 				tabData.accept(WitchercraftModItems.CAT.get());
@@ -55,6 +54,7 @@ public class WitchercraftModTabs {
 				tabData.accept(WitchercraftModItems.TALLOW.get());
 				tabData.accept(WitchercraftModItems.RELICT_OIL.get());
 				tabData.accept(WitchercraftModItems.CURSED_OIL.get());
+				tabData.accept(WitchercraftModItems.GOLDEN_ORIOLE.get());
 			})
 
 					.build());

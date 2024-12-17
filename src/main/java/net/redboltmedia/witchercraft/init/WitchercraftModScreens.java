@@ -7,6 +7,7 @@ package net.redboltmedia.witchercraft.init;
 import net.redboltmedia.witchercraft.client.gui.PauseMenuGUIScreen;
 import net.redboltmedia.witchercraft.client.gui.MeditationGuiScreen;
 import net.redboltmedia.witchercraft.client.gui.GlossaryMenuGuiScreen;
+import net.redboltmedia.witchercraft.client.gui.CharacterGuiScreen;
 import net.redboltmedia.witchercraft.client.gui.BestiaryMenuGuiScreen;
 import net.redboltmedia.witchercraft.client.gui.AlchemyGuiScreen;
 
@@ -24,5 +25,6 @@ public class WitchercraftModScreens {
 		event.register(WitchercraftModMenus.ALCHEMY_GUI.get(), AlchemyGuiScreen::new);
 		event.register(WitchercraftModMenus.GLOSSARY_MENU_GUI.get(), GlossaryMenuGuiScreen::new);
 		event.register(WitchercraftModMenus.BESTIARY_MENU_GUI.get(), BestiaryMenuGuiScreen::new);
+		event.register(WitchercraftModMenus.CHARACTER_GUI.get(), CharacterGuiScreen::new);
 	}
 }
