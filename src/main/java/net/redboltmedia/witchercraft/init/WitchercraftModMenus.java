@@ -4,6 +4,7 @@
  */
 package net.redboltmedia.witchercraft.init;
 
+import net.redboltmedia.witchercraft.world.inventory.SignGuiMenu;
 import net.redboltmedia.witchercraft.world.inventory.PauseMenuGUIMenu;
 import net.redboltmedia.witchercraft.world.inventory.MeditationGuiMenu;
 import net.redboltmedia.witchercraft.world.inventory.GlossaryMenuGuiMenu;
@@ -27,4 +28,5 @@ public class WitchercraftModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<GlossaryMenuGuiMenu>> GLOSSARY_MENU_GUI = REGISTRY.register("glossary_menu_gui", () -> IMenuTypeExtension.create(GlossaryMenuGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<BestiaryMenuGuiMenu>> BESTIARY_MENU_GUI = REGISTRY.register("bestiary_menu_gui", () -> IMenuTypeExtension.create(BestiaryMenuGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<CharacterGuiMenu>> CHARACTER_GUI = REGISTRY.register("character_gui", () -> IMenuTypeExtension.create(CharacterGuiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<SignGuiMenu>> SIGN_GUI = REGISTRY.register("sign_gui", () -> IMenuTypeExtension.create(SignGuiMenu::new));
 }

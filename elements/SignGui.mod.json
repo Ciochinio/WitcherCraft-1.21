@@ -1,0 +1,157 @@
+{
+  "_fv": 69,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_sign_menu",
+          "text": {
+            "fixedValue": "sign menu"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 186,
+          "y": 26
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_yrden",
+          "text": "YRDEN",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "YrdenSignChoose"
+          },
+          "width": 51,
+          "height": 20,
+          "x": 69,
+          "y": 122
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_quen",
+          "text": "QUEN",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "QuenSignChoose"
+          },
+          "width": 46,
+          "height": 20,
+          "x": 128,
+          "y": 87
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_igni",
+          "text": "IGNI",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "IgniSignChoose"
+          },
+          "width": 46,
+          "height": 20,
+          "x": 189,
+          "y": 60
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_axii",
+          "text": "AXII",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "AxiiSignChoose"
+          },
+          "width": 46,
+          "height": 20,
+          "x": 249,
+          "y": 84
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_aard",
+          "text": "AARD",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "AardSignChoose"
+          },
+          "width": 46,
+          "height": 20,
+          "x": 308,
+          "y": 118
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "axii.png",
+          "use1Xscale": false,
+          "x": 238,
+          "y": 23
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "aard.png",
+          "use1Xscale": false,
+          "x": 298,
+          "y": 60
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "quen.png",
+          "use1Xscale": false,
+          "x": 117,
+          "y": 30
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "yrden.png",
+          "use1Xscale": false,
+          "x": 64,
+          "y": 68
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "igni.png",
+          "use1Xscale": false,
+          "x": 178,
+          "y": 1
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

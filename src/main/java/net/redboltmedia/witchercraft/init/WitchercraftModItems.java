@@ -4,12 +4,15 @@
  */
 package net.redboltmedia.witchercraft.init;
 
+import net.redboltmedia.witchercraft.item.WolvenArmorItem;
 import net.redboltmedia.witchercraft.item.WhiteRaffardsDecoctionItem;
 import net.redboltmedia.witchercraft.item.WhiteHoneyItem;
 import net.redboltmedia.witchercraft.item.WhiteGullItem;
 import net.redboltmedia.witchercraft.item.VitriolItem;
+import net.redboltmedia.witchercraft.item.ViperArmorItem;
 import net.redboltmedia.witchercraft.item.VermilionItem;
 import net.redboltmedia.witchercraft.item.VampireOilItem;
+import net.redboltmedia.witchercraft.item.UrsineArmorItem;
 import net.redboltmedia.witchercraft.item.ThunderboltItem;
 import net.redboltmedia.witchercraft.item.TawnyOwlItem;
 import net.redboltmedia.witchercraft.item.TallowItem;
@@ -25,14 +28,17 @@ import net.redboltmedia.witchercraft.item.PetrisPhilterItem;
 import net.redboltmedia.witchercraft.item.OgroidOilItem;
 import net.redboltmedia.witchercraft.item.NorthernWindItem;
 import net.redboltmedia.witchercraft.item.NecrophageOilItem;
+import net.redboltmedia.witchercraft.item.ManticoreArmorItem;
 import net.redboltmedia.witchercraft.item.KillerWhaleItem;
 import net.redboltmedia.witchercraft.item.InsectoidOilItem;
 import net.redboltmedia.witchercraft.item.HydragenumItem;
 import net.redboltmedia.witchercraft.item.HangedMansVenomItem;
+import net.redboltmedia.witchercraft.item.GriffinArmorItem;
 import net.redboltmedia.witchercraft.item.GrapeshotItem;
 import net.redboltmedia.witchercraft.item.GoldenOrioleItem;
 import net.redboltmedia.witchercraft.item.GadwallItem;
 import net.redboltmedia.witchercraft.item.FullMoonItem;
+import net.redboltmedia.witchercraft.item.FelineArmorItem;
 import net.redboltmedia.witchercraft.item.DraconidOilItem;
 import net.redboltmedia.witchercraft.item.DimeritiumBombItem;
 import net.redboltmedia.witchercraft.item.DevilsPuffballItem;
@@ -89,6 +95,30 @@ public class WitchercraftModItems {
 	public static final DeferredItem<Item> CURSED_OIL = REGISTRY.register("cursed_oil", CursedOilItem::new);
 	public static final DeferredItem<Item> VAMPIRE_OIL = REGISTRY.register("vampire_oil", VampireOilItem::new);
 	public static final DeferredItem<Item> GOLDEN_ORIOLE = REGISTRY.register("golden_oriole", GoldenOrioleItem::new);
+	public static final DeferredItem<Item> FELINE_ARMOR_HELMET = REGISTRY.register("feline_armor_helmet", FelineArmorItem.Helmet::new);
+	public static final DeferredItem<Item> FELINE_ARMOR_CHESTPLATE = REGISTRY.register("feline_armor_chestplate", FelineArmorItem.Chestplate::new);
+	public static final DeferredItem<Item> FELINE_ARMOR_LEGGINGS = REGISTRY.register("feline_armor_leggings", FelineArmorItem.Leggings::new);
+	public static final DeferredItem<Item> FELINE_ARMOR_BOOTS = REGISTRY.register("feline_armor_boots", FelineArmorItem.Boots::new);
+	public static final DeferredItem<Item> WOLVEN_ARMOR_HELMET = REGISTRY.register("wolven_armor_helmet", WolvenArmorItem.Helmet::new);
+	public static final DeferredItem<Item> WOLVEN_ARMOR_CHESTPLATE = REGISTRY.register("wolven_armor_chestplate", WolvenArmorItem.Chestplate::new);
+	public static final DeferredItem<Item> WOLVEN_ARMOR_LEGGINGS = REGISTRY.register("wolven_armor_leggings", WolvenArmorItem.Leggings::new);
+	public static final DeferredItem<Item> WOLVEN_ARMOR_BOOTS = REGISTRY.register("wolven_armor_boots", WolvenArmorItem.Boots::new);
+	public static final DeferredItem<Item> URSINE_ARMOR_HELMET = REGISTRY.register("ursine_armor_helmet", UrsineArmorItem.Helmet::new);
+	public static final DeferredItem<Item> URSINE_ARMOR_CHESTPLATE = REGISTRY.register("ursine_armor_chestplate", UrsineArmorItem.Chestplate::new);
+	public static final DeferredItem<Item> URSINE_ARMOR_LEGGINGS = REGISTRY.register("ursine_armor_leggings", UrsineArmorItem.Leggings::new);
+	public static final DeferredItem<Item> URSINE_ARMOR_BOOTS = REGISTRY.register("ursine_armor_boots", UrsineArmorItem.Boots::new);
+	public static final DeferredItem<Item> VIPER_ARMOR_HELMET = REGISTRY.register("viper_armor_helmet", ViperArmorItem.Helmet::new);
+	public static final DeferredItem<Item> VIPER_ARMOR_CHESTPLATE = REGISTRY.register("viper_armor_chestplate", ViperArmorItem.Chestplate::new);
+	public static final DeferredItem<Item> VIPER_ARMOR_LEGGINGS = REGISTRY.register("viper_armor_leggings", ViperArmorItem.Leggings::new);
+	public static final DeferredItem<Item> VIPER_ARMOR_BOOTS = REGISTRY.register("viper_armor_boots", ViperArmorItem.Boots::new);
+	public static final DeferredItem<Item> MANTICORE_ARMOR_HELMET = REGISTRY.register("manticore_armor_helmet", ManticoreArmorItem.Helmet::new);
+	public static final DeferredItem<Item> MANTICORE_ARMOR_CHESTPLATE = REGISTRY.register("manticore_armor_chestplate", ManticoreArmorItem.Chestplate::new);
+	public static final DeferredItem<Item> MANTICORE_ARMOR_LEGGINGS = REGISTRY.register("manticore_armor_leggings", ManticoreArmorItem.Leggings::new);
+	public static final DeferredItem<Item> MANTICORE_ARMOR_BOOTS = REGISTRY.register("manticore_armor_boots", ManticoreArmorItem.Boots::new);
+	public static final DeferredItem<Item> GRIFFIN_ARMOR_HELMET = REGISTRY.register("griffin_armor_helmet", GriffinArmorItem.Helmet::new);
+	public static final DeferredItem<Item> GRIFFIN_ARMOR_CHESTPLATE = REGISTRY.register("griffin_armor_chestplate", GriffinArmorItem.Chestplate::new);
+	public static final DeferredItem<Item> GRIFFIN_ARMOR_LEGGINGS = REGISTRY.register("griffin_armor_leggings", GriffinArmorItem.Leggings::new);
+	public static final DeferredItem<Item> GRIFFIN_ARMOR_BOOTS = REGISTRY.register("griffin_armor_boots", GriffinArmorItem.Boots::new);
 	// Start of user code block custom items
 	// End of user code block custom items
 }

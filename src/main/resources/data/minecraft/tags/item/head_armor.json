@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "witchercraft:griffin_armor_helmet",
+    "witchercraft:manticore_armor_helmet",
+    "witchercraft:viper_armor_helmet",
+    "witchercraft:ursine_armor_helmet",
+    "witchercraft:wolven_armor_helmet",
+    "witchercraft:feline_armor_helmet"
+  ]
+}

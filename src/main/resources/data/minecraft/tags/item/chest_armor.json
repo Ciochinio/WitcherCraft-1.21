@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "witchercraft:griffin_armor_chestplate",
+    "witchercraft:manticore_armor_chestplate",
+    "witchercraft:viper_armor_chestplate",
+    "witchercraft:ursine_armor_chestplate",
+    "witchercraft:wolven_armor_chestplate",
+    "witchercraft:feline_armor_chestplate"
+  ]
+}

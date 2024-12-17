@@ -55,6 +55,30 @@ public class WitchercraftModTabs {
 				tabData.accept(WitchercraftModItems.RELICT_OIL.get());
 				tabData.accept(WitchercraftModItems.CURSED_OIL.get());
 				tabData.accept(WitchercraftModItems.GOLDEN_ORIOLE.get());
+				tabData.accept(WitchercraftModItems.FELINE_ARMOR_HELMET.get());
+				tabData.accept(WitchercraftModItems.FELINE_ARMOR_CHESTPLATE.get());
+				tabData.accept(WitchercraftModItems.FELINE_ARMOR_LEGGINGS.get());
+				tabData.accept(WitchercraftModItems.FELINE_ARMOR_BOOTS.get());
+				tabData.accept(WitchercraftModItems.WOLVEN_ARMOR_HELMET.get());
+				tabData.accept(WitchercraftModItems.WOLVEN_ARMOR_CHESTPLATE.get());
+				tabData.accept(WitchercraftModItems.WOLVEN_ARMOR_LEGGINGS.get());
+				tabData.accept(WitchercraftModItems.WOLVEN_ARMOR_BOOTS.get());
+				tabData.accept(WitchercraftModItems.URSINE_ARMOR_HELMET.get());
+				tabData.accept(WitchercraftModItems.URSINE_ARMOR_CHESTPLATE.get());
+				tabData.accept(WitchercraftModItems.URSINE_ARMOR_LEGGINGS.get());
+				tabData.accept(WitchercraftModItems.URSINE_ARMOR_BOOTS.get());
+				tabData.accept(WitchercraftModItems.VIPER_ARMOR_HELMET.get());
+				tabData.accept(WitchercraftModItems.VIPER_ARMOR_CHESTPLATE.get());
+				tabData.accept(WitchercraftModItems.VIPER_ARMOR_LEGGINGS.get());
+				tabData.accept(WitchercraftModItems.VIPER_ARMOR_BOOTS.get());
+				tabData.accept(WitchercraftModItems.MANTICORE_ARMOR_HELMET.get());
+				tabData.accept(WitchercraftModItems.MANTICORE_ARMOR_CHESTPLATE.get());
+				tabData.accept(WitchercraftModItems.MANTICORE_ARMOR_LEGGINGS.get());
+				tabData.accept(WitchercraftModItems.MANTICORE_ARMOR_BOOTS.get());
+				tabData.accept(WitchercraftModItems.GRIFFIN_ARMOR_HELMET.get());
+				tabData.accept(WitchercraftModItems.GRIFFIN_ARMOR_CHESTPLATE.get());
+				tabData.accept(WitchercraftModItems.GRIFFIN_ARMOR_LEGGINGS.get());
+				tabData.accept(WitchercraftModItems.GRIFFIN_ARMOR_BOOTS.get());
 			})
 
 					.build());

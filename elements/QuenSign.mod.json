@@ -1,0 +1,19 @@
+{
+  "_fv": 69,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Quen Sign",
+    "icon": "quen",
+    "color": {
+      "value": -1,
+      "falpha": 0.0
+    },
+    "isInstant": true,
+    "mobEffectCategory": "BENEFICIAL",
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": true,
+    "isCuredByMilk": true,
+    "isProtectedByTotem": true,
+    "isCuredbyHoney": false
+  }
+}

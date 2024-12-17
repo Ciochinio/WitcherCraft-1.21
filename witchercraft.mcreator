@@ -1866,6 +1866,523 @@
         ]
       },
       "path": "~/Character/Stats/VariableStats/PassiveStaminaRegeneration"
+    },
+    {
+      "name": "FelineArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "feline_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/witchercraft/models/item/feline_armor_leggings.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/FelineArmorItem.java",
+          "src/main/resources/assets/witchercraft/models/item/feline_armor_chestplate.json",
+          "src/main/resources/assets/witchercraft/models/item/feline_armor_helmet.json",
+          "src/main/resources/assets/witchercraft/models/item/feline_armor_boots.json"
+        ]
+      },
+      "path": "~/Armor/CatGear"
+    },
+    {
+      "name": "SchoolOfTheCat",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "school_of_the_cat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/SchoolOfTheCatMobEffect.java"
+        ]
+      },
+      "path": "~/Armor/CatGear"
+    },
+    {
+      "name": "FelineArmorEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "feline_armor_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/FelineArmorEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Armor/CatGear"
+    },
+    {
+      "name": "WolvenArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wolven_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/witchercraft/models/item/wolven_armor_chestplate.json",
+          "src/main/resources/assets/witchercraft/models/item/wolven_armor_boots.json",
+          "src/main/resources/assets/witchercraft/models/item/wolven_armor_leggings.json",
+          "src/main/resources/assets/witchercraft/models/item/wolven_armor_helmet.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/WolvenArmorItem.java"
+        ]
+      },
+      "path": "~/Armor/WolvenGear"
+    },
+    {
+      "name": "SchoolOfTheWolf",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "school_of_the_wolf",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/SchoolOfTheWolfMobEffect.java"
+        ]
+      },
+      "path": "~/Armor/WolvenGear"
+    },
+    {
+      "name": "WolvenArmorEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wolven_armor_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/WolvenArmorEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Armor/WolvenGear"
+    },
+    {
+      "name": "SchoolOfTheBear",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "school_of_the_bear",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/SchoolOfTheBearMobEffect.java"
+        ]
+      },
+      "path": "~/Armor/BearGear"
+    },
+    {
+      "name": "UrsineArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ursine_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/witchercraft/models/item/ursine_armor_boots.json",
+          "src/main/resources/assets/witchercraft/models/item/ursine_armor_chestplate.json",
+          "src/main/resources/assets/witchercraft/models/item/ursine_armor_leggings.json",
+          "src/main/resources/assets/witchercraft/models/item/ursine_armor_helmet.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/UrsineArmorItem.java"
+        ]
+      },
+      "path": "~/Armor/BearGear"
+    },
+    {
+      "name": "UrsineArmorEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ursine_armor_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/UrsineArmorEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Armor/BearGear"
+    },
+    {
+      "name": "SchoolOfTheViper",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "school_of_the_viper",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/SchoolOfTheViperMobEffect.java"
+        ]
+      },
+      "path": "~/Armor/ViperGear"
+    },
+    {
+      "name": "ViperArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "viper_armor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/item/ViperArmorItem.java",
+          "src/main/resources/assets/witchercraft/models/item/viper_armor_leggings.json",
+          "src/main/resources/assets/witchercraft/models/item/viper_armor_helmet.json",
+          "src/main/resources/assets/witchercraft/models/item/viper_armor_chestplate.json",
+          "src/main/resources/assets/witchercraft/models/item/viper_armor_boots.json"
+        ]
+      },
+      "path": "~/Armor/ViperGear"
+    },
+    {
+      "name": "ViperArmorEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "viper_armor_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/ViperArmorEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Armor/ViperGear"
+    },
+    {
+      "name": "SchoolOfTheManticore",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "school_of_the_manticore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/SchoolOfTheManticoreMobEffect.java"
+        ]
+      },
+      "path": "~/Armor/ManticoreGear"
+    },
+    {
+      "name": "ManticoreArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "manticore_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/witchercraft/models/item/manticore_armor_leggings.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/ManticoreArmorItem.java",
+          "src/main/resources/assets/witchercraft/models/item/manticore_armor_chestplate.json",
+          "src/main/resources/assets/witchercraft/models/item/manticore_armor_boots.json",
+          "src/main/resources/assets/witchercraft/models/item/manticore_armor_helmet.json"
+        ]
+      },
+      "path": "~/Armor/ManticoreGear"
+    },
+    {
+      "name": "ManticoreArmorEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "manticore_armor_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/ManticoreArmorEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Armor/ManticoreGear"
+    },
+    {
+      "name": "SchoolOfTheGriffin",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "school_of_the_griffin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/SchoolOfTheGriffinMobEffect.java"
+        ]
+      },
+      "path": "~/Armor/GriffinGear"
+    },
+    {
+      "name": "GriffinArmorEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "griffin_armor_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/GriffinArmorEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Armor/GriffinGear"
+    },
+    {
+      "name": "GriffinArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "griffin_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/witchercraft/models/item/griffin_armor_helmet.json",
+          "src/main/resources/assets/witchercraft/models/item/griffin_armor_boots.json",
+          "src/main/resources/assets/witchercraft/models/item/griffin_armor_leggings.json",
+          "src/main/resources/assets/witchercraft/models/item/griffin_armor_chestplate.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/GriffinArmorItem.java"
+        ]
+      },
+      "path": "~/Armor/GriffinGear"
+    },
+    {
+      "name": "SignGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sign_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/world/inventory/SignGuiMenu.java",
+          "src/main/java/net/redboltmedia/witchercraft/client/gui/SignGuiScreen.java",
+          "src/main/java/net/redboltmedia/witchercraft/network/SignGuiButtonMessage.java"
+        ]
+      },
+      "path": "~/Signs/SignMenu"
+    },
+    {
+      "name": "SignGuiKeyOpen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sign_gui_key_open",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/SignGuiKeyOpenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Signs/SignMenu"
+    },
+    {
+      "name": "SignGuiKeybind",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sign_gui_keybind",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/network/SignGuiKeybindMessage.java"
+        ]
+      },
+      "path": "~/Signs/SignMenu"
+    },
+    {
+      "name": "IgniSignChoose",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "igni_sign_choose",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/IgniSignChooseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Signs/Igni"
+    },
+    {
+      "name": "IgniSign",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "igni_sign",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/IgniSignMobEffect.java"
+        ]
+      },
+      "path": "~/Signs/Igni"
+    },
+    {
+      "name": "YrdenSign",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yrden_sign",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/YrdenSignMobEffect.java"
+        ]
+      },
+      "path": "~/Signs/Yrden"
+    },
+    {
+      "name": "YrdenSignChoose",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yrden_sign_choose",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/YrdenSignChooseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Signs/Yrden"
+    },
+    {
+      "name": "AxiiSign",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "axii_sign",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/AxiiSignMobEffect.java"
+        ]
+      },
+      "path": "~/Signs/Axii"
+    },
+    {
+      "name": "AxiiSignChoose",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "axii_sign_choose",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/AxiiSignChooseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Signs/Axii"
+    },
+    {
+      "name": "AardSign",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aard_sign",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/AardSignMobEffect.java"
+        ]
+      },
+      "path": "~/Signs/Aard"
+    },
+    {
+      "name": "AardSignChoose",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aard_sign_choose",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/AardSignChooseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Signs/Aard"
+    },
+    {
+      "name": "QuenSign",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quen_sign",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/QuenSignMobEffect.java"
+        ]
+      },
+      "path": "~/Signs/Quen"
+    },
+    {
+      "name": "QuenSignChoose",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quen_sign_choose",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/QuenSignChooseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Signs/Quen"
     }
   ],
   "variable_elements": [
@@ -1967,77 +2484,153 @@
     }
   ],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "ITEMS:minecraft:chest_armor": [
+      "~CUSTOM:GriffinArmor.body",
+      "~CUSTOM:ManticoreArmor.body",
+      "~CUSTOM:ViperArmor.body",
+      "~CUSTOM:UrsineArmor.body",
+      "~CUSTOM:WolvenArmor.body",
+      "~CUSTOM:FelineArmor.body"
+    ],
+    "ITEMS:minecraft:head_armor": [
+      "~CUSTOM:GriffinArmor.helmet",
+      "~CUSTOM:ManticoreArmor.helmet",
+      "~CUSTOM:ViperArmor.helmet",
+      "~CUSTOM:UrsineArmor.helmet",
+      "~CUSTOM:WolvenArmor.helmet",
+      "~CUSTOM:FelineArmor.helmet"
+    ],
+    "ITEMS:minecraft:foot_armor": [
+      "~CUSTOM:GriffinArmor.boots",
+      "~CUSTOM:ManticoreArmor.boots",
+      "~CUSTOM:ViperArmor.boots",
+      "~CUSTOM:UrsineArmor.boots",
+      "~CUSTOM:WolvenArmor.boots",
+      "~CUSTOM:FelineArmor.boots"
+    ],
+    "ITEMS:minecraft:leg_armor": [
+      "~CUSTOM:GriffinArmor.legs",
+      "~CUSTOM:ManticoreArmor.legs",
+      "~CUSTOM:ViperArmor.legs",
+      "~CUSTOM:UrsineArmor.legs",
+      "~CUSTOM:WolvenArmor.legs",
+      "~CUSTOM:FelineArmor.legs"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "item.witchercraft.gadwall": "Gadwall",
       "item.witchercraft.killer_whale": "Killer Whale",
-      "item.witchercraft.relict_oil": "Relict Oil",
-      "item.witchercraft.blizzard": "Blizzard",
       "item.witchercraft.beast_oil": "Beast Oil",
-      "gui.witchercraft.alchemy_gui.button_back": "Back",
-      "item.witchercraft.dimeritium_bomb": "Dimeritium Bomb",
+      "item.witchercraft.viper_armor_helmet": "Viper Armor Helmet",
       "item.witchercraft.rook": "Rook",
-      "gui.witchercraft.meditation_gui.button_sunrise": "Sunrise",
+      "effect.witchercraft.axii_sign": "Axii Sign",
       "item.witchercraft.white_raffards_decoction": "White Raffards Decoction",
-      "item.witchercraft.tawny_owl": "Tawny Owl",
-      "gui.witchercraft.character_gui.label_attack_speed": "Attack Speed",
       "item.witchercraft.rebis": "Rebis",
-      "item.witchercraft.quebrith": "Quebrith",
-      "effect.witchercraft.swallow_effect": "Swallow Effect",
-      "item.witchercraft.petris_philter": "Petris Philter",
       "gui.witchercraft.character_gui.label_crit_damage": "Crit Damage",
+      "item.witchercraft.wolven_armor_chestplate": "Wolven Armor Chestplate",
       "item.witchercraft.hanged_mans_venom": "Hanged Mans Venom",
+      "effect.witchercraft.quen_sign": "Quen Sign",
       "item_group.witchercraft.witcher_craft": "Witcher Craft",
-      "gui.witchercraft.glossary_menu_gui.button_back": "Back",
-      "gui.witchercraft.meditation_gui.button_sunset": "Sunset",
+      "effect.witchercraft.yrden_sign": "Yrden Sign",
+      "effect.witchercraft.igni_sign_ready": "Igni Ready",
+      "item.witchercraft.ursine_armor_helmet": "Ursine Armor Helmet",
       "item.witchercraft.necrophage_oil": "Necrophage Oil",
       "gui.witchercraft.character_gui.label_crit_chance": "Crit Chance",
       "effect.witchercraft.killer_whale_effect": "Killer Whale ",
       "item.witchercraft.devils_puffball": "Devils Puffball",
-      "item.witchercraft.dancing_star": "Dancing Star",
-      "effect.witchercraft.blizzard_effect": "Blizzard Effect",
+      "item.witchercraft.feline_armor_chestplate": "Feline Armor Chestplate",
       "item.witchercraft.cursed_oil": "Cursed Oil",
-      "item.witchercraft.vermilion": "Vermilion",
       "item.witchercraft.cat": "Cat",
       "key.witchercraft.pause_menu_keybind_press": "Pause Menu ",
       "gui.witchercraft.character_gui.label_health": "Health",
-      "effect.witchercraft.white_raffards_decoction_effect": "White Raffards Decoction",
-      "item.witchercraft.samum": "Samum",
       "effect.witchercraft.golden_oriole_effect": "Golden Oriole",
       "item.witchercraft.white_gull": "White Gull",
-      "gui.witchercraft.pause_menu_gui.button_alchemy": "Alchemy",
-      "item.witchercraft.tallow": "Tallow",
+      "effect.witchercraft.school_of_the_cat": "School Of The Cat",
       "effect.witchercraft.thunderbolt_effect": "Thunderbolt",
-      "item.witchercraft.northern_wind": "Northern Wind",
+      "item.witchercraft.tallow": "Tallow",
+      "effect.witchercraft.aard_sign": "Aard Sign",
       "effect.witchercraft.full_moon_effect": "Full Moon ",
-      "item.witchercraft.saletpeter": "Saletpeter",
-      "effect.witchercraft.tawny_owl_effect": "Tawny Owl",
+      "effect.witchercraft.school_of_the_bear": "School Of The Bear",
+      "item.witchercraft.feline_armor_helmet": "Feline Armor Helmet",
+      "gui.witchercraft.sign_gui.button_igni": "IGNI",
+      "item.witchercraft.wolven_armor_leggings": "Wolven Armor Leggings",
       "gui.witchercraft.character_gui.label_movement_speed": "Movement Speed:",
+      "item.witchercraft.ursine_armor_chestplate": "Ursine Armor Chestplate",
+      "effect.witchercraft.passive_stamina_regen": "Passive Stamina Regen",
+      "gui.witchercraft.sign_gui.button_yrden": "YRDEN",
+      "gui.witchercraft.meditation_gui.button_back": "Back",
+      "item.witchercraft.griffin_armor_chestplate": "Griffin Armor Chestplate",
+      "gui.witchercraft.pause_menu_gui.button_bestiary": "Bestiary",
+      "gui.witchercraft.pause_menu_gui.button_character": "Character",
+      "gui.witchercraft.sign_gui.label_sign_menu": "sign menu",
+      "gui.witchercraft.glossary_menu_gui.tooltip_cwel": "cwel",
+      "item.witchercraft.golden_oriole": "Golden Oriole",
+      "item.witchercraft.swallow": "Swallow",
+      "effect.witchercraft.school_of_the_griffin": "School Of The Griffin",
+      "effect.witchercraft.cat_effect": "Cat ",
+      "gui.witchercraft.sign_gui.button_aard": "AARD",
+      "item.witchercraft.gadwall": "Gadwall",
+      "item.witchercraft.viper_armor_boots": "Viper Armor Boots",
+      "item.witchercraft.manticore_armor_helmet": "Manticore Armor Helmet",
+      "item.witchercraft.relict_oil": "Relict Oil",
+      "item.witchercraft.blizzard": "Blizzard",
+      "item.witchercraft.dimeritium_bomb": "Dimeritium Bomb",
+      "gui.witchercraft.alchemy_gui.button_back": "Back",
+      "gui.witchercraft.meditation_gui.button_sunrise": "Sunrise",
+      "item.witchercraft.tawny_owl": "Tawny Owl",
+      "gui.witchercraft.character_gui.label_attack_speed": "Attack Speed",
+      "key.witchercraft.sign_gui_keybind": "Sign Gui Keybind",
+      "item.witchercraft.quebrith": "Quebrith",
+      "effect.witchercraft.swallow_effect": "Swallow Effect",
+      "item.witchercraft.petris_philter": "Petris Philter",
+      "item.witchercraft.manticore_armor_leggings": "Manticore Armor Leggings",
+      "gui.witchercraft.glossary_menu_gui.button_back": "Back",
+      "gui.witchercraft.meditation_gui.button_sunset": "Sunset",
+      "item.witchercraft.wolven_armor_boots": "Wolven Armor Boots",
+      "item.witchercraft.griffin_armor_boots": "Griffin Armor Boots",
+      "item.witchercraft.feline_armor_leggings": "Feline Armor Leggings",
+      "item.witchercraft.wolven_armor_helmet": "Wolven Armor Helmet",
+      "item.witchercraft.dancing_star": "Dancing Star",
+      "effect.witchercraft.blizzard_effect": "Blizzard Effect",
+      "item.witchercraft.viper_armor_chestplate": "Viper Armor Chestplate",
+      "item.witchercraft.vermilion": "Vermilion",
+      "effect.witchercraft.white_raffards_decoction_effect": "White Raffards Decoction",
+      "item.witchercraft.samum": "Samum",
+      "gui.witchercraft.sign_gui.button_axii": "AXII",
+      "item.witchercraft.feline_armor_boots": "Feline Armor Boots",
+      "item.witchercraft.manticore_armor_boots": "Manticore Armor Boots",
+      "gui.witchercraft.pause_menu_gui.button_alchemy": "Alchemy",
+      "item.witchercraft.ursine_armor_leggings": "Ursine Armor Leggings",
+      "item.witchercraft.northern_wind": "Northern Wind",
+      "item.witchercraft.ursine_armor_boots": "Ursine Armor Boots",
+      "item.witchercraft.griffin_armor_leggings": "Griffin Armor Leggings",
+      "item.witchercraft.saletpeter": "Saletpeter",
+      "item.witchercraft.viper_armor_leggings": "Viper Armor Leggings",
+      "item.witchercraft.manticore_armor_chestplate": "Manticore Armor Chestplate",
+      "effect.witchercraft.igni_sign": "Igni Sign",
+      "effect.witchercraft.school_of_the_viper": "School Of The Viper",
+      "effect.witchercraft.tawny_owl_effect": "Tawny Owl",
       "gui.witchercraft.meditation_gui.button_noon": "Noon",
       "item.witchercraft.draconid_oil": "Draconid Oil",
-      "effect.witchercraft.passive_stamina_regen": "Passive Stamina Regen",
-      "gui.witchercraft.meditation_gui.button_back": "Back",
+      "item.witchercraft.griffin_armor_helmet": "Griffin Armor Helmet",
       "effect.witchercraft.passive_health_regen": "Passive Health Regen",
-      "gui.witchercraft.pause_menu_gui.button_bestiary": "Bestiary",
       "item.witchercraft.vitriol": "Vitriol",
       "item.witchercraft.specter_oil": "Specter Oil",
       "item.witchercraft.white_honey": "White Honey",
-      "gui.witchercraft.pause_menu_gui.button_character": "Character",
       "item.witchercraft.ogroid_oil": "Ogroid Oil",
       "gui.witchercraft.character_gui.tooltip_123": "123",
       "gui.witchercraft.character_gui.button_back": "Back",
+      "gui.witchercraft.sign_gui.button_quen": "QUEN",
+      "effect.witchercraft.school_of_the_wolf": "School Of The Wolf",
       "item.witchercraft.thunderbolt": "Thunderbolt",
       "item.witchercraft.hydragenum": "Hydragenum",
-      "gui.witchercraft.glossary_menu_gui.tooltip_cwel": "cwel",
-      "gui.witchercraft.pause_menu_gui.button_meditation": "Meditation",
-      "item.witchercraft.swallow": "Swallow",
       "item.witchercraft.vampire_oil": "Vampire Oil",
-      "item.witchercraft.golden_oriole": "Golden Oriole",
+      "gui.witchercraft.pause_menu_gui.button_meditation": "Meditation",
       "gui.witchercraft.meditation_gui.button_midnight": "Midnight",
       "gui.witchercraft.pause_menu_gui.button_glossary": "Glossary",
-      "effect.witchercraft.cat_effect": "Cat ",
+      "effect.witchercraft.school_of_the_manticore": "School Of The Manticore",
       "item.witchercraft.full_moon": "Full Moon",
       "gui.witchercraft.bestiary_menu_gui.button_back": "Back",
       "item.witchercraft.insectoid_oil": "Insectoid Oil",
@@ -2191,7 +2784,32 @@
       },
       {
         "name": "Signs",
-        "children": []
+        "children": [
+          {
+            "name": "SignMenu",
+            "children": []
+          },
+          {
+            "name": "Igni",
+            "children": []
+          },
+          {
+            "name": "Yrden",
+            "children": []
+          },
+          {
+            "name": "Axii",
+            "children": []
+          },
+          {
+            "name": "Aard",
+            "children": []
+          },
+          {
+            "name": "Quen",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Weapons",
@@ -2199,7 +2817,32 @@
       },
       {
         "name": "Armor",
-        "children": []
+        "children": [
+          {
+            "name": "CatGear",
+            "children": []
+          },
+          {
+            "name": "WolvenGear",
+            "children": []
+          },
+          {
+            "name": "BearGear",
+            "children": []
+          },
+          {
+            "name": "ViperGear",
+            "children": []
+          },
+          {
+            "name": "ManticoreGear",
+            "children": []
+          },
+          {
+            "name": "GriffinGear",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Mobs",

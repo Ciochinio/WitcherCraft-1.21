@@ -4,6 +4,7 @@
  */
 package net.redboltmedia.witchercraft.init;
 
+import net.redboltmedia.witchercraft.client.gui.SignGuiScreen;
 import net.redboltmedia.witchercraft.client.gui.PauseMenuGUIScreen;
 import net.redboltmedia.witchercraft.client.gui.MeditationGuiScreen;
 import net.redboltmedia.witchercraft.client.gui.GlossaryMenuGuiScreen;
@@ -26,5 +27,6 @@ public class WitchercraftModScreens {
 		event.register(WitchercraftModMenus.GLOSSARY_MENU_GUI.get(), GlossaryMenuGuiScreen::new);
 		event.register(WitchercraftModMenus.BESTIARY_MENU_GUI.get(), BestiaryMenuGuiScreen::new);
 		event.register(WitchercraftModMenus.CHARACTER_GUI.get(), CharacterGuiScreen::new);
+		event.register(WitchercraftModMenus.SIGN_GUI.get(), SignGuiScreen::new);
 	}
 }
