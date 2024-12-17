@@ -74,7 +74,7 @@ public class WitchercraftModVariables {
 				clone.witchercraftBaseHealth = original.witchercraftBaseHealth;
 				clone.witchercraftBaseAttackSpeed = original.witchercraftBaseAttackSpeed;
 				clone.witchercraftPassiveHealthRegeneration = original.witchercraftPassiveHealthRegeneration;
-				clone.sumPassiveHealthRegeneration = original.sumPassiveHealthRegeneration;
+				clone.witchercraftBasePassiveHealthRegeneration = original.witchercraftBasePassiveHealthRegeneration;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -94,7 +94,7 @@ public class WitchercraftModVariables {
 		public double witchercraftBaseHealth = 0;
 		public double witchercraftBaseAttackSpeed = 0;
 		public double witchercraftPassiveHealthRegeneration = 0;
-		public double sumPassiveHealthRegeneration = 0;
+		public double witchercraftBasePassiveHealthRegeneration = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -112,7 +112,7 @@ public class WitchercraftModVariables {
 			nbt.putDouble("witchercraftBaseHealth", witchercraftBaseHealth);
 			nbt.putDouble("witchercraftBaseAttackSpeed", witchercraftBaseAttackSpeed);
 			nbt.putDouble("witchercraftPassiveHealthRegeneration", witchercraftPassiveHealthRegeneration);
-			nbt.putDouble("sumPassiveHealthRegeneration", sumPassiveHealthRegeneration);
+			nbt.putDouble("witchercraftBasePassiveHealthRegeneration", witchercraftBasePassiveHealthRegeneration);
 			return nbt;
 		}
 
@@ -131,7 +131,7 @@ public class WitchercraftModVariables {
 			witchercraftBaseHealth = nbt.getDouble("witchercraftBaseHealth");
 			witchercraftBaseAttackSpeed = nbt.getDouble("witchercraftBaseAttackSpeed");
 			witchercraftPassiveHealthRegeneration = nbt.getDouble("witchercraftPassiveHealthRegeneration");
-			sumPassiveHealthRegeneration = nbt.getDouble("sumPassiveHealthRegeneration");
+			witchercraftBasePassiveHealthRegeneration = nbt.getDouble("witchercraftBasePassiveHealthRegeneration");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

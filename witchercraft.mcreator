@@ -1880,7 +1880,7 @@
       "value": "0"
     },
     {
-      "name": "sumPassiveHealthRegeneration",
+      "name": "witchercraftBasePassiveHealthRegeneration",
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
