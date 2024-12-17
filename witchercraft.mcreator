@@ -1798,6 +1798,74 @@
         ]
       },
       "path": "~/Character/Stats/VariableStats/PassiveRegeneration"
+    },
+    {
+      "name": "TawnyOwlEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tawny_owl_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/TawnyOwlEffectMobEffect.java"
+        ]
+      },
+      "path": "~/Alchemy/Potions/TawnyOwl"
+    },
+    {
+      "name": "TawnyOwlUsed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tawny_owl_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/TawnyOwlUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Alchemy/Potions/TawnyOwl"
+    },
+    {
+      "name": "PassiveStaminaRegenStart",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "passive_stamina_regen_start",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/PassiveStaminaRegenStartProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Character/Stats/VariableStats/PassiveStaminaRegeneration"
+    },
+    {
+      "name": "PassiveStaminaRegen",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "passive_stamina_regen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/PassiveStaminaRegenMobEffect.java"
+        ]
+      },
+      "path": "~/Character/Stats/VariableStats/PassiveStaminaRegeneration"
     }
   ],
   "variable_elements": [
@@ -1884,6 +1952,18 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
+    },
+    {
+      "name": "witchercraftPassiveStaminaRegeneration",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "witchercraftBaseStaminaRegeneration",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -1892,10 +1972,10 @@
   "language_map": {
     "en_us": {
       "item.witchercraft.gadwall": "Gadwall",
-      "item.witchercraft.relict_oil": "Relict Oil",
       "item.witchercraft.killer_whale": "Killer Whale",
-      "item.witchercraft.beast_oil": "Beast Oil",
+      "item.witchercraft.relict_oil": "Relict Oil",
       "item.witchercraft.blizzard": "Blizzard",
+      "item.witchercraft.beast_oil": "Beast Oil",
       "gui.witchercraft.alchemy_gui.button_back": "Back",
       "item.witchercraft.dimeritium_bomb": "Dimeritium Bomb",
       "item.witchercraft.rook": "Rook",
@@ -1933,9 +2013,11 @@
       "item.witchercraft.northern_wind": "Northern Wind",
       "effect.witchercraft.full_moon_effect": "Full Moon ",
       "item.witchercraft.saletpeter": "Saletpeter",
+      "effect.witchercraft.tawny_owl_effect": "Tawny Owl",
       "gui.witchercraft.character_gui.label_movement_speed": "Movement Speed:",
       "gui.witchercraft.meditation_gui.button_noon": "Noon",
       "item.witchercraft.draconid_oil": "Draconid Oil",
+      "effect.witchercraft.passive_stamina_regen": "Passive Stamina Regen",
       "gui.witchercraft.meditation_gui.button_back": "Back",
       "effect.witchercraft.passive_health_regen": "Passive Health Regen",
       "gui.witchercraft.pause_menu_gui.button_bestiary": "Bestiary",
@@ -2182,6 +2264,10 @@
                   },
                   {
                     "name": "PassiveRegeneration",
+                    "children": []
+                  },
+                  {
+                    "name": "PassiveStaminaRegeneration",
                     "children": []
                   }
                 ]

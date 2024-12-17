@@ -4,10 +4,13 @@
  */
 package net.redboltmedia.witchercraft.init;
 
+import net.redboltmedia.witchercraft.procedures.PassiveStaminaRegenStartProcedure;
 import net.redboltmedia.witchercraft.procedures.PassiveHealthRegenStartProcedure;
 import net.redboltmedia.witchercraft.potion.WhiteRaffardsDecoctionEffectMobEffect;
 import net.redboltmedia.witchercraft.potion.ThunderboltEffectMobEffect;
+import net.redboltmedia.witchercraft.potion.TawnyOwlEffectMobEffect;
 import net.redboltmedia.witchercraft.potion.SwallowEffectMobEffect;
+import net.redboltmedia.witchercraft.potion.PassiveStaminaRegenMobEffect;
 import net.redboltmedia.witchercraft.potion.PassiveHealthRegenMobEffect;
 import net.redboltmedia.witchercraft.potion.KillerWhaleEffectMobEffect;
 import net.redboltmedia.witchercraft.potion.GoldenOrioleEffectMobEffect;
@@ -39,6 +42,8 @@ public class WitchercraftModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> KILLER_WHALE_EFFECT = REGISTRY.register("killer_whale_effect", () -> new KillerWhaleEffectMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> PASSIVE_HEALTH_REGEN = REGISTRY.register("passive_health_regen", () -> new PassiveHealthRegenMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> SWALLOW_EFFECT = REGISTRY.register("swallow_effect", () -> new SwallowEffectMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> TAWNY_OWL_EFFECT = REGISTRY.register("tawny_owl_effect", () -> new TawnyOwlEffectMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> PASSIVE_STAMINA_REGEN = REGISTRY.register("passive_stamina_regen", () -> new PassiveStaminaRegenMobEffect());
 
 	@SubscribeEvent
 	public static void onEffectRemoved(MobEffectEvent.Remove event) {
@@ -59,6 +64,8 @@ public class WitchercraftModMobEffects {
 	private static void expireEffects(Entity entity, MobEffectInstance effectInstance) {
 		if (effectInstance.getEffect().is(PASSIVE_HEALTH_REGEN)) {
 			PassiveHealthRegenStartProcedure.execute(entity.level(), entity);
+		} else if (effectInstance.getEffect().is(PASSIVE_STAMINA_REGEN)) {
+			PassiveStaminaRegenStartProcedure.execute(entity.level(), entity);
 		}
 	}
 }

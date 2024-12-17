@@ -25,5 +25,7 @@ public class WitchercraftPlayerStatsProcedure {
 			_player.displayClientMessage(Component.literal(("Crit Damage" + (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumCritDamage + "%"))), false);
 		if (entity instanceof Player _player && !_player.level().isClientSide())
 			_player.displayClientMessage(Component.literal(("Passive Health Regeneration" + (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftPassiveHealthRegeneration + "Hp/2s"))), false);
+		if (entity instanceof Player _player && !_player.level().isClientSide())
+			_player.displayClientMessage(Component.literal(("Passive Stamina Regeneration" + (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftPassiveStaminaRegeneration + "Stamina/2s"))), false);
 	}
 }

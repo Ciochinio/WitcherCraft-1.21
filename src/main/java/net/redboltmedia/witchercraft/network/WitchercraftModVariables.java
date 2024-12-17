@@ -75,6 +75,8 @@ public class WitchercraftModVariables {
 				clone.witchercraftBaseAttackSpeed = original.witchercraftBaseAttackSpeed;
 				clone.witchercraftPassiveHealthRegeneration = original.witchercraftPassiveHealthRegeneration;
 				clone.witchercraftBasePassiveHealthRegeneration = original.witchercraftBasePassiveHealthRegeneration;
+				clone.witchercraftPassiveStaminaRegeneration = original.witchercraftPassiveStaminaRegeneration;
+				clone.witchercraftBaseStaminaRegeneration = original.witchercraftBaseStaminaRegeneration;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -95,6 +97,8 @@ public class WitchercraftModVariables {
 		public double witchercraftBaseAttackSpeed = 0;
 		public double witchercraftPassiveHealthRegeneration = 0;
 		public double witchercraftBasePassiveHealthRegeneration = 0;
+		public double witchercraftPassiveStaminaRegeneration = 0;
+		public double witchercraftBaseStaminaRegeneration = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -113,6 +117,8 @@ public class WitchercraftModVariables {
 			nbt.putDouble("witchercraftBaseAttackSpeed", witchercraftBaseAttackSpeed);
 			nbt.putDouble("witchercraftPassiveHealthRegeneration", witchercraftPassiveHealthRegeneration);
 			nbt.putDouble("witchercraftBasePassiveHealthRegeneration", witchercraftBasePassiveHealthRegeneration);
+			nbt.putDouble("witchercraftPassiveStaminaRegeneration", witchercraftPassiveStaminaRegeneration);
+			nbt.putDouble("witchercraftBaseStaminaRegeneration", witchercraftBaseStaminaRegeneration);
 			return nbt;
 		}
 
@@ -132,6 +138,8 @@ public class WitchercraftModVariables {
 			witchercraftBaseAttackSpeed = nbt.getDouble("witchercraftBaseAttackSpeed");
 			witchercraftPassiveHealthRegeneration = nbt.getDouble("witchercraftPassiveHealthRegeneration");
 			witchercraftBasePassiveHealthRegeneration = nbt.getDouble("witchercraftBasePassiveHealthRegeneration");
+			witchercraftPassiveStaminaRegeneration = nbt.getDouble("witchercraftPassiveStaminaRegeneration");
+			witchercraftBaseStaminaRegeneration = nbt.getDouble("witchercraftBaseStaminaRegeneration");
 		}
 
 		public void syncPlayerVariables(Entity entity) {
