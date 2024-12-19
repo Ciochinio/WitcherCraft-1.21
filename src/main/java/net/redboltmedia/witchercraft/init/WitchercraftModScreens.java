@@ -11,6 +11,7 @@ import net.redboltmedia.witchercraft.client.gui.GlossaryMenuGuiScreen;
 import net.redboltmedia.witchercraft.client.gui.CharacterGuiScreen;
 import net.redboltmedia.witchercraft.client.gui.BestiaryMenuGuiScreen;
 import net.redboltmedia.witchercraft.client.gui.AlchemyGuiScreen;
+import net.redboltmedia.witchercraft.client.gui.AlchemyGuiPotionsScreen;
 
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -28,5 +29,6 @@ public class WitchercraftModScreens {
 		event.register(WitchercraftModMenus.BESTIARY_MENU_GUI.get(), BestiaryMenuGuiScreen::new);
 		event.register(WitchercraftModMenus.CHARACTER_GUI.get(), CharacterGuiScreen::new);
 		event.register(WitchercraftModMenus.SIGN_GUI.get(), SignGuiScreen::new);
+		event.register(WitchercraftModMenus.ALCHEMY_GUI_POTIONS.get(), AlchemyGuiPotionsScreen::new);
 	}
 }

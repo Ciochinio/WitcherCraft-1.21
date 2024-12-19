@@ -1,10 +1,9 @@
 
 package net.redboltmedia.witchercraft.network;
 
-import net.redboltmedia.witchercraft.world.inventory.AlchemyGuiMenu;
+import net.redboltmedia.witchercraft.world.inventory.AlchemyGuiPotionsMenu;
 import net.redboltmedia.witchercraft.procedures.PauseMenuGuiBackButtonProcedure;
 import net.redboltmedia.witchercraft.procedures.AlchemyMenuBrewButtonProcedure;
-import net.redboltmedia.witchercraft.procedures.AlchemyGuiPotionsOpenProcedure;
 import net.redboltmedia.witchercraft.WitchercraftMod;
 
 import net.neoforged.neoforge.network.handling.IPayloadContext;
@@ -25,21 +24,21 @@ import net.minecraft.core.BlockPos;
 import java.util.HashMap;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
-public record AlchemyGuiButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
+public record AlchemyGuiPotionsButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
 
-	public static final Type<AlchemyGuiButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(WitchercraftMod.MODID, "alchemy_gui_buttons"));
-	public static final StreamCodec<RegistryFriendlyByteBuf, AlchemyGuiButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, AlchemyGuiButtonMessage message) -> {
+	public static final Type<AlchemyGuiPotionsButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(WitchercraftMod.MODID, "alchemy_gui_potions_buttons"));
+	public static final StreamCodec<RegistryFriendlyByteBuf, AlchemyGuiPotionsButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, AlchemyGuiPotionsButtonMessage message) -> {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);
 		buffer.writeInt(message.y);
 		buffer.writeInt(message.z);
-	}, (RegistryFriendlyByteBuf buffer) -> new AlchemyGuiButtonMessage(buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt()));
+	}, (RegistryFriendlyByteBuf buffer) -> new AlchemyGuiPotionsButtonMessage(buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt()));
 	@Override
-	public Type<AlchemyGuiButtonMessage> type() {
+	public Type<AlchemyGuiPotionsButtonMessage> type() {
 		return TYPE;
 	}
 
-	public static void handleData(final AlchemyGuiButtonMessage message, final IPayloadContext context) {
+	public static void handleData(final AlchemyGuiPotionsButtonMessage message, final IPayloadContext context) {
 		if (context.flow() == PacketFlow.SERVERBOUND) {
 			context.enqueueWork(() -> {
 				Player entity = context.player();
@@ -57,7 +56,7 @@ public record AlchemyGuiButtonMessage(int buttonID, int x, int y, int z) impleme
 
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
 		Level world = entity.level();
-		HashMap guistate = AlchemyGuiMenu.guistate;
+		HashMap guistate = AlchemyGuiPotionsMenu.guistate;
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
@@ -69,14 +68,10 @@ public record AlchemyGuiButtonMessage(int buttonID, int x, int y, int z) impleme
 
 			PauseMenuGuiBackButtonProcedure.execute(world, x, y, z, entity);
 		}
-		if (buttonID == 2) {
-
-			AlchemyGuiPotionsOpenProcedure.execute(world, x, y, z, entity);
-		}
 	}
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		WitchercraftMod.addNetworkMessage(AlchemyGuiButtonMessage.TYPE, AlchemyGuiButtonMessage.STREAM_CODEC, AlchemyGuiButtonMessage::handleData);
+		WitchercraftMod.addNetworkMessage(AlchemyGuiPotionsButtonMessage.TYPE, AlchemyGuiPotionsButtonMessage.STREAM_CODEC, AlchemyGuiPotionsButtonMessage::handleData);
 	}
 }

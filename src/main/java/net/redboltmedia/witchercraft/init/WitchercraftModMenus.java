@@ -10,6 +10,7 @@ import net.redboltmedia.witchercraft.world.inventory.MeditationGuiMenu;
 import net.redboltmedia.witchercraft.world.inventory.GlossaryMenuGuiMenu;
 import net.redboltmedia.witchercraft.world.inventory.CharacterGuiMenu;
 import net.redboltmedia.witchercraft.world.inventory.BestiaryMenuGuiMenu;
+import net.redboltmedia.witchercraft.world.inventory.AlchemyGuiPotionsMenu;
 import net.redboltmedia.witchercraft.world.inventory.AlchemyGuiMenu;
 import net.redboltmedia.witchercraft.WitchercraftMod;
 
@@ -29,4 +30,5 @@ public class WitchercraftModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<BestiaryMenuGuiMenu>> BESTIARY_MENU_GUI = REGISTRY.register("bestiary_menu_gui", () -> IMenuTypeExtension.create(BestiaryMenuGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<CharacterGuiMenu>> CHARACTER_GUI = REGISTRY.register("character_gui", () -> IMenuTypeExtension.create(CharacterGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<SignGuiMenu>> SIGN_GUI = REGISTRY.register("sign_gui", () -> IMenuTypeExtension.create(SignGuiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<AlchemyGuiPotionsMenu>> ALCHEMY_GUI_POTIONS = REGISTRY.register("alchemy_gui_potions", () -> IMenuTypeExtension.create(AlchemyGuiPotionsMenu::new));
 }

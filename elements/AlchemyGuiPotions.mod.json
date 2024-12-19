@@ -179,42 +179,27 @@
         }
       },
       {
-        "type": "button",
+        "type": "outputslot",
         "data": {
-          "name": "button_potions",
-          "text": "Potions",
-          "isUndecorated": false,
-          "onClick": {
-            "name": "AlchemyGuiPotionsOpen"
+          "id": 8,
+          "disablePickup": {
+            "fixedValue": true
           },
-          "width": 61,
-          "height": 20,
-          "x": 34,
+          "dropItemsWhenNotBound": false,
+          "x": 16,
           "y": 49
         }
       },
       {
-        "type": "button",
+        "type": "outputslot",
         "data": {
-          "name": "button_bombs",
-          "text": " Bombs ",
-          "isUndecorated": false,
-          "width": 61,
-          "height": 20,
+          "id": 9,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": true,
           "x": 34,
-          "y": 85
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "name": "button_oils",
-          "text": " Oils  ",
-          "isUndecorated": false,
-          "width": 61,
-          "height": 20,
-          "x": 34,
-          "y": 67
+          "y": 49
         }
       }
     ],
