@@ -1,0 +1,12 @@
+{
+  "_fv": 69,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "R",
+    "keyBindingName": "Sign Cast Keybind",
+    "keyBindingCategoryKey": "witchercraft",
+    "onKeyPressed": {
+      "name": "SignCast"
+    }
+  }
+}

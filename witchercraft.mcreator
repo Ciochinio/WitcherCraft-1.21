@@ -2383,6 +2383,133 @@
         ]
       },
       "path": "~/Signs/Quen"
+    },
+    {
+      "name": "SignCastKeybind",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sign_cast_keybind",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/network/SignCastKeybindMessage.java"
+        ]
+      },
+      "path": "~/Signs/SignCast"
+    },
+    {
+      "name": "SignCast",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sign_cast",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/SignCastProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Signs/SignCast"
+    },
+    {
+      "name": "IgniCast",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "igni_cast",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/IgniCastProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Signs/Igni"
+    },
+    {
+      "name": "YrdenCast",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yrden_cast",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/YrdenCastProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Signs/Yrden"
+    },
+    {
+      "name": "AxiiCast",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "axii_cast",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/AxiiCastProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Signs/Axii"
+    },
+    {
+      "name": "QuenCast",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quen_cast",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/QuenCastProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Signs/Quen"
+    },
+    {
+      "name": "AardCast",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aard_cast",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/AardCastProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Signs/Aard"
     }
   ],
   "variable_elements": [
@@ -2540,6 +2667,7 @@
       "gui.witchercraft.character_gui.label_crit_chance": "Crit Chance",
       "effect.witchercraft.killer_whale_effect": "Killer Whale ",
       "item.witchercraft.devils_puffball": "Devils Puffball",
+      "key.witchercraft.sign_cast_keybind": "Sign Cast Keybind",
       "item.witchercraft.feline_armor_chestplate": "Feline Armor Chestplate",
       "item.witchercraft.cursed_oil": "Cursed Oil",
       "item.witchercraft.cat": "Cat",
@@ -2547,9 +2675,9 @@
       "gui.witchercraft.character_gui.label_health": "Health",
       "effect.witchercraft.golden_oriole_effect": "Golden Oriole",
       "item.witchercraft.white_gull": "White Gull",
-      "effect.witchercraft.school_of_the_cat": "School Of The Cat",
-      "effect.witchercraft.thunderbolt_effect": "Thunderbolt",
       "item.witchercraft.tallow": "Tallow",
+      "effect.witchercraft.thunderbolt_effect": "Thunderbolt",
+      "effect.witchercraft.school_of_the_cat": "School Of The Cat",
       "effect.witchercraft.aard_sign": "Aard Sign",
       "effect.witchercraft.full_moon_effect": "Full Moon ",
       "effect.witchercraft.school_of_the_bear": "School Of The Bear",
@@ -2559,8 +2687,8 @@
       "gui.witchercraft.character_gui.label_movement_speed": "Movement Speed:",
       "item.witchercraft.ursine_armor_chestplate": "Ursine Armor Chestplate",
       "effect.witchercraft.passive_stamina_regen": "Passive Stamina Regen",
-      "gui.witchercraft.sign_gui.button_yrden": "YRDEN",
       "gui.witchercraft.meditation_gui.button_back": "Back",
+      "gui.witchercraft.sign_gui.button_yrden": "YRDEN",
       "item.witchercraft.griffin_armor_chestplate": "Griffin Armor Chestplate",
       "gui.witchercraft.pause_menu_gui.button_bestiary": "Bestiary",
       "gui.witchercraft.pause_menu_gui.button_character": "Character",
@@ -2790,6 +2918,10 @@
             "children": []
           },
           {
+            "name": "SignCast",
+            "children": []
+          },
+          {
             "name": "Igni",
             "children": []
           },
@@ -2802,11 +2934,11 @@
             "children": []
           },
           {
-            "name": "Aard",
+            "name": "Quen",
             "children": []
           },
           {
-            "name": "Quen",
+            "name": "Aard",
             "children": []
           }
         ]

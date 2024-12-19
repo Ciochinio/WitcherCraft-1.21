@@ -7,6 +7,7 @@ package net.redboltmedia.witchercraft.init;
 import org.lwjgl.glfw.GLFW;
 
 import net.redboltmedia.witchercraft.network.SignGuiKeybindMessage;
+import net.redboltmedia.witchercraft.network.SignCastKeybindMessage;
 import net.redboltmedia.witchercraft.network.PauseMenuKeybindPressMessage;
 
 import net.neoforged.neoforge.network.PacketDistributor;
@@ -47,11 +48,25 @@ public class WitchercraftModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping SIGN_CAST_KEYBIND = new KeyMapping("key.witchercraft.sign_cast_keybind", GLFW.GLFW_KEY_R, "key.categories.witchercraft") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				PacketDistributor.sendToServer(new SignCastKeybindMessage(0, 0));
+				SignCastKeybindMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(PAUSE_MENU_KEYBIND_PRESS);
 		event.register(SIGN_GUI_KEYBIND);
+		event.register(SIGN_CAST_KEYBIND);
 	}
 
 	@EventBusSubscriber({Dist.CLIENT})
@@ -61,6 +76,7 @@ public class WitchercraftModKeyMappings {
 			if (Minecraft.getInstance().screen == null) {
 				PAUSE_MENU_KEYBIND_PRESS.consumeClick();
 				SIGN_GUI_KEYBIND.consumeClick();
+				SIGN_CAST_KEYBIND.consumeClick();
 			}
 		}
 	}
