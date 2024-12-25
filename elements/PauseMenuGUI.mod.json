@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 73,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -22,7 +22,8 @@
           "width": 77,
           "height": 20,
           "x": 342,
-          "y": 134
+          "y": 134,
+          "locked": false
         }
       },
       {
@@ -36,8 +37,9 @@
           },
           "width": 77,
           "height": 20,
-          "x": 259,
-          "y": 134
+          "x": 177,
+          "y": 188,
+          "locked": false
         }
       },
       {
@@ -52,7 +54,8 @@
           "width": 76,
           "height": 20,
           "x": 177,
-          "y": 134
+          "y": 134,
+          "locked": false
         }
       },
       {
@@ -67,7 +70,8 @@
           "width": 77,
           "height": 20,
           "x": 12,
-          "y": 134
+          "y": 134,
+          "locked": false
         }
       },
       {
@@ -82,7 +86,24 @@
           "width": 77,
           "height": 20,
           "x": 94,
-          "y": 134
+          "y": 134,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_skill_tree",
+          "text": "Skill Tree",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SkillTreeCombatGuiOpen"
+          },
+          "width": 77,
+          "height": 20,
+          "x": 259,
+          "y": 134,
+          "locked": false
         }
       }
     ],
