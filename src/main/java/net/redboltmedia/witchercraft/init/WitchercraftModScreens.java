@@ -4,6 +4,9 @@
  */
 package net.redboltmedia.witchercraft.init;
 
+import net.redboltmedia.witchercraft.client.gui.SkillTreeSignsGuiScreen;
+import net.redboltmedia.witchercraft.client.gui.SkillTreeCombatGuiScreen;
+import net.redboltmedia.witchercraft.client.gui.SkillTreeAlchemyGuiScreen;
 import net.redboltmedia.witchercraft.client.gui.SignGuiScreen;
 import net.redboltmedia.witchercraft.client.gui.PauseMenuGUIScreen;
 import net.redboltmedia.witchercraft.client.gui.MeditationGuiScreen;
@@ -30,5 +33,8 @@ public class WitchercraftModScreens {
 		event.register(WitchercraftModMenus.CHARACTER_GUI.get(), CharacterGuiScreen::new);
 		event.register(WitchercraftModMenus.SIGN_GUI.get(), SignGuiScreen::new);
 		event.register(WitchercraftModMenus.ALCHEMY_GUI_POTIONS.get(), AlchemyGuiPotionsScreen::new);
+		event.register(WitchercraftModMenus.SKILL_TREE_COMBAT_GUI.get(), SkillTreeCombatGuiScreen::new);
+		event.register(WitchercraftModMenus.SKILL_TREE_ALCHEMY_GUI.get(), SkillTreeAlchemyGuiScreen::new);
+		event.register(WitchercraftModMenus.SKILL_TREE_SIGNS_GUI.get(), SkillTreeSignsGuiScreen::new);
 	}
 }

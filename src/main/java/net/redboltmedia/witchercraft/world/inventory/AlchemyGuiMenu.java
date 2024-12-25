@@ -85,44 +85,59 @@ public class AlchemyGuiMenu extends AbstractContainerMenu implements Supplier<Ma
 			}
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 26, 31) {
+			private final int slot = 0;
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 17, 13) {
+			private final int slot = 1;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return WitchercraftModItems.VERMILION.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 35, 13) {
+			private final int slot = 2;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return WitchercraftModItems.REBIS.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 8, 31) {
+			private final int slot = 3;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return WitchercraftModItems.VITRIOL.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 44, 31) {
+			private final int slot = 4;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return WitchercraftModItems.QUEBRITH.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 17, 49) {
+			private final int slot = 5;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return WitchercraftModItems.AETHER.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 35, 49) {
+			private final int slot = 6;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return WitchercraftModItems.HYDRAGENUM.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 143, 31) {
+			private final int slot = 7;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;

@@ -79,7 +79,5 @@ public class WitchercraftModTabs {
 				tabData.accept(WitchercraftModItems.GRIFFIN_ARMOR_CHESTPLATE.get());
 				tabData.accept(WitchercraftModItems.GRIFFIN_ARMOR_LEGGINGS.get());
 				tabData.accept(WitchercraftModItems.GRIFFIN_ARMOR_BOOTS.get());
-			})
-
-					.build());
+			}).build());
 }

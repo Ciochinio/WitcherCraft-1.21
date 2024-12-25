@@ -27,6 +27,7 @@ public class PauseMenuGUIScreen extends AbstractContainerScreen<PauseMenuGUIMenu
 	Button button_alchemy;
 	Button button_glossary;
 	Button button_bestiary;
+	Button button_skill_tree;
 
 	public PauseMenuGUIScreen(PauseMenuGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -88,7 +89,7 @@ public class PauseMenuGUIScreen extends AbstractContainerScreen<PauseMenuGUIMenu
 				PacketDistributor.sendToServer(new PauseMenuGUIButtonMessage(1, x, y, z));
 				PauseMenuGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}).bounds(this.leftPos + 133, this.topPos + 97, 77, 20).build();
+		}).bounds(this.leftPos + 51, this.topPos + 151, 77, 20).build();
 		guistate.put("button:button_character", button_character);
 		this.addRenderableWidget(button_character);
 		button_alchemy = Button.builder(Component.translatable("gui.witchercraft.pause_menu_gui.button_alchemy"), e -> {
@@ -115,5 +116,13 @@ public class PauseMenuGUIScreen extends AbstractContainerScreen<PauseMenuGUIMenu
 		}).bounds(this.leftPos + -32, this.topPos + 97, 77, 20).build();
 		guistate.put("button:button_bestiary", button_bestiary);
 		this.addRenderableWidget(button_bestiary);
+		button_skill_tree = Button.builder(Component.translatable("gui.witchercraft.pause_menu_gui.button_skill_tree"), e -> {
+			if (true) {
+				PacketDistributor.sendToServer(new PauseMenuGUIButtonMessage(5, x, y, z));
+				PauseMenuGUIButtonMessage.handleButtonAction(entity, 5, x, y, z);
+			}
+		}).bounds(this.leftPos + 133, this.topPos + 97, 77, 20).build();
+		guistate.put("button:button_skill_tree", button_skill_tree);
+		this.addRenderableWidget(button_skill_tree);
 	}
 }

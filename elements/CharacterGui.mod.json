@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 73,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -22,7 +22,8 @@
           "width": 46,
           "height": 20,
           "x": 375,
-          "y": 206
+          "y": 206,
+          "locked": false
         }
       },
       {
@@ -38,7 +39,8 @@
             "falpha": 0.0
           },
           "x": 213,
-          "y": 53
+          "y": 53,
+          "locked": false
         }
       },
       {
@@ -53,7 +55,8 @@
             "falpha": 0.0
           },
           "x": 132,
-          "y": 53
+          "y": 53,
+          "locked": false
         }
       },
       {
@@ -68,7 +71,8 @@
             "falpha": 0.0
           },
           "x": 132,
-          "y": 62
+          "y": 62,
+          "locked": false
         }
       },
       {
@@ -84,7 +88,8 @@
             "falpha": 0.0
           },
           "x": 213,
-          "y": 62
+          "y": 62,
+          "locked": false
         }
       },
       {
@@ -99,7 +104,8 @@
             "falpha": 0.0
           },
           "x": 132,
-          "y": 71
+          "y": 71,
+          "locked": false
         }
       },
       {
@@ -115,7 +121,8 @@
             "falpha": 0.0
           },
           "x": 213,
-          "y": 71
+          "y": 71,
+          "locked": false
         }
       },
       {
@@ -130,7 +137,8 @@
             "falpha": 0.0
           },
           "x": 132,
-          "y": 80
+          "y": 80,
+          "locked": false
         }
       },
       {
@@ -146,7 +154,8 @@
             "falpha": 0.0
           },
           "x": 213,
-          "y": 80
+          "y": 80,
+          "locked": false
         }
       },
       {
@@ -159,7 +168,8 @@
           "rotationX": 0,
           "followMouseMovement": true,
           "x": 51,
-          "y": 98
+          "y": 98,
+          "locked": false
         }
       },
       {
@@ -174,7 +184,8 @@
             "falpha": 0.0
           },
           "x": 132,
-          "y": 89
+          "y": 89,
+          "locked": false
         }
       },
       {
@@ -190,7 +201,8 @@
             "falpha": 0.0
           },
           "x": 213,
-          "y": 89
+          "y": 89,
+          "locked": false
         }
       }
     ],
