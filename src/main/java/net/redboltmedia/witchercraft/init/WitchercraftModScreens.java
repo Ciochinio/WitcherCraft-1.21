@@ -4,14 +4,15 @@
  */
 package net.redboltmedia.witchercraft.init;
 
-import net.redboltmedia.witchercraft.client.gui.SkillTreeSignsGuiScreen;
-import net.redboltmedia.witchercraft.client.gui.SkillTreeCombatGuiScreen;
-import net.redboltmedia.witchercraft.client.gui.SkillTreeAlchemyGuiScreen;
 import net.redboltmedia.witchercraft.client.gui.SignGuiScreen;
 import net.redboltmedia.witchercraft.client.gui.PauseMenuGUIScreen;
 import net.redboltmedia.witchercraft.client.gui.MeditationGuiScreen;
 import net.redboltmedia.witchercraft.client.gui.GlossaryMenuGuiScreen;
+import net.redboltmedia.witchercraft.client.gui.CharactersAbilietesGeneralGuiScreen;
 import net.redboltmedia.witchercraft.client.gui.CharacterGuiScreen;
+import net.redboltmedia.witchercraft.client.gui.CharacterAbilitiesSignsGuiScreen;
+import net.redboltmedia.witchercraft.client.gui.CharacterAbilitiesCombatGuiScreen;
+import net.redboltmedia.witchercraft.client.gui.CharacterAbilitiesAlchemyGuiScreen;
 import net.redboltmedia.witchercraft.client.gui.BestiaryMenuGuiScreen;
 import net.redboltmedia.witchercraft.client.gui.AlchemyGuiScreen;
 import net.redboltmedia.witchercraft.client.gui.AlchemyGuiPotionsScreen;
@@ -33,8 +34,9 @@ public class WitchercraftModScreens {
 		event.register(WitchercraftModMenus.CHARACTER_GUI.get(), CharacterGuiScreen::new);
 		event.register(WitchercraftModMenus.SIGN_GUI.get(), SignGuiScreen::new);
 		event.register(WitchercraftModMenus.ALCHEMY_GUI_POTIONS.get(), AlchemyGuiPotionsScreen::new);
-		event.register(WitchercraftModMenus.SKILL_TREE_COMBAT_GUI.get(), SkillTreeCombatGuiScreen::new);
-		event.register(WitchercraftModMenus.SKILL_TREE_ALCHEMY_GUI.get(), SkillTreeAlchemyGuiScreen::new);
-		event.register(WitchercraftModMenus.SKILL_TREE_SIGNS_GUI.get(), SkillTreeSignsGuiScreen::new);
+		event.register(WitchercraftModMenus.CHARACTERS_ABILIETES_GENERAL_GUI.get(), CharactersAbilietesGeneralGuiScreen::new);
+		event.register(WitchercraftModMenus.CHARACTER_ABILITIES_COMBAT_GUI.get(), CharacterAbilitiesCombatGuiScreen::new);
+		event.register(WitchercraftModMenus.CHARACTER_ABILITIES_ALCHEMY_GUI.get(), CharacterAbilitiesAlchemyGuiScreen::new);
+		event.register(WitchercraftModMenus.CHARACTER_ABILITIES_SIGNS_GUI.get(), CharacterAbilitiesSignsGuiScreen::new);
 	}
 }

@@ -2,9 +2,9 @@
 package net.redboltmedia.witchercraft.network;
 
 import net.redboltmedia.witchercraft.world.inventory.PauseMenuGUIMenu;
-import net.redboltmedia.witchercraft.procedures.SkillTreeCombatGuiOpenProcedure;
 import net.redboltmedia.witchercraft.procedures.MeditationGuiOpenProcedure;
 import net.redboltmedia.witchercraft.procedures.GlossaryMenuGuiOpenProcedure;
+import net.redboltmedia.witchercraft.procedures.CharaterAbilitesGeneralGuiOpenProcedure;
 import net.redboltmedia.witchercraft.procedures.CharacterGuiOpenProcedure;
 import net.redboltmedia.witchercraft.procedures.BestiaryMenuGuiOpenProcedure;
 import net.redboltmedia.witchercraft.procedures.AlchemyGuiOpenProcedure;
@@ -86,7 +86,7 @@ public record PauseMenuGUIButtonMessage(int buttonID, int x, int y, int z) imple
 		}
 		if (buttonID == 5) {
 
-			SkillTreeCombatGuiOpenProcedure.execute(world, x, y, z, entity);
+			CharaterAbilitesGeneralGuiOpenProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

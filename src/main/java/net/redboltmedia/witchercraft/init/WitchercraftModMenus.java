@@ -4,14 +4,15 @@
  */
 package net.redboltmedia.witchercraft.init;
 
-import net.redboltmedia.witchercraft.world.inventory.SkillTreeSignsGuiMenu;
-import net.redboltmedia.witchercraft.world.inventory.SkillTreeCombatGuiMenu;
-import net.redboltmedia.witchercraft.world.inventory.SkillTreeAlchemyGuiMenu;
 import net.redboltmedia.witchercraft.world.inventory.SignGuiMenu;
 import net.redboltmedia.witchercraft.world.inventory.PauseMenuGUIMenu;
 import net.redboltmedia.witchercraft.world.inventory.MeditationGuiMenu;
 import net.redboltmedia.witchercraft.world.inventory.GlossaryMenuGuiMenu;
+import net.redboltmedia.witchercraft.world.inventory.CharactersAbilietesGeneralGuiMenu;
 import net.redboltmedia.witchercraft.world.inventory.CharacterGuiMenu;
+import net.redboltmedia.witchercraft.world.inventory.CharacterAbilitiesSignsGuiMenu;
+import net.redboltmedia.witchercraft.world.inventory.CharacterAbilitiesCombatGuiMenu;
+import net.redboltmedia.witchercraft.world.inventory.CharacterAbilitiesAlchemyGuiMenu;
 import net.redboltmedia.witchercraft.world.inventory.BestiaryMenuGuiMenu;
 import net.redboltmedia.witchercraft.world.inventory.AlchemyGuiPotionsMenu;
 import net.redboltmedia.witchercraft.world.inventory.AlchemyGuiMenu;
@@ -34,7 +35,11 @@ public class WitchercraftModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<CharacterGuiMenu>> CHARACTER_GUI = REGISTRY.register("character_gui", () -> IMenuTypeExtension.create(CharacterGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<SignGuiMenu>> SIGN_GUI = REGISTRY.register("sign_gui", () -> IMenuTypeExtension.create(SignGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<AlchemyGuiPotionsMenu>> ALCHEMY_GUI_POTIONS = REGISTRY.register("alchemy_gui_potions", () -> IMenuTypeExtension.create(AlchemyGuiPotionsMenu::new));
-	public static final DeferredHolder<MenuType<?>, MenuType<SkillTreeCombatGuiMenu>> SKILL_TREE_COMBAT_GUI = REGISTRY.register("skill_tree_combat_gui", () -> IMenuTypeExtension.create(SkillTreeCombatGuiMenu::new));
-	public static final DeferredHolder<MenuType<?>, MenuType<SkillTreeAlchemyGuiMenu>> SKILL_TREE_ALCHEMY_GUI = REGISTRY.register("skill_tree_alchemy_gui", () -> IMenuTypeExtension.create(SkillTreeAlchemyGuiMenu::new));
-	public static final DeferredHolder<MenuType<?>, MenuType<SkillTreeSignsGuiMenu>> SKILL_TREE_SIGNS_GUI = REGISTRY.register("skill_tree_signs_gui", () -> IMenuTypeExtension.create(SkillTreeSignsGuiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<CharactersAbilietesGeneralGuiMenu>> CHARACTERS_ABILIETES_GENERAL_GUI = REGISTRY.register("characters_abilietes_general_gui",
+			() -> IMenuTypeExtension.create(CharactersAbilietesGeneralGuiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<CharacterAbilitiesCombatGuiMenu>> CHARACTER_ABILITIES_COMBAT_GUI = REGISTRY.register("character_abilities_combat_gui",
+			() -> IMenuTypeExtension.create(CharacterAbilitiesCombatGuiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<CharacterAbilitiesAlchemyGuiMenu>> CHARACTER_ABILITIES_ALCHEMY_GUI = REGISTRY.register("character_abilities_alchemy_gui",
+			() -> IMenuTypeExtension.create(CharacterAbilitiesAlchemyGuiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<CharacterAbilitiesSignsGuiMenu>> CHARACTER_ABILITIES_SIGNS_GUI = REGISTRY.register("character_abilities_signs_gui", () -> IMenuTypeExtension.create(CharacterAbilitiesSignsGuiMenu::new));
 }
