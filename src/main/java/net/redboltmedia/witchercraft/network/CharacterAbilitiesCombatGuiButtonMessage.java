@@ -1,0 +1,167 @@
+
+package net.redboltmedia.witchercraft.network;
+
+import net.redboltmedia.witchercraft.world.inventory.CharacterAbilitiesCombatGuiMenu;
+import net.redboltmedia.witchercraft.procedures.UndyingEffectProcedure;
+import net.redboltmedia.witchercraft.procedures.SunderArmorEffectProcedure;
+import net.redboltmedia.witchercraft.procedures.StrengthTrainingEffectProcedure;
+import net.redboltmedia.witchercraft.procedures.RazorFocusEffectProcedure;
+import net.redboltmedia.witchercraft.procedures.PreciseBlowsEffectProcedure;
+import net.redboltmedia.witchercraft.procedures.PauseMenuGuiOpenProcedure;
+import net.redboltmedia.witchercraft.procedures.MuscleMemoryEffectProcedure;
+import net.redboltmedia.witchercraft.procedures.FlooodOfAngerEffecProcedure;
+import net.redboltmedia.witchercraft.procedures.FleetFootedEffectProcedure;
+import net.redboltmedia.witchercraft.procedures.DefenceEffectProcedure;
+import net.redboltmedia.witchercraft.procedures.DeadlyPresicionEffectProcedure;
+import net.redboltmedia.witchercraft.procedures.CrushingBlowsEffectProcedure;
+import net.redboltmedia.witchercraft.procedures.CrippllingStrikesEffectProcedure;
+import net.redboltmedia.witchercraft.procedures.CripplingShotProcedure;
+import net.redboltmedia.witchercraft.procedures.ColdBloodEffectProcedure;
+import net.redboltmedia.witchercraft.procedures.CharaterAbilitesGeneralGuiOpenProcedure;
+import net.redboltmedia.witchercraft.procedures.CharacterAbilitiesSignsGuiOpenProcedure;
+import net.redboltmedia.witchercraft.procedures.CharacterAbilitiesCombatGuiOpenProcedure;
+import net.redboltmedia.witchercraft.procedures.CharacterAbilitiesAlchemyGuiOpenProcedure;
+import net.redboltmedia.witchercraft.procedures.AnatomicalKnowledgeEffectProcedure;
+import net.redboltmedia.witchercraft.WitchercraftMod;
+
+import net.neoforged.neoforge.network.handling.IPayloadContext;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
+import net.minecraft.network.protocol.PacketFlow;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.core.BlockPos;
+
+import java.util.HashMap;
+
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+public record CharacterAbilitiesCombatGuiButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
+
+	public static final Type<CharacterAbilitiesCombatGuiButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(WitchercraftMod.MODID, "character_abilities_combat_gui_buttons"));
+	public static final StreamCodec<RegistryFriendlyByteBuf, CharacterAbilitiesCombatGuiButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, CharacterAbilitiesCombatGuiButtonMessage message) -> {
+		buffer.writeInt(message.buttonID);
+		buffer.writeInt(message.x);
+		buffer.writeInt(message.y);
+		buffer.writeInt(message.z);
+	}, (RegistryFriendlyByteBuf buffer) -> new CharacterAbilitiesCombatGuiButtonMessage(buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt()));
+	@Override
+	public Type<CharacterAbilitiesCombatGuiButtonMessage> type() {
+		return TYPE;
+	}
+
+	public static void handleData(final CharacterAbilitiesCombatGuiButtonMessage message, final IPayloadContext context) {
+		if (context.flow() == PacketFlow.SERVERBOUND) {
+			context.enqueueWork(() -> {
+				Player entity = context.player();
+				int buttonID = message.buttonID;
+				int x = message.x;
+				int y = message.y;
+				int z = message.z;
+				handleButtonAction(entity, buttonID, x, y, z);
+			}).exceptionally(e -> {
+				context.connection().disconnect(Component.literal(e.getMessage()));
+				return null;
+			});
+		}
+	}
+
+	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
+		Level world = entity.level();
+		HashMap guistate = CharacterAbilitiesCombatGuiMenu.guistate;
+		// security measure to prevent arbitrary chunk generation
+		if (!world.hasChunkAt(new BlockPos(x, y, z)))
+			return;
+		if (buttonID == 0) {
+
+			PauseMenuGuiOpenProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 1) {
+
+			CharaterAbilitesGeneralGuiOpenProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 2) {
+
+			CharacterAbilitiesCombatGuiOpenProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 3) {
+
+			CharacterAbilitiesAlchemyGuiOpenProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 4) {
+
+			CharacterAbilitiesSignsGuiOpenProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 5) {
+
+			MuscleMemoryEffectProcedure.execute(entity);
+		}
+		if (buttonID == 6) {
+
+			PreciseBlowsEffectProcedure.execute(entity);
+		}
+		if (buttonID == 7) {
+
+			CrippllingStrikesEffectProcedure.execute(entity);
+		}
+		if (buttonID == 8) {
+
+			StrengthTrainingEffectProcedure.execute(entity);
+		}
+		if (buttonID == 9) {
+
+			CrushingBlowsEffectProcedure.execute(entity);
+		}
+		if (buttonID == 10) {
+
+			SunderArmorEffectProcedure.execute(entity);
+		}
+		if (buttonID == 11) {
+
+			FleetFootedEffectProcedure.execute(entity);
+		}
+		if (buttonID == 12) {
+
+			DefenceEffectProcedure.execute(entity);
+		}
+		if (buttonID == 13) {
+
+			DeadlyPresicionEffectProcedure.execute(entity);
+		}
+		if (buttonID == 14) {
+
+			ColdBloodEffectProcedure.execute(entity);
+		}
+		if (buttonID == 15) {
+
+			AnatomicalKnowledgeEffectProcedure.execute(entity);
+		}
+		if (buttonID == 16) {
+
+			CripplingShotProcedure.execute(entity);
+		}
+		if (buttonID == 17) {
+
+			FlooodOfAngerEffecProcedure.execute(entity);
+		}
+		if (buttonID == 18) {
+
+			RazorFocusEffectProcedure.execute(entity);
+		}
+		if (buttonID == 19) {
+
+			UndyingEffectProcedure.execute(entity);
+		}
+	}
+
+	@SubscribeEvent
+	public static void registerMessage(FMLCommonSetupEvent event) {
+		WitchercraftMod.addNetworkMessage(CharacterAbilitiesCombatGuiButtonMessage.TYPE, CharacterAbilitiesCombatGuiButtonMessage.STREAM_CODEC, CharacterAbilitiesCombatGuiButtonMessage::handleData);
+	}
+}

@@ -22,8 +22,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/redboltmedia/witchercraft/client/gui/PauseMenuGUIScreen.java",
-          "src/main/java/net/redboltmedia/witchercraft/world/inventory/PauseMenuGUIMenu.java",
-          "src/main/java/net/redboltmedia/witchercraft/network/PauseMenuGUIButtonMessage.java"
+          "src/main/java/net/redboltmedia/witchercraft/network/PauseMenuGUIButtonMessage.java",
+          "src/main/java/net/redboltmedia/witchercraft/world/inventory/PauseMenuGUIMenu.java"
         ]
       },
       "path": "~/Pause Menu "
@@ -37,8 +37,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/redboltmedia/witchercraft/client/gui/MeditationGuiScreen.java",
-          "src/main/java/net/redboltmedia/witchercraft/world/inventory/MeditationGuiMenu.java",
-          "src/main/java/net/redboltmedia/witchercraft/network/MeditationGuiButtonMessage.java"
+          "src/main/java/net/redboltmedia/witchercraft/network/MeditationGuiButtonMessage.java",
+          "src/main/java/net/redboltmedia/witchercraft/world/inventory/MeditationGuiMenu.java"
         ]
       },
       "path": "~/Meditation"
@@ -197,9 +197,9 @@
       "registry_name": "alchemy_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/network/AlchemyGuiButtonMessage.java",
           "src/main/java/net/redboltmedia/witchercraft/client/gui/AlchemyGuiScreen.java",
-          "src/main/java/net/redboltmedia/witchercraft/world/inventory/AlchemyGuiMenu.java"
+          "src/main/java/net/redboltmedia/witchercraft/world/inventory/AlchemyGuiMenu.java",
+          "src/main/java/net/redboltmedia/witchercraft/network/AlchemyGuiButtonMessage.java"
         ]
       },
       "path": "~/Alchemy/AlchemyMenu"
@@ -405,8 +405,8 @@
       "registry_name": "cat",
       "metadata": {
         "files": [
-          "src/main/resources/assets/witchercraft/models/item/cat.json",
-          "src/main/java/net/redboltmedia/witchercraft/item/CatItem.java"
+          "src/main/java/net/redboltmedia/witchercraft/item/CatItem.java",
+          "src/main/resources/assets/witchercraft/models/item/cat.json"
         ]
       },
       "path": "~/Alchemy/Potions/Cat"
@@ -433,8 +433,8 @@
       "registry_name": "full_moon",
       "metadata": {
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/item/FullMoonItem.java",
-          "src/main/resources/assets/witchercraft/models/item/full_moon.json"
+          "src/main/resources/assets/witchercraft/models/item/full_moon.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/FullMoonItem.java"
         ]
       },
       "path": "~/Alchemy/Potions/FullMoon"
@@ -447,8 +447,8 @@
       "registry_name": "thunderbolt",
       "metadata": {
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/item/ThunderboltItem.java",
-          "src/main/resources/assets/witchercraft/models/item/thunderbolt.json"
+          "src/main/resources/assets/witchercraft/models/item/thunderbolt.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/ThunderboltItem.java"
         ]
       },
       "path": "~/Alchemy/Potions/Thunderbolt"
@@ -489,8 +489,8 @@
       "registry_name": "gadwall",
       "metadata": {
         "files": [
-          "src/main/resources/assets/witchercraft/models/item/gadwall.json",
-          "src/main/java/net/redboltmedia/witchercraft/item/GadwallItem.java"
+          "src/main/java/net/redboltmedia/witchercraft/item/GadwallItem.java",
+          "src/main/resources/assets/witchercraft/models/item/gadwall.json"
         ]
       },
       "path": "~/Alchemy/Potions/Gadwall"
@@ -517,8 +517,8 @@
       "registry_name": "killer_whale",
       "metadata": {
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/item/KillerWhaleItem.java",
-          "src/main/resources/assets/witchercraft/models/item/killer_whale.json"
+          "src/main/resources/assets/witchercraft/models/item/killer_whale.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/KillerWhaleItem.java"
         ]
       },
       "path": "~/Alchemy/Potions/KillerWhale"
@@ -531,8 +531,8 @@
       "registry_name": "petris_philter",
       "metadata": {
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/item/PetrisPhilterItem.java",
-          "src/main/resources/assets/witchercraft/models/item/petris_philter.json"
+          "src/main/resources/assets/witchercraft/models/item/petris_philter.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/PetrisPhilterItem.java"
         ]
       },
       "path": "~/Alchemy/Potions/PetrisPhilter"
@@ -559,8 +559,8 @@
       "registry_name": "dancing_star",
       "metadata": {
         "files": [
-          "src/main/resources/assets/witchercraft/models/item/dancing_star.json",
-          "src/main/java/net/redboltmedia/witchercraft/item/DancingStarItem.java"
+          "src/main/java/net/redboltmedia/witchercraft/item/DancingStarItem.java",
+          "src/main/resources/assets/witchercraft/models/item/dancing_star.json"
         ]
       },
       "path": "~/Alchemy/Bombs/DancingStar"
@@ -573,8 +573,8 @@
       "registry_name": "grapeshot",
       "metadata": {
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/item/GrapeshotItem.java",
-          "src/main/resources/assets/witchercraft/models/item/grapeshot.json"
+          "src/main/resources/assets/witchercraft/models/item/grapeshot.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/GrapeshotItem.java"
         ]
       },
       "path": "~/Alchemy/Bombs/Grapeshot"
@@ -587,8 +587,8 @@
       "registry_name": "northern_wind",
       "metadata": {
         "files": [
-          "src/main/resources/assets/witchercraft/models/item/northern_wind.json",
-          "src/main/java/net/redboltmedia/witchercraft/item/NorthernWindItem.java"
+          "src/main/java/net/redboltmedia/witchercraft/item/NorthernWindItem.java",
+          "src/main/resources/assets/witchercraft/models/item/northern_wind.json"
         ]
       },
       "path": "~/Alchemy/Bombs/NorthernWind"
@@ -601,8 +601,8 @@
       "registry_name": "samum",
       "metadata": {
         "files": [
-          "src/main/resources/assets/witchercraft/models/item/samum.json",
-          "src/main/java/net/redboltmedia/witchercraft/item/SamumItem.java"
+          "src/main/java/net/redboltmedia/witchercraft/item/SamumItem.java",
+          "src/main/resources/assets/witchercraft/models/item/samum.json"
         ]
       },
       "path": "~/Alchemy/Bombs/Samum"
@@ -629,8 +629,8 @@
       "registry_name": "insectoid_oil",
       "metadata": {
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/item/InsectoidOilItem.java",
-          "src/main/resources/assets/witchercraft/models/item/insectoid_oil.json"
+          "src/main/resources/assets/witchercraft/models/item/insectoid_oil.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/InsectoidOilItem.java"
         ]
       },
       "path": "~/Alchemy/Oils/InsectoidOil"
@@ -643,8 +643,8 @@
       "registry_name": "necrophage_oil",
       "metadata": {
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/item/NecrophageOilItem.java",
-          "src/main/resources/assets/witchercraft/models/item/necrophage_oil.json"
+          "src/main/resources/assets/witchercraft/models/item/necrophage_oil.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/NecrophageOilItem.java"
         ]
       },
       "path": "~/Alchemy/Oils/NecrophageOil"
@@ -657,8 +657,8 @@
       "registry_name": "hanged_mans_venom",
       "metadata": {
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/item/HangedMansVenomItem.java",
-          "src/main/resources/assets/witchercraft/models/item/hanged_mans_venom.json"
+          "src/main/resources/assets/witchercraft/models/item/hanged_mans_venom.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/HangedMansVenomItem.java"
         ]
       },
       "path": "~/Alchemy/Oils/HangedMansVenom"
@@ -751,8 +751,8 @@
       "registry_name": "hydragenum",
       "metadata": {
         "files": [
-          "src/main/resources/assets/witchercraft/models/item/hydragenum.json",
-          "src/main/java/net/redboltmedia/witchercraft/item/HydragenumItem.java"
+          "src/main/java/net/redboltmedia/witchercraft/item/HydragenumItem.java",
+          "src/main/resources/assets/witchercraft/models/item/hydragenum.json"
         ]
       },
       "path": "~/Items"
@@ -765,8 +765,8 @@
       "registry_name": "quebrith",
       "metadata": {
         "files": [
-          "src/main/resources/assets/witchercraft/models/item/quebrith.json",
-          "src/main/java/net/redboltmedia/witchercraft/item/QuebrithItem.java"
+          "src/main/java/net/redboltmedia/witchercraft/item/QuebrithItem.java",
+          "src/main/resources/assets/witchercraft/models/item/quebrith.json"
         ]
       },
       "path": "~/Items"
@@ -779,8 +779,8 @@
       "registry_name": "rebis",
       "metadata": {
         "files": [
-          "src/main/resources/assets/witchercraft/models/item/rebis.json",
-          "src/main/java/net/redboltmedia/witchercraft/item/RebisItem.java"
+          "src/main/java/net/redboltmedia/witchercraft/item/RebisItem.java",
+          "src/main/resources/assets/witchercraft/models/item/rebis.json"
         ]
       },
       "path": "~/Items"
@@ -793,8 +793,8 @@
       "registry_name": "vermilion",
       "metadata": {
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/item/VermilionItem.java",
-          "src/main/resources/assets/witchercraft/models/item/vermilion.json"
+          "src/main/resources/assets/witchercraft/models/item/vermilion.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/VermilionItem.java"
         ]
       },
       "path": "~/Items"
@@ -849,8 +849,8 @@
       "registry_name": "tallow",
       "metadata": {
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/item/TallowItem.java",
-          "src/main/resources/assets/witchercraft/models/item/tallow.json"
+          "src/main/resources/assets/witchercraft/models/item/tallow.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/TallowItem.java"
         ]
       },
       "path": "~/Items"
@@ -863,8 +863,8 @@
       "registry_name": "relict_oil",
       "metadata": {
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/item/RelictOilItem.java",
-          "src/main/resources/assets/witchercraft/models/item/relict_oil.json"
+          "src/main/resources/assets/witchercraft/models/item/relict_oil.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/RelictOilItem.java"
         ]
       },
       "path": "~/Alchemy/Oils/RelictOil"
@@ -905,9 +905,9 @@
       "registry_name": "glossary_menu_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/network/GlossaryMenuGuiButtonMessage.java",
+          "src/main/java/net/redboltmedia/witchercraft/world/inventory/GlossaryMenuGuiMenu.java",
           "src/main/java/net/redboltmedia/witchercraft/client/gui/GlossaryMenuGuiScreen.java",
-          "src/main/java/net/redboltmedia/witchercraft/world/inventory/GlossaryMenuGuiMenu.java"
+          "src/main/java/net/redboltmedia/witchercraft/network/GlossaryMenuGuiButtonMessage.java"
         ]
       },
       "path": "~/Glossary"
@@ -956,8 +956,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/redboltmedia/witchercraft/client/gui/BestiaryMenuGuiScreen.java",
-          "src/main/java/net/redboltmedia/witchercraft/world/inventory/BestiaryMenuGuiMenu.java",
-          "src/main/java/net/redboltmedia/witchercraft/network/BestiaryMenuGuiButtonMessage.java"
+          "src/main/java/net/redboltmedia/witchercraft/network/BestiaryMenuGuiButtonMessage.java",
+          "src/main/java/net/redboltmedia/witchercraft/world/inventory/BestiaryMenuGuiMenu.java"
         ]
       },
       "path": "~/Bestiary"
@@ -1037,8 +1037,8 @@
       "registry_name": "golden_oriole",
       "metadata": {
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/item/GoldenOrioleItem.java",
-          "src/main/resources/assets/witchercraft/models/item/golden_oriole.json"
+          "src/main/resources/assets/witchercraft/models/item/golden_oriole.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/GoldenOrioleItem.java"
         ]
       },
       "path": "~/Alchemy/Potions/GoldenOriole"
@@ -1159,9 +1159,9 @@
       "registry_name": "character_gui",
       "metadata": {
         "files": [
+          "src/main/java/net/redboltmedia/witchercraft/client/gui/CharacterGuiScreen.java",
           "src/main/java/net/redboltmedia/witchercraft/network/CharacterGuiButtonMessage.java",
-          "src/main/java/net/redboltmedia/witchercraft/world/inventory/CharacterGuiMenu.java",
-          "src/main/java/net/redboltmedia/witchercraft/client/gui/CharacterGuiScreen.java"
+          "src/main/java/net/redboltmedia/witchercraft/world/inventory/CharacterGuiMenu.java"
         ]
       },
       "path": "~/Character Stats/Stats/Gui"
@@ -1875,11 +1875,11 @@
       "registry_name": "feline_armor",
       "metadata": {
         "files": [
-          "src/main/resources/assets/witchercraft/models/item/feline_armor_boots.json",
           "src/main/resources/assets/witchercraft/models/item/feline_armor_leggings.json",
-          "src/main/resources/assets/witchercraft/models/item/feline_armor_helmet.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/FelineArmorItem.java",
           "src/main/resources/assets/witchercraft/models/item/feline_armor_chestplate.json",
-          "src/main/java/net/redboltmedia/witchercraft/item/FelineArmorItem.java"
+          "src/main/resources/assets/witchercraft/models/item/feline_armor_helmet.json",
+          "src/main/resources/assets/witchercraft/models/item/feline_armor_boots.json"
         ]
       },
       "path": "~/Armor/CatGear"
@@ -1924,11 +1924,11 @@
       "registry_name": "wolven_armor",
       "metadata": {
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/item/WolvenArmorItem.java",
+          "src/main/resources/assets/witchercraft/models/item/wolven_armor_chestplate.json",
+          "src/main/resources/assets/witchercraft/models/item/wolven_armor_boots.json",
           "src/main/resources/assets/witchercraft/models/item/wolven_armor_leggings.json",
           "src/main/resources/assets/witchercraft/models/item/wolven_armor_helmet.json",
-          "src/main/resources/assets/witchercraft/models/item/wolven_armor_chestplate.json",
-          "src/main/resources/assets/witchercraft/models/item/wolven_armor_boots.json"
+          "src/main/java/net/redboltmedia/witchercraft/item/WolvenArmorItem.java"
         ]
       },
       "path": "~/Armor/WolvenGear"
@@ -1986,11 +1986,11 @@
       "registry_name": "ursine_armor",
       "metadata": {
         "files": [
-          "src/main/resources/assets/witchercraft/models/item/ursine_armor_leggings.json",
-          "src/main/java/net/redboltmedia/witchercraft/item/UrsineArmorItem.java",
-          "src/main/resources/assets/witchercraft/models/item/ursine_armor_chestplate.json",
           "src/main/resources/assets/witchercraft/models/item/ursine_armor_boots.json",
-          "src/main/resources/assets/witchercraft/models/item/ursine_armor_helmet.json"
+          "src/main/resources/assets/witchercraft/models/item/ursine_armor_chestplate.json",
+          "src/main/resources/assets/witchercraft/models/item/ursine_armor_leggings.json",
+          "src/main/resources/assets/witchercraft/models/item/ursine_armor_helmet.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/UrsineArmorItem.java"
         ]
       },
       "path": "~/Armor/BearGear"
@@ -2036,10 +2036,10 @@
       "metadata": {
         "files": [
           "src/main/java/net/redboltmedia/witchercraft/item/ViperArmorItem.java",
-          "src/main/resources/assets/witchercraft/models/item/viper_armor_chestplate.json",
-          "src/main/resources/assets/witchercraft/models/item/viper_armor_boots.json",
           "src/main/resources/assets/witchercraft/models/item/viper_armor_leggings.json",
-          "src/main/resources/assets/witchercraft/models/item/viper_armor_helmet.json"
+          "src/main/resources/assets/witchercraft/models/item/viper_armor_helmet.json",
+          "src/main/resources/assets/witchercraft/models/item/viper_armor_chestplate.json",
+          "src/main/resources/assets/witchercraft/models/item/viper_armor_boots.json"
         ]
       },
       "path": "~/Armor/ViperGear"
@@ -2084,11 +2084,11 @@
       "registry_name": "manticore_armor",
       "metadata": {
         "files": [
-          "src/main/resources/assets/witchercraft/models/item/manticore_armor_boots.json",
-          "src/main/resources/assets/witchercraft/models/item/manticore_armor_helmet.json",
-          "src/main/resources/assets/witchercraft/models/item/manticore_armor_chestplate.json",
+          "src/main/resources/assets/witchercraft/models/item/manticore_armor_leggings.json",
           "src/main/java/net/redboltmedia/witchercraft/item/ManticoreArmorItem.java",
-          "src/main/resources/assets/witchercraft/models/item/manticore_armor_leggings.json"
+          "src/main/resources/assets/witchercraft/models/item/manticore_armor_chestplate.json",
+          "src/main/resources/assets/witchercraft/models/item/manticore_armor_boots.json",
+          "src/main/resources/assets/witchercraft/models/item/manticore_armor_helmet.json"
         ]
       },
       "path": "~/Armor/ManticoreGear"
@@ -2152,11 +2152,11 @@
       "registry_name": "griffin_armor",
       "metadata": {
         "files": [
-          "src/main/resources/assets/witchercraft/models/item/griffin_armor_chestplate.json",
-          "src/main/resources/assets/witchercraft/models/item/griffin_armor_leggings.json",
           "src/main/resources/assets/witchercraft/models/item/griffin_armor_helmet.json",
-          "src/main/java/net/redboltmedia/witchercraft/item/GriffinArmorItem.java",
-          "src/main/resources/assets/witchercraft/models/item/griffin_armor_boots.json"
+          "src/main/resources/assets/witchercraft/models/item/griffin_armor_boots.json",
+          "src/main/resources/assets/witchercraft/models/item/griffin_armor_leggings.json",
+          "src/main/resources/assets/witchercraft/models/item/griffin_armor_chestplate.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/GriffinArmorItem.java"
         ]
       },
       "path": "~/Armor/GriffinGear"
@@ -2169,9 +2169,9 @@
       "registry_name": "sign_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/network/SignGuiButtonMessage.java",
+          "src/main/java/net/redboltmedia/witchercraft/world/inventory/SignGuiMenu.java",
           "src/main/java/net/redboltmedia/witchercraft/client/gui/SignGuiScreen.java",
-          "src/main/java/net/redboltmedia/witchercraft/world/inventory/SignGuiMenu.java"
+          "src/main/java/net/redboltmedia/witchercraft/network/SignGuiButtonMessage.java"
         ]
       },
       "path": "~/Signs/SignMenu"
@@ -2574,57 +2574,14 @@
       "path": "~/Alchemy/AlchemyMenu"
     },
     {
-      "name": "SkillTreeCombatGui",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "skill_tree_combat_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/redboltmedia/witchercraft/world/inventory/SkillTreeCombatGuiMenu.java",
-          "src/main/java/net/redboltmedia/witchercraft/client/gui/SkillTreeCombatGuiScreen.java",
-          "src/main/java/net/redboltmedia/witchercraft/network/SkillTreeCombatGuiButtonMessage.java"
-        ]
-      },
-      "path": "~/Character Abilities"
-    },
-    {
-      "name": "SkillTreeAlchemyGui",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "skill_tree_alchemy_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/redboltmedia/witchercraft/world/inventory/SkillTreeAlchemyGuiMenu.java",
-          "src/main/java/net/redboltmedia/witchercraft/client/gui/SkillTreeAlchemyGuiScreen.java"
-        ]
-      },
-      "path": "~/Character Abilities"
-    },
-    {
-      "name": "SkillTreeSignsGui",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "skill_tree_signs_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/redboltmedia/witchercraft/client/gui/SkillTreeSignsGuiScreen.java",
-          "src/main/java/net/redboltmedia/witchercraft/world/inventory/SkillTreeSignsGuiMenu.java"
-        ]
-      },
-      "path": "~/Character Abilities"
-    },
-    {
-      "name": "SkillTreeCombatGuiOpen",
+      "name": "CharaterAbilitesGeneralGuiOpen",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "skill_tree_combat_gui_open",
+      "registry_name": "charater_abilites_general_gui_open",
       "metadata": {
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/procedures/SkillTreeCombatGuiOpenProcedure.java"
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharaterAbilitesGeneralGuiOpenProcedure.java"
         ],
         "dependencies": [
           {
@@ -2649,7 +2606,1970 @@
           }
         ]
       },
-      "path": "~/Character Abilities"
+      "path": "~/Character Abilities/General"
+    },
+    {
+      "name": "CharactersAbilietesGeneralGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "characters_abilietes_general_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/client/gui/CharactersAbilietesGeneralGuiScreen.java",
+          "src/main/java/net/redboltmedia/witchercraft/world/inventory/CharactersAbilietesGeneralGuiMenu.java",
+          "src/main/java/net/redboltmedia/witchercraft/network/CharactersAbilietesGeneralGuiButtonMessage.java"
+        ]
+      },
+      "path": "~/Character Abilities/General"
+    },
+    {
+      "name": "GoumentEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goument_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/GoumentEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/General/GOURMET"
+    },
+    {
+      "name": "SurvivalInsinctEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "survival_insinct_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/SurvivalInsinctEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/General/SURVIVAL INSINCT"
+    },
+    {
+      "name": "Gourment",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gourment",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/witchercraft/advancement/gourment.json"
+        ]
+      },
+      "path": "~/Character Abilities/General/GOURMET"
+    },
+    {
+      "name": "DevClear",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dev_clear",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/DevClearProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DevTool",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dev_tool",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/command/DevToolCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "GourmentShowIcon",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gourment_show_icon",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/GourmentShowIconProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/General/GOURMET"
+    },
+    {
+      "name": "SurvivalInstinctShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "survival_instinct_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/SurvivalInstinctShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/General/SURVIVAL INSINCT"
+    },
+    {
+      "name": "SunAndStarsEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sun_and_stars_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/SunAndStarsEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/General/SUN AND STARS"
+    },
+    {
+      "name": "CatSchoolEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cat_school_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CatSchoolEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/General/CAT SCHOOL TECHNIQUES"
+    },
+    {
+      "name": "GriffinSchoolEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "griffin_school_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/GriffinSchoolEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/General/GRIFFIN SCHOOL TECHNIQUES"
+    },
+    {
+      "name": "BearSchoolEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bear_school_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/BearSchoolEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/General/BEAR SCHOOL TECHNIQUES"
+    },
+    {
+      "name": "BearSchoolShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bear_school_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/BearSchoolShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/General/BEAR SCHOOL TECHNIQUES"
+    },
+    {
+      "name": "GriffinSchoolShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "griffin_school_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/GriffinSchoolShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/General/GRIFFIN SCHOOL TECHNIQUES"
+    },
+    {
+      "name": "CatSchoolShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cat_school_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CatSchoolShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/General/CAT SCHOOL TECHNIQUES"
+    },
+    {
+      "name": "SunAndStarsShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sun_and_stars_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/SunAndStarsShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/General/SUN AND STARS"
+    },
+    {
+      "name": "CharacterAbilitiesCombatGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_abilities_combat_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/world/inventory/CharacterAbilitiesCombatGuiMenu.java",
+          "src/main/java/net/redboltmedia/witchercraft/client/gui/CharacterAbilitiesCombatGuiScreen.java",
+          "src/main/java/net/redboltmedia/witchercraft/network/CharacterAbilitiesCombatGuiButtonMessage.java"
+        ]
+      },
+      "path": "~/Character Abilities/Combat"
+    },
+    {
+      "name": "CharacterAbilitiesCombatGuiOpen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_abilities_combat_gui_open",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitiesCombatGuiOpenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Combat"
+    },
+    {
+      "name": "CharacterAbilitiesAlchemyGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_abilities_alchemy_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/network/CharacterAbilitiesAlchemyGuiButtonMessage.java",
+          "src/main/java/net/redboltmedia/witchercraft/world/inventory/CharacterAbilitiesAlchemyGuiMenu.java",
+          "src/main/java/net/redboltmedia/witchercraft/client/gui/CharacterAbilitiesAlchemyGuiScreen.java"
+        ]
+      },
+      "path": "~/Character Abilities/Alchemy"
+    },
+    {
+      "name": "CharacterAbilitiesAlchemyGuiOpen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_abilities_alchemy_gui_open",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitiesAlchemyGuiOpenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Alchemy"
+    },
+    {
+      "name": "CharacterAbilitiesSignsGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_abilities_signs_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/world/inventory/CharacterAbilitiesSignsGuiMenu.java",
+          "src/main/java/net/redboltmedia/witchercraft/network/CharacterAbilitiesSignsGuiButtonMessage.java",
+          "src/main/java/net/redboltmedia/witchercraft/client/gui/CharacterAbilitiesSignsGuiScreen.java"
+        ]
+      },
+      "path": "~/Character Abilities/Signs"
+    },
+    {
+      "name": "CharacterAbilitiesSignsGuiOpen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_abilities_signs_gui_open",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitiesSignsGuiOpenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Signs"
+    },
+    {
+      "name": "RefreshmentEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "refreshment_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/RefreshmentEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Alchemy/Refreshment"
+    },
+    {
+      "name": "DelayedRecoveryEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delayed_recovery_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/DelayedRecoveryEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Alchemy/Delayed Recovery"
+    },
+    {
+      "name": "SideEffectsEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "side_effects_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/SideEffectsEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Alchemy/Side Effects"
+    },
+    {
+      "name": "PoisonedBladesEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poisoned_blades_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/PoisonedBladesEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Alchemy/Poisoned Blades"
+    },
+    {
+      "name": "EfficencyEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "efficency_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/EfficencyEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Alchemy/Efficency"
+    },
+    {
+      "name": "RefreshmentShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "refreshment_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/RefreshmentShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Alchemy/Refreshment"
+    },
+    {
+      "name": "DelayedRecoveryShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delayed_recovery_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/DelayedRecoveryShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Alchemy/Delayed Recovery"
+    },
+    {
+      "name": "SideEffectsShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "side_effects_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/SideEffectsShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Alchemy/Side Effects"
+    },
+    {
+      "name": "PoisonedBladesShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poisoned_blades_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/PoisonedBladesShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Alchemy/Poisoned Blades"
+    },
+    {
+      "name": "ProtectiveCoatingShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "protective_coating_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/ProtectiveCoatingShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Alchemy/Protective coating"
+    },
+    {
+      "name": "HunterInstinctShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hunter_instinct_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/HunterInstinctShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Alchemy/Hunter Instinct"
+    },
+    {
+      "name": "PyrotechnicsShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pyrotechnics_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/PyrotechnicsShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Alchemy/Pyrotechnics"
+    },
+    {
+      "name": "EfficencyShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "efficency_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/EfficencyShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Alchemy/Efficency"
+    },
+    {
+      "name": "ClusterBombsShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cluster_bombs_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/ClusterBombsShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Alchemy/Cluster Bombs"
+    },
+    {
+      "name": "ProtectiveCoatingEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "protective_coating_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/ProtectiveCoatingEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Alchemy/Protective coating"
+    },
+    {
+      "name": "HunterInstinctEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hunter_instinct_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/HunterInstinctEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Alchemy/Hunter Instinct"
+    },
+    {
+      "name": "PyrotechnicsEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pyrotechnics_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/PyrotechnicsEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Alchemy/Pyrotechnics"
+    },
+    {
+      "name": "ClusterBombsEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cluster_bombs_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/ClusterBombsEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Alchemy/Cluster Bombs"
+    },
+    {
+      "name": "MuscleMemoryEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muscle_memory_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MuscleMemoryEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Combat/MUSCLE MEMORY"
+    },
+    {
+      "name": "PreciseBlowsEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "precise_blows_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/PreciseBlowsEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Combat/PRECISE BLOWS"
+    },
+    {
+      "name": "CrippllingStrikesEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cripplling_strikes_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CrippllingStrikesEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Combat/CRIPPLING STRIKES"
+    },
+    {
+      "name": "StrengthTrainingEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strength_training_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/StrengthTrainingEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Combat/STRENGTH TRAINING"
+    },
+    {
+      "name": "CrushingBlowsEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crushing_blows_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CrushingBlowsEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Combat/CRUSHING BLOWS"
+    },
+    {
+      "name": "SunderArmorEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sunder_armor_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/SunderArmorEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Combat/SUNDER ARMOR"
+    },
+    {
+      "name": "FleetFootedEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fleet_footed_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/FleetFootedEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Combat/FLEET FOOTED"
+    },
+    {
+      "name": "DefenceEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "defence_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/DefenceEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Combat/DEFENCE"
+    },
+    {
+      "name": "DeadlyPresicionEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deadly_presicion_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/DeadlyPresicionEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Combat/DEADLY PRESICION"
+    },
+    {
+      "name": "ColdBloodEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cold_blood_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/ColdBloodEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Combat/COLD BLOOD"
+    },
+    {
+      "name": "AnatomicalKnowledgeEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "anatomical_knowledge_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/AnatomicalKnowledgeEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Combat/ANATOMICAL KNOWLEDGE"
+    },
+    {
+      "name": "CripplingShot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crippling_shot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CripplingShotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Combat/CRIPPLING SHOT"
+    },
+    {
+      "name": "FlooodOfAngerEffec",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "floood_of_anger_effec",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/FlooodOfAngerEffecProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Combat/FLOOD OF ANGER"
+    },
+    {
+      "name": "RazorFocusEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "razor_focus_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/RazorFocusEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Combat/RAZOR FOCUS"
+    },
+    {
+      "name": "UndyingEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "undying_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/UndyingEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Combat/UNDYING"
+    },
+    {
+      "name": "MuscleMemoryShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muscle_memory_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MuscleMemoryShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Combat/MUSCLE MEMORY"
+    },
+    {
+      "name": "PreciseBlowsShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "precise_blows_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/PreciseBlowsShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Combat/PRECISE BLOWS"
+    },
+    {
+      "name": "CrippllingStrikesShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cripplling_strikes_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CrippllingStrikesShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Combat/CRIPPLING STRIKES"
+    },
+    {
+      "name": "StrengthTrainingShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strength_training_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/StrengthTrainingShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Combat/STRENGTH TRAINING"
+    },
+    {
+      "name": "CrushingBlowsShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crushing_blows_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CrushingBlowsShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Combat/CRUSHING BLOWS"
+    },
+    {
+      "name": "SunderArmorShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sunder_armor_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/SunderArmorShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Combat/SUNDER ARMOR"
+    },
+    {
+      "name": "FleetFootedShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fleet_footed_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/FleetFootedShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Combat/FLEET FOOTED"
+    },
+    {
+      "name": "DefenceShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "defence_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/DefenceShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Combat/DEFENCE"
+    },
+    {
+      "name": "DeadlyPresicionShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deadly_presicion_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/DeadlyPresicionShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Combat/DEADLY PRESICION"
+    },
+    {
+      "name": "ColdBloodShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cold_blood_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/ColdBloodShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Combat/COLD BLOOD"
+    },
+    {
+      "name": "AnatomicalKnowledgeShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "anatomical_knowledge_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/AnatomicalKnowledgeShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Combat/ANATOMICAL KNOWLEDGE"
+    },
+    {
+      "name": "CripplingShotShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crippling_shot_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CripplingShotShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Combat/CRIPPLING SHOT"
+    },
+    {
+      "name": "FloodOfAngerShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flood_of_anger_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/FloodOfAngerShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Combat/FLOOD OF ANGER"
+    },
+    {
+      "name": "RazorFocusShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "razor_focus_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/RazorFocusShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Combat/RAZOR FOCUS"
+    },
+    {
+      "name": "UndyingShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "undying_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/UndyingShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Combat/UNDYING"
+    },
+    {
+      "name": "FarReachingAardEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "far_reaching_aard_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/FarReachingAardEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Signs/FareachingAard"
+    },
+    {
+      "name": "AardIntensityEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aard_intensity_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/AardIntensityEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Signs/Aard Intensity"
+    },
+    {
+      "name": "ShockWaveEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shock_wave_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/ShockWaveEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Signs/Shock Wave"
+    },
+    {
+      "name": "FirestreamEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "firestream_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/FirestreamEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Signs/Firestream"
+    },
+    {
+      "name": "IgniIntensityEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "igni_intensity_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/IgniIntensityEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Signs/Igni Intensity"
+    },
+    {
+      "name": "PyromaniacEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pyromaniac_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/PyromaniacEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Signs/pyromaniac"
+    },
+    {
+      "name": "SustainedGlyphsEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sustained_glyphs_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/SustainedGlyphsEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Signs/Sustained Glyphs"
+    },
+    {
+      "name": "YrdenIntensityEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yrden_intensity_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/YrdenIntensityEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Signs/Yrden Intensity"
+    },
+    {
+      "name": "MagicTrapEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_trap_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MagicTrapEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Signs/Magic Trap"
+    },
+    {
+      "name": "ExplodingShieldEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exploding_shield_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/ExplodingShieldEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Signs/Exploding Shield"
+    },
+    {
+      "name": "QuenIntensityEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quen_intensity_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/QuenIntensityEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Signs/Quen Intensity"
+    },
+    {
+      "name": "QuenDiscahrgeEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quen_discahrge_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/QuenDiscahrgeEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Signs/Quen Discahrge"
+    },
+    {
+      "name": "DelusionEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delusion_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/DelusionEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Signs/delusion"
+    },
+    {
+      "name": "AxiiIntensityEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "axii_intensity_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/AxiiIntensityEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Signs/Axii Intenity"
+    },
+    {
+      "name": "DominationEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "domination_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/DominationEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Signs/domintion"
+    },
+    {
+      "name": "FarReachingAardShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "far_reaching_aard_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/FarReachingAardShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Signs/FareachingAard"
+    },
+    {
+      "name": "AardIntensityShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aard_intensity_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/AardIntensityShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Signs/Aard Intensity"
+    },
+    {
+      "name": "ShockWaveShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shock_wave_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/ShockWaveShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Signs/Shock Wave"
+    },
+    {
+      "name": "FirestreamShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "firestream_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/FirestreamShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Signs/Firestream"
+    },
+    {
+      "name": "IgniIntensityShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "igni_intensity_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/IgniIntensityShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Signs/Igni Intensity"
+    },
+    {
+      "name": "PyromaniacShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pyromaniac_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/PyromaniacShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Signs/pyromaniac"
+    },
+    {
+      "name": "SustainedGlyphsShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sustained_glyphs_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/SustainedGlyphsShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Signs/Sustained Glyphs"
+    },
+    {
+      "name": "YrdenIntensityShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yrden_intensity_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/YrdenIntensityShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Signs/Yrden Intensity"
+    },
+    {
+      "name": "MagicTrapShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_trap_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MagicTrapShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Signs/Magic Trap"
+    },
+    {
+      "name": "ExploadingShildshow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exploading_shildshow",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/ExploadingShildshowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Signs/Exploding Shield"
+    },
+    {
+      "name": "QuenIntensityShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quen_intensity_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/QuenIntensityShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Signs/Quen Intensity"
+    },
+    {
+      "name": "QuenDiscahrgeShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quen_discahrge_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/QuenDiscahrgeShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Signs/Quen Discahrge"
+    },
+    {
+      "name": "DelusionShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delusion_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/DelusionShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Signs/delusion"
+    },
+    {
+      "name": "AxiiIntensityShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "axii_intensity_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/AxiiIntensityShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Signs/Axii Intenity"
+    },
+    {
+      "name": "DominationShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "domination_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/DominationShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Signs/domintion"
     }
   ],
   "variable_elements": [
@@ -2705,7 +4625,7 @@
       "name": "sumCritDamage",
       "type": "number",
       "scope": "player_lifetime",
-      "value": "0"
+      "value": "0.0"
     },
     {
       "name": "witchercraftBaseMovementSpeed",
@@ -2748,6 +4668,282 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
+    },
+    {
+      "name": "witchercraftAbilitiesLearned",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "witchercraftAbiltiesGourment",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesSurvivalInstinct",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesSunAndStars",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesCatSchool",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesGriffinSchool",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesBearSchool",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesRefreshment",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesDelayedRecovery",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesSideEffects",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesPoisonedBlades",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesProtectiveCoating",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesHunterInstincts",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesPyrotechnics",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesEfficency",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesClusterBombs",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesFarRReachingAard",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesAardIntensity",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesShockWave",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesFireStream",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesIgniIntensity",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesPyromaic",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesSustainedGlyphs",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesYrdenIntensity",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesMagicTrap",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesExploadingShild",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesQuenIntensity",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesQuenDischarge",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesDelusion",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesAxiiInntensiy",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesDominaion",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesMuscleMemory",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesPreciseBlows",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesCripplingStrikes",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesStrengthTraining",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesCrushingBlows",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesSunderArmor",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesFleetFooted",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesDefence",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesDeadlyPresicion",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesColdBlood",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesAnatomicalKnowledge",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesCripplingShot",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesFloodOfAnger",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesRazorFocus",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "witchercraftAbilitiesUndying",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
     }
   ],
   "sound_elements": [],
@@ -2793,87 +4989,145 @@
       "item.witchercraft.viper_armor_helmet": "Viper Armor Helmet",
       "item.witchercraft.rook": "Rook",
       "effect.witchercraft.axii_sign": "Axii Sign",
+      "gui.witchercraft.characters_abilietes_general_gui.button_signs": " Signs ",
+      "gui.witchercraft.character_abilities_combat_gui.tooltip_if_someone_nearby5_blocks_add": "IF SOMEONE NEARBY(5 BLOCKS) ADD +5 TO DMG ",
       "item.witchercraft.white_raffards_decoction": "White Raffards Decoction",
+      "gui.witchercraft.character_abilities_alchemy_gui.button_back": "Back",
       "item.witchercraft.rebis": "Rebis",
+      "gui.witchercraft.character_abilities_combat_gui.tooltip_if_killed_restore_hp_to_50_onc": " IF KILLED RESTORE HP TO 50% ONCE EVERY 15 MINUTES",
+      "gui.witchercraft.characters_abilietes_general_gui.tooltip_increases_max_hp_by_15": "INCREASES MAX HP BY 15%",
       "gui.witchercraft.character_gui.label_crit_damage": "Crit Damage",
+      "gui.witchercraft.character_abilities_signs_gui.tooltip_increases_burning_duration": "INCREASES BURNING DURATION ",
+      "gui.witchercraft.characters_abilietes_general_gui.button_combat": " Combat",
       "item.witchercraft.wolven_armor_chestplate": "Wolven Armor Chestplate",
       "item.witchercraft.hanged_mans_venom": "Hanged Mans Venom",
       "effect.witchercraft.quen_sign": "Quen Sign",
+      "gui.witchercraft.characters_abilietes_general_gui.button_back": "Back",
       "item_group.witchercraft.witcher_craft": "Witcher Craft",
       "effect.witchercraft.yrden_sign": "Yrden Sign",
+      "gui.witchercraft.character_abilities_signs_gui.tooltip_increases_dmg_dealt_to_mob": "INCREASES DMG DEALT TO MOB ",
       "effect.witchercraft.igni_sign_ready": "Igni Ready",
       "item.witchercraft.ursine_armor_helmet": "Ursine Armor Helmet",
+      "gui.witchercraft.character_abilities_combat_gui.tooltip_increase_crit_rate_by_8_and_cri": "INCREASE CRIT RATE BY 8% AND CRIT DAMAGE BY 50%",
+      "gui.witchercraft.character_abilities_alchemy_gui.tooltip_bombs_have_increased_area_of_eff": "BOMBS HAVE INCREASED AREA OF EFFECT ",
       "item.witchercraft.necrophage_oil": "Necrophage Oil",
       "gui.witchercraft.alchemy_gui.button_bombs": " Bombs ",
       "gui.witchercraft.character_gui.label_crit_chance": "Crit Chance",
+      "gui.witchercraft.character_abilities_signs_gui.button_alchemy": "Alchemy",
       "effect.witchercraft.killer_whale_effect": "Killer Whale ",
       "item.witchercraft.devils_puffball": "Devils Puffball",
       "key.witchercraft.sign_cast_keybind": "Sign Cast Keybind",
       "gui.witchercraft.alchemy_gui_potions.button_brew": "Brew",
       "item.witchercraft.feline_armor_chestplate": "Feline Armor Chestplate",
+      "gui.witchercraft.character_abilities_signs_gui.tooltip_increase_diameter_of_effect": "INCREASE DIAMETER OF EFFECT",
+      "gui.witchercraft.character_abilities_signs_gui.tooltip_knocks_back_every_mob_in_diamet": " KNOCKS BACK EVERY MOB IN DIAMETER",
       "item.witchercraft.cursed_oil": "Cursed Oil",
+      "gui.witchercraft.character_abilities_signs_gui.tooltip_increases_trap_radius_by_1_block": "INCREASES TRAP RADIUS BY 1 BLOCK",
       "item.witchercraft.cat": "Cat",
       "key.witchercraft.pause_menu_keybind_press": "Pause Menu ",
       "gui.witchercraft.character_gui.label_health": "Health",
+      "gui.witchercraft.character_abilities_alchemy_gui.button_general": "General",
       "effect.witchercraft.golden_oriole_effect": "Golden Oriole",
       "item.witchercraft.white_gull": "White Gull",
-      "item.witchercraft.tallow": "Tallow",
-      "effect.witchercraft.thunderbolt_effect": "Thunderbolt",
       "effect.witchercraft.school_of_the_cat": "School Of The Cat",
+      "effect.witchercraft.thunderbolt_effect": "Thunderbolt",
+      "item.witchercraft.tallow": "Tallow",
+      "gui.witchercraft.character_abilities_alchemy_gui.tooltip_increases_potion_duration_time_b": "INCREASES POTION DURATION TIME BY 20% ",
       "effect.witchercraft.aard_sign": "Aard Sign",
-      "gui.witchercraft.alchemy_gui_potions.button_back": "Back",
+      "gui.witchercraft.character_abilities_combat_gui.tooltip_add_4_to_max_hp": "ADD +4 TO MAX HP",
+      "gui.witchercraft.character_abilities_signs_gui.tooltip_increases_knockback": "INCREASES KNOCKBACK",
+      "gui.witchercraft.character_abilities_signs_gui.tooltip_increases_max_absorbion_by_x": "INCREASES MAX ABSORBION BY X",
+      "gui.witchercraft.character_abilities_combat_gui.tooltip_increase_crit_rate_by_12_and_cr": "INCREASE CRIT RATE BY 12% AND CRIT DAMAGE BY 75%",
+      "gui.witchercraft.character_abilities_combat_gui.tooltip_apply_bleed_effect_on_hit": "APPLY BLEED EFFECT ON HIT ",
       "effect.witchercraft.full_moon_effect": "Full Moon ",
+      "gui.witchercraft.alchemy_gui_potions.button_back": "Back",
+      "gui.witchercraft.characters_abilietes_general_gui.button_alchemy": "Alchemy",
+      "gui.witchercraft.character_abilities_signs_gui.tooltip_aard_deals_x_damage": "AARD DEALS X DAMAGE ",
       "effect.witchercraft.school_of_the_bear": "School Of The Bear",
       "item.witchercraft.feline_armor_helmet": "Feline Armor Helmet",
+      "gui.witchercraft.character_abilities_signs_gui.tooltip_increases_slow": "INCREASES SLOW",
+      "gui.witchercraft.character_abilities_signs_gui.tooltip_when_end_deal_damage_to_everyon": "WHEN END, DEAL DAMAGE TO EVERYONE NEARBY",
       "gui.witchercraft.sign_gui.button_igni": "IGNI",
       "item.witchercraft.wolven_armor_leggings": "Wolven Armor Leggings",
+      "gui.witchercraft.character_abilities_alchemy_gui.button_alchemy": "Alchemy",
+      "gui.witchercraft.character_abilities_combat_gui.tooltip_add_1_chance_to_insta_kill": "ADD 1% CHANCE TO INSTA KILL",
+      "gui.witchercraft.character_abilities_signs_gui.button_combat": " Combat",
       "gui.witchercraft.character_gui.label_movement_speed": "Movement Speed:",
+      "gui.witchercraft.character_abilities_signs_gui.button_general": "General",
       "item.witchercraft.ursine_armor_chestplate": "Ursine Armor Chestplate",
       "effect.witchercraft.passive_stamina_regen": "Passive Stamina Regen",
       "gui.witchercraft.sign_gui.button_yrden": "YRDEN",
       "gui.witchercraft.meditation_gui.button_back": "Back",
+      "gui.witchercraft.character_abilities_combat_gui.button_general": "General",
       "item.witchercraft.griffin_armor_chestplate": "Griffin Armor Chestplate",
+      "advancements.gourment.descr": "asd",
       "gui.witchercraft.pause_menu_gui.button_bestiary": "Bestiary",
+      "gui.witchercraft.character_abilities_alchemy_gui.button_combat": " Combat",
+      "gui.witchercraft.character_abilities_combat_gui.tooltip_if_main_hand_weapon_ranged_add": " IF MAIN HAND WEAPON RANGED ADD 10% TO CRIT RATE",
       "gui.witchercraft.pause_menu_gui.button_character": "Character",
-      "gui.witchercraft.skill_tree_combat_gui.button_back": "Back",
+      "gui.witchercraft.characters_abilietes_general_gui.tooltip_while_school_of_the_griffin_ef": "WHILE \"SCHOOL OF THE GRIFFIN\" EFFECT, SIGN INTENSITY INCREASES BY 20%",
+      "gui.witchercraft.character_abilities_combat_gui.tooltip_if_main_hand_weapon_ranged_add1": " IF MAIN HAND WEAPON RANGED ADD 50% TO CRIT DAMAGE",
       "gui.witchercraft.sign_gui.label_sign_menu": "sign menu",
       "gui.witchercraft.glossary_menu_gui.tooltip_cwel": "cwel",
       "item.witchercraft.golden_oriole": "Golden Oriole",
       "item.witchercraft.swallow": "Swallow",
+      "gui.witchercraft.character_abilities_signs_gui.tooltip_increases_sign_duration": "INCREASES SIGN DURATION",
       "effect.witchercraft.school_of_the_griffin": "School Of The Griffin",
+      "gui.witchercraft.characters_abilietes_general_gui.tooltip_1_to_stamina_regen": "+1 TO STAMINA REGEN ",
       "effect.witchercraft.cat_effect": "Cat ",
       "gui.witchercraft.sign_gui.button_aard": "AARD",
+      "gui.witchercraft.character_abilities_alchemy_gui.tooltip_reduces_damage_taken_from_mob_ty": "REDUCES DAMAGE TAKEN FROM MOB TYPE THE OIL IN MAIN HAND TARGETS ",
+      "gui.witchercraft.characters_abilietes_general_gui.button_general": "General",
       "item.witchercraft.gadwall": "Gadwall",
       "item.witchercraft.viper_armor_boots": "Viper Armor Boots",
       "item.witchercraft.manticore_armor_helmet": "Manticore Armor Helmet",
+      "gui.witchercraft.character_abilities_alchemy_gui.button_signs": " Signs ",
+      "gui.witchercraft.character_abilities_combat_gui.button_alchemy": "Alchemy",
       "item.witchercraft.relict_oil": "Relict Oil",
       "item.witchercraft.blizzard": "Blizzard",
+      "gui.witchercraft.character_abilities_combat_gui.tooltip_add_3_to_dmg_dealt": "ADD +3 TO DMG DEALT",
       "item.witchercraft.dimeritium_bomb": "Dimeritium Bomb",
       "gui.witchercraft.alchemy_gui.button_back": "Back",
+      "gui.witchercraft.character_abilities_combat_gui.tooltip_add_10_chance_to_dodge_attack": "ADD 10% CHANCE TO DODGE ATTACK",
       "gui.witchercraft.meditation_gui.button_sunrise": "Sunrise",
       "item.witchercraft.tawny_owl": "Tawny Owl",
       "gui.witchercraft.character_gui.label_attack_speed": "Attack Speed",
       "key.witchercraft.sign_gui_keybind": "Sign Gui Keybind",
+      "gui.witchercraft.character_abilities_alchemy_gui.tooltip_bombs_deal_additional_damage": "BOMBS DEAL ADDITIONAL DAMAGE",
+      "gui.witchercraft.character_abilities_combat_gui.button_combat": " Combat",
+      "gui.witchercraft.character_abilities_combat_gui.tooltip_add_10_to_dmg_dealt": "ADD +10% TO DMG DEALT ",
       "item.witchercraft.quebrith": "Quebrith",
       "effect.witchercraft.swallow_effect": "Swallow Effect",
       "item.witchercraft.petris_philter": "Petris Philter",
       "item.witchercraft.manticore_armor_leggings": "Manticore Armor Leggings",
       "gui.witchercraft.glossary_menu_gui.button_back": "Back",
+      "gui.witchercraft.characters_abilietes_general_gui.tooltip_while_school_of_the_cat_effect": "WHILE \"SCHOOL OF THE CAT\" EFFECT, CRIT DAMAGE INCREASES BY 50% ",
+      "gui.witchercraft.character_abilities_signs_gui.button_signs": " Signs ",
       "gui.witchercraft.alchemy_gui.button_oils": " Oils  ",
       "gui.witchercraft.meditation_gui.button_sunset": "Sunset",
       "item.witchercraft.wolven_armor_boots": "Wolven Armor Boots",
       "gui.witchercraft.pause_menu_gui.button_skill_tree": "Skill Tree",
+      "gui.witchercraft.character_abilities_signs_gui.tooltip_increases_sign_duration_by_5_sec": "INCREASES SIGN DURATION BY 5 SECONDS.",
+      "gui.witchercraft.characters_abilietes_general_gui.tooltip_while_school_of_the_bear_effec": "WHILE \"SCHOOL OF THE BEAR\" EFFECT, INCREASE MAX HP BY 20% ",
       "item.witchercraft.griffin_armor_boots": "Griffin Armor Boots",
       "item.witchercraft.feline_armor_leggings": "Feline Armor Leggings",
+      "gui.witchercraft.character_abilities_alchemy_gui.tooltip_deals_additional_damage_to_mob": " DEALS ADDITIONAL DAMAGE TO MOB TYPE THE OIL IN MAIN HAND TARGETS",
       "item.witchercraft.wolven_armor_helmet": "Wolven Armor Helmet",
+      "gui.witchercraft.characters_abilietes_general_gui.tooltip_during_day_add_1_to_health_rege": "DURING DAY ADD +1 TO HEALTH REGEN, /n DURING NIGHT +1 TO STAMINA REGENERATION",
       "item.witchercraft.dancing_star": "Dancing Star",
+      "gui.witchercraft.character_abilities_alchemy_gui.tooltip_oils_give_5_chance_to_poison_o": " OILS GIVE 5% CHANCE TO POISON ON HIT ",
+      "gui.witchercraft.character_abilities_signs_gui.tooltip_deals_absorbet_amount_of_dmg_to": "DEALS ABSORBET AMOUNT OF DMG TO ATTACKER",
       "effect.witchercraft.blizzard_effect": "Blizzard Effect",
+      "gui.witchercraft.character_abilities_combat_gui.button_back": "Back",
       "item.witchercraft.viper_armor_chestplate": "Viper Armor Chestplate",
       "item.witchercraft.vermilion": "Vermilion",
+      "gui.witchercraft.character_abilities_alchemy_gui.tooltip_bombs_have_chance_to_remain_in_i": "BOMBS HAVE CHANCE TO REMAIN IN INVENTORY WHEN USED ",
       "effect.witchercraft.white_raffards_decoction_effect": "White Raffards Decoction",
       "item.witchercraft.samum": "Samum",
       "gui.witchercraft.sign_gui.button_axii": "AXII",
+      "gui.witchercraft.character_abilities_signs_gui.tooltip_deals_additional_burnign_damage": "DEALS ADDITIONAL BURNIGN DAMAGE ON TICK",
       "item.witchercraft.feline_armor_boots": "Feline Armor Boots",
+      "gui.witchercraft.character_abilities_alchemy_gui.tooltip_imbibing_potion_gives_gives_33": "IMBIBING POTION GIVES GIVES 33% CHANCE TO ACTIVATE ANOTHER RANDOM EFFECT",
       "item.witchercraft.manticore_armor_boots": "Manticore Armor Boots",
       "gui.witchercraft.pause_menu_gui.button_alchemy": "Alchemy",
       "item.witchercraft.ursine_armor_leggings": "Ursine Armor Leggings",
@@ -2887,10 +5141,15 @@
       "effect.witchercraft.igni_sign": "Igni Sign",
       "effect.witchercraft.school_of_the_viper": "School Of The Viper",
       "effect.witchercraft.tawny_owl_effect": "Tawny Owl",
+      "gui.witchercraft.character_abilities_combat_gui.button_signs": " Signs ",
+      "gui.witchercraft.character_abilities_combat_gui.tooltip_add_movement_speed": " ADD MOVEMENT SPEED",
       "gui.witchercraft.meditation_gui.button_noon": "Noon",
       "item.witchercraft.draconid_oil": "Draconid Oil",
       "item.witchercraft.griffin_armor_helmet": "Griffin Armor Helmet",
+      "gui.witchercraft.character_abilities_signs_gui.tooltip_gives_hero_of_the_village_effec": " GIVES HERO OF THE VILLAGE EFFECT ",
       "effect.witchercraft.passive_health_regen": "Passive Health Regen",
+      "gui.witchercraft.character_abilities_signs_gui.button_back": "Back",
+      "advancements.gourment.title": "Gourment",
       "item.witchercraft.vitriol": "Vitriol",
       "item.witchercraft.specter_oil": "Specter Oil",
       "item.witchercraft.white_honey": "White Honey",
@@ -2901,17 +5160,20 @@
       "effect.witchercraft.school_of_the_wolf": "School Of The Wolf",
       "item.witchercraft.thunderbolt": "Thunderbolt",
       "item.witchercraft.hydragenum": "Hydragenum",
+      "gui.witchercraft.character_abilities_combat_gui.tooltip_if_noone_nearby5_blocks_add": " IF NOONE NEARBY(5 BLOCKS) ADD +5 TO DMG ",
       "item.witchercraft.vampire_oil": "Vampire Oil",
       "gui.witchercraft.pause_menu_gui.button_meditation": "Meditation",
       "gui.witchercraft.meditation_gui.button_midnight": "Midnight",
       "gui.witchercraft.pause_menu_gui.button_glossary": "Glossary",
       "effect.witchercraft.school_of_the_manticore": "School Of The Manticore",
+      "gui.witchercraft.character_abilities_alchemy_gui.tooltip_each_potion_heals_10_max_hp": "EACH POTION HEALS 10% MAX HP",
       "item.witchercraft.full_moon": "Full Moon",
       "gui.witchercraft.bestiary_menu_gui.button_back": "Back",
       "item.witchercraft.insectoid_oil": "Insectoid Oil",
       "item.witchercraft.grapeshot": "Grapeshot",
       "item.witchercraft.aether": "Aether",
-      "gui.witchercraft.alchemy_gui.button_brew": "Brew"
+      "gui.witchercraft.alchemy_gui.button_brew": "Brew",
+      "gui.witchercraft.character_abilities_combat_gui.tooltip_sunder_armoradd_20_to_dmg_dea": "ADD +20% TO DMG DEALT"
     }
   },
   "foldersRoot": {
@@ -3212,7 +5474,208 @@
       },
       {
         "name": "Character Abilities",
-        "children": []
+        "children": [
+          {
+            "name": "General",
+            "children": [
+              {
+                "name": "GOURMET",
+                "children": []
+              },
+              {
+                "name": "SURVIVAL INSINCT",
+                "children": []
+              },
+              {
+                "name": "SUN AND STARS",
+                "children": []
+              },
+              {
+                "name": "CAT SCHOOL TECHNIQUES",
+                "children": []
+              },
+              {
+                "name": "GRIFFIN SCHOOL TECHNIQUES",
+                "children": []
+              },
+              {
+                "name": "BEAR SCHOOL TECHNIQUES",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Combat",
+            "children": [
+              {
+                "name": "MUSCLE MEMORY",
+                "children": []
+              },
+              {
+                "name": "PRECISE BLOWS",
+                "children": []
+              },
+              {
+                "name": "CRIPPLING STRIKES",
+                "children": []
+              },
+              {
+                "name": "STRENGTH TRAINING",
+                "children": []
+              },
+              {
+                "name": "CRUSHING BLOWS",
+                "children": []
+              },
+              {
+                "name": "SUNDER ARMOR",
+                "children": []
+              },
+              {
+                "name": "FLEET FOOTED",
+                "children": []
+              },
+              {
+                "name": "DEFENCE",
+                "children": []
+              },
+              {
+                "name": "DEADLY PRESICION",
+                "children": []
+              },
+              {
+                "name": "COLD BLOOD",
+                "children": []
+              },
+              {
+                "name": "ANATOMICAL KNOWLEDGE",
+                "children": []
+              },
+              {
+                "name": "CRIPPLING SHOT",
+                "children": []
+              },
+              {
+                "name": "FLOOD OF ANGER",
+                "children": []
+              },
+              {
+                "name": "RAZOR FOCUS",
+                "children": []
+              },
+              {
+                "name": "UNDYING",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Alchemy",
+            "children": [
+              {
+                "name": "Refreshment",
+                "children": []
+              },
+              {
+                "name": "Delayed Recovery",
+                "children": []
+              },
+              {
+                "name": "Side Effects",
+                "children": []
+              },
+              {
+                "name": "Poisoned Blades",
+                "children": []
+              },
+              {
+                "name": "Protective coating",
+                "children": []
+              },
+              {
+                "name": "Hunter Instinct",
+                "children": []
+              },
+              {
+                "name": "Pyrotechnics",
+                "children": []
+              },
+              {
+                "name": "Efficency",
+                "children": []
+              },
+              {
+                "name": "Cluster Bombs",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Signs",
+            "children": [
+              {
+                "name": "FareachingAard",
+                "children": []
+              },
+              {
+                "name": "Aard Intensity",
+                "children": []
+              },
+              {
+                "name": "Shock Wave",
+                "children": []
+              },
+              {
+                "name": "Firestream",
+                "children": []
+              },
+              {
+                "name": "Igni Intensity",
+                "children": []
+              },
+              {
+                "name": "pyromaniac",
+                "children": []
+              },
+              {
+                "name": "Sustained Glyphs",
+                "children": []
+              },
+              {
+                "name": "Yrden Intensity",
+                "children": []
+              },
+              {
+                "name": "Magic Trap",
+                "children": []
+              },
+              {
+                "name": "Exploding Shield",
+                "children": []
+              },
+              {
+                "name": "Quen Intensity",
+                "children": []
+              },
+              {
+                "name": "Quen Discahrge",
+                "children": []
+              },
+              {
+                "name": "delusion",
+                "children": []
+              },
+              {
+                "name": "Axii Intenity",
+                "children": []
+              },
+              {
+                "name": "domintion",
+                "children": []
+              }
+            ]
+          }
+        ]
       }
     ]
   },

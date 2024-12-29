@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "id": "witchercraft:killer_whale"
+    },
+    "title": {
+      "translate": "advancements.gourment.title"
+    },
+    "description": {
+      "translate": "advancements.gourment.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "gourment_0": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

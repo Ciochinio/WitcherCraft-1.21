@@ -1,0 +1,381 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_back",
+          "text": "Back",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "PauseMenuGuiOpen"
+          },
+          "width": 46,
+          "height": 20,
+          "x": 375,
+          "y": 206,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_refreshment",
+          "image": "refreshment.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "RefreshmentEffect"
+          },
+          "displayCondition": {
+            "name": "RefreshmentShow"
+          },
+          "x": 132,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_delayedrecovery",
+          "image": "delayedrecovery.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "DelayedRecoveryEffect"
+          },
+          "displayCondition": {
+            "name": "DelayedRecoveryShow"
+          },
+          "x": 132,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_sideeffects",
+          "image": "sideeffects.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SideEffectsEffect"
+          },
+          "displayCondition": {
+            "name": "SideEffectsShow"
+          },
+          "x": 132,
+          "y": 152,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_poisonedblade",
+          "image": "poisonedblade.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "PoisonedBladesEffect"
+          },
+          "displayCondition": {
+            "name": "PoisonedBladesShow"
+          },
+          "x": 195,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_protectivecoating",
+          "image": "protectivecoating.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "ProtectiveCoatingEffect"
+          },
+          "displayCondition": {
+            "name": "ProtectiveCoatingShow"
+          },
+          "x": 195,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_hunterinstincts",
+          "image": "hunterinstincts.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "HunterInstinctEffect"
+          },
+          "displayCondition": {
+            "name": "HunterInstinctShow"
+          },
+          "x": 195,
+          "y": 152,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_pyrotechnics",
+          "image": "pyrotechnics.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "PyrotechnicsEffect"
+          },
+          "displayCondition": {
+            "name": "PyrotechnicsShow"
+          },
+          "x": 258,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_efficency",
+          "image": "efficency.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "EfficencyEffect"
+          },
+          "displayCondition": {
+            "name": "EfficencyShow"
+          },
+          "x": 258,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_clusterbombs",
+          "image": "clusterbombs.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "ClusterBombsEffect"
+          },
+          "displayCondition": {
+            "name": "ClusterBombsShow"
+          },
+          "x": 258,
+          "y": 152,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_general",
+          "text": "General",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "CharaterAbilitesGeneralGuiOpen"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 60,
+          "y": 35,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_combat",
+          "text": " Combat",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "CharacterAbilitiesCombatGuiOpen"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 60,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_alchemy",
+          "text": "Alchemy",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "CharacterAbilitiesAlchemyGuiOpen"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 60,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_signs",
+          "text": " Signs ",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "CharacterAbilitiesSignsGuiOpen"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 60,
+          "y": 116,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_each_potion_heals_10_max_hp",
+          "text": {
+            "fixedValue": "EACH POTION HEALS 10% MAX HP"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 135,
+          "y": 66,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_increases_potion_duration_time_b",
+          "text": {
+            "fixedValue": "INCREASES POTION DURATION TIME BY 20% "
+          },
+          "width": 24,
+          "height": 24,
+          "x": 137,
+          "y": 112,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_imbibing_potion_gives_gives_33",
+          "text": {
+            "fixedValue": "IMBIBING POTION GIVES GIVES 33% CHANCE TO ACTIVATE ANOTHER RANDOM EFFECT"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 135,
+          "y": 155,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_oils_give_5_chance_to_poison_o",
+          "text": {
+            "fixedValue": " OILS GIVE 5% CHANCE TO POISON ON HIT "
+          },
+          "width": 24,
+          "height": 24,
+          "x": 200,
+          "y": 66,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_reduces_damage_taken_from_mob_ty",
+          "text": {
+            "fixedValue": "REDUCES DAMAGE TAKEN FROM MOB TYPE THE OIL IN MAIN HAND TARGETS "
+          },
+          "width": 24,
+          "height": 24,
+          "x": 200,
+          "y": 111,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_deals_additional_damage_to_mob",
+          "text": {
+            "fixedValue": " DEALS ADDITIONAL DAMAGE TO MOB TYPE THE OIL IN MAIN HAND TARGETS"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 199,
+          "y": 156,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_bombs_deal_additional_damage",
+          "text": {
+            "fixedValue": "BOMBS DEAL ADDITIONAL DAMAGE"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 260,
+          "y": 65,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_bombs_have_chance_to_remain_in_i",
+          "text": {
+            "fixedValue": "BOMBS HAVE CHANCE TO REMAIN IN INVENTORY WHEN USED "
+          },
+          "width": 24,
+          "height": 24,
+          "x": 261,
+          "y": 111,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_bombs_have_increased_area_of_eff",
+          "text": {
+            "fixedValue": "BOMBS HAVE INCREASED AREA OF EFFECT "
+          },
+          "width": 24,
+          "height": 24,
+          "x": 262,
+          "y": 158,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

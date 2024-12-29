@@ -97,7 +97,7 @@
           "text": "Skill Tree",
           "isUndecorated": false,
           "onClick": {
-            "name": "SkillTreeCombatGuiOpen"
+            "name": "CharaterAbilitesGeneralGuiOpen"
           },
           "width": 77,
           "height": 20,
