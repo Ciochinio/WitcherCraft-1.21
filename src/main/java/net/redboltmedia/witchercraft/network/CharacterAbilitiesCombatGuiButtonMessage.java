@@ -15,7 +15,7 @@ import net.redboltmedia.witchercraft.procedures.DefenceEffectProcedure;
 import net.redboltmedia.witchercraft.procedures.DeadlyPresicionEffectProcedure;
 import net.redboltmedia.witchercraft.procedures.CrushingBlowsEffectProcedure;
 import net.redboltmedia.witchercraft.procedures.CrippllingStrikesEffectProcedure;
-import net.redboltmedia.witchercraft.procedures.CripplingShotProcedure;
+import net.redboltmedia.witchercraft.procedures.CripplingShotEffectProcedure;
 import net.redboltmedia.witchercraft.procedures.ColdBloodEffectProcedure;
 import net.redboltmedia.witchercraft.procedures.CharaterAbilitesGeneralGuiOpenProcedure;
 import net.redboltmedia.witchercraft.procedures.CharacterAbilitiesSignsGuiOpenProcedure;
@@ -144,7 +144,7 @@ public record CharacterAbilitiesCombatGuiButtonMessage(int buttonID, int x, int 
 		}
 		if (buttonID == 16) {
 
-			CripplingShotProcedure.execute(entity);
+			CripplingShotEffectProcedure.execute(entity);
 		}
 		if (buttonID == 17) {
 

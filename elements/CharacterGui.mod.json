@@ -204,6 +204,40 @@
           "y": 89,
           "locked": false
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_charater_level",
+          "text": {
+            "fixedValue": "",
+            "name": "CharaterLevel"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 179,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_character_experience",
+          "text": {
+            "fixedValue": "",
+            "name": "CharacterExperience"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 188,
+          "locked": false
+        }
       }
     ],
     "gridSettings": {

@@ -5,11 +5,13 @@ import org.joml.Quaternionf;
 
 import net.redboltmedia.witchercraft.world.inventory.CharacterGuiMenu;
 import net.redboltmedia.witchercraft.procedures.PlayerModelDisplayProcedure;
+import net.redboltmedia.witchercraft.procedures.CharaterLevelProcedure;
 import net.redboltmedia.witchercraft.procedures.CharacterGuiMovementSpeedProcedure;
 import net.redboltmedia.witchercraft.procedures.CharacterGuiHealthProcedure;
 import net.redboltmedia.witchercraft.procedures.CharacterGuiCritDamageProcedure;
 import net.redboltmedia.witchercraft.procedures.CharacterGuiCritChanceProcedure;
 import net.redboltmedia.witchercraft.procedures.CharacterGuiAttackSpeedProcedure;
+import net.redboltmedia.witchercraft.procedures.CharacterExperienceProcedure;
 import net.redboltmedia.witchercraft.network.CharacterGuiButtonMessage;
 
 import net.neoforged.neoforge.network.PacketDistributor;
@@ -99,6 +101,12 @@ public class CharacterGuiScreen extends AbstractContainerScreen<CharacterGuiMenu
 		guiGraphics.drawString(this.font,
 
 				CharacterGuiHealthProcedure.execute(entity), 87, 52, -12829636, false);
+		guiGraphics.drawString(this.font,
+
+				CharaterLevelProcedure.execute(entity), 6, 142, -12829636, false);
+		guiGraphics.drawString(this.font,
+
+				CharacterExperienceProcedure.execute(entity), 6, 151, -12829636, false);
 	}
 
 	@Override

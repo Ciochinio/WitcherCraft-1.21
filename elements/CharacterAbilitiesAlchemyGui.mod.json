@@ -350,7 +350,7 @@
           },
           "width": 24,
           "height": 24,
-          "x": 261,
+          "x": 262,
           "y": 111,
           "locked": false
         }
@@ -366,6 +366,123 @@
           "height": 24,
           "x": 262,
           "y": 158,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "refreshmentbought.png",
+          "use1Xscale": false,
+          "x": 132,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "delayedrecoverybought.png",
+          "use1Xscale": false,
+          "x": 132,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "sideeffectsbought.png",
+          "use1Xscale": false,
+          "x": 132,
+          "y": 152,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "poisonedbladesbought.png",
+          "use1Xscale": false,
+          "x": 195,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "protectivecoatingbought.png",
+          "use1Xscale": false,
+          "x": 195,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "hunterinstinctsbought.png",
+          "use1Xscale": false,
+          "x": 195,
+          "y": 152,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "pyrotechnicsbought.png",
+          "use1Xscale": false,
+          "x": 258,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "efficencybought.png",
+          "use1Xscale": false,
+          "x": 258,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "clusterbombsbought.png",
+          "use1Xscale": false,
+          "x": 258,
+          "y": 152,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skillpoint.png",
+          "use1Xscale": false,
+          "x": 321,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_character_abilites_skill_po",
+          "text": {
+            "fixedValue": "",
+            "name": "CharacterAbilitesSkillPoints"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 321,
+          "y": 53,
           "locked": false
         }
       }

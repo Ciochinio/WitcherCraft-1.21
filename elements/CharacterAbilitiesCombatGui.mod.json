@@ -204,7 +204,7 @@
           "image": "cripplingshot.png",
           "hoveredImage": "",
           "onClick": {
-            "name": "CripplingShot"
+            "name": "CripplingShotEffect"
           },
           "displayCondition": {
             "name": "CripplingShotShow"
@@ -396,8 +396,8 @@
           },
           "width": 24,
           "height": 24,
-          "x": 164,
-          "y": 57,
+          "x": 163,
+          "y": 56,
           "locked": false
         }
       },
@@ -410,7 +410,7 @@
           },
           "width": 24,
           "height": 24,
-          "x": 165,
+          "x": 164,
           "y": 113,
           "locked": false
         }
@@ -568,7 +568,7 @@
       {
         "type": "image",
         "data": {
-          "image": "strenghttrainingbought.png",
+          "image": "strengtraingbought.png",
           "use1Xscale": false,
           "x": 159,
           "y": 53,
@@ -672,6 +672,63 @@
           "use1Xscale": false,
           "x": 159,
           "y": 152,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "deadlyprecisonbought.png",
+          "use1Xscale": false,
+          "x": 195,
+          "y": 152,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cripplingshotbought.png",
+          "use1Xscale": false,
+          "x": 231,
+          "y": 152,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "undyingbought.png",
+          "use1Xscale": false,
+          "x": 267,
+          "y": 152,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skillpoint.png",
+          "use1Xscale": false,
+          "x": 321,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_character_abilites_skill_po",
+          "text": {
+            "fixedValue": "",
+            "name": "CharacterAbilitesSkillPoints"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 321,
+          "y": 53,
           "locked": false
         }
       }

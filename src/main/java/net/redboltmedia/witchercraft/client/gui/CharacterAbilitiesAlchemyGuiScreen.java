@@ -10,6 +10,7 @@ import net.redboltmedia.witchercraft.procedures.HunterInstinctShowProcedure;
 import net.redboltmedia.witchercraft.procedures.EfficencyShowProcedure;
 import net.redboltmedia.witchercraft.procedures.DelayedRecoveryShowProcedure;
 import net.redboltmedia.witchercraft.procedures.ClusterBombsShowProcedure;
+import net.redboltmedia.witchercraft.procedures.CharacterAbilitesSkillPointsProcedure;
 import net.redboltmedia.witchercraft.network.CharacterAbilitiesAlchemyGuiButtonMessage;
 
 import net.neoforged.neoforge.network.PacketDistributor;
@@ -81,7 +82,7 @@ public class CharacterAbilitiesAlchemyGuiScreen extends AbstractContainerScreen<
 			guiGraphics.renderTooltip(font, Component.translatable("gui.witchercraft.character_abilities_alchemy_gui.tooltip_deals_additional_damage_to_mob"), mouseX, mouseY);
 		if (mouseX > leftPos + 134 && mouseX < leftPos + 158 && mouseY > topPos + 28 && mouseY < topPos + 52)
 			guiGraphics.renderTooltip(font, Component.translatable("gui.witchercraft.character_abilities_alchemy_gui.tooltip_bombs_deal_additional_damage"), mouseX, mouseY);
-		if (mouseX > leftPos + 135 && mouseX < leftPos + 159 && mouseY > topPos + 74 && mouseY < topPos + 98)
+		if (mouseX > leftPos + 136 && mouseX < leftPos + 160 && mouseY > topPos + 74 && mouseY < topPos + 98)
 			guiGraphics.renderTooltip(font, Component.translatable("gui.witchercraft.character_abilities_alchemy_gui.tooltip_bombs_have_chance_to_remain_in_i"), mouseX, mouseY);
 		if (mouseX > leftPos + 136 && mouseX < leftPos + 160 && mouseY > topPos + 121 && mouseY < topPos + 145)
 			guiGraphics.renderTooltip(font, Component.translatable("gui.witchercraft.character_abilities_alchemy_gui.tooltip_bombs_have_increased_area_of_eff"), mouseX, mouseY);
@@ -93,6 +94,27 @@ public class CharacterAbilitiesAlchemyGuiScreen extends AbstractContainerScreen<
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
+		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/refreshmentbought.png"), this.leftPos + 6, this.topPos + 25, 0, 0, 32, 32, 32, 32);
+
+		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/delayedrecoverybought.png"), this.leftPos + 6, this.topPos + 70, 0, 0, 32, 32, 32, 32);
+
+		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/sideeffectsbought.png"), this.leftPos + 6, this.topPos + 115, 0, 0, 32, 32, 32, 32);
+
+		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/poisonedbladesbought.png"), this.leftPos + 69, this.topPos + 25, 0, 0, 32, 32, 32, 32);
+
+		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/protectivecoatingbought.png"), this.leftPos + 69, this.topPos + 70, 0, 0, 32, 32, 32, 32);
+
+		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/hunterinstinctsbought.png"), this.leftPos + 69, this.topPos + 115, 0, 0, 32, 32, 32, 32);
+
+		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/pyrotechnicsbought.png"), this.leftPos + 132, this.topPos + 25, 0, 0, 32, 32, 32, 32);
+
+		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/efficencybought.png"), this.leftPos + 132, this.topPos + 70, 0, 0, 32, 32, 32, 32);
+
+		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/clusterbombsbought.png"), this.leftPos + 132, this.topPos + 115, 0, 0, 32, 32, 32, 32);
+
+		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/skillpoint.png"), this.leftPos + 195, this.topPos + 7, 0, 0, 50, 25, 50, 25);
+
 		RenderSystem.disableBlend();
 	}
 
@@ -107,6 +129,9 @@ public class CharacterAbilitiesAlchemyGuiScreen extends AbstractContainerScreen<
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+		guiGraphics.drawString(this.font,
+
+				CharacterAbilitesSkillPointsProcedure.execute(entity), 195, 16, -12829636, false);
 	}
 
 	@Override

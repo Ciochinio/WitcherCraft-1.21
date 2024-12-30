@@ -15,6 +15,7 @@ import net.redboltmedia.witchercraft.procedures.CrushingBlowsShowProcedure;
 import net.redboltmedia.witchercraft.procedures.CrippllingStrikesShowProcedure;
 import net.redboltmedia.witchercraft.procedures.CripplingShotShowProcedure;
 import net.redboltmedia.witchercraft.procedures.ColdBloodShowProcedure;
+import net.redboltmedia.witchercraft.procedures.CharacterAbilitesSkillPointsProcedure;
 import net.redboltmedia.witchercraft.procedures.AnatomicalKnowledgeShowProcedure;
 import net.redboltmedia.witchercraft.network.CharacterAbilitiesCombatGuiButtonMessage;
 
@@ -85,9 +86,9 @@ public class CharacterAbilitiesCombatGuiScreen extends AbstractContainerScreen<C
 			guiGraphics.renderTooltip(font, Component.translatable("gui.witchercraft.character_abilities_combat_gui.tooltip_increase_crit_rate_by_12_and_cr"), mouseX, mouseY);
 		if (mouseX > leftPos + 6 && mouseX < leftPos + 30 && mouseY > topPos + 118 && mouseY < topPos + 142)
 			guiGraphics.renderTooltip(font, Component.translatable("gui.witchercraft.character_abilities_combat_gui.tooltip_apply_bleed_effect_on_hit"), mouseX, mouseY);
-		if (mouseX > leftPos + 45 && mouseX < leftPos + 69 && mouseY > topPos + 20 && mouseY < topPos + 44)
+		if (mouseX > leftPos + 44 && mouseX < leftPos + 68 && mouseY > topPos + 19 && mouseY < topPos + 43)
 			guiGraphics.renderTooltip(font, Component.translatable("gui.witchercraft.character_abilities_combat_gui.tooltip_add_10_to_dmg_dealt"), mouseX, mouseY);
-		if (mouseX > leftPos + 46 && mouseX < leftPos + 70 && mouseY > topPos + 76 && mouseY < topPos + 100)
+		if (mouseX > leftPos + 45 && mouseX < leftPos + 69 && mouseY > topPos + 76 && mouseY < topPos + 100)
 			guiGraphics.renderTooltip(font, Component.translatable("gui.witchercraft.character_abilities_combat_gui.tooltip_increase_crit_rate_by_8_and_cri"), mouseX, mouseY);
 		if (mouseX > leftPos + 46 && mouseX < leftPos + 70 && mouseY > topPos + 120 && mouseY < topPos + 144)
 			guiGraphics.renderTooltip(font, Component.translatable("gui.witchercraft.character_abilities_combat_gui.tooltip_sunder_armoradd_20_to_dmg_dea"), mouseX, mouseY);
@@ -120,7 +121,7 @@ public class CharacterAbilitiesCombatGuiScreen extends AbstractContainerScreen<C
 
 		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/muslemomorybought.png"), this.leftPos + 4, this.topPos + 16, 0, 0, 32, 32, 32, 32);
 
-		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/strenghttrainingbought.png"), this.leftPos + 40, this.topPos + 16, 0, 0, 32, 32, 32, 32);
+		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/strengtraingbought.png"), this.leftPos + 40, this.topPos + 16, 0, 0, 32, 32, 32, 32);
 
 		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/fleetfootedbougth.png"), this.leftPos + 76, this.topPos + 16, 0, 0, 32, 32, 32, 32);
 
@@ -142,6 +143,14 @@ public class CharacterAbilitiesCombatGuiScreen extends AbstractContainerScreen<C
 
 		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/sunderarmorbought.png"), this.leftPos + 40, this.topPos + 115, 0, 0, 32, 32, 32, 32);
 
+		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/deadlyprecisonbought.png"), this.leftPos + 76, this.topPos + 115, 0, 0, 32, 32, 32, 32);
+
+		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/cripplingshotbought.png"), this.leftPos + 112, this.topPos + 115, 0, 0, 32, 32, 32, 32);
+
+		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/undyingbought.png"), this.leftPos + 148, this.topPos + 115, 0, 0, 32, 32, 32, 32);
+
+		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/skillpoint.png"), this.leftPos + 202, this.topPos + 7, 0, 0, 50, 25, 50, 25);
+
 		RenderSystem.disableBlend();
 	}
 
@@ -156,6 +165,9 @@ public class CharacterAbilitiesCombatGuiScreen extends AbstractContainerScreen<C
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+		guiGraphics.drawString(this.font,
+
+				CharacterAbilitesSkillPointsProcedure.execute(entity), 202, 16, -12829636, false);
 	}
 
 	@Override

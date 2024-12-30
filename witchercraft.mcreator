@@ -2624,57 +2624,6 @@
       "path": "~/Character Abilities/General"
     },
     {
-      "name": "GoumentEffect",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "goument_effect",
-      "metadata": {
-        "files": [
-          "src/main/java/net/redboltmedia/witchercraft/procedures/GoumentEffectProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Character Abilities/General/GOURMET"
-    },
-    {
-      "name": "SurvivalInsinctEffect",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "survival_insinct_effect",
-      "metadata": {
-        "files": [
-          "src/main/java/net/redboltmedia/witchercraft/procedures/SurvivalInsinctEffectProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Character Abilities/General/SURVIVAL INSINCT"
-    },
-    {
-      "name": "Gourment",
-      "type": "achievement",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gourment",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/witchercraft/advancement/gourment.json"
-        ]
-      },
-      "path": "~/Character Abilities/General/GOURMET"
-    },
-    {
       "name": "DevClear",
       "type": "procedure",
       "compiles": true,
@@ -3609,25 +3558,6 @@
         ]
       },
       "path": "~/Character Abilities/Combat/ANATOMICAL KNOWLEDGE"
-    },
-    {
-      "name": "CripplingShot",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crippling_shot",
-      "metadata": {
-        "files": [
-          "src/main/java/net/redboltmedia/witchercraft/procedures/CripplingShotProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Character Abilities/Combat/CRIPPLING SHOT"
     },
     {
       "name": "FlooodOfAngerEffec",
@@ -4570,6 +4500,264 @@
         ]
       },
       "path": "~/Character Abilities/Signs/domintion"
+    },
+    {
+      "name": "CharacterAbilitesXpCheck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_abilites_xp_check",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitesXpCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities"
+    },
+    {
+      "name": "CharacterAbilitesXpRemove",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_abilites_xp_remove",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitesXpRemoveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities"
+    },
+    {
+      "name": "CharaterLevel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charater_level",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharaterLevelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Stats/Stats/Gui"
+    },
+    {
+      "name": "CharacterExperience",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_experience",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterExperienceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Stats/Stats/Gui"
+    },
+    {
+      "name": "CharacterAbilitiesExperienceRemove",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_abilities_experience_remove",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitiesExperienceRemoveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/CharacterAbilitiesExperience"
+    },
+    {
+      "name": "CharacterAbilitiesExperienceCheck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_abilities_experience_check",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitiesExperienceCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/CharacterAbilitiesExperience"
+    },
+    {
+      "name": "CharacterAbilitiesTier2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_abilities_tier_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitiesTier2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/CharacterAbilitiesExperience"
+    },
+    {
+      "name": "CharacterAbilitiesTier3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_abilities_tier_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitiesTier3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/CharacterAbilitiesExperience"
+    },
+    {
+      "name": "GourmentEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gourment_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/GourmentEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/General/GOURMET"
+    },
+    {
+      "name": "CripplingShotEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crippling_shot_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CripplingShotEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/Combat/CRIPPLING SHOT"
+    },
+    {
+      "name": "SurvivalInstinctEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "survival_instinct_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/SurvivalInstinctEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities/General/SURVIVAL INSINCT"
+    },
+    {
+      "name": "CharacterAbilitesSkillPoints",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_abilites_skill_points",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitesSkillPointsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character Abilities"
+    },
+    {
+      "name": "CharacterAbilitesExpirence",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_abilites_expirence",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitesExpirenceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Character Abilities"
     }
   ],
   "variable_elements": [
@@ -4944,6 +5132,18 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "wichercraftPlayerLevel",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "wichercraftPlayerExperience",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -5060,7 +5260,6 @@
       "gui.witchercraft.meditation_gui.button_back": "Back",
       "gui.witchercraft.character_abilities_combat_gui.button_general": "General",
       "item.witchercraft.griffin_armor_chestplate": "Griffin Armor Chestplate",
-      "advancements.gourment.descr": "asd",
       "gui.witchercraft.pause_menu_gui.button_bestiary": "Bestiary",
       "gui.witchercraft.character_abilities_alchemy_gui.button_combat": " Combat",
       "gui.witchercraft.character_abilities_combat_gui.tooltip_if_main_hand_weapon_ranged_add": " IF MAIN HAND WEAPON RANGED ADD 10% TO CRIT RATE",
@@ -5149,7 +5348,6 @@
       "gui.witchercraft.character_abilities_signs_gui.tooltip_gives_hero_of_the_village_effec": " GIVES HERO OF THE VILLAGE EFFECT ",
       "effect.witchercraft.passive_health_regen": "Passive Health Regen",
       "gui.witchercraft.character_abilities_signs_gui.button_back": "Back",
-      "advancements.gourment.title": "Gourment",
       "item.witchercraft.vitriol": "Vitriol",
       "item.witchercraft.specter_oil": "Specter Oil",
       "item.witchercraft.white_honey": "White Honey",
@@ -5674,6 +5872,10 @@
                 "children": []
               }
             ]
+          },
+          {
+            "name": "CharacterAbilitiesExperience",
+            "children": []
           }
         ]
       }

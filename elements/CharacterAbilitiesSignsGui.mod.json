@@ -183,7 +183,7 @@
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_explodingshield",
-          "image": "explodingshield.png",
+          "image": "exploadingshield.png",
           "hoveredImage": "",
           "onClick": {
             "name": "ExplodingShieldEffect"
@@ -536,8 +536,8 @@
           },
           "width": 24,
           "height": 24,
-          "x": 275,
-          "y": 112,
+          "x": 273,
+          "y": 113,
           "locked": false
         }
       },
@@ -554,6 +554,183 @@
           "y": 163,
           "locked": false
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "farreachingaardbought.png",
+          "use1Xscale": false,
+          "x": 123,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "aardintensitybought.png",
+          "use1Xscale": false,
+          "x": 123,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "shockwavebought.png",
+          "use1Xscale": false,
+          "x": 123,
+          "y": 161,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "firestreambought.png",
+          "use1Xscale": false,
+          "x": 159,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ingniintensitybought.png",
+          "use1Xscale": false,
+          "x": 159,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "pyromaniacbought.png",
+          "use1Xscale": false,
+          "x": 159,
+          "y": 161,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "sustainedglyphsbought.png",
+          "use1Xscale": false,
+          "x": 195,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "yrdenintensitybought.png",
+          "use1Xscale": false,
+          "x": 195,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "magictrapbought.png",
+          "use1Xscale": false,
+          "x": 195,
+          "y": 161,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "explodingshildbought.png",
+          "use1Xscale": false,
+          "x": 231,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "quenintensitybought.png",
+          "use1Xscale": false,
+          "x": 231,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "quendischargebought.png",
+          "use1Xscale": false,
+          "x": 231,
+          "y": 161,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "delusionbought.png",
+          "use1Xscale": false,
+          "x": 267,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "axiiintensitybought.png",
+          "use1Xscale": false,
+          "x": 267,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "dominationbought.png",
+          "use1Xscale": false,
+          "x": 267,
+          "y": 161,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skillpoint.png",
+          "use1Xscale": false,
+          "x": 321,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_character_abilites_skill_po",
+          "text": {
+            "fixedValue": "",
+            "name": "CharacterAbilitesSkillPoints"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 321,
+          "y": 53,
+          "locked": false
+        }
       }
     ],
     "gridSettings": {
@@ -561,7 +738,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": false
+      "snapOnGrid": true
     }
   }
 }

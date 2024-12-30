@@ -2,11 +2,11 @@
 package net.redboltmedia.witchercraft.network;
 
 import net.redboltmedia.witchercraft.world.inventory.CharactersAbilietesGeneralGuiMenu;
-import net.redboltmedia.witchercraft.procedures.SurvivalInsinctEffectProcedure;
+import net.redboltmedia.witchercraft.procedures.SurvivalInstinctEffectProcedure;
 import net.redboltmedia.witchercraft.procedures.SunAndStarsEffectProcedure;
 import net.redboltmedia.witchercraft.procedures.PauseMenuGuiOpenProcedure;
 import net.redboltmedia.witchercraft.procedures.GriffinSchoolEffectProcedure;
-import net.redboltmedia.witchercraft.procedures.GoumentEffectProcedure;
+import net.redboltmedia.witchercraft.procedures.GourmentEffectProcedure;
 import net.redboltmedia.witchercraft.procedures.CharaterAbilitesGeneralGuiOpenProcedure;
 import net.redboltmedia.witchercraft.procedures.CharacterAbilitiesSignsGuiOpenProcedure;
 import net.redboltmedia.witchercraft.procedures.CharacterAbilitiesCombatGuiOpenProcedure;
@@ -95,11 +95,11 @@ public record CharactersAbilietesGeneralGuiButtonMessage(int buttonID, int x, in
 		}
 		if (buttonID == 6) {
 
-			SurvivalInsinctEffectProcedure.execute(entity);
+			SurvivalInstinctEffectProcedure.execute(entity);
 		}
 		if (buttonID == 7) {
 
-			GoumentEffectProcedure.execute(entity);
+			GourmentEffectProcedure.execute(entity);
 		}
 		if (buttonID == 8) {
 

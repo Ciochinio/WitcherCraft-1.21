@@ -106,6 +106,8 @@ public class WitchercraftModVariables {
 			clone.witchercraftAbilitiesFloodOfAnger = original.witchercraftAbilitiesFloodOfAnger;
 			clone.witchercraftAbilitiesRazorFocus = original.witchercraftAbilitiesRazorFocus;
 			clone.witchercraftAbilitiesUndying = original.witchercraftAbilitiesUndying;
+			clone.wichercraftPlayerLevel = original.wichercraftPlayerLevel;
+			clone.wichercraftPlayerExperience = original.wichercraftPlayerExperience;
 			if (!event.isWasDeath()) {
 				clone.witchercraftMovementSpeed = original.witchercraftMovementSpeed;
 				clone.witchercraftHealth = original.witchercraftHealth;
@@ -191,6 +193,8 @@ public class WitchercraftModVariables {
 		public boolean witchercraftAbilitiesFloodOfAnger = false;
 		public boolean witchercraftAbilitiesRazorFocus = false;
 		public boolean witchercraftAbilitiesUndying = false;
+		public double wichercraftPlayerLevel = 0;
+		public double wichercraftPlayerExperience = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -257,6 +261,8 @@ public class WitchercraftModVariables {
 			nbt.putBoolean("witchercraftAbilitiesFloodOfAnger", witchercraftAbilitiesFloodOfAnger);
 			nbt.putBoolean("witchercraftAbilitiesRazorFocus", witchercraftAbilitiesRazorFocus);
 			nbt.putBoolean("witchercraftAbilitiesUndying", witchercraftAbilitiesUndying);
+			nbt.putDouble("wichercraftPlayerLevel", wichercraftPlayerLevel);
+			nbt.putDouble("wichercraftPlayerExperience", wichercraftPlayerExperience);
 			return nbt;
 		}
 
@@ -324,6 +330,8 @@ public class WitchercraftModVariables {
 			witchercraftAbilitiesFloodOfAnger = nbt.getBoolean("witchercraftAbilitiesFloodOfAnger");
 			witchercraftAbilitiesRazorFocus = nbt.getBoolean("witchercraftAbilitiesRazorFocus");
 			witchercraftAbilitiesUndying = nbt.getBoolean("witchercraftAbilitiesUndying");
+			wichercraftPlayerLevel = nbt.getDouble("wichercraftPlayerLevel");
+			wichercraftPlayerExperience = nbt.getDouble("wichercraftPlayerExperience");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

@@ -64,7 +64,7 @@
           "image": "survivalinstict.png",
           "hoveredImage": "",
           "onClick": {
-            "name": "SurvivalInsinctEffect"
+            "name": "SurvivalInstinctEffect"
           },
           "displayCondition": {
             "name": "SurvivalInstinctShow"
@@ -95,7 +95,7 @@
           "image": "gourment.png",
           "hoveredImage": "",
           "onClick": {
-            "name": "GoumentEffect"
+            "name": "GourmentEffect"
           },
           "displayCondition": {
             "name": "GourmentShowIcon"
@@ -123,7 +123,7 @@
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_catschooltechniques",
-          "image": "catschooltechniques.png",
+          "image": "catschool.png",
           "hoveredImage": "",
           "onClick": {
             "name": "CatSchoolEffect"
@@ -333,6 +333,33 @@
           "use1Xscale": false,
           "x": 249,
           "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skillpoint.png",
+          "use1Xscale": false,
+          "x": 312,
+          "y": 35,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_character_abilites_skill_po",
+          "text": {
+            "fixedValue": "",
+            "name": "CharacterAbilitesSkillPoints"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 313,
+          "y": 42,
           "locked": false
         }
       }

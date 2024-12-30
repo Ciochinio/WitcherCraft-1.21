@@ -5,6 +5,7 @@ import net.redboltmedia.witchercraft.procedures.SurvivalInstinctShowProcedure;
 import net.redboltmedia.witchercraft.procedures.SunAndStarsShowProcedure;
 import net.redboltmedia.witchercraft.procedures.GriffinSchoolShowProcedure;
 import net.redboltmedia.witchercraft.procedures.GourmentShowIconProcedure;
+import net.redboltmedia.witchercraft.procedures.CharacterAbilitesSkillPointsProcedure;
 import net.redboltmedia.witchercraft.procedures.CatSchoolShowProcedure;
 import net.redboltmedia.witchercraft.procedures.BearSchoolShowProcedure;
 import net.redboltmedia.witchercraft.network.CharactersAbilietesGeneralGuiButtonMessage;
@@ -94,6 +95,8 @@ public class CharactersAbilietesGeneralGuiScreen extends AbstractContainerScreen
 
 		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/bearschoolbought.png"), this.leftPos + 123, this.topPos + 70, 0, 0, 32, 32, 32, 32);
 
+		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/skillpoint.png"), this.leftPos + 186, this.topPos + -2, 0, 0, 50, 25, 50, 25);
+
 		RenderSystem.disableBlend();
 	}
 
@@ -108,6 +111,9 @@ public class CharactersAbilietesGeneralGuiScreen extends AbstractContainerScreen
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+		guiGraphics.drawString(this.font,
+
+				CharacterAbilitesSkillPointsProcedure.execute(entity), 187, 5, -12829636, false);
 	}
 
 	@Override
@@ -199,7 +205,7 @@ public class CharactersAbilietesGeneralGuiScreen extends AbstractContainerScreen
 		guistate.put("button:imagebutton_gourment", imagebutton_gourment);
 		this.addRenderableWidget(imagebutton_gourment);
 		imagebutton_catschooltechniques = new ImageButton(this.leftPos + 6, this.topPos + 70, 32, 32,
-				new WidgetSprites(ResourceLocation.parse("witchercraft:textures/screens/catschooltechniques.png"), ResourceLocation.parse("witchercraft:textures/screens/catschooltechniques.png")), e -> {
+				new WidgetSprites(ResourceLocation.parse("witchercraft:textures/screens/catschool.png"), ResourceLocation.parse("witchercraft:textures/screens/catschool.png")), e -> {
 					if (CatSchoolShowProcedure.execute(entity)) {
 						PacketDistributor.sendToServer(new CharactersAbilietesGeneralGuiButtonMessage(8, x, y, z));
 						CharactersAbilietesGeneralGuiButtonMessage.handleButtonAction(entity, 8, x, y, z);
