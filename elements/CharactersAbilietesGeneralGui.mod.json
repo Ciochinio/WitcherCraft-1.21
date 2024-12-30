@@ -48,12 +48,12 @@
         "data": {
           "name": "tooltip_during_day_add_1_to_health_rege",
           "text": {
-            "fixedValue": "DURING DAY ADD +1 TO HEALTH REGEN, /n DURING NIGHT +1 TO STAMINA REGENERATION"
+            "fixedValue": "DURING DAY ADD +1 TO HEALTH REGEN, DURING NIGHT +1 TO STAMINA REGENERATION"
           },
           "width": 24,
-          "height": 24,
-          "x": 135,
-          "y": 66,
+          "height": 29,
+          "x": 136,
+          "y": 61,
           "locked": false
         }
       },

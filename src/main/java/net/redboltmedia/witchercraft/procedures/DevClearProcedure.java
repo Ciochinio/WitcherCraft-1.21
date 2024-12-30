@@ -235,6 +235,11 @@ public class DevClearProcedure {
 		}
 		{
 			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
+			_vars.witchercraftAbilitiesLearned = 0;
+			_vars.syncPlayerVariables(entity);
+		}
+		{
+			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
 			_vars.wichercraftPlayerLevel = 0;
 			_vars.syncPlayerVariables(entity);
 		}
@@ -245,7 +250,7 @@ public class DevClearProcedure {
 		}
 		{
 			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-			_vars.witchercraftAbilitiesLearned = 0;
+			_vars.wichercraftAbilitesExperienceRequirement = 100;
 			_vars.syncPlayerVariables(entity);
 		}
 	}

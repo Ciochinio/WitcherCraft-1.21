@@ -4758,6 +4758,36 @@
         ]
       },
       "path": "~/Character Abilities"
+    },
+    {
+      "name": "Expfix",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "expfix",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/ExpfixProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Lvlfix",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lvlfix",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/command/LvlfixCommand.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -5144,6 +5174,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "wichercraftAbilitesExperienceRequirement",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
     }
   ],
   "sound_elements": [],
@@ -5312,7 +5348,7 @@
       "item.witchercraft.feline_armor_leggings": "Feline Armor Leggings",
       "gui.witchercraft.character_abilities_alchemy_gui.tooltip_deals_additional_damage_to_mob": " DEALS ADDITIONAL DAMAGE TO MOB TYPE THE OIL IN MAIN HAND TARGETS",
       "item.witchercraft.wolven_armor_helmet": "Wolven Armor Helmet",
-      "gui.witchercraft.characters_abilietes_general_gui.tooltip_during_day_add_1_to_health_rege": "DURING DAY ADD +1 TO HEALTH REGEN, /n DURING NIGHT +1 TO STAMINA REGENERATION",
+      "gui.witchercraft.characters_abilietes_general_gui.tooltip_during_day_add_1_to_health_rege": "DURING DAY ADD +1 TO HEALTH REGEN, DURING NIGHT +1 TO STAMINA REGENERATION",
       "item.witchercraft.dancing_star": "Dancing Star",
       "gui.witchercraft.character_abilities_alchemy_gui.tooltip_oils_give_5_chance_to_poison_o": " OILS GIVE 5% CHANCE TO POISON ON HIT ",
       "gui.witchercraft.character_abilities_signs_gui.tooltip_deals_absorbet_amount_of_dmg_to": "DEALS ABSORBET AMOUNT OF DMG TO ATTACKER",

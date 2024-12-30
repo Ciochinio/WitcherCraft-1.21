@@ -62,7 +62,7 @@ public class CharactersAbilietesGeneralGuiScreen extends AbstractContainerScreen
 		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
-		if (mouseX > leftPos + 9 && mouseX < leftPos + 33 && mouseY > topPos + 29 && mouseY < topPos + 53)
+		if (mouseX > leftPos + 10 && mouseX < leftPos + 34 && mouseY > topPos + 24 && mouseY < topPos + 53)
 			guiGraphics.renderTooltip(font, Component.translatable("gui.witchercraft.characters_abilietes_general_gui.tooltip_during_day_add_1_to_health_rege"), mouseX, mouseY);
 		if (mouseX > leftPos + 74 && mouseX < leftPos + 98 && mouseY > topPos + 26 && mouseY < topPos + 50)
 			guiGraphics.renderTooltip(font, Component.translatable("gui.witchercraft.characters_abilietes_general_gui.tooltip_increases_max_hp_by_15"), mouseX, mouseY);

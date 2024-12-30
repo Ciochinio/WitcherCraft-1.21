@@ -108,6 +108,7 @@ public class WitchercraftModVariables {
 			clone.witchercraftAbilitiesUndying = original.witchercraftAbilitiesUndying;
 			clone.wichercraftPlayerLevel = original.wichercraftPlayerLevel;
 			clone.wichercraftPlayerExperience = original.wichercraftPlayerExperience;
+			clone.wichercraftAbilitesExperienceRequirement = original.wichercraftAbilitesExperienceRequirement;
 			if (!event.isWasDeath()) {
 				clone.witchercraftMovementSpeed = original.witchercraftMovementSpeed;
 				clone.witchercraftHealth = original.witchercraftHealth;
@@ -195,6 +196,7 @@ public class WitchercraftModVariables {
 		public boolean witchercraftAbilitiesUndying = false;
 		public double wichercraftPlayerLevel = 0;
 		public double wichercraftPlayerExperience = 0;
+		public double wichercraftAbilitesExperienceRequirement = 0.0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -263,6 +265,7 @@ public class WitchercraftModVariables {
 			nbt.putBoolean("witchercraftAbilitiesUndying", witchercraftAbilitiesUndying);
 			nbt.putDouble("wichercraftPlayerLevel", wichercraftPlayerLevel);
 			nbt.putDouble("wichercraftPlayerExperience", wichercraftPlayerExperience);
+			nbt.putDouble("wichercraftAbilitesExperienceRequirement", wichercraftAbilitesExperienceRequirement);
 			return nbt;
 		}
 
@@ -332,6 +335,7 @@ public class WitchercraftModVariables {
 			witchercraftAbilitiesUndying = nbt.getBoolean("witchercraftAbilitiesUndying");
 			wichercraftPlayerLevel = nbt.getDouble("wichercraftPlayerLevel");
 			wichercraftPlayerExperience = nbt.getDouble("wichercraftPlayerExperience");
+			wichercraftAbilitesExperienceRequirement = nbt.getDouble("wichercraftAbilitesExperienceRequirement");
 		}
 
 		public void syncPlayerVariables(Entity entity) {
