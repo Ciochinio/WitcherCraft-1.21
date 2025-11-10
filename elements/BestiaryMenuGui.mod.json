@@ -1,5 +1,5 @@
 {
-  "_fv": 73,
+  "_fv": 79,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -7,7 +7,7 @@
     "height": 166,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
-    "renderBgLayer": true,
+    "renderBgLayer": false,
     "doesPauseGame": true,
     "components": [
       {
@@ -23,6 +23,60 @@
           "height": 20,
           "x": 375,
           "y": 206,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_drownerface",
+          "image": "drownerface.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "DrownerGuiOpen"
+          },
+          "x": 87,
+          "y": 35,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_bestiary",
+          "text": {
+            "fixedValue": "Bestiary"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 87,
+          "y": 17,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_necrophages",
+          "text": {
+            "fixedValue": "Necrophages"
+          },
+          "width": 33,
+          "height": 32,
+          "x": 87,
+          "y": 35,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "book.png",
+          "use1Xscale": true,
+          "x": 42,
+          "y": -1,
           "locked": false
         }
       }

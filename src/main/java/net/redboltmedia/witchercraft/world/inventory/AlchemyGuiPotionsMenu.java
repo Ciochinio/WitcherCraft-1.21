@@ -1,4 +1,3 @@
-
 package net.redboltmedia.witchercraft.world.inventory;
 
 import net.redboltmedia.witchercraft.procedures.PauseMenuGuiBlindEndProcedure;
@@ -29,9 +28,17 @@ import net.minecraft.core.BlockPos;
 import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.Collections;
 
-public class AlchemyGuiPotionsMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
-	public final static HashMap<String, Object> guistate = new HashMap<>();
+public class AlchemyGuiPotionsMenu extends AbstractContainerMenu implements WitchercraftModMenus.MenuAccessor {
+	public final Map<String, Object> menuState = new HashMap<>() {
+		@Override
+		public Object put(String key, Object value) {
+			if (!this.containsKey(key) && this.size() >= 12)
+				return null;
+			return super.put(key, value);
+		}
+	};
 	public final Level world;
 	public final Player entity;
 	public int x, y, z;
@@ -86,9 +93,13 @@ public class AlchemyGuiPotionsMenu extends AbstractContainerMenu implements Supp
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 26, 31) {
 			private final int slot = 0;
+			private int x = AlchemyGuiPotionsMenu.this.x;
+			private int y = AlchemyGuiPotionsMenu.this.y;
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 17, 13) {
 			private final int slot = 1;
+			private int x = AlchemyGuiPotionsMenu.this.x;
+			private int y = AlchemyGuiPotionsMenu.this.y;
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -97,6 +108,8 @@ public class AlchemyGuiPotionsMenu extends AbstractContainerMenu implements Supp
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 35, 13) {
 			private final int slot = 2;
+			private int x = AlchemyGuiPotionsMenu.this.x;
+			private int y = AlchemyGuiPotionsMenu.this.y;
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -105,6 +118,8 @@ public class AlchemyGuiPotionsMenu extends AbstractContainerMenu implements Supp
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 8, 31) {
 			private final int slot = 3;
+			private int x = AlchemyGuiPotionsMenu.this.x;
+			private int y = AlchemyGuiPotionsMenu.this.y;
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -113,6 +128,8 @@ public class AlchemyGuiPotionsMenu extends AbstractContainerMenu implements Supp
 		}));
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 44, 31) {
 			private final int slot = 4;
+			private int x = AlchemyGuiPotionsMenu.this.x;
+			private int y = AlchemyGuiPotionsMenu.this.y;
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -121,6 +138,8 @@ public class AlchemyGuiPotionsMenu extends AbstractContainerMenu implements Supp
 		}));
 		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 17, 49) {
 			private final int slot = 5;
+			private int x = AlchemyGuiPotionsMenu.this.x;
+			private int y = AlchemyGuiPotionsMenu.this.y;
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -129,6 +148,8 @@ public class AlchemyGuiPotionsMenu extends AbstractContainerMenu implements Supp
 		}));
 		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 35, 49) {
 			private final int slot = 6;
+			private int x = AlchemyGuiPotionsMenu.this.x;
+			private int y = AlchemyGuiPotionsMenu.this.y;
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -137,6 +158,8 @@ public class AlchemyGuiPotionsMenu extends AbstractContainerMenu implements Supp
 		}));
 		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 143, 31) {
 			private final int slot = 7;
+			private int x = AlchemyGuiPotionsMenu.this.x;
+			private int y = AlchemyGuiPotionsMenu.this.y;
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -145,6 +168,8 @@ public class AlchemyGuiPotionsMenu extends AbstractContainerMenu implements Supp
 		}));
 		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, -109, 13) {
 			private final int slot = 8;
+			private int x = AlchemyGuiPotionsMenu.this.x;
+			private int y = AlchemyGuiPotionsMenu.this.y;
 
 			@Override
 			public boolean mayPickup(Player entity) {
@@ -158,6 +183,8 @@ public class AlchemyGuiPotionsMenu extends AbstractContainerMenu implements Supp
 		}));
 		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, -91, 13) {
 			private final int slot = 9;
+			private int x = AlchemyGuiPotionsMenu.this.x;
+			private int y = AlchemyGuiPotionsMenu.this.y;
 
 			@Override
 			public boolean mayPickup(Player entity) {
@@ -210,12 +237,14 @@ public class AlchemyGuiPotionsMenu extends AbstractContainerMenu implements Supp
 				}
 				return ItemStack.EMPTY;
 			}
-			if (itemstack1.getCount() == 0)
-				slot.set(ItemStack.EMPTY);
-			else
+			if (itemstack1.isEmpty()) {
+				slot.setByPlayer(ItemStack.EMPTY);
+			} else {
 				slot.setChanged();
-			if (itemstack1.getCount() == itemstack.getCount())
+			}
+			if (itemstack1.getCount() == itemstack.getCount()) {
 				return ItemStack.EMPTY;
+			}
 			slot.onTake(playerIn, itemstack1);
 		}
 		return itemstack;
@@ -305,7 +334,13 @@ public class AlchemyGuiPotionsMenu extends AbstractContainerMenu implements Supp
 		}
 	}
 
-	public Map<Integer, Slot> get() {
-		return customSlots;
+	@Override
+	public Map<Integer, Slot> getSlots() {
+		return Collections.unmodifiableMap(customSlots);
+	}
+
+	@Override
+	public Map<String, Object> getMenuState() {
+		return menuState;
 	}
 }

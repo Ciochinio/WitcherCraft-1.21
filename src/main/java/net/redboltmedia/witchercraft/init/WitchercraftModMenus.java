@@ -1,29 +1,42 @@
-
 /*
  *	MCreator note: This file will be REGENERATED on each build.
  */
 package net.redboltmedia.witchercraft.init;
 
 import net.redboltmedia.witchercraft.world.inventory.SignGuiMenu;
+import net.redboltmedia.witchercraft.world.inventory.RotfiendGuiMenu;
 import net.redboltmedia.witchercraft.world.inventory.PauseMenuGUIMenu;
 import net.redboltmedia.witchercraft.world.inventory.MeditationGuiMenu;
+import net.redboltmedia.witchercraft.world.inventory.HigherVampireGuiMenu;
+import net.redboltmedia.witchercraft.world.inventory.GraveirGuiMenu;
 import net.redboltmedia.witchercraft.world.inventory.GlossaryMenuGuiMenu;
+import net.redboltmedia.witchercraft.world.inventory.FogletMenu;
+import net.redboltmedia.witchercraft.world.inventory.DrownerGuiMenu;
 import net.redboltmedia.witchercraft.world.inventory.CharactersAbilietesGeneralGuiMenu;
 import net.redboltmedia.witchercraft.world.inventory.CharacterGuiMenu;
 import net.redboltmedia.witchercraft.world.inventory.CharacterAbilitiesSignsGuiMenu;
 import net.redboltmedia.witchercraft.world.inventory.CharacterAbilitiesCombatGuiMenu;
 import net.redboltmedia.witchercraft.world.inventory.CharacterAbilitiesAlchemyGuiMenu;
+import net.redboltmedia.witchercraft.world.inventory.BruxaGuiMenu;
 import net.redboltmedia.witchercraft.world.inventory.BestiaryMenuGuiMenu;
 import net.redboltmedia.witchercraft.world.inventory.AlchemyGuiPotionsMenu;
 import net.redboltmedia.witchercraft.world.inventory.AlchemyGuiMenu;
+import net.redboltmedia.witchercraft.network.MenuStateUpdateMessage;
 import net.redboltmedia.witchercraft.WitchercraftMod;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.common.extensions.IMenuTypeExtension;
 
+import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.inventory.MenuType;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.client.Minecraft;
+
+import java.util.Map;
 
 public class WitchercraftModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(Registries.MENU, WitchercraftMod.MODID);
@@ -42,4 +55,35 @@ public class WitchercraftModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<CharacterAbilitiesAlchemyGuiMenu>> CHARACTER_ABILITIES_ALCHEMY_GUI = REGISTRY.register("character_abilities_alchemy_gui",
 			() -> IMenuTypeExtension.create(CharacterAbilitiesAlchemyGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<CharacterAbilitiesSignsGuiMenu>> CHARACTER_ABILITIES_SIGNS_GUI = REGISTRY.register("character_abilities_signs_gui", () -> IMenuTypeExtension.create(CharacterAbilitiesSignsGuiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<DrownerGuiMenu>> DROWNER_GUI = REGISTRY.register("drowner_gui", () -> IMenuTypeExtension.create(DrownerGuiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<RotfiendGuiMenu>> ROTFIEND_GUI = REGISTRY.register("rotfiend_gui", () -> IMenuTypeExtension.create(RotfiendGuiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<FogletMenu>> FOGLET = REGISTRY.register("foglet", () -> IMenuTypeExtension.create(FogletMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<BruxaGuiMenu>> BRUXA_GUI = REGISTRY.register("bruxa_gui", () -> IMenuTypeExtension.create(BruxaGuiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<GraveirGuiMenu>> GRAVEIR_GUI = REGISTRY.register("graveir_gui", () -> IMenuTypeExtension.create(GraveirGuiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<HigherVampireGuiMenu>> HIGHER_VAMPIRE_GUI = REGISTRY.register("higher_vampire_gui", () -> IMenuTypeExtension.create(HigherVampireGuiMenu::new));
+
+	public interface MenuAccessor {
+		Map<String, Object> getMenuState();
+
+		Map<Integer, Slot> getSlots();
+
+		default void sendMenuStateUpdate(Player player, int elementType, String name, Object elementState, boolean needClientUpdate) {
+			getMenuState().put(elementType + ":" + name, elementState);
+			if (player instanceof ServerPlayer serverPlayer) {
+				PacketDistributor.sendToPlayer(serverPlayer, new MenuStateUpdateMessage(elementType, name, elementState));
+			} else if (player.level().isClientSide) {
+				if (Minecraft.getInstance().screen instanceof WitchercraftModScreens.ScreenAccessor accessor && needClientUpdate)
+					accessor.updateMenuState(elementType, name, elementState);
+				PacketDistributor.sendToServer(new MenuStateUpdateMessage(elementType, name, elementState));
+			}
+		}
+
+		default <T> T getMenuState(int elementType, String name, T defaultValue) {
+			try {
+				return (T) getMenuState().getOrDefault(elementType + ":" + name, defaultValue);
+			} catch (ClassCastException e) {
+				return defaultValue;
+			}
+		}
+	}
 }

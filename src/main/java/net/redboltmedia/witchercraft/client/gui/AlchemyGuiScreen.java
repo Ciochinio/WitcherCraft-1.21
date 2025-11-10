@@ -2,6 +2,7 @@ package net.redboltmedia.witchercraft.client.gui;
 
 import net.redboltmedia.witchercraft.world.inventory.AlchemyGuiMenu;
 import net.redboltmedia.witchercraft.network.AlchemyGuiButtonMessage;
+import net.redboltmedia.witchercraft.init.WitchercraftModScreens;
 
 import net.neoforged.neoforge.network.PacketDistributor;
 
@@ -14,15 +15,13 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
-import java.util.HashMap;
-
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class AlchemyGuiScreen extends AbstractContainerScreen<AlchemyGuiMenu> {
-	private final static HashMap<String, Object> guistate = AlchemyGuiMenu.guistate;
+public class AlchemyGuiScreen extends AbstractContainerScreen<AlchemyGuiMenu> implements WitchercraftModScreens.ScreenAccessor {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	private boolean menuStateUpdateActive = false;
 	Button button_brew;
 	Button button_back;
 	Button button_potions;
@@ -41,6 +40,12 @@ public class AlchemyGuiScreen extends AbstractContainerScreen<AlchemyGuiMenu> {
 	}
 
 	@Override
+	public void updateMenuState(int elementType, String name, Object elementState) {
+		menuStateUpdateActive = true;
+		menuStateUpdateActive = false;
+	}
+
+	@Override
 	public boolean isPauseScreen() {
 		return true;
 	}
@@ -49,13 +54,12 @@ public class AlchemyGuiScreen extends AbstractContainerScreen<AlchemyGuiMenu> {
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
 	@Override
-	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int gx, int gy) {
+	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int mouseX, int mouseY) {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
@@ -80,36 +84,37 @@ public class AlchemyGuiScreen extends AbstractContainerScreen<AlchemyGuiMenu> {
 	public void init() {
 		super.init();
 		button_brew = Button.builder(Component.translatable("gui.witchercraft.alchemy_gui.button_brew"), e -> {
+			int x = AlchemyGuiScreen.this.x;
+			int y = AlchemyGuiScreen.this.y;
 			if (true) {
 				PacketDistributor.sendToServer(new AlchemyGuiButtonMessage(0, x, y, z));
 				AlchemyGuiButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}).bounds(this.leftPos + 79, this.topPos + 57, 46, 20).build();
-		guistate.put("button:button_brew", button_brew);
 		this.addRenderableWidget(button_brew);
 		button_back = Button.builder(Component.translatable("gui.witchercraft.alchemy_gui.button_back"), e -> {
+			int x = AlchemyGuiScreen.this.x;
+			int y = AlchemyGuiScreen.this.y;
 			if (true) {
 				PacketDistributor.sendToServer(new AlchemyGuiButtonMessage(1, x, y, z));
 				AlchemyGuiButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
 		}).bounds(this.leftPos + 250, this.topPos + 174, 46, 20).build();
-		guistate.put("button:button_back", button_back);
 		this.addRenderableWidget(button_back);
 		button_potions = Button.builder(Component.translatable("gui.witchercraft.alchemy_gui.button_potions"), e -> {
+			int x = AlchemyGuiScreen.this.x;
+			int y = AlchemyGuiScreen.this.y;
 			if (true) {
 				PacketDistributor.sendToServer(new AlchemyGuiButtonMessage(2, x, y, z));
 				AlchemyGuiButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
 		}).bounds(this.leftPos + -92, this.topPos + 12, 61, 20).build();
-		guistate.put("button:button_potions", button_potions);
 		this.addRenderableWidget(button_potions);
 		button_bombs = Button.builder(Component.translatable("gui.witchercraft.alchemy_gui.button_bombs"), e -> {
 		}).bounds(this.leftPos + -92, this.topPos + 48, 61, 20).build();
-		guistate.put("button:button_bombs", button_bombs);
 		this.addRenderableWidget(button_bombs);
 		button_oils = Button.builder(Component.translatable("gui.witchercraft.alchemy_gui.button_oils"), e -> {
 		}).bounds(this.leftPos + -92, this.topPos + 30, 61, 20).build();
-		guistate.put("button:button_oils", button_oils);
 		this.addRenderableWidget(button_oils);
 	}
 }

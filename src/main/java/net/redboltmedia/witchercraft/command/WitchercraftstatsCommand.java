@@ -1,4 +1,3 @@
-
 package net.redboltmedia.witchercraft.command;
 
 import net.redboltmedia.witchercraft.procedures.WitchercraftPlayerStatsProcedure;
@@ -36,4 +35,5 @@ public class WitchercraftstatsCommand {
 					return 0;
 				}));
 	}
+
 }
