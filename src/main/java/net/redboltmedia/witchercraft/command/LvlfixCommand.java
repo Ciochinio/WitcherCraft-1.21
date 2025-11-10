@@ -1,4 +1,3 @@
-
 package net.redboltmedia.witchercraft.command;
 
 import net.redboltmedia.witchercraft.procedures.ExpfixProcedure;
@@ -36,4 +35,5 @@ public class LvlfixCommand {
 					return 0;
 				}));
 	}
+
 }

@@ -1,4 +1,3 @@
-
 package net.redboltmedia.witchercraft.network;
 
 import net.redboltmedia.witchercraft.procedures.PauseMenuGuiOpenProcedure;

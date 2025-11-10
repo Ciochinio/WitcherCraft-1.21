@@ -1,4 +1,3 @@
-
 package net.redboltmedia.witchercraft.client.screens;
 
 import org.joml.Vector3f;

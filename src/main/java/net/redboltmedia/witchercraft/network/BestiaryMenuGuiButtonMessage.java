@@ -1,8 +1,7 @@
-
 package net.redboltmedia.witchercraft.network;
 
-import net.redboltmedia.witchercraft.world.inventory.BestiaryMenuGuiMenu;
 import net.redboltmedia.witchercraft.procedures.PauseMenuGuiBackButtonProcedure;
+import net.redboltmedia.witchercraft.procedures.DrownerGuiOpenProcedure;
 import net.redboltmedia.witchercraft.WitchercraftMod;
 
 import net.neoforged.neoforge.network.handling.IPayloadContext;
@@ -19,8 +18,6 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.BlockPos;
-
-import java.util.HashMap;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public record BestiaryMenuGuiButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
@@ -39,14 +36,7 @@ public record BestiaryMenuGuiButtonMessage(int buttonID, int x, int y, int z) im
 
 	public static void handleData(final BestiaryMenuGuiButtonMessage message, final IPayloadContext context) {
 		if (context.flow() == PacketFlow.SERVERBOUND) {
-			context.enqueueWork(() -> {
-				Player entity = context.player();
-				int buttonID = message.buttonID;
-				int x = message.x;
-				int y = message.y;
-				int z = message.z;
-				handleButtonAction(entity, buttonID, x, y, z);
-			}).exceptionally(e -> {
+			context.enqueueWork(() -> handleButtonAction(context.player(), message.buttonID, message.x, message.y, message.z)).exceptionally(e -> {
 				context.connection().disconnect(Component.literal(e.getMessage()));
 				return null;
 			});
@@ -55,13 +45,16 @@ public record BestiaryMenuGuiButtonMessage(int buttonID, int x, int y, int z) im
 
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
 		Level world = entity.level();
-		HashMap guistate = BestiaryMenuGuiMenu.guistate;
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
 		if (buttonID == 0) {
 
 			PauseMenuGuiBackButtonProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 1) {
+
+			DrownerGuiOpenProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

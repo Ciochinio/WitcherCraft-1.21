@@ -1,0 +1,181 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 270,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "book.png",
+          "use1Xscale": true,
+          "x": 42,
+          "y": -1,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_drowner",
+          "text": {
+            "fixedValue": "Foglet"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 96,
+          "y": 26,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrowforword",
+          "image": "arrowforword.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "BruxaGuiOpen"
+          },
+          "x": 285,
+          "y": 161,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "68747470733a2f2f726564626f6c746d656469612e6769746875622e696f2f73746f726167652f6d6f64732f7769746368657263726166742f64726f776e657262672e706e67.png",
+          "use1Xscale": false,
+          "x": 218,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_type_hostal",
+          "text": {
+            "fixedValue": "Type: Hostile"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 96,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_health_20",
+          "text": {
+            "fixedValue": "Health: 30"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 96,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_atack_damage_5",
+          "text": {
+            "fixedValue": "Atack Damage: 5"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 96,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_bookmark",
+          "image": "bookmark.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "BestiaryMenuGuiOpen"
+          },
+          "x": 283,
+          "y": 14,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_bookmarkleft",
+          "image": "bookmarkleft.png",
+          "hoveredImage": "",
+          "x": 48,
+          "y": 41,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_drownerfacesmall",
+          "image": "drownerfacesmall.png",
+          "hoveredImage": "",
+          "x": 64,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_bookmarkerleftbought",
+          "image": "bookmarkerleftbought.png",
+          "hoveredImage": "",
+          "x": 51,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrowback",
+          "image": "arrowback.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "RotfiendGuiOpen"
+          },
+          "x": 96,
+          "y": 161,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

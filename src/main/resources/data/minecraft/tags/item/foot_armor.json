@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "witchercraft:griffin_armor_boots",
-    "witchercraft:manticore_armor_boots",
     "witchercraft:viper_armor_boots",
     "witchercraft:ursine_armor_boots",
-    "witchercraft:wolven_armor_boots",
-    "witchercraft:feline_armor_boots"
+    "witchercraft:griffin_armor_boots",
+    "witchercraft:feline_armor_boots",
+    "witchercraft:manticore_armor_boots",
+    "witchercraft:wolven_armor_boots"
   ]
 }

@@ -1,4 +1,3 @@
-
 package net.redboltmedia.witchercraft.potion;
 
 import net.redboltmedia.witchercraft.init.WitchercraftModMobEffects;

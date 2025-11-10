@@ -1,7 +1,5 @@
-
 package net.redboltmedia.witchercraft.network;
 
-import net.redboltmedia.witchercraft.world.inventory.CharacterAbilitiesAlchemyGuiMenu;
 import net.redboltmedia.witchercraft.procedures.SideEffectsEffectProcedure;
 import net.redboltmedia.witchercraft.procedures.RefreshmentEffectProcedure;
 import net.redboltmedia.witchercraft.procedures.PyrotechnicsEffectProcedure;
@@ -33,8 +31,6 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import java.util.HashMap;
-
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public record CharacterAbilitiesAlchemyGuiButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
 
@@ -52,14 +48,7 @@ public record CharacterAbilitiesAlchemyGuiButtonMessage(int buttonID, int x, int
 
 	public static void handleData(final CharacterAbilitiesAlchemyGuiButtonMessage message, final IPayloadContext context) {
 		if (context.flow() == PacketFlow.SERVERBOUND) {
-			context.enqueueWork(() -> {
-				Player entity = context.player();
-				int buttonID = message.buttonID;
-				int x = message.x;
-				int y = message.y;
-				int z = message.z;
-				handleButtonAction(entity, buttonID, x, y, z);
-			}).exceptionally(e -> {
+			context.enqueueWork(() -> handleButtonAction(context.player(), message.buttonID, message.x, message.y, message.z)).exceptionally(e -> {
 				context.connection().disconnect(Component.literal(e.getMessage()));
 				return null;
 			});
@@ -68,7 +57,6 @@ public record CharacterAbilitiesAlchemyGuiButtonMessage(int buttonID, int x, int
 
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
 		Level world = entity.level();
-		HashMap guistate = CharacterAbilitiesAlchemyGuiMenu.guistate;
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;

@@ -18,6 +18,7 @@ import net.redboltmedia.witchercraft.procedures.CharacterAbilitesSkillPointsProc
 import net.redboltmedia.witchercraft.procedures.AxiiIntensityShowProcedure;
 import net.redboltmedia.witchercraft.procedures.AardIntensityShowProcedure;
 import net.redboltmedia.witchercraft.network.CharacterAbilitiesSignsGuiButtonMessage;
+import net.redboltmedia.witchercraft.init.WitchercraftModScreens;
 
 import net.neoforged.neoforge.network.PacketDistributor;
 
@@ -32,15 +33,13 @@ import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
-import java.util.HashMap;
-
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class CharacterAbilitiesSignsGuiScreen extends AbstractContainerScreen<CharacterAbilitiesSignsGuiMenu> {
-	private final static HashMap<String, Object> guistate = CharacterAbilitiesSignsGuiMenu.guistate;
+public class CharacterAbilitiesSignsGuiScreen extends AbstractContainerScreen<CharacterAbilitiesSignsGuiMenu> implements WitchercraftModScreens.ScreenAccessor {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	private boolean menuStateUpdateActive = false;
 	Button button_back;
 	Button button_general;
 	Button button_combat;
@@ -73,84 +72,104 @@ public class CharacterAbilitiesSignsGuiScreen extends AbstractContainerScreen<Ch
 		this.imageHeight = 166;
 	}
 
+	@Override
+	public void updateMenuState(int elementType, String name, Object elementState) {
+		menuStateUpdateActive = true;
+		menuStateUpdateActive = false;
+	}
+
 	private static final ResourceLocation texture = ResourceLocation.parse("witchercraft:textures/screens/character_abilities_signs_gui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
-		this.renderTooltip(guiGraphics, mouseX, mouseY);
-		if (mouseX > leftPos + 8 && mouseX < leftPos + 32 && mouseY > topPos + 12 && mouseY < topPos + 36)
+		boolean customTooltipShown = false;
+		if (mouseX > leftPos + 8 && mouseX < leftPos + 32 && mouseY > topPos + 12 && mouseY < topPos + 36) {
 			guiGraphics.renderTooltip(font, Component.translatable("gui.witchercraft.character_abilities_signs_gui.tooltip_knocks_back_every_mob_in_diamet"), mouseX, mouseY);
-		if (mouseX > leftPos + 9 && mouseX < leftPos + 33 && mouseY > topPos + 74 && mouseY < topPos + 98)
+			customTooltipShown = true;
+		}
+		if (mouseX > leftPos + 9 && mouseX < leftPos + 33 && mouseY > topPos + 74 && mouseY < topPos + 98) {
 			guiGraphics.renderTooltip(font, Component.translatable("gui.witchercraft.character_abilities_signs_gui.tooltip_increases_knockback"), mouseX, mouseY);
-		if (mouseX > leftPos + 10 && mouseX < leftPos + 34 && mouseY > topPos + 128 && mouseY < topPos + 152)
+			customTooltipShown = true;
+		}
+		if (mouseX > leftPos + 10 && mouseX < leftPos + 34 && mouseY > topPos + 128 && mouseY < topPos + 152) {
 			guiGraphics.renderTooltip(font, Component.translatable("gui.witchercraft.character_abilities_signs_gui.tooltip_aard_deals_x_damage"), mouseX, mouseY);
-		if (mouseX > leftPos + 43 && mouseX < leftPos + 67 && mouseY > topPos + 10 && mouseY < topPos + 34)
+			customTooltipShown = true;
+		}
+		if (mouseX > leftPos + 43 && mouseX < leftPos + 67 && mouseY > topPos + 10 && mouseY < topPos + 34) {
 			guiGraphics.renderTooltip(font, Component.translatable("gui.witchercraft.character_abilities_signs_gui.tooltip_increase_diameter_of_effect"), mouseX, mouseY);
-		if (mouseX > leftPos + 42 && mouseX < leftPos + 66 && mouseY > topPos + 75 && mouseY < topPos + 99)
+			customTooltipShown = true;
+		}
+		if (mouseX > leftPos + 42 && mouseX < leftPos + 66 && mouseY > topPos + 75 && mouseY < topPos + 99) {
 			guiGraphics.renderTooltip(font, Component.translatable("gui.witchercraft.character_abilities_signs_gui.tooltip_increases_burning_duration"), mouseX, mouseY);
-		if (mouseX > leftPos + 43 && mouseX < leftPos + 67 && mouseY > topPos + 128 && mouseY < topPos + 152)
+			customTooltipShown = true;
+		}
+		if (mouseX > leftPos + 43 && mouseX < leftPos + 67 && mouseY > topPos + 128 && mouseY < topPos + 152) {
 			guiGraphics.renderTooltip(font, Component.translatable("gui.witchercraft.character_abilities_signs_gui.tooltip_deals_additional_burnign_damage"), mouseX, mouseY);
-		if (mouseX > leftPos + 79 && mouseX < leftPos + 103 && mouseY > topPos + 10 && mouseY < topPos + 34)
+			customTooltipShown = true;
+		}
+		if (mouseX > leftPos + 79 && mouseX < leftPos + 103 && mouseY > topPos + 10 && mouseY < topPos + 34) {
 			guiGraphics.renderTooltip(font, Component.translatable("gui.witchercraft.character_abilities_signs_gui.tooltip_increases_sign_duration_by_5_sec"), mouseX, mouseY);
-		if (mouseX > leftPos + 79 && mouseX < leftPos + 103 && mouseY > topPos + 76 && mouseY < topPos + 100)
+			customTooltipShown = true;
+		}
+		if (mouseX > leftPos + 79 && mouseX < leftPos + 103 && mouseY > topPos + 76 && mouseY < topPos + 100) {
 			guiGraphics.renderTooltip(font, Component.translatable("gui.witchercraft.character_abilities_signs_gui.tooltip_increases_slow"), mouseX, mouseY);
-		if (mouseX > leftPos + 79 && mouseX < leftPos + 103 && mouseY > topPos + 127 && mouseY < topPos + 151)
+			customTooltipShown = true;
+		}
+		if (mouseX > leftPos + 79 && mouseX < leftPos + 103 && mouseY > topPos + 127 && mouseY < topPos + 151) {
 			guiGraphics.renderTooltip(font, Component.translatable("gui.witchercraft.character_abilities_signs_gui.tooltip_increases_trap_radius_by_1_block"), mouseX, mouseY);
-		if (mouseX > leftPos + 115 && mouseX < leftPos + 139 && mouseY > topPos + 10 && mouseY < topPos + 34)
+			customTooltipShown = true;
+		}
+		if (mouseX > leftPos + 115 && mouseX < leftPos + 139 && mouseY > topPos + 10 && mouseY < topPos + 34) {
 			guiGraphics.renderTooltip(font, Component.translatable("gui.witchercraft.character_abilities_signs_gui.tooltip_when_end_deal_damage_to_everyon"), mouseX, mouseY);
-		if (mouseX > leftPos + 115 && mouseX < leftPos + 139 && mouseY > topPos + 75 && mouseY < topPos + 99)
+			customTooltipShown = true;
+		}
+		if (mouseX > leftPos + 115 && mouseX < leftPos + 139 && mouseY > topPos + 75 && mouseY < topPos + 99) {
 			guiGraphics.renderTooltip(font, Component.translatable("gui.witchercraft.character_abilities_signs_gui.tooltip_increases_max_absorbion_by_x"), mouseX, mouseY);
-		if (mouseX > leftPos + 116 && mouseX < leftPos + 140 && mouseY > topPos + 127 && mouseY < topPos + 151)
+			customTooltipShown = true;
+		}
+		if (mouseX > leftPos + 116 && mouseX < leftPos + 140 && mouseY > topPos + 127 && mouseY < topPos + 151) {
 			guiGraphics.renderTooltip(font, Component.translatable("gui.witchercraft.character_abilities_signs_gui.tooltip_deals_absorbet_amount_of_dmg_to"), mouseX, mouseY);
-		if (mouseX > leftPos + 156 && mouseX < leftPos + 180 && mouseY > topPos + 10 && mouseY < topPos + 34)
+			customTooltipShown = true;
+		}
+		if (mouseX > leftPos + 156 && mouseX < leftPos + 180 && mouseY > topPos + 10 && mouseY < topPos + 34) {
 			guiGraphics.renderTooltip(font, Component.translatable("gui.witchercraft.character_abilities_signs_gui.tooltip_gives_hero_of_the_village_effec"), mouseX, mouseY);
-		if (mouseX > leftPos + 154 && mouseX < leftPos + 178 && mouseY > topPos + 76 && mouseY < topPos + 100)
+			customTooltipShown = true;
+		}
+		if (mouseX > leftPos + 154 && mouseX < leftPos + 178 && mouseY > topPos + 76 && mouseY < topPos + 100) {
 			guiGraphics.renderTooltip(font, Component.translatable("gui.witchercraft.character_abilities_signs_gui.tooltip_increases_sign_duration"), mouseX, mouseY);
-		if (mouseX > leftPos + 154 && mouseX < leftPos + 178 && mouseY > topPos + 126 && mouseY < topPos + 150)
+			customTooltipShown = true;
+		}
+		if (mouseX > leftPos + 154 && mouseX < leftPos + 178 && mouseY > topPos + 126 && mouseY < topPos + 150) {
 			guiGraphics.renderTooltip(font, Component.translatable("gui.witchercraft.character_abilities_signs_gui.tooltip_increases_dmg_dealt_to_mob"), mouseX, mouseY);
+			customTooltipShown = true;
+		}
+		if (!customTooltipShown)
+			this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
 	@Override
-	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int gx, int gy) {
+	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int mouseX, int mouseY) {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-
 		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/farreachingaardbought.png"), this.leftPos + 4, this.topPos + 7, 0, 0, 32, 32, 32, 32);
-
 		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/aardintensitybought.png"), this.leftPos + 4, this.topPos + 70, 0, 0, 32, 32, 32, 32);
-
 		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/shockwavebought.png"), this.leftPos + 4, this.topPos + 124, 0, 0, 32, 32, 32, 32);
-
 		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/firestreambought.png"), this.leftPos + 40, this.topPos + 7, 0, 0, 32, 32, 32, 32);
-
 		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/ingniintensitybought.png"), this.leftPos + 40, this.topPos + 70, 0, 0, 32, 32, 32, 32);
-
 		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/pyromaniacbought.png"), this.leftPos + 40, this.topPos + 124, 0, 0, 32, 32, 32, 32);
-
 		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/sustainedglyphsbought.png"), this.leftPos + 76, this.topPos + 7, 0, 0, 32, 32, 32, 32);
-
 		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/yrdenintensitybought.png"), this.leftPos + 76, this.topPos + 70, 0, 0, 32, 32, 32, 32);
-
 		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/magictrapbought.png"), this.leftPos + 76, this.topPos + 124, 0, 0, 32, 32, 32, 32);
-
 		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/explodingshildbought.png"), this.leftPos + 112, this.topPos + 7, 0, 0, 32, 32, 32, 32);
-
 		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/quenintensitybought.png"), this.leftPos + 112, this.topPos + 70, 0, 0, 32, 32, 32, 32);
-
 		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/quendischargebought.png"), this.leftPos + 112, this.topPos + 124, 0, 0, 32, 32, 32, 32);
-
 		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/delusionbought.png"), this.leftPos + 148, this.topPos + 7, 0, 0, 32, 32, 32, 32);
-
 		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/axiiintensitybought.png"), this.leftPos + 148, this.topPos + 70, 0, 0, 32, 32, 32, 32);
-
 		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/dominationbought.png"), this.leftPos + 148, this.topPos + 124, 0, 0, 32, 32, 32, 32);
-
 		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/skillpoint.png"), this.leftPos + 202, this.topPos + 7, 0, 0, 50, 25, 50, 25);
-
 		RenderSystem.disableBlend();
 	}
 
@@ -165,56 +184,61 @@ public class CharacterAbilitiesSignsGuiScreen extends AbstractContainerScreen<Ch
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font,
-
-				CharacterAbilitesSkillPointsProcedure.execute(entity), 202, 16, -12829636, false);
+		guiGraphics.drawString(this.font, CharacterAbilitesSkillPointsProcedure.execute(entity), 202, 16, -12829636, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
 		button_back = Button.builder(Component.translatable("gui.witchercraft.character_abilities_signs_gui.button_back"), e -> {
+			int x = CharacterAbilitiesSignsGuiScreen.this.x;
+			int y = CharacterAbilitiesSignsGuiScreen.this.y;
 			if (true) {
 				PacketDistributor.sendToServer(new CharacterAbilitiesSignsGuiButtonMessage(0, x, y, z));
 				CharacterAbilitiesSignsGuiButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}).bounds(this.leftPos + 256, this.topPos + 169, 46, 20).build();
-		guistate.put("button:button_back", button_back);
 		this.addRenderableWidget(button_back);
 		button_general = Button.builder(Component.translatable("gui.witchercraft.character_abilities_signs_gui.button_general"), e -> {
+			int x = CharacterAbilitiesSignsGuiScreen.this.x;
+			int y = CharacterAbilitiesSignsGuiScreen.this.y;
 			if (true) {
 				PacketDistributor.sendToServer(new CharacterAbilitiesSignsGuiButtonMessage(1, x, y, z));
 				CharacterAbilitiesSignsGuiButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
 		}).bounds(this.leftPos + -68, this.topPos + 7, 61, 20).build();
-		guistate.put("button:button_general", button_general);
 		this.addRenderableWidget(button_general);
 		button_combat = Button.builder(Component.translatable("gui.witchercraft.character_abilities_signs_gui.button_combat"), e -> {
+			int x = CharacterAbilitiesSignsGuiScreen.this.x;
+			int y = CharacterAbilitiesSignsGuiScreen.this.y;
 			if (true) {
 				PacketDistributor.sendToServer(new CharacterAbilitiesSignsGuiButtonMessage(2, x, y, z));
 				CharacterAbilitiesSignsGuiButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
 		}).bounds(this.leftPos + -68, this.topPos + 34, 61, 20).build();
-		guistate.put("button:button_combat", button_combat);
 		this.addRenderableWidget(button_combat);
 		button_alchemy = Button.builder(Component.translatable("gui.witchercraft.character_abilities_signs_gui.button_alchemy"), e -> {
+			int x = CharacterAbilitiesSignsGuiScreen.this.x;
+			int y = CharacterAbilitiesSignsGuiScreen.this.y;
 			if (true) {
 				PacketDistributor.sendToServer(new CharacterAbilitiesSignsGuiButtonMessage(3, x, y, z));
 				CharacterAbilitiesSignsGuiButtonMessage.handleButtonAction(entity, 3, x, y, z);
 			}
 		}).bounds(this.leftPos + -68, this.topPos + 61, 61, 20).build();
-		guistate.put("button:button_alchemy", button_alchemy);
 		this.addRenderableWidget(button_alchemy);
 		button_signs = Button.builder(Component.translatable("gui.witchercraft.character_abilities_signs_gui.button_signs"), e -> {
+			int x = CharacterAbilitiesSignsGuiScreen.this.x;
+			int y = CharacterAbilitiesSignsGuiScreen.this.y;
 			if (true) {
 				PacketDistributor.sendToServer(new CharacterAbilitiesSignsGuiButtonMessage(4, x, y, z));
 				CharacterAbilitiesSignsGuiButtonMessage.handleButtonAction(entity, 4, x, y, z);
 			}
 		}).bounds(this.leftPos + -68, this.topPos + 88, 61, 20).build();
-		guistate.put("button:button_signs", button_signs);
 		this.addRenderableWidget(button_signs);
 		imagebutton_farreachingaard = new ImageButton(this.leftPos + 4, this.topPos + 7, 32, 32,
 				new WidgetSprites(ResourceLocation.parse("witchercraft:textures/screens/farreachingaard.png"), ResourceLocation.parse("witchercraft:textures/screens/farreachingaard.png")), e -> {
+					int x = CharacterAbilitiesSignsGuiScreen.this.x;
+					int y = CharacterAbilitiesSignsGuiScreen.this.y;
 					if (FarReachingAardShowProcedure.execute(entity)) {
 						PacketDistributor.sendToServer(new CharacterAbilitiesSignsGuiButtonMessage(5, x, y, z));
 						CharacterAbilitiesSignsGuiButtonMessage.handleButtonAction(entity, 5, x, y, z);
@@ -226,10 +250,11 @@ public class CharacterAbilitiesSignsGuiScreen extends AbstractContainerScreen<Ch
 					guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
 		};
-		guistate.put("button:imagebutton_farreachingaard", imagebutton_farreachingaard);
 		this.addRenderableWidget(imagebutton_farreachingaard);
 		imagebutton_aardintensity = new ImageButton(this.leftPos + 4, this.topPos + 70, 32, 32,
 				new WidgetSprites(ResourceLocation.parse("witchercraft:textures/screens/aardintensity.png"), ResourceLocation.parse("witchercraft:textures/screens/aardintensity.png")), e -> {
+					int x = CharacterAbilitiesSignsGuiScreen.this.x;
+					int y = CharacterAbilitiesSignsGuiScreen.this.y;
 					if (AardIntensityShowProcedure.execute(entity)) {
 						PacketDistributor.sendToServer(new CharacterAbilitiesSignsGuiButtonMessage(6, x, y, z));
 						CharacterAbilitiesSignsGuiButtonMessage.handleButtonAction(entity, 6, x, y, z);
@@ -241,10 +266,11 @@ public class CharacterAbilitiesSignsGuiScreen extends AbstractContainerScreen<Ch
 					guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
 		};
-		guistate.put("button:imagebutton_aardintensity", imagebutton_aardintensity);
 		this.addRenderableWidget(imagebutton_aardintensity);
 		imagebutton_shockwave = new ImageButton(this.leftPos + 4, this.topPos + 124, 32, 32,
 				new WidgetSprites(ResourceLocation.parse("witchercraft:textures/screens/shockwave.png"), ResourceLocation.parse("witchercraft:textures/screens/shockwave.png")), e -> {
+					int x = CharacterAbilitiesSignsGuiScreen.this.x;
+					int y = CharacterAbilitiesSignsGuiScreen.this.y;
 					if (ShockWaveShowProcedure.execute(entity)) {
 						PacketDistributor.sendToServer(new CharacterAbilitiesSignsGuiButtonMessage(7, x, y, z));
 						CharacterAbilitiesSignsGuiButtonMessage.handleButtonAction(entity, 7, x, y, z);
@@ -256,10 +282,11 @@ public class CharacterAbilitiesSignsGuiScreen extends AbstractContainerScreen<Ch
 					guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
 		};
-		guistate.put("button:imagebutton_shockwave", imagebutton_shockwave);
 		this.addRenderableWidget(imagebutton_shockwave);
 		imagebutton_firestream = new ImageButton(this.leftPos + 40, this.topPos + 7, 32, 32,
 				new WidgetSprites(ResourceLocation.parse("witchercraft:textures/screens/firestream.png"), ResourceLocation.parse("witchercraft:textures/screens/firestream.png")), e -> {
+					int x = CharacterAbilitiesSignsGuiScreen.this.x;
+					int y = CharacterAbilitiesSignsGuiScreen.this.y;
 					if (FirestreamShowProcedure.execute(entity)) {
 						PacketDistributor.sendToServer(new CharacterAbilitiesSignsGuiButtonMessage(8, x, y, z));
 						CharacterAbilitiesSignsGuiButtonMessage.handleButtonAction(entity, 8, x, y, z);
@@ -271,10 +298,11 @@ public class CharacterAbilitiesSignsGuiScreen extends AbstractContainerScreen<Ch
 					guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
 		};
-		guistate.put("button:imagebutton_firestream", imagebutton_firestream);
 		this.addRenderableWidget(imagebutton_firestream);
 		imagebutton_igniintensity = new ImageButton(this.leftPos + 40, this.topPos + 70, 32, 32,
 				new WidgetSprites(ResourceLocation.parse("witchercraft:textures/screens/igniintensity.png"), ResourceLocation.parse("witchercraft:textures/screens/igniintensity.png")), e -> {
+					int x = CharacterAbilitiesSignsGuiScreen.this.x;
+					int y = CharacterAbilitiesSignsGuiScreen.this.y;
 					if (IgniIntensityShowProcedure.execute(entity)) {
 						PacketDistributor.sendToServer(new CharacterAbilitiesSignsGuiButtonMessage(9, x, y, z));
 						CharacterAbilitiesSignsGuiButtonMessage.handleButtonAction(entity, 9, x, y, z);
@@ -286,10 +314,11 @@ public class CharacterAbilitiesSignsGuiScreen extends AbstractContainerScreen<Ch
 					guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
 		};
-		guistate.put("button:imagebutton_igniintensity", imagebutton_igniintensity);
 		this.addRenderableWidget(imagebutton_igniintensity);
 		imagebutton_pyromaniac = new ImageButton(this.leftPos + 40, this.topPos + 124, 32, 32,
 				new WidgetSprites(ResourceLocation.parse("witchercraft:textures/screens/pyromaniac.png"), ResourceLocation.parse("witchercraft:textures/screens/pyromaniac.png")), e -> {
+					int x = CharacterAbilitiesSignsGuiScreen.this.x;
+					int y = CharacterAbilitiesSignsGuiScreen.this.y;
 					if (PyromaniacShowProcedure.execute(entity)) {
 						PacketDistributor.sendToServer(new CharacterAbilitiesSignsGuiButtonMessage(10, x, y, z));
 						CharacterAbilitiesSignsGuiButtonMessage.handleButtonAction(entity, 10, x, y, z);
@@ -301,10 +330,11 @@ public class CharacterAbilitiesSignsGuiScreen extends AbstractContainerScreen<Ch
 					guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
 		};
-		guistate.put("button:imagebutton_pyromaniac", imagebutton_pyromaniac);
 		this.addRenderableWidget(imagebutton_pyromaniac);
 		imagebutton_sustainedglyphs = new ImageButton(this.leftPos + 76, this.topPos + 7, 32, 32,
 				new WidgetSprites(ResourceLocation.parse("witchercraft:textures/screens/sustainedglyphs.png"), ResourceLocation.parse("witchercraft:textures/screens/sustainedglyphs.png")), e -> {
+					int x = CharacterAbilitiesSignsGuiScreen.this.x;
+					int y = CharacterAbilitiesSignsGuiScreen.this.y;
 					if (SustainedGlyphsShowProcedure.execute(entity)) {
 						PacketDistributor.sendToServer(new CharacterAbilitiesSignsGuiButtonMessage(11, x, y, z));
 						CharacterAbilitiesSignsGuiButtonMessage.handleButtonAction(entity, 11, x, y, z);
@@ -316,10 +346,11 @@ public class CharacterAbilitiesSignsGuiScreen extends AbstractContainerScreen<Ch
 					guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
 		};
-		guistate.put("button:imagebutton_sustainedglyphs", imagebutton_sustainedglyphs);
 		this.addRenderableWidget(imagebutton_sustainedglyphs);
 		imagebutton_yrdenintensity = new ImageButton(this.leftPos + 76, this.topPos + 70, 32, 32,
 				new WidgetSprites(ResourceLocation.parse("witchercraft:textures/screens/yrdenintensity.png"), ResourceLocation.parse("witchercraft:textures/screens/yrdenintensity.png")), e -> {
+					int x = CharacterAbilitiesSignsGuiScreen.this.x;
+					int y = CharacterAbilitiesSignsGuiScreen.this.y;
 					if (YrdenIntensityShowProcedure.execute(entity)) {
 						PacketDistributor.sendToServer(new CharacterAbilitiesSignsGuiButtonMessage(12, x, y, z));
 						CharacterAbilitiesSignsGuiButtonMessage.handleButtonAction(entity, 12, x, y, z);
@@ -331,10 +362,11 @@ public class CharacterAbilitiesSignsGuiScreen extends AbstractContainerScreen<Ch
 					guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
 		};
-		guistate.put("button:imagebutton_yrdenintensity", imagebutton_yrdenintensity);
 		this.addRenderableWidget(imagebutton_yrdenintensity);
 		imagebutton_magictrap = new ImageButton(this.leftPos + 76, this.topPos + 124, 32, 32,
 				new WidgetSprites(ResourceLocation.parse("witchercraft:textures/screens/magictrap.png"), ResourceLocation.parse("witchercraft:textures/screens/magictrap.png")), e -> {
+					int x = CharacterAbilitiesSignsGuiScreen.this.x;
+					int y = CharacterAbilitiesSignsGuiScreen.this.y;
 					if (MagicTrapShowProcedure.execute(entity)) {
 						PacketDistributor.sendToServer(new CharacterAbilitiesSignsGuiButtonMessage(13, x, y, z));
 						CharacterAbilitiesSignsGuiButtonMessage.handleButtonAction(entity, 13, x, y, z);
@@ -346,10 +378,11 @@ public class CharacterAbilitiesSignsGuiScreen extends AbstractContainerScreen<Ch
 					guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
 		};
-		guistate.put("button:imagebutton_magictrap", imagebutton_magictrap);
 		this.addRenderableWidget(imagebutton_magictrap);
 		imagebutton_explodingshield = new ImageButton(this.leftPos + 112, this.topPos + 7, 32, 32,
 				new WidgetSprites(ResourceLocation.parse("witchercraft:textures/screens/exploadingshield.png"), ResourceLocation.parse("witchercraft:textures/screens/exploadingshield.png")), e -> {
+					int x = CharacterAbilitiesSignsGuiScreen.this.x;
+					int y = CharacterAbilitiesSignsGuiScreen.this.y;
 					if (ExploadingShildshowProcedure.execute(entity)) {
 						PacketDistributor.sendToServer(new CharacterAbilitiesSignsGuiButtonMessage(14, x, y, z));
 						CharacterAbilitiesSignsGuiButtonMessage.handleButtonAction(entity, 14, x, y, z);
@@ -361,10 +394,11 @@ public class CharacterAbilitiesSignsGuiScreen extends AbstractContainerScreen<Ch
 					guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
 		};
-		guistate.put("button:imagebutton_explodingshield", imagebutton_explodingshield);
 		this.addRenderableWidget(imagebutton_explodingshield);
 		imagebutton_quenintensity = new ImageButton(this.leftPos + 112, this.topPos + 70, 32, 32,
 				new WidgetSprites(ResourceLocation.parse("witchercraft:textures/screens/quenintensity.png"), ResourceLocation.parse("witchercraft:textures/screens/quenintensity.png")), e -> {
+					int x = CharacterAbilitiesSignsGuiScreen.this.x;
+					int y = CharacterAbilitiesSignsGuiScreen.this.y;
 					if (QuenIntensityShowProcedure.execute(entity)) {
 						PacketDistributor.sendToServer(new CharacterAbilitiesSignsGuiButtonMessage(15, x, y, z));
 						CharacterAbilitiesSignsGuiButtonMessage.handleButtonAction(entity, 15, x, y, z);
@@ -376,10 +410,11 @@ public class CharacterAbilitiesSignsGuiScreen extends AbstractContainerScreen<Ch
 					guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
 		};
-		guistate.put("button:imagebutton_quenintensity", imagebutton_quenintensity);
 		this.addRenderableWidget(imagebutton_quenintensity);
 		imagebutton_quendischarge = new ImageButton(this.leftPos + 112, this.topPos + 124, 32, 32,
 				new WidgetSprites(ResourceLocation.parse("witchercraft:textures/screens/quendischarge.png"), ResourceLocation.parse("witchercraft:textures/screens/quendischarge.png")), e -> {
+					int x = CharacterAbilitiesSignsGuiScreen.this.x;
+					int y = CharacterAbilitiesSignsGuiScreen.this.y;
 					if (QuenDiscahrgeShowProcedure.execute(entity)) {
 						PacketDistributor.sendToServer(new CharacterAbilitiesSignsGuiButtonMessage(16, x, y, z));
 						CharacterAbilitiesSignsGuiButtonMessage.handleButtonAction(entity, 16, x, y, z);
@@ -391,10 +426,11 @@ public class CharacterAbilitiesSignsGuiScreen extends AbstractContainerScreen<Ch
 					guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
 		};
-		guistate.put("button:imagebutton_quendischarge", imagebutton_quendischarge);
 		this.addRenderableWidget(imagebutton_quendischarge);
 		imagebutton_delusion = new ImageButton(this.leftPos + 148, this.topPos + 7, 32, 32, new WidgetSprites(ResourceLocation.parse("witchercraft:textures/screens/delusion.png"), ResourceLocation.parse("witchercraft:textures/screens/delusion.png")),
 				e -> {
+					int x = CharacterAbilitiesSignsGuiScreen.this.x;
+					int y = CharacterAbilitiesSignsGuiScreen.this.y;
 					if (DelusionShowProcedure.execute(entity)) {
 						PacketDistributor.sendToServer(new CharacterAbilitiesSignsGuiButtonMessage(17, x, y, z));
 						CharacterAbilitiesSignsGuiButtonMessage.handleButtonAction(entity, 17, x, y, z);
@@ -406,10 +442,11 @@ public class CharacterAbilitiesSignsGuiScreen extends AbstractContainerScreen<Ch
 					guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
 		};
-		guistate.put("button:imagebutton_delusion", imagebutton_delusion);
 		this.addRenderableWidget(imagebutton_delusion);
 		imagebutton_axiiintensity = new ImageButton(this.leftPos + 148, this.topPos + 70, 32, 32,
 				new WidgetSprites(ResourceLocation.parse("witchercraft:textures/screens/axiiintensity.png"), ResourceLocation.parse("witchercraft:textures/screens/axiiintensity.png")), e -> {
+					int x = CharacterAbilitiesSignsGuiScreen.this.x;
+					int y = CharacterAbilitiesSignsGuiScreen.this.y;
 					if (AxiiIntensityShowProcedure.execute(entity)) {
 						PacketDistributor.sendToServer(new CharacterAbilitiesSignsGuiButtonMessage(18, x, y, z));
 						CharacterAbilitiesSignsGuiButtonMessage.handleButtonAction(entity, 18, x, y, z);
@@ -421,10 +458,11 @@ public class CharacterAbilitiesSignsGuiScreen extends AbstractContainerScreen<Ch
 					guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
 		};
-		guistate.put("button:imagebutton_axiiintensity", imagebutton_axiiintensity);
 		this.addRenderableWidget(imagebutton_axiiintensity);
 		imagebutton_domination = new ImageButton(this.leftPos + 148, this.topPos + 124, 32, 32,
 				new WidgetSprites(ResourceLocation.parse("witchercraft:textures/screens/domination.png"), ResourceLocation.parse("witchercraft:textures/screens/domination.png")), e -> {
+					int x = CharacterAbilitiesSignsGuiScreen.this.x;
+					int y = CharacterAbilitiesSignsGuiScreen.this.y;
 					if (DominationShowProcedure.execute(entity)) {
 						PacketDistributor.sendToServer(new CharacterAbilitiesSignsGuiButtonMessage(19, x, y, z));
 						CharacterAbilitiesSignsGuiButtonMessage.handleButtonAction(entity, 19, x, y, z);
@@ -436,7 +474,6 @@ public class CharacterAbilitiesSignsGuiScreen extends AbstractContainerScreen<Ch
 					guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
 		};
-		guistate.put("button:imagebutton_domination", imagebutton_domination);
 		this.addRenderableWidget(imagebutton_domination);
 	}
 }

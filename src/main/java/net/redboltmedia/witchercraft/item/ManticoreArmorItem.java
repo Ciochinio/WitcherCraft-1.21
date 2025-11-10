@@ -1,4 +1,3 @@
-
 package net.redboltmedia.witchercraft.item;
 
 import net.redboltmedia.witchercraft.procedures.ManticoreArmorEffectProcedure;
