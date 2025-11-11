@@ -1,11 +1,6 @@
 package net.redboltmedia.witchercraft.network;
 
-import net.redboltmedia.witchercraft.procedures.MeditationGuiOpenProcedure;
-import net.redboltmedia.witchercraft.procedures.GlossaryMenuGuiOpenProcedure;
-import net.redboltmedia.witchercraft.procedures.CharaterAbilitesGeneralGuiOpenProcedure;
-import net.redboltmedia.witchercraft.procedures.CharacterGuiOpenProcedure;
-import net.redboltmedia.witchercraft.procedures.BestiaryMenuGuiOpenProcedure;
-import net.redboltmedia.witchercraft.procedures.AlchemyGuiOpenProcedure;
+import net.redboltmedia.witchercraft.procedures.*;
 import net.redboltmedia.witchercraft.WitchercraftMod;
 
 import net.neoforged.neoforge.network.handling.IPayloadContext;
@@ -23,7 +18,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public record PauseMenuGUIButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
 
 	public static final Type<PauseMenuGUIButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(WitchercraftMod.MODID, "pause_menu_gui_buttons"));

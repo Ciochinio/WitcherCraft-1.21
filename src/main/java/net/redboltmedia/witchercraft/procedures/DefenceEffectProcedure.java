@@ -15,7 +15,7 @@ public class DefenceEffectProcedure {
 					{
 						WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
 						_vars.witchercraftAbilitiesDefence = true;
-						_vars.syncPlayerVariables(entity);
+						_vars.markSyncDirty();
 					}
 				}
 			}

@@ -17,7 +17,7 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public record SignCastKeybindMessage(int eventType, int pressedms) implements CustomPacketPayload {
 	public static final Type<SignCastKeybindMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(WitchercraftMod.MODID, "key_sign_cast_keybind"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, SignCastKeybindMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, SignCastKeybindMessage message) -> {

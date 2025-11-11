@@ -13,7 +13,7 @@ public class ExplodingShieldEffectProcedure {
 			{
 				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
 				_vars.witchercraftAbilitiesExploadingShild = true;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 		}
 	}

@@ -13,7 +13,7 @@ public class SunAndStarsEffectProcedure {
 			{
 				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
 				_vars.witchercraftAbilitiesSunAndStars = true;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 		}
 	}

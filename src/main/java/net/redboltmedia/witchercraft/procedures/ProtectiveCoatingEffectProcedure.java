@@ -15,7 +15,7 @@ public class ProtectiveCoatingEffectProcedure {
 					{
 						WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
 						_vars.witchercraftAbilitiesProtectiveCoating = true;
-						_vars.syncPlayerVariables(entity);
+						_vars.markSyncDirty();
 					}
 				}
 			}

@@ -15,7 +15,7 @@ public class YrdenIntensityEffectProcedure {
 					{
 						WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
 						_vars.witchercraftAbilitiesYrdenIntensity = true;
-						_vars.syncPlayerVariables(entity);
+						_vars.markSyncDirty();
 					}
 				}
 			}

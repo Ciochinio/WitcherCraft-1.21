@@ -4,31 +4,30 @@ import net.redboltmedia.witchercraft.world.inventory.GraveirGuiMenu;
 import net.redboltmedia.witchercraft.network.GraveirGuiButtonMessage;
 import net.redboltmedia.witchercraft.init.WitchercraftModScreens;
 
-import net.neoforged.neoforge.network.PacketDistributor;
+import net.neoforged.neoforge.client.network.ClientPacketDistributor;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.client.renderer.RenderPipelines;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.WidgetSprites;
 import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
-
-import com.mojang.blaze3d.systems.RenderSystem;
 
 public class GraveirGuiScreen extends AbstractContainerScreen<GraveirGuiMenu> implements WitchercraftModScreens.ScreenAccessor {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
 	private boolean menuStateUpdateActive = false;
-	ImageButton imagebutton_arrowforword;
-	ImageButton imagebutton_bookmark;
-	ImageButton imagebutton_bookmarkleft;
-	ImageButton imagebutton_bookmarkerleftbought;
-	ImageButton imagebutton_drownerfacesmall;
-	ImageButton imagebutton_arrowback;
+	private ImageButton imagebutton_arrowforword;
+	private ImageButton imagebutton_bookmark;
+	private ImageButton imagebutton_bookmarkleft;
+	private ImageButton imagebutton_bookmarkerleftbought;
+	private ImageButton imagebutton_drownerfacesmall;
+	private ImageButton imagebutton_arrowback;
 
 	public GraveirGuiScreen(GraveirGuiMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -55,13 +54,10 @@ public class GraveirGuiScreen extends AbstractContainerScreen<GraveirGuiMenu> im
 
 	@Override
 	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int mouseX, int mouseY) {
-		RenderSystem.setShaderColor(1, 1, 1, 1);
-		RenderSystem.enableBlend();
-		RenderSystem.defaultBlendFunc();
-		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/book.png"), this.leftPos + -37, this.topPos + -38, 0, 0, 319, 222, 319, 222);
-		guiGraphics.blit(ResourceLocation.parse("witchercraft:textures/screens/68747470733a2f2f726564626f6c746d656469612e6769746875622e696f2f73746f726167652f6d6f64732f7769746368657263726166742f64726f776e657262672e706e67.png"), this.leftPos + 139,
+		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("witchercraft:textures/screens/book.png"), this.leftPos + -37, this.topPos + -38, 0, 0, 319, 222, 319, 222);
+		guiGraphics.blit(RenderPipelines.GUI_TEXTURED,
+				ResourceLocation.parse("witchercraft:textures/screens/68747470733a2f2f726564626f6c746d656469612e6769746875622e696f2f73746f726167652f6d6f64732f7769746368657263726166742f64726f776e657262672e706e67.png"), this.leftPos + 139,
 				this.topPos + 7, 0, 0, 91, 106, 91, 106);
-		RenderSystem.disableBlend();
 	}
 
 	@Override
@@ -89,13 +85,13 @@ public class GraveirGuiScreen extends AbstractContainerScreen<GraveirGuiMenu> im
 					int x = GraveirGuiScreen.this.x;
 					int y = GraveirGuiScreen.this.y;
 					if (true) {
-						PacketDistributor.sendToServer(new GraveirGuiButtonMessage(0, x, y, z));
+						ClientPacketDistributor.sendToServer(new GraveirGuiButtonMessage(0, x, y, z));
 						GraveirGuiButtonMessage.handleButtonAction(entity, 0, x, y, z);
 					}
 				}) {
 			@Override
-			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
-				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			public void renderWidget(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
+				guiGraphics.blit(RenderPipelines.GUI_TEXTURED, sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
 		};
 		this.addRenderableWidget(imagebutton_arrowforword);
@@ -104,13 +100,13 @@ public class GraveirGuiScreen extends AbstractContainerScreen<GraveirGuiMenu> im
 					int x = GraveirGuiScreen.this.x;
 					int y = GraveirGuiScreen.this.y;
 					if (true) {
-						PacketDistributor.sendToServer(new GraveirGuiButtonMessage(1, x, y, z));
+						ClientPacketDistributor.sendToServer(new GraveirGuiButtonMessage(1, x, y, z));
 						GraveirGuiButtonMessage.handleButtonAction(entity, 1, x, y, z);
 					}
 				}) {
 			@Override
-			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
-				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			public void renderWidget(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
+				guiGraphics.blit(RenderPipelines.GUI_TEXTURED, sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
 		};
 		this.addRenderableWidget(imagebutton_bookmark);
@@ -118,8 +114,8 @@ public class GraveirGuiScreen extends AbstractContainerScreen<GraveirGuiMenu> im
 				new WidgetSprites(ResourceLocation.parse("witchercraft:textures/screens/bookmarkleft.png"), ResourceLocation.parse("witchercraft:textures/screens/bookmarkleft.png")), e -> {
 				}) {
 			@Override
-			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
-				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			public void renderWidget(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
+				guiGraphics.blit(RenderPipelines.GUI_TEXTURED, sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
 		};
 		this.addRenderableWidget(imagebutton_bookmarkleft);
@@ -127,8 +123,8 @@ public class GraveirGuiScreen extends AbstractContainerScreen<GraveirGuiMenu> im
 				new WidgetSprites(ResourceLocation.parse("witchercraft:textures/screens/bookmarkerleftbought.png"), ResourceLocation.parse("witchercraft:textures/screens/bookmarkerleftbought.png")), e -> {
 				}) {
 			@Override
-			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
-				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			public void renderWidget(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
+				guiGraphics.blit(RenderPipelines.GUI_TEXTURED, sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
 		};
 		this.addRenderableWidget(imagebutton_bookmarkerleftbought);
@@ -136,8 +132,8 @@ public class GraveirGuiScreen extends AbstractContainerScreen<GraveirGuiMenu> im
 				new WidgetSprites(ResourceLocation.parse("witchercraft:textures/screens/drownerfacesmall.png"), ResourceLocation.parse("witchercraft:textures/screens/drownerfacesmall.png")), e -> {
 				}) {
 			@Override
-			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
-				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			public void renderWidget(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
+				guiGraphics.blit(RenderPipelines.GUI_TEXTURED, sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
 		};
 		this.addRenderableWidget(imagebutton_drownerfacesmall);
@@ -146,13 +142,13 @@ public class GraveirGuiScreen extends AbstractContainerScreen<GraveirGuiMenu> im
 					int x = GraveirGuiScreen.this.x;
 					int y = GraveirGuiScreen.this.y;
 					if (true) {
-						PacketDistributor.sendToServer(new GraveirGuiButtonMessage(5, x, y, z));
+						ClientPacketDistributor.sendToServer(new GraveirGuiButtonMessage(5, x, y, z));
 						GraveirGuiButtonMessage.handleButtonAction(entity, 5, x, y, z);
 					}
 				}) {
 			@Override
-			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
-				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			public void renderWidget(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
+				guiGraphics.blit(RenderPipelines.GUI_TEXTURED, sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
 		};
 		this.addRenderableWidget(imagebutton_arrowback);

@@ -15,7 +15,7 @@ public class UndyingEffectProcedure {
 					{
 						WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
 						_vars.witchercraftAbilitiesUndying = true;
-						_vars.syncPlayerVariables(entity);
+						_vars.markSyncDirty();
 					}
 				}
 			}

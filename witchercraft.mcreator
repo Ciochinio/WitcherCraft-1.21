@@ -378,7 +378,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/redboltmedia/witchercraft/item/WhiteHoneyItem.java",
-          "src/main/resources/assets/witchercraft/models/item/white_honey.json"
+          "src/main/resources/assets/witchercraft/models/item/white_honey.json",
+          "src/main/resources/assets/witchercraft/items/white_honey.json"
         ]
       },
       "path": "~/Alchemy/Potions/WhiteHoney"
@@ -392,6 +393,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/witchercraft/models/item/blizzard.json",
+          "src/main/resources/assets/witchercraft/items/blizzard.json",
           "src/main/java/net/redboltmedia/witchercraft/item/BlizzardItem.java"
         ]
       },
@@ -405,6 +407,7 @@
       "registry_name": "cat",
       "metadata": {
         "files": [
+          "src/main/resources/assets/witchercraft/items/cat.json",
           "src/main/java/net/redboltmedia/witchercraft/item/CatItem.java",
           "src/main/resources/assets/witchercraft/models/item/cat.json"
         ]
@@ -420,6 +423,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/redboltmedia/witchercraft/item/SwallowItem.java",
+          "src/main/resources/assets/witchercraft/items/swallow.json",
           "src/main/resources/assets/witchercraft/models/item/swallow.json"
         ]
       },
@@ -434,7 +438,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/witchercraft/models/item/full_moon.json",
-          "src/main/java/net/redboltmedia/witchercraft/item/FullMoonItem.java"
+          "src/main/java/net/redboltmedia/witchercraft/item/FullMoonItem.java",
+          "src/main/resources/assets/witchercraft/items/full_moon.json"
         ]
       },
       "path": "~/Alchemy/Potions/FullMoon"
@@ -448,7 +453,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/witchercraft/models/item/thunderbolt.json",
-          "src/main/java/net/redboltmedia/witchercraft/item/ThunderboltItem.java"
+          "src/main/java/net/redboltmedia/witchercraft/item/ThunderboltItem.java",
+          "src/main/resources/assets/witchercraft/items/thunderbolt.json"
         ]
       },
       "path": "~/Alchemy/Potions/Thunderbolt"
@@ -462,7 +468,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/redboltmedia/witchercraft/item/WhiteRaffardsDecoctionItem.java",
-          "src/main/resources/assets/witchercraft/models/item/white_raffards_decoction.json"
+          "src/main/resources/assets/witchercraft/models/item/white_raffards_decoction.json",
+          "src/main/resources/assets/witchercraft/items/white_raffards_decoction.json"
         ]
       },
       "path": "~/Alchemy/Potions/WhiteRaffardsDecoction"
@@ -475,6 +482,7 @@
       "registry_name": "tawny_owl",
       "metadata": {
         "files": [
+          "src/main/resources/assets/witchercraft/items/tawny_owl.json",
           "src/main/resources/assets/witchercraft/models/item/tawny_owl.json",
           "src/main/java/net/redboltmedia/witchercraft/item/TawnyOwlItem.java"
         ]
@@ -490,7 +498,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/redboltmedia/witchercraft/item/GadwallItem.java",
-          "src/main/resources/assets/witchercraft/models/item/gadwall.json"
+          "src/main/resources/assets/witchercraft/models/item/gadwall.json",
+          "src/main/resources/assets/witchercraft/items/gadwall.json"
         ]
       },
       "path": "~/Alchemy/Potions/Gadwall"
@@ -504,6 +513,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/witchercraft/models/item/rook.json",
+          "src/main/resources/assets/witchercraft/items/rook.json",
           "src/main/java/net/redboltmedia/witchercraft/item/RookItem.java"
         ]
       },
@@ -518,6 +528,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/witchercraft/models/item/killer_whale.json",
+          "src/main/resources/assets/witchercraft/items/killer_whale.json",
           "src/main/java/net/redboltmedia/witchercraft/item/KillerWhaleItem.java"
         ]
       },
@@ -532,6 +543,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/witchercraft/models/item/petris_philter.json",
+          "src/main/resources/assets/witchercraft/items/petris_philter.json",
           "src/main/java/net/redboltmedia/witchercraft/item/PetrisPhilterItem.java"
         ]
       },
@@ -546,7 +558,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/witchercraft/models/item/devils_puffball.json",
-          "src/main/java/net/redboltmedia/witchercraft/item/DevilsPuffballItem.java"
+          "src/main/java/net/redboltmedia/witchercraft/item/DevilsPuffballItem.java",
+          "src/main/resources/assets/witchercraft/items/devils_puffball.json"
         ]
       },
       "path": "~/Alchemy/Bombs/DevilsPuffball"
@@ -560,7 +573,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/redboltmedia/witchercraft/item/DancingStarItem.java",
-          "src/main/resources/assets/witchercraft/models/item/dancing_star.json"
+          "src/main/resources/assets/witchercraft/models/item/dancing_star.json",
+          "src/main/resources/assets/witchercraft/items/dancing_star.json"
         ]
       },
       "path": "~/Alchemy/Bombs/DancingStar"
@@ -574,6 +588,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/witchercraft/models/item/grapeshot.json",
+          "src/main/resources/assets/witchercraft/items/grapeshot.json",
           "src/main/java/net/redboltmedia/witchercraft/item/GrapeshotItem.java"
         ]
       },
@@ -588,7 +603,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/redboltmedia/witchercraft/item/NorthernWindItem.java",
-          "src/main/resources/assets/witchercraft/models/item/northern_wind.json"
+          "src/main/resources/assets/witchercraft/models/item/northern_wind.json",
+          "src/main/resources/assets/witchercraft/items/northern_wind.json"
         ]
       },
       "path": "~/Alchemy/Bombs/NorthernWind"
@@ -602,7 +618,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/redboltmedia/witchercraft/item/SamumItem.java",
-          "src/main/resources/assets/witchercraft/models/item/samum.json"
+          "src/main/resources/assets/witchercraft/models/item/samum.json",
+          "src/main/resources/assets/witchercraft/items/samum.json"
         ]
       },
       "path": "~/Alchemy/Bombs/Samum"
@@ -616,7 +633,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/redboltmedia/witchercraft/item/DimeritiumBombItem.java",
-          "src/main/resources/assets/witchercraft/models/item/dimeritium_bomb.json"
+          "src/main/resources/assets/witchercraft/models/item/dimeritium_bomb.json",
+          "src/main/resources/assets/witchercraft/items/dimeritium_bomb.json"
         ]
       },
       "path": "~/Alchemy/Bombs/DimeritiumBomb"
@@ -630,6 +648,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/witchercraft/models/item/insectoid_oil.json",
+          "src/main/resources/assets/witchercraft/items/insectoid_oil.json",
           "src/main/java/net/redboltmedia/witchercraft/item/InsectoidOilItem.java"
         ]
       },
@@ -644,7 +663,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/witchercraft/models/item/necrophage_oil.json",
-          "src/main/java/net/redboltmedia/witchercraft/item/NecrophageOilItem.java"
+          "src/main/java/net/redboltmedia/witchercraft/item/NecrophageOilItem.java",
+          "src/main/resources/assets/witchercraft/items/necrophage_oil.json"
         ]
       },
       "path": "~/Alchemy/Oils/NecrophageOil"
@@ -657,6 +677,7 @@
       "registry_name": "hanged_mans_venom",
       "metadata": {
         "files": [
+          "src/main/resources/assets/witchercraft/items/hanged_mans_venom.json",
           "src/main/resources/assets/witchercraft/models/item/hanged_mans_venom.json",
           "src/main/java/net/redboltmedia/witchercraft/item/HangedMansVenomItem.java"
         ]
@@ -672,7 +693,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/witchercraft/models/item/specter_oil.json",
-          "src/main/java/net/redboltmedia/witchercraft/item/SpecterOilItem.java"
+          "src/main/java/net/redboltmedia/witchercraft/item/SpecterOilItem.java",
+          "src/main/resources/assets/witchercraft/items/specter_oil.json"
         ]
       },
       "path": "~/Alchemy/Oils/SpecterOil"
@@ -686,7 +708,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/redboltmedia/witchercraft/item/OgroidOilItem.java",
-          "src/main/resources/assets/witchercraft/models/item/ogroid_oil.json"
+          "src/main/resources/assets/witchercraft/models/item/ogroid_oil.json",
+          "src/main/resources/assets/witchercraft/items/ogroid_oil.json"
         ]
       },
       "path": "~/Alchemy/Oils/OgroidOil"
@@ -700,6 +723,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/redboltmedia/witchercraft/item/BeastOilItem.java",
+          "src/main/resources/assets/witchercraft/items/beast_oil.json",
           "src/main/resources/assets/witchercraft/models/item/beast_oil.json"
         ]
       },
@@ -714,7 +738,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/witchercraft/models/item/draconid_oil.json",
-          "src/main/java/net/redboltmedia/witchercraft/item/DraconidOilItem.java"
+          "src/main/java/net/redboltmedia/witchercraft/item/DraconidOilItem.java",
+          "src/main/resources/assets/witchercraft/items/draconid_oil.json"
         ]
       },
       "path": "~/Alchemy/Oils/DraconidOil"
@@ -738,7 +763,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/witchercraft/models/item/aether.json",
-          "src/main/java/net/redboltmedia/witchercraft/item/AetherItem.java"
+          "src/main/java/net/redboltmedia/witchercraft/item/AetherItem.java",
+          "src/main/resources/assets/witchercraft/items/aether.json"
         ]
       },
       "path": "~/Items"
@@ -752,7 +778,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/redboltmedia/witchercraft/item/HydragenumItem.java",
-          "src/main/resources/assets/witchercraft/models/item/hydragenum.json"
+          "src/main/resources/assets/witchercraft/models/item/hydragenum.json",
+          "src/main/resources/assets/witchercraft/items/hydragenum.json"
         ]
       },
       "path": "~/Items"
@@ -765,6 +792,7 @@
       "registry_name": "quebrith",
       "metadata": {
         "files": [
+          "src/main/resources/assets/witchercraft/items/quebrith.json",
           "src/main/java/net/redboltmedia/witchercraft/item/QuebrithItem.java",
           "src/main/resources/assets/witchercraft/models/item/quebrith.json"
         ]
@@ -780,7 +808,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/redboltmedia/witchercraft/item/RebisItem.java",
-          "src/main/resources/assets/witchercraft/models/item/rebis.json"
+          "src/main/resources/assets/witchercraft/models/item/rebis.json",
+          "src/main/resources/assets/witchercraft/items/rebis.json"
         ]
       },
       "path": "~/Items"
@@ -793,6 +822,7 @@
       "registry_name": "vermilion",
       "metadata": {
         "files": [
+          "src/main/resources/assets/witchercraft/items/vermilion.json",
           "src/main/resources/assets/witchercraft/models/item/vermilion.json",
           "src/main/java/net/redboltmedia/witchercraft/item/VermilionItem.java"
         ]
@@ -808,7 +838,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/redboltmedia/witchercraft/item/VitriolItem.java",
-          "src/main/resources/assets/witchercraft/models/item/vitriol.json"
+          "src/main/resources/assets/witchercraft/models/item/vitriol.json",
+          "src/main/resources/assets/witchercraft/items/vitriol.json"
         ]
       },
       "path": "~/Items"
@@ -822,7 +853,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/witchercraft/models/item/white_gull.json",
-          "src/main/java/net/redboltmedia/witchercraft/item/WhiteGullItem.java"
+          "src/main/java/net/redboltmedia/witchercraft/item/WhiteGullItem.java",
+          "src/main/resources/assets/witchercraft/items/white_gull.json"
         ]
       },
       "path": "~/Items"
@@ -836,6 +868,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/witchercraft/models/item/saletpeter.json",
+          "src/main/resources/assets/witchercraft/items/saletpeter.json",
           "src/main/java/net/redboltmedia/witchercraft/item/SaletpeterItem.java"
         ]
       },
@@ -849,6 +882,7 @@
       "registry_name": "tallow",
       "metadata": {
         "files": [
+          "src/main/resources/assets/witchercraft/items/tallow.json",
           "src/main/resources/assets/witchercraft/models/item/tallow.json",
           "src/main/java/net/redboltmedia/witchercraft/item/TallowItem.java"
         ]
@@ -863,6 +897,7 @@
       "registry_name": "relict_oil",
       "metadata": {
         "files": [
+          "src/main/resources/assets/witchercraft/items/relict_oil.json",
           "src/main/resources/assets/witchercraft/models/item/relict_oil.json",
           "src/main/java/net/redboltmedia/witchercraft/item/RelictOilItem.java"
         ]
@@ -878,6 +913,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/redboltmedia/witchercraft/item/CursedOilItem.java",
+          "src/main/resources/assets/witchercraft/items/cursed_oil.json",
           "src/main/resources/assets/witchercraft/models/item/cursed_oil.json"
         ]
       },
@@ -891,6 +927,7 @@
       "registry_name": "vampire_oil",
       "metadata": {
         "files": [
+          "src/main/resources/assets/witchercraft/items/vampire_oil.json",
           "src/main/java/net/redboltmedia/witchercraft/item/VampireOilItem.java",
           "src/main/resources/assets/witchercraft/models/item/vampire_oil.json"
         ]
@@ -1038,7 +1075,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/witchercraft/models/item/golden_oriole.json",
-          "src/main/java/net/redboltmedia/witchercraft/item/GoldenOrioleItem.java"
+          "src/main/java/net/redboltmedia/witchercraft/item/GoldenOrioleItem.java",
+          "src/main/resources/assets/witchercraft/items/golden_oriole.json"
         ]
       },
       "path": "~/Alchemy/Potions/GoldenOriole"
@@ -1876,9 +1914,15 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/witchercraft/models/item/feline_armor_leggings.json",
+          "src/main/java/net/redboltmedia/witchercraft/client/renderer/item/FelineArmorArmor.java",
+          "src/main/resources/assets/witchercraft/equipment/feline_armor.json",
+          "src/main/resources/assets/witchercraft/items/feline_armor_chestplate.json",
           "src/main/java/net/redboltmedia/witchercraft/item/FelineArmorItem.java",
           "src/main/resources/assets/witchercraft/models/item/feline_armor_chestplate.json",
           "src/main/resources/assets/witchercraft/models/item/feline_armor_helmet.json",
+          "src/main/resources/assets/witchercraft/items/feline_armor_helmet.json",
+          "src/main/resources/assets/witchercraft/items/feline_armor_leggings.json",
+          "src/main/resources/assets/witchercraft/items/feline_armor_boots.json",
           "src/main/resources/assets/witchercraft/models/item/feline_armor_boots.json"
         ]
       },
@@ -1925,7 +1969,13 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/witchercraft/models/item/wolven_armor_chestplate.json",
+          "src/main/resources/assets/witchercraft/items/wolven_armor_boots.json",
+          "src/main/java/net/redboltmedia/witchercraft/client/renderer/item/WolvenArmorArmor.java",
+          "src/main/resources/assets/witchercraft/items/wolven_armor_helmet.json",
           "src/main/resources/assets/witchercraft/models/item/wolven_armor_boots.json",
+          "src/main/resources/assets/witchercraft/equipment/wolven_armor.json",
+          "src/main/resources/assets/witchercraft/items/wolven_armor_leggings.json",
+          "src/main/resources/assets/witchercraft/items/wolven_armor_chestplate.json",
           "src/main/resources/assets/witchercraft/models/item/wolven_armor_leggings.json",
           "src/main/resources/assets/witchercraft/models/item/wolven_armor_helmet.json",
           "src/main/java/net/redboltmedia/witchercraft/item/WolvenArmorItem.java"
@@ -1987,10 +2037,16 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/witchercraft/models/item/ursine_armor_boots.json",
+          "src/main/java/net/redboltmedia/witchercraft/client/renderer/item/UrsineArmorArmor.java",
           "src/main/resources/assets/witchercraft/models/item/ursine_armor_chestplate.json",
           "src/main/resources/assets/witchercraft/models/item/ursine_armor_leggings.json",
+          "src/main/resources/assets/witchercraft/equipment/ursine_armor.json",
+          "src/main/resources/assets/witchercraft/items/ursine_armor_boots.json",
           "src/main/resources/assets/witchercraft/models/item/ursine_armor_helmet.json",
-          "src/main/java/net/redboltmedia/witchercraft/item/UrsineArmorItem.java"
+          "src/main/resources/assets/witchercraft/items/ursine_armor_chestplate.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/UrsineArmorItem.java",
+          "src/main/resources/assets/witchercraft/items/ursine_armor_leggings.json",
+          "src/main/resources/assets/witchercraft/items/ursine_armor_helmet.json"
         ]
       },
       "path": "~/Armor/BearGear"
@@ -2035,10 +2091,16 @@
       "registry_name": "viper_armor",
       "metadata": {
         "files": [
+          "src/main/resources/assets/witchercraft/items/viper_armor_chestplate.json",
+          "src/main/resources/assets/witchercraft/items/viper_armor_leggings.json",
+          "src/main/resources/assets/witchercraft/equipment/viper_armor.json",
+          "src/main/resources/assets/witchercraft/items/viper_armor_boots.json",
           "src/main/java/net/redboltmedia/witchercraft/item/ViperArmorItem.java",
           "src/main/resources/assets/witchercraft/models/item/viper_armor_leggings.json",
+          "src/main/java/net/redboltmedia/witchercraft/client/renderer/item/ViperArmorArmor.java",
           "src/main/resources/assets/witchercraft/models/item/viper_armor_helmet.json",
           "src/main/resources/assets/witchercraft/models/item/viper_armor_chestplate.json",
+          "src/main/resources/assets/witchercraft/items/viper_armor_helmet.json",
           "src/main/resources/assets/witchercraft/models/item/viper_armor_boots.json"
         ]
       },
@@ -2085,10 +2147,16 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/witchercraft/models/item/manticore_armor_leggings.json",
+          "src/main/resources/assets/witchercraft/items/manticore_armor_chestplate.json",
           "src/main/java/net/redboltmedia/witchercraft/item/ManticoreArmorItem.java",
+          "src/main/resources/assets/witchercraft/items/manticore_armor_boots.json",
           "src/main/resources/assets/witchercraft/models/item/manticore_armor_chestplate.json",
+          "src/main/resources/assets/witchercraft/equipment/manticore_armor.json",
           "src/main/resources/assets/witchercraft/models/item/manticore_armor_boots.json",
-          "src/main/resources/assets/witchercraft/models/item/manticore_armor_helmet.json"
+          "src/main/resources/assets/witchercraft/models/item/manticore_armor_helmet.json",
+          "src/main/resources/assets/witchercraft/items/manticore_armor_leggings.json",
+          "src/main/java/net/redboltmedia/witchercraft/client/renderer/item/ManticoreArmorArmor.java",
+          "src/main/resources/assets/witchercraft/items/manticore_armor_helmet.json"
         ]
       },
       "path": "~/Armor/ManticoreGear"
@@ -2152,10 +2220,16 @@
       "registry_name": "griffin_armor",
       "metadata": {
         "files": [
+          "src/main/resources/assets/witchercraft/items/griffin_armor_helmet.json",
           "src/main/resources/assets/witchercraft/models/item/griffin_armor_helmet.json",
+          "src/main/resources/assets/witchercraft/items/griffin_armor_chestplate.json",
+          "src/main/resources/assets/witchercraft/items/griffin_armor_boots.json",
           "src/main/resources/assets/witchercraft/models/item/griffin_armor_boots.json",
           "src/main/resources/assets/witchercraft/models/item/griffin_armor_leggings.json",
+          "src/main/resources/assets/witchercraft/items/griffin_armor_leggings.json",
+          "src/main/java/net/redboltmedia/witchercraft/client/renderer/item/GriffinArmorArmor.java",
           "src/main/resources/assets/witchercraft/models/item/griffin_armor_chestplate.json",
+          "src/main/resources/assets/witchercraft/equipment/griffin_armor.json",
           "src/main/java/net/redboltmedia/witchercraft/item/GriffinArmorItem.java"
         ]
       },
@@ -5745,17 +5819,17 @@
   },
   "metadata": {
     "files": [
-      "src/main/resources/pack.mcmeta",
-      "src/main/java/net/redboltmedia/witchercraft/WitchercraftMod.java",
-      "src/main/java/net/redboltmedia/witchercraft/network/WitchercraftModVariables.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/redboltmedia/witchercraft/init/WitchercraftModTabs.java",
       "src/main/java/net/redboltmedia/witchercraft/init/WitchercraftModMenus.java",
       "src/main/java/net/redboltmedia/witchercraft/init/WitchercraftModScreens.java",
       "src/main/java/net/redboltmedia/witchercraft/network/MenuStateUpdateMessage.java",
       "src/main/java/net/redboltmedia/witchercraft/init/WitchercraftModKeyMappings.java",
       "src/main/java/net/redboltmedia/witchercraft/init/WitchercraftModMobEffects.java",
-      "src/main/java/net/redboltmedia/witchercraft/init/WitchercraftModItems.java"
+      "src/main/java/net/redboltmedia/witchercraft/init/WitchercraftModItems.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/redboltmedia/witchercraft/WitchercraftMod.java",
+      "src/main/java/net/redboltmedia/witchercraft/network/WitchercraftModVariables.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/redboltmedia/witchercraft/init/WitchercraftModTabs.java"
     ]
   },
   "foldersRoot": {
@@ -6363,9 +6437,9 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "neoforge-1.21.1",
+    "currentGenerator": "neoforge-1.21.8",
     "credits": "hm",
     "modElementsPackage": "net.redboltmedia.witchercraft"
   },
-  "mcreatorVersion": 202500228610
+  "mcreatorVersion": 202500344519
 }

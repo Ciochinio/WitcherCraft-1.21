@@ -1,16 +1,6 @@
 package net.redboltmedia.witchercraft.network;
 
-import net.redboltmedia.witchercraft.procedures.SurvivalInstinctEffectProcedure;
-import net.redboltmedia.witchercraft.procedures.SunAndStarsEffectProcedure;
-import net.redboltmedia.witchercraft.procedures.PauseMenuGuiOpenProcedure;
-import net.redboltmedia.witchercraft.procedures.GriffinSchoolEffectProcedure;
-import net.redboltmedia.witchercraft.procedures.GourmentEffectProcedure;
-import net.redboltmedia.witchercraft.procedures.CharaterAbilitesGeneralGuiOpenProcedure;
-import net.redboltmedia.witchercraft.procedures.CharacterAbilitiesSignsGuiOpenProcedure;
-import net.redboltmedia.witchercraft.procedures.CharacterAbilitiesCombatGuiOpenProcedure;
-import net.redboltmedia.witchercraft.procedures.CharacterAbilitiesAlchemyGuiOpenProcedure;
-import net.redboltmedia.witchercraft.procedures.CatSchoolEffectProcedure;
-import net.redboltmedia.witchercraft.procedures.BearSchoolEffectProcedure;
+import net.redboltmedia.witchercraft.procedures.*;
 import net.redboltmedia.witchercraft.WitchercraftMod;
 
 import net.neoforged.neoforge.network.handling.IPayloadContext;
@@ -28,7 +18,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public record CharactersAbilietesGeneralGuiButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
 
 	public static final Type<CharactersAbilietesGeneralGuiButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(WitchercraftMod.MODID, "characters_abilietes_general_gui_buttons"));

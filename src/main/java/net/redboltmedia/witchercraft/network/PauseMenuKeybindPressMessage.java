@@ -17,7 +17,7 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public record PauseMenuKeybindPressMessage(int eventType, int pressedms) implements CustomPacketPayload {
 	public static final Type<PauseMenuKeybindPressMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(WitchercraftMod.MODID, "key_pause_menu_keybind_press"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, PauseMenuKeybindPressMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, PauseMenuKeybindPressMessage message) -> {

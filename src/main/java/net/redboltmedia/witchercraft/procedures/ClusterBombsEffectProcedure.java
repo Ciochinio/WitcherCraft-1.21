@@ -15,7 +15,7 @@ public class ClusterBombsEffectProcedure {
 					{
 						WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
 						_vars.witchercraftAbilitiesClusterBombs = true;
-						_vars.syncPlayerVariables(entity);
+						_vars.markSyncDirty();
 					}
 				}
 			}

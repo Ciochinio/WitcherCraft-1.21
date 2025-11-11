@@ -13,7 +13,7 @@ public class MuscleMemoryEffectProcedure {
 			{
 				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
 				_vars.witchercraftAbilitiesMuscleMemory = true;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 		}
 	}

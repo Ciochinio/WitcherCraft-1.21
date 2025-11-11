@@ -19,7 +19,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public record BestiaryMenuGuiButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
 
 	public static final Type<BestiaryMenuGuiButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(WitchercraftMod.MODID, "bestiary_menu_gui_buttons"));

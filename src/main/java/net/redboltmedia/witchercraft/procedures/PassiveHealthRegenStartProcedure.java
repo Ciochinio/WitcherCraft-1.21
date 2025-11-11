@@ -21,7 +21,7 @@ public class PassiveHealthRegenStartProcedure {
 		{
 			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
 			_vars.witchercraftPassiveHealthRegeneration = sumPassiveHealthRegeneration;
-			_vars.syncPlayerVariables(entity);
+			_vars.markSyncDirty();
 		}
 		if (entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(WitchercraftModMobEffects.PASSIVE_HEALTH_REGEN) && (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) > 0) {
 			WitchercraftMod.queueServerWork(40, () -> {

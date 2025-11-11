@@ -23,7 +23,7 @@ public class PassiveStaminaRegenStartProcedure {
 		{
 			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
 			_vars.witchercraftPassiveStaminaRegeneration = sumPassiveStaminaRegeneration;
-			_vars.syncPlayerVariables(entity);
+			_vars.markSyncDirty();
 		}
 		if (entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(WitchercraftModMobEffects.PASSIVE_STAMINA_REGEN)) {
 			WitchercraftMod.queueServerWork(40, () -> {

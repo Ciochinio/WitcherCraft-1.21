@@ -30,13 +30,13 @@ public class CritDamageProcedure {
 		{
 			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
 			_vars.sumCritDamage = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftCritDamage;
-			_vars.syncPlayerVariables(entity);
+			_vars.markSyncDirty();
 		}
 		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(WitchercraftModMobEffects.GOLDEN_ORIOLE_EFFECT)) {
 			{
 				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
 				_vars.sumCritDamage = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumCritDamage + 100;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 		}
 	}

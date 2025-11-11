@@ -12,7 +12,7 @@ public class DelusionEffectProcedure {
 			{
 				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
 				_vars.witchercraftAbilitiesDelusion = true;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 			CharacterAbilitiesExperienceRemoveProcedure.execute(entity);
 		}

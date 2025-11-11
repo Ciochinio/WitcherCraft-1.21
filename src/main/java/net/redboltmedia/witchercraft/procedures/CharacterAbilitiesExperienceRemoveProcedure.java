@@ -11,7 +11,7 @@ public class CharacterAbilitiesExperienceRemoveProcedure {
 		{
 			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
 			_vars.witchercraftAbilitiesLearned = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesLearned + 1;
-			_vars.syncPlayerVariables(entity);
+			_vars.markSyncDirty();
 		}
 	}
 }

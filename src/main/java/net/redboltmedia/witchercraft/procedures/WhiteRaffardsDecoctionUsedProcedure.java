@@ -11,10 +11,10 @@ public class WhiteRaffardsDecoctionUsedProcedure {
 			return;
 		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(MobEffects.BAD_OMEN)) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 1, 2));
+				_entity.addEffect(new MobEffectInstance(MobEffects.INSTANT_HEALTH, 1, 2));
 		} else {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 1, 1));
+				_entity.addEffect(new MobEffectInstance(MobEffects.INSTANT_HEALTH, 1, 1));
 		}
 	}
 }

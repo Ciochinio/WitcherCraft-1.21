@@ -6,6 +6,9 @@ import net.redboltmedia.witchercraft.init.WitchercraftModMenus;
 
 import net.neoforged.neoforge.items.ItemStackHandler;
 import net.neoforged.neoforge.items.IItemHandler;
+import net.neoforged.neoforge.event.entity.player.PlayerContainerEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.Level;
@@ -24,6 +27,7 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Collections;
 
+@EventBusSubscriber
 public class PauseMenuGUIMenu extends AbstractContainerMenu implements WitchercraftModMenus.MenuAccessor {
 	public final Map<String, Object> menuState = new HashMap<>() {
 		@Override
@@ -57,7 +61,6 @@ public class PauseMenuGUIMenu extends AbstractContainerMenu implements Witchercr
 			this.z = pos.getZ();
 			access = ContainerLevelAccess.create(world, pos);
 		}
-		PauseMenuGuiBlindProcedure.execute(entity);
 	}
 
 	@Override
@@ -92,5 +95,17 @@ public class PauseMenuGUIMenu extends AbstractContainerMenu implements Witchercr
 	@Override
 	public Map<String, Object> getMenuState() {
 		return menuState;
+	}
+
+	@SubscribeEvent
+	public static void onContainerOpen(PlayerContainerEvent.Open event) {
+		Player entity = event.getEntity();
+		if (event.getContainer() instanceof PauseMenuGUIMenu menu) {
+			Level world = menu.world;
+			double x = menu.x;
+			double y = menu.y;
+			double z = menu.z;
+			PauseMenuGuiBlindProcedure.execute(entity);
+		}
 	}
 }

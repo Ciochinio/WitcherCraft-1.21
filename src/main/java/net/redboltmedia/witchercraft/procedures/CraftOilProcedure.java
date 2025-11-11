@@ -22,28 +22,13 @@ public class CraftOilProcedure {
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu14 ? _menu14.getSlots().get(7).getItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(1).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(2).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(4).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(5).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(0).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
-				ItemStack _setstack = new ItemStack(WitchercraftModItems.INSECTOID_OIL.get()).copy();
-				_setstack.setCount(3);
-				_menu.getSlots().get(7).set(_setstack);
+				ItemStack _setstack21 = new ItemStack(WitchercraftModItems.INSECTOID_OIL.get()).copy();
+				_setstack21.setCount(3);
+				_menu.getSlots().get(7).set(_setstack21);
 				_player.containerMenu.broadcastChanges();
 			}
 		}
@@ -59,20 +44,11 @@ public class CraftOilProcedure {
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu38 ? _menu38.getSlots().get(7).getItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(3).remove(2);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(5).remove(2);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(0).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
-				ItemStack _setstack = new ItemStack(WitchercraftModItems.NECROPHAGE_OIL.get()).copy();
-				_setstack.setCount(3);
-				_menu.getSlots().get(7).set(_setstack);
+				ItemStack _setstack43 = new ItemStack(WitchercraftModItems.NECROPHAGE_OIL.get()).copy();
+				_setstack43.setCount(3);
+				_menu.getSlots().get(7).set(_setstack43);
 				_player.containerMenu.broadcastChanges();
 			}
 		}
@@ -87,28 +63,13 @@ public class CraftOilProcedure {
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu59 ? _menu59.getSlots().get(7).getItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(1).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(3).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(4).remove(2);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(6).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(0).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
-				ItemStack _setstack = new ItemStack(WitchercraftModItems.VAMPIRE_OIL.get()).copy();
-				_setstack.setCount(3);
-				_menu.getSlots().get(7).set(_setstack);
+				ItemStack _setstack66 = new ItemStack(WitchercraftModItems.VAMPIRE_OIL.get()).copy();
+				_setstack66.setCount(3);
+				_menu.getSlots().get(7).set(_setstack66);
 				_player.containerMenu.broadcastChanges();
 			}
 		}
@@ -122,32 +83,14 @@ public class CraftOilProcedure {
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu81 ? _menu81.getSlots().get(7).getItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(1).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(2).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(3).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(5).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(6).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(0).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
-				ItemStack _setstack = new ItemStack(WitchercraftModItems.HANGED_MANS_VENOM.get()).copy();
-				_setstack.setCount(3);
-				_menu.getSlots().get(7).set(_setstack);
+				ItemStack _setstack89 = new ItemStack(WitchercraftModItems.HANGED_MANS_VENOM.get()).copy();
+				_setstack89.setCount(3);
+				_menu.getSlots().get(7).set(_setstack89);
 				_player.containerMenu.broadcastChanges();
 			}
 		}
@@ -162,24 +105,12 @@ public class CraftOilProcedure {
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu105 ? _menu105.getSlots().get(7).getItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(2).remove(2);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(3).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(5).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(0).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
-				ItemStack _setstack = new ItemStack(WitchercraftModItems.SPECTER_OIL.get()).copy();
-				_setstack.setCount(3);
-				_menu.getSlots().get(7).set(_setstack);
+				ItemStack _setstack111 = new ItemStack(WitchercraftModItems.SPECTER_OIL.get()).copy();
+				_setstack111.setCount(3);
+				_menu.getSlots().get(7).set(_setstack111);
 				_player.containerMenu.broadcastChanges();
 			}
 		}
@@ -194,24 +125,12 @@ public class CraftOilProcedure {
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu127 ? _menu127.getSlots().get(7).getItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(2).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(3).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(5).remove(2);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(0).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
-				ItemStack _setstack = new ItemStack(WitchercraftModItems.OGROID_OIL.get()).copy();
-				_setstack.setCount(3);
-				_menu.getSlots().get(7).set(_setstack);
+				ItemStack _setstack133 = new ItemStack(WitchercraftModItems.OGROID_OIL.get()).copy();
+				_setstack133.setCount(3);
+				_menu.getSlots().get(7).set(_setstack133);
 				_player.containerMenu.broadcastChanges();
 			}
 		}
@@ -226,24 +145,12 @@ public class CraftOilProcedure {
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu149 ? _menu149.getSlots().get(7).getItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(2).remove(2);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(4).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(5).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(0).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
-				ItemStack _setstack = new ItemStack(WitchercraftModItems.BEAST_OIL.get()).copy();
-				_setstack.setCount(3);
-				_menu.getSlots().get(7).set(_setstack);
+				ItemStack _setstack155 = new ItemStack(WitchercraftModItems.BEAST_OIL.get()).copy();
+				_setstack155.setCount(3);
+				_menu.getSlots().get(7).set(_setstack155);
 				_player.containerMenu.broadcastChanges();
 			}
 		}
@@ -258,24 +165,12 @@ public class CraftOilProcedure {
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu171 ? _menu171.getSlots().get(7).getItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(1).remove(2);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(4).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(6).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(0).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
-				ItemStack _setstack = new ItemStack(WitchercraftModItems.DRACONID_OIL.get()).copy();
-				_setstack.setCount(3);
-				_menu.getSlots().get(7).set(_setstack);
+				ItemStack _setstack177 = new ItemStack(WitchercraftModItems.DRACONID_OIL.get()).copy();
+				_setstack177.setCount(3);
+				_menu.getSlots().get(7).set(_setstack177);
 				_player.containerMenu.broadcastChanges();
 			}
 		}
@@ -289,28 +184,13 @@ public class CraftOilProcedure {
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu192 ? _menu192.getSlots().get(7).getItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(1).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(2).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(3).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(6).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(0).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
-				ItemStack _setstack = new ItemStack(WitchercraftModItems.RELICT_OIL.get()).copy();
-				_setstack.setCount(3);
-				_menu.getSlots().get(7).set(_setstack);
+				ItemStack _setstack199 = new ItemStack(WitchercraftModItems.RELICT_OIL.get()).copy();
+				_setstack199.setCount(3);
+				_menu.getSlots().get(7).set(_setstack199);
 				_player.containerMenu.broadcastChanges();
 			}
 		}
@@ -324,32 +204,14 @@ public class CraftOilProcedure {
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu214 ? _menu214.getSlots().get(7).getItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(1).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(3).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(4).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(5).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(6).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
 				_menu.getSlots().get(0).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu) {
-				ItemStack _setstack = new ItemStack(WitchercraftModItems.CURSED_OIL.get()).copy();
-				_setstack.setCount(3);
-				_menu.getSlots().get(7).set(_setstack);
+				ItemStack _setstack222 = new ItemStack(WitchercraftModItems.CURSED_OIL.get()).copy();
+				_setstack222.setCount(3);
+				_menu.getSlots().get(7).set(_setstack222);
 				_player.containerMenu.broadcastChanges();
 			}
 		}

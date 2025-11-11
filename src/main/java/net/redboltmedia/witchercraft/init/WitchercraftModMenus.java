@@ -3,24 +3,7 @@
  */
 package net.redboltmedia.witchercraft.init;
 
-import net.redboltmedia.witchercraft.world.inventory.SignGuiMenu;
-import net.redboltmedia.witchercraft.world.inventory.RotfiendGuiMenu;
-import net.redboltmedia.witchercraft.world.inventory.PauseMenuGUIMenu;
-import net.redboltmedia.witchercraft.world.inventory.MeditationGuiMenu;
-import net.redboltmedia.witchercraft.world.inventory.HigherVampireGuiMenu;
-import net.redboltmedia.witchercraft.world.inventory.GraveirGuiMenu;
-import net.redboltmedia.witchercraft.world.inventory.GlossaryMenuGuiMenu;
-import net.redboltmedia.witchercraft.world.inventory.FogletMenu;
-import net.redboltmedia.witchercraft.world.inventory.DrownerGuiMenu;
-import net.redboltmedia.witchercraft.world.inventory.CharactersAbilietesGeneralGuiMenu;
-import net.redboltmedia.witchercraft.world.inventory.CharacterGuiMenu;
-import net.redboltmedia.witchercraft.world.inventory.CharacterAbilitiesSignsGuiMenu;
-import net.redboltmedia.witchercraft.world.inventory.CharacterAbilitiesCombatGuiMenu;
-import net.redboltmedia.witchercraft.world.inventory.CharacterAbilitiesAlchemyGuiMenu;
-import net.redboltmedia.witchercraft.world.inventory.BruxaGuiMenu;
-import net.redboltmedia.witchercraft.world.inventory.BestiaryMenuGuiMenu;
-import net.redboltmedia.witchercraft.world.inventory.AlchemyGuiPotionsMenu;
-import net.redboltmedia.witchercraft.world.inventory.AlchemyGuiMenu;
+import net.redboltmedia.witchercraft.world.inventory.*;
 import net.redboltmedia.witchercraft.network.MenuStateUpdateMessage;
 import net.redboltmedia.witchercraft.WitchercraftMod;
 
@@ -28,6 +11,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.common.extensions.IMenuTypeExtension;
+import net.neoforged.neoforge.client.network.ClientPacketDistributor;
 
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.inventory.MenuType;
@@ -74,7 +58,7 @@ public class WitchercraftModMenus {
 			} else if (player.level().isClientSide) {
 				if (Minecraft.getInstance().screen instanceof WitchercraftModScreens.ScreenAccessor accessor && needClientUpdate)
 					accessor.updateMenuState(elementType, name, elementState);
-				PacketDistributor.sendToServer(new MenuStateUpdateMessage(elementType, name, elementState));
+				ClientPacketDistributor.sendToServer(new MenuStateUpdateMessage(elementType, name, elementState));
 			}
 		}
 

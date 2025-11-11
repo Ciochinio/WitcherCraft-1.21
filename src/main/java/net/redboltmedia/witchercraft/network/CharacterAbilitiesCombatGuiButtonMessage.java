@@ -1,25 +1,6 @@
 package net.redboltmedia.witchercraft.network;
 
-import net.redboltmedia.witchercraft.procedures.UndyingEffectProcedure;
-import net.redboltmedia.witchercraft.procedures.SunderArmorEffectProcedure;
-import net.redboltmedia.witchercraft.procedures.StrengthTrainingEffectProcedure;
-import net.redboltmedia.witchercraft.procedures.RazorFocusEffectProcedure;
-import net.redboltmedia.witchercraft.procedures.PreciseBlowsEffectProcedure;
-import net.redboltmedia.witchercraft.procedures.PauseMenuGuiOpenProcedure;
-import net.redboltmedia.witchercraft.procedures.MuscleMemoryEffectProcedure;
-import net.redboltmedia.witchercraft.procedures.FlooodOfAngerEffecProcedure;
-import net.redboltmedia.witchercraft.procedures.FleetFootedEffectProcedure;
-import net.redboltmedia.witchercraft.procedures.DefenceEffectProcedure;
-import net.redboltmedia.witchercraft.procedures.DeadlyPresicionEffectProcedure;
-import net.redboltmedia.witchercraft.procedures.CrushingBlowsEffectProcedure;
-import net.redboltmedia.witchercraft.procedures.CrippllingStrikesEffectProcedure;
-import net.redboltmedia.witchercraft.procedures.CripplingShotEffectProcedure;
-import net.redboltmedia.witchercraft.procedures.ColdBloodEffectProcedure;
-import net.redboltmedia.witchercraft.procedures.CharaterAbilitesGeneralGuiOpenProcedure;
-import net.redboltmedia.witchercraft.procedures.CharacterAbilitiesSignsGuiOpenProcedure;
-import net.redboltmedia.witchercraft.procedures.CharacterAbilitiesCombatGuiOpenProcedure;
-import net.redboltmedia.witchercraft.procedures.CharacterAbilitiesAlchemyGuiOpenProcedure;
-import net.redboltmedia.witchercraft.procedures.AnatomicalKnowledgeEffectProcedure;
+import net.redboltmedia.witchercraft.procedures.*;
 import net.redboltmedia.witchercraft.WitchercraftMod;
 
 import net.neoforged.neoforge.network.handling.IPayloadContext;
@@ -37,7 +18,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public record CharacterAbilitiesCombatGuiButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
 
 	public static final Type<CharacterAbilitiesCombatGuiButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(WitchercraftMod.MODID, "character_abilities_combat_gui_buttons"));

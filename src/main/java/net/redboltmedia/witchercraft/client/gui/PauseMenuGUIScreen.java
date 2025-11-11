@@ -4,7 +4,7 @@ import net.redboltmedia.witchercraft.world.inventory.PauseMenuGUIMenu;
 import net.redboltmedia.witchercraft.network.PauseMenuGUIButtonMessage;
 import net.redboltmedia.witchercraft.init.WitchercraftModScreens;
 
-import net.neoforged.neoforge.network.PacketDistributor;
+import net.neoforged.neoforge.client.network.ClientPacketDistributor;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
@@ -14,19 +14,17 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
-import com.mojang.blaze3d.systems.RenderSystem;
-
 public class PauseMenuGUIScreen extends AbstractContainerScreen<PauseMenuGUIMenu> implements WitchercraftModScreens.ScreenAccessor {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
 	private boolean menuStateUpdateActive = false;
-	Button button_meditation;
-	Button button_character;
-	Button button_alchemy;
-	Button button_glossary;
-	Button button_bestiary;
-	Button button_skill_tree;
+	private Button button_meditation;
+	private Button button_character;
+	private Button button_alchemy;
+	private Button button_glossary;
+	private Button button_bestiary;
+	private Button button_skill_tree;
 
 	public PauseMenuGUIScreen(PauseMenuGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -58,10 +56,6 @@ public class PauseMenuGUIScreen extends AbstractContainerScreen<PauseMenuGUIMenu
 
 	@Override
 	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int mouseX, int mouseY) {
-		RenderSystem.setShaderColor(1, 1, 1, 1);
-		RenderSystem.enableBlend();
-		RenderSystem.defaultBlendFunc();
-		RenderSystem.disableBlend();
 	}
 
 	@Override
@@ -84,7 +78,7 @@ public class PauseMenuGUIScreen extends AbstractContainerScreen<PauseMenuGUIMenu
 			int x = PauseMenuGUIScreen.this.x;
 			int y = PauseMenuGUIScreen.this.y;
 			if (true) {
-				PacketDistributor.sendToServer(new PauseMenuGUIButtonMessage(0, x, y, z));
+				ClientPacketDistributor.sendToServer(new PauseMenuGUIButtonMessage(0, x, y, z));
 				PauseMenuGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}).bounds(this.leftPos + 216, this.topPos + 97, 77, 20).build();
@@ -93,7 +87,7 @@ public class PauseMenuGUIScreen extends AbstractContainerScreen<PauseMenuGUIMenu
 			int x = PauseMenuGUIScreen.this.x;
 			int y = PauseMenuGUIScreen.this.y;
 			if (true) {
-				PacketDistributor.sendToServer(new PauseMenuGUIButtonMessage(1, x, y, z));
+				ClientPacketDistributor.sendToServer(new PauseMenuGUIButtonMessage(1, x, y, z));
 				PauseMenuGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
 		}).bounds(this.leftPos + 51, this.topPos + 151, 77, 20).build();
@@ -102,7 +96,7 @@ public class PauseMenuGUIScreen extends AbstractContainerScreen<PauseMenuGUIMenu
 			int x = PauseMenuGUIScreen.this.x;
 			int y = PauseMenuGUIScreen.this.y;
 			if (true) {
-				PacketDistributor.sendToServer(new PauseMenuGUIButtonMessage(2, x, y, z));
+				ClientPacketDistributor.sendToServer(new PauseMenuGUIButtonMessage(2, x, y, z));
 				PauseMenuGUIButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
 		}).bounds(this.leftPos + 51, this.topPos + 97, 76, 20).build();
@@ -111,7 +105,7 @@ public class PauseMenuGUIScreen extends AbstractContainerScreen<PauseMenuGUIMenu
 			int x = PauseMenuGUIScreen.this.x;
 			int y = PauseMenuGUIScreen.this.y;
 			if (true) {
-				PacketDistributor.sendToServer(new PauseMenuGUIButtonMessage(3, x, y, z));
+				ClientPacketDistributor.sendToServer(new PauseMenuGUIButtonMessage(3, x, y, z));
 				PauseMenuGUIButtonMessage.handleButtonAction(entity, 3, x, y, z);
 			}
 		}).bounds(this.leftPos + -114, this.topPos + 97, 77, 20).build();
@@ -120,7 +114,7 @@ public class PauseMenuGUIScreen extends AbstractContainerScreen<PauseMenuGUIMenu
 			int x = PauseMenuGUIScreen.this.x;
 			int y = PauseMenuGUIScreen.this.y;
 			if (true) {
-				PacketDistributor.sendToServer(new PauseMenuGUIButtonMessage(4, x, y, z));
+				ClientPacketDistributor.sendToServer(new PauseMenuGUIButtonMessage(4, x, y, z));
 				PauseMenuGUIButtonMessage.handleButtonAction(entity, 4, x, y, z);
 			}
 		}).bounds(this.leftPos + -32, this.topPos + 97, 77, 20).build();
@@ -129,7 +123,7 @@ public class PauseMenuGUIScreen extends AbstractContainerScreen<PauseMenuGUIMenu
 			int x = PauseMenuGUIScreen.this.x;
 			int y = PauseMenuGUIScreen.this.y;
 			if (true) {
-				PacketDistributor.sendToServer(new PauseMenuGUIButtonMessage(5, x, y, z));
+				ClientPacketDistributor.sendToServer(new PauseMenuGUIButtonMessage(5, x, y, z));
 				PauseMenuGUIButtonMessage.handleButtonAction(entity, 5, x, y, z);
 			}
 		}).bounds(this.leftPos + 133, this.topPos + 97, 77, 20).build();

@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "witchercraft:feline_armor"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "witchercraft:feline_armor"
+      }
+    ]
+  }
+}

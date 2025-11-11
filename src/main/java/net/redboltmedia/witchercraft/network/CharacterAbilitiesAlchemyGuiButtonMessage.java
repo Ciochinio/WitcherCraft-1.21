@@ -1,19 +1,6 @@
 package net.redboltmedia.witchercraft.network;
 
-import net.redboltmedia.witchercraft.procedures.SideEffectsEffectProcedure;
-import net.redboltmedia.witchercraft.procedures.RefreshmentEffectProcedure;
-import net.redboltmedia.witchercraft.procedures.PyrotechnicsEffectProcedure;
-import net.redboltmedia.witchercraft.procedures.ProtectiveCoatingEffectProcedure;
-import net.redboltmedia.witchercraft.procedures.PoisonedBladesEffectProcedure;
-import net.redboltmedia.witchercraft.procedures.PauseMenuGuiOpenProcedure;
-import net.redboltmedia.witchercraft.procedures.HunterInstinctEffectProcedure;
-import net.redboltmedia.witchercraft.procedures.EfficencyEffectProcedure;
-import net.redboltmedia.witchercraft.procedures.DelayedRecoveryEffectProcedure;
-import net.redboltmedia.witchercraft.procedures.ClusterBombsEffectProcedure;
-import net.redboltmedia.witchercraft.procedures.CharaterAbilitesGeneralGuiOpenProcedure;
-import net.redboltmedia.witchercraft.procedures.CharacterAbilitiesSignsGuiOpenProcedure;
-import net.redboltmedia.witchercraft.procedures.CharacterAbilitiesCombatGuiOpenProcedure;
-import net.redboltmedia.witchercraft.procedures.CharacterAbilitiesAlchemyGuiOpenProcedure;
+import net.redboltmedia.witchercraft.procedures.*;
 import net.redboltmedia.witchercraft.WitchercraftMod;
 
 import net.neoforged.neoforge.network.handling.IPayloadContext;
@@ -31,7 +18,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public record CharacterAbilitiesAlchemyGuiButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
 
 	public static final Type<CharacterAbilitiesAlchemyGuiButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(WitchercraftMod.MODID, "character_abilities_alchemy_gui_buttons"));

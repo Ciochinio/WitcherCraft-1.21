@@ -9,7 +9,7 @@ import net.redboltmedia.witchercraft.network.SignGuiKeybindMessage;
 import net.redboltmedia.witchercraft.network.SignCastKeybindMessage;
 import net.redboltmedia.witchercraft.network.PauseMenuKeybindPressMessage;
 
-import net.neoforged.neoforge.network.PacketDistributor;
+import net.neoforged.neoforge.client.network.ClientPacketDistributor;
 import net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent;
 import net.neoforged.neoforge.client.event.ClientTickEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -19,7 +19,7 @@ import net.neoforged.api.distmarker.Dist;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
+@EventBusSubscriber(Dist.CLIENT)
 public class WitchercraftModKeyMappings {
 	public static final KeyMapping PAUSE_MENU_KEYBIND_PRESS = new KeyMapping("key.witchercraft.pause_menu_keybind_press", GLFW.GLFW_KEY_B, "key.categories.misc") {
 		private boolean isDownOld = false;
@@ -28,7 +28,7 @@ public class WitchercraftModKeyMappings {
 		public void setDown(boolean isDown) {
 			super.setDown(isDown);
 			if (isDownOld != isDown && isDown) {
-				PacketDistributor.sendToServer(new PauseMenuKeybindPressMessage(0, 0));
+				ClientPacketDistributor.sendToServer(new PauseMenuKeybindPressMessage(0, 0));
 				PauseMenuKeybindPressMessage.pressAction(Minecraft.getInstance().player, 0, 0);
 			}
 			isDownOld = isDown;
@@ -41,7 +41,7 @@ public class WitchercraftModKeyMappings {
 		public void setDown(boolean isDown) {
 			super.setDown(isDown);
 			if (isDownOld != isDown && isDown) {
-				PacketDistributor.sendToServer(new SignGuiKeybindMessage(0, 0));
+				ClientPacketDistributor.sendToServer(new SignGuiKeybindMessage(0, 0));
 				SignGuiKeybindMessage.pressAction(Minecraft.getInstance().player, 0, 0);
 			}
 			isDownOld = isDown;
@@ -54,7 +54,7 @@ public class WitchercraftModKeyMappings {
 		public void setDown(boolean isDown) {
 			super.setDown(isDown);
 			if (isDownOld != isDown && isDown) {
-				PacketDistributor.sendToServer(new SignCastKeybindMessage(0, 0));
+				ClientPacketDistributor.sendToServer(new SignCastKeybindMessage(0, 0));
 				SignCastKeybindMessage.pressAction(Minecraft.getInstance().player, 0, 0);
 			}
 			isDownOld = isDown;
@@ -68,7 +68,7 @@ public class WitchercraftModKeyMappings {
 		event.register(SIGN_CAST_KEYBIND);
 	}
 
-	@EventBusSubscriber({Dist.CLIENT})
+	@EventBusSubscriber(Dist.CLIENT)
 	public static class KeyEventListener {
 		@SubscribeEvent
 		public static void onClientTick(ClientTickEvent.Post event) {

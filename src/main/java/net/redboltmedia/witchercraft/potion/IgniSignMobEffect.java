@@ -10,10 +10,10 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.InstantenousMobEffect;
-import net.minecraft.client.gui.screens.inventory.EffectRenderingInventoryScreen;
+import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class IgniSignMobEffect extends InstantenousMobEffect {
 	public IgniSignMobEffect() {
 		super(MobEffectCategory.BENEFICIAL, -1);
@@ -28,7 +28,7 @@ public class IgniSignMobEffect extends InstantenousMobEffect {
 			}
 
 			@Override
-			public boolean renderInventoryText(MobEffectInstance instance, EffectRenderingInventoryScreen<?> screen, GuiGraphics guiGraphics, int x, int y, int blitOffset) {
+			public boolean renderInventoryText(MobEffectInstance instance, AbstractContainerScreen<?> screen, GuiGraphics guiGraphics, int x, int y, int blitOffset) {
 				return false;
 			}
 		}, WitchercraftModMobEffects.IGNI_SIGN.get());

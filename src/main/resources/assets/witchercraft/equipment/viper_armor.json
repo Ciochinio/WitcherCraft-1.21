@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "witchercraft:viper_armor"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "witchercraft:viper_armor"
+      }
+    ]
+  }
+}

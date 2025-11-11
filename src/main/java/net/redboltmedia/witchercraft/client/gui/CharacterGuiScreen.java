@@ -1,18 +1,11 @@
 package net.redboltmedia.witchercraft.client.gui;
 
 import net.redboltmedia.witchercraft.world.inventory.CharacterGuiMenu;
-import net.redboltmedia.witchercraft.procedures.PlayerModelDisplayProcedure;
-import net.redboltmedia.witchercraft.procedures.CharaterLevelProcedure;
-import net.redboltmedia.witchercraft.procedures.CharacterGuiMovementSpeedProcedure;
-import net.redboltmedia.witchercraft.procedures.CharacterGuiHealthProcedure;
-import net.redboltmedia.witchercraft.procedures.CharacterGuiCritDamageProcedure;
-import net.redboltmedia.witchercraft.procedures.CharacterGuiCritChanceProcedure;
-import net.redboltmedia.witchercraft.procedures.CharacterGuiAttackSpeedProcedure;
-import net.redboltmedia.witchercraft.procedures.CharacterExperienceProcedure;
+import net.redboltmedia.witchercraft.procedures.*;
 import net.redboltmedia.witchercraft.network.CharacterGuiButtonMessage;
 import net.redboltmedia.witchercraft.init.WitchercraftModScreens;
 
-import net.neoforged.neoforge.network.PacketDistributor;
+import net.neoforged.neoforge.client.network.ClientPacketDistributor;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
@@ -20,18 +13,18 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.client.renderer.RenderPipelines;
+import net.minecraft.client.gui.screens.inventory.InventoryScreen;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
-
-import com.mojang.blaze3d.systems.RenderSystem;
 
 public class CharacterGuiScreen extends AbstractContainerScreen<CharacterGuiMenu> implements WitchercraftModScreens.ScreenAccessor {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
 	private boolean menuStateUpdateActive = false;
-	Button button_back;
+	private Button button_back;
 
 	public CharacterGuiScreen(CharacterGuiMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -56,19 +49,15 @@ public class CharacterGuiScreen extends AbstractContainerScreen<CharacterGuiMenu
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		if (PlayerModelDisplayProcedure.execute(entity) instanceof LivingEntity livingEntity) {
-			WitchercraftModScreens.renderEntityInInventoryFollowsAngle(guiGraphics, this.leftPos + -65, this.topPos + 81, 30, 0f + (float) Math.atan((this.leftPos + -65 - mouseX) / 40.0), (float) Math.atan((this.topPos + 32 - mouseY) / 40.0),
-					livingEntity);
+			InventoryScreen.renderEntityInInventoryFollowsAngle(guiGraphics, this.leftPos + -1065, this.topPos + -919, this.leftPos + 935, this.topPos + 1081, 30, -livingEntity.getBbHeight() / (2.0f * livingEntity.getScale()),
+					0f + (float) Math.atan((this.leftPos + -65 - mouseX) / 40.0), (float) Math.atan((this.topPos + 32 - mouseY) / 40.0), livingEntity);
 		}
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
 	@Override
 	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int mouseX, int mouseY) {
-		RenderSystem.setShaderColor(1, 1, 1, 1);
-		RenderSystem.enableBlend();
-		RenderSystem.defaultBlendFunc();
-		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-		RenderSystem.disableBlend();
+		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 	}
 
 	@Override
@@ -103,7 +92,7 @@ public class CharacterGuiScreen extends AbstractContainerScreen<CharacterGuiMenu
 			int x = CharacterGuiScreen.this.x;
 			int y = CharacterGuiScreen.this.y;
 			if (true) {
-				PacketDistributor.sendToServer(new CharacterGuiButtonMessage(0, x, y, z));
+				ClientPacketDistributor.sendToServer(new CharacterGuiButtonMessage(0, x, y, z));
 				CharacterGuiButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}).bounds(this.leftPos + 249, this.topPos + 169, 46, 20).build();

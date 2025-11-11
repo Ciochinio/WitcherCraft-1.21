@@ -4,7 +4,7 @@ import net.redboltmedia.witchercraft.world.inventory.MeditationGuiMenu;
 import net.redboltmedia.witchercraft.network.MeditationGuiButtonMessage;
 import net.redboltmedia.witchercraft.init.WitchercraftModScreens;
 
-import net.neoforged.neoforge.network.PacketDistributor;
+import net.neoforged.neoforge.client.network.ClientPacketDistributor;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
@@ -14,18 +14,16 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
-import com.mojang.blaze3d.systems.RenderSystem;
-
 public class MeditationGuiScreen extends AbstractContainerScreen<MeditationGuiMenu> implements WitchercraftModScreens.ScreenAccessor {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
 	private boolean menuStateUpdateActive = false;
-	Button button_midnight;
-	Button button_sunrise;
-	Button button_sunset;
-	Button button_noon;
-	Button button_back;
+	private Button button_midnight;
+	private Button button_sunrise;
+	private Button button_sunset;
+	private Button button_noon;
+	private Button button_back;
 
 	public MeditationGuiScreen(MeditationGuiMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -57,10 +55,6 @@ public class MeditationGuiScreen extends AbstractContainerScreen<MeditationGuiMe
 
 	@Override
 	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int mouseX, int mouseY) {
-		RenderSystem.setShaderColor(1, 1, 1, 1);
-		RenderSystem.enableBlend();
-		RenderSystem.defaultBlendFunc();
-		RenderSystem.disableBlend();
 	}
 
 	@Override
@@ -83,7 +77,7 @@ public class MeditationGuiScreen extends AbstractContainerScreen<MeditationGuiMe
 			int x = MeditationGuiScreen.this.x;
 			int y = MeditationGuiScreen.this.y;
 			if (true) {
-				PacketDistributor.sendToServer(new MeditationGuiButtonMessage(0, x, y, z));
+				ClientPacketDistributor.sendToServer(new MeditationGuiButtonMessage(0, x, y, z));
 				MeditationGuiButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}).bounds(this.leftPos + 52, this.topPos + 147, 67, 20).build();
@@ -92,7 +86,7 @@ public class MeditationGuiScreen extends AbstractContainerScreen<MeditationGuiMe
 			int x = MeditationGuiScreen.this.x;
 			int y = MeditationGuiScreen.this.y;
 			if (true) {
-				PacketDistributor.sendToServer(new MeditationGuiButtonMessage(1, x, y, z));
+				ClientPacketDistributor.sendToServer(new MeditationGuiButtonMessage(1, x, y, z));
 				MeditationGuiButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
 		}).bounds(this.leftPos + -29, this.topPos + 75, 66, 20).build();
@@ -101,7 +95,7 @@ public class MeditationGuiScreen extends AbstractContainerScreen<MeditationGuiMe
 			int x = MeditationGuiScreen.this.x;
 			int y = MeditationGuiScreen.this.y;
 			if (true) {
-				PacketDistributor.sendToServer(new MeditationGuiButtonMessage(2, x, y, z));
+				ClientPacketDistributor.sendToServer(new MeditationGuiButtonMessage(2, x, y, z));
 				MeditationGuiButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
 		}).bounds(this.leftPos + 142, this.topPos + 75, 66, 20).build();
@@ -110,7 +104,7 @@ public class MeditationGuiScreen extends AbstractContainerScreen<MeditationGuiMe
 			int x = MeditationGuiScreen.this.x;
 			int y = MeditationGuiScreen.this.y;
 			if (true) {
-				PacketDistributor.sendToServer(new MeditationGuiButtonMessage(3, x, y, z));
+				ClientPacketDistributor.sendToServer(new MeditationGuiButtonMessage(3, x, y, z));
 				MeditationGuiButtonMessage.handleButtonAction(entity, 3, x, y, z);
 			}
 		}).bounds(this.leftPos + 52, this.topPos + 21, 66, 20).build();
@@ -119,7 +113,7 @@ public class MeditationGuiScreen extends AbstractContainerScreen<MeditationGuiMe
 			int x = MeditationGuiScreen.this.x;
 			int y = MeditationGuiScreen.this.y;
 			if (true) {
-				PacketDistributor.sendToServer(new MeditationGuiButtonMessage(4, x, y, z));
+				ClientPacketDistributor.sendToServer(new MeditationGuiButtonMessage(4, x, y, z));
 				MeditationGuiButtonMessage.handleButtonAction(entity, 4, x, y, z);
 			}
 		}).bounds(this.leftPos + 250, this.topPos + 174, 46, 20).build();

@@ -6,14 +6,19 @@ import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
 import net.neoforged.neoforge.network.PacketDistributor;
+import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
-import net.neoforged.neoforge.common.util.INBTSerializable;
+import net.neoforged.neoforge.common.util.ValueIOSerializable;
 import net.neoforged.neoforge.attachment.AttachmentType;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
-import net.minecraft.world.entity.Entity;
+import net.minecraft.world.level.storage.ValueOutput;
+import net.minecraft.world.level.storage.ValueInput;
+import net.minecraft.world.level.storage.TagValueOutput;
+import net.minecraft.world.level.storage.TagValueInput;
+import net.minecraft.util.ProblemReporter;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
@@ -21,12 +26,10 @@ import net.minecraft.network.protocol.PacketFlow;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.core.HolderLookup;
 
 import java.util.function.Supplier;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class WitchercraftModVariables {
 	public static final DeferredRegister<AttachmentType<?>> ATTACHMENT_TYPES = DeferredRegister.create(NeoForgeRegistries.Keys.ATTACHMENT_TYPES, WitchercraftMod.MODID);
 	public static final Supplier<AttachmentType<PlayerVariables>> PLAYER_VARIABLES = ATTACHMENT_TYPES.register("player_variables", () -> AttachmentType.serializable(() -> new PlayerVariables()).build());
@@ -36,102 +39,108 @@ public class WitchercraftModVariables {
 		WitchercraftMod.addNetworkMessage(PlayerVariablesSyncMessage.TYPE, PlayerVariablesSyncMessage.STREAM_CODEC, PlayerVariablesSyncMessage::handleData);
 	}
 
-	@EventBusSubscriber
-	public static class EventBusVariableHandlers {
-		@SubscribeEvent
-		public static void onPlayerLoggedInSyncPlayerVariables(PlayerEvent.PlayerLoggedInEvent event) {
-			if (event.getEntity() instanceof ServerPlayer player)
-				player.getData(PLAYER_VARIABLES).syncPlayerVariables(event.getEntity());
-		}
+	@SubscribeEvent
+	public static void onPlayerLoggedInSyncPlayerVariables(PlayerEvent.PlayerLoggedInEvent event) {
+		if (event.getEntity() instanceof ServerPlayer player)
+			PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES)));
+	}
 
-		@SubscribeEvent
-		public static void onPlayerRespawnedSyncPlayerVariables(PlayerEvent.PlayerRespawnEvent event) {
-			if (event.getEntity() instanceof ServerPlayer player)
-				player.getData(PLAYER_VARIABLES).syncPlayerVariables(event.getEntity());
-		}
+	@SubscribeEvent
+	public static void onPlayerRespawnedSyncPlayerVariables(PlayerEvent.PlayerRespawnEvent event) {
+		if (event.getEntity() instanceof ServerPlayer player)
+			PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES)));
+	}
 
-		@SubscribeEvent
-		public static void onPlayerChangedDimensionSyncPlayerVariables(PlayerEvent.PlayerChangedDimensionEvent event) {
-			if (event.getEntity() instanceof ServerPlayer player)
-				player.getData(PLAYER_VARIABLES).syncPlayerVariables(event.getEntity());
-		}
+	@SubscribeEvent
+	public static void onPlayerChangedDimensionSyncPlayerVariables(PlayerEvent.PlayerChangedDimensionEvent event) {
+		if (event.getEntity() instanceof ServerPlayer player)
+			PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES)));
+	}
 
-		@SubscribeEvent
-		public static void clonePlayer(PlayerEvent.Clone event) {
-			PlayerVariables original = event.getOriginal().getData(PLAYER_VARIABLES);
-			PlayerVariables clone = new PlayerVariables();
-			clone.witchercraftAbilitiesLearned = original.witchercraftAbilitiesLearned;
-			clone.witchercraftAbiltiesGourment = original.witchercraftAbiltiesGourment;
-			clone.witchercraftAbilitiesSurvivalInstinct = original.witchercraftAbilitiesSurvivalInstinct;
-			clone.witchercraftAbilitiesSunAndStars = original.witchercraftAbilitiesSunAndStars;
-			clone.witchercraftAbilitiesCatSchool = original.witchercraftAbilitiesCatSchool;
-			clone.witchercraftAbilitiesGriffinSchool = original.witchercraftAbilitiesGriffinSchool;
-			clone.witchercraftAbilitiesBearSchool = original.witchercraftAbilitiesBearSchool;
-			clone.witchercraftAbilitiesRefreshment = original.witchercraftAbilitiesRefreshment;
-			clone.witchercraftAbilitiesDelayedRecovery = original.witchercraftAbilitiesDelayedRecovery;
-			clone.witchercraftAbilitiesSideEffects = original.witchercraftAbilitiesSideEffects;
-			clone.witchercraftAbilitiesPoisonedBlades = original.witchercraftAbilitiesPoisonedBlades;
-			clone.witchercraftAbilitiesProtectiveCoating = original.witchercraftAbilitiesProtectiveCoating;
-			clone.witchercraftAbilitiesHunterInstincts = original.witchercraftAbilitiesHunterInstincts;
-			clone.witchercraftAbilitiesPyrotechnics = original.witchercraftAbilitiesPyrotechnics;
-			clone.witchercraftAbilitiesEfficency = original.witchercraftAbilitiesEfficency;
-			clone.witchercraftAbilitiesClusterBombs = original.witchercraftAbilitiesClusterBombs;
-			clone.witchercraftAbilitiesFarRReachingAard = original.witchercraftAbilitiesFarRReachingAard;
-			clone.witchercraftAbilitiesAardIntensity = original.witchercraftAbilitiesAardIntensity;
-			clone.witchercraftAbilitiesShockWave = original.witchercraftAbilitiesShockWave;
-			clone.witchercraftAbilitiesFireStream = original.witchercraftAbilitiesFireStream;
-			clone.witchercraftAbilitiesIgniIntensity = original.witchercraftAbilitiesIgniIntensity;
-			clone.witchercraftAbilitiesPyromaic = original.witchercraftAbilitiesPyromaic;
-			clone.witchercraftAbilitiesSustainedGlyphs = original.witchercraftAbilitiesSustainedGlyphs;
-			clone.witchercraftAbilitiesYrdenIntensity = original.witchercraftAbilitiesYrdenIntensity;
-			clone.witchercraftAbilitiesMagicTrap = original.witchercraftAbilitiesMagicTrap;
-			clone.witchercraftAbilitiesExploadingShild = original.witchercraftAbilitiesExploadingShild;
-			clone.witchercraftAbilitiesQuenIntensity = original.witchercraftAbilitiesQuenIntensity;
-			clone.witchercraftAbilitiesQuenDischarge = original.witchercraftAbilitiesQuenDischarge;
-			clone.witchercraftAbilitiesDelusion = original.witchercraftAbilitiesDelusion;
-			clone.witchercraftAbilitiesAxiiInntensiy = original.witchercraftAbilitiesAxiiInntensiy;
-			clone.witchercraftAbilitiesDominaion = original.witchercraftAbilitiesDominaion;
-			clone.witchercraftAbilitiesMuscleMemory = original.witchercraftAbilitiesMuscleMemory;
-			clone.witchercraftAbilitiesPreciseBlows = original.witchercraftAbilitiesPreciseBlows;
-			clone.witchercraftAbilitiesCripplingStrikes = original.witchercraftAbilitiesCripplingStrikes;
-			clone.witchercraftAbilitiesStrengthTraining = original.witchercraftAbilitiesStrengthTraining;
-			clone.witchercraftAbilitiesCrushingBlows = original.witchercraftAbilitiesCrushingBlows;
-			clone.witchercraftAbilitiesSunderArmor = original.witchercraftAbilitiesSunderArmor;
-			clone.witchercraftAbilitiesFleetFooted = original.witchercraftAbilitiesFleetFooted;
-			clone.witchercraftAbilitiesDefence = original.witchercraftAbilitiesDefence;
-			clone.witchercraftAbilitiesDeadlyPresicion = original.witchercraftAbilitiesDeadlyPresicion;
-			clone.witchercraftAbilitiesColdBlood = original.witchercraftAbilitiesColdBlood;
-			clone.witchercraftAbilitiesAnatomicalKnowledge = original.witchercraftAbilitiesAnatomicalKnowledge;
-			clone.witchercraftAbilitiesCripplingShot = original.witchercraftAbilitiesCripplingShot;
-			clone.witchercraftAbilitiesFloodOfAnger = original.witchercraftAbilitiesFloodOfAnger;
-			clone.witchercraftAbilitiesRazorFocus = original.witchercraftAbilitiesRazorFocus;
-			clone.witchercraftAbilitiesUndying = original.witchercraftAbilitiesUndying;
-			clone.wichercraftPlayerLevel = original.wichercraftPlayerLevel;
-			clone.wichercraftPlayerExperience = original.wichercraftPlayerExperience;
-			clone.wichercraftAbilitesExperienceRequirement = original.wichercraftAbilitesExperienceRequirement;
-			if (!event.isWasDeath()) {
-				clone.witchercraftMovementSpeed = original.witchercraftMovementSpeed;
-				clone.witchercraftHealth = original.witchercraftHealth;
-				clone.witchercraftArmor = original.witchercraftArmor;
-				clone.witchercraftAdditionalDamage = original.witchercraftAdditionalDamage;
-				clone.witchercraftCritChance = original.witchercraftCritChance;
-				clone.witchercraftCritDamage = original.witchercraftCritDamage;
-				clone.witchercraftAttackSpeed = original.witchercraftAttackSpeed;
-				clone.sumCritChance = original.sumCritChance;
-				clone.sumCritDamage = original.sumCritDamage;
-				clone.witchercraftBaseMovementSpeed = original.witchercraftBaseMovementSpeed;
-				clone.witchercraftBaseHealth = original.witchercraftBaseHealth;
-				clone.witchercraftBaseAttackSpeed = original.witchercraftBaseAttackSpeed;
-				clone.witchercraftPassiveHealthRegeneration = original.witchercraftPassiveHealthRegeneration;
-				clone.witchercraftBasePassiveHealthRegeneration = original.witchercraftBasePassiveHealthRegeneration;
-				clone.witchercraftPassiveStaminaRegeneration = original.witchercraftPassiveStaminaRegeneration;
-				clone.witchercraftBaseStaminaRegeneration = original.witchercraftBaseStaminaRegeneration;
-			}
-			event.getEntity().setData(PLAYER_VARIABLES, clone);
+	@SubscribeEvent
+	public static void onPlayerTickUpdateSyncPlayerVariables(PlayerTickEvent.Post event) {
+		if (event.getEntity() instanceof ServerPlayer player && player.getData(PLAYER_VARIABLES)._syncDirty) {
+			PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES)));
+			player.getData(PLAYER_VARIABLES)._syncDirty = false;
 		}
 	}
 
-	public static class PlayerVariables implements INBTSerializable<CompoundTag> {
+	@SubscribeEvent
+	public static void clonePlayer(PlayerEvent.Clone event) {
+		PlayerVariables original = event.getOriginal().getData(PLAYER_VARIABLES);
+		PlayerVariables clone = new PlayerVariables();
+		clone.witchercraftAbilitiesLearned = original.witchercraftAbilitiesLearned;
+		clone.witchercraftAbiltiesGourment = original.witchercraftAbiltiesGourment;
+		clone.witchercraftAbilitiesSurvivalInstinct = original.witchercraftAbilitiesSurvivalInstinct;
+		clone.witchercraftAbilitiesSunAndStars = original.witchercraftAbilitiesSunAndStars;
+		clone.witchercraftAbilitiesCatSchool = original.witchercraftAbilitiesCatSchool;
+		clone.witchercraftAbilitiesGriffinSchool = original.witchercraftAbilitiesGriffinSchool;
+		clone.witchercraftAbilitiesBearSchool = original.witchercraftAbilitiesBearSchool;
+		clone.witchercraftAbilitiesRefreshment = original.witchercraftAbilitiesRefreshment;
+		clone.witchercraftAbilitiesDelayedRecovery = original.witchercraftAbilitiesDelayedRecovery;
+		clone.witchercraftAbilitiesSideEffects = original.witchercraftAbilitiesSideEffects;
+		clone.witchercraftAbilitiesPoisonedBlades = original.witchercraftAbilitiesPoisonedBlades;
+		clone.witchercraftAbilitiesProtectiveCoating = original.witchercraftAbilitiesProtectiveCoating;
+		clone.witchercraftAbilitiesHunterInstincts = original.witchercraftAbilitiesHunterInstincts;
+		clone.witchercraftAbilitiesPyrotechnics = original.witchercraftAbilitiesPyrotechnics;
+		clone.witchercraftAbilitiesEfficency = original.witchercraftAbilitiesEfficency;
+		clone.witchercraftAbilitiesClusterBombs = original.witchercraftAbilitiesClusterBombs;
+		clone.witchercraftAbilitiesFarRReachingAard = original.witchercraftAbilitiesFarRReachingAard;
+		clone.witchercraftAbilitiesAardIntensity = original.witchercraftAbilitiesAardIntensity;
+		clone.witchercraftAbilitiesShockWave = original.witchercraftAbilitiesShockWave;
+		clone.witchercraftAbilitiesFireStream = original.witchercraftAbilitiesFireStream;
+		clone.witchercraftAbilitiesIgniIntensity = original.witchercraftAbilitiesIgniIntensity;
+		clone.witchercraftAbilitiesPyromaic = original.witchercraftAbilitiesPyromaic;
+		clone.witchercraftAbilitiesSustainedGlyphs = original.witchercraftAbilitiesSustainedGlyphs;
+		clone.witchercraftAbilitiesYrdenIntensity = original.witchercraftAbilitiesYrdenIntensity;
+		clone.witchercraftAbilitiesMagicTrap = original.witchercraftAbilitiesMagicTrap;
+		clone.witchercraftAbilitiesExploadingShild = original.witchercraftAbilitiesExploadingShild;
+		clone.witchercraftAbilitiesQuenIntensity = original.witchercraftAbilitiesQuenIntensity;
+		clone.witchercraftAbilitiesQuenDischarge = original.witchercraftAbilitiesQuenDischarge;
+		clone.witchercraftAbilitiesDelusion = original.witchercraftAbilitiesDelusion;
+		clone.witchercraftAbilitiesAxiiInntensiy = original.witchercraftAbilitiesAxiiInntensiy;
+		clone.witchercraftAbilitiesDominaion = original.witchercraftAbilitiesDominaion;
+		clone.witchercraftAbilitiesMuscleMemory = original.witchercraftAbilitiesMuscleMemory;
+		clone.witchercraftAbilitiesPreciseBlows = original.witchercraftAbilitiesPreciseBlows;
+		clone.witchercraftAbilitiesCripplingStrikes = original.witchercraftAbilitiesCripplingStrikes;
+		clone.witchercraftAbilitiesStrengthTraining = original.witchercraftAbilitiesStrengthTraining;
+		clone.witchercraftAbilitiesCrushingBlows = original.witchercraftAbilitiesCrushingBlows;
+		clone.witchercraftAbilitiesSunderArmor = original.witchercraftAbilitiesSunderArmor;
+		clone.witchercraftAbilitiesFleetFooted = original.witchercraftAbilitiesFleetFooted;
+		clone.witchercraftAbilitiesDefence = original.witchercraftAbilitiesDefence;
+		clone.witchercraftAbilitiesDeadlyPresicion = original.witchercraftAbilitiesDeadlyPresicion;
+		clone.witchercraftAbilitiesColdBlood = original.witchercraftAbilitiesColdBlood;
+		clone.witchercraftAbilitiesAnatomicalKnowledge = original.witchercraftAbilitiesAnatomicalKnowledge;
+		clone.witchercraftAbilitiesCripplingShot = original.witchercraftAbilitiesCripplingShot;
+		clone.witchercraftAbilitiesFloodOfAnger = original.witchercraftAbilitiesFloodOfAnger;
+		clone.witchercraftAbilitiesRazorFocus = original.witchercraftAbilitiesRazorFocus;
+		clone.witchercraftAbilitiesUndying = original.witchercraftAbilitiesUndying;
+		clone.wichercraftPlayerLevel = original.wichercraftPlayerLevel;
+		clone.wichercraftPlayerExperience = original.wichercraftPlayerExperience;
+		clone.wichercraftAbilitesExperienceRequirement = original.wichercraftAbilitesExperienceRequirement;
+		if (!event.isWasDeath()) {
+			clone.witchercraftMovementSpeed = original.witchercraftMovementSpeed;
+			clone.witchercraftHealth = original.witchercraftHealth;
+			clone.witchercraftArmor = original.witchercraftArmor;
+			clone.witchercraftAdditionalDamage = original.witchercraftAdditionalDamage;
+			clone.witchercraftCritChance = original.witchercraftCritChance;
+			clone.witchercraftCritDamage = original.witchercraftCritDamage;
+			clone.witchercraftAttackSpeed = original.witchercraftAttackSpeed;
+			clone.sumCritChance = original.sumCritChance;
+			clone.sumCritDamage = original.sumCritDamage;
+			clone.witchercraftBaseMovementSpeed = original.witchercraftBaseMovementSpeed;
+			clone.witchercraftBaseHealth = original.witchercraftBaseHealth;
+			clone.witchercraftBaseAttackSpeed = original.witchercraftBaseAttackSpeed;
+			clone.witchercraftPassiveHealthRegeneration = original.witchercraftPassiveHealthRegeneration;
+			clone.witchercraftBasePassiveHealthRegeneration = original.witchercraftBasePassiveHealthRegeneration;
+			clone.witchercraftPassiveStaminaRegeneration = original.witchercraftPassiveStaminaRegeneration;
+			clone.witchercraftBaseStaminaRegeneration = original.witchercraftBaseStaminaRegeneration;
+		}
+		event.getEntity().setData(PLAYER_VARIABLES, clone);
+	}
+
+	public static class PlayerVariables implements ValueIOSerializable {
+		boolean _syncDirty = false;
 		public double witchercraftMovementSpeed = 0.0;
 		public double witchercraftHealth = 0.0;
 		public double witchercraftArmor = 0.0;
@@ -199,159 +208,159 @@ public class WitchercraftModVariables {
 		public double wichercraftAbilitesExperienceRequirement = 0.0;
 
 		@Override
-		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
-			CompoundTag nbt = new CompoundTag();
-			nbt.putDouble("witchercraftMovementSpeed", witchercraftMovementSpeed);
-			nbt.putDouble("witchercraftHealth", witchercraftHealth);
-			nbt.putDouble("witchercraftArmor", witchercraftArmor);
-			nbt.putDouble("witchercraftAdditionalDamage", witchercraftAdditionalDamage);
-			nbt.putDouble("witchercraftCritChance", witchercraftCritChance);
-			nbt.putDouble("witchercraftCritDamage", witchercraftCritDamage);
-			nbt.putDouble("witchercraftAttackSpeed", witchercraftAttackSpeed);
-			nbt.putDouble("sumCritChance", sumCritChance);
-			nbt.putDouble("sumCritDamage", sumCritDamage);
-			nbt.putDouble("witchercraftBaseMovementSpeed", witchercraftBaseMovementSpeed);
-			nbt.putDouble("witchercraftBaseHealth", witchercraftBaseHealth);
-			nbt.putDouble("witchercraftBaseAttackSpeed", witchercraftBaseAttackSpeed);
-			nbt.putDouble("witchercraftPassiveHealthRegeneration", witchercraftPassiveHealthRegeneration);
-			nbt.putDouble("witchercraftBasePassiveHealthRegeneration", witchercraftBasePassiveHealthRegeneration);
-			nbt.putDouble("witchercraftPassiveStaminaRegeneration", witchercraftPassiveStaminaRegeneration);
-			nbt.putDouble("witchercraftBaseStaminaRegeneration", witchercraftBaseStaminaRegeneration);
-			nbt.putDouble("witchercraftAbilitiesLearned", witchercraftAbilitiesLearned);
-			nbt.putBoolean("witchercraftAbiltiesGourment", witchercraftAbiltiesGourment);
-			nbt.putBoolean("witchercraftAbilitiesSurvivalInstinct", witchercraftAbilitiesSurvivalInstinct);
-			nbt.putBoolean("witchercraftAbilitiesSunAndStars", witchercraftAbilitiesSunAndStars);
-			nbt.putBoolean("witchercraftAbilitiesCatSchool", witchercraftAbilitiesCatSchool);
-			nbt.putBoolean("witchercraftAbilitiesGriffinSchool", witchercraftAbilitiesGriffinSchool);
-			nbt.putBoolean("witchercraftAbilitiesBearSchool", witchercraftAbilitiesBearSchool);
-			nbt.putBoolean("witchercraftAbilitiesRefreshment", witchercraftAbilitiesRefreshment);
-			nbt.putBoolean("witchercraftAbilitiesDelayedRecovery", witchercraftAbilitiesDelayedRecovery);
-			nbt.putBoolean("witchercraftAbilitiesSideEffects", witchercraftAbilitiesSideEffects);
-			nbt.putBoolean("witchercraftAbilitiesPoisonedBlades", witchercraftAbilitiesPoisonedBlades);
-			nbt.putBoolean("witchercraftAbilitiesProtectiveCoating", witchercraftAbilitiesProtectiveCoating);
-			nbt.putBoolean("witchercraftAbilitiesHunterInstincts", witchercraftAbilitiesHunterInstincts);
-			nbt.putBoolean("witchercraftAbilitiesPyrotechnics", witchercraftAbilitiesPyrotechnics);
-			nbt.putBoolean("witchercraftAbilitiesEfficency", witchercraftAbilitiesEfficency);
-			nbt.putBoolean("witchercraftAbilitiesClusterBombs", witchercraftAbilitiesClusterBombs);
-			nbt.putBoolean("witchercraftAbilitiesFarRReachingAard", witchercraftAbilitiesFarRReachingAard);
-			nbt.putBoolean("witchercraftAbilitiesAardIntensity", witchercraftAbilitiesAardIntensity);
-			nbt.putBoolean("witchercraftAbilitiesShockWave", witchercraftAbilitiesShockWave);
-			nbt.putBoolean("witchercraftAbilitiesFireStream", witchercraftAbilitiesFireStream);
-			nbt.putBoolean("witchercraftAbilitiesIgniIntensity", witchercraftAbilitiesIgniIntensity);
-			nbt.putBoolean("witchercraftAbilitiesPyromaic", witchercraftAbilitiesPyromaic);
-			nbt.putBoolean("witchercraftAbilitiesSustainedGlyphs", witchercraftAbilitiesSustainedGlyphs);
-			nbt.putBoolean("witchercraftAbilitiesYrdenIntensity", witchercraftAbilitiesYrdenIntensity);
-			nbt.putBoolean("witchercraftAbilitiesMagicTrap", witchercraftAbilitiesMagicTrap);
-			nbt.putBoolean("witchercraftAbilitiesExploadingShild", witchercraftAbilitiesExploadingShild);
-			nbt.putBoolean("witchercraftAbilitiesQuenIntensity", witchercraftAbilitiesQuenIntensity);
-			nbt.putBoolean("witchercraftAbilitiesQuenDischarge", witchercraftAbilitiesQuenDischarge);
-			nbt.putBoolean("witchercraftAbilitiesDelusion", witchercraftAbilitiesDelusion);
-			nbt.putBoolean("witchercraftAbilitiesAxiiInntensiy", witchercraftAbilitiesAxiiInntensiy);
-			nbt.putBoolean("witchercraftAbilitiesDominaion", witchercraftAbilitiesDominaion);
-			nbt.putBoolean("witchercraftAbilitiesMuscleMemory", witchercraftAbilitiesMuscleMemory);
-			nbt.putBoolean("witchercraftAbilitiesPreciseBlows", witchercraftAbilitiesPreciseBlows);
-			nbt.putBoolean("witchercraftAbilitiesCripplingStrikes", witchercraftAbilitiesCripplingStrikes);
-			nbt.putBoolean("witchercraftAbilitiesStrengthTraining", witchercraftAbilitiesStrengthTraining);
-			nbt.putBoolean("witchercraftAbilitiesCrushingBlows", witchercraftAbilitiesCrushingBlows);
-			nbt.putBoolean("witchercraftAbilitiesSunderArmor", witchercraftAbilitiesSunderArmor);
-			nbt.putBoolean("witchercraftAbilitiesFleetFooted", witchercraftAbilitiesFleetFooted);
-			nbt.putBoolean("witchercraftAbilitiesDefence", witchercraftAbilitiesDefence);
-			nbt.putBoolean("witchercraftAbilitiesDeadlyPresicion", witchercraftAbilitiesDeadlyPresicion);
-			nbt.putBoolean("witchercraftAbilitiesColdBlood", witchercraftAbilitiesColdBlood);
-			nbt.putBoolean("witchercraftAbilitiesAnatomicalKnowledge", witchercraftAbilitiesAnatomicalKnowledge);
-			nbt.putBoolean("witchercraftAbilitiesCripplingShot", witchercraftAbilitiesCripplingShot);
-			nbt.putBoolean("witchercraftAbilitiesFloodOfAnger", witchercraftAbilitiesFloodOfAnger);
-			nbt.putBoolean("witchercraftAbilitiesRazorFocus", witchercraftAbilitiesRazorFocus);
-			nbt.putBoolean("witchercraftAbilitiesUndying", witchercraftAbilitiesUndying);
-			nbt.putDouble("wichercraftPlayerLevel", wichercraftPlayerLevel);
-			nbt.putDouble("wichercraftPlayerExperience", wichercraftPlayerExperience);
-			nbt.putDouble("wichercraftAbilitesExperienceRequirement", wichercraftAbilitesExperienceRequirement);
-			return nbt;
+		public void serialize(ValueOutput output) {
+			output.putDouble("witchercraftMovementSpeed", witchercraftMovementSpeed);
+			output.putDouble("witchercraftHealth", witchercraftHealth);
+			output.putDouble("witchercraftArmor", witchercraftArmor);
+			output.putDouble("witchercraftAdditionalDamage", witchercraftAdditionalDamage);
+			output.putDouble("witchercraftCritChance", witchercraftCritChance);
+			output.putDouble("witchercraftCritDamage", witchercraftCritDamage);
+			output.putDouble("witchercraftAttackSpeed", witchercraftAttackSpeed);
+			output.putDouble("sumCritChance", sumCritChance);
+			output.putDouble("sumCritDamage", sumCritDamage);
+			output.putDouble("witchercraftBaseMovementSpeed", witchercraftBaseMovementSpeed);
+			output.putDouble("witchercraftBaseHealth", witchercraftBaseHealth);
+			output.putDouble("witchercraftBaseAttackSpeed", witchercraftBaseAttackSpeed);
+			output.putDouble("witchercraftPassiveHealthRegeneration", witchercraftPassiveHealthRegeneration);
+			output.putDouble("witchercraftBasePassiveHealthRegeneration", witchercraftBasePassiveHealthRegeneration);
+			output.putDouble("witchercraftPassiveStaminaRegeneration", witchercraftPassiveStaminaRegeneration);
+			output.putDouble("witchercraftBaseStaminaRegeneration", witchercraftBaseStaminaRegeneration);
+			output.putDouble("witchercraftAbilitiesLearned", witchercraftAbilitiesLearned);
+			output.putBoolean("witchercraftAbiltiesGourment", witchercraftAbiltiesGourment);
+			output.putBoolean("witchercraftAbilitiesSurvivalInstinct", witchercraftAbilitiesSurvivalInstinct);
+			output.putBoolean("witchercraftAbilitiesSunAndStars", witchercraftAbilitiesSunAndStars);
+			output.putBoolean("witchercraftAbilitiesCatSchool", witchercraftAbilitiesCatSchool);
+			output.putBoolean("witchercraftAbilitiesGriffinSchool", witchercraftAbilitiesGriffinSchool);
+			output.putBoolean("witchercraftAbilitiesBearSchool", witchercraftAbilitiesBearSchool);
+			output.putBoolean("witchercraftAbilitiesRefreshment", witchercraftAbilitiesRefreshment);
+			output.putBoolean("witchercraftAbilitiesDelayedRecovery", witchercraftAbilitiesDelayedRecovery);
+			output.putBoolean("witchercraftAbilitiesSideEffects", witchercraftAbilitiesSideEffects);
+			output.putBoolean("witchercraftAbilitiesPoisonedBlades", witchercraftAbilitiesPoisonedBlades);
+			output.putBoolean("witchercraftAbilitiesProtectiveCoating", witchercraftAbilitiesProtectiveCoating);
+			output.putBoolean("witchercraftAbilitiesHunterInstincts", witchercraftAbilitiesHunterInstincts);
+			output.putBoolean("witchercraftAbilitiesPyrotechnics", witchercraftAbilitiesPyrotechnics);
+			output.putBoolean("witchercraftAbilitiesEfficency", witchercraftAbilitiesEfficency);
+			output.putBoolean("witchercraftAbilitiesClusterBombs", witchercraftAbilitiesClusterBombs);
+			output.putBoolean("witchercraftAbilitiesFarRReachingAard", witchercraftAbilitiesFarRReachingAard);
+			output.putBoolean("witchercraftAbilitiesAardIntensity", witchercraftAbilitiesAardIntensity);
+			output.putBoolean("witchercraftAbilitiesShockWave", witchercraftAbilitiesShockWave);
+			output.putBoolean("witchercraftAbilitiesFireStream", witchercraftAbilitiesFireStream);
+			output.putBoolean("witchercraftAbilitiesIgniIntensity", witchercraftAbilitiesIgniIntensity);
+			output.putBoolean("witchercraftAbilitiesPyromaic", witchercraftAbilitiesPyromaic);
+			output.putBoolean("witchercraftAbilitiesSustainedGlyphs", witchercraftAbilitiesSustainedGlyphs);
+			output.putBoolean("witchercraftAbilitiesYrdenIntensity", witchercraftAbilitiesYrdenIntensity);
+			output.putBoolean("witchercraftAbilitiesMagicTrap", witchercraftAbilitiesMagicTrap);
+			output.putBoolean("witchercraftAbilitiesExploadingShild", witchercraftAbilitiesExploadingShild);
+			output.putBoolean("witchercraftAbilitiesQuenIntensity", witchercraftAbilitiesQuenIntensity);
+			output.putBoolean("witchercraftAbilitiesQuenDischarge", witchercraftAbilitiesQuenDischarge);
+			output.putBoolean("witchercraftAbilitiesDelusion", witchercraftAbilitiesDelusion);
+			output.putBoolean("witchercraftAbilitiesAxiiInntensiy", witchercraftAbilitiesAxiiInntensiy);
+			output.putBoolean("witchercraftAbilitiesDominaion", witchercraftAbilitiesDominaion);
+			output.putBoolean("witchercraftAbilitiesMuscleMemory", witchercraftAbilitiesMuscleMemory);
+			output.putBoolean("witchercraftAbilitiesPreciseBlows", witchercraftAbilitiesPreciseBlows);
+			output.putBoolean("witchercraftAbilitiesCripplingStrikes", witchercraftAbilitiesCripplingStrikes);
+			output.putBoolean("witchercraftAbilitiesStrengthTraining", witchercraftAbilitiesStrengthTraining);
+			output.putBoolean("witchercraftAbilitiesCrushingBlows", witchercraftAbilitiesCrushingBlows);
+			output.putBoolean("witchercraftAbilitiesSunderArmor", witchercraftAbilitiesSunderArmor);
+			output.putBoolean("witchercraftAbilitiesFleetFooted", witchercraftAbilitiesFleetFooted);
+			output.putBoolean("witchercraftAbilitiesDefence", witchercraftAbilitiesDefence);
+			output.putBoolean("witchercraftAbilitiesDeadlyPresicion", witchercraftAbilitiesDeadlyPresicion);
+			output.putBoolean("witchercraftAbilitiesColdBlood", witchercraftAbilitiesColdBlood);
+			output.putBoolean("witchercraftAbilitiesAnatomicalKnowledge", witchercraftAbilitiesAnatomicalKnowledge);
+			output.putBoolean("witchercraftAbilitiesCripplingShot", witchercraftAbilitiesCripplingShot);
+			output.putBoolean("witchercraftAbilitiesFloodOfAnger", witchercraftAbilitiesFloodOfAnger);
+			output.putBoolean("witchercraftAbilitiesRazorFocus", witchercraftAbilitiesRazorFocus);
+			output.putBoolean("witchercraftAbilitiesUndying", witchercraftAbilitiesUndying);
+			output.putDouble("wichercraftPlayerLevel", wichercraftPlayerLevel);
+			output.putDouble("wichercraftPlayerExperience", wichercraftPlayerExperience);
+			output.putDouble("wichercraftAbilitesExperienceRequirement", wichercraftAbilitesExperienceRequirement);
 		}
 
 		@Override
-		public void deserializeNBT(HolderLookup.Provider lookupProvider, CompoundTag nbt) {
-			witchercraftMovementSpeed = nbt.getDouble("witchercraftMovementSpeed");
-			witchercraftHealth = nbt.getDouble("witchercraftHealth");
-			witchercraftArmor = nbt.getDouble("witchercraftArmor");
-			witchercraftAdditionalDamage = nbt.getDouble("witchercraftAdditionalDamage");
-			witchercraftCritChance = nbt.getDouble("witchercraftCritChance");
-			witchercraftCritDamage = nbt.getDouble("witchercraftCritDamage");
-			witchercraftAttackSpeed = nbt.getDouble("witchercraftAttackSpeed");
-			sumCritChance = nbt.getDouble("sumCritChance");
-			sumCritDamage = nbt.getDouble("sumCritDamage");
-			witchercraftBaseMovementSpeed = nbt.getDouble("witchercraftBaseMovementSpeed");
-			witchercraftBaseHealth = nbt.getDouble("witchercraftBaseHealth");
-			witchercraftBaseAttackSpeed = nbt.getDouble("witchercraftBaseAttackSpeed");
-			witchercraftPassiveHealthRegeneration = nbt.getDouble("witchercraftPassiveHealthRegeneration");
-			witchercraftBasePassiveHealthRegeneration = nbt.getDouble("witchercraftBasePassiveHealthRegeneration");
-			witchercraftPassiveStaminaRegeneration = nbt.getDouble("witchercraftPassiveStaminaRegeneration");
-			witchercraftBaseStaminaRegeneration = nbt.getDouble("witchercraftBaseStaminaRegeneration");
-			witchercraftAbilitiesLearned = nbt.getDouble("witchercraftAbilitiesLearned");
-			witchercraftAbiltiesGourment = nbt.getBoolean("witchercraftAbiltiesGourment");
-			witchercraftAbilitiesSurvivalInstinct = nbt.getBoolean("witchercraftAbilitiesSurvivalInstinct");
-			witchercraftAbilitiesSunAndStars = nbt.getBoolean("witchercraftAbilitiesSunAndStars");
-			witchercraftAbilitiesCatSchool = nbt.getBoolean("witchercraftAbilitiesCatSchool");
-			witchercraftAbilitiesGriffinSchool = nbt.getBoolean("witchercraftAbilitiesGriffinSchool");
-			witchercraftAbilitiesBearSchool = nbt.getBoolean("witchercraftAbilitiesBearSchool");
-			witchercraftAbilitiesRefreshment = nbt.getBoolean("witchercraftAbilitiesRefreshment");
-			witchercraftAbilitiesDelayedRecovery = nbt.getBoolean("witchercraftAbilitiesDelayedRecovery");
-			witchercraftAbilitiesSideEffects = nbt.getBoolean("witchercraftAbilitiesSideEffects");
-			witchercraftAbilitiesPoisonedBlades = nbt.getBoolean("witchercraftAbilitiesPoisonedBlades");
-			witchercraftAbilitiesProtectiveCoating = nbt.getBoolean("witchercraftAbilitiesProtectiveCoating");
-			witchercraftAbilitiesHunterInstincts = nbt.getBoolean("witchercraftAbilitiesHunterInstincts");
-			witchercraftAbilitiesPyrotechnics = nbt.getBoolean("witchercraftAbilitiesPyrotechnics");
-			witchercraftAbilitiesEfficency = nbt.getBoolean("witchercraftAbilitiesEfficency");
-			witchercraftAbilitiesClusterBombs = nbt.getBoolean("witchercraftAbilitiesClusterBombs");
-			witchercraftAbilitiesFarRReachingAard = nbt.getBoolean("witchercraftAbilitiesFarRReachingAard");
-			witchercraftAbilitiesAardIntensity = nbt.getBoolean("witchercraftAbilitiesAardIntensity");
-			witchercraftAbilitiesShockWave = nbt.getBoolean("witchercraftAbilitiesShockWave");
-			witchercraftAbilitiesFireStream = nbt.getBoolean("witchercraftAbilitiesFireStream");
-			witchercraftAbilitiesIgniIntensity = nbt.getBoolean("witchercraftAbilitiesIgniIntensity");
-			witchercraftAbilitiesPyromaic = nbt.getBoolean("witchercraftAbilitiesPyromaic");
-			witchercraftAbilitiesSustainedGlyphs = nbt.getBoolean("witchercraftAbilitiesSustainedGlyphs");
-			witchercraftAbilitiesYrdenIntensity = nbt.getBoolean("witchercraftAbilitiesYrdenIntensity");
-			witchercraftAbilitiesMagicTrap = nbt.getBoolean("witchercraftAbilitiesMagicTrap");
-			witchercraftAbilitiesExploadingShild = nbt.getBoolean("witchercraftAbilitiesExploadingShild");
-			witchercraftAbilitiesQuenIntensity = nbt.getBoolean("witchercraftAbilitiesQuenIntensity");
-			witchercraftAbilitiesQuenDischarge = nbt.getBoolean("witchercraftAbilitiesQuenDischarge");
-			witchercraftAbilitiesDelusion = nbt.getBoolean("witchercraftAbilitiesDelusion");
-			witchercraftAbilitiesAxiiInntensiy = nbt.getBoolean("witchercraftAbilitiesAxiiInntensiy");
-			witchercraftAbilitiesDominaion = nbt.getBoolean("witchercraftAbilitiesDominaion");
-			witchercraftAbilitiesMuscleMemory = nbt.getBoolean("witchercraftAbilitiesMuscleMemory");
-			witchercraftAbilitiesPreciseBlows = nbt.getBoolean("witchercraftAbilitiesPreciseBlows");
-			witchercraftAbilitiesCripplingStrikes = nbt.getBoolean("witchercraftAbilitiesCripplingStrikes");
-			witchercraftAbilitiesStrengthTraining = nbt.getBoolean("witchercraftAbilitiesStrengthTraining");
-			witchercraftAbilitiesCrushingBlows = nbt.getBoolean("witchercraftAbilitiesCrushingBlows");
-			witchercraftAbilitiesSunderArmor = nbt.getBoolean("witchercraftAbilitiesSunderArmor");
-			witchercraftAbilitiesFleetFooted = nbt.getBoolean("witchercraftAbilitiesFleetFooted");
-			witchercraftAbilitiesDefence = nbt.getBoolean("witchercraftAbilitiesDefence");
-			witchercraftAbilitiesDeadlyPresicion = nbt.getBoolean("witchercraftAbilitiesDeadlyPresicion");
-			witchercraftAbilitiesColdBlood = nbt.getBoolean("witchercraftAbilitiesColdBlood");
-			witchercraftAbilitiesAnatomicalKnowledge = nbt.getBoolean("witchercraftAbilitiesAnatomicalKnowledge");
-			witchercraftAbilitiesCripplingShot = nbt.getBoolean("witchercraftAbilitiesCripplingShot");
-			witchercraftAbilitiesFloodOfAnger = nbt.getBoolean("witchercraftAbilitiesFloodOfAnger");
-			witchercraftAbilitiesRazorFocus = nbt.getBoolean("witchercraftAbilitiesRazorFocus");
-			witchercraftAbilitiesUndying = nbt.getBoolean("witchercraftAbilitiesUndying");
-			wichercraftPlayerLevel = nbt.getDouble("wichercraftPlayerLevel");
-			wichercraftPlayerExperience = nbt.getDouble("wichercraftPlayerExperience");
-			wichercraftAbilitesExperienceRequirement = nbt.getDouble("wichercraftAbilitesExperienceRequirement");
+		public void deserialize(ValueInput input) {
+			witchercraftMovementSpeed = input.getDoubleOr("witchercraftMovementSpeed", 0);
+			witchercraftHealth = input.getDoubleOr("witchercraftHealth", 0);
+			witchercraftArmor = input.getDoubleOr("witchercraftArmor", 0);
+			witchercraftAdditionalDamage = input.getDoubleOr("witchercraftAdditionalDamage", 0);
+			witchercraftCritChance = input.getDoubleOr("witchercraftCritChance", 0);
+			witchercraftCritDamage = input.getDoubleOr("witchercraftCritDamage", 0);
+			witchercraftAttackSpeed = input.getDoubleOr("witchercraftAttackSpeed", 0);
+			sumCritChance = input.getDoubleOr("sumCritChance", 0);
+			sumCritDamage = input.getDoubleOr("sumCritDamage", 0);
+			witchercraftBaseMovementSpeed = input.getDoubleOr("witchercraftBaseMovementSpeed", 0);
+			witchercraftBaseHealth = input.getDoubleOr("witchercraftBaseHealth", 0);
+			witchercraftBaseAttackSpeed = input.getDoubleOr("witchercraftBaseAttackSpeed", 0);
+			witchercraftPassiveHealthRegeneration = input.getDoubleOr("witchercraftPassiveHealthRegeneration", 0);
+			witchercraftBasePassiveHealthRegeneration = input.getDoubleOr("witchercraftBasePassiveHealthRegeneration", 0);
+			witchercraftPassiveStaminaRegeneration = input.getDoubleOr("witchercraftPassiveStaminaRegeneration", 0);
+			witchercraftBaseStaminaRegeneration = input.getDoubleOr("witchercraftBaseStaminaRegeneration", 0);
+			witchercraftAbilitiesLearned = input.getDoubleOr("witchercraftAbilitiesLearned", 0);
+			witchercraftAbiltiesGourment = input.getBooleanOr("witchercraftAbiltiesGourment", false);
+			witchercraftAbilitiesSurvivalInstinct = input.getBooleanOr("witchercraftAbilitiesSurvivalInstinct", false);
+			witchercraftAbilitiesSunAndStars = input.getBooleanOr("witchercraftAbilitiesSunAndStars", false);
+			witchercraftAbilitiesCatSchool = input.getBooleanOr("witchercraftAbilitiesCatSchool", false);
+			witchercraftAbilitiesGriffinSchool = input.getBooleanOr("witchercraftAbilitiesGriffinSchool", false);
+			witchercraftAbilitiesBearSchool = input.getBooleanOr("witchercraftAbilitiesBearSchool", false);
+			witchercraftAbilitiesRefreshment = input.getBooleanOr("witchercraftAbilitiesRefreshment", false);
+			witchercraftAbilitiesDelayedRecovery = input.getBooleanOr("witchercraftAbilitiesDelayedRecovery", false);
+			witchercraftAbilitiesSideEffects = input.getBooleanOr("witchercraftAbilitiesSideEffects", false);
+			witchercraftAbilitiesPoisonedBlades = input.getBooleanOr("witchercraftAbilitiesPoisonedBlades", false);
+			witchercraftAbilitiesProtectiveCoating = input.getBooleanOr("witchercraftAbilitiesProtectiveCoating", false);
+			witchercraftAbilitiesHunterInstincts = input.getBooleanOr("witchercraftAbilitiesHunterInstincts", false);
+			witchercraftAbilitiesPyrotechnics = input.getBooleanOr("witchercraftAbilitiesPyrotechnics", false);
+			witchercraftAbilitiesEfficency = input.getBooleanOr("witchercraftAbilitiesEfficency", false);
+			witchercraftAbilitiesClusterBombs = input.getBooleanOr("witchercraftAbilitiesClusterBombs", false);
+			witchercraftAbilitiesFarRReachingAard = input.getBooleanOr("witchercraftAbilitiesFarRReachingAard", false);
+			witchercraftAbilitiesAardIntensity = input.getBooleanOr("witchercraftAbilitiesAardIntensity", false);
+			witchercraftAbilitiesShockWave = input.getBooleanOr("witchercraftAbilitiesShockWave", false);
+			witchercraftAbilitiesFireStream = input.getBooleanOr("witchercraftAbilitiesFireStream", false);
+			witchercraftAbilitiesIgniIntensity = input.getBooleanOr("witchercraftAbilitiesIgniIntensity", false);
+			witchercraftAbilitiesPyromaic = input.getBooleanOr("witchercraftAbilitiesPyromaic", false);
+			witchercraftAbilitiesSustainedGlyphs = input.getBooleanOr("witchercraftAbilitiesSustainedGlyphs", false);
+			witchercraftAbilitiesYrdenIntensity = input.getBooleanOr("witchercraftAbilitiesYrdenIntensity", false);
+			witchercraftAbilitiesMagicTrap = input.getBooleanOr("witchercraftAbilitiesMagicTrap", false);
+			witchercraftAbilitiesExploadingShild = input.getBooleanOr("witchercraftAbilitiesExploadingShild", false);
+			witchercraftAbilitiesQuenIntensity = input.getBooleanOr("witchercraftAbilitiesQuenIntensity", false);
+			witchercraftAbilitiesQuenDischarge = input.getBooleanOr("witchercraftAbilitiesQuenDischarge", false);
+			witchercraftAbilitiesDelusion = input.getBooleanOr("witchercraftAbilitiesDelusion", false);
+			witchercraftAbilitiesAxiiInntensiy = input.getBooleanOr("witchercraftAbilitiesAxiiInntensiy", false);
+			witchercraftAbilitiesDominaion = input.getBooleanOr("witchercraftAbilitiesDominaion", false);
+			witchercraftAbilitiesMuscleMemory = input.getBooleanOr("witchercraftAbilitiesMuscleMemory", false);
+			witchercraftAbilitiesPreciseBlows = input.getBooleanOr("witchercraftAbilitiesPreciseBlows", false);
+			witchercraftAbilitiesCripplingStrikes = input.getBooleanOr("witchercraftAbilitiesCripplingStrikes", false);
+			witchercraftAbilitiesStrengthTraining = input.getBooleanOr("witchercraftAbilitiesStrengthTraining", false);
+			witchercraftAbilitiesCrushingBlows = input.getBooleanOr("witchercraftAbilitiesCrushingBlows", false);
+			witchercraftAbilitiesSunderArmor = input.getBooleanOr("witchercraftAbilitiesSunderArmor", false);
+			witchercraftAbilitiesFleetFooted = input.getBooleanOr("witchercraftAbilitiesFleetFooted", false);
+			witchercraftAbilitiesDefence = input.getBooleanOr("witchercraftAbilitiesDefence", false);
+			witchercraftAbilitiesDeadlyPresicion = input.getBooleanOr("witchercraftAbilitiesDeadlyPresicion", false);
+			witchercraftAbilitiesColdBlood = input.getBooleanOr("witchercraftAbilitiesColdBlood", false);
+			witchercraftAbilitiesAnatomicalKnowledge = input.getBooleanOr("witchercraftAbilitiesAnatomicalKnowledge", false);
+			witchercraftAbilitiesCripplingShot = input.getBooleanOr("witchercraftAbilitiesCripplingShot", false);
+			witchercraftAbilitiesFloodOfAnger = input.getBooleanOr("witchercraftAbilitiesFloodOfAnger", false);
+			witchercraftAbilitiesRazorFocus = input.getBooleanOr("witchercraftAbilitiesRazorFocus", false);
+			witchercraftAbilitiesUndying = input.getBooleanOr("witchercraftAbilitiesUndying", false);
+			wichercraftPlayerLevel = input.getDoubleOr("wichercraftPlayerLevel", 0);
+			wichercraftPlayerExperience = input.getDoubleOr("wichercraftPlayerExperience", 0);
+			wichercraftAbilitesExperienceRequirement = input.getDoubleOr("wichercraftAbilitesExperienceRequirement", 0);
 		}
 
-		public void syncPlayerVariables(Entity entity) {
-			if (entity instanceof ServerPlayer serverPlayer)
-				PacketDistributor.sendToPlayer(serverPlayer, new PlayerVariablesSyncMessage(this));
+		public void markSyncDirty() {
+			_syncDirty = true;
 		}
 	}
 
 	public record PlayerVariablesSyncMessage(PlayerVariables data) implements CustomPacketPayload {
 		public static final Type<PlayerVariablesSyncMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(WitchercraftMod.MODID, "player_variables_sync"));
-		public static final StreamCodec<RegistryFriendlyByteBuf, PlayerVariablesSyncMessage> STREAM_CODEC = StreamCodec
-				.of((RegistryFriendlyByteBuf buffer, PlayerVariablesSyncMessage message) -> buffer.writeNbt(message.data().serializeNBT(buffer.registryAccess())), (RegistryFriendlyByteBuf buffer) -> {
-					PlayerVariablesSyncMessage message = new PlayerVariablesSyncMessage(new PlayerVariables());
-					message.data.deserializeNBT(buffer.registryAccess(), buffer.readNbt());
-					return message;
-				});
+		public static final StreamCodec<RegistryFriendlyByteBuf, PlayerVariablesSyncMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, PlayerVariablesSyncMessage message) -> {
+			TagValueOutput output = TagValueOutput.createWithoutContext(ProblemReporter.DISCARDING);
+			message.data.serialize(output);
+			buffer.writeNbt(output.buildResult());
+		}, (RegistryFriendlyByteBuf buffer) -> {
+			PlayerVariablesSyncMessage message = new PlayerVariablesSyncMessage(new PlayerVariables());
+			message.data.deserialize(TagValueInput.create(ProblemReporter.DISCARDING, buffer.registryAccess(), buffer.readNbt()));
+			return message;
+		});
 
 		@Override
 		public Type<PlayerVariablesSyncMessage> type() {
@@ -360,7 +369,11 @@ public class WitchercraftModVariables {
 
 		public static void handleData(final PlayerVariablesSyncMessage message, final IPayloadContext context) {
 			if (context.flow() == PacketFlow.CLIENTBOUND && message.data != null) {
-				context.enqueueWork(() -> context.player().getData(PLAYER_VARIABLES).deserializeNBT(context.player().registryAccess(), message.data.serializeNBT(context.player().registryAccess()))).exceptionally(e -> {
+				context.enqueueWork(() -> {
+					TagValueOutput output = TagValueOutput.createWithContext(ProblemReporter.DISCARDING, context.player().registryAccess());
+					message.data.serialize(output);
+					context.player().getData(PLAYER_VARIABLES).deserialize(TagValueInput.create(ProblemReporter.DISCARDING, context.player().registryAccess(), output.buildResult()));
+				}).exceptionally(e -> {
 					context.connection().disconnect(Component.literal(e.getMessage()));
 					return null;
 				});
