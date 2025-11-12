@@ -5177,7 +5177,8 @@
         "files": [
           "src/main/java/net/redboltmedia/witchercraft/potion/DevLogMobEffect.java"
         ]
-      }
+      },
+      "path": "~/AdminComands"
     },
     {
       "name": "CharacterGuiPassiveHealthRegen",
@@ -5215,6 +5216,151 @@
         ],
         "files": [
           "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterGuiPassiveStaminaRegenProcedure.java"
+        ]
+      },
+      "path": "~/Character Stats/Stats/Gui"
+    },
+    {
+      "name": "ToxicityOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxicity_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/client/screens/ToxicityOverlayOverlay.java"
+        ]
+      },
+      "path": "~/Alchemy/ Toxicity"
+    },
+    {
+      "name": "Tox1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tox_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/Tox1Procedure.java"
+        ]
+      },
+      "path": "~/Alchemy/ Toxicity"
+    },
+    {
+      "name": "Tox2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tox_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/Tox2Procedure.java"
+        ]
+      },
+      "path": "~/Alchemy/ Toxicity"
+    },
+    {
+      "name": "Tox3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tox_3",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/Tox3Procedure.java"
+        ]
+      },
+      "path": "~/Alchemy/ Toxicity"
+    },
+    {
+      "name": "PlayerStatsOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_stats_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/client/screens/PlayerStatsOverlayOverlay.java"
+        ]
+      },
+      "path": "~/AdminComands"
+    },
+    {
+      "name": "PlayerStatsOverlayOn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_stats_overlay_on",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/PlayerStatsOverlayOnProcedure.java"
+        ]
+      },
+      "path": "~/AdminComands"
+    },
+    {
+      "name": "Toxicity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxicity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/ToxicityProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/ Toxicity"
+    },
+    {
+      "name": "CharacterGuiToxicity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_gui_toxicity",
+      "metadata": {
+        "return_type": "string",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterGuiToxicityProcedure.java"
         ]
       },
       "path": "~/Character Stats/Stats/Gui"
@@ -5610,6 +5756,18 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0.0"
+    },
+    {
+      "name": "witchercraftToxicity",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "sumToxicity",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -5869,7 +6027,16 @@
       "gui.witchercraft.character_abilities_combat_gui.tooltip_sunder_armoradd_20_to_dmg_dea": "ADD +20% TO DMG DEALT",
       "effect.witchercraft.dev_log": "Dev Log",
       "gui.witchercraft.character_gui.label_passivehealthregen": "HealthRegen",
-      "gui.witchercraft.character_gui.label_staminaregen": "StaminaRegen"
+      "gui.witchercraft.character_gui.label_staminaregen": "StaminaRegen",
+      "gui.witchercraft.player_stats_overlay.label_staminaregen": "StaminaRegen",
+      "gui.witchercraft.player_stats_overlay.label_movementspeed": "MovementSpeed",
+      "gui.witchercraft.player_stats_overlay.label_critdamage": "CritDamage",
+      "gui.witchercraft.player_stats_overlay.label_attackspeed": "AttackSpeed",
+      "gui.witchercraft.player_stats_overlay.label_health": "Health",
+      "gui.witchercraft.player_stats_overlay.label_critchance": "CritChance",
+      "gui.witchercraft.player_stats_overlay.label_healthregen": "HealthRegen",
+      "gui.witchercraft.player_stats_overlay.label_toxicity": "Toxicity",
+      "gui.witchercraft.player_stats_overlay.label_maxtoxicity": "MaxToxicity"
     }
   },
   "metadata": {
@@ -6027,6 +6194,10 @@
           {
             "name": "AlchemyMenu",
             "children": []
+          },
+          {
+            "name": " Toxicity",
+            "children": []
           }
         ]
       },
@@ -6062,47 +6233,6 @@
             "children": []
           }
         ]
-      },
-      {
-        "name": "Weapons",
-        "children": []
-      },
-      {
-        "name": "Armor",
-        "children": [
-          {
-            "name": "CatGear",
-            "children": []
-          },
-          {
-            "name": "WolvenGear",
-            "children": []
-          },
-          {
-            "name": "BearGear",
-            "children": []
-          },
-          {
-            "name": "ViperGear",
-            "children": []
-          },
-          {
-            "name": "ManticoreGear",
-            "children": []
-          },
-          {
-            "name": "GriffinGear",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "Mobs",
-        "children": []
-      },
-      {
-        "name": "Pause Menu ",
-        "children": []
       },
       {
         "name": "Meditation",
@@ -6197,6 +6327,47 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Weapons",
+        "children": []
+      },
+      {
+        "name": "Armor",
+        "children": [
+          {
+            "name": "CatGear",
+            "children": []
+          },
+          {
+            "name": "WolvenGear",
+            "children": []
+          },
+          {
+            "name": "BearGear",
+            "children": []
+          },
+          {
+            "name": "ViperGear",
+            "children": []
+          },
+          {
+            "name": "ManticoreGear",
+            "children": []
+          },
+          {
+            "name": "GriffinGear",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Mobs",
+        "children": []
+      },
+      {
+        "name": "Pause Menu ",
+        "children": []
       },
       {
         "name": "Items",

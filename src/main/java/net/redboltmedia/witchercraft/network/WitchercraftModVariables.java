@@ -135,6 +135,8 @@ public class WitchercraftModVariables {
 			clone.witchercraftBasePassiveHealthRegeneration = original.witchercraftBasePassiveHealthRegeneration;
 			clone.witchercraftPassiveStaminaRegeneration = original.witchercraftPassiveStaminaRegeneration;
 			clone.witchercraftBaseStaminaRegeneration = original.witchercraftBaseStaminaRegeneration;
+			clone.witchercraftToxicity = original.witchercraftToxicity;
+			clone.sumToxicity = original.sumToxicity;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
 	}
@@ -206,6 +208,8 @@ public class WitchercraftModVariables {
 		public double wichercraftPlayerLevel = 0;
 		public double wichercraftPlayerExperience = 0;
 		public double wichercraftAbilitesExperienceRequirement = 0.0;
+		public double witchercraftToxicity = 0;
+		public double sumToxicity = 0;
 
 		@Override
 		public void serialize(ValueOutput output) {
@@ -274,6 +278,8 @@ public class WitchercraftModVariables {
 			output.putDouble("wichercraftPlayerLevel", wichercraftPlayerLevel);
 			output.putDouble("wichercraftPlayerExperience", wichercraftPlayerExperience);
 			output.putDouble("wichercraftAbilitesExperienceRequirement", wichercraftAbilitesExperienceRequirement);
+			output.putDouble("witchercraftToxicity", witchercraftToxicity);
+			output.putDouble("sumToxicity", sumToxicity);
 		}
 
 		@Override
@@ -343,6 +349,8 @@ public class WitchercraftModVariables {
 			wichercraftPlayerLevel = input.getDoubleOr("wichercraftPlayerLevel", 0);
 			wichercraftPlayerExperience = input.getDoubleOr("wichercraftPlayerExperience", 0);
 			wichercraftAbilitesExperienceRequirement = input.getDoubleOr("wichercraftAbilitesExperienceRequirement", 0);
+			witchercraftToxicity = input.getDoubleOr("witchercraftToxicity", 0);
+			sumToxicity = input.getDoubleOr("sumToxicity", 0);
 		}
 
 		public void markSyncDirty() {

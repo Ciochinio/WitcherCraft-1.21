@@ -1,0 +1,71 @@
+package net.redboltmedia.witchercraft.client.screens;
+
+import org.checkerframework.checker.units.qual.h;
+
+import net.redboltmedia.witchercraft.procedures.*;
+
+import net.neoforged.neoforge.client.event.RenderGuiEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.EventPriority;
+import net.neoforged.api.distmarker.Dist;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.network.chat.Component;
+import net.minecraft.client.Minecraft;
+
+@EventBusSubscriber(Dist.CLIENT)
+public class PlayerStatsOverlayOverlay {
+	@SubscribeEvent(priority = EventPriority.NORMAL)
+	public static void eventHandler(RenderGuiEvent.Pre event) {
+		int w = event.getGuiGraphics().guiWidth();
+		int h = event.getGuiGraphics().guiHeight();
+		Level world = null;
+		double x = 0;
+		double y = 0;
+		double z = 0;
+		Player entity = Minecraft.getInstance().player;
+		if (entity != null) {
+			world = entity.level();
+			x = entity.getX();
+			y = entity.getY();
+			z = entity.getZ();
+		}
+		if (PlayerStatsOverlayOnProcedure.execute(entity)) {
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.witchercraft.player_stats_overlay.label_movementspeed"), w / 2 + -207, h / 2 + -112, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.witchercraft.player_stats_overlay.label_attackspeed"), w / 2 + -207, h / 2 + -103, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.witchercraft.player_stats_overlay.label_critchance"), w / 2 + -207, h / 2 + -94, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.witchercraft.player_stats_overlay.label_critdamage"), w / 2 + -207, h / 2 + -85, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.witchercraft.player_stats_overlay.label_health"), w / 2 + -207, h / 2 + -76, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.witchercraft.player_stats_overlay.label_healthregen"), w / 2 + -207, h / 2 + -67, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.witchercraft.player_stats_overlay.label_staminaregen"), w / 2 + -207, h / 2 + -58, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+
+					CharacterGuiMovementSpeedProcedure.execute(entity), w / 2 + -126, h / 2 + -112, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+
+					CharacterGuiAttackSpeedProcedure.execute(entity), w / 2 + -126, h / 2 + -103, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+
+					CharacterGuiCritChanceProcedure.execute(entity), w / 2 + -126, h / 2 + -94, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+
+					CharacterGuiCritDamageProcedure.execute(entity), w / 2 + -126, h / 2 + -85, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+
+					CharacterGuiHealthProcedure.execute(entity), w / 2 + -126, h / 2 + -76, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+
+					CharacterGuiPassiveHealthRegenProcedure.execute(entity), w / 2 + -126, h / 2 + -67, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+
+					CharacterGuiPassiveStaminaRegenProcedure.execute(entity), w / 2 + -126, h / 2 + -58, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.witchercraft.player_stats_overlay.label_toxicity"), w / 2 + -207, h / 2 + -49, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.witchercraft.player_stats_overlay.label_maxtoxicity"), w / 2 + -207, h / 2 + -40, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+
+					CharacterGuiToxicityProcedure.execute(entity), w / 2 + -126, h / 2 + -49, -1, false);
+		}
+	}
+}

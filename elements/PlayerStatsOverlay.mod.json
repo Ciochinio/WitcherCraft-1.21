@@ -1,0 +1,318 @@
+{
+  "_fv": 79,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_movementspeed",
+          "text": {
+            "fixedValue": "MovementSpeed"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 6,
+          "y": 8,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_attackspeed",
+          "text": {
+            "fixedValue": "AttackSpeed"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 6,
+          "y": 17,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_critchance",
+          "text": {
+            "fixedValue": "CritChance"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 6,
+          "y": 26,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_critdamage",
+          "text": {
+            "fixedValue": "CritDamage"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 6,
+          "y": 35,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_health",
+          "text": {
+            "fixedValue": "Health"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 6,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_healthregen",
+          "text": {
+            "fixedValue": "HealthRegen"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 6,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_staminaregen",
+          "text": {
+            "fixedValue": "StaminaRegen"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 6,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_character_gui_movement_spee",
+          "text": {
+            "fixedValue": "",
+            "name": "CharacterGuiMovementSpeed"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 87,
+          "y": 8,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_character_gui_attack_speed",
+          "text": {
+            "fixedValue": "",
+            "name": "CharacterGuiAttackSpeed"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 87,
+          "y": 17,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_character_gui_crit_chance",
+          "text": {
+            "fixedValue": "",
+            "name": "CharacterGuiCritChance"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 87,
+          "y": 26,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_character_gui_crit_damage",
+          "text": {
+            "fixedValue": "dam",
+            "name": "CharacterGuiCritDamage"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 87,
+          "y": 35,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_character_gui_health",
+          "text": {
+            "fixedValue": "hea",
+            "name": "CharacterGuiHealth"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 87,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_character_gui_passive_healt",
+          "text": {
+            "fixedValue": "h",
+            "name": "CharacterGuiPassiveHealthRegen"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 87,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_character_gui_passive_stami",
+          "text": {
+            "fixedValue": "",
+            "name": "CharacterGuiPassiveStaminaRegen"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 87,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_toxicity",
+          "text": {
+            "fixedValue": "Toxicity"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 6,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_maxtoxicity",
+          "text": {
+            "fixedValue": "MaxToxicity"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 6,
+          "y": 80,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_toxicity",
+          "text": {
+            "fixedValue": "",
+            "name": "CharacterGuiToxicity"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 87,
+          "y": 71,
+          "locked": false
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "PlayerStatsOverlayOn"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}
