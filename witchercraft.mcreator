@@ -5166,6 +5166,58 @@
         ]
       },
       "path": "~/Bestiary/Vampires/Higher Vampire"
+    },
+    {
+      "name": "DevLog",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dev_log",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/DevLogMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "CharacterGuiPassiveHealthRegen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_gui_passive_health_regen",
+      "metadata": {
+        "return_type": "string",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterGuiPassiveHealthRegenProcedure.java"
+        ]
+      },
+      "path": "~/Character Stats/Stats/Gui"
+    },
+    {
+      "name": "CharacterGuiPassiveStaminaRegen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_gui_passive_stamina_regen",
+      "metadata": {
+        "return_type": "string",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterGuiPassiveStaminaRegenProcedure.java"
+        ]
+      },
+      "path": "~/Character Stats/Stats/Gui"
     }
   ],
   "variable_elements": [
@@ -5814,7 +5866,10 @@
       "item.witchercraft.insectoid_oil": "Insectoid Oil",
       "item.witchercraft.grapeshot": "Grapeshot",
       "gui.witchercraft.alchemy_gui.button_brew": "Brew",
-      "gui.witchercraft.character_abilities_combat_gui.tooltip_sunder_armoradd_20_to_dmg_dea": "ADD +20% TO DMG DEALT"
+      "gui.witchercraft.character_abilities_combat_gui.tooltip_sunder_armoradd_20_to_dmg_dea": "ADD +20% TO DMG DEALT",
+      "effect.witchercraft.dev_log": "Dev Log",
+      "gui.witchercraft.character_gui.label_passivehealthregen": "HealthRegen",
+      "gui.witchercraft.character_gui.label_staminaregen": "StaminaRegen"
     }
   },
   "metadata": {

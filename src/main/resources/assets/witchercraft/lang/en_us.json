@@ -215,5 +215,8 @@
   "item.witchercraft.insectoid_oil": "Insectoid Oil",
   "item.witchercraft.grapeshot": "Grapeshot",
   "gui.witchercraft.alchemy_gui.button_brew": "Brew",
-  "gui.witchercraft.character_abilities_combat_gui.tooltip_sunder_armoradd_20_to_dmg_dea": "ADD +20% TO DMG DEALT"
+  "gui.witchercraft.character_abilities_combat_gui.tooltip_sunder_armoradd_20_to_dmg_dea": "ADD +20% TO DMG DEALT",
+  "effect.witchercraft.dev_log": "Dev Log",
+  "gui.witchercraft.character_gui.label_passivehealthregen": "HealthRegen",
+  "gui.witchercraft.character_gui.label_staminaregen": "StaminaRegen"
 }

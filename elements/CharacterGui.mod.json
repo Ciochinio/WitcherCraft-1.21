@@ -238,6 +238,72 @@
           "y": 188,
           "locked": false
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_passivehealthregen",
+          "text": {
+            "fixedValue": "HealthRegen"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_character_gui_passive_healt",
+          "text": {
+            "fixedValue": "",
+            "name": "CharacterGuiPassiveHealthRegen"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 213,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_staminaregen",
+          "text": {
+            "fixedValue": "StaminaRegen"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_character_gui_passive_stami",
+          "text": {
+            "fixedValue": "",
+            "name": "CharacterGuiPassiveStaminaRegen"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 213,
+          "y": 107,
+          "locked": false
+        }
       }
     ],
     "gridSettings": {

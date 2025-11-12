@@ -34,7 +34,7 @@ public class AdditionalDamageProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		if (sourceentity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(WitchercraftModMobEffects.THUNDERBOLT_EFFECT)) {
-			entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.GENERIC)), (float) (amount * 1.3));
+			entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK)), (float) (amount * 1.3));
 			if (sourceentity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal(("add damage" + amount * 1.3)), false);
 		}
