@@ -2,6 +2,8 @@ package net.redboltmedia.witchercraft.client.screens;
 
 import org.checkerframework.checker.units.qual.h;
 
+import net.redboltmedia.witchercraft.procedures.Tox5Procedure;
+import net.redboltmedia.witchercraft.procedures.Tox4Procedure;
 import net.redboltmedia.witchercraft.procedures.Tox3Procedure;
 import net.redboltmedia.witchercraft.procedures.Tox2Procedure;
 import net.redboltmedia.witchercraft.procedures.Tox1Procedure;
@@ -44,6 +46,12 @@ public class ToxicityOverlayOverlay {
 			}
 			if (Tox3Procedure.execute(entity)) {
 				event.getGuiGraphics().blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("witchercraft:textures/screens/arrowforword.png"), w / 2 + -3, h / 2 + 39, 0, 0, 32, 32, 32, 32);
+			}
+			if (Tox4Procedure.execute(entity)) {
+				event.getGuiGraphics().blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("witchercraft:textures/screens/arrowback.png"), w / 2 + 50, h / 2 + 38, 0, 0, 32, 32, 32, 32);
+			}
+			if (Tox5Procedure.execute(entity)) {
+				event.getGuiGraphics().blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("witchercraft:textures/screens/arrowforword.png"), w / 2 + 105, h / 2 + 35, 0, 0, 32, 32, 32, 32);
 			}
 		}
 	}

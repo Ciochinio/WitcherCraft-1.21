@@ -45,6 +45,34 @@
           "y": 159,
           "locked": false
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrowback.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Tox4"
+          },
+          "anchorPoint": "CENTER",
+          "x": 263,
+          "y": 158,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrowforword.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Tox5"
+          },
+          "anchorPoint": "CENTER",
+          "x": 318,
+          "y": 155,
+          "locked": false
+        }
       }
     ],
     "baseTexture": "",

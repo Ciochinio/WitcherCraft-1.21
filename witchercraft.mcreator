@@ -5364,6 +5364,46 @@
         ]
       },
       "path": "~/Character Stats/Stats/Gui"
+    },
+    {
+      "name": "Tox4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tox_4",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/Tox4Procedure.java"
+        ]
+      },
+      "path": "~/Alchemy/ Toxicity"
+    },
+    {
+      "name": "Tox5",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tox_5",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/Tox5Procedure.java"
+        ]
+      },
+      "path": "~/Alchemy/ Toxicity"
     }
   ],
   "variable_elements": [
