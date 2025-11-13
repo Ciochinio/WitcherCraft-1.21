@@ -54,7 +54,7 @@ public class CritHitProcedure {
 			}
 			if (sourceentity instanceof LivingEntity _livEnt5 && _livEnt5.hasEffect(WitchercraftModMobEffects.DEV_LOG)) {
 				if (sourceentity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal(("CRIT!" + amount * (1 + sourceentity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumCritDamage) * 0.01)), false);
+					_player.displayClientMessage(Component.literal(("CRIT!" + amount * (1 + sourceentity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumCritDamage * 0.01))), false);
 			}
 			entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK)), (float) (amount * (1 + sourceentity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumCritDamage * 0.01)));
 		}
