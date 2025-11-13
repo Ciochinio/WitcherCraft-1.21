@@ -211,7 +211,7 @@ public class WitchercraftModVariables {
 		public double wichercraftAbilitesExperienceRequirement = 0.0;
 		public double witchercraftToxicity = 0;
 		public double sumToxicity = 0;
-		public double ToxicityOverdoseThreshold = 0;
+		public double ToxicityOverdoseThreshold = 0.0;
 
 		@Override
 		public void serialize(ValueOutput output) {

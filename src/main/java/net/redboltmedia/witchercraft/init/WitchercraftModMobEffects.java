@@ -30,10 +30,8 @@ public class WitchercraftModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> THUNDERBOLT_EFFECT = REGISTRY.register("thunderbolt_effect", () -> new ThunderboltEffectMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> WHITE_RAFFARDS_DECOCTION_EFFECT = REGISTRY.register("white_raffards_decoction_effect", () -> new WhiteRaffardsDecoctionEffectMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> KILLER_WHALE_EFFECT = REGISTRY.register("killer_whale_effect", () -> new KillerWhaleEffectMobEffect());
-	public static final DeferredHolder<MobEffect, MobEffect> PASSIVE_HEALTH_REGEN = REGISTRY.register("passive_health_regen", () -> new PassiveHealthRegenMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> SWALLOW_EFFECT = REGISTRY.register("swallow_effect", () -> new SwallowEffectMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> TAWNY_OWL_EFFECT = REGISTRY.register("tawny_owl_effect", () -> new TawnyOwlEffectMobEffect());
-	public static final DeferredHolder<MobEffect, MobEffect> PASSIVE_STAMINA_REGEN = REGISTRY.register("passive_stamina_regen", () -> new PassiveStaminaRegenMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> SCHOOL_OF_THE_CAT = REGISTRY.register("school_of_the_cat", () -> new SchoolOfTheCatMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> SCHOOL_OF_THE_WOLF = REGISTRY.register("school_of_the_wolf", () -> new SchoolOfTheWolfMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> SCHOOL_OF_THE_BEAR = REGISTRY.register("school_of_the_bear", () -> new SchoolOfTheBearMobEffect());
@@ -46,7 +44,9 @@ public class WitchercraftModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> AARD_SIGN = REGISTRY.register("aard_sign", () -> new AardSignMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> QUEN_SIGN = REGISTRY.register("quen_sign", () -> new QuenSignMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> DEV_LOG = REGISTRY.register("dev_log", () -> new DevLogMobEffect());
-	public static final DeferredHolder<MobEffect, MobEffect> TOXICITY_OVERDOSE = REGISTRY.register("toxicity_overdose", () -> new ToxicityOverdoseMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> TOXICITY_OVERDOSE_TICK = REGISTRY.register("toxicity_overdose_tick", () -> new ToxicityOverdoseTickMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> PASSIVE_HEALTH_REGEN_TICK = REGISTRY.register("passive_health_regen_tick", () -> new PassiveHealthRegenTickMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> PASSIVE_STAMINA_REGEN_TICK = REGISTRY.register("passive_stamina_regen_tick", () -> new PassiveStaminaRegenTickMobEffect());
 
 	@SubscribeEvent
 	public static void onEffectRemoved(MobEffectEvent.Remove event) {
@@ -65,12 +65,12 @@ public class WitchercraftModMobEffects {
 	}
 
 	private static void expireEffects(Entity entity, MobEffectInstance effectInstance) {
-		if (effectInstance.getEffect().is(PASSIVE_HEALTH_REGEN)) {
-			PassiveHealthRegenStartProcedure.execute(entity.level(), entity);
-		} else if (effectInstance.getEffect().is(PASSIVE_STAMINA_REGEN)) {
-			PassiveStaminaRegenStartProcedure.execute(entity.level(), entity);
-		} else if (effectInstance.getEffect().is(TOXICITY_OVERDOSE)) {
+		if (effectInstance.getEffect().is(TOXICITY_OVERDOSE_TICK)) {
 			ToxicityOverdoseStartProcedure.execute(entity.level(), entity);
+		} else if (effectInstance.getEffect().is(PASSIVE_HEALTH_REGEN_TICK)) {
+			PassiveHealthRegenStartProcedure.execute(entity.level(), entity);
+		} else if (effectInstance.getEffect().is(PASSIVE_STAMINA_REGEN_TICK)) {
+			PassiveStaminaRegenStartProcedure.execute(entity.level(), entity);
 		}
 	}
 }

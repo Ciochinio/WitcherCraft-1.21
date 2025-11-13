@@ -16,13 +16,13 @@ public class ToxicityOverdoseStartProcedure {
 		if (entity == null)
 			return;
 		double sumPassiveHealthRegeneration = 0;
-		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(WitchercraftModMobEffects.TOXICITY_OVERDOSE)) {
+		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(WitchercraftModMobEffects.TOXICITY_OVERDOSE_TICK)) {
 			WitchercraftMod.queueServerWork(40, () -> {
-				if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumToxicity >= 70) {
+				if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumToxicity >= entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).ToxicityOverdoseThreshold) {
 					entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.MAGIC)), 1);
 				}
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.TOXICITY_OVERDOSE, 1, 0));
+					_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.TOXICITY_OVERDOSE_TICK, 1, 0));
 			});
 		}
 	}

@@ -29,10 +29,10 @@ public class WitchercraftPlayerStatCheckProcedure {
 			return;
 		WitchercraftPlayerBaseStatsProcedure.execute(entity);
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.PASSIVE_HEALTH_REGEN, 1, 0));
+			_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.PASSIVE_HEALTH_REGEN_TICK, 1, 0));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.PASSIVE_STAMINA_REGEN, 1, 0));
+			_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.PASSIVE_STAMINA_REGEN_TICK, 1, 0));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.TOXICITY_OVERDOSE, 1, 0));
+			_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.TOXICITY_OVERDOSE_TICK, 1, 0));
 	}
 }

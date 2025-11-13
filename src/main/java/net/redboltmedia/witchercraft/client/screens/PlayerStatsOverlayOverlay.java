@@ -66,6 +66,9 @@ public class PlayerStatsOverlayOverlay {
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
 					CharacterGuiToxicityProcedure.execute(entity), w / 2 + -126, h / 2 + -49, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+
+					CharacterGuiToxicityOverdoseThresholdProcedure.execute(entity), w / 2 + -126, h / 2 + -40, -1, false);
 		}
 	}
 }

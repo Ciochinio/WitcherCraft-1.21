@@ -1770,19 +1770,6 @@
       "path": "~/Alchemy/Potions/KillerWhale"
     },
     {
-      "name": "PassiveHealthRegen",
-      "type": "potioneffect",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "passive_health_regen",
-      "metadata": {
-        "files": [
-          "src/main/java/net/redboltmedia/witchercraft/potion/PassiveHealthRegenMobEffect.java"
-        ]
-      },
-      "path": "~/Character Stats/Stats/VariableStats/PassiveRegeneration"
-    },
-    {
       "name": "SwallowEffect",
       "type": "potioneffect",
       "compiles": true,
@@ -1888,19 +1875,6 @@
             "name": "world",
             "type": "world"
           }
-        ]
-      },
-      "path": "~/Character Stats/Stats/VariableStats/PassiveStaminaRegeneration"
-    },
-    {
-      "name": "PassiveStaminaRegen",
-      "type": "potioneffect",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "passive_stamina_regen",
-      "metadata": {
-        "files": [
-          "src/main/java/net/redboltmedia/witchercraft/potion/PassiveStaminaRegenMobEffect.java"
         ]
       },
       "path": "~/Character Stats/Stats/VariableStats/PassiveStaminaRegeneration"
@@ -5429,17 +5403,63 @@
       "path": "~/Alchemy/ Toxicity/Overdose"
     },
     {
-      "name": "ToxicityOverdose",
+      "name": "ToxicityOverdoseTick",
       "type": "potioneffect",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "toxicity_overdose",
+      "registry_name": "toxicity_overdose_tick",
       "metadata": {
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/potion/ToxicityOverdoseMobEffect.java"
+          "src/main/java/net/redboltmedia/witchercraft/potion/ToxicityOverdoseTickMobEffect.java"
         ]
       },
       "path": "~/Alchemy/ Toxicity/Overdose"
+    },
+    {
+      "name": "PassiveHealthRegenTick",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "passive_health_regen_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/PassiveHealthRegenTickMobEffect.java"
+        ]
+      },
+      "path": "~/Character Stats/Stats/VariableStats/PassiveRegeneration"
+    },
+    {
+      "name": "PassiveStaminaRegenTick",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "passive_stamina_regen_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/PassiveStaminaRegenTickMobEffect.java"
+        ]
+      },
+      "path": "~/Character Stats/Stats/VariableStats/PassiveStaminaRegeneration"
+    },
+    {
+      "name": "CharacterGuiToxicityOverdoseThreshold",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_gui_toxicity_overdose_threshold",
+      "metadata": {
+        "return_type": "string",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterGuiToxicityOverdoseThresholdProcedure.java"
+        ]
+      },
+      "path": "~/Character Stats/Stats/Gui"
     }
   ],
   "variable_elements": [
@@ -5849,7 +5869,7 @@
       "name": "ToxicityOverdoseThreshold",
       "type": "number",
       "scope": "player_lifetime",
-      "value": "0"
+      "value": "0.0"
     }
   ],
   "sound_elements": [],
@@ -5929,7 +5949,6 @@
       "gui.witchercraft.character_abilities_signs_gui.button_general": "General",
       "gui.witchercraft.higher_vampire_gui.label_health_20": "Health: 30",
       "gui.witchercraft.higher_vampire_gui.label_type_hostal": "Type: Hostile",
-      "effect.witchercraft.passive_stamina_regen": "Passive Stamina Regen",
       "gui.witchercraft.bruxa_gui.label_drowner": "Bruxa",
       "item.witchercraft.griffin_armor_chestplate": "Griffin Armor Chestplate",
       "gui.witchercraft.character_abilities_alchemy_gui.button_combat": " Combat",
@@ -6092,7 +6111,6 @@
       "gui.witchercraft.meditation_gui.button_noon": "Noon",
       "item.witchercraft.draconid_oil": "Draconid Oil",
       "gui.witchercraft.character_abilities_signs_gui.tooltip_gives_hero_of_the_village_effec": " GIVES HERO OF THE VILLAGE EFFECT ",
-      "effect.witchercraft.passive_health_regen": "Passive Health Regen Tick",
       "gui.witchercraft.character_abilities_signs_gui.button_back": "Back",
       "item.witchercraft.vitriol": "Vitriol",
       "item.witchercraft.white_honey": "White Honey",
@@ -6119,7 +6137,9 @@
       "gui.witchercraft.player_stats_overlay.label_healthregen": "HealthRegen",
       "gui.witchercraft.player_stats_overlay.label_toxicity": "Toxicity",
       "gui.witchercraft.player_stats_overlay.label_maxtoxicity": "MaxToxicity",
-      "effect.witchercraft.toxicity_overdose": "Toxicity Overdose"
+      "effect.witchercraft.toxicity_overdose_tick": "Toxicity Overdose",
+      "effect.witchercraft.passive_health_regen_tick": "Passive Health Regen Tick",
+      "effect.witchercraft.passive_stamina_regen_tick": "Passive Stamina Regen"
     }
   },
   "metadata": {

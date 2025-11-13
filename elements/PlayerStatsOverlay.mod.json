@@ -300,6 +300,24 @@
           "y": 71,
           "locked": false
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_character_gui_toxicity_over",
+          "text": {
+            "fixedValue": "",
+            "name": "CharacterGuiToxicityOverdoseThreshold"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 87,
+          "y": 80,
+          "locked": false
+        }
       }
     ],
     "baseTexture": "",

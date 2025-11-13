@@ -25,12 +25,12 @@ public class PassiveStaminaRegenStartProcedure {
 			_vars.witchercraftPassiveStaminaRegeneration = sumPassiveStaminaRegeneration;
 			_vars.markSyncDirty();
 		}
-		if (entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(WitchercraftModMobEffects.PASSIVE_STAMINA_REGEN)) {
+		if (entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(WitchercraftModMobEffects.PASSIVE_STAMINA_REGEN_TICK)) {
 			WitchercraftMod.queueServerWork(40, () -> {
 				if (entity instanceof Player _player)
 					_player.getFoodData().setFoodLevel((int) ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) + entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftPassiveStaminaRegeneration));
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.PASSIVE_STAMINA_REGEN, 1, 0));
+					_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.PASSIVE_STAMINA_REGEN_TICK, 1, 0));
 			});
 		}
 	}
