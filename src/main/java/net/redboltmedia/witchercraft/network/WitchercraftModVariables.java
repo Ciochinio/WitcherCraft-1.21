@@ -137,6 +137,7 @@ public class WitchercraftModVariables {
 			clone.witchercraftBaseStaminaRegeneration = original.witchercraftBaseStaminaRegeneration;
 			clone.witchercraftToxicity = original.witchercraftToxicity;
 			clone.sumToxicity = original.sumToxicity;
+			clone.ToxicityOverdoseThreshold = original.ToxicityOverdoseThreshold;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
 	}
@@ -210,6 +211,7 @@ public class WitchercraftModVariables {
 		public double wichercraftAbilitesExperienceRequirement = 0.0;
 		public double witchercraftToxicity = 0;
 		public double sumToxicity = 0;
+		public double ToxicityOverdoseThreshold = 0;
 
 		@Override
 		public void serialize(ValueOutput output) {
@@ -280,6 +282,7 @@ public class WitchercraftModVariables {
 			output.putDouble("wichercraftAbilitesExperienceRequirement", wichercraftAbilitesExperienceRequirement);
 			output.putDouble("witchercraftToxicity", witchercraftToxicity);
 			output.putDouble("sumToxicity", sumToxicity);
+			output.putDouble("ToxicityOverdoseThreshold", ToxicityOverdoseThreshold);
 		}
 
 		@Override
@@ -351,6 +354,7 @@ public class WitchercraftModVariables {
 			wichercraftAbilitesExperienceRequirement = input.getDoubleOr("wichercraftAbilitesExperienceRequirement", 0);
 			witchercraftToxicity = input.getDoubleOr("witchercraftToxicity", 0);
 			sumToxicity = input.getDoubleOr("sumToxicity", 0);
+			ToxicityOverdoseThreshold = input.getDoubleOr("ToxicityOverdoseThreshold", 0);
 		}
 
 		public void markSyncDirty() {

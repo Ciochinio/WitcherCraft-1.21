@@ -32,5 +32,7 @@ public class WitchercraftPlayerStatCheckProcedure {
 			_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.PASSIVE_HEALTH_REGEN, 1, 0));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.PASSIVE_STAMINA_REGEN, 1, 0));
+		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+			_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.TOXICITY_OVERDOSE, 1, 0));
 	}
 }

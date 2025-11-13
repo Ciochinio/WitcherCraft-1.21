@@ -3,6 +3,7 @@
  */
 package net.redboltmedia.witchercraft.init;
 
+import net.redboltmedia.witchercraft.procedures.ToxicityOverdoseStartProcedure;
 import net.redboltmedia.witchercraft.procedures.PassiveStaminaRegenStartProcedure;
 import net.redboltmedia.witchercraft.procedures.PassiveHealthRegenStartProcedure;
 import net.redboltmedia.witchercraft.potion.*;
@@ -45,6 +46,7 @@ public class WitchercraftModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> AARD_SIGN = REGISTRY.register("aard_sign", () -> new AardSignMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> QUEN_SIGN = REGISTRY.register("quen_sign", () -> new QuenSignMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> DEV_LOG = REGISTRY.register("dev_log", () -> new DevLogMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> TOXICITY_OVERDOSE = REGISTRY.register("toxicity_overdose", () -> new ToxicityOverdoseMobEffect());
 
 	@SubscribeEvent
 	public static void onEffectRemoved(MobEffectEvent.Remove event) {
@@ -67,6 +69,8 @@ public class WitchercraftModMobEffects {
 			PassiveHealthRegenStartProcedure.execute(entity.level(), entity);
 		} else if (effectInstance.getEffect().is(PASSIVE_STAMINA_REGEN)) {
 			PassiveStaminaRegenStartProcedure.execute(entity.level(), entity);
+		} else if (effectInstance.getEffect().is(TOXICITY_OVERDOSE)) {
+			ToxicityOverdoseStartProcedure.execute(entity.level(), entity);
 		}
 	}
 }

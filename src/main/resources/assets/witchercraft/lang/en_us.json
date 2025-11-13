@@ -227,5 +227,6 @@
   "gui.witchercraft.player_stats_overlay.label_critchance": "CritChance",
   "gui.witchercraft.player_stats_overlay.label_healthregen": "HealthRegen",
   "gui.witchercraft.player_stats_overlay.label_toxicity": "Toxicity",
-  "gui.witchercraft.player_stats_overlay.label_maxtoxicity": "MaxToxicity"
+  "gui.witchercraft.player_stats_overlay.label_maxtoxicity": "MaxToxicity",
+  "effect.witchercraft.toxicity_overdose": "Toxicity Overdose"
 }
