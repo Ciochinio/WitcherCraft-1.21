@@ -42,33 +42,41 @@ public class PlayerStatsOverlayOverlay {
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.witchercraft.player_stats_overlay.label_staminaregen"), w / 2 + -207, h / 2 + -58, -1, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					CharacterGuiMovementSpeedProcedure.execute(entity), w / 2 + -126, h / 2 + -112, -1, false);
+					CharacterGuiMovementSpeedProcedure.execute(entity), w / 2 + -108, h / 2 + -112, -1, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					CharacterGuiAttackSpeedProcedure.execute(entity), w / 2 + -126, h / 2 + -103, -1, false);
+					CharacterGuiAttackSpeedProcedure.execute(entity), w / 2 + -108, h / 2 + -103, -1, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					CharacterGuiCritChanceProcedure.execute(entity), w / 2 + -126, h / 2 + -94, -1, false);
+					CharacterGuiCritChanceProcedure.execute(entity), w / 2 + -108, h / 2 + -94, -1, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					CharacterGuiCritDamageProcedure.execute(entity), w / 2 + -126, h / 2 + -85, -1, false);
+					CharacterGuiCritDamageProcedure.execute(entity), w / 2 + -108, h / 2 + -85, -1, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					CharacterGuiHealthProcedure.execute(entity), w / 2 + -126, h / 2 + -76, -1, false);
+					CharacterGuiHealthProcedure.execute(entity), w / 2 + -108, h / 2 + -76, -1, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					CharacterGuiPassiveHealthRegenProcedure.execute(entity), w / 2 + -126, h / 2 + -67, -1, false);
+					CharacterGuiPassiveHealthRegenProcedure.execute(entity), w / 2 + -108, h / 2 + -67, -1, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					CharacterGuiPassiveStaminaRegenProcedure.execute(entity), w / 2 + -126, h / 2 + -58, -1, false);
+					CharacterGuiPassiveStaminaRegenProcedure.execute(entity), w / 2 + -108, h / 2 + -58, -1, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.witchercraft.player_stats_overlay.label_toxicity"), w / 2 + -207, h / 2 + -49, -1, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.witchercraft.player_stats_overlay.label_maxtoxicity"), w / 2 + -207, h / 2 + -40, -1, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					CharacterGuiToxicityProcedure.execute(entity), w / 2 + -126, h / 2 + -49, -1, false);
+					CharacterGuiToxicityProcedure.execute(entity), w / 2 + -108, h / 2 + -49, -1, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					CharacterGuiToxicityOverdoseThresholdProcedure.execute(entity), w / 2 + -126, h / 2 + -40, -1, false);
+					CharacterGuiToxicityOverdoseThresholdProcedure.execute(entity), w / 2 + -108, h / 2 + -40, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.witchercraft.player_stats_overlay.label_additionaldamage"), w / 2 + -207, h / 2 + -22, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+
+					CharacterGuiAdditionalDamageProcedure.execute(entity), w / 2 + -108, h / 2 + -22, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.witchercraft.player_stats_overlay.label_additionaldamgeflat"), w / 2 + -207, h / 2 + -31, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+
+					CharacterGuiAdditionalDamageFlatProcedure.execute(entity), w / 2 + -108, h / 2 + -31, -1, false);
 		}
 	}
 }

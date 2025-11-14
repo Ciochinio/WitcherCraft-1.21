@@ -6,7 +6,6 @@ import net.redboltmedia.witchercraft.init.WitchercraftModMobEffects;
 import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.bus.api.ICancellableEvent;
 import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
@@ -49,14 +48,16 @@ public class CritHitProcedure {
 				_player.displayClientMessage(Component.literal(("chance:" + sourceentity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumCritChance)), false);
 		}
 		if (!entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("minecraft:enderdragon"))) && critChanceRoll <= sourceentity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumCritChance) {
-			if (event instanceof ICancellableEvent _cancellable) {
-				_cancellable.setCanceled(true);
-			}
 			if (sourceentity instanceof LivingEntity _livEnt5 && _livEnt5.hasEffect(WitchercraftModMobEffects.DEV_LOG)) {
 				if (sourceentity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal(("CRIT!" + amount * (1 + sourceentity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumCritDamage * 0.01))), false);
+					_player.displayClientMessage(Component.literal(("CRIT!" + (amount + sourceentity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAdditionalDamageFlat
+							+ (amount + sourceentity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAdditionalDamageFlat) * sourceentity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAdditionalDamage * 0.01)
+							* (1 + sourceentity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumCritDamage * 0.01))), false);
 			}
-			entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK)), (float) (amount * (1 + sourceentity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumCritDamage * 0.01)));
+			entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK)),
+					(float) ((amount + sourceentity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAdditionalDamageFlat
+							+ (amount + sourceentity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAdditionalDamageFlat) * sourceentity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAdditionalDamage * 0.01)
+							* (1 + sourceentity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumCritDamage * 0.01)));
 		}
 	}
 }

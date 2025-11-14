@@ -228,5 +228,7 @@
   "gui.witchercraft.player_stats_overlay.label_maxtoxicity": "MaxToxicity",
   "effect.witchercraft.toxicity_overdose_tick": "Toxicity Overdose",
   "effect.witchercraft.passive_health_regen_tick": "Passive Health Regen Tick",
-  "effect.witchercraft.passive_stamina_regen_tick": "Passive Stamina Regen"
+  "effect.witchercraft.passive_stamina_regen_tick": "Passive Stamina Regen",
+  "gui.witchercraft.player_stats_overlay.label_additionaldamage": "AdditionalDamage(%)",
+  "gui.witchercraft.player_stats_overlay.label_additionaldamgeflat": "AdditionalDamgeFlat"
 }

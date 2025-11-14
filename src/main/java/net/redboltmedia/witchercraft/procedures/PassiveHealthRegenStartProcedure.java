@@ -5,6 +5,7 @@ import net.redboltmedia.witchercraft.init.WitchercraftModMobEffects;
 import net.redboltmedia.witchercraft.WitchercraftMod;
 
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -15,7 +16,7 @@ public class PassiveHealthRegenStartProcedure {
 			return;
 		double sumPassiveHealthRegeneration = 0;
 		sumPassiveHealthRegeneration = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftBasePassiveHealthRegeneration;
-		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(WitchercraftModMobEffects.SWALLOW_EFFECT)) {
+		if ((entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesSunAndStars == true) == (world instanceof Level _lvl0 && _lvl0.isBrightOutside())) {
 			sumPassiveHealthRegeneration = sumPassiveHealthRegeneration + 1;
 		}
 		{

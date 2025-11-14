@@ -2,6 +2,7 @@ package net.redboltmedia.witchercraft.procedures;
 
 import net.redboltmedia.witchercraft.network.WitchercraftModVariables;
 
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 
 public class WitchercraftPlayerBaseStatsProcedure {
@@ -10,14 +11,16 @@ public class WitchercraftPlayerBaseStatsProcedure {
 			return;
 		{
 			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-			_vars.witchercraftBaseHealth = 20;
-			_vars.witchercraftArmor = 0;
+			_vars.witchercraftHealth = entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1;
+			_vars.witchercraftArmor = entity instanceof LivingEntity _livEnt ? _livEnt.getArmorValue() : 0;
 			_vars.witchercraftBaseMovementSpeed = 3;
-			_vars.witchercraftAdditionalDamage = 0;
 			_vars.witchercraftCritChance = 5;
 			_vars.witchercraftCritDamage = 50;
 			_vars.witchercraftAttackSpeed = 0;
-			_vars.witchercraftPassiveHealthRegeneration = 0;
+			_vars.witchercraftBasePassiveHealthRegeneration = 0;
+			_vars.witchercraftBaseStaminaRegeneration = 0;
+			_vars.witchercraftAdditionalDamage = 0;
+			_vars.witchercraftAdditionalDamageFlat = 0;
 			_vars.witchercraftToxicity = 0;
 			_vars.ToxicityOverdoseThreshold = 70;
 			_vars.markSyncDirty();

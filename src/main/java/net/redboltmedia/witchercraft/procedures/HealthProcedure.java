@@ -1,18 +1,17 @@
 package net.redboltmedia.witchercraft.procedures;
 
 import net.redboltmedia.witchercraft.network.WitchercraftModVariables;
-import net.redboltmedia.witchercraft.init.WitchercraftModMobEffects;
 
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.commands.CommandSourceStack;
-import net.minecraft.commands.CommandSource;
+import net.minecraft.resources.ResourceLocation;
 
 import javax.annotation.Nullable;
 
@@ -31,21 +30,22 @@ public class HealthProcedure {
 		if (entity == null)
 			return;
 		double sumHealth = 0;
-		sumHealth = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftBaseHealth;
-		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(WitchercraftModMobEffects.FULL_MOON_EFFECT)) {
-			sumHealth = sumHealth + 10;
+		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesSurvivalInstinct == true) {
+			if (entity instanceof LivingEntity _entity) {
+				AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("witchercraft:survivalinstinct"), 0.15, AttributeModifier.Operation.ADD_MULTIPLIED_BASE);
+				if (!_entity.getAttribute(Attributes.MAX_HEALTH).hasModifier(modifier.id())) {
+					_entity.getAttribute(Attributes.MAX_HEALTH).addTransientModifier(modifier);
+				}
+			}
+		} else {
+			if (entity instanceof LivingEntity _entity) {
+				_entity.getAttribute(Attributes.MAX_HEALTH).removeModifier(ResourceLocation.parse("witchercraft:survivalinstinct"));
+			}
 		}
 		{
 			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-			_vars.witchercraftHealth = sumHealth;
+			_vars.witchercraftHealth = entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1;
 			_vars.markSyncDirty();
-		}
-		{
-			Entity _ent = entity;
-			if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-				_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-						_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), ("/attribute @s minecraft:generic.max_health base set  " + sumHealth));
-			}
 		}
 	}
 }

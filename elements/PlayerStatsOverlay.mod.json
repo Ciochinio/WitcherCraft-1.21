@@ -136,7 +136,7 @@
             "falpha": 0.0
           },
           "anchorPoint": "CENTER",
-          "x": 87,
+          "x": 105,
           "y": 8,
           "locked": false
         }
@@ -154,7 +154,7 @@
             "falpha": 0.0
           },
           "anchorPoint": "CENTER",
-          "x": 87,
+          "x": 105,
           "y": 17,
           "locked": false
         }
@@ -172,7 +172,7 @@
             "falpha": 0.0
           },
           "anchorPoint": "CENTER",
-          "x": 87,
+          "x": 105,
           "y": 26,
           "locked": false
         }
@@ -190,7 +190,7 @@
             "falpha": 0.0
           },
           "anchorPoint": "CENTER",
-          "x": 87,
+          "x": 105,
           "y": 35,
           "locked": false
         }
@@ -208,7 +208,7 @@
             "falpha": 0.0
           },
           "anchorPoint": "CENTER",
-          "x": 87,
+          "x": 105,
           "y": 44,
           "locked": false
         }
@@ -226,7 +226,7 @@
             "falpha": 0.0
           },
           "anchorPoint": "CENTER",
-          "x": 87,
+          "x": 105,
           "y": 53,
           "locked": false
         }
@@ -244,7 +244,7 @@
             "falpha": 0.0
           },
           "anchorPoint": "CENTER",
-          "x": 87,
+          "x": 105,
           "y": 62,
           "locked": false
         }
@@ -296,7 +296,7 @@
             "falpha": 0.0
           },
           "anchorPoint": "CENTER",
-          "x": 87,
+          "x": 105,
           "y": 71,
           "locked": false
         }
@@ -314,8 +314,78 @@
             "falpha": 0.0
           },
           "anchorPoint": "CENTER",
-          "x": 87,
+          "x": 105,
           "y": 80,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_additionaldamage",
+          "text": {
+            "fixedValue": "AdditionalDamage(%)"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 6,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_character_gui_additional_da",
+          "text": {
+            "fixedValue": "",
+            "name": "CharacterGuiAdditionalDamage"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 105,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_additionaldamgeflat",
+          "text": {
+            "fixedValue": "AdditionalDamgeFlat"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 6,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_character_gui_additional_da1",
+          "text": {
+            "fixedValue": "",
+            "name": "CharacterGuiAdditionalDamageFlat"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 105,
+          "y": 89,
           "locked": false
         }
       }
