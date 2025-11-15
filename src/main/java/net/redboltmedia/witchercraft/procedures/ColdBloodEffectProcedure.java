@@ -8,13 +8,13 @@ public class ColdBloodEffectProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (CharacterAbilitiesExperienceCheckProcedure.execute(entity)) {
-			CharacterAbilitiesExperienceRemoveProcedure.execute(entity);
+		if (CharacterAbilitiesSkillPointCheckProcedure.execute(entity)) {
 			{
 				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
 				_vars.witchercraftAbilitiesColdBlood = true;
 				_vars.markSyncDirty();
 			}
+			CharacterAbilitiesSkillPointUsedProcedure.execute(entity);
 		}
 	}
 }

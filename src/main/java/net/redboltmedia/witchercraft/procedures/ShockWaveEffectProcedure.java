@@ -8,16 +8,14 @@ public class ShockWaveEffectProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesAardIntensity) {
-			if (CharacterAbilitiesExperienceCheckProcedure.execute(entity)) {
-				if (CharacterAbilitiesTier3Procedure.execute(entity)) {
-					CharacterAbilitiesExperienceRemoveProcedure.execute(entity);
-					{
-						WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-						_vars.witchercraftAbilitiesShockWave = true;
-						_vars.markSyncDirty();
-					}
+		if (CharacterAbilitiesSkillPointCheckProcedure.execute(entity)) {
+			if (CharacterAbilitiesSignsTier3Procedure.execute(entity)) {
+				{
+					WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
+					_vars.witchercraftAbilitiesShockWave = true;
+					_vars.markSyncDirty();
 				}
+				CharacterAbilitiesSkillPointUsedProcedure.execute(entity);
 			}
 		}
 	}

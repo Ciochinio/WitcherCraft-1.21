@@ -94,12 +94,12 @@ public class WitchercraftModVariables {
 		clone.witchercraftAbilitiesSustainedGlyphs = original.witchercraftAbilitiesSustainedGlyphs;
 		clone.witchercraftAbilitiesYrdenIntensity = original.witchercraftAbilitiesYrdenIntensity;
 		clone.witchercraftAbilitiesMagicTrap = original.witchercraftAbilitiesMagicTrap;
-		clone.witchercraftAbilitiesExploadingShild = original.witchercraftAbilitiesExploadingShild;
+		clone.witchercraftAbilitiesExploadingShield = original.witchercraftAbilitiesExploadingShield;
 		clone.witchercraftAbilitiesQuenIntensity = original.witchercraftAbilitiesQuenIntensity;
 		clone.witchercraftAbilitiesQuenDischarge = original.witchercraftAbilitiesQuenDischarge;
 		clone.witchercraftAbilitiesDelusion = original.witchercraftAbilitiesDelusion;
-		clone.witchercraftAbilitiesAxiiInntensiy = original.witchercraftAbilitiesAxiiInntensiy;
-		clone.witchercraftAbilitiesDominaion = original.witchercraftAbilitiesDominaion;
+		clone.witchercraftAbilitiesAxiiIntensity = original.witchercraftAbilitiesAxiiIntensity;
+		clone.witchercraftAbilitiesDomination = original.witchercraftAbilitiesDomination;
 		clone.witchercraftAbilitiesMuscleMemory = original.witchercraftAbilitiesMuscleMemory;
 		clone.witchercraftAbilitiesPreciseBlows = original.witchercraftAbilitiesPreciseBlows;
 		clone.witchercraftAbilitiesCripplingStrikes = original.witchercraftAbilitiesCripplingStrikes;
@@ -118,6 +118,9 @@ public class WitchercraftModVariables {
 		clone.wichercraftPlayerLevel = original.wichercraftPlayerLevel;
 		clone.wichercraftPlayerExperience = original.wichercraftPlayerExperience;
 		clone.wichercraftAbilitesExperienceRequirement = original.wichercraftAbilitesExperienceRequirement;
+		clone.witchercraftAbilitiesCombatSkillPointsUsed = original.witchercraftAbilitiesCombatSkillPointsUsed;
+		clone.witchercraftAbilitiesAlchemySkillPointsUsed = original.witchercraftAbilitiesAlchemySkillPointsUsed;
+		clone.witchercraftAbilitiesSignsSkillPointsUsed = original.witchercraftAbilitiesSignsSkillPointsUsed;
 		if (!event.isWasDeath()) {
 			clone.witchercraftMovementSpeed = original.witchercraftMovementSpeed;
 			clone.witchercraftHealth = original.witchercraftHealth;
@@ -184,12 +187,12 @@ public class WitchercraftModVariables {
 		public boolean witchercraftAbilitiesSustainedGlyphs = false;
 		public boolean witchercraftAbilitiesYrdenIntensity = false;
 		public boolean witchercraftAbilitiesMagicTrap = false;
-		public boolean witchercraftAbilitiesExploadingShild = false;
+		public boolean witchercraftAbilitiesExploadingShield = false;
 		public boolean witchercraftAbilitiesQuenIntensity = false;
 		public boolean witchercraftAbilitiesQuenDischarge = false;
 		public boolean witchercraftAbilitiesDelusion = false;
-		public boolean witchercraftAbilitiesAxiiInntensiy = false;
-		public boolean witchercraftAbilitiesDominaion = false;
+		public boolean witchercraftAbilitiesAxiiIntensity = false;
+		public boolean witchercraftAbilitiesDomination = false;
 		public boolean witchercraftAbilitiesMuscleMemory = false;
 		public boolean witchercraftAbilitiesPreciseBlows = false;
 		public boolean witchercraftAbilitiesCripplingStrikes = false;
@@ -212,6 +215,9 @@ public class WitchercraftModVariables {
 		public double sumToxicity = 0;
 		public double ToxicityOverdoseThreshold = 0.0;
 		public double witchercraftIncreasedDamage = 0;
+		public double witchercraftAbilitiesCombatSkillPointsUsed = 0;
+		public double witchercraftAbilitiesAlchemySkillPointsUsed = 0;
+		public double witchercraftAbilitiesSignsSkillPointsUsed = 0;
 
 		@Override
 		public void serialize(ValueOutput output) {
@@ -255,12 +261,12 @@ public class WitchercraftModVariables {
 			output.putBoolean("witchercraftAbilitiesSustainedGlyphs", witchercraftAbilitiesSustainedGlyphs);
 			output.putBoolean("witchercraftAbilitiesYrdenIntensity", witchercraftAbilitiesYrdenIntensity);
 			output.putBoolean("witchercraftAbilitiesMagicTrap", witchercraftAbilitiesMagicTrap);
-			output.putBoolean("witchercraftAbilitiesExploadingShild", witchercraftAbilitiesExploadingShild);
+			output.putBoolean("witchercraftAbilitiesExploadingShield", witchercraftAbilitiesExploadingShield);
 			output.putBoolean("witchercraftAbilitiesQuenIntensity", witchercraftAbilitiesQuenIntensity);
 			output.putBoolean("witchercraftAbilitiesQuenDischarge", witchercraftAbilitiesQuenDischarge);
 			output.putBoolean("witchercraftAbilitiesDelusion", witchercraftAbilitiesDelusion);
-			output.putBoolean("witchercraftAbilitiesAxiiInntensiy", witchercraftAbilitiesAxiiInntensiy);
-			output.putBoolean("witchercraftAbilitiesDominaion", witchercraftAbilitiesDominaion);
+			output.putBoolean("witchercraftAbilitiesAxiiIntensity", witchercraftAbilitiesAxiiIntensity);
+			output.putBoolean("witchercraftAbilitiesDomination", witchercraftAbilitiesDomination);
 			output.putBoolean("witchercraftAbilitiesMuscleMemory", witchercraftAbilitiesMuscleMemory);
 			output.putBoolean("witchercraftAbilitiesPreciseBlows", witchercraftAbilitiesPreciseBlows);
 			output.putBoolean("witchercraftAbilitiesCripplingStrikes", witchercraftAbilitiesCripplingStrikes);
@@ -283,6 +289,9 @@ public class WitchercraftModVariables {
 			output.putDouble("sumToxicity", sumToxicity);
 			output.putDouble("ToxicityOverdoseThreshold", ToxicityOverdoseThreshold);
 			output.putDouble("witchercraftIncreasedDamage", witchercraftIncreasedDamage);
+			output.putDouble("witchercraftAbilitiesCombatSkillPointsUsed", witchercraftAbilitiesCombatSkillPointsUsed);
+			output.putDouble("witchercraftAbilitiesAlchemySkillPointsUsed", witchercraftAbilitiesAlchemySkillPointsUsed);
+			output.putDouble("witchercraftAbilitiesSignsSkillPointsUsed", witchercraftAbilitiesSignsSkillPointsUsed);
 		}
 
 		@Override
@@ -327,12 +336,12 @@ public class WitchercraftModVariables {
 			witchercraftAbilitiesSustainedGlyphs = input.getBooleanOr("witchercraftAbilitiesSustainedGlyphs", false);
 			witchercraftAbilitiesYrdenIntensity = input.getBooleanOr("witchercraftAbilitiesYrdenIntensity", false);
 			witchercraftAbilitiesMagicTrap = input.getBooleanOr("witchercraftAbilitiesMagicTrap", false);
-			witchercraftAbilitiesExploadingShild = input.getBooleanOr("witchercraftAbilitiesExploadingShild", false);
+			witchercraftAbilitiesExploadingShield = input.getBooleanOr("witchercraftAbilitiesExploadingShield", false);
 			witchercraftAbilitiesQuenIntensity = input.getBooleanOr("witchercraftAbilitiesQuenIntensity", false);
 			witchercraftAbilitiesQuenDischarge = input.getBooleanOr("witchercraftAbilitiesQuenDischarge", false);
 			witchercraftAbilitiesDelusion = input.getBooleanOr("witchercraftAbilitiesDelusion", false);
-			witchercraftAbilitiesAxiiInntensiy = input.getBooleanOr("witchercraftAbilitiesAxiiInntensiy", false);
-			witchercraftAbilitiesDominaion = input.getBooleanOr("witchercraftAbilitiesDominaion", false);
+			witchercraftAbilitiesAxiiIntensity = input.getBooleanOr("witchercraftAbilitiesAxiiIntensity", false);
+			witchercraftAbilitiesDomination = input.getBooleanOr("witchercraftAbilitiesDomination", false);
 			witchercraftAbilitiesMuscleMemory = input.getBooleanOr("witchercraftAbilitiesMuscleMemory", false);
 			witchercraftAbilitiesPreciseBlows = input.getBooleanOr("witchercraftAbilitiesPreciseBlows", false);
 			witchercraftAbilitiesCripplingStrikes = input.getBooleanOr("witchercraftAbilitiesCripplingStrikes", false);
@@ -355,6 +364,9 @@ public class WitchercraftModVariables {
 			sumToxicity = input.getDoubleOr("sumToxicity", 0);
 			ToxicityOverdoseThreshold = input.getDoubleOr("ToxicityOverdoseThreshold", 0);
 			witchercraftIncreasedDamage = input.getDoubleOr("witchercraftIncreasedDamage", 0);
+			witchercraftAbilitiesCombatSkillPointsUsed = input.getDoubleOr("witchercraftAbilitiesCombatSkillPointsUsed", 0);
+			witchercraftAbilitiesAlchemySkillPointsUsed = input.getDoubleOr("witchercraftAbilitiesAlchemySkillPointsUsed", 0);
+			witchercraftAbilitiesSignsSkillPointsUsed = input.getDoubleOr("witchercraftAbilitiesSignsSkillPointsUsed", 0);
 		}
 
 		public void markSyncDirty() {

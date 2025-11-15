@@ -8,13 +8,13 @@ public class FarReachingAardEffectProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (CharacterAbilitiesExperienceCheckProcedure.execute(entity)) {
+		if (CharacterAbilitiesSkillPointCheckProcedure.execute(entity)) {
 			{
 				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
 				_vars.witchercraftAbilitiesFarReachingAard = true;
 				_vars.markSyncDirty();
 			}
-			CharacterAbilitiesExperienceRemoveProcedure.execute(entity);
+			CharacterAbilitiesSkillPointUsedProcedure.execute(entity);
 		}
 	}
 }

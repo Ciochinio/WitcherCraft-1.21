@@ -34,12 +34,12 @@ public class DevClearProcedure {
 			_vars.witchercraftAbilitiesSustainedGlyphs = false;
 			_vars.witchercraftAbilitiesYrdenIntensity = false;
 			_vars.witchercraftAbilitiesMagicTrap = false;
-			_vars.witchercraftAbilitiesExploadingShild = false;
+			_vars.witchercraftAbilitiesExploadingShield = false;
 			_vars.witchercraftAbilitiesQuenIntensity = false;
 			_vars.witchercraftAbilitiesQuenDischarge = false;
 			_vars.witchercraftAbilitiesDelusion = false;
-			_vars.witchercraftAbilitiesAxiiInntensiy = false;
-			_vars.witchercraftAbilitiesDominaion = false;
+			_vars.witchercraftAbilitiesAxiiIntensity = false;
+			_vars.witchercraftAbilitiesDomination = false;
 			_vars.witchercraftAbilitiesMuscleMemory = false;
 			_vars.witchercraftAbilitiesPreciseBlows = false;
 			_vars.witchercraftAbilitiesCripplingStrikes = false;

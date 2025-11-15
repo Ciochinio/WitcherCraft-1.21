@@ -8,7 +8,7 @@ public class AxiiIntensityShowProcedure {
 	public static boolean execute(Entity entity) {
 		if (entity == null)
 			return false;
-		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesAxiiInntensiy == true) {
+		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesAxiiIntensity == true) {
 			return false;
 		}
 		return true;

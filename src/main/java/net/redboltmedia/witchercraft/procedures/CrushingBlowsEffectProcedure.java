@@ -8,16 +8,14 @@ public class CrushingBlowsEffectProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesStrengthTraining) {
-			if (CharacterAbilitiesExperienceCheckProcedure.execute(entity)) {
-				if (CharacterAbilitiesTier2Procedure.execute(entity)) {
-					{
-						WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-						_vars.witchercraftAbilitiesCrushingBlows = true;
-						_vars.markSyncDirty();
-					}
-					CharacterAbilitiesExperienceRemoveProcedure.execute(entity);
+		if (CharacterAbilitiesSkillPointCheckProcedure.execute(entity)) {
+			if (CharacterAbilitiesCombatTier2Procedure.execute(entity)) {
+				{
+					WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
+					_vars.witchercraftAbilitiesCrushingBlows = true;
+					_vars.markSyncDirty();
 				}
+				CharacterAbilitiesSkillPointUsedProcedure.execute(entity);
 			}
 		}
 	}

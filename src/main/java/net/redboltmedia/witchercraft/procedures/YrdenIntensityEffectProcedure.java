@@ -8,16 +8,14 @@ public class YrdenIntensityEffectProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesSustainedGlyphs) {
-			if (CharacterAbilitiesExperienceCheckProcedure.execute(entity)) {
-				if (CharacterAbilitiesTier2Procedure.execute(entity)) {
-					CharacterAbilitiesExperienceRemoveProcedure.execute(entity);
-					{
-						WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-						_vars.witchercraftAbilitiesYrdenIntensity = true;
-						_vars.markSyncDirty();
-					}
+		if (CharacterAbilitiesSkillPointCheckProcedure.execute(entity)) {
+			if (CharacterAbilitiesSignsTier2Procedure.execute(entity)) {
+				{
+					WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
+					_vars.witchercraftAbilitiesYrdenIntensity = true;
+					_vars.markSyncDirty();
 				}
+				CharacterAbilitiesSkillPointUsedProcedure.execute(entity);
 			}
 		}
 	}

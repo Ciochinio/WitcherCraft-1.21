@@ -8,16 +8,14 @@ public class AardIntensityEffectProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesFarReachingAard) {
-			if (CharacterAbilitiesExperienceCheckProcedure.execute(entity)) {
-				if (CharacterAbilitiesTier2Procedure.execute(entity)) {
-					{
-						WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-						_vars.witchercraftAbilitiesAardIntensity = true;
-						_vars.markSyncDirty();
-					}
-					CharacterAbilitiesExperienceRemoveProcedure.execute(entity);
+		if (CharacterAbilitiesSkillPointCheckProcedure.execute(entity)) {
+			if (CharacterAbilitiesSignsTier2Procedure.execute(entity)) {
+				{
+					WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
+					_vars.witchercraftAbilitiesAardIntensity = true;
+					_vars.markSyncDirty();
 				}
+				CharacterAbilitiesSkillPointUsedProcedure.execute(entity);
 			}
 		}
 	}

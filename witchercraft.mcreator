@@ -4506,45 +4506,6 @@
       "path": "~/Character Stats/Stats/Gui"
     },
     {
-      "name": "CharacterAbilitiesExperienceRemove",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "character_abilities_experience_remove",
-      "metadata": {
-        "files": [
-          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitiesExperienceRemoveProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Character Abilities/CharacterAbilitiesExperience"
-    },
-    {
-      "name": "CharacterAbilitiesExperienceCheck",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "character_abilities_experience_check",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitiesExperienceCheckProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Character Abilities/CharacterAbilitiesExperience"
-    },
-    {
       "name": "CharacterAbilitiesTier2",
       "type": "procedure",
       "compiles": true,
@@ -5507,6 +5468,165 @@
         ]
       },
       "path": "~/Character Abilities/Alchemy/Efficency"
+    },
+    {
+      "name": "CharacterAbilitiesSkillPointCheck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_abilities_skill_point_check",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitiesSkillPointCheckProcedure.java"
+        ]
+      },
+      "path": "~/Character Abilities/CharacterAbilitiesExperience"
+    },
+    {
+      "name": "CharacterAbilitiesSkillPointUsed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_abilities_skill_point_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitiesSkillPointUsedProcedure.java"
+        ]
+      },
+      "path": "~/Character Abilities/CharacterAbilitiesExperience"
+    },
+    {
+      "name": "CharacterAbilitiesCombatTier3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_abilities_combat_tier_3",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitiesCombatTier3Procedure.java"
+        ]
+      },
+      "path": "~/Character Abilities/Combat"
+    },
+    {
+      "name": "CharacterAbilitiesCombatTier2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_abilities_combat_tier_2",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitiesCombatTier2Procedure.java"
+        ]
+      },
+      "path": "~/Character Abilities/Combat"
+    },
+    {
+      "name": "CharacterAbilitiesAlchemyTier2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_abilities_alchemy_tier_2",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitiesAlchemyTier2Procedure.java"
+        ]
+      },
+      "path": "~/Character Abilities/Alchemy"
+    },
+    {
+      "name": "CharacterAbilitiesAlchemyTier3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_abilities_alchemy_tier_3",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitiesAlchemyTier3Procedure.java"
+        ]
+      },
+      "path": "~/Character Abilities/Alchemy"
+    },
+    {
+      "name": "CharacterAbilitiesSignsTier2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_abilities_signs_tier_2",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitiesSignsTier2Procedure.java"
+        ]
+      },
+      "path": "~/Character Abilities/Signs"
+    },
+    {
+      "name": "CharacterAbilitiesSignsTier3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_abilities_signs_tier_3",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitiesSignsTier3Procedure.java"
+        ]
+      },
+      "path": "~/Character Abilities/Signs"
     }
   ],
   "variable_elements": [
@@ -5751,7 +5871,7 @@
       "value": "false"
     },
     {
-      "name": "witchercraftAbilitiesExploadingShild",
+      "name": "witchercraftAbilitiesExploadingShield",
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
@@ -5775,13 +5895,13 @@
       "value": "false"
     },
     {
-      "name": "witchercraftAbilitiesAxiiInntensiy",
+      "name": "witchercraftAbilitiesAxiiIntensity",
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
     },
     {
-      "name": "witchercraftAbilitiesDominaion",
+      "name": "witchercraftAbilitiesDomination",
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
@@ -5916,6 +6036,24 @@
       "name": "witchercraftIncreasedDamage",
       "type": "number",
       "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "witchercraftAbilitiesCombatSkillPointsUsed",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "witchercraftAbilitiesAlchemySkillPointsUsed",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "witchercraftAbilitiesSignsSkillPointsUsed",
+      "type": "number",
+      "scope": "player_persistent",
       "value": "0"
     }
   ],
@@ -6824,5 +6962,5 @@
     "credits": "hm",
     "modElementsPackage": "net.redboltmedia.witchercraft"
   },
-  "mcreatorVersion": 202500344519
+  "mcreatorVersion": 202500345720
 }
