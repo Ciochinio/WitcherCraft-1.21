@@ -5470,13 +5470,12 @@
       "path": "~/Character Stats/Stats/VariableStats/AdditionalDamage"
     },
     {
-      "name": "CharacterGuiAdditionalDamage",
+      "name": "IncreasedDamage",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "character_gui_additional_damage",
+      "registry_name": "increased_damage",
       "metadata": {
-        "return_type": "string",
         "dependencies": [
           {
             "name": "entity",
@@ -5484,10 +5483,10 @@
           }
         ],
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterGuiAdditionalDamageProcedure.java"
+          "src/main/java/net/redboltmedia/witchercraft/procedures/IncreasedDamageProcedure.java"
         ]
       },
-      "path": "~/Character Stats/Stats/Gui"
+      "path": "~/Character Stats/Stats/VariableStats/AdditionalDamage"
     },
     {
       "name": "AdditionalDamage",
@@ -5509,11 +5508,11 @@
       "path": "~/Character Stats/Stats/VariableStats/AdditionalDamage"
     },
     {
-      "name": "CharacterGuiAdditionalDamageFlat",
+      "name": "CharacterGuIncreasedDamage",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "character_gui_additional_damage_flat",
+      "registry_name": "character_gu_increased_damage",
       "metadata": {
         "return_type": "string",
         "dependencies": [
@@ -5523,18 +5522,19 @@
           }
         ],
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterGuiAdditionalDamageFlatProcedure.java"
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterGuIncreasedDamageProcedure.java"
         ]
       },
       "path": "~/Character Stats/Stats/Gui"
     },
     {
-      "name": "AdditionalDamageFlat",
+      "name": "CharacterGuiAdditionalDamage",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "additional_damage_flat",
+      "registry_name": "character_gui_additional_damage",
       "metadata": {
+        "return_type": "string",
         "dependencies": [
           {
             "name": "entity",
@@ -5542,10 +5542,10 @@
           }
         ],
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/procedures/AdditionalDamageFlatProcedure.java"
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterGuiAdditionalDamageProcedure.java"
         ]
       },
-      "path": "~/Character Stats/Stats/VariableStats/AdditionalDamage"
+      "path": "~/Character Stats/Stats/Gui"
     }
   ],
   "variable_elements": [
@@ -6226,8 +6226,8 @@
       "effect.witchercraft.toxicity_overdose_tick": "Toxicity Overdose",
       "effect.witchercraft.passive_health_regen_tick": "Passive Health Regen Tick",
       "effect.witchercraft.passive_stamina_regen_tick": "Passive Stamina Regen",
-      "gui.witchercraft.player_stats_overlay.label_additionaldamage": "AdditionalDamage(%)",
-      "gui.witchercraft.player_stats_overlay.label_additionaldamgeflat": "AdditionalDamgeFlat"
+      "gui.witchercraft.player_stats_overlay.label_additionaldamage": "IncreasedDamage(%)",
+      "gui.witchercraft.player_stats_overlay.label_additionaldamgeflat": "AdditionalDamge"
     }
   },
   "metadata": {

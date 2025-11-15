@@ -72,11 +72,11 @@ public class PlayerStatsOverlayOverlay {
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.witchercraft.player_stats_overlay.label_additionaldamage"), w / 2 + -207, h / 2 + -22, -1, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					CharacterGuiAdditionalDamageProcedure.execute(entity), w / 2 + -108, h / 2 + -22, -1, false);
+					CharacterGuIncreasedDamageProcedure.execute(entity), w / 2 + -108, h / 2 + -22, -1, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.witchercraft.player_stats_overlay.label_additionaldamgeflat"), w / 2 + -207, h / 2 + -31, -1, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					CharacterGuiAdditionalDamageFlatProcedure.execute(entity), w / 2 + -108, h / 2 + -31, -1, false);
+					CharacterGuiAdditionalDamageProcedure.execute(entity), w / 2 + -108, h / 2 + -31, -1, false);
 		}
 	}
 }

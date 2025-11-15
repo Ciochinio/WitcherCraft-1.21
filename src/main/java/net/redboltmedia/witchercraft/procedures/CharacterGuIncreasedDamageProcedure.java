@@ -12,7 +12,7 @@ import net.minecraft.world.entity.Entity;
 import javax.annotation.Nullable;
 
 @EventBusSubscriber
-public class CharacterGuiAdditionalDamageFlatProcedure {
+public class CharacterGuIncreasedDamageProcedure {
 	@SubscribeEvent
 	public static void onPlayerTick(PlayerTickEvent.Post event) {
 		execute(event, event.getEntity());
@@ -25,6 +25,6 @@ public class CharacterGuiAdditionalDamageFlatProcedure {
 	private static String execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return "";
-		return new java.text.DecimalFormat("##.##").format(entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAdditionalDamage);
+		return new java.text.DecimalFormat("##").format(entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftIncreasedDamage);
 	}
 }

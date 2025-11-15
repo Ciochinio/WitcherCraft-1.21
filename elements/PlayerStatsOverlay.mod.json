@@ -324,7 +324,7 @@
         "data": {
           "name": "label_additionaldamage",
           "text": {
-            "fixedValue": "AdditionalDamage(%)"
+            "fixedValue": "IncreasedDamage(%)"
           },
           "color": {
             "value": -1,
@@ -342,7 +342,7 @@
           "name": "label_proc_character_gui_additional_da",
           "text": {
             "fixedValue": "",
-            "name": "CharacterGuiAdditionalDamage"
+            "name": "CharacterGuIncreasedDamage"
           },
           "color": {
             "value": -1,
@@ -359,7 +359,7 @@
         "data": {
           "name": "label_additionaldamgeflat",
           "text": {
-            "fixedValue": "AdditionalDamgeFlat"
+            "fixedValue": "AdditionalDamge"
           },
           "color": {
             "value": -1,
@@ -377,7 +377,7 @@
           "name": "label_proc_character_gui_additional_da1",
           "text": {
             "fixedValue": "",
-            "name": "CharacterGuiAdditionalDamageFlat"
+            "name": "CharacterGuiAdditionalDamage"
           },
           "color": {
             "value": -1,

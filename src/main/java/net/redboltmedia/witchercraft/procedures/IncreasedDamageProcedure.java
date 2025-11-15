@@ -12,7 +12,7 @@ import net.minecraft.world.entity.Entity;
 import javax.annotation.Nullable;
 
 @EventBusSubscriber
-public class AdditionalDamageFlatProcedure {
+public class IncreasedDamageProcedure {
 	@SubscribeEvent
 	public static void onPlayerTick(PlayerTickEvent.Post event) {
 		execute(event, event.getEntity());
@@ -25,13 +25,16 @@ public class AdditionalDamageFlatProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		double sumAdditionalDamage = 0;
-		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesMuscleMemory == true) {
-			sumAdditionalDamage = sumAdditionalDamage + 3;
+		double sumIncreasedDamage = 0;
+		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesStrengthTraining == true) {
+			sumIncreasedDamage = sumIncreasedDamage + 10;
+		}
+		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesSunderArmor == true) {
+			sumIncreasedDamage = sumIncreasedDamage + 20;
 		}
 		{
 			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-			_vars.witchercraftAdditionalDamage = sumAdditionalDamage;
+			_vars.witchercraftIncreasedDamage = sumIncreasedDamage;
 			_vars.markSyncDirty();
 		}
 	}
