@@ -77,7 +77,7 @@ public record CharactersAbilietesGeneralGuiButtonMessage(int buttonID, int x, in
 		}
 		if (buttonID == 7) {
 
-			GourmentEffectProcedure.execute(entity);
+			GourmetEffectProcedure.execute(entity);
 		}
 		if (buttonID == 8) {
 

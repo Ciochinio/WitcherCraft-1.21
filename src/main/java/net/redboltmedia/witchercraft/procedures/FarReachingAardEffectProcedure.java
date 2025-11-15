@@ -11,7 +11,7 @@ public class FarReachingAardEffectProcedure {
 		if (CharacterAbilitiesExperienceCheckProcedure.execute(entity)) {
 			{
 				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-				_vars.witchercraftAbilitiesFarRReachingAard = true;
+				_vars.witchercraftAbilitiesFarReachingAard = true;
 				_vars.markSyncDirty();
 			}
 			CharacterAbilitiesExperienceRemoveProcedure.execute(entity);

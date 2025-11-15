@@ -95,10 +95,10 @@
           "image": "gourment.png",
           "hoveredImage": "",
           "onClick": {
-            "name": "GourmentEffect"
+            "name": "GourmetEffect"
           },
           "displayCondition": {
-            "name": "GourmentShowIcon"
+            "name": "GourmetShowIcon"
           },
           "x": 249,
           "y": 62,

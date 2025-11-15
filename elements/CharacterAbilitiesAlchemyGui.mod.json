@@ -152,10 +152,10 @@
           "image": "efficency.png",
           "hoveredImage": "",
           "onClick": {
-            "name": "EfficencyEffect"
+            "name": "EfficiencyEffect"
           },
           "displayCondition": {
-            "name": "EfficencyShow"
+            "name": "EfficiencyShow"
           },
           "x": 258,
           "y": 107,

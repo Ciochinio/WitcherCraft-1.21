@@ -10,7 +10,7 @@ public class DevClearProcedure {
 			return;
 		{
 			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-			_vars.witchercraftAbiltiesGourment = false;
+			_vars.witchercraftAbiltiesGourmet = false;
 			_vars.witchercraftAbilitiesSurvivalInstinct = false;
 			_vars.witchercraftAbilitiesSunAndStars = false;
 			_vars.witchercraftAbilitiesCatSchool = false;
@@ -23,14 +23,14 @@ public class DevClearProcedure {
 			_vars.witchercraftAbilitiesProtectiveCoating = false;
 			_vars.witchercraftAbilitiesHunterInstincts = false;
 			_vars.witchercraftAbilitiesPyrotechnics = false;
-			_vars.witchercraftAbilitiesEfficency = false;
+			_vars.witchercraftAbilitiesEfficiency = false;
 			_vars.witchercraftAbilitiesClusterBombs = false;
-			_vars.witchercraftAbilitiesFarRReachingAard = false;
+			_vars.witchercraftAbilitiesFarReachingAard = false;
 			_vars.witchercraftAbilitiesAardIntensity = false;
 			_vars.witchercraftAbilitiesShockWave = false;
 			_vars.witchercraftAbilitiesFireStream = false;
 			_vars.witchercraftAbilitiesIgniIntensity = false;
-			_vars.witchercraftAbilitiesPyromaic = false;
+			_vars.witchercraftAbilitiesPyromaniac = false;
 			_vars.witchercraftAbilitiesSustainedGlyphs = false;
 			_vars.witchercraftAbilitiesYrdenIntensity = false;
 			_vars.witchercraftAbilitiesMagicTrap = false;

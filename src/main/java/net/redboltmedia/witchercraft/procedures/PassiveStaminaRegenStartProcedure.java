@@ -18,7 +18,7 @@ public class PassiveStaminaRegenStartProcedure {
 		double sumPassiveHealthRegeneration = 0;
 		double sumPassiveStaminaRegeneration = 0;
 		sumPassiveStaminaRegeneration = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftBaseStaminaRegeneration;
-		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbiltiesGourment == true) {
+		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbiltiesGourmet == true) {
 			sumPassiveStaminaRegeneration = sumPassiveStaminaRegeneration + 1;
 		}
 		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesSunAndStars == true && !(world instanceof Level _lvl0 && _lvl0.isBrightOutside())) {

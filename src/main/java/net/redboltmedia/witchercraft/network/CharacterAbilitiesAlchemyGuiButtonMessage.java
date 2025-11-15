@@ -97,7 +97,7 @@ public record CharacterAbilitiesAlchemyGuiButtonMessage(int buttonID, int x, int
 		}
 		if (buttonID == 12) {
 
-			EfficencyEffectProcedure.execute(entity);
+			EfficiencyEffectProcedure.execute(entity);
 		}
 		if (buttonID == 13) {
 

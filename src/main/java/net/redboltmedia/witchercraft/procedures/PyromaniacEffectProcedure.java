@@ -14,7 +14,7 @@ public class PyromaniacEffectProcedure {
 					CharacterAbilitiesExperienceRemoveProcedure.execute(entity);
 					{
 						WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-						_vars.witchercraftAbilitiesPyromaic = true;
+						_vars.witchercraftAbilitiesPyromaniac = true;
 						_vars.markSyncDirty();
 					}
 				}

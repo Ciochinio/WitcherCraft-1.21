@@ -309,7 +309,7 @@ public class CharacterAbilitiesAlchemyGuiScreen extends AbstractContainerScreen<
 				new WidgetSprites(ResourceLocation.parse("witchercraft:textures/screens/efficency.png"), ResourceLocation.parse("witchercraft:textures/screens/efficency.png")), e -> {
 					int x = CharacterAbilitiesAlchemyGuiScreen.this.x;
 					int y = CharacterAbilitiesAlchemyGuiScreen.this.y;
-					if (EfficencyShowProcedure.execute(entity)) {
+					if (EfficiencyShowProcedure.execute(entity)) {
 						ClientPacketDistributor.sendToServer(new CharacterAbilitiesAlchemyGuiButtonMessage(12, x, y, z));
 						CharacterAbilitiesAlchemyGuiButtonMessage.handleButtonAction(entity, 12, x, y, z);
 					}
@@ -318,7 +318,7 @@ public class CharacterAbilitiesAlchemyGuiScreen extends AbstractContainerScreen<
 			public void renderWidget(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 				int x = CharacterAbilitiesAlchemyGuiScreen.this.x;
 				int y = CharacterAbilitiesAlchemyGuiScreen.this.y;
-				if (EfficencyShowProcedure.execute(entity))
+				if (EfficiencyShowProcedure.execute(entity))
 					guiGraphics.blit(RenderPipelines.GUI_TEXTURED, sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
 		};

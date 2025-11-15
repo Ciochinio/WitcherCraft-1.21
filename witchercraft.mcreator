@@ -2677,26 +2677,6 @@
       "path": "~/AdminComands"
     },
     {
-      "name": "GourmentShowIcon",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gourment_show_icon",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/redboltmedia/witchercraft/procedures/GourmentShowIconProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Character Abilities/General/GOURMET"
-    },
-    {
       "name": "SurvivalInstinctShow",
       "type": "procedure",
       "compiles": true,
@@ -3099,25 +3079,6 @@
       "path": "~/Character Abilities/Alchemy/Poisoned Blades"
     },
     {
-      "name": "EfficencyEffect",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "efficency_effect",
-      "metadata": {
-        "files": [
-          "src/main/java/net/redboltmedia/witchercraft/procedures/EfficencyEffectProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Character Abilities/Alchemy/Efficency"
-    },
-    {
       "name": "RefreshmentShow",
       "type": "procedure",
       "compiles": true,
@@ -3256,26 +3217,6 @@
         ]
       },
       "path": "~/Character Abilities/Alchemy/Pyrotechnics"
-    },
-    {
-      "name": "EfficencyShow",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "efficency_show",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/redboltmedia/witchercraft/procedures/EfficencyShowProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Character Abilities/Alchemy/Efficency"
     },
     {
       "name": "ClusterBombsShow",
@@ -3956,7 +3897,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/FareachingAard"
+      "path": "~/Character Abilities/Signs/FarReachingAard"
     },
     {
       "name": "AardIntensityEffect",
@@ -4051,7 +3992,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/pyromaniac"
+      "path": "~/Character Abilities/Signs/Pyromaniac"
     },
     {
       "name": "SustainedGlyphsEffect",
@@ -4184,7 +4125,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/delusion"
+      "path": "~/Character Abilities/Signs/Delusion"
     },
     {
       "name": "AxiiIntensityEffect",
@@ -4222,7 +4163,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/domintion"
+      "path": "~/Character Abilities/Signs/Domination"
     },
     {
       "name": "FarReachingAardShow",
@@ -4242,7 +4183,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/FareachingAard"
+      "path": "~/Character Abilities/Signs/FarReachingAard"
     },
     {
       "name": "AardIntensityShow",
@@ -4342,7 +4283,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/pyromaniac"
+      "path": "~/Character Abilities/Signs/Pyromaniac"
     },
     {
       "name": "SustainedGlyphsShow",
@@ -4482,7 +4423,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/delusion"
+      "path": "~/Character Abilities/Signs/Delusion"
     },
     {
       "name": "AxiiIntensityShow",
@@ -4522,7 +4463,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/domintion"
+      "path": "~/Character Abilities/Signs/Domination"
     },
     {
       "name": "CharaterLevel",
@@ -4642,25 +4583,6 @@
         ]
       },
       "path": "~/Character Abilities/CharacterAbilitiesExperience"
-    },
-    {
-      "name": "GourmentEffect",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gourment_effect",
-      "metadata": {
-        "files": [
-          "src/main/java/net/redboltmedia/witchercraft/procedures/GourmentEffectProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Character Abilities/General/GOURMET"
     },
     {
       "name": "CripplingShotEffect",
@@ -5507,6 +5429,84 @@
         ]
       },
       "path": "~/Character Abilities"
+    },
+    {
+      "name": "GourmetShowIcon",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gourmet_show_icon",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/GourmetShowIconProcedure.java"
+        ]
+      },
+      "path": "~/Character Abilities/General/GOURMET"
+    },
+    {
+      "name": "GourmetEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gourmet_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/GourmetEffectProcedure.java"
+        ]
+      },
+      "path": "~/Character Abilities/General/GOURMET"
+    },
+    {
+      "name": "EfficiencyEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "efficiency_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/EfficiencyEffectProcedure.java"
+        ]
+      },
+      "path": "~/Character Abilities/Alchemy/Efficency"
+    },
+    {
+      "name": "EfficiencyShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "efficiency_show",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/EfficiencyShowProcedure.java"
+        ]
+      },
+      "path": "~/Character Abilities/Alchemy/Efficency"
     }
   ],
   "variable_elements": [
@@ -5607,7 +5607,7 @@
       "value": "0.0"
     },
     {
-      "name": "witchercraftAbiltiesGourment",
+      "name": "witchercraftAbiltiesGourmet",
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
@@ -5685,7 +5685,7 @@
       "value": "false"
     },
     {
-      "name": "witchercraftAbilitiesEfficency",
+      "name": "witchercraftAbilitiesEfficiency",
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
@@ -5697,7 +5697,7 @@
       "value": "false"
     },
     {
-      "name": "witchercraftAbilitiesFarRReachingAard",
+      "name": "witchercraftAbilitiesFarReachingAard",
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
@@ -5727,7 +5727,7 @@
       "value": "false"
     },
     {
-      "name": "witchercraftAbilitiesPyromaic",
+      "name": "witchercraftAbilitiesPyromaniac",
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
@@ -6735,7 +6735,7 @@
             "name": "Signs",
             "children": [
               {
-                "name": "FareachingAard",
+                "name": "FarReachingAard",
                 "children": []
               },
               {
@@ -6755,7 +6755,7 @@
                 "children": []
               },
               {
-                "name": "pyromaniac",
+                "name": "Pyromaniac",
                 "children": []
               },
               {
@@ -6783,7 +6783,7 @@
                 "children": []
               },
               {
-                "name": "delusion",
+                "name": "Delusion",
                 "children": []
               },
               {
@@ -6791,7 +6791,7 @@
                 "children": []
               },
               {
-                "name": "domintion",
+                "name": "Domination",
                 "children": []
               }
             ]

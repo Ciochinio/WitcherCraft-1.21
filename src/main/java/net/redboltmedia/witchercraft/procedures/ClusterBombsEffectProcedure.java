@@ -8,7 +8,7 @@ public class ClusterBombsEffectProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesEfficency) {
+		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesEfficiency) {
 			if (CharacterAbilitiesExperienceCheckProcedure.execute(entity)) {
 				if (CharacterAbilitiesTier3Procedure.execute(entity)) {
 					CharacterAbilitiesExperienceRemoveProcedure.execute(entity);

@@ -201,7 +201,7 @@ public class CharactersAbilietesGeneralGuiScreen extends AbstractContainerScreen
 				new WidgetSprites(ResourceLocation.parse("witchercraft:textures/screens/gourment.png"), ResourceLocation.parse("witchercraft:textures/screens/gourment.png")), e -> {
 					int x = CharactersAbilietesGeneralGuiScreen.this.x;
 					int y = CharactersAbilietesGeneralGuiScreen.this.y;
-					if (GourmentShowIconProcedure.execute(entity)) {
+					if (GourmetShowIconProcedure.execute(entity)) {
 						ClientPacketDistributor.sendToServer(new CharactersAbilietesGeneralGuiButtonMessage(7, x, y, z));
 						CharactersAbilietesGeneralGuiButtonMessage.handleButtonAction(entity, 7, x, y, z);
 					}
@@ -210,7 +210,7 @@ public class CharactersAbilietesGeneralGuiScreen extends AbstractContainerScreen
 			public void renderWidget(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 				int x = CharactersAbilietesGeneralGuiScreen.this.x;
 				int y = CharactersAbilietesGeneralGuiScreen.this.y;
-				if (GourmentShowIconProcedure.execute(entity))
+				if (GourmetShowIconProcedure.execute(entity))
 					guiGraphics.blit(RenderPipelines.GUI_TEXTURED, sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
 		};

@@ -4,7 +4,7 @@ import net.redboltmedia.witchercraft.network.WitchercraftModVariables;
 
 import net.minecraft.world.entity.Entity;
 
-public class EfficencyEffectProcedure {
+public class EfficiencyEffectProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
@@ -14,7 +14,7 @@ public class EfficencyEffectProcedure {
 					CharacterAbilitiesExperienceRemoveProcedure.execute(entity);
 					{
 						WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-						_vars.witchercraftAbilitiesEfficency = true;
+						_vars.witchercraftAbilitiesEfficiency = true;
 						_vars.markSyncDirty();
 					}
 				}
