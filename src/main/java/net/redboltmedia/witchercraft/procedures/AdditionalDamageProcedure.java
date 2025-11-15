@@ -25,13 +25,16 @@ public class AdditionalDamageProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		double sumAdditionalDamage = 0;
+		double sumIncreasedDamage = 0;
 		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesStrengthTraining == true) {
-			sumAdditionalDamage = sumAdditionalDamage + 10;
+			sumIncreasedDamage = sumIncreasedDamage + 10;
+		}
+		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesSunderArmor == true) {
+			sumIncreasedDamage = sumIncreasedDamage + 20;
 		}
 		{
 			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-			_vars.witchercraftAdditionalDamage = sumAdditionalDamage;
+			_vars.witchercraftIncreasedDamage = sumIncreasedDamage;
 			_vars.markSyncDirty();
 		}
 	}

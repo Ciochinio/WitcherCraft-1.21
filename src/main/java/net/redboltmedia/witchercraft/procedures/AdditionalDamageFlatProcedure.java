@@ -25,13 +25,13 @@ public class AdditionalDamageFlatProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		double sumAdditionalDamageFlat = 0;
+		double sumAdditionalDamage = 0;
 		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesMuscleMemory == true) {
-			sumAdditionalDamageFlat = sumAdditionalDamageFlat + 3;
+			sumAdditionalDamage = sumAdditionalDamage + 3;
 		}
 		{
 			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-			_vars.witchercraftAdditionalDamageFlat = sumAdditionalDamageFlat;
+			_vars.witchercraftAdditionalDamage = sumAdditionalDamage;
 			_vars.markSyncDirty();
 		}
 	}

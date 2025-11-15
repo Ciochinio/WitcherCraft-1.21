@@ -37,6 +37,20 @@ public class CritChanceProcedure {
 			_vars.markSyncDirty();
 		}
 		critChanceRoll = Mth.nextInt(RandomSource.create(), 1, 100);
+		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesPreciseBlows == true) {
+			{
+				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
+				_vars.sumCritChance = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumCritChance + 12;
+				_vars.markSyncDirty();
+			}
+		}
+		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesCrushingBlows == true) {
+			{
+				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
+				_vars.sumCritChance = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumCritChance + 8;
+				_vars.markSyncDirty();
+			}
+		}
 		if (entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(WitchercraftModMobEffects.BLIZZARD_EFFECT)) {
 			{
 				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);

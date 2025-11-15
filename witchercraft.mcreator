@@ -1636,6 +1636,10 @@
         ],
         "dependencies": [
           {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
             "name": "entity",
             "type": "entity"
           },
@@ -5439,6 +5443,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
             "name": "entity",
             "type": "entity"
           },
@@ -5944,7 +5952,7 @@
       "value": "0.0"
     },
     {
-      "name": "witchercraftAdditionalDamageFlat",
+      "name": "witchercraftIncreasedDamage",
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"

@@ -20,7 +20,7 @@ public class WitchercraftPlayerBaseStatsProcedure {
 			_vars.witchercraftBasePassiveHealthRegeneration = 0;
 			_vars.witchercraftBaseStaminaRegeneration = 0;
 			_vars.witchercraftAdditionalDamage = 0;
-			_vars.witchercraftAdditionalDamageFlat = 0;
+			_vars.witchercraftIncreasedDamage = 0;
 			_vars.witchercraftToxicity = 0;
 			_vars.ToxicityOverdoseThreshold = 70;
 			_vars.markSyncDirty();
