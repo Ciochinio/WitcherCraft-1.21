@@ -4525,45 +4525,6 @@
       "path": "~/Character Abilities/Signs/domintion"
     },
     {
-      "name": "CharacterAbilitesXpCheck",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "character_abilites_xp_check",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitesXpCheckProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Character Abilities"
-    },
-    {
-      "name": "CharacterAbilitesXpRemove",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "character_abilites_xp_remove",
-      "metadata": {
-        "files": [
-          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitesXpRemoveProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Character Abilities"
-    },
-    {
       "name": "CharaterLevel",
       "type": "procedure",
       "compiles": true,
@@ -4738,49 +4699,6 @@
         ]
       },
       "path": "~/Character Abilities/General/SURVIVAL INSINCT"
-    },
-    {
-      "name": "CharacterAbilitesSkillPoints",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "character_abilites_skill_points",
-      "metadata": {
-        "return_type": "string",
-        "files": [
-          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitesSkillPointsProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Character Abilities"
-    },
-    {
-      "name": "CharacterAbilitesExpirence",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "character_abilites_expirence",
-      "metadata": {
-        "files": [
-          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitesExpirenceProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "amount",
-            "type": "number"
-          }
-        ]
-      },
-      "path": "~/Character Abilities"
     },
     {
       "name": "Expfix",
@@ -5546,6 +5464,49 @@
         ]
       },
       "path": "~/Character Stats/Stats/Gui"
+    },
+    {
+      "name": "CharacterExperienceCalculator",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_experience_calculator",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterExperienceCalculatorProcedure.java"
+        ]
+      },
+      "path": "~/Character Abilities"
+    },
+    {
+      "name": "CharacterAbilitesSkillPointsAvailable",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_abilites_skill_points_available",
+      "metadata": {
+        "return_type": "string",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitesSkillPointsAvailableProcedure.java"
+        ]
+      },
+      "path": "~/Character Abilities"
     }
   ],
   "variable_elements": [

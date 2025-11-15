@@ -164,7 +164,7 @@ public class CharacterAbilitiesSignsGuiScreen extends AbstractContainerScreen<Ch
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, CharacterAbilitesSkillPointsProcedure.execute(entity), 202, 16, -12829636, false);
+		guiGraphics.drawString(this.font, CharacterAbilitesSkillPointsAvailableProcedure.execute(entity), 202, 16, -12829636, false);
 	}
 
 	@Override

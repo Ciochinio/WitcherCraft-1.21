@@ -9,13 +9,13 @@ public class DominationEffectProcedure {
 		if (entity == null)
 			return;
 		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesAxiiInntensiy) {
-			if (CharacterAbilitesXpCheckProcedure.execute(entity)) {
+			if (CharacterAbilitiesExperienceCheckProcedure.execute(entity)) {
 				{
 					WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
 					_vars.witchercraftAbilitiesDominaion = true;
 					_vars.markSyncDirty();
 				}
-				CharacterAbilitesXpRemoveProcedure.execute(entity);
+				CharacterAbilitiesExperienceRemoveProcedure.execute(entity);
 			}
 		}
 	}

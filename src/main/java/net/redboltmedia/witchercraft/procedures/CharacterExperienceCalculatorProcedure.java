@@ -14,7 +14,7 @@ import net.minecraft.network.chat.Component;
 import javax.annotation.Nullable;
 
 @EventBusSubscriber
-public class CharacterAbilitesExpirenceProcedure {
+public class CharacterExperienceCalculatorProcedure {
 	@SubscribeEvent
 	public static void onPlayerXPChange(PlayerXpEvent.XpChange event) {
 		if (event.getEntity() != null) {

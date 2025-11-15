@@ -721,7 +721,7 @@
           "name": "label_proc_character_abilites_skill_po",
           "text": {
             "fixedValue": "",
-            "name": "CharacterAbilitesSkillPoints"
+            "name": "CharacterAbilitesSkillPointsAvailable"
           },
           "color": {
             "value": -12829636,
