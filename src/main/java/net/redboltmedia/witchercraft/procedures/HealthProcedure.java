@@ -42,9 +42,21 @@ public class HealthProcedure {
 				_entity.getAttribute(Attributes.MAX_HEALTH).removeModifier(ResourceLocation.parse("witchercraft:survivalinstinct"));
 			}
 		}
+		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesDefence == true) {
+			if (entity instanceof LivingEntity _entity) {
+				AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("witchercraft:defence"), 4, AttributeModifier.Operation.ADD_VALUE);
+				if (!_entity.getAttribute(Attributes.MAX_HEALTH).hasModifier(modifier.id())) {
+					_entity.getAttribute(Attributes.MAX_HEALTH).addTransientModifier(modifier);
+				}
+			}
+		} else {
+			if (entity instanceof LivingEntity _entity) {
+				_entity.getAttribute(Attributes.MAX_HEALTH).removeModifier(ResourceLocation.parse("witchercraft:defence"));
+			}
+		}
 		{
 			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-			_vars.witchercraftHealth = entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1;
+			_vars.witchercraftHealth = Math.round(entity instanceof LivingEntity _livingEntity4 && _livingEntity4.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity4.getAttribute(Attributes.MAX_HEALTH).getValue() : 0);
 			_vars.markSyncDirty();
 		}
 	}

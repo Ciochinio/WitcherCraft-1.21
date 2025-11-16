@@ -49,6 +49,7 @@ public class WitchercraftModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> PASSIVE_STAMINA_REGEN_TICK = REGISTRY.register("passive_stamina_regen_tick", () -> new PassiveStaminaRegenTickMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> BLEED = REGISTRY.register("bleed", () -> new BleedMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> BLEED_COOLDOWN = REGISTRY.register("bleed_cooldown", () -> new BleedCooldownMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> ENEMY_NEARBY = REGISTRY.register("enemy_nearby", () -> new EnemyNearbyMobEffect());
 
 	@SubscribeEvent
 	public static void onEffectRemoved(MobEffectEvent.Remove event) {

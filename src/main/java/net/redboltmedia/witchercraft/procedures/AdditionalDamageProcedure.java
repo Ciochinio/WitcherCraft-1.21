@@ -29,6 +29,9 @@ public class AdditionalDamageProcedure {
 		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesMuscleMemory == true) {
 			sumAdditionalDamage = sumAdditionalDamage + 3;
 		}
+		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftEnemyNearby == true && entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftEnemyNearby == true) {
+			sumAdditionalDamage = sumAdditionalDamage + 5;
+		}
 		{
 			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
 			_vars.witchercraftAdditionalDamage = sumAdditionalDamage;

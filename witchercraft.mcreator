@@ -5756,6 +5756,52 @@
         ]
       },
       "path": "~/StatusEffects/Bleed"
+    },
+    {
+      "name": "EnemyNearby",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enemy_nearby",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/EnemyNearbyMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "EnemyNearbyDetection",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enemy_nearby_detection",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/EnemyNearbyDetectionProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -6184,6 +6230,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "witchercraftEnemyNearby",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
     }
   ],
   "sound_elements": [],
@@ -6457,7 +6509,8 @@
       "gui.witchercraft.player_stats_overlay.label_additionaldamage": "IncreasedDamage(%)",
       "gui.witchercraft.player_stats_overlay.label_additionaldamgeflat": "AdditionalDamge",
       "effect.witchercraft.bleed": "Bleed",
-      "effect.witchercraft.bleed_cooldown": "Bleed Cooldown"
+      "effect.witchercraft.bleed_cooldown": "Bleed Cooldown",
+      "effect.witchercraft.enemy_nearby": "Enemy Nearby"
     }
   },
   "metadata": {

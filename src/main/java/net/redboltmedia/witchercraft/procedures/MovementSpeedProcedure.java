@@ -1,18 +1,17 @@
 package net.redboltmedia.witchercraft.procedures;
 
 import net.redboltmedia.witchercraft.network.WitchercraftModVariables;
-import net.redboltmedia.witchercraft.init.WitchercraftModMobEffects;
 
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.commands.CommandSourceStack;
-import net.minecraft.commands.CommandSource;
+import net.minecraft.resources.ResourceLocation;
 
 import javax.annotation.Nullable;
 
@@ -31,21 +30,22 @@ public class MovementSpeedProcedure {
 		if (entity == null)
 			return;
 		double sumMovementSpeed = 0;
-		sumMovementSpeed = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftBaseMovementSpeed;
-		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(WitchercraftModMobEffects.BLIZZARD_EFFECT)) {
-			sumMovementSpeed = sumMovementSpeed + 15;
+		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesFleetFooted == true) {
+			if (entity instanceof LivingEntity _entity) {
+				AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("witchercraft:fleetfooted"), 0.15, AttributeModifier.Operation.ADD_MULTIPLIED_BASE);
+				if (!_entity.getAttribute(Attributes.MOVEMENT_SPEED).hasModifier(modifier.id())) {
+					_entity.getAttribute(Attributes.MOVEMENT_SPEED).addTransientModifier(modifier);
+				}
+			}
+		} else {
+			if (entity instanceof LivingEntity _entity) {
+				_entity.getAttribute(Attributes.MOVEMENT_SPEED).removeModifier(ResourceLocation.parse("witchercraft:fleetfooted"));
+			}
 		}
 		{
 			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-			_vars.witchercraftMovementSpeed = sumMovementSpeed;
+			_vars.witchercraftMovementSpeed = entity instanceof LivingEntity _livingEntity2 && _livingEntity2.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity2.getAttribute(Attributes.MOVEMENT_SPEED).getValue() : 0;
 			_vars.markSyncDirty();
-		}
-		{
-			Entity _ent = entity;
-			if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-				_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-						_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), ("/attribute @s minecraft:generic.movement_speed base set  " + (0.1 + sumMovementSpeed * 0.001)));
-			}
 		}
 	}
 }
