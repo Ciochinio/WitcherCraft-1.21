@@ -5684,6 +5684,78 @@
         ]
       },
       "path": "~/Character Abilities/Combat"
+    },
+    {
+      "name": "Bleed",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bleed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/BleedMobEffect.java"
+        ]
+      },
+      "path": "~/StatusEffects/Bleed"
+    },
+    {
+      "name": "BleedEffectStart",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bleed_effect_start",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/BleedEffectStartProcedure.java"
+        ]
+      },
+      "path": "~/StatusEffects/Bleed"
+    },
+    {
+      "name": "BleedCooldown",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bleed_cooldown",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/BleedCooldownMobEffect.java"
+        ]
+      },
+      "path": "~/StatusEffects/Bleed"
+    },
+    {
+      "name": "BleedHit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bleed_hit",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/BleedHitProcedure.java"
+        ]
+      },
+      "path": "~/StatusEffects/Bleed"
     }
   ],
   "variable_elements": [
@@ -6383,7 +6455,9 @@
       "effect.witchercraft.passive_health_regen_tick": "Passive Health Regen Tick",
       "effect.witchercraft.passive_stamina_regen_tick": "Passive Stamina Regen",
       "gui.witchercraft.player_stats_overlay.label_additionaldamage": "IncreasedDamage(%)",
-      "gui.witchercraft.player_stats_overlay.label_additionaldamgeflat": "AdditionalDamge"
+      "gui.witchercraft.player_stats_overlay.label_additionaldamgeflat": "AdditionalDamge",
+      "effect.witchercraft.bleed": "Bleed",
+      "effect.witchercraft.bleed_cooldown": "Bleed Cooldown"
     }
   },
   "metadata": {
@@ -7000,6 +7074,15 @@
       {
         "name": "AdminComands",
         "children": []
+      },
+      {
+        "name": "StatusEffects",
+        "children": [
+          {
+            "name": "Bleed",
+            "children": []
+          }
+        ]
       }
     ]
   },

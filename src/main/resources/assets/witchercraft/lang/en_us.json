@@ -230,5 +230,7 @@
   "effect.witchercraft.passive_health_regen_tick": "Passive Health Regen Tick",
   "effect.witchercraft.passive_stamina_regen_tick": "Passive Stamina Regen",
   "gui.witchercraft.player_stats_overlay.label_additionaldamage": "IncreasedDamage(%)",
-  "gui.witchercraft.player_stats_overlay.label_additionaldamgeflat": "AdditionalDamge"
+  "gui.witchercraft.player_stats_overlay.label_additionaldamgeflat": "AdditionalDamge",
+  "effect.witchercraft.bleed": "Bleed",
+  "effect.witchercraft.bleed_cooldown": "Bleed Cooldown"
 }

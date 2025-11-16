@@ -2,8 +2,8 @@
   "_fv": 79,
   "_type": "potioneffect",
   "definition": {
-    "effectName": "Passive Stamina Regen",
-    "icon": "passivestaminaregen",
+    "effectName": "Bleed",
+    "icon": "bleed",
     "color": {
       "value": -1,
       "falpha": 0.0
@@ -17,8 +17,8 @@
     "renderStatusInHUD": true,
     "isCuredbyHoney": false,
     "modifiers": [],
-    "onExpired": {
-      "name": "PassiveStaminaRegenStart"
+    "onStarted": {
+      "name": "BleedEffectStart"
     }
   }
 }
