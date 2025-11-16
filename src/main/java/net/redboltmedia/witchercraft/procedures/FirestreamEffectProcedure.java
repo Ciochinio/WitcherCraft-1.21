@@ -14,7 +14,7 @@ public class FirestreamEffectProcedure {
 				_vars.witchercraftAbilitiesFireStream = true;
 				_vars.markSyncDirty();
 			}
-			CharacterAbilitiesSkillPointUsedProcedure.execute(entity);
+			CharacterAbilitiesSignsSkillPointsUsedProcedure.execute(entity);
 		}
 	}
 }

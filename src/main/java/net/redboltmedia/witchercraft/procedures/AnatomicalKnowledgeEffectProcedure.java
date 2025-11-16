@@ -15,7 +15,7 @@ public class AnatomicalKnowledgeEffectProcedure {
 					_vars.witchercraftAbilitiesAnatomicalKnowledge = true;
 					_vars.markSyncDirty();
 				}
-				CharacterAbilitiesSkillPointUsedProcedure.execute(entity);
+				CharacterAbilitiesCombatSkillPointUsedProcedure.execute(entity);
 			}
 		}
 	}

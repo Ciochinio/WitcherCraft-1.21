@@ -15,7 +15,7 @@ public class YrdenIntensityEffectProcedure {
 					_vars.witchercraftAbilitiesYrdenIntensity = true;
 					_vars.markSyncDirty();
 				}
-				CharacterAbilitiesSkillPointUsedProcedure.execute(entity);
+				CharacterAbilitiesSignsSkillPointsUsedProcedure.execute(entity);
 			}
 		}
 	}

@@ -14,7 +14,7 @@ public class PyrotechnicsEffectProcedure {
 				_vars.witchercraftAbilitiesPyrotechnics = true;
 				_vars.markSyncDirty();
 			}
-			CharacterAbilitiesSkillPointUsedProcedure.execute(entity);
+			CharacterAbilitiesAlchemySkillPointsUsedProcedure.execute(entity);
 		}
 	}
 }

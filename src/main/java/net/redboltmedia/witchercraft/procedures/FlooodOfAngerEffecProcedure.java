@@ -14,7 +14,7 @@ public class FlooodOfAngerEffecProcedure {
 				_vars.witchercraftAbilitiesFloodOfAnger = true;
 				_vars.markSyncDirty();
 			}
-			CharacterAbilitiesSkillPointUsedProcedure.execute(entity);
+			CharacterAbilitiesCombatSkillPointUsedProcedure.execute(entity);
 		}
 	}
 }

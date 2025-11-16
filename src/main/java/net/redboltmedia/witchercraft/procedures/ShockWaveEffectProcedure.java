@@ -15,7 +15,7 @@ public class ShockWaveEffectProcedure {
 					_vars.witchercraftAbilitiesShockWave = true;
 					_vars.markSyncDirty();
 				}
-				CharacterAbilitiesSkillPointUsedProcedure.execute(entity);
+				CharacterAbilitiesSignsSkillPointsUsedProcedure.execute(entity);
 			}
 		}
 	}

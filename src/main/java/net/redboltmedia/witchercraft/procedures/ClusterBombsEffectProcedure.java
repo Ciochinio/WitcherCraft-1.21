@@ -15,7 +15,7 @@ public class ClusterBombsEffectProcedure {
 					_vars.witchercraftAbilitiesClusterBombs = true;
 					_vars.markSyncDirty();
 				}
-				CharacterAbilitiesSkillPointUsedProcedure.execute(entity);
+				CharacterAbilitiesAlchemySkillPointsUsedProcedure.execute(entity);
 			}
 		}
 	}

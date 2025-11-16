@@ -15,7 +15,7 @@ public class EfficiencyEffectProcedure {
 					_vars.witchercraftAbilitiesEfficiency = true;
 					_vars.markSyncDirty();
 				}
-				CharacterAbilitiesSkillPointUsedProcedure.execute(entity);
+				CharacterAbilitiesAlchemySkillPointsUsedProcedure.execute(entity);
 			}
 		}
 	}

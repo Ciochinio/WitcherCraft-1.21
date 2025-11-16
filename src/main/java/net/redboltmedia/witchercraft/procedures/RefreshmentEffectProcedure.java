@@ -14,7 +14,7 @@ public class RefreshmentEffectProcedure {
 				_vars.witchercraftAbilitiesRefreshment = true;
 				_vars.markSyncDirty();
 			}
-			CharacterAbilitiesSkillPointUsedProcedure.execute(entity);
+			CharacterAbilitiesAlchemySkillPointsUsedProcedure.execute(entity);
 		}
 	}
 }

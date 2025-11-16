@@ -15,7 +15,7 @@ public class SideEffectsEffectProcedure {
 					_vars.witchercraftAbilitiesSideEffects = true;
 					_vars.markSyncDirty();
 				}
-				CharacterAbilitiesSkillPointUsedProcedure.execute(entity);
+				CharacterAbilitiesAlchemySkillPointsUsedProcedure.execute(entity);
 			}
 		}
 	}

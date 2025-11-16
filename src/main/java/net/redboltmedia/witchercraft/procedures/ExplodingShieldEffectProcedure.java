@@ -14,7 +14,7 @@ public class ExplodingShieldEffectProcedure {
 				_vars.witchercraftAbilitiesExploadingShield = true;
 				_vars.markSyncDirty();
 			}
-			CharacterAbilitiesSkillPointUsedProcedure.execute(entity);
+			CharacterAbilitiesSignsSkillPointsUsedProcedure.execute(entity);
 		}
 	}
 }

@@ -5627,6 +5627,63 @@
         ]
       },
       "path": "~/Character Abilities/Signs"
+    },
+    {
+      "name": "CharacterAbilitiesAlchemySkillPointsUsed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_abilities_alchemy_skill_points_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitiesAlchemySkillPointsUsedProcedure.java"
+        ]
+      },
+      "path": "~/Character Abilities/Alchemy"
+    },
+    {
+      "name": "CharacterAbilitiesSignsSkillPointsUsed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_abilities_signs_skill_points_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitiesSignsSkillPointsUsedProcedure.java"
+        ]
+      },
+      "path": "~/Character Abilities/Signs"
+    },
+    {
+      "name": "CharacterAbilitiesCombatSkillPointUsed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_abilities_combat_skill_point_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitiesCombatSkillPointUsedProcedure.java"
+        ]
+      },
+      "path": "~/Character Abilities/Combat"
     }
   ],
   "variable_elements": [

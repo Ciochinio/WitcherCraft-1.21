@@ -14,7 +14,7 @@ public class SustainedGlyphsEffectProcedure {
 				_vars.witchercraftAbilitiesSustainedGlyphs = true;
 				_vars.markSyncDirty();
 			}
-			CharacterAbilitiesSkillPointUsedProcedure.execute(entity);
+			CharacterAbilitiesSignsSkillPointsUsedProcedure.execute(entity);
 		}
 	}
 }

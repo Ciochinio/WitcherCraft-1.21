@@ -14,7 +14,7 @@ public class MuscleMemoryEffectProcedure {
 				_vars.witchercraftAbilitiesMuscleMemory = true;
 				_vars.markSyncDirty();
 			}
-			CharacterAbilitiesSkillPointUsedProcedure.execute(entity);
+			CharacterAbilitiesCombatSkillPointUsedProcedure.execute(entity);
 		}
 	}
 }

@@ -15,7 +15,7 @@ public class IgniIntensityEffectProcedure {
 					_vars.witchercraftAbilitiesIgniIntensity = true;
 					_vars.markSyncDirty();
 				}
-				CharacterAbilitiesSkillPointUsedProcedure.execute(entity);
+				CharacterAbilitiesSignsSkillPointsUsedProcedure.execute(entity);
 			}
 		}
 	}

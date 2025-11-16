@@ -15,7 +15,7 @@ public class DefenceEffectProcedure {
 					_vars.witchercraftAbilitiesDefence = true;
 					_vars.markSyncDirty();
 				}
-				CharacterAbilitiesSkillPointUsedProcedure.execute(entity);
+				CharacterAbilitiesCombatSkillPointUsedProcedure.execute(entity);
 			}
 		}
 	}

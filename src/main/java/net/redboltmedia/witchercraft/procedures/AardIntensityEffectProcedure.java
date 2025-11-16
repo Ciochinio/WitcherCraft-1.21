@@ -15,7 +15,7 @@ public class AardIntensityEffectProcedure {
 					_vars.witchercraftAbilitiesAardIntensity = true;
 					_vars.markSyncDirty();
 				}
-				CharacterAbilitiesSkillPointUsedProcedure.execute(entity);
+				CharacterAbilitiesSignsSkillPointsUsedProcedure.execute(entity);
 			}
 		}
 	}

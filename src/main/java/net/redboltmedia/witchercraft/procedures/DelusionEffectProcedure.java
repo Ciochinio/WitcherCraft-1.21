@@ -14,7 +14,7 @@ public class DelusionEffectProcedure {
 				_vars.witchercraftAbilitiesDelusion = true;
 				_vars.markSyncDirty();
 			}
-			CharacterAbilitiesSkillPointUsedProcedure.execute(entity);
+			CharacterAbilitiesSignsSkillPointsUsedProcedure.execute(entity);
 		}
 	}
 }

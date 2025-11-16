@@ -15,7 +15,7 @@ public class MagicTrapEffectProcedure {
 					_vars.witchercraftAbilitiesMagicTrap = true;
 					_vars.markSyncDirty();
 				}
-				CharacterAbilitiesSkillPointUsedProcedure.execute(entity);
+				CharacterAbilitiesSignsSkillPointsUsedProcedure.execute(entity);
 			}
 		}
 	}

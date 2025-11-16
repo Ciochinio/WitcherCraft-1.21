@@ -15,7 +15,7 @@ public class QuenIntensityEffectProcedure {
 					_vars.witchercraftAbilitiesQuenIntensity = true;
 					_vars.markSyncDirty();
 				}
-				CharacterAbilitiesSkillPointUsedProcedure.execute(entity);
+				CharacterAbilitiesSignsSkillPointsUsedProcedure.execute(entity);
 			}
 		}
 	}

@@ -15,7 +15,7 @@ public class HunterInstinctEffectProcedure {
 					_vars.witchercraftAbilitiesHunterInstincts = true;
 					_vars.markSyncDirty();
 				}
-				CharacterAbilitiesSkillPointUsedProcedure.execute(entity);
+				CharacterAbilitiesAlchemySkillPointsUsedProcedure.execute(entity);
 			}
 		}
 	}

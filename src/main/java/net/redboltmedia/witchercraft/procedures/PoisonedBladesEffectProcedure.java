@@ -14,7 +14,7 @@ public class PoisonedBladesEffectProcedure {
 				_vars.witchercraftAbilitiesPoisonedBlades = true;
 				_vars.markSyncDirty();
 			}
-			CharacterAbilitiesSkillPointUsedProcedure.execute(entity);
+			CharacterAbilitiesAlchemySkillPointsUsedProcedure.execute(entity);
 		}
 	}
 }

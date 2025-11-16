@@ -15,7 +15,7 @@ public class QuenDiscahrgeEffectProcedure {
 					_vars.witchercraftAbilitiesQuenDischarge = true;
 					_vars.markSyncDirty();
 				}
-				CharacterAbilitiesSkillPointUsedProcedure.execute(entity);
+				CharacterAbilitiesSignsSkillPointsUsedProcedure.execute(entity);
 			}
 		}
 	}

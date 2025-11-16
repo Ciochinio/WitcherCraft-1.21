@@ -14,7 +14,7 @@ public class FarReachingAardEffectProcedure {
 				_vars.witchercraftAbilitiesFarReachingAard = true;
 				_vars.markSyncDirty();
 			}
-			CharacterAbilitiesSkillPointUsedProcedure.execute(entity);
+			CharacterAbilitiesSignsSkillPointsUsedProcedure.execute(entity);
 		}
 	}
 }

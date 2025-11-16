@@ -15,7 +15,7 @@ public class SunderArmorEffectProcedure {
 					_vars.witchercraftAbilitiesSunderArmor = true;
 					_vars.markSyncDirty();
 				}
-				CharacterAbilitiesSkillPointUsedProcedure.execute(entity);
+				CharacterAbilitiesCombatSkillPointUsedProcedure.execute(entity);
 			}
 		}
 	}

@@ -15,7 +15,7 @@ public class PyromaniacEffectProcedure {
 					_vars.witchercraftAbilitiesPyromaniac = true;
 					_vars.markSyncDirty();
 				}
-				CharacterAbilitiesSkillPointUsedProcedure.execute(entity);
+				CharacterAbilitiesSignsSkillPointsUsedProcedure.execute(entity);
 			}
 		}
 	}

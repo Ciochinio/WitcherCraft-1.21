@@ -15,7 +15,7 @@ public class DominationEffectProcedure {
 					_vars.witchercraftAbilitiesDomination = true;
 					_vars.markSyncDirty();
 				}
-				CharacterAbilitiesSkillPointUsedProcedure.execute(entity);
+				CharacterAbilitiesSignsSkillPointsUsedProcedure.execute(entity);
 			}
 		}
 	}

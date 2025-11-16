@@ -1,0 +1,18 @@
+package net.redboltmedia.witchercraft.procedures;
+
+import net.redboltmedia.witchercraft.network.WitchercraftModVariables;
+
+import net.minecraft.world.entity.Entity;
+
+public class CharacterAbilitiesCombatSkillPointUsedProcedure {
+	public static void execute(Entity entity) {
+		if (entity == null)
+			return;
+		{
+			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
+			_vars.witchercraftAbilitiesCombatSkillPointsUsed = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesCombatSkillPointsUsed + 1;
+			_vars.witchercraftAbilitiesLearned = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesLearned + 1;
+			_vars.markSyncDirty();
+		}
+	}
+}

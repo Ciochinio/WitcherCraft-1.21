@@ -55,6 +55,9 @@ public class DevClearProcedure {
 			_vars.witchercraftAbilitiesFloodOfAnger = false;
 			_vars.witchercraftAbilitiesRazorFocus = false;
 			_vars.witchercraftAbilitiesUndying = false;
+			_vars.witchercraftAbilitiesCombatSkillPointsUsed = 0;
+			_vars.witchercraftAbilitiesAlchemySkillPointsUsed = 0;
+			_vars.witchercraftAbilitiesSignsSkillPointsUsed = 0;
 			_vars.witchercraftAbilitiesLearned = 0;
 			_vars.wichercraftPlayerLevel = 0;
 			_vars.wichercraftPlayerExperience = 0;

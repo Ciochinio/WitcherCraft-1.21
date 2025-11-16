@@ -15,7 +15,7 @@ public class AxiiIntensityEffectProcedure {
 					_vars.witchercraftAbilitiesAxiiIntensity = true;
 					_vars.markSyncDirty();
 				}
-				CharacterAbilitiesSkillPointUsedProcedure.execute(entity);
+				CharacterAbilitiesSignsSkillPointsUsedProcedure.execute(entity);
 			}
 		}
 	}
