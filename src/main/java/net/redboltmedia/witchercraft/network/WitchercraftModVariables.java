@@ -142,6 +142,8 @@ public class WitchercraftModVariables {
 			clone.ToxicityOverdoseThreshold = original.ToxicityOverdoseThreshold;
 			clone.witchercraftIncreasedDamage = original.witchercraftIncreasedDamage;
 			clone.witchercraftEnemyNearby = original.witchercraftEnemyNearby;
+			clone.sumDodgeChance = original.sumDodgeChance;
+			clone.witchercraftDodgeChance = original.witchercraftDodgeChance;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
 	}
@@ -220,6 +222,8 @@ public class WitchercraftModVariables {
 		public double witchercraftAbilitiesAlchemySkillPointsUsed = 0;
 		public double witchercraftAbilitiesSignsSkillPointsUsed = 0;
 		public boolean witchercraftEnemyNearby = false;
+		public double sumDodgeChance = 0;
+		public double witchercraftDodgeChance = 0;
 
 		@Override
 		public void serialize(ValueOutput output) {
@@ -295,6 +299,8 @@ public class WitchercraftModVariables {
 			output.putDouble("witchercraftAbilitiesAlchemySkillPointsUsed", witchercraftAbilitiesAlchemySkillPointsUsed);
 			output.putDouble("witchercraftAbilitiesSignsSkillPointsUsed", witchercraftAbilitiesSignsSkillPointsUsed);
 			output.putBoolean("witchercraftEnemyNearby", witchercraftEnemyNearby);
+			output.putDouble("sumDodgeChance", sumDodgeChance);
+			output.putDouble("witchercraftDodgeChance", witchercraftDodgeChance);
 		}
 
 		@Override
@@ -371,6 +377,8 @@ public class WitchercraftModVariables {
 			witchercraftAbilitiesAlchemySkillPointsUsed = input.getDoubleOr("witchercraftAbilitiesAlchemySkillPointsUsed", 0);
 			witchercraftAbilitiesSignsSkillPointsUsed = input.getDoubleOr("witchercraftAbilitiesSignsSkillPointsUsed", 0);
 			witchercraftEnemyNearby = input.getBooleanOr("witchercraftEnemyNearby", false);
+			sumDodgeChance = input.getDoubleOr("sumDodgeChance", 0);
+			witchercraftDodgeChance = input.getDoubleOr("witchercraftDodgeChance", 0);
 		}
 
 		public void markSyncDirty() {

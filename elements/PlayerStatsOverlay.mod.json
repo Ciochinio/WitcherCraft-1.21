@@ -388,6 +388,41 @@
           "y": 89,
           "locked": false
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_dodge_chance",
+          "text": {
+            "fixedValue": "Dodge Chance"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 6,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_character_gui_dodge_chance",
+          "text": {
+            "fixedValue": "",
+            "name": "CharacterGuiDodgeChance"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 105,
+          "y": 107,
+          "locked": false
+        }
       }
     ],
     "baseTexture": "",

@@ -29,7 +29,10 @@ public class AdditionalDamageProcedure {
 		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesMuscleMemory == true) {
 			sumAdditionalDamage = sumAdditionalDamage + 3;
 		}
-		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftEnemyNearby == true && entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftEnemyNearby == true) {
+		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesColdBlood == true && entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftEnemyNearby == false) {
+			sumAdditionalDamage = sumAdditionalDamage + 5;
+		}
+		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesFloodOfAnger == true && entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftEnemyNearby == true) {
 			sumAdditionalDamage = sumAdditionalDamage + 5;
 		}
 		{

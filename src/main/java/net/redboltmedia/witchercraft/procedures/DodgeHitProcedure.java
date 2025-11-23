@@ -1,0 +1,55 @@
+package net.redboltmedia.witchercraft.procedures;
+
+import net.redboltmedia.witchercraft.network.WitchercraftModVariables;
+import net.redboltmedia.witchercraft.init.WitchercraftModMobEffects;
+
+import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.ICancellableEvent;
+import net.neoforged.bus.api.Event;
+
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
+import net.minecraft.network.chat.Component;
+
+import javax.annotation.Nullable;
+
+@EventBusSubscriber
+public class DodgeHitProcedure {
+	@SubscribeEvent
+	public static void onEntityAttacked(LivingIncomingDamageEvent event) {
+		if (event.getEntity() != null) {
+			execute(event, event.getEntity());
+		}
+	}
+
+	public static void execute(Entity entity) {
+		execute(null, entity);
+	}
+
+	private static void execute(@Nullable Event event, Entity entity) {
+		if (entity == null)
+			return;
+		double dodgeRoll = 0;
+		dodgeRoll = Mth.nextInt(RandomSource.create(), 1, 100);
+		if (entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(WitchercraftModMobEffects.DEV_LOG)) {
+			if (entity instanceof Player _player && !_player.level().isClientSide())
+				_player.displayClientMessage(Component.literal(("dodge roll:" + dodgeRoll)), false);
+			if (entity instanceof Player _player && !_player.level().isClientSide())
+				_player.displayClientMessage(Component.literal(("dodge chance:" + entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumDodgeChance)), false);
+		}
+		if (dodgeRoll <= entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumDodgeChance) {
+			if (event instanceof ICancellableEvent _cancellable) {
+				_cancellable.setCanceled(true);
+			}
+			if (entity instanceof Player _player && !_player.level().isClientSide())
+				_player.displayClientMessage(Component.literal("Dodged EZ"), false);
+			if (entity instanceof Player _player && !_player.level().isClientSide())
+				_player.displayClientMessage(Component.literal("Dodged EZ"), true);
+		}
+	}
+}

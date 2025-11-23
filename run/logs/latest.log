@@ -1,0 +1,279 @@
+[23Nov2025 02:56:22.079] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, neoforgeclientdev, --version, 21.8.31, --assetIndex, 26, --assetsDir, C:\\Users\\Ciochu\\.mcreator\\gradle\\caches\\neoformruntime\\assets, --fml.fmlVersion, 9.0.16, --fml.mcVersion, 1.21.8, --fml.neoForgeVersion, 21.8.31, --fml.neoFormVersion, 20250717.133445]
+[23Nov2025 02:56:22.083] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.8+9-LTS
+[23Nov2025 02:56:22.088] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 9.0 starting: java version 21.0.8 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[23Nov2025 02:56:22.295] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[23Nov2025 02:56:22.988] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/Ciochu/.mcreator/gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23157!/ Service=ModLauncher Env=CLIENT
+[23Nov2025 02:56:23.362] [fml-loadingscreen/INFO] [net.neoforged.fml.earlydisplay.render.LoadingScreenRenderer/]: GL info: NVIDIA GeForce RTX 3070 Laptop GPU/PCIe/SSE2 GL version 3.2.0 NVIDIA 581.80, NVIDIA Corporation
+[23Nov2025 02:56:23.601] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
+[23Nov2025 02:56:23.604] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		Minecraft 1.21.8 (minecraft)
+		NeoForge 21.8.31 (neoforge)
+		WitcherCraft 1.0.0 (witchercraft)
+		YDM's Mob Health Bar 1.0.0 (mobhealthbar)
+[23Nov2025 02:56:25.304] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[23Nov2025 02:56:25.316] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'neoforgeclientdev' with arguments [--version, 21.8.31, --assetsDir, C:\Users\Ciochu\.mcreator\gradle\caches\neoformruntime\assets, --assetIndex, 26]
+[23Nov2025 02:56:29.247] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 272 Datafixer optimizations took 833 milliseconds
+[23Nov2025 02:56:29.749] [pool-7-thread-1/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[23Nov2025 02:56:38.808] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[23Nov2025 02:56:38.812] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[23Nov2025 02:56:38.815] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[23Nov2025 02:56:38.818] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[23Nov2025 02:56:38.820] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[23Nov2025 02:56:38.822] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [waypoint, modify, waypoint, color, reset] and [waypoint, modify, waypoint, color, color] with inputs: [reset]
+[23Nov2025 02:56:38.946] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.8.31, for MC 1.21.8
+[23Nov2025 02:56:39.931] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Ciochu/Documents/GitHub/WitcherCraft-1.21/build/moddev/artifacts/neoforge-21.8.31.jar%23213!/assets/.mcassetsroot' uses unexpected schema
+[23Nov2025 02:56:39.934] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Ciochu/Documents/GitHub/WitcherCraft-1.21/build/moddev/artifacts/neoforge-21.8.31.jar%23213!/data/.mcassetsroot' uses unexpected schema
+[23Nov2025 02:56:40.016] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[23Nov2025 02:56:40.025] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[23Nov2025 02:56:40.233] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
+[23Nov2025 02:56:40.460] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Using optional rendering extensions: GL_ARB_buffer_storage, GL_KHR_debug, GL_ARB_vertex_attrib_binding, GL_ARB_direct_state_access
+[23Nov2025 02:56:41.711] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/neoforge, mod/witchercraft, mod/mobhealthbar
+[23Nov2025 02:56:42.092] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_pua-16.0.03.hex, loading
+[23Nov2025 02:56:42.111] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-16.0.03.hex, loading
+[23Nov2025 02:56:42.407] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-16.0.03.hex, loading
+[23Nov2025 02:56:44.511] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Słuchawki (Arctis Pro Wireless Game)
+[23Nov2025 02:56:44.513] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[23Nov2025 02:56:44.676] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x2 minecraft:textures/atlas/blocks.png-atlas
+[23Nov2025 02:56:44.688] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/signs.png-atlas
+[23Nov2025 02:56:44.690] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/shield_patterns.png-atlas
+[23Nov2025 02:56:44.690] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/banner_patterns.png-atlas
+[23Nov2025 02:56:44.691] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x2 minecraft:textures/atlas/armor_trims.png-atlas
+[23Nov2025 02:56:44.694] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x2 minecraft:textures/atlas/decorated_pot.png-atlas
+[23Nov2025 02:56:44.699] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/chest.png-atlas
+[23Nov2025 02:56:44.699] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/shulker_boxes.png-atlas
+[23Nov2025 02:56:44.700] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/beds.png-atlas
+[23Nov2025 02:56:44.705] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[23Nov2025 02:56:45.170] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[23Nov2025 02:56:45.173] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[23Nov2025 02:56:45.175] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x0 minecraft:textures/atlas/gui.png-atlas
+[23Nov2025 02:56:45.181] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
+[23Nov2025 02:56:52.860] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1407 recipes
+[23Nov2025 02:56:52.883] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1520 advancements
+[23Nov2025 02:56:52.887] [Render thread/INFO] [net.neoforged.neoforge.common.crafting.RecipePriorityManager/]: Loaded 0 recipe priority overrides
+[23Nov2025 02:56:53.191] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.8
+[23Nov2025 02:56:53.191] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[23Nov2025 02:56:54.670] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[23Nov2025 02:56:55.460] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[23Nov2025 02:56:55.460] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[23Nov2025 02:56:55.734] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[23Nov2025 02:56:55.735] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 945 ms
+[23Nov2025 02:56:55.874] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 5, from 10
+[23Nov2025 02:56:55.875] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[23Nov2025 02:56:58.028] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:3d8ca465] logged in with entity id 80 at (-62.96319136727569, 71.0, -1.9838135087306974)
+[23Nov2025 02:56:58.205] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[23Nov2025 02:56:58.807] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 2 reached during a single frame. New capacity will be 4.
+[23Nov2025 02:56:58.818] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 203 advancements
+[23Nov2025 02:56:59.041] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 4 reached during a single frame. New capacity will be 8.
+[23Nov2025 02:56:59.478] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 8 reached during a single frame. New capacity will be 16.
+[23Nov2025 02:56:59.523] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 16 reached during a single frame. New capacity will be 32.
+[23Nov2025 02:56:59.577] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 32 reached during a single frame. New capacity will be 64.
+[23Nov2025 02:56:59.982] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 64 reached during a single frame. New capacity will be 128.
+[23Nov2025 02:57:00.272] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 128 reached during a single frame. New capacity will be 256.
+[23Nov2025 02:57:00.590] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 256 reached during a single frame. New capacity will be 512.
+[23Nov2025 02:57:01.044] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 512 reached during a single frame. New capacity will be 1024.
+[23Nov2025 02:57:10.105] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
+[23Nov2025 02:57:10.115] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Creative Mode
+[23Nov2025 02:58:29.980] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
+[23Nov2025 02:58:29.981] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Survival Mode
+[23Nov2025 02:58:31.201] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge roll:22.0
+[23Nov2025 02:58:31.203] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge chance:25.0
+[23Nov2025 02:58:31.204] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dodged EZ
+[23Nov2025 02:58:36.303] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
+[23Nov2025 02:58:36.306] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Creative Mode
+[23Nov2025 02:58:46.388] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
+[23Nov2025 02:58:46.392] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Survival Mode
+[23Nov2025 02:58:47.404] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge roll:80.0
+[23Nov2025 02:58:47.404] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge chance:25.0
+[23Nov2025 02:58:49.345] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge roll:63.0
+[23Nov2025 02:58:49.346] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge chance:25.0
+[23Nov2025 02:58:51.045] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge roll:86.0
+[23Nov2025 02:58:51.045] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge chance:25.0
+[23Nov2025 02:58:52.796] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge roll:95.0
+[23Nov2025 02:58:52.796] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge chance:25.0
+[23Nov2025 02:58:54.445] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge roll:17.0
+[23Nov2025 02:58:54.447] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge chance:25.0
+[23Nov2025 02:58:54.447] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dodged EZ
+[23Nov2025 02:59:02.351] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[23Nov2025 02:59:02.360] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[23Nov2025 02:59:04.794] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
+[23Nov2025 02:59:04.798] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Creative Mode
+[23Nov2025 02:59:06.312] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Baza7.0
+[23Nov2025 02:59:06.312] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Additional Flat0.0
+[23Nov2025 02:59:06.313] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Combined Damage7.0
+[23Nov2025 02:59:06.313] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] crit roll:91.0
+[23Nov2025 02:59:06.314] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] crit chance:5.0
+[23Nov2025 02:59:07.358] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Baza10.5
+[23Nov2025 02:59:07.358] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Additional Flat0.0
+[23Nov2025 02:59:07.359] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Combined Damage10.5
+[23Nov2025 02:59:07.359] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] crit roll:68.0
+[23Nov2025 02:59:07.359] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] crit chance:5.0
+[23Nov2025 02:59:08.509] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Baza10.5
+[23Nov2025 02:59:08.510] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Additional Flat0.0
+[23Nov2025 02:59:08.510] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Combined Damage10.5
+[23Nov2025 02:59:08.510] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] crit roll:5.0
+[23Nov2025 02:59:08.510] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] crit chance:5.0
+[23Nov2025 02:59:08.510] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] BAZA10.5
+[23Nov2025 02:59:08.510] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] CRIT!15.75
+[23Nov2025 02:59:09.861] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Baza7.0
+[23Nov2025 02:59:09.862] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Additional Flat5.0
+[23Nov2025 02:59:09.862] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Combined Damage12.0
+[23Nov2025 02:59:09.862] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] crit roll:51.0
+[23Nov2025 02:59:09.862] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] crit chance:5.0
+[23Nov2025 02:59:11.110] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Baza10.5
+[23Nov2025 02:59:11.110] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Additional Flat5.0
+[23Nov2025 02:59:11.110] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Combined Damage15.5
+[23Nov2025 02:59:11.110] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] crit roll:39.0
+[23Nov2025 02:59:11.110] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] crit chance:5.0
+[23Nov2025 02:59:15.724] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
+[23Nov2025 02:59:15.727] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Survival Mode
+[23Nov2025 02:59:18.437] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
+[23Nov2025 02:59:18.440] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Creative Mode
+[23Nov2025 02:59:23.499] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
+[23Nov2025 02:59:23.502] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Survival Mode
+[23Nov2025 02:59:24.844] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge roll:45.0
+[23Nov2025 02:59:24.846] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge chance:25.0
+[23Nov2025 02:59:24.846] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge roll:46.0
+[23Nov2025 02:59:24.846] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge chance:25.0
+[23Nov2025 02:59:25.383] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
+[23Nov2025 02:59:25.386] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Creative Mode
+[23Nov2025 02:59:38.768] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
+[23Nov2025 02:59:38.771] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Survival Mode
+[23Nov2025 02:59:39.265] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
+[23Nov2025 02:59:39.268] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Creative Mode
+[23Nov2025 02:59:50.021] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
+[23Nov2025 02:59:50.023] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Survival Mode
+[23Nov2025 02:59:51.199] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge roll:77.0
+[23Nov2025 02:59:51.199] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge chance:25.0
+[23Nov2025 02:59:53.397] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge roll:23.0
+[23Nov2025 02:59:53.397] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge chance:25.0
+[23Nov2025 02:59:53.399] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dodged EZ
+[23Nov2025 02:59:59.347] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge roll:84.0
+[23Nov2025 02:59:59.347] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge chance:25.0
+[23Nov2025 03:00:00.452] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
+[23Nov2025 03:00:00.453] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Creative Mode
+[23Nov2025 03:00:28.389] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[23Nov2025 03:00:28.394] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[23Nov2025 03:00:35.959] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Baza10.5
+[23Nov2025 03:00:35.961] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Additional Flat0.0
+[23Nov2025 03:00:35.961] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Combined Damage10.5
+[23Nov2025 03:00:35.961] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] crit roll:96.0
+[23Nov2025 03:00:35.961] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] crit chance:5.0
+[23Nov2025 03:00:37.008] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Baza10.5
+[23Nov2025 03:00:37.008] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Additional Flat0.0
+[23Nov2025 03:00:37.008] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Combined Damage10.5
+[23Nov2025 03:00:37.010] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] crit roll:55.0
+[23Nov2025 03:00:37.010] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] crit chance:5.0
+[23Nov2025 03:00:41.016] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
+[23Nov2025 03:00:41.018] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Survival Mode
+[23Nov2025 03:00:42.343] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge roll:95.0
+[23Nov2025 03:00:42.343] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge chance:25.0
+[23Nov2025 03:00:44.398] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge roll:78.0
+[23Nov2025 03:00:44.399] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge chance:25.0
+[23Nov2025 03:00:46.445] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge roll:53.0
+[23Nov2025 03:00:46.445] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge chance:25.0
+[23Nov2025 03:00:48.291] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[23Nov2025 03:00:48.296] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[23Nov2025 03:00:51.543] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge roll:46.0
+[23Nov2025 03:00:51.545] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge chance:25.0
+[23Nov2025 03:00:53.545] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge roll:73.0
+[23Nov2025 03:00:53.545] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge chance:25.0
+[23Nov2025 03:00:55.547] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge roll:1.0
+[23Nov2025 03:00:55.547] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge chance:25.0
+[23Nov2025 03:00:55.547] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dodged EZ
+[23Nov2025 03:01:04.340] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[23Nov2025 03:01:04.346] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[23Nov2025 03:01:05.062] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
+[23Nov2025 03:01:05.065] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Creative Mode
+[23Nov2025 03:01:16.212] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
+[23Nov2025 03:01:16.215] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Survival Mode
+[23Nov2025 03:01:18.146] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge roll:75.0
+[23Nov2025 03:01:18.146] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge chance:25.0
+[23Nov2025 03:01:18.146] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge roll:91.0
+[23Nov2025 03:01:18.146] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge chance:25.0
+[23Nov2025 03:01:18.797] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge roll:16.0
+[23Nov2025 03:01:18.797] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge chance:25.0
+[23Nov2025 03:01:18.797] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dodged EZ
+[23Nov2025 03:01:18.798] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge roll:58.0
+[23Nov2025 03:01:18.798] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge chance:25.0
+[23Nov2025 03:01:19.166] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
+[23Nov2025 03:01:19.170] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Creative Mode
+[23Nov2025 03:01:32.312] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Baza10.5
+[23Nov2025 03:01:32.312] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Additional Flat0.0
+[23Nov2025 03:01:32.312] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Combined Damage10.5
+[23Nov2025 03:01:32.312] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] crit roll:89.0
+[23Nov2025 03:01:32.312] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] crit chance:5.0
+[23Nov2025 03:01:33.308] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Baza10.5
+[23Nov2025 03:01:33.308] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Additional Flat0.0
+[23Nov2025 03:01:33.308] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Combined Damage10.5
+[23Nov2025 03:01:33.310] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] crit roll:66.0
+[23Nov2025 03:01:33.310] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] crit chance:5.0
+[23Nov2025 03:01:45.340] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[23Nov2025 03:01:45.349] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[23Nov2025 03:01:47.564] [entity-deserializer/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
+chunk@[1, -9].Entities[0]: Failed to decode value '[{base:16.0d,id:"minecraft:follow_range",modifiers:[{amount:0.06088202708785167d,id:"minecraft:random_spawn_bonus",operation:"add_multiplied_base"}]},{base:0.0d,id:"forge:step_height_addition"},{base:0.08d,id:"forge:entity_gravity"},{base:0.25d,id:"minecraft:movement_speed"}]' from field 'attributes': Unknown registry key in ResourceKey[minecraft:root / minecraft:attribute]: forge:entity_gravity; Unknown registry key in ResourceKey[minecraft:root / minecraft:attribute]: forge:step_height_addition
+[23Nov2025 03:01:47.650] [entity-deserializer/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
+chunk@[-2, -9].Entities[0]: Failed to decode value '[{base:16.0d,id:"minecraft:follow_range",modifiers:[{amount:0.016307780815304953d,id:"minecraft:random_spawn_bonus",operation:"add_multiplied_base"}]},{base:0.0d,id:"forge:step_height_addition"},{base:0.08d,id:"forge:entity_gravity"},{base:0.25d,id:"minecraft:movement_speed"}]' from field 'attributes': Unknown registry key in ResourceKey[minecraft:root / minecraft:attribute]: forge:entity_gravity; Unknown registry key in ResourceKey[minecraft:root / minecraft:attribute]: forge:step_height_addition
+[23Nov2025 03:01:47.730] [entity-deserializer/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
+chunk@[-10, -9].Entities[0]: Failed to decode value '[{base:0.0d,id:"forge:step_height_addition"},{base:0.08d,id:"forge:entity_gravity"},{base:0.30000001192092896d,id:"minecraft:movement_speed"}]' from field 'attributes': Unknown registry key in ResourceKey[minecraft:root / minecraft:attribute]: forge:entity_gravity; Unknown registry key in ResourceKey[minecraft:root / minecraft:attribute]: forge:step_height_addition
+[23Nov2025 03:01:47.802] [entity-deserializer/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
+chunk@[-8, -9].Entities[0]: Failed to decode value '[{base:16.0d,id:"minecraft:follow_range",modifiers:[{amount:-0.035250669259219894d,id:"minecraft:random_spawn_bonus",operation:"add_multiplied_base"}]},{base:0.0d,id:"forge:step_height_addition"},{base:0.08d,id:"forge:entity_gravity"},{base:0.25d,id:"minecraft:movement_speed"}]' from field 'attributes': Unknown registry key in ResourceKey[minecraft:root / minecraft:attribute]: forge:entity_gravity; Unknown registry key in ResourceKey[minecraft:root / minecraft:attribute]: forge:step_height_addition
+[23Nov2025 03:01:47.909] [entity-deserializer/WARN] [net.minecraft.world.entity.EntityType/]: Skipping Entity with id cybercraft:cybercraft_bullet
+[23Nov2025 03:01:47.910] [entity-deserializer/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
+chunk@[4, -8].Entities[0]: Failed to decode value '"cybercraft:cybercraft_bullet"' from field 'id': Unknown registry key in ResourceKey[minecraft:root / minecraft:entity_type]: cybercraft:cybercraft_bullet
+[23Nov2025 03:01:49.981] [entity-deserializer/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
+chunk@[-3, -10]:
+  .Entities[0]: Failed to decode value '[{base:0.0d,id:"forge:step_height_addition"},{base:16.0d,id:"minecraft:follow_range",modifiers:[{amount:0.015891868492641282d,id:"minecraft:random_spawn_bonus",operation:"add_multiplied_base"}]},{base:0.08d,id:"forge:entity_gravity"},{base:0.25d,id:"minecraft:movement_speed"}]' from field 'attributes': Unknown registry key in ResourceKey[minecraft:root / minecraft:attribute]: forge:entity_gravity; Unknown registry key in ResourceKey[minecraft:root / minecraft:attribute]: forge:step_height_addition
+  .Entities[1]: Failed to decode value '[{base:0.0d,id:"forge:step_height_addition"},{base:16.0d,id:"minecraft:follow_range",modifiers:[{amount:0.036408175370675325d,id:"minecraft:random_spawn_bonus",operation:"add_multiplied_base"}]},{base:0.08d,id:"forge:entity_gravity"},{base:0.25d,id:"minecraft:movement_speed"},{base:1.0d,id:"forge:swim_speed"}]' from field 'attributes': Unknown registry key in ResourceKey[minecraft:root / minecraft:attribute]: forge:swim_speed; Unknown registry key in ResourceKey[minecraft:root / minecraft:attribute]: forge:entity_gravity; Unknown registry key in ResourceKey[minecraft:root / minecraft:attribute]: forge:step_height_addition
+[23Nov2025 03:01:50.011] [entity-deserializer/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
+chunk@[-2, -10].Entities[0]: Failed to decode value '[{base:0.0d,id:"forge:step_height_addition"},{base:16.0d,id:"minecraft:follow_range",modifiers:[{amount:0.07526348906956697d,id:"minecraft:random_spawn_bonus",operation:"add_multiplied_base"}]},{base:0.08d,id:"forge:entity_gravity"},{base:0.25d,id:"minecraft:movement_speed"}]' from field 'attributes': Unknown registry key in ResourceKey[minecraft:root / minecraft:attribute]: forge:entity_gravity; Unknown registry key in ResourceKey[minecraft:root / minecraft:attribute]: forge:step_height_addition
+[23Nov2025 03:01:50.028] [entity-deserializer/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
+chunk@[-1, -10].Entities[0]: Failed to decode value '[{base:0.0d,id:"forge:step_height_addition"},{base:35.0d,id:"minecraft:follow_range",modifiers:[{amount:0.050548636153108256d,id:"minecraft:random_spawn_bonus",operation:"add_multiplied_base"}]},{base:0.08d,id:"forge:entity_gravity"},{base:0.0d,id:"minecraft:knockback_resistance",modifiers:[{amount:0.03575456712007608d,id:"minecraft:random_spawn_bonus",operation:"add_value"}]},{base:0.23000000417232513d,id:"minecraft:movement_speed"},{base:0.09715417161927781d,id:"minecraft:spawn_reinforcements"}]' from field 'attributes': Unknown registry key in ResourceKey[minecraft:root / minecraft:attribute]: forge:entity_gravity; Unknown registry key in ResourceKey[minecraft:root / minecraft:attribute]: forge:step_height_addition
+[23Nov2025 03:01:50.072] [entity-deserializer/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
+chunk@[2, -10].Entities[0]: Failed to decode value '[{base:0.0d,id:"forge:step_height_addition"},{base:16.0d,id:"minecraft:follow_range",modifiers:[{amount:0.04219355732682348d,id:"minecraft:random_spawn_bonus",operation:"add_multiplied_base"}]},{base:0.08d,id:"forge:entity_gravity"},{base:0.25d,id:"minecraft:movement_speed"}]' from field 'attributes': Unknown registry key in ResourceKey[minecraft:root / minecraft:attribute]: forge:entity_gravity; Unknown registry key in ResourceKey[minecraft:root / minecraft:attribute]: forge:step_height_addition
+[23Nov2025 03:01:50.851] [entity-deserializer/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
+chunk@[-2, -11].Entities[0]: Failed to decode value '[{base:0.0d,id:"forge:step_height_addition"},{base:16.0d,id:"minecraft:follow_range",modifiers:[{amount:-0.005204459933202032d,id:"minecraft:random_spawn_bonus",operation:"add_multiplied_base"}]},{base:0.08d,id:"forge:entity_gravity"},{base:0.699999988079071d,id:"minecraft:movement_speed"}]' from field 'attributes': Unknown registry key in ResourceKey[minecraft:root / minecraft:attribute]: forge:entity_gravity; Unknown registry key in ResourceKey[minecraft:root / minecraft:attribute]: forge:step_height_addition
+[23Nov2025 03:01:50.895] [entity-deserializer/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
+chunk@[-10, -11]:
+  .Entities[0]: Failed to decode value '[{base:0.0d,id:"forge:step_height_addition"},{base:35.0d,id:"minecraft:follow_range",modifiers:[{amount:-0.029809518039988298d,id:"minecraft:random_spawn_bonus",operation:"add_multiplied_base"}]},{base:0.08d,id:"forge:entity_gravity"},{base:0.0d,id:"minecraft:knockback_resistance",modifiers:[{amount:0.01844866313999104d,id:"minecraft:random_spawn_bonus",operation:"add_value"}]},{base:0.23000000417232513d,id:"minecraft:movement_speed"},{base:0.05360465268106016d,id:"minecraft:spawn_reinforcements"}]' from field 'attributes': Unknown registry key in ResourceKey[minecraft:root / minecraft:attribute]: forge:entity_gravity; Unknown registry key in ResourceKey[minecraft:root / minecraft:attribute]: forge:step_height_addition
+  .Entities[1]: Failed to decode value '[{base:0.0d,id:"forge:step_height_addition"},{base:16.0d,id:"minecraft:follow_range",modifiers:[{amount:0.11094925798773286d,id:"minecraft:random_spawn_bonus",operation:"add_multiplied_base"}]},{base:0.08d,id:"forge:entity_gravity"},{base:0.25d,id:"minecraft:movement_speed"}]' from field 'attributes': Unknown registry key in ResourceKey[minecraft:root / minecraft:attribute]: forge:entity_gravity; Unknown registry key in ResourceKey[minecraft:root / minecraft:attribute]: forge:step_height_addition
+[23Nov2025 03:01:50.921] [entity-deserializer/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
+chunk@[-9, -11]:
+  .Entities[0]: Failed to decode value '[{base:0.0d,id:"forge:step_height_addition"},{base:16.0d,id:"minecraft:follow_range",modifiers:[{amount:-0.009343472319154457d,id:"minecraft:random_spawn_bonus",operation:"add_multiplied_base"}]},{base:0.08d,id:"forge:entity_gravity"},{base:0.25d,id:"minecraft:movement_speed"}]' from field 'attributes': Unknown registry key in ResourceKey[minecraft:root / minecraft:attribute]: forge:entity_gravity; Unknown registry key in ResourceKey[minecraft:root / minecraft:attribute]: forge:step_height_addition
+  .Entities[1]: Failed to decode value '[{base:0.0d,id:"forge:step_height_addition"},{base:16.0d,id:"minecraft:follow_range",modifiers:[{amount:-0.002635674613646535d,id:"minecraft:random_spawn_bonus",operation:"add_multiplied_base"}]},{base:0.08d,id:"forge:entity_gravity"},{base:0.25d,id:"minecraft:movement_speed"}]' from field 'attributes': Unknown registry key in ResourceKey[minecraft:root / minecraft:attribute]: forge:entity_gravity; Unknown registry key in ResourceKey[minecraft:root / minecraft:attribute]: forge:step_height_addition
+[23Nov2025 03:01:54.211] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
+[23Nov2025 03:01:54.214] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Survival Mode
+[23Nov2025 03:01:56.739] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge roll:19.0
+[23Nov2025 03:01:56.740] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge chance:25.0
+[23Nov2025 03:01:56.740] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dodged EZ
+[23Nov2025 03:01:56.740] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge roll:11.0
+[23Nov2025 03:01:56.740] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dodge chance:25.0
+[23Nov2025 03:01:56.740] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dodged EZ
+[23Nov2025 03:01:58.295] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
+[23Nov2025 03:01:58.297] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Creative Mode
+[23Nov2025 03:02:16.989] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[23Nov2025 03:02:17.015] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[23Nov2025 03:02:17.026] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[23Nov2025 03:02:17.026] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[23Nov2025 03:02:20.090] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[23Nov2025 03:02:20.098] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[23Nov2025 03:02:30.740] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[23Nov2025 03:02:30.761] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[23Nov2025 03:02:30.767] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[23Nov2025 03:02:30.769] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[23Nov2025 03:02:31.331] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[23Nov2025 03:02:31.394] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[23Nov2025 03:02:31.395] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[23Nov2025 03:02:31.421] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[23Nov2025 03:02:31.462] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[23Nov2025 03:02:31.465] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[23Nov2025 03:02:31.465] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[23Nov2025 03:02:31.530] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[23Nov2025 03:02:31.653] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[23Nov2025 03:02:31.668] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[23Nov2025 03:02:31.698] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
+[23Nov2025 03:02:31.699] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[23Nov2025 03:02:31.699] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[23Nov2025 03:02:31.699] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved

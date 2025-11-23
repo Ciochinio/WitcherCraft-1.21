@@ -1,0 +1,14 @@
+/effect give Dev witchercraft:dev_log
+/effect clear
+/effect give Dev witchercraft:dev_log
+/effect give Dev witchercraft:dev_log infinite
+/effect clear
+/weather thunder
+/weather clear
+/weather thunder
+/xp add Dev 10000
+/lvlfix
+/weather clear
+/devtool
+/xp add Dev 10000
+/lvlfix

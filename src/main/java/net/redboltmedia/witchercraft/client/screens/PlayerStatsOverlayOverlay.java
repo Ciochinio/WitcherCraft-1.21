@@ -77,6 +77,10 @@ public class PlayerStatsOverlayOverlay {
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
 					CharacterGuiAdditionalDamageProcedure.execute(entity), w / 2 + -108, h / 2 + -31, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.witchercraft.player_stats_overlay.label_dodge_chance"), w / 2 + -207, h / 2 + -13, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+
+					CharacterGuiDodgeChanceProcedure.execute(entity), w / 2 + -108, h / 2 + -13, -1, false);
 		}
 	}
 }
