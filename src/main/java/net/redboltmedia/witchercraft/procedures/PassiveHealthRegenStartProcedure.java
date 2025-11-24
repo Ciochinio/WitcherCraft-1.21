@@ -16,7 +16,7 @@ public class PassiveHealthRegenStartProcedure {
 			return;
 		double sumPassiveHealthRegeneration = 0;
 		sumPassiveHealthRegeneration = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftBasePassiveHealthRegeneration;
-		if ((entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesSunAndStars == true) == (world instanceof Level _lvl0 && _lvl0.isBrightOutside())) {
+		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesSunAndStars == true && world instanceof Level _lvl0 && _lvl0.isBrightOutside()) {
 			sumPassiveHealthRegeneration = sumPassiveHealthRegeneration + 1;
 		}
 		{

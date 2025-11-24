@@ -33,7 +33,7 @@ public class DodgeChanceProcedure {
 		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesRazorFocus == true) {
 			{
 				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-				_vars.sumDodgeChance = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumDodgeChance + 20;
+				_vars.sumDodgeChance = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumDodgeChance + 10;
 				_vars.markSyncDirty();
 			}
 		}

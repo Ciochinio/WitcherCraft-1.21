@@ -5962,6 +5962,19 @@
         ]
       },
       "path": "~/Character Stats/Stats/Gui"
+    },
+    {
+      "name": "DodgeCooldown",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dodge_cooldown",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/DodgeCooldownMobEffect.java"
+        ]
+      },
+      "path": "~/Character Stats/Stats/VariableStats/DodgeChance"
     }
   ],
   "variable_elements": [
@@ -6697,7 +6710,8 @@
       "effect.witchercraft.enemy_nearby": "Enemy Nearby",
       "effect.witchercraft.undying_cooldown": "Undying Cooldown",
       "gui.witchercraft.player_stats_overlay.label_dodge_chance": "Dodge Chance",
-      "gui.witchercraft.player_stats_overlay.label_instantkillchance": "InstantKillChance"
+      "gui.witchercraft.player_stats_overlay.label_instantkillchance": "InstantKillChance",
+      "effect.witchercraft.dodge_cooldown": "Dodge Cooldown"
     }
   },
   "metadata": {

@@ -12,6 +12,7 @@ import net.neoforged.bus.api.Event;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.network.chat.Component;
@@ -42,14 +43,14 @@ public class DodgeHitProcedure {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal(("dodge chance:" + entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumDodgeChance)), false);
 		}
-		if (dodgeRoll <= entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumDodgeChance) {
+		if (!(entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(WitchercraftModMobEffects.DODGE_COOLDOWN)) && dodgeRoll <= entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumDodgeChance) {
 			if (event instanceof ICancellableEvent _cancellable) {
 				_cancellable.setCanceled(true);
 			}
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("Dodged EZ"), false);
-			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal("Dodged EZ"), true);
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.DODGE_COOLDOWN, 60, 1));
 		}
 	}
 }
