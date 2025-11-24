@@ -136,7 +136,6 @@ public class WitchercraftModVariables {
 			clone.witchercraftPassiveHealthRegeneration = original.witchercraftPassiveHealthRegeneration;
 			clone.witchercraftBasePassiveHealthRegeneration = original.witchercraftBasePassiveHealthRegeneration;
 			clone.witchercraftPassiveStaminaRegeneration = original.witchercraftPassiveStaminaRegeneration;
-			clone.witchercraftBaseStaminaRegeneration = original.witchercraftBaseStaminaRegeneration;
 			clone.witchercraftToxicity = original.witchercraftToxicity;
 			clone.sumToxicity = original.sumToxicity;
 			clone.ToxicityOverdoseThreshold = original.ToxicityOverdoseThreshold;
@@ -146,6 +145,7 @@ public class WitchercraftModVariables {
 			clone.witchercraftDodgeChance = original.witchercraftDodgeChance;
 			clone.witchercraftInstantKillChance = original.witchercraftInstantKillChance;
 			clone.sumInstantKillChance = original.sumInstantKillChance;
+			clone.witchercraftBasePassiveStaminaRegeneration = original.witchercraftBasePassiveStaminaRegeneration;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
 	}
@@ -166,7 +166,6 @@ public class WitchercraftModVariables {
 		public double witchercraftPassiveHealthRegeneration = 0;
 		public double witchercraftBasePassiveHealthRegeneration = 0;
 		public double witchercraftPassiveStaminaRegeneration = 0;
-		public double witchercraftBaseStaminaRegeneration = 0;
 		public double witchercraftAbilitiesLearned = 0.0;
 		public boolean witchercraftAbiltiesGourmet = false;
 		public boolean witchercraftAbilitiesSurvivalInstinct = false;
@@ -228,6 +227,7 @@ public class WitchercraftModVariables {
 		public double witchercraftDodgeChance = 0;
 		public double witchercraftInstantKillChance = 0;
 		public double sumInstantKillChance = 0;
+		public double witchercraftBasePassiveStaminaRegeneration = 0;
 
 		@Override
 		public void serialize(ValueOutput output) {
@@ -245,7 +245,6 @@ public class WitchercraftModVariables {
 			output.putDouble("witchercraftPassiveHealthRegeneration", witchercraftPassiveHealthRegeneration);
 			output.putDouble("witchercraftBasePassiveHealthRegeneration", witchercraftBasePassiveHealthRegeneration);
 			output.putDouble("witchercraftPassiveStaminaRegeneration", witchercraftPassiveStaminaRegeneration);
-			output.putDouble("witchercraftBaseStaminaRegeneration", witchercraftBaseStaminaRegeneration);
 			output.putDouble("witchercraftAbilitiesLearned", witchercraftAbilitiesLearned);
 			output.putBoolean("witchercraftAbiltiesGourmet", witchercraftAbiltiesGourmet);
 			output.putBoolean("witchercraftAbilitiesSurvivalInstinct", witchercraftAbilitiesSurvivalInstinct);
@@ -307,6 +306,7 @@ public class WitchercraftModVariables {
 			output.putDouble("witchercraftDodgeChance", witchercraftDodgeChance);
 			output.putDouble("witchercraftInstantKillChance", witchercraftInstantKillChance);
 			output.putDouble("sumInstantKillChance", sumInstantKillChance);
+			output.putDouble("witchercraftBasePassiveStaminaRegeneration", witchercraftBasePassiveStaminaRegeneration);
 		}
 
 		@Override
@@ -325,7 +325,6 @@ public class WitchercraftModVariables {
 			witchercraftPassiveHealthRegeneration = input.getDoubleOr("witchercraftPassiveHealthRegeneration", 0);
 			witchercraftBasePassiveHealthRegeneration = input.getDoubleOr("witchercraftBasePassiveHealthRegeneration", 0);
 			witchercraftPassiveStaminaRegeneration = input.getDoubleOr("witchercraftPassiveStaminaRegeneration", 0);
-			witchercraftBaseStaminaRegeneration = input.getDoubleOr("witchercraftBaseStaminaRegeneration", 0);
 			witchercraftAbilitiesLearned = input.getDoubleOr("witchercraftAbilitiesLearned", 0);
 			witchercraftAbiltiesGourmet = input.getBooleanOr("witchercraftAbiltiesGourmet", false);
 			witchercraftAbilitiesSurvivalInstinct = input.getBooleanOr("witchercraftAbilitiesSurvivalInstinct", false);
@@ -387,6 +386,7 @@ public class WitchercraftModVariables {
 			witchercraftDodgeChance = input.getDoubleOr("witchercraftDodgeChance", 0);
 			witchercraftInstantKillChance = input.getDoubleOr("witchercraftInstantKillChance", 0);
 			sumInstantKillChance = input.getDoubleOr("sumInstantKillChance", 0);
+			witchercraftBasePassiveStaminaRegeneration = input.getDoubleOr("witchercraftBasePassiveStaminaRegeneration", 0);
 		}
 
 		public void markSyncDirty() {

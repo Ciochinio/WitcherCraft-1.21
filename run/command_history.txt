@@ -31,3 +31,8 @@
 /time set day
 /time set midnight
 /time set day
+/time set night
+/time set day
+/time set night
+/time set day
+/devtool

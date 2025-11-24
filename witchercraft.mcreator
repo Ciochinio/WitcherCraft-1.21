@@ -6063,12 +6063,6 @@
       "value": "0"
     },
     {
-      "name": "witchercraftBaseStaminaRegeneration",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "0"
-    },
-    {
       "name": "witchercraftAbilitiesLearned",
       "type": "number",
       "scope": "player_persistent",
@@ -6430,6 +6424,12 @@
     },
     {
       "name": "sumInstantKillChance",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "witchercraftBasePassiveStaminaRegeneration",
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"

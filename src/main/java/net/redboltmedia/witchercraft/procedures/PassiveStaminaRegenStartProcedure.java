@@ -15,19 +15,24 @@ public class PassiveStaminaRegenStartProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		double sumPassiveHealthRegeneration = 0;
-		double sumPassiveStaminaRegeneration = 0;
-		sumPassiveStaminaRegeneration = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftBaseStaminaRegeneration;
-		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbiltiesGourmet == true) {
-			sumPassiveStaminaRegeneration = sumPassiveStaminaRegeneration + 1;
-		}
-		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesSunAndStars == true && !(world instanceof Level _lvl0 && _lvl0.isBrightOutside())) {
-			sumPassiveStaminaRegeneration = sumPassiveStaminaRegeneration + 1;
-		}
 		{
 			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-			_vars.witchercraftPassiveStaminaRegeneration = sumPassiveStaminaRegeneration;
+			_vars.witchercraftPassiveStaminaRegeneration = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftBasePassiveStaminaRegeneration;
 			_vars.markSyncDirty();
+		}
+		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbiltiesGourmet == true) {
+			{
+				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
+				_vars.witchercraftPassiveStaminaRegeneration = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftPassiveStaminaRegeneration + 1;
+				_vars.markSyncDirty();
+			}
+		}
+		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesSunAndStars == true && !(world instanceof Level _lvl0 && _lvl0.isBrightOutside())) {
+			{
+				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
+				_vars.witchercraftPassiveStaminaRegeneration = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftPassiveStaminaRegeneration + 1;
+				_vars.markSyncDirty();
+			}
 		}
 		if (entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(WitchercraftModMobEffects.PASSIVE_STAMINA_REGEN_TICK)) {
 			WitchercraftMod.queueServerWork(40, () -> {
