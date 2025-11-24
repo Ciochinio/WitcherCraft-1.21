@@ -144,6 +144,8 @@ public class WitchercraftModVariables {
 			clone.witchercraftEnemyNearby = original.witchercraftEnemyNearby;
 			clone.sumDodgeChance = original.sumDodgeChance;
 			clone.witchercraftDodgeChance = original.witchercraftDodgeChance;
+			clone.witchercraftInstantKillChance = original.witchercraftInstantKillChance;
+			clone.sumInstantKillChance = original.sumInstantKillChance;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
 	}
@@ -224,6 +226,8 @@ public class WitchercraftModVariables {
 		public boolean witchercraftEnemyNearby = false;
 		public double sumDodgeChance = 0;
 		public double witchercraftDodgeChance = 0;
+		public double witchercraftInstantKillChance = 0;
+		public double sumInstantKillChance = 0;
 
 		@Override
 		public void serialize(ValueOutput output) {
@@ -301,6 +305,8 @@ public class WitchercraftModVariables {
 			output.putBoolean("witchercraftEnemyNearby", witchercraftEnemyNearby);
 			output.putDouble("sumDodgeChance", sumDodgeChance);
 			output.putDouble("witchercraftDodgeChance", witchercraftDodgeChance);
+			output.putDouble("witchercraftInstantKillChance", witchercraftInstantKillChance);
+			output.putDouble("sumInstantKillChance", sumInstantKillChance);
 		}
 
 		@Override
@@ -379,6 +385,8 @@ public class WitchercraftModVariables {
 			witchercraftEnemyNearby = input.getBooleanOr("witchercraftEnemyNearby", false);
 			sumDodgeChance = input.getDoubleOr("sumDodgeChance", 0);
 			witchercraftDodgeChance = input.getDoubleOr("witchercraftDodgeChance", 0);
+			witchercraftInstantKillChance = input.getDoubleOr("witchercraftInstantKillChance", 0);
+			sumInstantKillChance = input.getDoubleOr("sumInstantKillChance", 0);
 		}
 
 		public void markSyncDirty() {

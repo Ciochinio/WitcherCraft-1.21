@@ -12,3 +12,16 @@
 /devtool
 /xp add Dev 10000
 /lvlfix
+/devtool
+/xp add Dev 1000 points
+/lvlfix
+/devtool
+/xp add Dev 1000 points
+/lvlfix
+/effect clear Dev witchercraft:dev_log
+/xp add Dev 1000 points
+/lvlfix
+/weather clear 100000000
+/time set night
+/time set midnight
+/time set day

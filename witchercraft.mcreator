@@ -5892,6 +5892,76 @@
         ]
       },
       "path": "~/Character Stats/Stats/VariableStats"
+    },
+    {
+      "name": "InstantKill",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "instant_kill",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/InstantKillProcedure.java"
+        ]
+      },
+      "path": "~/StatusEffects/InstantKill"
+    },
+    {
+      "name": "InstantKillChance",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "instant_kill_chance",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/InstantKillChanceProcedure.java"
+        ]
+      },
+      "path": "~/Character Stats/Stats/VariableStats/InstantKillChance"
+    },
+    {
+      "name": "CharacterGuiInstantKillChance",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_gui_instant_kill_chance",
+      "metadata": {
+        "return_type": "string",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterGuiInstantKillChanceProcedure.java"
+        ]
+      },
+      "path": "~/Character Stats/Stats/Gui"
     }
   ],
   "variable_elements": [
@@ -6338,6 +6408,18 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
+    },
+    {
+      "name": "witchercraftInstantKillChance",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "sumInstantKillChance",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -6614,7 +6696,8 @@
       "effect.witchercraft.bleed_cooldown": "Bleed Cooldown",
       "effect.witchercraft.enemy_nearby": "Enemy Nearby",
       "effect.witchercraft.undying_cooldown": "Undying Cooldown",
-      "gui.witchercraft.player_stats_overlay.label_dodge_chance": "Dodge Chance"
+      "gui.witchercraft.player_stats_overlay.label_dodge_chance": "Dodge Chance",
+      "gui.witchercraft.player_stats_overlay.label_instantkillchance": "InstantKillChance"
     }
   },
   "metadata": {
@@ -7004,6 +7087,10 @@
                   {
                     "name": "DodgeChance",
                     "children": []
+                  },
+                  {
+                    "name": "InstantKillChance",
+                    "children": []
                   }
                 ]
               },
@@ -7241,6 +7328,10 @@
         "children": [
           {
             "name": "Bleed",
+            "children": []
+          },
+          {
+            "name": "InstantKill",
             "children": []
           }
         ]

@@ -81,6 +81,10 @@ public class PlayerStatsOverlayOverlay {
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
 					CharacterGuiDodgeChanceProcedure.execute(entity), w / 2 + -108, h / 2 + -13, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.witchercraft.player_stats_overlay.label_instantkillchance"), w / 2 + -207, h / 2 + -4, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+
+					CharacterGuiInstantKillChanceProcedure.execute(entity), w / 2 + -108, h / 2 + -4, -1, false);
 		}
 	}
 }

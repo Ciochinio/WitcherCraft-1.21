@@ -423,6 +423,41 @@
           "y": 107,
           "locked": false
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_instantkillchance",
+          "text": {
+            "fixedValue": "InstantKillChance"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 6,
+          "y": 116,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_character_gui_instant_kill",
+          "text": {
+            "fixedValue": "",
+            "name": "CharacterGuiInstantKillChance"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 105,
+          "y": 116,
+          "locked": false
+        }
       }
     ],
     "baseTexture": "",
