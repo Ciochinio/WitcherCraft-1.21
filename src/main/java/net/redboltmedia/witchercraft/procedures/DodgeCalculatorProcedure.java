@@ -20,7 +20,7 @@ import net.minecraft.network.chat.Component;
 import javax.annotation.Nullable;
 
 @EventBusSubscriber
-public class DodgeHitProcedure {
+public class DodgeCalculatorProcedure {
 	@SubscribeEvent
 	public static void onEntityAttacked(LivingIncomingDamageEvent event) {
 		if (event.getEntity() != null) {

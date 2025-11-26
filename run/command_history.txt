@@ -36,3 +36,15 @@
 /time set night
 /time set day
 /devtool
+/weather thunder
+/weather clear
+/xp add Dev 10000 points
+/lvlfix
+/devtool
+/xp add Dev 10000 points
+/lvlfix
+/devtool
+/xp add Dev 10000 points
+/lvlfix
+/weather thunder
+/neoforge tps

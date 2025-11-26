@@ -415,6 +415,8 @@
       "minecraft:blaze": "2024-01-17 16:21:41 +0100",
       "minecraft:pillager": "2024-10-15 16:38:30 +0200",
       "minecraft:skeleton": "2024-01-17 16:21:12 +0100",
+      "minecraft:enderman": "2025-11-26 13:02:55 +0100",
+      "minecraft:spider": "2025-11-26 13:00:18 +0100",
       "minecraft:zombie": "2024-01-17 01:15:08 +0100",
       "minecraft:creeper": "2024-01-18 02:49:41 +0100",
       "minecraft:drowned": "2024-01-17 16:26:01 +0100",
@@ -887,6 +889,18 @@
   "minecraft:recipes/tools/lead": {
     "criteria": {
       "has_string": "2025-11-24 19:58:33 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/shoot_arrow": {
+    "criteria": {
+      "shot_arrow": "2025-11-25 00:21:53 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/saddle": {
+    "criteria": {
+      "has_leather": "2025-11-26 12:49:27 +0100"
     },
     "done": true
   },

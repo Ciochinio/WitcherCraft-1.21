@@ -1625,41 +1625,6 @@
       "path": "~/Alchemy/Potions/Thunderbolt"
     },
     {
-      "name": "CritHit",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crit_hit",
-      "metadata": {
-        "files": [
-          "src/main/java/net/redboltmedia/witchercraft/procedures/CritHitProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "damagesource",
-            "type": "damagesource"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "amount",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Character Stats/Stats/VariableStats"
-    },
-    {
       "name": "WhiteRaffardsDecoctionEffect",
       "type": "potioneffect",
       "compiles": true,
@@ -5236,41 +5201,6 @@
       "path": "~/Character Stats/Stats/Gui"
     },
     {
-      "name": "AdditionalDamageHit",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "additional_damage_hit",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "damagesource",
-            "type": "damagesource"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "amount",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/redboltmedia/witchercraft/procedures/AdditionalDamageHitProcedure.java"
-        ]
-      },
-      "path": "~/Character Stats/Stats/VariableStats"
-    },
-    {
       "name": "IncreasedDamage",
       "type": "procedure",
       "compiles": true,
@@ -5875,25 +5805,6 @@
       "path": "~/Character Stats/Stats/Gui"
     },
     {
-      "name": "DodgeHit",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dodge_hit",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "files": [
-          "src/main/java/net/redboltmedia/witchercraft/procedures/DodgeHitProcedure.java"
-        ]
-      },
-      "path": "~/Character Stats/Stats/VariableStats"
-    },
-    {
       "name": "InstantKill",
       "type": "procedure",
       "compiles": true,
@@ -5975,6 +5886,60 @@
         ]
       },
       "path": "~/Character Stats/Stats/VariableStats/DodgeChance"
+    },
+    {
+      "name": "DamageCalculator",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "damage_calculator",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/DamageCalculatorProcedure.java"
+        ]
+      },
+      "path": "~/Character Stats/Stats/VariableStats"
+    },
+    {
+      "name": "DodgeCalculator",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dodge_calculator",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/DodgeCalculatorProcedure.java"
+        ]
+      },
+      "path": "~/Character Stats/Stats/VariableStats"
     }
   ],
   "variable_elements": [
