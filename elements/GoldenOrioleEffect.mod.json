@@ -8,6 +8,9 @@
       "value": -16777216,
       "falpha": 0.0
     },
+    "onAddedSound": {
+      "value": ""
+    },
     "isInstant": true,
     "mobEffectCategory": "BENEFICIAL",
     "renderStatusInInventory": true,

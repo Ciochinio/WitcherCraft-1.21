@@ -1075,8 +1075,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/witchercraft/models/item/golden_oriole.json",
-          "src/main/java/net/redboltmedia/witchercraft/item/GoldenOrioleItem.java",
-          "src/main/resources/assets/witchercraft/items/golden_oriole.json"
+          "src/main/resources/assets/witchercraft/items/golden_oriole.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/GoldenOrioleItem.java"
         ]
       },
       "path": "~/Alchemy/Potions/GoldenOriole"
@@ -2592,7 +2592,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/General"
+      "path": "~/Character Abilities/GeneralPerks"
     },
     {
       "name": "CharactersAbilietesGeneralGui",
@@ -2607,7 +2607,7 @@
           "src/main/java/net/redboltmedia/witchercraft/network/CharactersAbilietesGeneralGuiButtonMessage.java"
         ]
       },
-      "path": "~/Character Abilities/General"
+      "path": "~/Character Abilities/GeneralPerks"
     },
     {
       "name": "DevClear",
@@ -2659,7 +2659,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/General/SURVIVAL INSINCT"
+      "path": "~/Character Abilities/GeneralPerks/SURVIVAL INSINCT"
     },
     {
       "name": "SunAndStarsEffect",
@@ -2678,7 +2678,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/General/SUN AND STARS"
+      "path": "~/Character Abilities/GeneralPerks/SUN AND STARS"
     },
     {
       "name": "CatSchoolEffect",
@@ -2697,7 +2697,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/General/CAT SCHOOL TECHNIQUES"
+      "path": "~/Character Abilities/GeneralPerks/CAT SCHOOL TECHNIQUES"
     },
     {
       "name": "GriffinSchoolEffect",
@@ -2716,7 +2716,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/General/GRIFFIN SCHOOL TECHNIQUES"
+      "path": "~/Character Abilities/GeneralPerks/GRIFFIN SCHOOL TECHNIQUES"
     },
     {
       "name": "BearSchoolEffect",
@@ -2735,7 +2735,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/General/BEAR SCHOOL TECHNIQUES"
+      "path": "~/Character Abilities/GeneralPerks/BEAR SCHOOL TECHNIQUES"
     },
     {
       "name": "BearSchoolShow",
@@ -2755,7 +2755,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/General/BEAR SCHOOL TECHNIQUES"
+      "path": "~/Character Abilities/GeneralPerks/BEAR SCHOOL TECHNIQUES"
     },
     {
       "name": "GriffinSchoolShow",
@@ -2775,7 +2775,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/General/GRIFFIN SCHOOL TECHNIQUES"
+      "path": "~/Character Abilities/GeneralPerks/GRIFFIN SCHOOL TECHNIQUES"
     },
     {
       "name": "CatSchoolShow",
@@ -2795,7 +2795,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/General/CAT SCHOOL TECHNIQUES"
+      "path": "~/Character Abilities/GeneralPerks/CAT SCHOOL TECHNIQUES"
     },
     {
       "name": "SunAndStarsShow",
@@ -2815,7 +2815,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/General/SUN AND STARS"
+      "path": "~/Character Abilities/GeneralPerks/SUN AND STARS"
     },
     {
       "name": "CharacterAbilitiesCombatGui",
@@ -2830,7 +2830,7 @@
           "src/main/java/net/redboltmedia/witchercraft/network/CharacterAbilitiesCombatGuiButtonMessage.java"
         ]
       },
-      "path": "~/Character Abilities/Combat"
+      "path": "~/Character Abilities/CombatPerks"
     },
     {
       "name": "CharacterAbilitiesCombatGuiOpen",
@@ -2865,7 +2865,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Combat"
+      "path": "~/Character Abilities/CombatPerks"
     },
     {
       "name": "CharacterAbilitiesAlchemyGui",
@@ -2880,7 +2880,7 @@
           "src/main/java/net/redboltmedia/witchercraft/client/gui/CharacterAbilitiesAlchemyGuiScreen.java"
         ]
       },
-      "path": "~/Character Abilities/Alchemy"
+      "path": "~/Character Abilities/AlchemyPerks"
     },
     {
       "name": "CharacterAbilitiesAlchemyGuiOpen",
@@ -2915,7 +2915,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Alchemy"
+      "path": "~/Character Abilities/AlchemyPerks"
     },
     {
       "name": "CharacterAbilitiesSignsGui",
@@ -2930,7 +2930,7 @@
           "src/main/java/net/redboltmedia/witchercraft/client/gui/CharacterAbilitiesSignsGuiScreen.java"
         ]
       },
-      "path": "~/Character Abilities/Signs"
+      "path": "~/Character Abilities/SignsPerks"
     },
     {
       "name": "CharacterAbilitiesSignsGuiOpen",
@@ -2965,7 +2965,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs"
+      "path": "~/Character Abilities/SignsPerks"
     },
     {
       "name": "RefreshmentEffect",
@@ -2984,7 +2984,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Alchemy/Refreshment"
+      "path": "~/Character Abilities/AlchemyPerks/Refreshment"
     },
     {
       "name": "DelayedRecoveryEffect",
@@ -3003,7 +3003,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Alchemy/Delayed Recovery"
+      "path": "~/Character Abilities/AlchemyPerks/Delayed Recovery"
     },
     {
       "name": "SideEffectsEffect",
@@ -3022,7 +3022,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Alchemy/Side Effects"
+      "path": "~/Character Abilities/AlchemyPerks/Side Effects"
     },
     {
       "name": "PoisonedBladesEffect",
@@ -3041,7 +3041,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Alchemy/Poisoned Blades"
+      "path": "~/Character Abilities/AlchemyPerks/Poisoned Blades"
     },
     {
       "name": "RefreshmentShow",
@@ -3061,7 +3061,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Alchemy/Refreshment"
+      "path": "~/Character Abilities/AlchemyPerks/Refreshment"
     },
     {
       "name": "DelayedRecoveryShow",
@@ -3081,7 +3081,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Alchemy/Delayed Recovery"
+      "path": "~/Character Abilities/AlchemyPerks/Delayed Recovery"
     },
     {
       "name": "SideEffectsShow",
@@ -3101,7 +3101,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Alchemy/Side Effects"
+      "path": "~/Character Abilities/AlchemyPerks/Side Effects"
     },
     {
       "name": "PoisonedBladesShow",
@@ -3121,7 +3121,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Alchemy/Poisoned Blades"
+      "path": "~/Character Abilities/AlchemyPerks/Poisoned Blades"
     },
     {
       "name": "ProtectiveCoatingShow",
@@ -3141,7 +3141,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Alchemy/Protective coating"
+      "path": "~/Character Abilities/AlchemyPerks/Protective coating"
     },
     {
       "name": "HunterInstinctShow",
@@ -3161,7 +3161,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Alchemy/Hunter Instinct"
+      "path": "~/Character Abilities/AlchemyPerks/Hunter Instinct"
     },
     {
       "name": "PyrotechnicsShow",
@@ -3181,7 +3181,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Alchemy/Pyrotechnics"
+      "path": "~/Character Abilities/AlchemyPerks/Pyrotechnics"
     },
     {
       "name": "ClusterBombsShow",
@@ -3201,7 +3201,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Alchemy/Cluster Bombs"
+      "path": "~/Character Abilities/AlchemyPerks/Cluster Bombs"
     },
     {
       "name": "ProtectiveCoatingEffect",
@@ -3220,7 +3220,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Alchemy/Protective coating"
+      "path": "~/Character Abilities/AlchemyPerks/Protective coating"
     },
     {
       "name": "HunterInstinctEffect",
@@ -3239,7 +3239,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Alchemy/Hunter Instinct"
+      "path": "~/Character Abilities/AlchemyPerks/Hunter Instinct"
     },
     {
       "name": "PyrotechnicsEffect",
@@ -3258,7 +3258,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Alchemy/Pyrotechnics"
+      "path": "~/Character Abilities/AlchemyPerks/Pyrotechnics"
     },
     {
       "name": "ClusterBombsEffect",
@@ -3277,7 +3277,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Alchemy/Cluster Bombs"
+      "path": "~/Character Abilities/AlchemyPerks/Cluster Bombs"
     },
     {
       "name": "MuscleMemoryEffect",
@@ -3296,7 +3296,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Combat/MUSCLE MEMORY"
+      "path": "~/Character Abilities/CombatPerks/MUSCLE MEMORY"
     },
     {
       "name": "PreciseBlowsEffect",
@@ -3315,7 +3315,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Combat/PRECISE BLOWS"
+      "path": "~/Character Abilities/CombatPerks/PRECISE BLOWS"
     },
     {
       "name": "CrippllingStrikesEffect",
@@ -3334,7 +3334,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Combat/CRIPPLING STRIKES"
+      "path": "~/Character Abilities/CombatPerks/CRIPPLING STRIKES"
     },
     {
       "name": "StrengthTrainingEffect",
@@ -3353,7 +3353,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Combat/STRENGTH TRAINING"
+      "path": "~/Character Abilities/CombatPerks/STRENGTH TRAINING"
     },
     {
       "name": "CrushingBlowsEffect",
@@ -3372,7 +3372,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Combat/CRUSHING BLOWS"
+      "path": "~/Character Abilities/CombatPerks/CRUSHING BLOWS"
     },
     {
       "name": "SunderArmorEffect",
@@ -3391,7 +3391,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Combat/SUNDER ARMOR"
+      "path": "~/Character Abilities/CombatPerks/SUNDER ARMOR"
     },
     {
       "name": "FleetFootedEffect",
@@ -3410,7 +3410,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Combat/FLEET FOOTED"
+      "path": "~/Character Abilities/CombatPerks/FLEET FOOTED"
     },
     {
       "name": "DefenceEffect",
@@ -3429,7 +3429,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Combat/DEFENCE"
+      "path": "~/Character Abilities/CombatPerks/DEFENCE"
     },
     {
       "name": "DeadlyPresicionEffect",
@@ -3448,7 +3448,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Combat/DEADLY PRESICION"
+      "path": "~/Character Abilities/CombatPerks/DEADLY PRESICION"
     },
     {
       "name": "ColdBloodEffect",
@@ -3467,7 +3467,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Combat/COLD BLOOD"
+      "path": "~/Character Abilities/CombatPerks/COLD BLOOD"
     },
     {
       "name": "AnatomicalKnowledgeEffect",
@@ -3486,7 +3486,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Combat/ANATOMICAL KNOWLEDGE"
+      "path": "~/Character Abilities/CombatPerks/ANATOMICAL KNOWLEDGE"
     },
     {
       "name": "FlooodOfAngerEffec",
@@ -3505,7 +3505,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Combat/FLOOD OF ANGER"
+      "path": "~/Character Abilities/CombatPerks/FLOOD OF ANGER"
     },
     {
       "name": "RazorFocusEffect",
@@ -3524,7 +3524,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Combat/RAZOR FOCUS"
+      "path": "~/Character Abilities/CombatPerks/RAZOR FOCUS"
     },
     {
       "name": "UndyingEffect",
@@ -3543,7 +3543,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Combat/UNDYING"
+      "path": "~/Character Abilities/CombatPerks/UNDYING"
     },
     {
       "name": "MuscleMemoryShow",
@@ -3563,7 +3563,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Combat/MUSCLE MEMORY"
+      "path": "~/Character Abilities/CombatPerks/MUSCLE MEMORY"
     },
     {
       "name": "PreciseBlowsShow",
@@ -3583,7 +3583,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Combat/PRECISE BLOWS"
+      "path": "~/Character Abilities/CombatPerks/PRECISE BLOWS"
     },
     {
       "name": "CrippllingStrikesShow",
@@ -3603,7 +3603,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Combat/CRIPPLING STRIKES"
+      "path": "~/Character Abilities/CombatPerks/CRIPPLING STRIKES"
     },
     {
       "name": "StrengthTrainingShow",
@@ -3623,7 +3623,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Combat/STRENGTH TRAINING"
+      "path": "~/Character Abilities/CombatPerks/STRENGTH TRAINING"
     },
     {
       "name": "CrushingBlowsShow",
@@ -3643,7 +3643,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Combat/CRUSHING BLOWS"
+      "path": "~/Character Abilities/CombatPerks/CRUSHING BLOWS"
     },
     {
       "name": "SunderArmorShow",
@@ -3663,7 +3663,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Combat/SUNDER ARMOR"
+      "path": "~/Character Abilities/CombatPerks/SUNDER ARMOR"
     },
     {
       "name": "FleetFootedShow",
@@ -3683,7 +3683,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Combat/FLEET FOOTED"
+      "path": "~/Character Abilities/CombatPerks/FLEET FOOTED"
     },
     {
       "name": "DefenceShow",
@@ -3703,7 +3703,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Combat/DEFENCE"
+      "path": "~/Character Abilities/CombatPerks/DEFENCE"
     },
     {
       "name": "DeadlyPresicionShow",
@@ -3723,7 +3723,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Combat/DEADLY PRESICION"
+      "path": "~/Character Abilities/CombatPerks/DEADLY PRESICION"
     },
     {
       "name": "ColdBloodShow",
@@ -3743,7 +3743,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Combat/COLD BLOOD"
+      "path": "~/Character Abilities/CombatPerks/COLD BLOOD"
     },
     {
       "name": "AnatomicalKnowledgeShow",
@@ -3763,7 +3763,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Combat/ANATOMICAL KNOWLEDGE"
+      "path": "~/Character Abilities/CombatPerks/ANATOMICAL KNOWLEDGE"
     },
     {
       "name": "CripplingShotShow",
@@ -3783,7 +3783,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Combat/CRIPPLING SHOT"
+      "path": "~/Character Abilities/CombatPerks/CRIPPLING SHOT"
     },
     {
       "name": "FloodOfAngerShow",
@@ -3803,7 +3803,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Combat/FLOOD OF ANGER"
+      "path": "~/Character Abilities/CombatPerks/FLOOD OF ANGER"
     },
     {
       "name": "RazorFocusShow",
@@ -3823,7 +3823,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Combat/RAZOR FOCUS"
+      "path": "~/Character Abilities/CombatPerks/RAZOR FOCUS"
     },
     {
       "name": "UndyingShow",
@@ -3843,7 +3843,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Combat/UNDYING"
+      "path": "~/Character Abilities/CombatPerks/UNDYING"
     },
     {
       "name": "FarReachingAardEffect",
@@ -3862,7 +3862,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/FarReachingAard"
+      "path": "~/Character Abilities/SignsPerks/FarReachingAard"
     },
     {
       "name": "AardIntensityEffect",
@@ -3881,7 +3881,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/Aard Intensity"
+      "path": "~/Character Abilities/SignsPerks/Aard Intensity"
     },
     {
       "name": "ShockWaveEffect",
@@ -3900,7 +3900,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/Shock Wave"
+      "path": "~/Character Abilities/SignsPerks/Shock Wave"
     },
     {
       "name": "FirestreamEffect",
@@ -3919,7 +3919,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/Firestream"
+      "path": "~/Character Abilities/SignsPerks/Firestream"
     },
     {
       "name": "IgniIntensityEffect",
@@ -3938,7 +3938,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/Igni Intensity"
+      "path": "~/Character Abilities/SignsPerks/Igni Intensity"
     },
     {
       "name": "PyromaniacEffect",
@@ -3957,7 +3957,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/Pyromaniac"
+      "path": "~/Character Abilities/SignsPerks/Pyromaniac"
     },
     {
       "name": "SustainedGlyphsEffect",
@@ -3976,7 +3976,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/Sustained Glyphs"
+      "path": "~/Character Abilities/SignsPerks/Sustained Glyphs"
     },
     {
       "name": "YrdenIntensityEffect",
@@ -3995,7 +3995,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/Yrden Intensity"
+      "path": "~/Character Abilities/SignsPerks/Yrden Intensity"
     },
     {
       "name": "MagicTrapEffect",
@@ -4014,7 +4014,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/Magic Trap"
+      "path": "~/Character Abilities/SignsPerks/Magic Trap"
     },
     {
       "name": "ExplodingShieldEffect",
@@ -4033,7 +4033,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/Exploding Shield"
+      "path": "~/Character Abilities/SignsPerks/Exploding Shield"
     },
     {
       "name": "QuenIntensityEffect",
@@ -4052,7 +4052,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/Quen Intensity"
+      "path": "~/Character Abilities/SignsPerks/Quen Intensity"
     },
     {
       "name": "QuenDiscahrgeEffect",
@@ -4071,7 +4071,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/Quen Discahrge"
+      "path": "~/Character Abilities/SignsPerks/Quen Discahrge"
     },
     {
       "name": "DelusionEffect",
@@ -4090,7 +4090,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/Delusion"
+      "path": "~/Character Abilities/SignsPerks/Delusion"
     },
     {
       "name": "AxiiIntensityEffect",
@@ -4109,7 +4109,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/Axii Intenity"
+      "path": "~/Character Abilities/SignsPerks/Axii Intenity"
     },
     {
       "name": "DominationEffect",
@@ -4128,7 +4128,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/Domination"
+      "path": "~/Character Abilities/SignsPerks/Domination"
     },
     {
       "name": "FarReachingAardShow",
@@ -4148,7 +4148,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/FarReachingAard"
+      "path": "~/Character Abilities/SignsPerks/FarReachingAard"
     },
     {
       "name": "AardIntensityShow",
@@ -4168,7 +4168,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/Aard Intensity"
+      "path": "~/Character Abilities/SignsPerks/Aard Intensity"
     },
     {
       "name": "ShockWaveShow",
@@ -4188,7 +4188,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/Shock Wave"
+      "path": "~/Character Abilities/SignsPerks/Shock Wave"
     },
     {
       "name": "FirestreamShow",
@@ -4208,7 +4208,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/Firestream"
+      "path": "~/Character Abilities/SignsPerks/Firestream"
     },
     {
       "name": "IgniIntensityShow",
@@ -4228,7 +4228,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/Igni Intensity"
+      "path": "~/Character Abilities/SignsPerks/Igni Intensity"
     },
     {
       "name": "PyromaniacShow",
@@ -4248,7 +4248,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/Pyromaniac"
+      "path": "~/Character Abilities/SignsPerks/Pyromaniac"
     },
     {
       "name": "SustainedGlyphsShow",
@@ -4268,7 +4268,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/Sustained Glyphs"
+      "path": "~/Character Abilities/SignsPerks/Sustained Glyphs"
     },
     {
       "name": "YrdenIntensityShow",
@@ -4288,7 +4288,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/Yrden Intensity"
+      "path": "~/Character Abilities/SignsPerks/Yrden Intensity"
     },
     {
       "name": "MagicTrapShow",
@@ -4308,7 +4308,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/Magic Trap"
+      "path": "~/Character Abilities/SignsPerks/Magic Trap"
     },
     {
       "name": "ExploadingShildshow",
@@ -4328,7 +4328,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/Exploding Shield"
+      "path": "~/Character Abilities/SignsPerks/Exploding Shield"
     },
     {
       "name": "QuenIntensityShow",
@@ -4348,7 +4348,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/Quen Intensity"
+      "path": "~/Character Abilities/SignsPerks/Quen Intensity"
     },
     {
       "name": "QuenDiscahrgeShow",
@@ -4368,7 +4368,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/Quen Discahrge"
+      "path": "~/Character Abilities/SignsPerks/Quen Discahrge"
     },
     {
       "name": "DelusionShow",
@@ -4388,7 +4388,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/Delusion"
+      "path": "~/Character Abilities/SignsPerks/Delusion"
     },
     {
       "name": "AxiiIntensityShow",
@@ -4408,7 +4408,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/Axii Intenity"
+      "path": "~/Character Abilities/SignsPerks/Axii Intenity"
     },
     {
       "name": "DominationShow",
@@ -4428,7 +4428,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Signs/Domination"
+      "path": "~/Character Abilities/SignsPerks/Domination"
     },
     {
       "name": "CharaterLevel",
@@ -4527,7 +4527,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/Combat/CRIPPLING SHOT"
+      "path": "~/Character Abilities/CombatPerks/CRIPPLING SHOT"
     },
     {
       "name": "SurvivalInstinctEffect",
@@ -4546,7 +4546,7 @@
           }
         ]
       },
-      "path": "~/Character Abilities/General/SURVIVAL INSINCT"
+      "path": "~/Character Abilities/GeneralPerks/SURVIVAL INSINCT"
     },
     {
       "name": "Expfix",
@@ -5339,7 +5339,7 @@
           "src/main/java/net/redboltmedia/witchercraft/procedures/GourmetShowIconProcedure.java"
         ]
       },
-      "path": "~/Character Abilities/General/GOURMET"
+      "path": "~/Character Abilities/GeneralPerks/GOURMET"
     },
     {
       "name": "GourmetEffect",
@@ -5358,7 +5358,7 @@
           "src/main/java/net/redboltmedia/witchercraft/procedures/GourmetEffectProcedure.java"
         ]
       },
-      "path": "~/Character Abilities/General/GOURMET"
+      "path": "~/Character Abilities/GeneralPerks/GOURMET"
     },
     {
       "name": "EfficiencyEffect",
@@ -5377,7 +5377,7 @@
           "src/main/java/net/redboltmedia/witchercraft/procedures/EfficiencyEffectProcedure.java"
         ]
       },
-      "path": "~/Character Abilities/Alchemy/Efficency"
+      "path": "~/Character Abilities/AlchemyPerks/Efficency"
     },
     {
       "name": "EfficiencyShow",
@@ -5397,7 +5397,7 @@
           "src/main/java/net/redboltmedia/witchercraft/procedures/EfficiencyShowProcedure.java"
         ]
       },
-      "path": "~/Character Abilities/Alchemy/Efficency"
+      "path": "~/Character Abilities/AlchemyPerks/Efficency"
     },
     {
       "name": "CharacterAbilitiesSkillPointCheck",
@@ -5456,7 +5456,7 @@
           "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitiesCombatTier3Procedure.java"
         ]
       },
-      "path": "~/Character Abilities/Combat"
+      "path": "~/Character Abilities/CombatPerks"
     },
     {
       "name": "CharacterAbilitiesCombatTier2",
@@ -5476,7 +5476,7 @@
           "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitiesCombatTier2Procedure.java"
         ]
       },
-      "path": "~/Character Abilities/Combat"
+      "path": "~/Character Abilities/CombatPerks"
     },
     {
       "name": "CharacterAbilitiesAlchemyTier2",
@@ -5496,7 +5496,7 @@
           "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitiesAlchemyTier2Procedure.java"
         ]
       },
-      "path": "~/Character Abilities/Alchemy"
+      "path": "~/Character Abilities/AlchemyPerks"
     },
     {
       "name": "CharacterAbilitiesAlchemyTier3",
@@ -5516,7 +5516,7 @@
           "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitiesAlchemyTier3Procedure.java"
         ]
       },
-      "path": "~/Character Abilities/Alchemy"
+      "path": "~/Character Abilities/AlchemyPerks"
     },
     {
       "name": "CharacterAbilitiesSignsTier2",
@@ -5536,7 +5536,7 @@
           "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitiesSignsTier2Procedure.java"
         ]
       },
-      "path": "~/Character Abilities/Signs"
+      "path": "~/Character Abilities/SignsPerks"
     },
     {
       "name": "CharacterAbilitiesSignsTier3",
@@ -5556,7 +5556,7 @@
           "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitiesSignsTier3Procedure.java"
         ]
       },
-      "path": "~/Character Abilities/Signs"
+      "path": "~/Character Abilities/SignsPerks"
     },
     {
       "name": "CharacterAbilitiesAlchemySkillPointsUsed",
@@ -5575,7 +5575,7 @@
           "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitiesAlchemySkillPointsUsedProcedure.java"
         ]
       },
-      "path": "~/Character Abilities/Alchemy"
+      "path": "~/Character Abilities/AlchemyPerks"
     },
     {
       "name": "CharacterAbilitiesSignsSkillPointsUsed",
@@ -5594,7 +5594,7 @@
           "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitiesSignsSkillPointsUsedProcedure.java"
         ]
       },
-      "path": "~/Character Abilities/Signs"
+      "path": "~/Character Abilities/SignsPerks"
     },
     {
       "name": "CharacterAbilitiesCombatSkillPointUsed",
@@ -5613,7 +5613,7 @@
           "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitiesCombatSkillPointUsedProcedure.java"
         ]
       },
-      "path": "~/Character Abilities/Combat"
+      "path": "~/Character Abilities/CombatPerks"
     },
     {
       "name": "Bleed",
@@ -6398,6 +6398,12 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
+    },
+    {
+      "name": "witchercraftRespecPoints",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -7093,7 +7099,7 @@
         "name": "Character Abilities",
         "children": [
           {
-            "name": "General",
+            "name": "GeneralPerks",
             "children": [
               {
                 "name": "GOURMET",
@@ -7122,7 +7128,7 @@
             ]
           },
           {
-            "name": "Combat",
+            "name": "CombatPerks",
             "children": [
               {
                 "name": "MUSCLE MEMORY",
@@ -7187,7 +7193,7 @@
             ]
           },
           {
-            "name": "Alchemy",
+            "name": "AlchemyPerks",
             "children": [
               {
                 "name": "Refreshment",
@@ -7228,7 +7234,7 @@
             ]
           },
           {
-            "name": "Signs",
+            "name": "SignsPerks",
             "children": [
               {
                 "name": "FarReachingAard",
@@ -7294,6 +7300,10 @@
           },
           {
             "name": "CharacterAbilitiesExperience",
+            "children": []
+          },
+          {
+            "name": "General",
             "children": []
           }
         ]

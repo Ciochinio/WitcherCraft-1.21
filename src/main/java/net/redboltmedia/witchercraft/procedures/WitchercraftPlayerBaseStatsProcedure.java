@@ -15,7 +15,7 @@ public class WitchercraftPlayerBaseStatsProcedure {
 			_vars.witchercraftArmor = entity instanceof LivingEntity _livEnt ? _livEnt.getArmorValue() : 0;
 			_vars.witchercraftBaseMovementSpeed = 3;
 			_vars.witchercraftCritChance = 5;
-			_vars.witchercraftCritDamage = 150;
+			_vars.witchercraftCritDamage = 50;
 			_vars.witchercraftAttackSpeed = 0;
 			_vars.witchercraftBasePassiveHealthRegeneration = 0;
 			_vars.witchercraftBasePassiveStaminaRegeneration = 0;
