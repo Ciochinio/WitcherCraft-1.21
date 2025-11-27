@@ -324,7 +324,7 @@
         "data": {
           "name": "label_additionaldamage",
           "text": {
-            "fixedValue": "IncreasedDamage(%)"
+            "fixedValue": "IncreasedDamage"
           },
           "color": {
             "value": -1,
@@ -456,6 +456,76 @@
           "anchorPoint": "CENTER",
           "x": 105,
           "y": 116,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_potion_duration",
+          "text": {
+            "fixedValue": "Potion Duration"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 6,
+          "y": 125,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_character_gui_potion_durati",
+          "text": {
+            "fixedValue": "",
+            "name": "CharacterGuiPotionDuration"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 105,
+          "y": 125,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_sign_intensity",
+          "text": {
+            "fixedValue": "Sign Intensity"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 6,
+          "y": 134,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_character_gui_sign_intensit",
+          "text": {
+            "fixedValue": "",
+            "name": "CharacterGuiSignIntensity"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 105,
+          "y": 134,
           "locked": false
         }
       }

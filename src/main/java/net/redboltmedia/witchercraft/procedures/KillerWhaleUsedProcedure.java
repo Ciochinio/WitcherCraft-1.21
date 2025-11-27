@@ -1,22 +1,17 @@
 package net.redboltmedia.witchercraft.procedures;
 
+import net.redboltmedia.witchercraft.network.WitchercraftModVariables;
 import net.redboltmedia.witchercraft.init.WitchercraftModMobEffects;
 
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 
 public class KillerWhaleUsedProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(MobEffects.BLINDNESS)) {
-			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.KILLER_WHALE_EFFECT, 7200, 0));
-		} else {
-			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.KILLER_WHALE_EFFECT, 3600, 0));
-		}
+		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+			_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.KILLER_WHALE_EFFECT, (int) (3600 * (1 + entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumPotionDuration * 0.01)), 0));
 	}
 }

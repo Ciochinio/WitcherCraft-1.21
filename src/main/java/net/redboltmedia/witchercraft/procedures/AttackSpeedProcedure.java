@@ -8,11 +8,11 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.commands.CommandSourceStack;
-import net.minecraft.commands.CommandSource;
+import net.minecraft.resources.ResourceLocation;
 
 import javax.annotation.Nullable;
 
@@ -32,21 +32,22 @@ public class AttackSpeedProcedure {
 			return;
 		double sumAttackSpeed = 0;
 		double sumMovementSpeed = 0;
-		sumAttackSpeed = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftBaseAttackSpeed;
 		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(WitchercraftModMobEffects.BLIZZARD_EFFECT)) {
-			sumAttackSpeed = sumAttackSpeed + 1;
+			if (entity instanceof LivingEntity _entity) {
+				AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("witchercraft:blizzard"), 0.55, AttributeModifier.Operation.ADD_MULTIPLIED_BASE);
+				if (!_entity.getAttribute(Attributes.ATTACK_SPEED).hasModifier(modifier.id())) {
+					_entity.getAttribute(Attributes.ATTACK_SPEED).addTransientModifier(modifier);
+				}
+			}
+		} else {
+			if (entity instanceof LivingEntity _entity) {
+				_entity.getAttribute(Attributes.ATTACK_SPEED).removeModifier(ResourceLocation.parse("witchercraft:blizzard"));
+			}
 		}
 		{
 			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-			_vars.witchercraftAttackSpeed = sumAttackSpeed;
+			_vars.witchercraftAttackSpeed = entity instanceof LivingEntity _livingEntity3 && _livingEntity3.getAttributes().hasAttribute(Attributes.ATTACK_SPEED) ? _livingEntity3.getAttribute(Attributes.ATTACK_SPEED).getValue() : 0;
 			_vars.markSyncDirty();
-		}
-		{
-			Entity _ent = entity;
-			if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-				_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-						_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), ("/attribute @s minecraft:generic.attack_speed base set " + (4 + sumAttackSpeed)));
-			}
 		}
 	}
 }

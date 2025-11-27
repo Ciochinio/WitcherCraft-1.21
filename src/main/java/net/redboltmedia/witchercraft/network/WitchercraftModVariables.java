@@ -146,6 +146,10 @@ public class WitchercraftModVariables {
 			clone.witchercraftInstantKillChance = original.witchercraftInstantKillChance;
 			clone.sumInstantKillChance = original.sumInstantKillChance;
 			clone.witchercraftBasePassiveStaminaRegeneration = original.witchercraftBasePassiveStaminaRegeneration;
+			clone.witchercraftPotionDuration = original.witchercraftPotionDuration;
+			clone.sumPotionDuration = original.sumPotionDuration;
+			clone.witchercraftSignIntensity = original.witchercraftSignIntensity;
+			clone.sumSignIntensity = original.sumSignIntensity;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
 	}
@@ -228,6 +232,10 @@ public class WitchercraftModVariables {
 		public double witchercraftInstantKillChance = 0;
 		public double sumInstantKillChance = 0;
 		public double witchercraftBasePassiveStaminaRegeneration = 0;
+		public double witchercraftPotionDuration = 0;
+		public double sumPotionDuration = 0;
+		public double witchercraftSignIntensity = 0;
+		public double sumSignIntensity = 0;
 
 		@Override
 		public void serialize(ValueOutput output) {
@@ -307,6 +315,10 @@ public class WitchercraftModVariables {
 			output.putDouble("witchercraftInstantKillChance", witchercraftInstantKillChance);
 			output.putDouble("sumInstantKillChance", sumInstantKillChance);
 			output.putDouble("witchercraftBasePassiveStaminaRegeneration", witchercraftBasePassiveStaminaRegeneration);
+			output.putDouble("witchercraftPotionDuration", witchercraftPotionDuration);
+			output.putDouble("sumPotionDuration", sumPotionDuration);
+			output.putDouble("witchercraftSignIntensity", witchercraftSignIntensity);
+			output.putDouble("sumSignIntensity", sumSignIntensity);
 		}
 
 		@Override
@@ -387,6 +399,10 @@ public class WitchercraftModVariables {
 			witchercraftInstantKillChance = input.getDoubleOr("witchercraftInstantKillChance", 0);
 			sumInstantKillChance = input.getDoubleOr("sumInstantKillChance", 0);
 			witchercraftBasePassiveStaminaRegeneration = input.getDoubleOr("witchercraftBasePassiveStaminaRegeneration", 0);
+			witchercraftPotionDuration = input.getDoubleOr("witchercraftPotionDuration", 0);
+			sumPotionDuration = input.getDoubleOr("sumPotionDuration", 0);
+			witchercraftSignIntensity = input.getDoubleOr("witchercraftSignIntensity", 0);
+			sumSignIntensity = input.getDoubleOr("sumSignIntensity", 0);
 		}
 
 		public void markSyncDirty() {

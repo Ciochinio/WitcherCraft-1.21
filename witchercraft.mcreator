@@ -437,9 +437,9 @@
       "registry_name": "full_moon",
       "metadata": {
         "files": [
-          "src/main/resources/assets/witchercraft/models/item/full_moon.json",
           "src/main/java/net/redboltmedia/witchercraft/item/FullMoonItem.java",
-          "src/main/resources/assets/witchercraft/items/full_moon.json"
+          "src/main/resources/assets/witchercraft/items/full_moon.json",
+          "src/main/resources/assets/witchercraft/models/item/full_moon.json"
         ]
       },
       "path": "~/Alchemy/Potions/FullMoon"
@@ -482,9 +482,9 @@
       "registry_name": "tawny_owl",
       "metadata": {
         "files": [
-          "src/main/resources/assets/witchercraft/items/tawny_owl.json",
           "src/main/resources/assets/witchercraft/models/item/tawny_owl.json",
-          "src/main/java/net/redboltmedia/witchercraft/item/TawnyOwlItem.java"
+          "src/main/java/net/redboltmedia/witchercraft/item/TawnyOwlItem.java",
+          "src/main/resources/assets/witchercraft/items/tawny_owl.json"
         ]
       },
       "path": "~/Alchemy/Potions/TawnyOwl"
@@ -1678,25 +1678,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/redboltmedia/witchercraft/procedures/KillerWhaleUsedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Alchemy/Potions/KillerWhale"
-    },
-    {
-      "name": "KillerWhaleActive",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "killer_whale_active",
-      "metadata": {
-        "files": [
-          "src/main/java/net/redboltmedia/witchercraft/procedures/KillerWhaleActiveProcedure.java"
         ],
         "dependencies": [
           {
@@ -5940,6 +5921,135 @@
         ]
       },
       "path": "~/Character Stats/Stats/VariableStats"
+    },
+    {
+      "name": "PotionDuration",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potion_duration",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/PotionDurationProcedure.java"
+        ]
+      },
+      "path": "~/Character Stats/Stats/VariableStats/PotionDuration"
+    },
+    {
+      "name": "CharacterGuiPotionDuration",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_gui_potion_duration",
+      "metadata": {
+        "return_type": "string",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterGuiPotionDurationProcedure.java"
+        ]
+      },
+      "path": "~/Character Stats/Stats/Gui"
+    },
+    {
+      "name": "SignIntensity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sign_intensity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/SignIntensityProcedure.java"
+        ]
+      },
+      "path": "~/Character Stats/Stats/VariableStats/SignIntensity"
+    },
+    {
+      "name": "KillerWhaleEffectActive",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "killer_whale_effect_active",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/KillerWhaleEffectActiveProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Potions/KillerWhale"
+    },
+    {
+      "name": "PetrisPhilterEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petris_philter_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/PetrisPhilterEffectMobEffect.java"
+        ]
+      },
+      "path": "~/Alchemy/Potions/PetrisPhilter"
+    },
+    {
+      "name": "PetrisPhilterUsed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petris_philter_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/PetrisPhilterUsedProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Potions/PetrisPhilter"
+    },
+    {
+      "name": "CharacterGuiSignIntensity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_gui_sign_intensity",
+      "metadata": {
+        "return_type": "string",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterGuiSignIntensityProcedure.java"
+        ]
+      },
+      "path": "~/Character Stats/Stats/Gui"
     }
   ],
   "variable_elements": [
@@ -6400,9 +6510,27 @@
       "value": "0"
     },
     {
-      "name": "witchercraftRespecPoints",
+      "name": "witchercraftPotionDuration",
       "type": "number",
-      "scope": "player_persistent",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "sumPotionDuration",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "witchercraftSignIntensity",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "sumSignIntensity",
+      "type": "number",
+      "scope": "player_lifetime",
       "value": "0"
     }
   ],
@@ -6674,7 +6802,7 @@
       "effect.witchercraft.toxicity_overdose_tick": "Toxicity Overdose",
       "effect.witchercraft.passive_health_regen_tick": "Passive Health Regen Tick",
       "effect.witchercraft.passive_stamina_regen_tick": "Passive Stamina Regen",
-      "gui.witchercraft.player_stats_overlay.label_additionaldamage": "IncreasedDamage(%)",
+      "gui.witchercraft.player_stats_overlay.label_additionaldamage": "IncreasedDamage",
       "gui.witchercraft.player_stats_overlay.label_additionaldamgeflat": "AdditionalDamge",
       "effect.witchercraft.bleed": "Bleed",
       "effect.witchercraft.bleed_cooldown": "Bleed Cooldown",
@@ -6682,7 +6810,10 @@
       "effect.witchercraft.undying_cooldown": "Undying Cooldown",
       "gui.witchercraft.player_stats_overlay.label_dodge_chance": "Dodge Chance",
       "gui.witchercraft.player_stats_overlay.label_instantkillchance": "InstantKillChance",
-      "effect.witchercraft.dodge_cooldown": "Dodge Cooldown"
+      "effect.witchercraft.dodge_cooldown": "Dodge Cooldown",
+      "gui.witchercraft.player_stats_overlay.label_potion_duration": "Potion Duration",
+      "effect.witchercraft.petris_philter_effect": "Petris Philter Effect",
+      "gui.witchercraft.player_stats_overlay.label_sign_intensity": "Sign Intensity"
     }
   },
   "metadata": {
@@ -7075,6 +7206,14 @@
                   },
                   {
                     "name": "InstantKillChance",
+                    "children": []
+                  },
+                  {
+                    "name": "PotionDuration",
+                    "children": []
+                  },
+                  {
+                    "name": "SignIntensity",
                     "children": []
                   }
                 ]

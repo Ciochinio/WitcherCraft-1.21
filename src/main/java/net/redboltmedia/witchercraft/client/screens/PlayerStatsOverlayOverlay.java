@@ -85,6 +85,14 @@ public class PlayerStatsOverlayOverlay {
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
 					CharacterGuiInstantKillChanceProcedure.execute(entity), w / 2 + -108, h / 2 + -4, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.witchercraft.player_stats_overlay.label_potion_duration"), w / 2 + -207, h / 2 + 5, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+
+					CharacterGuiPotionDurationProcedure.execute(entity), w / 2 + -108, h / 2 + 5, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.witchercraft.player_stats_overlay.label_sign_intensity"), w / 2 + -207, h / 2 + 14, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+
+					CharacterGuiSignIntensityProcedure.execute(entity), w / 2 + -108, h / 2 + 14, -1, false);
 		}
 	}
 }

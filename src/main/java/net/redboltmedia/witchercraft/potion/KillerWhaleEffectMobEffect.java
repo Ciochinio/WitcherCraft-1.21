@@ -1,6 +1,6 @@
 package net.redboltmedia.witchercraft.potion;
 
-import net.redboltmedia.witchercraft.procedures.KillerWhaleActiveProcedure;
+import net.redboltmedia.witchercraft.procedures.KillerWhaleEffectActiveProcedure;
 
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.effect.MobEffectCategory;
@@ -19,7 +19,7 @@ public class KillerWhaleEffectMobEffect extends MobEffect {
 
 	@Override
 	public boolean applyEffectTick(ServerLevel level, LivingEntity entity, int amplifier) {
-		KillerWhaleActiveProcedure.execute(entity);
+		KillerWhaleEffectActiveProcedure.execute(entity);
 		return super.applyEffectTick(level, entity, amplifier);
 	}
 }

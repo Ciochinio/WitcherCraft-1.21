@@ -1,13 +1,3 @@
-/xp add Dev 10000
-/lvlfix
-/weather clear
-/devtool
-/xp add Dev 10000
-/lvlfix
-/devtool
-/xp add Dev 1000 points
-/lvlfix
-/devtool
 /xp add Dev 1000 points
 /lvlfix
 /effect clear Dev witchercraft:dev_log
@@ -48,3 +38,13 @@
 /xp add Dev 10000 points
 /lvlfix
 /weather clear
+/effect clear @a witchercraft:golden_oriole_effect
+/effect clear Dev witchercraft:golden_oriole_effect
+/neoforge tps
+/effect clear Dev witchercraft:golden_oriole_effect
+/effect clear Dev witchercraft:blizzard_effect
+/effect clear Dev witchercraft:swallow_effect
+/effect clear Dev witchercraft:thunderbolt_effect
+/weather thunder
+/weather clear
+/effect clear
