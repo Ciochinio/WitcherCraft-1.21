@@ -89,5 +89,12 @@ public class ToxicityProcedure {
 				_vars.markSyncDirty();
 			}
 		}
+		if (entity instanceof LivingEntity _livEnt8 && _livEnt8.hasEffect(WitchercraftModMobEffects.CAT_EFFECT)) {
+			{
+				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
+				_vars.sumToxicity = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumToxicity + 10;
+				_vars.markSyncDirty();
+			}
+		}
 	}
 }
