@@ -1,0 +1,29 @@
+package net.redboltmedia.witchercraft.potion;
+
+import net.redboltmedia.witchercraft.init.WitchercraftModMobEffects;
+
+import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
+import net.neoforged.neoforge.client.extensions.common.IClientMobEffectExtensions;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffectCategory;
+import net.minecraft.world.effect.MobEffect;
+
+@EventBusSubscriber
+public class TaPotkaMusiTuBycZebyGraWiedzialaGdzieJestGraczMobEffect extends MobEffect {
+	public TaPotkaMusiTuBycZebyGraWiedzialaGdzieJestGraczMobEffect() {
+		super(MobEffectCategory.NEUTRAL, -1);
+	}
+
+	@SubscribeEvent
+	public static void registerMobEffectExtensions(RegisterClientExtensionsEvent event) {
+		event.registerMobEffect(new IClientMobEffectExtensions() {
+			@Override
+			public boolean isVisibleInGui(MobEffectInstance effect) {
+				return false;
+			}
+		}, WitchercraftModMobEffects.TA_POTKA_MUSI_TU_BYC_ZEBY_GRA_WIEDZIALA_GDZIE_JEST_GRACZ.get());
+	}
+}

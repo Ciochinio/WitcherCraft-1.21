@@ -1,6 +1,3 @@
-/effect clear Dev witchercraft:dev_log
-/xp add Dev 1000 points
-/lvlfix
 /weather clear 100000000
 /time set night
 /time set midnight
@@ -48,3 +45,6 @@
 /effect clear
 /time set midnight
 /effect clear
+/weather clear
+/time set day
+/time set midnight

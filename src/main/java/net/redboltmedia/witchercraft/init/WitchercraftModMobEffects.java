@@ -53,6 +53,8 @@ public class WitchercraftModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> UNDYING_COOLDOWN = REGISTRY.register("undying_cooldown", () -> new UndyingCooldownMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> DODGE_COOLDOWN = REGISTRY.register("dodge_cooldown", () -> new DodgeCooldownMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> PETRIS_PHILTER_EFFECT = REGISTRY.register("petris_philter_effect", () -> new PetrisPhilterEffectMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> TA_POTKA_MUSI_TU_BYC_ZEBY_GRA_WIEDZIALA_GDZIE_JEST_GRACZ = REGISTRY.register("ta_potka_musi_tu_byc_zeby_gra_wiedziala_gdzie_jest_gracz",
+			() -> new TaPotkaMusiTuBycZebyGraWiedzialaGdzieJestGraczMobEffect());
 
 	@SubscribeEvent
 	public static void onEffectRemoved(MobEffectEvent.Remove event) {

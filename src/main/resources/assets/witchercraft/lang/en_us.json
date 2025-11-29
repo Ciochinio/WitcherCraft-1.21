@@ -240,5 +240,6 @@
   "effect.witchercraft.dodge_cooldown": "Dodge Cooldown",
   "gui.witchercraft.player_stats_overlay.label_potion_duration": "Potion Duration",
   "effect.witchercraft.petris_philter_effect": "Petris Philter Effect",
-  "gui.witchercraft.player_stats_overlay.label_sign_intensity": "Sign Intensity"
+  "gui.witchercraft.player_stats_overlay.label_sign_intensity": "Sign Intensity",
+  "effect.witchercraft.ta_potka_musi_tu_byc_zeby_gra_wiedziala_gdzie_jest_gracz": "Ta Potka Musi Tu Byc Zeby Gra Wiedziala Gdzie Jest Gracz"
 }
