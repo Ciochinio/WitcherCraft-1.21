@@ -22,7 +22,7 @@ mipmapLevels:2
 narrator:0
 particles:0
 reducedDebugInfo:false
-renderClouds:"false"
+renderClouds:"true"
 cloudRange:128
 renderDistance:5
 simulationDistance:12

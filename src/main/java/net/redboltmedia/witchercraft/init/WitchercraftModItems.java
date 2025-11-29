@@ -23,8 +23,6 @@ public class WitchercraftModItems {
 	public static final DeferredItem<Item> THUNDERBOLT;
 	public static final DeferredItem<Item> WHITE_RAFFARDS_DECOCTION;
 	public static final DeferredItem<Item> TAWNY_OWL;
-	public static final DeferredItem<Item> GADWALL;
-	public static final DeferredItem<Item> ROOK;
 	public static final DeferredItem<Item> KILLER_WHALE;
 	public static final DeferredItem<Item> PETRIS_PHILTER;
 	public static final DeferredItem<Item> DEVILS_PUFFBALL;
@@ -86,8 +84,6 @@ public class WitchercraftModItems {
 		THUNDERBOLT = register("thunderbolt", ThunderboltItem::new);
 		WHITE_RAFFARDS_DECOCTION = register("white_raffards_decoction", WhiteRaffardsDecoctionItem::new);
 		TAWNY_OWL = register("tawny_owl", TawnyOwlItem::new);
-		GADWALL = register("gadwall", GadwallItem::new);
-		ROOK = register("rook", RookItem::new);
 		KILLER_WHALE = register("killer_whale", KillerWhaleItem::new);
 		PETRIS_PHILTER = register("petris_philter", PetrisPhilterItem::new);
 		DEVILS_PUFFBALL = register("devils_puffball", DevilsPuffballItem::new);
