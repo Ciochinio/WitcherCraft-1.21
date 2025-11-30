@@ -27,17 +27,14 @@ public class SignIntensityProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
+		double sumSignIntensity = 0;
+		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(WitchercraftModMobEffects.PETRIS_PHILTER_EFFECT)) {
+			sumSignIntensity = sumSignIntensity + 20;
+		}
 		{
 			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-			_vars.sumSignIntensity = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftSignIntensity;
+			_vars.witchercraftSignIntensity = sumSignIntensity;
 			_vars.markSyncDirty();
-		}
-		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(WitchercraftModMobEffects.PETRIS_PHILTER_EFFECT)) {
-			{
-				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-				_vars.sumSignIntensity = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftSignIntensity + 20;
-				_vars.markSyncDirty();
-			}
 		}
 	}
 }

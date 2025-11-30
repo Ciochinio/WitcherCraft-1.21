@@ -2,7 +2,7 @@
   "_fv": 79,
   "_type": "potioneffect",
   "definition": {
-    "effectName": "Petris Philter Effect",
+    "effectName": "Petris Philter",
     "icon": "petris_philter_effect",
     "color": {
       "value": -1,

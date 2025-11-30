@@ -20,9 +20,9 @@ public class WitchercraftPlayerStatsProcedure {
 		if (entity instanceof Player _player && !_player.level().isClientSide())
 			_player.displayClientMessage(Component.literal(("Attack Speed" + entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAttackSpeed)), false);
 		if (entity instanceof Player _player && !_player.level().isClientSide())
-			_player.displayClientMessage(Component.literal(("Crit Rate" + (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumCritChance + "%"))), false);
+			_player.displayClientMessage(Component.literal(("Crit Rate" + (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftCritChance + "%"))), false);
 		if (entity instanceof Player _player && !_player.level().isClientSide())
-			_player.displayClientMessage(Component.literal(("Crit Damage" + (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumCritDamage + "%"))), false);
+			_player.displayClientMessage(Component.literal(("Crit Damage" + (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftCritDamage + "%"))), false);
 		if (entity instanceof Player _player && !_player.level().isClientSide())
 			_player.displayClientMessage(Component.literal(("Passive Health Regeneration" + (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftPassiveHealthRegeneration + "Hp/2s"))), false);
 		if (entity instanceof Player _player && !_player.level().isClientSide())

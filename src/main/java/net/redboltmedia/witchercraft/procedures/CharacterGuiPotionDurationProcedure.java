@@ -25,6 +25,6 @@ public class CharacterGuiPotionDurationProcedure {
 	private static String execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return "";
-		return new java.text.DecimalFormat("##").format(100 + entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumPotionDuration) + "%";
+		return new java.text.DecimalFormat("##").format(100 + entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftPotionDuration) + "%";
 	}
 }

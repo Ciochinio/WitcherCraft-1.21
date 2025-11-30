@@ -45,9 +45,9 @@ public class InstantKillProcedure {
 			if (sourceentity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal(("instant kill roll>>>" + instantKillRoll)), false);
 			if (sourceentity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal(("instant kill chance>>>" + sourceentity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumInstantKillChance)), false);
+				_player.displayClientMessage(Component.literal(("instant kill chance>>>" + sourceentity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftInstantKillChance)), false);
 		}
-		if (!entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("minecraft:enderdragon"))) && instantKillRoll <= sourceentity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumInstantKillChance) {
+		if (!entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("minecraft:enderdragon"))) && instantKillRoll <= sourceentity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftInstantKillChance) {
 			if (!damagesource.is(DamageTypes.ARROW)) {
 				if (sourceentity instanceof LivingEntity _livEnt6 && _livEnt6.hasEffect(WitchercraftModMobEffects.DEV_LOG)) {
 					if (sourceentity instanceof Player _player && !_player.level().isClientSide())

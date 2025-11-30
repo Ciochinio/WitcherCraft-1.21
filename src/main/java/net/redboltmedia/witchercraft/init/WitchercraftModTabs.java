@@ -77,5 +77,9 @@ public class WitchercraftModTabs {
 				tabData.accept(WitchercraftModItems.GRIFFIN_ARMOR_CHESTPLATE.get());
 				tabData.accept(WitchercraftModItems.GRIFFIN_ARMOR_LEGGINGS.get());
 				tabData.accept(WitchercraftModItems.GRIFFIN_ARMOR_BOOTS.get());
+				tabData.accept(WitchercraftModItems.WATER_HAG_DECOCTION.get());
+				tabData.accept(WitchercraftModItems.EKIMMARA_DECOCTION.get());
+				tabData.accept(WitchercraftModItems.KATAKAN_DECOCTION.get());
+				tabData.accept(WitchercraftModItems.LESHEN_DECOCTION.get());
 			}).build());
 }

@@ -27,24 +27,17 @@ public class DodgeChanceProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		{
-			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-			_vars.sumDodgeChance = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftDodgeChance;
-			_vars.markSyncDirty();
-		}
+		double sumDodgeChance = 0;
 		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesRazorFocus == true) {
-			{
-				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-				_vars.sumDodgeChance = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumDodgeChance + 10;
-				_vars.markSyncDirty();
-			}
+			sumDodgeChance = sumDodgeChance + 10;
 		}
 		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(WitchercraftModMobEffects.BLIZZARD_EFFECT)) {
-			{
-				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-				_vars.sumDodgeChance = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumDodgeChance + 5;
-				_vars.markSyncDirty();
-			}
+			sumDodgeChance = sumDodgeChance + 5;
+		}
+		{
+			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
+			_vars.witchercraftDodgeChance = sumDodgeChance;
+			_vars.markSyncDirty();
 		}
 	}
 }

@@ -25,17 +25,14 @@ public class InstantKillChanceProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
+		double sumInstantKillChance = 0;
+		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesDeadlyPresicion == true) {
+			sumInstantKillChance = sumInstantKillChance + 1;
+		}
 		{
 			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-			_vars.sumInstantKillChance = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftInstantKillChance;
+			_vars.witchercraftInstantKillChance = sumInstantKillChance;
 			_vars.markSyncDirty();
-		}
-		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesDeadlyPresicion == true) {
-			{
-				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-				_vars.sumInstantKillChance = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumInstantKillChance + 1;
-				_vars.markSyncDirty();
-			}
 		}
 	}
 }

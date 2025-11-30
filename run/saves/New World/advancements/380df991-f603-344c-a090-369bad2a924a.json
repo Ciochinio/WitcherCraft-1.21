@@ -924,5 +924,11 @@
     },
     "done": true
   },
+  "minecraft:recipes/brewing/fermented_spider_eye": {
+    "criteria": {
+      "has_spider_eye": "2025-11-30 20:22:14 +0100"
+    },
+    "done": true
+  },
   "DataVersion": 4440
 }

@@ -25,6 +25,6 @@ public class CharacterGuiInstantKillChanceProcedure {
 	private static String execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return "";
-		return new java.text.DecimalFormat("##.##").format(entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumInstantKillChance) + "%";
+		return new java.text.DecimalFormat("##.##").format(entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftInstantKillChance) + "%";
 	}
 }

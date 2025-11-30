@@ -37,6 +37,10 @@ public class IncreasedDamageProcedure {
 		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(WitchercraftModMobEffects.THUNDERBOLT_EFFECT)) {
 			sumIncreasedDamage = sumIncreasedDamage + 20;
 		}
+		if (entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(WitchercraftModMobEffects.WATER_HAG_DECOCTION_EFFECT)
+				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) == (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)) {
+			sumIncreasedDamage = sumIncreasedDamage + 40;
+		}
 		{
 			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
 			_vars.witchercraftIncreasedDamage = sumIncreasedDamage;

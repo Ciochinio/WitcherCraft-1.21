@@ -56,6 +56,10 @@ public class WitchercraftModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> TA_POTKA_MUSI_TU_BYC_ZEBY_GRA_WIEDZIALA_GDZIE_JEST_GRACZ = REGISTRY.register("ta_potka_musi_tu_byc_zeby_gra_wiedziala_gdzie_jest_gracz",
 			() -> new TaPotkaMusiTuBycZebyGraWiedzialaGdzieJestGraczMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> CORRECT_OIL = REGISTRY.register("correct_oil", () -> new CorrectOilMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> WATER_HAG_DECOCTION_EFFECT = REGISTRY.register("water_hag_decoction_effect", () -> new WaterHagDecoctionEffectMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> EKIMMARA_DECOCTION_EFFECT = REGISTRY.register("ekimmara_decoction_effect", () -> new EkimmaraDecoctionEffectMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> KATAKAN_DECOCTION_EFFECT = REGISTRY.register("katakan_decoction_effect", () -> new KatakanDecoctionEffectMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> LESHEN_DECOCTION_EFFECT = REGISTRY.register("leshen_decoction_effect", () -> new LeshenDecoctionEffectMobEffect());
 
 	@SubscribeEvent
 	public static void onEffectRemoved(MobEffectEvent.Remove event) {

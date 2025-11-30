@@ -27,17 +27,14 @@ public class OilDamageProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
+		double sumOilDamage = 0;
+		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(MobEffects.LUCK)) {
+			sumOilDamage = sumOilDamage + 20;
+		}
 		{
 			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-			_vars.sumOilDamage = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftOilDamage;
+			_vars.witchercraftOilDamage = sumOilDamage;
 			_vars.markSyncDirty();
-		}
-		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(MobEffects.LUCK)) {
-			{
-				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-				_vars.sumOilDamage = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftOilDamage + 20;
-				_vars.markSyncDirty();
-			}
 		}
 	}
 }

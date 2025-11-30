@@ -32,20 +32,20 @@ public class CritChanceProcedure {
 			return;
 		{
 			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-			_vars.sumCritChance = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftCritChance;
+			_vars.witchercraftCritChance = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftBaseCritChance;
 			_vars.markSyncDirty();
 		}
 		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesPreciseBlows == true) {
 			{
 				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-				_vars.sumCritChance = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumCritChance + 12;
+				_vars.witchercraftCritChance = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftCritChance + 12;
 				_vars.markSyncDirty();
 			}
 		}
 		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesCrushingBlows == true) {
 			{
 				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-				_vars.sumCritChance = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumCritChance + 8;
+				_vars.witchercraftCritChance = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftCritChance + 8;
 				_vars.markSyncDirty();
 			}
 		}
@@ -53,14 +53,21 @@ public class CritChanceProcedure {
 				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.BOW)) {
 			{
 				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-				_vars.sumCritChance = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumCritChance + 10;
+				_vars.witchercraftCritChance = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftCritChance + 10;
 				_vars.markSyncDirty();
 			}
 		}
-		if (entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(WitchercraftModMobEffects.THUNDERBOLT_EFFECT) && world.getLevelData().isThundering()) {
+		if (entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(WitchercraftModMobEffects.KATAKAN_DECOCTION_EFFECT)) {
 			{
 				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-				_vars.sumCritChance = 100;
+				_vars.witchercraftCritChance = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftCritChance + 10;
+				_vars.markSyncDirty();
+			}
+		}
+		if (entity instanceof LivingEntity _livEnt5 && _livEnt5.hasEffect(WitchercraftModMobEffects.THUNDERBOLT_EFFECT) && world.getLevelData().isThundering()) {
+			{
+				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
+				_vars.witchercraftCritChance = 100;
 				_vars.markSyncDirty();
 			}
 		}

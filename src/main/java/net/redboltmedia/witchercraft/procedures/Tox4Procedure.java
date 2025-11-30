@@ -8,7 +8,7 @@ public class Tox4Procedure {
 	public static boolean execute(Entity entity) {
 		if (entity == null)
 			return false;
-		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumToxicity >= 80) {
+		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftToxicity >= 80) {
 			return true;
 		}
 		return false;

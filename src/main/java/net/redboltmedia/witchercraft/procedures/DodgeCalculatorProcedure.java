@@ -41,9 +41,9 @@ public class DodgeCalculatorProcedure {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal(("dodge roll:" + dodgeRoll)), false);
 			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal(("dodge chance:" + entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumDodgeChance)), false);
+				_player.displayClientMessage(Component.literal(("dodge chance:" + entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftDodgeChance)), false);
 		}
-		if (!(entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(WitchercraftModMobEffects.DODGE_COOLDOWN)) && dodgeRoll <= entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumDodgeChance) {
+		if (!(entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(WitchercraftModMobEffects.DODGE_COOLDOWN)) && dodgeRoll <= entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftDodgeChance) {
 			if (event instanceof ICancellableEvent _cancellable) {
 				_cancellable.setCanceled(true);
 			}

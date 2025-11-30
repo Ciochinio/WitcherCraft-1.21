@@ -75,6 +75,10 @@ public class WitchercraftModItems {
 	public static final DeferredItem<Item> GRIFFIN_ARMOR_CHESTPLATE;
 	public static final DeferredItem<Item> GRIFFIN_ARMOR_LEGGINGS;
 	public static final DeferredItem<Item> GRIFFIN_ARMOR_BOOTS;
+	public static final DeferredItem<Item> WATER_HAG_DECOCTION;
+	public static final DeferredItem<Item> EKIMMARA_DECOCTION;
+	public static final DeferredItem<Item> KATAKAN_DECOCTION;
+	public static final DeferredItem<Item> LESHEN_DECOCTION;
 	static {
 		WHITE_HONEY = register("white_honey", WhiteHoneyItem::new);
 		BLIZZARD = register("blizzard", BlizzardItem::new);
@@ -136,6 +140,10 @@ public class WitchercraftModItems {
 		GRIFFIN_ARMOR_CHESTPLATE = register("griffin_armor_chestplate", GriffinArmorItem.Chestplate::new);
 		GRIFFIN_ARMOR_LEGGINGS = register("griffin_armor_leggings", GriffinArmorItem.Leggings::new);
 		GRIFFIN_ARMOR_BOOTS = register("griffin_armor_boots", GriffinArmorItem.Boots::new);
+		WATER_HAG_DECOCTION = register("water_hag_decoction", WaterHagDecoctionItem::new);
+		EKIMMARA_DECOCTION = register("ekimmara_decoction", EkimmaraDecoctionItem::new);
+		KATAKAN_DECOCTION = register("katakan_decoction", KatakanDecoctionItem::new);
+		LESHEN_DECOCTION = register("leshen_decoction", LeshenDecoctionItem::new);
 	}
 
 	// Start of user code block custom items

@@ -38,7 +38,7 @@ public class AdditionalDamageProcedure {
 			sumAdditionalDamage = sumAdditionalDamage + 5;
 		}
 		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(WitchercraftModMobEffects.CORRECT_OIL)) {
-			sumAdditionalDamage = sumAdditionalDamage + 4 * (1 + entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumOilDamage * 0.01);
+			sumAdditionalDamage = sumAdditionalDamage + 4 * (1 + entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftOilDamage * 0.01);
 		}
 		{
 			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);

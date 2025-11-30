@@ -129,29 +129,23 @@ public class WitchercraftModVariables {
 			clone.witchercraftCritChance = original.witchercraftCritChance;
 			clone.witchercraftCritDamage = original.witchercraftCritDamage;
 			clone.witchercraftAttackSpeed = original.witchercraftAttackSpeed;
-			clone.sumCritChance = original.sumCritChance;
-			clone.sumCritDamage = original.sumCritDamage;
-			clone.witchercraftBaseMovementSpeed = original.witchercraftBaseMovementSpeed;
-			clone.witchercraftBaseAttackSpeed = original.witchercraftBaseAttackSpeed;
 			clone.witchercraftPassiveHealthRegeneration = original.witchercraftPassiveHealthRegeneration;
 			clone.witchercraftBasePassiveHealthRegeneration = original.witchercraftBasePassiveHealthRegeneration;
 			clone.witchercraftPassiveStaminaRegeneration = original.witchercraftPassiveStaminaRegeneration;
 			clone.witchercraftToxicity = original.witchercraftToxicity;
-			clone.sumToxicity = original.sumToxicity;
 			clone.ToxicityOverdoseThreshold = original.ToxicityOverdoseThreshold;
 			clone.witchercraftIncreasedDamage = original.witchercraftIncreasedDamage;
 			clone.witchercraftEnemyNearby = original.witchercraftEnemyNearby;
-			clone.sumDodgeChance = original.sumDodgeChance;
 			clone.witchercraftDodgeChance = original.witchercraftDodgeChance;
 			clone.witchercraftInstantKillChance = original.witchercraftInstantKillChance;
-			clone.sumInstantKillChance = original.sumInstantKillChance;
 			clone.witchercraftBasePassiveStaminaRegeneration = original.witchercraftBasePassiveStaminaRegeneration;
 			clone.witchercraftPotionDuration = original.witchercraftPotionDuration;
-			clone.sumPotionDuration = original.sumPotionDuration;
 			clone.witchercraftSignIntensity = original.witchercraftSignIntensity;
-			clone.sumSignIntensity = original.sumSignIntensity;
 			clone.witchercraftOilDamage = original.witchercraftOilDamage;
-			clone.sumOilDamage = original.sumOilDamage;
+			clone.witchercraftLifeSteal = original.witchercraftLifeSteal;
+			clone.witchercraftBaseCritChance = original.witchercraftBaseCritChance;
+			clone.witchercraftBaseCritDamage = original.witchercraftBaseCritDamage;
+			clone.witchercraftReflectDamage = original.witchercraftReflectDamage;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
 	}
@@ -165,10 +159,6 @@ public class WitchercraftModVariables {
 		public double witchercraftCritChance = 0.0;
 		public double witchercraftCritDamage = 0.0;
 		public double witchercraftAttackSpeed = 0;
-		public double sumCritChance = 0.0;
-		public double sumCritDamage = 0.0;
-		public double witchercraftBaseMovementSpeed = 0.0;
-		public double witchercraftBaseAttackSpeed = 0;
 		public double witchercraftPassiveHealthRegeneration = 0;
 		public double witchercraftBasePassiveHealthRegeneration = 0;
 		public double witchercraftPassiveStaminaRegeneration = 0;
@@ -222,24 +212,22 @@ public class WitchercraftModVariables {
 		public double wichercraftPlayerExperience = 0;
 		public double wichercraftAbilitesExperienceRequirement = 0.0;
 		public double witchercraftToxicity = 0;
-		public double sumToxicity = 0;
 		public double ToxicityOverdoseThreshold = 0.0;
 		public double witchercraftIncreasedDamage = 0;
 		public double witchercraftAbilitiesCombatSkillPointsUsed = 0;
 		public double witchercraftAbilitiesAlchemySkillPointsUsed = 0;
 		public double witchercraftAbilitiesSignsSkillPointsUsed = 0;
 		public boolean witchercraftEnemyNearby = false;
-		public double sumDodgeChance = 0;
 		public double witchercraftDodgeChance = 0;
 		public double witchercraftInstantKillChance = 0;
-		public double sumInstantKillChance = 0;
 		public double witchercraftBasePassiveStaminaRegeneration = 0;
 		public double witchercraftPotionDuration = 0;
-		public double sumPotionDuration = 0;
 		public double witchercraftSignIntensity = 0;
-		public double sumSignIntensity = 0;
 		public double witchercraftOilDamage = 0;
-		public double sumOilDamage = 0;
+		public double witchercraftLifeSteal = 0;
+		public double witchercraftBaseCritChance = 0;
+		public double witchercraftBaseCritDamage = 0;
+		public double witchercraftReflectDamage = 0;
 
 		@Override
 		public void serialize(ValueOutput output) {
@@ -250,10 +238,6 @@ public class WitchercraftModVariables {
 			output.putDouble("witchercraftCritChance", witchercraftCritChance);
 			output.putDouble("witchercraftCritDamage", witchercraftCritDamage);
 			output.putDouble("witchercraftAttackSpeed", witchercraftAttackSpeed);
-			output.putDouble("sumCritChance", sumCritChance);
-			output.putDouble("sumCritDamage", sumCritDamage);
-			output.putDouble("witchercraftBaseMovementSpeed", witchercraftBaseMovementSpeed);
-			output.putDouble("witchercraftBaseAttackSpeed", witchercraftBaseAttackSpeed);
 			output.putDouble("witchercraftPassiveHealthRegeneration", witchercraftPassiveHealthRegeneration);
 			output.putDouble("witchercraftBasePassiveHealthRegeneration", witchercraftBasePassiveHealthRegeneration);
 			output.putDouble("witchercraftPassiveStaminaRegeneration", witchercraftPassiveStaminaRegeneration);
@@ -307,24 +291,22 @@ public class WitchercraftModVariables {
 			output.putDouble("wichercraftPlayerExperience", wichercraftPlayerExperience);
 			output.putDouble("wichercraftAbilitesExperienceRequirement", wichercraftAbilitesExperienceRequirement);
 			output.putDouble("witchercraftToxicity", witchercraftToxicity);
-			output.putDouble("sumToxicity", sumToxicity);
 			output.putDouble("ToxicityOverdoseThreshold", ToxicityOverdoseThreshold);
 			output.putDouble("witchercraftIncreasedDamage", witchercraftIncreasedDamage);
 			output.putDouble("witchercraftAbilitiesCombatSkillPointsUsed", witchercraftAbilitiesCombatSkillPointsUsed);
 			output.putDouble("witchercraftAbilitiesAlchemySkillPointsUsed", witchercraftAbilitiesAlchemySkillPointsUsed);
 			output.putDouble("witchercraftAbilitiesSignsSkillPointsUsed", witchercraftAbilitiesSignsSkillPointsUsed);
 			output.putBoolean("witchercraftEnemyNearby", witchercraftEnemyNearby);
-			output.putDouble("sumDodgeChance", sumDodgeChance);
 			output.putDouble("witchercraftDodgeChance", witchercraftDodgeChance);
 			output.putDouble("witchercraftInstantKillChance", witchercraftInstantKillChance);
-			output.putDouble("sumInstantKillChance", sumInstantKillChance);
 			output.putDouble("witchercraftBasePassiveStaminaRegeneration", witchercraftBasePassiveStaminaRegeneration);
 			output.putDouble("witchercraftPotionDuration", witchercraftPotionDuration);
-			output.putDouble("sumPotionDuration", sumPotionDuration);
 			output.putDouble("witchercraftSignIntensity", witchercraftSignIntensity);
-			output.putDouble("sumSignIntensity", sumSignIntensity);
 			output.putDouble("witchercraftOilDamage", witchercraftOilDamage);
-			output.putDouble("sumOilDamage", sumOilDamage);
+			output.putDouble("witchercraftLifeSteal", witchercraftLifeSteal);
+			output.putDouble("witchercraftBaseCritChance", witchercraftBaseCritChance);
+			output.putDouble("witchercraftBaseCritDamage", witchercraftBaseCritDamage);
+			output.putDouble("witchercraftReflectDamage", witchercraftReflectDamage);
 		}
 
 		@Override
@@ -336,10 +318,6 @@ public class WitchercraftModVariables {
 			witchercraftCritChance = input.getDoubleOr("witchercraftCritChance", 0);
 			witchercraftCritDamage = input.getDoubleOr("witchercraftCritDamage", 0);
 			witchercraftAttackSpeed = input.getDoubleOr("witchercraftAttackSpeed", 0);
-			sumCritChance = input.getDoubleOr("sumCritChance", 0);
-			sumCritDamage = input.getDoubleOr("sumCritDamage", 0);
-			witchercraftBaseMovementSpeed = input.getDoubleOr("witchercraftBaseMovementSpeed", 0);
-			witchercraftBaseAttackSpeed = input.getDoubleOr("witchercraftBaseAttackSpeed", 0);
 			witchercraftPassiveHealthRegeneration = input.getDoubleOr("witchercraftPassiveHealthRegeneration", 0);
 			witchercraftBasePassiveHealthRegeneration = input.getDoubleOr("witchercraftBasePassiveHealthRegeneration", 0);
 			witchercraftPassiveStaminaRegeneration = input.getDoubleOr("witchercraftPassiveStaminaRegeneration", 0);
@@ -393,24 +371,22 @@ public class WitchercraftModVariables {
 			wichercraftPlayerExperience = input.getDoubleOr("wichercraftPlayerExperience", 0);
 			wichercraftAbilitesExperienceRequirement = input.getDoubleOr("wichercraftAbilitesExperienceRequirement", 0);
 			witchercraftToxicity = input.getDoubleOr("witchercraftToxicity", 0);
-			sumToxicity = input.getDoubleOr("sumToxicity", 0);
 			ToxicityOverdoseThreshold = input.getDoubleOr("ToxicityOverdoseThreshold", 0);
 			witchercraftIncreasedDamage = input.getDoubleOr("witchercraftIncreasedDamage", 0);
 			witchercraftAbilitiesCombatSkillPointsUsed = input.getDoubleOr("witchercraftAbilitiesCombatSkillPointsUsed", 0);
 			witchercraftAbilitiesAlchemySkillPointsUsed = input.getDoubleOr("witchercraftAbilitiesAlchemySkillPointsUsed", 0);
 			witchercraftAbilitiesSignsSkillPointsUsed = input.getDoubleOr("witchercraftAbilitiesSignsSkillPointsUsed", 0);
 			witchercraftEnemyNearby = input.getBooleanOr("witchercraftEnemyNearby", false);
-			sumDodgeChance = input.getDoubleOr("sumDodgeChance", 0);
 			witchercraftDodgeChance = input.getDoubleOr("witchercraftDodgeChance", 0);
 			witchercraftInstantKillChance = input.getDoubleOr("witchercraftInstantKillChance", 0);
-			sumInstantKillChance = input.getDoubleOr("sumInstantKillChance", 0);
 			witchercraftBasePassiveStaminaRegeneration = input.getDoubleOr("witchercraftBasePassiveStaminaRegeneration", 0);
 			witchercraftPotionDuration = input.getDoubleOr("witchercraftPotionDuration", 0);
-			sumPotionDuration = input.getDoubleOr("sumPotionDuration", 0);
 			witchercraftSignIntensity = input.getDoubleOr("witchercraftSignIntensity", 0);
-			sumSignIntensity = input.getDoubleOr("sumSignIntensity", 0);
 			witchercraftOilDamage = input.getDoubleOr("witchercraftOilDamage", 0);
-			sumOilDamage = input.getDoubleOr("sumOilDamage", 0);
+			witchercraftLifeSteal = input.getDoubleOr("witchercraftLifeSteal", 0);
+			witchercraftBaseCritChance = input.getDoubleOr("witchercraftBaseCritChance", 0);
+			witchercraftBaseCritDamage = input.getDoubleOr("witchercraftBaseCritDamage", 0);
+			witchercraftReflectDamage = input.getDoubleOr("witchercraftReflectDamage", 0);
 		}
 
 		public void markSyncDirty() {

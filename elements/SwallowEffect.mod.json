@@ -2,7 +2,7 @@
   "_fv": 79,
   "_type": "potioneffect",
   "definition": {
-    "effectName": "Swallow Effect",
+    "effectName": "Swallow ",
     "icon": "swallow",
     "color": {
       "value": -1,

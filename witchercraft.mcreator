@@ -7300,6 +7300,303 @@
         ]
       },
       "path": "~/Character Stats/Stats/Gui"
+    },
+    {
+      "name": "WaterHagDecoction",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_hag_decoction",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/item/WaterHagDecoctionItem.java",
+          "src/main/resources/assets/witchercraft/items/water_hag_decoction.json",
+          "src/main/resources/assets/witchercraft/models/item/water_hag_decoction.json"
+        ]
+      },
+      "path": "~/Alchemy/Decoctions/Water Hag Decoction"
+    },
+    {
+      "name": "WaterHagDecoctionEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_hag_decoction_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/WaterHagDecoctionEffectMobEffect.java"
+        ]
+      },
+      "path": "~/Alchemy/Decoctions/Water Hag Decoction"
+    },
+    {
+      "name": "WaterHagDecoctionUsed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_hag_decoction_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/WaterHagDecoctionUsedProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Decoctions/Water Hag Decoction"
+    },
+    {
+      "name": "LifeSteal",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "life_steal",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/LifeStealProcedure.java"
+        ]
+      },
+      "path": "~/Character Stats/Stats/VariableStats/LifeSteal"
+    },
+    {
+      "name": "CharacterGuiLifeSteal",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_gui_life_steal",
+      "metadata": {
+        "return_type": "string",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterGuiLifeStealProcedure.java"
+        ]
+      },
+      "path": "~/Character Stats/Stats/Gui"
+    },
+    {
+      "name": "EkimmaraDecoction",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ekimmara_decoction",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/witchercraft/models/item/ekimmara_decoction.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/EkimmaraDecoctionItem.java",
+          "src/main/resources/assets/witchercraft/items/ekimmara_decoction.json"
+        ]
+      },
+      "path": "~/Alchemy/Decoctions/Ekimmara Decoction"
+    },
+    {
+      "name": "EkimmaraDecoctionEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ekimmara_decoction_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/EkimmaraDecoctionEffectMobEffect.java"
+        ]
+      },
+      "path": "~/Alchemy/Decoctions/Ekimmara Decoction"
+    },
+    {
+      "name": "EkimmaraDecoctionUsed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ekimmara_decoction_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/EkimmaraDecoctionUsedProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Decoctions/Ekimmara Decoction"
+    },
+    {
+      "name": "KatakanDecoction",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "katakan_decoction",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/witchercraft/items/katakan_decoction.json",
+          "src/main/resources/assets/witchercraft/models/item/katakan_decoction.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/KatakanDecoctionItem.java"
+        ]
+      },
+      "path": "~/Alchemy/Decoctions/Katakan Decoction"
+    },
+    {
+      "name": "KatakanDecoctionEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "katakan_decoction_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/KatakanDecoctionEffectMobEffect.java"
+        ]
+      },
+      "path": "~/Alchemy/Decoctions/Katakan Decoction"
+    },
+    {
+      "name": "KatakanDecoctionUsed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "katakan_decoction_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/KatakanDecoctionUsedProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Decoctions/Katakan Decoction"
+    },
+    {
+      "name": "ReflectDamage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reflect_damage",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/ReflectDamageProcedure.java"
+        ]
+      },
+      "path": "~/Character Stats/Stats/VariableStats/ReflectDamage"
+    },
+    {
+      "name": "CharacterGuiReflectDamage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_gui_reflect_damage",
+      "metadata": {
+        "return_type": "string",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterGuiReflectDamageProcedure.java"
+        ]
+      },
+      "path": "~/Character Stats/Stats/Gui"
+    },
+    {
+      "name": "ReflectCalculator",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reflect_calculator",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/ReflectCalculatorProcedure.java"
+        ]
+      },
+      "path": "~/Admin/Calc"
+    },
+    {
+      "name": "LeshenDecoction",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leshen_decoction",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/item/LeshenDecoctionItem.java",
+          "src/main/resources/assets/witchercraft/models/item/leshen_decoction.json",
+          "src/main/resources/assets/witchercraft/items/leshen_decoction.json"
+        ]
+      },
+      "path": "~/Alchemy/Decoctions/Leshen Decoction"
+    },
+    {
+      "name": "LeshenDecoctionEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leshen_decoction_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/LeshenDecoctionEffectMobEffect.java"
+        ]
+      },
+      "path": "~/Alchemy/Decoctions/Leshen Decoction"
+    },
+    {
+      "name": "LeshenDecoctionUsed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leshen_decoction_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/LeshenDecoctionUsedProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Decoctions/Leshen Decoction"
     }
   ],
   "variable_elements": [
@@ -7341,30 +7638,6 @@
     },
     {
       "name": "witchercraftAttackSpeed",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "0"
-    },
-    {
-      "name": "sumCritChance",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "0.0"
-    },
-    {
-      "name": "sumCritDamage",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "0.0"
-    },
-    {
-      "name": "witchercraftBaseMovementSpeed",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "0.0"
-    },
-    {
-      "name": "witchercraftBaseAttackSpeed",
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
@@ -7688,12 +7961,6 @@
       "value": "0"
     },
     {
-      "name": "sumToxicity",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "0"
-    },
-    {
       "name": "ToxicityOverdoseThreshold",
       "type": "number",
       "scope": "player_lifetime",
@@ -7730,12 +7997,6 @@
       "value": "false"
     },
     {
-      "name": "sumDodgeChance",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "0"
-    },
-    {
       "name": "witchercraftDodgeChance",
       "type": "number",
       "scope": "player_lifetime",
@@ -7743,12 +8004,6 @@
     },
     {
       "name": "witchercraftInstantKillChance",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "0"
-    },
-    {
-      "name": "sumInstantKillChance",
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
@@ -7766,19 +8021,7 @@
       "value": "0"
     },
     {
-      "name": "sumPotionDuration",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "0"
-    },
-    {
       "name": "witchercraftSignIntensity",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "0"
-    },
-    {
-      "name": "sumSignIntensity",
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
@@ -7790,7 +8033,25 @@
       "value": "0"
     },
     {
-      "name": "sumOilDamage",
+      "name": "witchercraftLifeSteal",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "witchercraftBaseCritChance",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "witchercraftBaseCritDamage",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "witchercraftReflectDamage",
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
@@ -7934,7 +8195,7 @@
       "gui.witchercraft.higher_vampire_gui.label_drowner": "Foglet",
       "item.witchercraft.tawny_owl": "Tawny Owl",
       "gui.witchercraft.character_abilities_combat_gui.tooltip_add_10_to_dmg_dealt": "ADD +10% TO DMG DEALT ",
-      "effect.witchercraft.swallow_effect": "Swallow Effect",
+      "effect.witchercraft.swallow_effect": "Swallow ",
       "gui.witchercraft.bruxa_gui.label_atack_damage_5": "Atack Damage: 7",
       "item.witchercraft.petris_philter": "Petris Philter",
       "item.witchercraft.manticore_armor_leggings": "Manticore Armor Leggings",
@@ -7947,7 +8208,7 @@
       "item.witchercraft.wolven_armor_helmet": "Wolven Armor Helmet",
       "item.witchercraft.dancing_star": "Dancing Star",
       "gui.witchercraft.character_abilities_alchemy_gui.tooltip_oils_give_5_chance_to_poison_o": " OILS GIVE 5% CHANCE TO POISON ON HIT ",
-      "effect.witchercraft.blizzard_effect": "Blizzard Effect",
+      "effect.witchercraft.blizzard_effect": "Blizzard",
       "gui.witchercraft.character_abilities_combat_gui.button_back": "Back",
       "gui.witchercraft.character_abilities_alchemy_gui.tooltip_bombs_have_chance_to_remain_in_i": "BOMBS HAVE CHANCE TO REMAIN IN INVENTORY WHEN USED ",
       "gui.witchercraft.bruxa_gui.label_health_20": "Health: 30",
@@ -8114,7 +8375,7 @@
       "gui.witchercraft.player_stats_overlay.label_instantkillchance": "InstantKillChance",
       "effect.witchercraft.dodge_cooldown": "Dodge Cooldown",
       "gui.witchercraft.player_stats_overlay.label_potion_duration": "Potion Duration",
-      "effect.witchercraft.petris_philter_effect": "Petris Philter Effect",
+      "effect.witchercraft.petris_philter_effect": "Petris Philter",
       "gui.witchercraft.player_stats_overlay.label_sign_intensity": "Sign Intensity",
       "effect.witchercraft.ta_potka_musi_tu_byc_zeby_gra_wiedziala_gdzie_jest_gracz": "Ta Potka Musi Tu Byc Zeby Gra Wiedziala Gdzie Jest Gracz",
       "effect.witchercraft.correct_oil": "Correct Oil",
@@ -8128,7 +8389,17 @@
       "enchantment.witchercraft.relic_oil_enchantment": "Relic Oil",
       "enchantment.witchercraft.cursed_oil_enchantment": "Cursed Oil ",
       "enchantment.witchercraft.necrophage_oil_enchantment": "Necrophages Oil",
-      "gui.witchercraft.player_stats_overlay.label_oildamage": "OilDamage"
+      "gui.witchercraft.player_stats_overlay.label_oildamage": "OilDamage",
+      "item.witchercraft.water_hag_decoction": "Water Hag Decoction",
+      "effect.witchercraft.water_hag_decoction_effect": "Water Hag Decoction ",
+      "gui.witchercraft.player_stats_overlay.label_life_steal": "Life Steal",
+      "item.witchercraft.ekimmara_decoction": "Ekimmara Decoction",
+      "effect.witchercraft.ekimmara_decoction_effect": "Ekimmara Decoction ",
+      "item.witchercraft.katakan_decoction": "Katakan Decoction",
+      "effect.witchercraft.katakan_decoction_effect": "Katakan Decoction ",
+      "gui.witchercraft.player_stats_overlay.label_reflectdamage": "ReflectDamage",
+      "item.witchercraft.leshen_decoction": "Leshen Decoction",
+      "effect.witchercraft.leshen_decoction_effect": "Leshen Decoction "
     }
   },
   "metadata": {
@@ -8284,6 +8555,27 @@
             "children": [
               {
                 "name": "Overdose",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Decoctions",
+            "children": [
+              {
+                "name": "Water Hag Decoction",
+                "children": []
+              },
+              {
+                "name": "Ekimmara Decoction",
+                "children": []
+              },
+              {
+                "name": "Katakan Decoction",
+                "children": []
+              },
+              {
+                "name": "Leshen Decoction",
                 "children": []
               }
             ]
@@ -8525,6 +8817,14 @@
                   },
                   {
                     "name": "OilDamage",
+                    "children": []
+                  },
+                  {
+                    "name": "LifeSteal",
+                    "children": []
+                  },
+                  {
+                    "name": "ReflectDamage",
                     "children": []
                   }
                 ]

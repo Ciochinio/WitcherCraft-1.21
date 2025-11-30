@@ -563,6 +563,76 @@
           "y": 143,
           "locked": false
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_life_steal",
+          "text": {
+            "fixedValue": "Life Steal"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 6,
+          "y": 152,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_character_gui_life_steal",
+          "text": {
+            "fixedValue": "",
+            "name": "CharacterGuiLifeSteal"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 105,
+          "y": 152,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_reflectdamage",
+          "text": {
+            "fixedValue": "ReflectDamage"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 6,
+          "y": 161,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_character_gui_reflect_damag",
+          "text": {
+            "fixedValue": "",
+            "name": "CharacterGuiReflectDamage"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 105,
+          "y": 161,
+          "locked": false
+        }
       }
     ],
     "baseTexture": "",

@@ -2,7 +2,7 @@
   "_fv": 79,
   "_type": "potioneffect",
   "definition": {
-    "effectName": "Blizzard Effect",
+    "effectName": "Blizzard",
     "icon": "blizzardeffect",
     "color": {
       "value": -1,

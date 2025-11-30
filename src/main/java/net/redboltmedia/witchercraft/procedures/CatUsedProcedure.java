@@ -12,6 +12,6 @@ public class CatUsedProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.CAT_EFFECT, (int) (3600 * (1 + entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumPotionDuration * 0.01)), 0));
+			_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.CAT_EFFECT, (int) (3600 * (1 + entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftPotionDuration * 0.01)), 0));
 	}
 }

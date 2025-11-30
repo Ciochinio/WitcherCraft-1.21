@@ -8,7 +8,7 @@ public class Tox3Procedure {
 	public static boolean execute(Entity entity) {
 		if (entity == null)
 			return false;
-		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumToxicity >= 60) {
+		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftToxicity >= 60) {
 			return true;
 		}
 		return false;

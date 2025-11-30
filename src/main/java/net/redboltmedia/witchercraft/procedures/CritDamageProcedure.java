@@ -30,20 +30,20 @@ public class CritDamageProcedure {
 			return;
 		{
 			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-			_vars.sumCritDamage = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftCritDamage;
+			_vars.witchercraftCritDamage = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftBaseCritDamage;
 			_vars.markSyncDirty();
 		}
 		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesPreciseBlows == true) {
 			{
 				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-				_vars.sumCritDamage = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumCritDamage + 75;
+				_vars.witchercraftCritDamage = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftCritDamage + 75;
 				_vars.markSyncDirty();
 			}
 		}
 		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesCrushingBlows == true) {
 			{
 				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-				_vars.sumCritDamage = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumCritDamage + 50;
+				_vars.witchercraftCritDamage = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftCritDamage + 50;
 				_vars.markSyncDirty();
 			}
 		}
@@ -51,7 +51,7 @@ public class CritDamageProcedure {
 				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.CROSSBOW)) {
 			{
 				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-				_vars.sumCritDamage = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumCritDamage + 50;
+				_vars.witchercraftCritDamage = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftCritDamage + 50;
 				_vars.markSyncDirty();
 			}
 		}

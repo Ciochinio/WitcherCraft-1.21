@@ -27,74 +27,47 @@ public class ToxicityProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		double critChanceRoll = 0;
-		{
-			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-			_vars.sumToxicity = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftToxicity;
-			_vars.markSyncDirty();
-		}
+		double sumToxicity = 0;
 		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(WitchercraftModMobEffects.GOLDEN_ORIOLE_EFFECT)) {
-			{
-				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-				_vars.sumToxicity = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumToxicity + 15;
-				_vars.markSyncDirty();
-			}
+			sumToxicity = sumToxicity + 15;
 		}
 		if (entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(WitchercraftModMobEffects.BLIZZARD_EFFECT)) {
-			{
-				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-				_vars.sumToxicity = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumToxicity + 15;
-				_vars.markSyncDirty();
-			}
+			sumToxicity = sumToxicity + 15;
 		}
 		if (entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(WitchercraftModMobEffects.SWALLOW_EFFECT)) {
-			{
-				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-				_vars.sumToxicity = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumToxicity + 25;
-				_vars.markSyncDirty();
-			}
+			sumToxicity = sumToxicity + 25;
 		}
 		if (entity instanceof LivingEntity _livEnt3 && _livEnt3.hasEffect(WitchercraftModMobEffects.FULL_MOON_EFFECT)) {
-			{
-				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-				_vars.sumToxicity = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumToxicity + 25;
-				_vars.markSyncDirty();
-			}
+			sumToxicity = sumToxicity + 25;
 		}
 		if (entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(WitchercraftModMobEffects.THUNDERBOLT_EFFECT)) {
-			{
-				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-				_vars.sumToxicity = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumToxicity + 20;
-				_vars.markSyncDirty();
-			}
+			sumToxicity = sumToxicity + 20;
 		}
 		if (entity instanceof LivingEntity _livEnt5 && _livEnt5.hasEffect(WitchercraftModMobEffects.TAWNY_OWL_EFFECT)) {
-			{
-				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-				_vars.sumToxicity = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumToxicity + 20;
-				_vars.markSyncDirty();
-			}
+			sumToxicity = sumToxicity + 20;
 		}
 		if (entity instanceof LivingEntity _livEnt6 && _livEnt6.hasEffect(WitchercraftModMobEffects.KILLER_WHALE_EFFECT)) {
-			{
-				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-				_vars.sumToxicity = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumToxicity + 20;
-				_vars.markSyncDirty();
-			}
+			sumToxicity = sumToxicity + 20;
 		}
 		if (entity instanceof LivingEntity _livEnt7 && _livEnt7.hasEffect(WitchercraftModMobEffects.PETRIS_PHILTER_EFFECT)) {
-			{
-				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-				_vars.sumToxicity = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumToxicity + 20;
-				_vars.markSyncDirty();
-			}
+			sumToxicity = sumToxicity + 20;
 		}
 		if (entity instanceof LivingEntity _livEnt8 && _livEnt8.hasEffect(WitchercraftModMobEffects.CAT_EFFECT)) {
-			{
-				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-				_vars.sumToxicity = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumToxicity + 10;
-				_vars.markSyncDirty();
-			}
+			sumToxicity = sumToxicity + 10;
+		}
+		if (entity instanceof LivingEntity _livEnt9 && _livEnt9.hasEffect(WitchercraftModMobEffects.WATER_HAG_DECOCTION_EFFECT)) {
+			sumToxicity = sumToxicity + 50;
+		}
+		if (entity instanceof LivingEntity _livEnt10 && _livEnt10.hasEffect(WitchercraftModMobEffects.EKIMMARA_DECOCTION_EFFECT)) {
+			sumToxicity = sumToxicity + 50;
+		}
+		if (entity instanceof LivingEntity _livEnt11 && _livEnt11.hasEffect(WitchercraftModMobEffects.KATAKAN_DECOCTION_EFFECT)) {
+			sumToxicity = sumToxicity + 50;
+		}
+		{
+			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
+			_vars.witchercraftToxicity = sumToxicity;
+			_vars.markSyncDirty();
 		}
 	}
 }

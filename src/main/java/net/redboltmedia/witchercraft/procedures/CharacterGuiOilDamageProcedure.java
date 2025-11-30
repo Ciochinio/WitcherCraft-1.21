@@ -25,6 +25,6 @@ public class CharacterGuiOilDamageProcedure {
 	private static String execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return "";
-		return new java.text.DecimalFormat("##").format(100 + entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).sumOilDamage) + "%";
+		return new java.text.DecimalFormat("##").format(100 + entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftOilDamage) + "%";
 	}
 }
