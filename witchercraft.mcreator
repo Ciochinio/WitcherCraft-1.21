@@ -6589,12 +6589,74 @@
       "locked_code": false,
       "registry_name": "insectoid_oil_hit",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
         "files": [
           "src/main/java/net/redboltmedia/witchercraft/procedures/InsectoidOilHitProcedure.java"
         ]
       },
       "path": "~/Alchemy/Oils/InsectoidOil"
+    },
+    {
+      "name": "InsectoidOilEnchant",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "insectoid_oil_enchant",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/witchercraft/enchantment/insectoid_oil_enchant.json"
+        ]
+      },
+      "path": "~/Alchemy/Oils/InsectoidOil"
+    },
+    {
+      "name": "InsectoidOilApply",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "insectoid_oil_apply",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/InsectoidOilApplyProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Oils/InsectoidOil"
+    },
+    {
+      "name": "Oil",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oil",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/OilMobEffect.java"
+        ]
+      },
+      "path": "~/Alchemy/Oils"
     }
   ],
   "variable_elements": [
@@ -7112,6 +7174,12 @@
       "~CUSTOM:UrsineArmor.legs",
       "~CUSTOM:WolvenArmor.legs",
       "~CUSTOM:FelineArmor.legs"
+    ],
+    "ENTITIES:mod:necrophages": [
+      "EntityZombie"
+    ],
+    "ENCHANTMENTS:minecraft:treasure": [
+      "~CUSTOM:InsectoidOilEnchant"
     ]
   },
   "tab_element_order": {},
@@ -7357,7 +7425,9 @@
       "gui.witchercraft.player_stats_overlay.label_potion_duration": "Potion Duration",
       "effect.witchercraft.petris_philter_effect": "Petris Philter Effect",
       "gui.witchercraft.player_stats_overlay.label_sign_intensity": "Sign Intensity",
-      "effect.witchercraft.ta_potka_musi_tu_byc_zeby_gra_wiedziala_gdzie_jest_gracz": "Ta Potka Musi Tu Byc Zeby Gra Wiedziala Gdzie Jest Gracz"
+      "effect.witchercraft.ta_potka_musi_tu_byc_zeby_gra_wiedziala_gdzie_jest_gracz": "Ta Potka Musi Tu Byc Zeby Gra Wiedziala Gdzie Jest Gracz",
+      "enchantment.witchercraft.insectoid_oil_enchant": "Insectoid Oil",
+      "effect.witchercraft.oil": "Oil"
     }
   },
   "metadata": {

@@ -55,6 +55,7 @@ public class WitchercraftModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> PETRIS_PHILTER_EFFECT = REGISTRY.register("petris_philter_effect", () -> new PetrisPhilterEffectMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> TA_POTKA_MUSI_TU_BYC_ZEBY_GRA_WIEDZIALA_GDZIE_JEST_GRACZ = REGISTRY.register("ta_potka_musi_tu_byc_zeby_gra_wiedziala_gdzie_jest_gracz",
 			() -> new TaPotkaMusiTuBycZebyGraWiedzialaGdzieJestGraczMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> OIL = REGISTRY.register("oil", () -> new OilMobEffect());
 
 	@SubscribeEvent
 	public static void onEffectRemoved(MobEffectEvent.Remove event) {
