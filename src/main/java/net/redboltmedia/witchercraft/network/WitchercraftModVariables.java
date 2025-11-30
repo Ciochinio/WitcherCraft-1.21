@@ -150,6 +150,8 @@ public class WitchercraftModVariables {
 			clone.sumPotionDuration = original.sumPotionDuration;
 			clone.witchercraftSignIntensity = original.witchercraftSignIntensity;
 			clone.sumSignIntensity = original.sumSignIntensity;
+			clone.witchercraftOilDamage = original.witchercraftOilDamage;
+			clone.sumOilDamage = original.sumOilDamage;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
 	}
@@ -236,6 +238,8 @@ public class WitchercraftModVariables {
 		public double sumPotionDuration = 0;
 		public double witchercraftSignIntensity = 0;
 		public double sumSignIntensity = 0;
+		public double witchercraftOilDamage = 0;
+		public double sumOilDamage = 0;
 
 		@Override
 		public void serialize(ValueOutput output) {
@@ -319,6 +323,8 @@ public class WitchercraftModVariables {
 			output.putDouble("sumPotionDuration", sumPotionDuration);
 			output.putDouble("witchercraftSignIntensity", witchercraftSignIntensity);
 			output.putDouble("sumSignIntensity", sumSignIntensity);
+			output.putDouble("witchercraftOilDamage", witchercraftOilDamage);
+			output.putDouble("sumOilDamage", sumOilDamage);
 		}
 
 		@Override
@@ -403,6 +409,8 @@ public class WitchercraftModVariables {
 			sumPotionDuration = input.getDoubleOr("sumPotionDuration", 0);
 			witchercraftSignIntensity = input.getDoubleOr("witchercraftSignIntensity", 0);
 			sumSignIntensity = input.getDoubleOr("sumSignIntensity", 0);
+			witchercraftOilDamage = input.getDoubleOr("witchercraftOilDamage", 0);
+			sumOilDamage = input.getDoubleOr("sumOilDamage", 0);
 		}
 
 		public void markSyncDirty() {

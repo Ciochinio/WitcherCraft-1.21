@@ -7018,6 +7018,288 @@
         ]
       },
       "path": "~/Alchemy/Oils/CursedOil"
+    },
+    {
+      "name": "NecrophageOilHit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "necrophage_oil_hit",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/NecrophageOilHitProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Oils/NecrophageOil"
+    },
+    {
+      "name": "VampireOilHit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vampire_oil_hit",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/VampireOilHitProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Oils/VampireOil"
+    },
+    {
+      "name": "HangedMansVenomHit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hanged_mans_venom_hit",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/HangedMansVenomHitProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Oils/HangedMansVenom"
+    },
+    {
+      "name": "SpecterOilHit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "specter_oil_hit",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/SpecterOilHitProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Oils/SpecterOil"
+    },
+    {
+      "name": "OgroidOilHit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ogroid_oil_hit",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/OgroidOilHitProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Oils/OgroidOil"
+    },
+    {
+      "name": "BeastOilHit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beast_oil_hit",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/BeastOilHitProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Oils/BeastOil"
+    },
+    {
+      "name": "DraconidOilHit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "draconid_oil_hit",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/DraconidOilHitProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Oils/DraconidOil"
+    },
+    {
+      "name": "RelictOilHit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "relict_oil_hit",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/RelictOilHitProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Oils/RelictOil"
+    },
+    {
+      "name": "CursedOilHit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cursed_oil_hit",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CursedOilHitProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Oils/CursedOil"
+    },
+    {
+      "name": "OilDamage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oil_damage",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/OilDamageProcedure.java"
+        ]
+      },
+      "path": "~/Character Stats/Stats/VariableStats/OilDamage"
+    },
+    {
+      "name": "CharacterGuiOilDamage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_gui_oil_damage",
+      "metadata": {
+        "return_type": "string",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterGuiOilDamageProcedure.java"
+        ]
+      },
+      "path": "~/Character Stats/Stats/Gui"
     }
   ],
   "variable_elements": [
@@ -7500,6 +7782,18 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
+    },
+    {
+      "name": "witchercraftOilDamage",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "sumOilDamage",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -7536,9 +7830,6 @@
       "~CUSTOM:WolvenArmor.legs",
       "~CUSTOM:FelineArmor.legs"
     ],
-    "ENTITIES:mod:necrophages": [
-      "EntityZombie"
-    ],
     "ENCHANTMENTS:minecraft:treasure": [
       "~CUSTOM:NecrophageOilEnchantment",
       "~CUSTOM:CursedOilEnchantment",
@@ -7550,6 +7841,36 @@
       "~CUSTOM:HangedMansVenomEnchantment",
       "~CUSTOM:VampireOilEnchantment",
       "~CUSTOM:InsectoidOilEnchantment"
+    ],
+    "ENTITIES:mod:necrophage": [
+      "EntityZombie"
+    ],
+    "ENTITIES:mod:insectoid": [
+      "EntitySpider"
+    ],
+    "ENTITIES:mod:vampire": [
+      "EntityHorse"
+    ],
+    "ENTITIES:mod:humanoid": [
+      "EntityPillager"
+    ],
+    "ENTITIES:mod:specter": [
+      "EntityPhantom"
+    ],
+    "ENTITIES:mod:ogroid": [
+      "EntityPiglin"
+    ],
+    "ENTITIES:mod:beast": [
+      "EntityWolf"
+    ],
+    "ENTITIES:mod:draconid": [
+      "EntityBlaze"
+    ],
+    "ENTITIES:mod:cursed": [
+      "EntitySkeleton"
+    ],
+    "ENTITIES:mod:relict": [
+      "EntitySlime"
     ]
   },
   "tab_element_order": {},
@@ -7796,7 +8117,7 @@
       "effect.witchercraft.petris_philter_effect": "Petris Philter Effect",
       "gui.witchercraft.player_stats_overlay.label_sign_intensity": "Sign Intensity",
       "effect.witchercraft.ta_potka_musi_tu_byc_zeby_gra_wiedziala_gdzie_jest_gracz": "Ta Potka Musi Tu Byc Zeby Gra Wiedziala Gdzie Jest Gracz",
-      "effect.witchercraft.correct_oil": "Oil",
+      "effect.witchercraft.correct_oil": "Correct Oil",
       "enchantment.witchercraft.insectoid_oil_enchantment": "Insectoid Oil",
       "enchantment.witchercraft.vampire_oil_enchantment": "Vampire Oil",
       "enchantment.witchercraft.hanged_mans_venom_enchantment": "Hanged Man\u0027s Venom",
@@ -7806,7 +8127,8 @@
       "enchantment.witchercraft.draconid_oil_enchantment": "Draconid Oil",
       "enchantment.witchercraft.relic_oil_enchantment": "Relic Oil",
       "enchantment.witchercraft.cursed_oil_enchantment": "Cursed Oil ",
-      "enchantment.witchercraft.necrophage_oil_enchantment": "Necrophages Oil"
+      "enchantment.witchercraft.necrophage_oil_enchantment": "Necrophages Oil",
+      "gui.witchercraft.player_stats_overlay.label_oildamage": "OilDamage"
     }
   },
   "metadata": {
@@ -8199,6 +8521,10 @@
                   },
                   {
                     "name": "SignIntensity",
+                    "children": []
+                  },
+                  {
+                    "name": "OilDamage",
                     "children": []
                   }
                 ]

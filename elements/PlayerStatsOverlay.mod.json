@@ -528,6 +528,41 @@
           "y": 134,
           "locked": false
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_oildamage",
+          "text": {
+            "fixedValue": "OilDamage"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 6,
+          "y": 143,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_character_gui_oil_damage",
+          "text": {
+            "fixedValue": "",
+            "name": "CharacterGuiOilDamage"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 105,
+          "y": 143,
+          "locked": false
+        }
       }
     ],
     "baseTexture": "",

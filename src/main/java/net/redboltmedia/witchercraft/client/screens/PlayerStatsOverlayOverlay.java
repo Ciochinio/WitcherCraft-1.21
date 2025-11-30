@@ -93,6 +93,10 @@ public class PlayerStatsOverlayOverlay {
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
 					CharacterGuiSignIntensityProcedure.execute(entity), w / 2 + -108, h / 2 + 14, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.witchercraft.player_stats_overlay.label_oildamage"), w / 2 + -207, h / 2 + 23, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+
+					CharacterGuiOilDamageProcedure.execute(entity), w / 2 + -108, h / 2 + 23, -1, false);
 		}
 	}
 }
