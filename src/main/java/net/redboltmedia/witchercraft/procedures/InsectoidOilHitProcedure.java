@@ -38,12 +38,12 @@ public class InsectoidOilHitProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-				.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("witchercraft:insectoid_oil_enchant")))) != 0
+				.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("witchercraft:insectoid_oil_enchantment")))) != 0
 				&& entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("witchercraft:necrophages")))) {
 			if (sourceentity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("BOMBA!!!!!!!!!!!!!!!!!!!!!!!!!!!!"), false);
 			if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.OIL, 60, 0, false, false));
+				_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.CORRECT_OIL, 60, 0, false, false));
 		}
 	}
 }

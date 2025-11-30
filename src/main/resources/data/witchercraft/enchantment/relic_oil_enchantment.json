@@ -1,6 +1,6 @@
 {
   "description": {
-    "translate": "enchantment.witchercraft.insectoid_oil_enchant"
+    "translate": "enchantment.witchercraft.relic_oil_enchantment"
   },
   "supported_items": "#minecraft:enchantable/sword",
   "weight": 1,

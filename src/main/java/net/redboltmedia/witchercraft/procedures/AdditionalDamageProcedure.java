@@ -37,7 +37,7 @@ public class AdditionalDamageProcedure {
 		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesFloodOfAnger == true && entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftEnemyNearby == true) {
 			sumAdditionalDamage = sumAdditionalDamage + 5;
 		}
-		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(WitchercraftModMobEffects.OIL)) {
+		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(WitchercraftModMobEffects.CORRECT_OIL)) {
 			sumAdditionalDamage = sumAdditionalDamage + 4;
 		}
 		{

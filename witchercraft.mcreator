@@ -648,8 +648,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/witchercraft/items/hanged_mans_venom.json",
-          "src/main/resources/assets/witchercraft/models/item/hanged_mans_venom.json",
-          "src/main/java/net/redboltmedia/witchercraft/item/HangedMansVenomItem.java"
+          "src/main/java/net/redboltmedia/witchercraft/item/HangedMansVenomItem.java",
+          "src/main/resources/assets/witchercraft/models/item/hanged_mans_venom.json"
         ]
       },
       "path": "~/Alchemy/Oils/HangedMansVenom"
@@ -662,8 +662,8 @@
       "registry_name": "specter_oil",
       "metadata": {
         "files": [
-          "src/main/resources/assets/witchercraft/models/item/specter_oil.json",
           "src/main/java/net/redboltmedia/witchercraft/item/SpecterOilItem.java",
+          "src/main/resources/assets/witchercraft/models/item/specter_oil.json",
           "src/main/resources/assets/witchercraft/items/specter_oil.json"
         ]
       },
@@ -677,9 +677,9 @@
       "registry_name": "ogroid_oil",
       "metadata": {
         "files": [
+          "src/main/resources/assets/witchercraft/items/ogroid_oil.json",
           "src/main/java/net/redboltmedia/witchercraft/item/OgroidOilItem.java",
-          "src/main/resources/assets/witchercraft/models/item/ogroid_oil.json",
-          "src/main/resources/assets/witchercraft/items/ogroid_oil.json"
+          "src/main/resources/assets/witchercraft/models/item/ogroid_oil.json"
         ]
       },
       "path": "~/Alchemy/Oils/OgroidOil"
@@ -692,8 +692,8 @@
       "registry_name": "beast_oil",
       "metadata": {
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/item/BeastOilItem.java",
           "src/main/resources/assets/witchercraft/items/beast_oil.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/BeastOilItem.java",
           "src/main/resources/assets/witchercraft/models/item/beast_oil.json"
         ]
       },
@@ -707,9 +707,9 @@
       "registry_name": "draconid_oil",
       "metadata": {
         "files": [
-          "src/main/resources/assets/witchercraft/models/item/draconid_oil.json",
+          "src/main/resources/assets/witchercraft/items/draconid_oil.json",
           "src/main/java/net/redboltmedia/witchercraft/item/DraconidOilItem.java",
-          "src/main/resources/assets/witchercraft/items/draconid_oil.json"
+          "src/main/resources/assets/witchercraft/models/item/draconid_oil.json"
         ]
       },
       "path": "~/Alchemy/Oils/DraconidOil"
@@ -882,12 +882,12 @@
       "registry_name": "cursed_oil",
       "metadata": {
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/item/CursedOilItem.java",
+          "src/main/resources/assets/witchercraft/models/item/cursed_oil.json",
           "src/main/resources/assets/witchercraft/items/cursed_oil.json",
-          "src/main/resources/assets/witchercraft/models/item/cursed_oil.json"
+          "src/main/java/net/redboltmedia/witchercraft/item/CursedOilItem.java"
         ]
       },
-      "path": "~/Alchemy/Oils/CursedOnesOil"
+      "path": "~/Alchemy/Oils/CursedOil"
     },
     {
       "name": "VampireOil",
@@ -897,9 +897,9 @@
       "registry_name": "vampire_oil",
       "metadata": {
         "files": [
-          "src/main/resources/assets/witchercraft/items/vampire_oil.json",
           "src/main/java/net/redboltmedia/witchercraft/item/VampireOilItem.java",
-          "src/main/resources/assets/witchercraft/models/item/vampire_oil.json"
+          "src/main/resources/assets/witchercraft/models/item/vampire_oil.json",
+          "src/main/resources/assets/witchercraft/items/vampire_oil.json"
         ]
       },
       "path": "~/Alchemy/Oils/VampireOil"
@@ -2577,7 +2577,7 @@
           }
         ]
       },
-      "path": "~/AdminComands"
+      "path": "~/Admin/Commands"
     },
     {
       "name": "DevTool",
@@ -2590,7 +2590,7 @@
           "src/main/java/net/redboltmedia/witchercraft/command/DevToolCommand.java"
         ]
       },
-      "path": "~/AdminComands"
+      "path": "~/Admin/Commands"
     },
     {
       "name": "SurvivalInstinctShow",
@@ -4516,7 +4516,7 @@
           }
         ]
       },
-      "path": "~/AdminComands"
+      "path": "~/Admin/Commands"
     },
     {
       "name": "Lvlfix",
@@ -4529,7 +4529,7 @@
           "src/main/java/net/redboltmedia/witchercraft/command/LvlfixCommand.java"
         ]
       },
-      "path": "~/AdminComands"
+      "path": "~/Admin/Commands"
     },
     {
       "name": "DrownerGui",
@@ -4842,7 +4842,7 @@
           "src/main/java/net/redboltmedia/witchercraft/potion/DevLogMobEffect.java"
         ]
       },
-      "path": "~/AdminComands"
+      "path": "~/Admin"
     },
     {
       "name": "CharacterGuiPassiveHealthRegen",
@@ -4968,7 +4968,7 @@
           "src/main/java/net/redboltmedia/witchercraft/client/screens/PlayerStatsOverlayOverlay.java"
         ]
       },
-      "path": "~/AdminComands"
+      "path": "~/Admin"
     },
     {
       "name": "PlayerStatsOverlayOn",
@@ -4988,7 +4988,7 @@
           "src/main/java/net/redboltmedia/witchercraft/procedures/PlayerStatsOverlayOnProcedure.java"
         ]
       },
-      "path": "~/AdminComands"
+      "path": "~/Admin"
     },
     {
       "name": "Toxicity",
@@ -5250,7 +5250,7 @@
           "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterExperienceCalculatorProcedure.java"
         ]
       },
-      "path": "~/Character Abilities"
+      "path": "~/Admin/Calc"
     },
     {
       "name": "CharacterAbilitesSkillPointsAvailable",
@@ -5270,7 +5270,7 @@
           "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitesSkillPointsAvailableProcedure.java"
         ]
       },
-      "path": "~/Character Abilities"
+      "path": "~/Character Abilities/CharacterAbilitiesExperience"
     },
     {
       "name": "GourmetShowIcon",
@@ -5648,7 +5648,8 @@
         "files": [
           "src/main/java/net/redboltmedia/witchercraft/potion/EnemyNearbyMobEffect.java"
         ]
-      }
+      },
+      "path": "~/Admin/EnemyNearby"
     },
     {
       "name": "EnemyNearbyDetection",
@@ -5682,7 +5683,8 @@
         "files": [
           "src/main/java/net/redboltmedia/witchercraft/procedures/EnemyNearbyDetectionProcedure.java"
         ]
-      }
+      },
+      "path": "~/Admin/EnemyNearby"
     },
     {
       "name": "UndyingCooldown",
@@ -5695,7 +5697,7 @@
           "src/main/java/net/redboltmedia/witchercraft/potion/UndyingCooldownMobEffect.java"
         ]
       },
-      "path": "~/idk/Undying"
+      "path": "~/Character Abilities/CombatPerks/UNDYING/Undying"
     },
     {
       "name": "UndyingEffectActive",
@@ -5714,7 +5716,7 @@
           "src/main/java/net/redboltmedia/witchercraft/procedures/UndyingEffectActiveProcedure.java"
         ]
       },
-      "path": "~/idk/Undying"
+      "path": "~/Character Abilities/CombatPerks/UNDYING/Undying"
     },
     {
       "name": "DodgeChance",
@@ -5871,7 +5873,7 @@
           "src/main/java/net/redboltmedia/witchercraft/procedures/DamageCalculatorProcedure.java"
         ]
       },
-      "path": "~/Character Stats/Stats/VariableStats"
+      "path": "~/Admin/Calc"
     },
     {
       "name": "DodgeCalculator",
@@ -5890,7 +5892,7 @@
           "src/main/java/net/redboltmedia/witchercraft/procedures/DodgeCalculatorProcedure.java"
         ]
       },
-      "path": "~/Character Stats/Stats/VariableStats"
+      "path": "~/Admin/Calc"
     },
     {
       "name": "PotionDuration",
@@ -6067,7 +6069,7 @@
           "src/main/java/net/redboltmedia/witchercraft/potion/TaPotkaMusiTuBycZebyGraWiedzialaGdzieJestGraczMobEffect.java"
         ]
       },
-      "path": "~/AdminComands"
+      "path": "~/Admin"
     },
     {
       "name": "CraftPotionSwallow",
@@ -6466,7 +6468,7 @@
           "src/main/java/net/redboltmedia/witchercraft/procedures/CraftOilCursedProcedure.java"
         ]
       },
-      "path": "~/Alchemy/Oils/CursedOnesOil"
+      "path": "~/Alchemy/Oils/CursedOil"
     },
     {
       "name": "CraftBombSamum",
@@ -6610,19 +6612,6 @@
       "path": "~/Alchemy/Oils/InsectoidOil"
     },
     {
-      "name": "InsectoidOilEnchant",
-      "type": "enchantment",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "insectoid_oil_enchant",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/witchercraft/enchantment/insectoid_oil_enchant.json"
-        ]
-      },
-      "path": "~/Alchemy/Oils/InsectoidOil"
-    },
-    {
       "name": "InsectoidOilApply",
       "type": "procedure",
       "compiles": true,
@@ -6646,17 +6635,389 @@
       "path": "~/Alchemy/Oils/InsectoidOil"
     },
     {
-      "name": "Oil",
+      "name": "DamageCalculatorWait",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "damage_calculator_wait",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/DamageCalculatorWaitProcedure.java"
+        ]
+      },
+      "path": "~/Admin/Calc"
+    },
+    {
+      "name": "CorrectOil",
       "type": "potioneffect",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "oil",
+      "registry_name": "correct_oil",
       "metadata": {
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/potion/OilMobEffect.java"
+          "src/main/java/net/redboltmedia/witchercraft/potion/CorrectOilMobEffect.java"
         ]
       },
       "path": "~/Alchemy/Oils"
+    },
+    {
+      "name": "InsectoidOilEnchantment",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "insectoid_oil_enchantment",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/witchercraft/enchantment/insectoid_oil_enchantment.json"
+        ]
+      },
+      "path": "~/Alchemy/Oils/InsectoidOil"
+    },
+    {
+      "name": "VampireOilEnchantment",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vampire_oil_enchantment",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/witchercraft/enchantment/vampire_oil_enchantment.json"
+        ]
+      },
+      "path": "~/Alchemy/Oils/VampireOil"
+    },
+    {
+      "name": "HangedMansVenomEnchantment",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hanged_mans_venom_enchantment",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/witchercraft/enchantment/hanged_mans_venom_enchantment.json"
+        ]
+      },
+      "path": "~/Alchemy/Oils/HangedMansVenom"
+    },
+    {
+      "name": "SpecterOilEnchantment",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "specter_oil_enchantment",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/witchercraft/enchantment/specter_oil_enchantment.json"
+        ]
+      },
+      "path": "~/Alchemy/Oils/SpecterOil"
+    },
+    {
+      "name": "OgroidOilEnchantment",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ogroid_oil_enchantment",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/witchercraft/enchantment/ogroid_oil_enchantment.json"
+        ]
+      },
+      "path": "~/Alchemy/Oils/OgroidOil"
+    },
+    {
+      "name": "BeastOilEnchantment",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beast_oil_enchantment",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/witchercraft/enchantment/beast_oil_enchantment.json"
+        ]
+      },
+      "path": "~/Alchemy/Oils/BeastOil"
+    },
+    {
+      "name": "DraconidOilEnchantment",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "draconid_oil_enchantment",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/witchercraft/enchantment/draconid_oil_enchantment.json"
+        ]
+      },
+      "path": "~/Alchemy/Oils/DraconidOil"
+    },
+    {
+      "name": "RelicOilEnchantment",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "relic_oil_enchantment",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/witchercraft/enchantment/relic_oil_enchantment.json"
+        ]
+      },
+      "path": "~/Alchemy/Oils/RelictOil"
+    },
+    {
+      "name": "CursedOilEnchantment",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cursed_oil_enchantment",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/witchercraft/enchantment/cursed_oil_enchantment.json"
+        ]
+      },
+      "path": "~/Alchemy/Oils/CursedOil"
+    },
+    {
+      "name": "NecrophageOilApply",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "necrophage_oil_apply",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/NecrophageOilApplyProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Oils/NecrophageOil"
+    },
+    {
+      "name": "VampireOilApply",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vampire_oil_apply",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/VampireOilApplyProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Oils/VampireOil"
+    },
+    {
+      "name": "HangedMansVenomApply",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hanged_mans_venom_apply",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/HangedMansVenomApplyProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Oils/HangedMansVenom"
+    },
+    {
+      "name": "SpecterOilApply",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "specter_oil_apply",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/SpecterOilApplyProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Oils/SpecterOil"
+    },
+    {
+      "name": "OgroidOilApply",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ogroid_oil_apply",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/OgroidOilApplyProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Oils/OgroidOil"
+    },
+    {
+      "name": "NecrophageOilEnchantment",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "necrophage_oil_enchantment",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/witchercraft/enchantment/necrophage_oil_enchantment.json"
+        ]
+      },
+      "path": "~/Alchemy/Oils/NecrophageOil"
+    },
+    {
+      "name": "BeastOilApply",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beast_oil_apply",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/BeastOilApplyProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Oils/BeastOil"
+    },
+    {
+      "name": "DraconidOilApply",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "draconid_oil_apply",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/DraconidOilApplyProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Oils/DraconidOil"
+    },
+    {
+      "name": "RelictOilApply",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "relict_oil_apply",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/RelictOilApplyProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Oils/RelictOil"
+    },
+    {
+      "name": "CursedOilApply",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cursed_oil_apply",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CursedOilApplyProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Oils/CursedOil"
     }
   ],
   "variable_elements": [
@@ -7179,7 +7540,16 @@
       "EntityZombie"
     ],
     "ENCHANTMENTS:minecraft:treasure": [
-      "~CUSTOM:InsectoidOilEnchant"
+      "~CUSTOM:NecrophageOilEnchantment",
+      "~CUSTOM:CursedOilEnchantment",
+      "~CUSTOM:RelicOilEnchantment",
+      "~CUSTOM:DraconidOilEnchantment",
+      "~CUSTOM:BeastOilEnchantment",
+      "~CUSTOM:OgroidOilEnchantment",
+      "~CUSTOM:SpecterOilEnchantment",
+      "~CUSTOM:HangedMansVenomEnchantment",
+      "~CUSTOM:VampireOilEnchantment",
+      "~CUSTOM:InsectoidOilEnchantment"
     ]
   },
   "tab_element_order": {},
@@ -7426,8 +7796,17 @@
       "effect.witchercraft.petris_philter_effect": "Petris Philter Effect",
       "gui.witchercraft.player_stats_overlay.label_sign_intensity": "Sign Intensity",
       "effect.witchercraft.ta_potka_musi_tu_byc_zeby_gra_wiedziala_gdzie_jest_gracz": "Ta Potka Musi Tu Byc Zeby Gra Wiedziala Gdzie Jest Gracz",
-      "enchantment.witchercraft.insectoid_oil_enchant": "Insectoid Oil",
-      "effect.witchercraft.oil": "Oil"
+      "effect.witchercraft.correct_oil": "Oil",
+      "enchantment.witchercraft.insectoid_oil_enchantment": "Insectoid Oil",
+      "enchantment.witchercraft.vampire_oil_enchantment": "Vampire Oil",
+      "enchantment.witchercraft.hanged_mans_venom_enchantment": "Hanged Man\u0027s Venom",
+      "enchantment.witchercraft.specter_oil_enchantment": "Specter Oil",
+      "enchantment.witchercraft.ogroid_oil_enchantment": "Ogroid Oil",
+      "enchantment.witchercraft.beast_oil_enchantment": "Beast Oil",
+      "enchantment.witchercraft.draconid_oil_enchantment": "Draconid Oil",
+      "enchantment.witchercraft.relic_oil_enchantment": "Relic Oil",
+      "enchantment.witchercraft.cursed_oil_enchantment": "Cursed Oil ",
+      "enchantment.witchercraft.necrophage_oil_enchantment": "Necrophages Oil"
     }
   },
   "metadata": {
@@ -7569,7 +7948,7 @@
                 "children": []
               },
               {
-                "name": "CursedOnesOil",
+                "name": "CursedOil",
                 "children": []
               }
             ]
@@ -7933,7 +8312,12 @@
               },
               {
                 "name": "UNDYING",
-                "children": []
+                "children": [
+                  {
+                    "name": "Undying",
+                    "children": []
+                  }
+                ]
               }
             ]
           },
@@ -8054,8 +8438,21 @@
         ]
       },
       {
-        "name": "AdminComands",
-        "children": []
+        "name": "Admin",
+        "children": [
+          {
+            "name": "EnemyNearby",
+            "children": []
+          },
+          {
+            "name": "Commands",
+            "children": []
+          },
+          {
+            "name": "Calc",
+            "children": []
+          }
+        ]
       },
       {
         "name": "StatusEffects",
@@ -8066,15 +8463,6 @@
           },
           {
             "name": "InstantKill",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "idk",
-        "children": [
-          {
-            "name": "Undying",
             "children": []
           }
         ]

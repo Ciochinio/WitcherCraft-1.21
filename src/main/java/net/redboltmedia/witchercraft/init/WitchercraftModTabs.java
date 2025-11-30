@@ -51,6 +51,7 @@ public class WitchercraftModTabs {
 				tabData.accept(WitchercraftModItems.TALLOW.get());
 				tabData.accept(WitchercraftModItems.RELICT_OIL.get());
 				tabData.accept(WitchercraftModItems.CURSED_OIL.get());
+				tabData.accept(WitchercraftModItems.VAMPIRE_OIL.get());
 				tabData.accept(WitchercraftModItems.GOLDEN_ORIOLE.get());
 				tabData.accept(WitchercraftModItems.FELINE_ARMOR_HELMET.get());
 				tabData.accept(WitchercraftModItems.FELINE_ARMOR_CHESTPLATE.get());

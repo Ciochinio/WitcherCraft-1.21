@@ -240,6 +240,15 @@
   "effect.witchercraft.petris_philter_effect": "Petris Philter Effect",
   "gui.witchercraft.player_stats_overlay.label_sign_intensity": "Sign Intensity",
   "effect.witchercraft.ta_potka_musi_tu_byc_zeby_gra_wiedziala_gdzie_jest_gracz": "Ta Potka Musi Tu Byc Zeby Gra Wiedziala Gdzie Jest Gracz",
-  "enchantment.witchercraft.insectoid_oil_enchant": "Insectoid Oil",
-  "effect.witchercraft.oil": "Oil"
+  "effect.witchercraft.correct_oil": "Oil",
+  "enchantment.witchercraft.insectoid_oil_enchantment": "Insectoid Oil",
+  "enchantment.witchercraft.vampire_oil_enchantment": "Vampire Oil",
+  "enchantment.witchercraft.hanged_mans_venom_enchantment": "Hanged Man\u0027s Venom",
+  "enchantment.witchercraft.specter_oil_enchantment": "Specter Oil",
+  "enchantment.witchercraft.ogroid_oil_enchantment": "Ogroid Oil",
+  "enchantment.witchercraft.beast_oil_enchantment": "Beast Oil",
+  "enchantment.witchercraft.draconid_oil_enchantment": "Draconid Oil",
+  "enchantment.witchercraft.relic_oil_enchantment": "Relic Oil",
+  "enchantment.witchercraft.cursed_oil_enchantment": "Cursed Oil ",
+  "enchantment.witchercraft.necrophage_oil_enchantment": "Necrophages Oil"
 }
