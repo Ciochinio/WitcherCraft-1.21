@@ -28,7 +28,7 @@ public class MeditationGuiChangeTimeProcedure {
 				_level.setDayTime(23000);
 		} else if (((entity instanceof Player _entity10 && _entity10.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu10) ? _menu10.getMenuState(2, "MeditationTime", 0.0) : 0.0) == 6) {
 			if (world instanceof ServerLevel _level)
-				_level.setDayTime(24000);
+				_level.setDayTime(5);
 		} else if (((entity instanceof Player _entity12 && _entity12.containerMenu instanceof WitchercraftModMenus.MenuAccessor _menu12) ? _menu12.getMenuState(2, "MeditationTime", 0.0) : 0.0) == 7) {
 			if (world instanceof ServerLevel _level)
 				_level.setDayTime(1000);

@@ -38,5 +38,6 @@ public class MeditationGuiOpenProcedure {
 				}
 			}, _bpos);
 		}
+		MeditationGuiCheckTimeProcedure.execute(world);
 	}
 }

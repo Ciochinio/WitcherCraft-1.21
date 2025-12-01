@@ -8024,6 +8024,505 @@
         ]
       },
       "path": "~/Meditation/MeditationHand"
+    },
+    {
+      "name": "MeditationGuiTimeNow1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meditation_gui_time_now_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MeditationGuiTimeNow1Procedure.java"
+        ]
+      },
+      "path": "~/Meditation/MeditationHandTimeNow"
+    },
+    {
+      "name": "MeditationGuiCheckTime",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meditation_gui_check_time",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MeditationGuiCheckTimeProcedure.java"
+        ]
+      },
+      "path": "~/Meditation"
+    },
+    {
+      "name": "MeditationGuiTimeNow2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meditation_gui_time_now_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MeditationGuiTimeNow2Procedure.java"
+        ]
+      },
+      "path": "~/Meditation/MeditationHandTimeNow"
+    },
+    {
+      "name": "MeditationGuiTimeNow3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meditation_gui_time_now_3",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MeditationGuiTimeNow3Procedure.java"
+        ]
+      },
+      "path": "~/Meditation/MeditationHandTimeNow"
+    },
+    {
+      "name": "MeditationGuiTimeNow4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meditation_gui_time_now_4",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MeditationGuiTimeNow4Procedure.java"
+        ]
+      },
+      "path": "~/Meditation/MeditationHandTimeNow"
+    },
+    {
+      "name": "MeditationGuiTimeNow5",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meditation_gui_time_now_5",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MeditationGuiTimeNow5Procedure.java"
+        ]
+      },
+      "path": "~/Meditation/MeditationHandTimeNow"
+    },
+    {
+      "name": "MeditationGuiTimeNow6",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meditation_gui_time_now_6",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MeditationGuiTimeNow6Procedure.java"
+        ]
+      },
+      "path": "~/Meditation/MeditationHandTimeNow"
+    },
+    {
+      "name": "MeditationGuiTimeNow7",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meditation_gui_time_now_7",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MeditationGuiTimeNow7Procedure.java"
+        ]
+      },
+      "path": "~/Meditation/MeditationHandTimeNow"
+    },
+    {
+      "name": "MeditationGuiTimeNow8",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meditation_gui_time_now_8",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MeditationGuiTimeNow8Procedure.java"
+        ]
+      },
+      "path": "~/Meditation/MeditationHandTimeNow"
+    },
+    {
+      "name": "MeditationGuiTimeNow9",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meditation_gui_time_now_9",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MeditationGuiTimeNow9Procedure.java"
+        ]
+      },
+      "path": "~/Meditation/MeditationHandTimeNow"
+    },
+    {
+      "name": "MeditationGuiTimeNow10",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meditation_gui_time_now_10",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MeditationGuiTimeNow10Procedure.java"
+        ]
+      },
+      "path": "~/Meditation/MeditationHandTimeNow"
+    },
+    {
+      "name": "MeditationGuiTimeNow11",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meditation_gui_time_now_11",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MeditationGuiTimeNow11Procedure.java"
+        ]
+      },
+      "path": "~/Meditation/MeditationHandTimeNow"
+    },
+    {
+      "name": "MeditationGuiTimeNow12",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meditation_gui_time_now_12",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MeditationGuiTimeNow12Procedure.java"
+        ]
+      },
+      "path": "~/Meditation/MeditationHandTimeNow"
+    },
+    {
+      "name": "MeditationGuiTimeNow13",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meditation_gui_time_now_13",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MeditationGuiTimeNow13Procedure.java"
+        ]
+      },
+      "path": "~/Meditation/MeditationHandTimeNow"
+    },
+    {
+      "name": "MeditationGuiTimeNow14",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meditation_gui_time_now_14",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MeditationGuiTimeNow14Procedure.java"
+        ]
+      },
+      "path": "~/Meditation/MeditationHandTimeNow"
+    },
+    {
+      "name": "MeditationGuiTimeNow15",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meditation_gui_time_now_15",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MeditationGuiTimeNow15Procedure.java"
+        ]
+      },
+      "path": "~/Meditation/MeditationHandTimeNow"
+    },
+    {
+      "name": "MeditationGuiTimeNow16",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meditation_gui_time_now_16",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MeditationGuiTimeNow16Procedure.java"
+        ]
+      },
+      "path": "~/Meditation/MeditationHandTimeNow"
+    },
+    {
+      "name": "MeditationGuiTimeNow17",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meditation_gui_time_now_17",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MeditationGuiTimeNow17Procedure.java"
+        ]
+      },
+      "path": "~/Meditation/MeditationHandTimeNow"
+    },
+    {
+      "name": "MeditationGuiTimeNow18",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meditation_gui_time_now_18",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MeditationGuiTimeNow18Procedure.java"
+        ]
+      },
+      "path": "~/Meditation/MeditationHandTimeNow"
+    },
+    {
+      "name": "MeditationGuiTimeNow19",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meditation_gui_time_now_19",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MeditationGuiTimeNow19Procedure.java"
+        ]
+      },
+      "path": "~/Meditation/MeditationHandTimeNow"
+    },
+    {
+      "name": "MeditationGuiTimeNow20",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meditation_gui_time_now_20",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MeditationGuiTimeNow20Procedure.java"
+        ]
+      },
+      "path": "~/Meditation/MeditationHandTimeNow"
+    },
+    {
+      "name": "MeditationGuiTimeNow21",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meditation_gui_time_now_21",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MeditationGuiTimeNow21Procedure.java"
+        ]
+      },
+      "path": "~/Meditation/MeditationHandTimeNow"
+    },
+    {
+      "name": "MeditationGuiTimeNow22",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meditation_gui_time_now_22",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MeditationGuiTimeNow22Procedure.java"
+        ]
+      },
+      "path": "~/Meditation/MeditationHandTimeNow"
+    },
+    {
+      "name": "MeditationGuiTimeNow23",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meditation_gui_time_now_23",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MeditationGuiTimeNow23Procedure.java"
+        ]
+      },
+      "path": "~/Meditation/MeditationHandTimeNow"
+    },
+    {
+      "name": "MeditationGuiTimeNow24",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meditation_gui_time_now_24",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/MeditationGuiTimeNow24Procedure.java"
+        ]
+      },
+      "path": "~/Meditation/MeditationHandTimeNow"
     }
   ],
   "variable_elements": [
