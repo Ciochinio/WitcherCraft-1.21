@@ -8,72 +8,8 @@
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": false,
-    "doesPauseGame": true,
+    "doesPauseGame": false,
     "components": [
-      {
-        "type": "button",
-        "data": {
-          "name": "button_midnight",
-          "text": "Midnight",
-          "isUndecorated": false,
-          "onClick": {
-            "name": "MeditateMidnight"
-          },
-          "width": 67,
-          "height": 20,
-          "x": 178,
-          "y": 184,
-          "locked": false
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "name": "button_sunrise",
-          "text": "Sunrise",
-          "isUndecorated": false,
-          "onClick": {
-            "name": "MeditateSunrise"
-          },
-          "width": 66,
-          "height": 20,
-          "x": 97,
-          "y": 112,
-          "locked": false
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "name": "button_sunset",
-          "text": "Sunset",
-          "isUndecorated": false,
-          "onClick": {
-            "name": "MeditateSunset"
-          },
-          "width": 66,
-          "height": 20,
-          "x": 268,
-          "y": 112,
-          "locked": false
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "name": "button_noon",
-          "text": "Noon",
-          "isUndecorated": false,
-          "onClick": {
-            "name": "MeditateNoon"
-          },
-          "width": 66,
-          "height": 20,
-          "x": 178,
-          "y": 58,
-          "locked": false
-        }
-      },
       {
         "type": "button",
         "data": {
@@ -87,6 +23,79 @@
           "height": 20,
           "x": 376,
           "y": 211,
+          "locked": false
+        }
+      },
+      {
+        "type": "slider",
+        "data": {
+          "name": "MeditationTime",
+          "min": 1.0,
+          "max": 24.0,
+          "value": 12.0,
+          "step": 1.0,
+          "prefix": "",
+          "suffix": "",
+          "width": 162,
+          "height": 20,
+          "x": 133,
+          "y": 193,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "aard.png",
+          "use1Xscale": false,
+          "x": 178,
+          "y": 4,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_meditate",
+          "text": "Meditate",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "MeditationGuiChangeTime"
+          },
+          "width": 67,
+          "height": 20,
+          "x": 178,
+          "y": 211,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "axii.png",
+          "use1Xscale": false,
+          "x": 79,
+          "y": 94,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "igni.png",
+          "use1Xscale": false,
+          "x": 286,
+          "y": 94,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "yrden.png",
+          "use1Xscale": false,
+          "x": 178,
+          "y": 139,
           "locked": false
         }
       }

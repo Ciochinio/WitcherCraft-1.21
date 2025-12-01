@@ -261,5 +261,12 @@
   "effect.witchercraft.katakan_decoction_effect": "Katakan Decoction ",
   "gui.witchercraft.player_stats_overlay.label_reflectdamage": "ReflectDamage",
   "item.witchercraft.leshen_decoction": "Leshen Decoction",
-  "effect.witchercraft.leshen_decoction_effect": "Leshen Decoction "
+  "effect.witchercraft.leshen_decoction_effect": "Leshen Decoction ",
+  "gui.witchercraft.meditation_gui.Time_suffix": "",
+  "gui.witchercraft.meditation_gui.Time_prefix": "",
+  "gui.witchercraft.meditation_gui.czas_suffix": "",
+  "gui.witchercraft.meditation_gui.czas_prefix": "",
+  "gui.witchercraft.meditation_gui.MeditationTime_prefix": "",
+  "gui.witchercraft.meditation_gui.MeditationTime_suffix": "",
+  "gui.witchercraft.meditation_gui.button_meditate": "Meditate"
 }

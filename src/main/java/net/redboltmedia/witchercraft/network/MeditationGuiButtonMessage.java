@@ -1,10 +1,7 @@
 package net.redboltmedia.witchercraft.network;
 
 import net.redboltmedia.witchercraft.procedures.PauseMenuGuiBackButtonProcedure;
-import net.redboltmedia.witchercraft.procedures.MeditateSunsetProcedure;
-import net.redboltmedia.witchercraft.procedures.MeditateSunriseProcedure;
-import net.redboltmedia.witchercraft.procedures.MeditateNoonProcedure;
-import net.redboltmedia.witchercraft.procedures.MeditateMidnightProcedure;
+import net.redboltmedia.witchercraft.procedures.MeditationGuiChangeTimeProcedure;
 import net.redboltmedia.witchercraft.WitchercraftMod;
 
 import net.neoforged.neoforge.network.handling.IPayloadContext;
@@ -53,23 +50,11 @@ public record MeditationGuiButtonMessage(int buttonID, int x, int y, int z) impl
 			return;
 		if (buttonID == 0) {
 
-			MeditateMidnightProcedure.execute(world);
+			PauseMenuGuiBackButtonProcedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 1) {
 
-			MeditateSunriseProcedure.execute(world);
-		}
-		if (buttonID == 2) {
-
-			MeditateSunsetProcedure.execute(world);
-		}
-		if (buttonID == 3) {
-
-			MeditateNoonProcedure.execute(world);
-		}
-		if (buttonID == 4) {
-
-			PauseMenuGuiBackButtonProcedure.execute(world, x, y, z, entity);
+			MeditationGuiChangeTimeProcedure.execute(world, entity);
 		}
 	}
 
