@@ -59,6 +59,7 @@ public class MeditationGuiScreen extends AbstractContainerScreen<MeditationGuiMe
 		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("witchercraft:textures/screens/axii.png"), this.leftPos + -47, this.topPos + 57, 0, 0, 64, 64, 64, 64);
 		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("witchercraft:textures/screens/igni.png"), this.leftPos + 160, this.topPos + 57, 0, 0, 64, 64, 64, 64);
 		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("witchercraft:textures/screens/yrden.png"), this.leftPos + 52, this.topPos + 102, 0, 0, 64, 64, 64, 64);
+		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("witchercraft:textures/screens/meditationhandmiddle.png"), this.leftPos + 12, this.topPos + 8, 0, 0, 151, 151, 151, 151);
 	}
 
 	@Override

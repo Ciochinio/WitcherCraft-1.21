@@ -98,6 +98,16 @@
           "y": 139,
           "locked": false
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "meditationhandmiddle.png",
+          "use1Xscale": false,
+          "x": 138,
+          "y": 45,
+          "locked": false
+        }
       }
     ],
     "gridSettings": {
@@ -105,7 +115,7 @@
       "sy": 18,
       "ox": 12,
       "oy": 6,
-      "snapOnGrid": true
+      "snapOnGrid": false
     }
   }
 }
