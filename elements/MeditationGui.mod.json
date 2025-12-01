@@ -692,6 +692,46 @@
           "y": 193,
           "locked": false
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "meditationguitimenight.png",
+          "use1Xscale": false,
+          "x": 197,
+          "y": 180,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "meditationguitimenoon.png",
+          "use1Xscale": false,
+          "x": 198,
+          "y": 26,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "meditationguitimedawn.png",
+          "use1Xscale": false,
+          "x": 121,
+          "y": 104,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "meditationguitimedusk.png",
+          "use1Xscale": false,
+          "x": 275,
+          "y": 103,
+          "locked": false
+        }
       }
     ],
     "gridSettings": {

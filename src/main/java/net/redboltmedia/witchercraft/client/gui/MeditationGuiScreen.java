@@ -201,6 +201,10 @@ public class MeditationGuiScreen extends AbstractContainerScreen<MeditationGuiMe
 		if (MeditationGuiTime1Procedure.execute(entity)) {
 			guiGraphics.blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("witchercraft:textures/screens/meditationhand1.png"), this.leftPos + 22, this.topPos + 17, 0, 0, 131, 131, 131, 131);
 		}
+		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("witchercraft:textures/screens/meditationguitimenight.png"), this.leftPos + 71, this.topPos + 143, 0, 0, 32, 32, 32, 32);
+		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("witchercraft:textures/screens/meditationguitimenoon.png"), this.leftPos + 72, this.topPos + -11, 0, 0, 32, 32, 32, 32);
+		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("witchercraft:textures/screens/meditationguitimedawn.png"), this.leftPos + -5, this.topPos + 67, 0, 0, 32, 32, 32, 32);
+		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("witchercraft:textures/screens/meditationguitimedusk.png"), this.leftPos + 149, this.topPos + 66, 0, 0, 32, 32, 32, 32);
 	}
 
 	@Override

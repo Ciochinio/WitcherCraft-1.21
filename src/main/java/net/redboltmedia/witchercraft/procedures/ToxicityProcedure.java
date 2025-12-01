@@ -64,6 +64,9 @@ public class ToxicityProcedure {
 		if (entity instanceof LivingEntity _livEnt11 && _livEnt11.hasEffect(WitchercraftModMobEffects.KATAKAN_DECOCTION_EFFECT)) {
 			sumToxicity = sumToxicity + 50;
 		}
+		if (entity instanceof LivingEntity _livEnt12 && _livEnt12.hasEffect(WitchercraftModMobEffects.LESHEN_DECOCTION_EFFECT)) {
+			sumToxicity = sumToxicity + 50;
+		}
 		{
 			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
 			_vars.witchercraftToxicity = sumToxicity;
