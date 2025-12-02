@@ -451,8 +451,8 @@
       "registry_name": "devils_puffball",
       "metadata": {
         "files": [
-          "src/main/resources/assets/witchercraft/models/item/devils_puffball.json",
           "src/main/java/net/redboltmedia/witchercraft/item/DevilsPuffballItem.java",
+          "src/main/resources/assets/witchercraft/models/item/devils_puffball.json",
           "src/main/resources/assets/witchercraft/items/devils_puffball.json"
         ]
       },
@@ -482,8 +482,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/witchercraft/models/item/grapeshot.json",
-          "src/main/resources/assets/witchercraft/items/grapeshot.json",
-          "src/main/java/net/redboltmedia/witchercraft/item/GrapeshotItem.java"
+          "src/main/java/net/redboltmedia/witchercraft/item/GrapeshotItem.java",
+          "src/main/resources/assets/witchercraft/items/grapeshot.json"
         ]
       },
       "path": "~/Alchemy/Bombs/Grapeshot"
@@ -5754,10 +5754,6 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "damagesource",
-            "type": "damagesource"
-          },
-          {
             "name": "entity",
             "type": "entity"
           },
@@ -6551,10 +6547,6 @@
       "registry_name": "damage_calculator_wait",
       "metadata": {
         "dependencies": [
-          {
-            "name": "damagesource",
-            "type": "damagesource"
-          },
           {
             "name": "entity",
             "type": "entity"
@@ -9166,6 +9158,63 @@
         ]
       },
       "path": "~/Character Abilities/SignsPerks"
+    },
+    {
+      "name": "GrapeshotProjectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grapeshot_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/entity/GrapeshotProjectileEntity.java"
+        ]
+      },
+      "path": "~/Alchemy/Bombs/Grapeshot"
+    },
+    {
+      "name": "GrapeshotExplosion",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grapeshot_explosion",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/GrapeshotExplosionProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Bombs/Grapeshot"
+    },
+    {
+      "name": "Bomb",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bomb",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/witchercraft/damage_type/bomb.json"
+        ]
+      },
+      "path": "~/Alchemy/Bombs"
     }
   ],
   "variable_elements": [
@@ -9719,7 +9768,8 @@
     ],
     "ENTITIES:mod:relict": [
       "EntitySlime"
-    ]
+    ],
+    "DAMAGE_TYPES:mod:ranged": []
   },
   "tab_element_order": {},
   "language_map": {
@@ -10013,7 +10063,10 @@
       "effect.witchercraft.succubus_decoction_effect": "Succubus Decoction ",
       "effect.witchercraft.succubus_decoction_tick": "Succubus Decoction Tick",
       "item.witchercraft.grave_hag_decoction": "Grave Hag Decoction",
-      "effect.witchercraft.grave_hag_decoction_effect": "Grave Hag Decoction "
+      "effect.witchercraft.grave_hag_decoction_effect": "Grave Hag Decoction ",
+      "death.attack.bomb": "%1$s exploded",
+      "death.attack.bomb.item": "%1$s was killed by %2$s using %3$s",
+      "death.attack.bomb.player": "%1$s died whilst trying to escape %2$s"
     }
   },
   "metadata": {
@@ -10024,6 +10077,8 @@
       "src/main/java/net/redboltmedia/witchercraft/init/WitchercraftModKeyMappings.java",
       "src/main/java/net/redboltmedia/witchercraft/init/WitchercraftModMobEffects.java",
       "src/main/java/net/redboltmedia/witchercraft/init/WitchercraftModItems.java",
+      "src/main/java/net/redboltmedia/witchercraft/init/WitchercraftModEntityRenderers.java",
+      "src/main/java/net/redboltmedia/witchercraft/init/WitchercraftModEntities.java",
       "src/main/java/net/redboltmedia/witchercraft/WitchercraftMod.java",
       "src/main/java/net/redboltmedia/witchercraft/network/WitchercraftModVariables.java",
       "src/main/java/net/redboltmedia/witchercraft/init/WitchercraftModTabs.java",

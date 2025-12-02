@@ -288,5 +288,8 @@
   "effect.witchercraft.succubus_decoction_effect": "Succubus Decoction ",
   "effect.witchercraft.succubus_decoction_tick": "Succubus Decoction Tick",
   "item.witchercraft.grave_hag_decoction": "Grave Hag Decoction",
-  "effect.witchercraft.grave_hag_decoction_effect": "Grave Hag Decoction "
+  "effect.witchercraft.grave_hag_decoction_effect": "Grave Hag Decoction ",
+  "death.attack.bomb": "%1$s exploded",
+  "death.attack.bomb.item": "%1$s was killed by %2$s using %3$s",
+  "death.attack.bomb.player": "%1$s died whilst trying to escape %2$s"
 }
