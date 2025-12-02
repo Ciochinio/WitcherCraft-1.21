@@ -481,8 +481,25 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 321,
-          "y": 53,
+          "x": 312,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_character_abilities_alchemy",
+          "text": {
+            "fixedValue": "",
+            "name": "CharacterAbilitiesAlchemyGuiSkillPointsUsed"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 312,
+          "y": 71,
           "locked": false
         }
       }

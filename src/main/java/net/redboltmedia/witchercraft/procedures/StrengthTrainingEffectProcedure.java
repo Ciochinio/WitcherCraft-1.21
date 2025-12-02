@@ -14,7 +14,7 @@ public class StrengthTrainingEffectProcedure {
 				_vars.witchercraftAbilitiesStrengthTraining = true;
 				_vars.markSyncDirty();
 			}
-			CharacterAbilitiesCombatSkillPointUsedProcedure.execute(entity);
+			CharacterAbilitiesCombatSkillPointsUsedProcedure.execute(entity);
 		}
 	}
 }

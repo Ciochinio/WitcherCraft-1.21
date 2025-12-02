@@ -14,7 +14,7 @@ public class FleetFootedEffectProcedure {
 				_vars.witchercraftAbilitiesFleetFooted = true;
 				_vars.markSyncDirty();
 			}
-			CharacterAbilitiesCombatSkillPointUsedProcedure.execute(entity);
+			CharacterAbilitiesCombatSkillPointsUsedProcedure.execute(entity);
 		}
 	}
 }

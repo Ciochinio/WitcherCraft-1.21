@@ -14,7 +14,7 @@ public class ColdBloodEffectProcedure {
 				_vars.witchercraftAbilitiesColdBlood = true;
 				_vars.markSyncDirty();
 			}
-			CharacterAbilitiesCombatSkillPointUsedProcedure.execute(entity);
+			CharacterAbilitiesCombatSkillPointsUsedProcedure.execute(entity);
 		}
 	}
 }

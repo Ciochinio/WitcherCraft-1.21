@@ -128,7 +128,8 @@ public class CharacterAbilitiesAlchemyGuiScreen extends AbstractContainerScreen<
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, CharacterAbilitesSkillPointsAvailableProcedure.execute(entity), 195, 16, -12829636, false);
+		guiGraphics.drawString(this.font, CharacterAbilitesSkillPointsAvailableProcedure.execute(entity), 186, 25, -12829636, false);
+		guiGraphics.drawString(this.font, CharacterAbilitiesAlchemyGuiSkillPointsUsedProcedure.execute(entity), 186, 34, -12829636, false);
 	}
 
 	@Override

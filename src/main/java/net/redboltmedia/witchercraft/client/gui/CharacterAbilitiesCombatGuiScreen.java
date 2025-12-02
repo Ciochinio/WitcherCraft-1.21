@@ -150,7 +150,7 @@ public class CharacterAbilitiesCombatGuiScreen extends AbstractContainerScreen<C
 		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("witchercraft:textures/screens/deadlyprecisonbought.png"), this.leftPos + 76, this.topPos + 115, 0, 0, 32, 32, 32, 32);
 		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("witchercraft:textures/screens/cripplingshotbought.png"), this.leftPos + 112, this.topPos + 115, 0, 0, 32, 32, 32, 32);
 		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("witchercraft:textures/screens/undyingbought.png"), this.leftPos + 148, this.topPos + 115, 0, 0, 32, 32, 32, 32);
-		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("witchercraft:textures/screens/skillpoint.png"), this.leftPos + 202, this.topPos + 7, 0, 0, 50, 25, 50, 25);
+		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("witchercraft:textures/screens/skillpoint.png"), this.leftPos + 193, this.topPos + 16, 0, 0, 50, 25, 50, 25);
 	}
 
 	@Override
@@ -164,7 +164,8 @@ public class CharacterAbilitiesCombatGuiScreen extends AbstractContainerScreen<C
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, CharacterAbilitesSkillPointsAvailableProcedure.execute(entity), 202, 16, -12829636, false);
+		guiGraphics.drawString(this.font, CharacterAbilitesSkillPointsAvailableProcedure.execute(entity), 193, 25, -12829636, false);
+		guiGraphics.drawString(this.font, CharacterAbilitiesCombatGuiSkillPointsUsedProcedure.execute(entity), 193, 34, -12829636, false);
 	}
 
 	@Override

@@ -15,7 +15,7 @@ public class PreciseBlowsEffectProcedure {
 					_vars.witchercraftAbilitiesPreciseBlows = true;
 					_vars.markSyncDirty();
 				}
-				CharacterAbilitiesCombatSkillPointUsedProcedure.execute(entity);
+				CharacterAbilitiesCombatSkillPointsUsedProcedure.execute(entity);
 			}
 		}
 	}

@@ -15,7 +15,7 @@ public class CrushingBlowsEffectProcedure {
 					_vars.witchercraftAbilitiesCrushingBlows = true;
 					_vars.markSyncDirty();
 				}
-				CharacterAbilitiesCombatSkillPointUsedProcedure.execute(entity);
+				CharacterAbilitiesCombatSkillPointsUsedProcedure.execute(entity);
 			}
 		}
 	}

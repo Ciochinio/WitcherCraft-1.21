@@ -710,8 +710,8 @@
         "data": {
           "image": "skillpoint.png",
           "use1Xscale": false,
-          "x": 321,
-          "y": 44,
+          "x": 312,
+          "y": 53,
           "locked": false
         }
       },
@@ -727,8 +727,25 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 321,
-          "y": 53,
+          "x": 312,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_character_abilities_combat",
+          "text": {
+            "fixedValue": "",
+            "name": "CharacterAbilitiesCombatGuiSkillPointsUsed"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 312,
+          "y": 71,
           "locked": false
         }
       }

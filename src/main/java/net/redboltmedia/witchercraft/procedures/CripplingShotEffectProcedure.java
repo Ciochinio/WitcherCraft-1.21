@@ -15,7 +15,7 @@ public class CripplingShotEffectProcedure {
 					_vars.witchercraftAbilitiesCripplingShot = true;
 					_vars.markSyncDirty();
 				}
-				CharacterAbilitiesCombatSkillPointUsedProcedure.execute(entity);
+				CharacterAbilitiesCombatSkillPointsUsedProcedure.execute(entity);
 			}
 		}
 	}

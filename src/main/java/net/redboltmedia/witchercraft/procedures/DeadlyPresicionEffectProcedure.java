@@ -15,7 +15,7 @@ public class DeadlyPresicionEffectProcedure {
 					_vars.witchercraftAbilitiesDeadlyPresicion = true;
 					_vars.markSyncDirty();
 				}
-				CharacterAbilitiesCombatSkillPointUsedProcedure.execute(entity);
+				CharacterAbilitiesCombatSkillPointsUsedProcedure.execute(entity);
 			}
 		}
 	}

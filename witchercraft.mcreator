@@ -2700,8 +2700,8 @@
       "registry_name": "character_abilities_combat_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/world/inventory/CharacterAbilitiesCombatGuiMenu.java",
           "src/main/java/net/redboltmedia/witchercraft/client/gui/CharacterAbilitiesCombatGuiScreen.java",
+          "src/main/java/net/redboltmedia/witchercraft/world/inventory/CharacterAbilitiesCombatGuiMenu.java",
           "src/main/java/net/redboltmedia/witchercraft/network/CharacterAbilitiesCombatGuiButtonMessage.java"
         ]
       },
@@ -2750,9 +2750,9 @@
       "registry_name": "character_abilities_alchemy_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/network/CharacterAbilitiesAlchemyGuiButtonMessage.java",
           "src/main/java/net/redboltmedia/witchercraft/world/inventory/CharacterAbilitiesAlchemyGuiMenu.java",
-          "src/main/java/net/redboltmedia/witchercraft/client/gui/CharacterAbilitiesAlchemyGuiScreen.java"
+          "src/main/java/net/redboltmedia/witchercraft/client/gui/CharacterAbilitiesAlchemyGuiScreen.java",
+          "src/main/java/net/redboltmedia/witchercraft/network/CharacterAbilitiesAlchemyGuiButtonMessage.java"
         ]
       },
       "path": "~/Character Abilities/AlchemyPerks"
@@ -2801,8 +2801,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/redboltmedia/witchercraft/world/inventory/CharacterAbilitiesSignsGuiMenu.java",
-          "src/main/java/net/redboltmedia/witchercraft/network/CharacterAbilitiesSignsGuiButtonMessage.java",
-          "src/main/java/net/redboltmedia/witchercraft/client/gui/CharacterAbilitiesSignsGuiScreen.java"
+          "src/main/java/net/redboltmedia/witchercraft/client/gui/CharacterAbilitiesSignsGuiScreen.java",
+          "src/main/java/net/redboltmedia/witchercraft/network/CharacterAbilitiesSignsGuiButtonMessage.java"
         ]
       },
       "path": "~/Character Abilities/SignsPerks"
@@ -5470,25 +5470,6 @@
         ]
       },
       "path": "~/Character Abilities/SignsPerks"
-    },
-    {
-      "name": "CharacterAbilitiesCombatSkillPointUsed",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "character_abilities_combat_skill_point_used",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "files": [
-          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitiesCombatSkillPointUsedProcedure.java"
-        ]
-      },
-      "path": "~/Character Abilities/CombatPerks"
     },
     {
       "name": "Bleed",
@@ -9106,6 +9087,85 @@
         ]
       },
       "path": "~/Alchemy/Decoctions/Grave Hag Decoction"
+    },
+    {
+      "name": "CharacterAbilitiesCombatSkillPointsUsed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_abilities_combat_skill_points_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitiesCombatSkillPointsUsedProcedure.java"
+        ]
+      },
+      "path": "~/Character Abilities/CombatPerks"
+    },
+    {
+      "name": "CharacterAbilitiesCombatGuiSkillPointsUsed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_abilities_combat_gui_skill_points_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitiesCombatGuiSkillPointsUsedProcedure.java"
+        ]
+      },
+      "path": "~/Character Abilities/CombatPerks"
+    },
+    {
+      "name": "CharacterAbilitiesAlchemyGuiSkillPointsUsed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_abilities_alchemy_gui_skill_points_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitiesAlchemyGuiSkillPointsUsedProcedure.java"
+        ]
+      },
+      "path": "~/Character Abilities/AlchemyPerks"
+    },
+    {
+      "name": "CharacterAbilitiesSignsGuiSkillPointsUsed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_abilities_signs_gui_skill_points_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/CharacterAbilitiesSignsGuiSkillPointsUsedProcedure.java"
+        ]
+      },
+      "path": "~/Character Abilities/SignsPerks"
     }
   ],
   "variable_elements": [

@@ -15,7 +15,7 @@ public class UndyingEffectProcedure {
 					_vars.witchercraftAbilitiesUndying = true;
 					_vars.markSyncDirty();
 				}
-				CharacterAbilitiesCombatSkillPointUsedProcedure.execute(entity);
+				CharacterAbilitiesCombatSkillPointsUsedProcedure.execute(entity);
 			}
 		}
 	}

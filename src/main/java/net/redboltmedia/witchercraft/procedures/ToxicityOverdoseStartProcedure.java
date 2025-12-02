@@ -5,11 +5,13 @@ import net.redboltmedia.witchercraft.init.WitchercraftModMobEffects;
 import net.redboltmedia.witchercraft.WitchercraftMod;
 
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.network.chat.Component;
 
 public class ToxicityOverdoseStartProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
@@ -19,7 +21,15 @@ public class ToxicityOverdoseStartProcedure {
 		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(WitchercraftModMobEffects.TOXICITY_OVERDOSE_TICK)) {
 			WitchercraftMod.queueServerWork(40, () -> {
 				if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftToxicity >= entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).ToxicityOverdoseThreshold) {
-					entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.MAGIC)), 1);
+					entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.MAGIC)),
+							1 + Math.round(entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftToxicity / entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).ToxicityOverdoseThreshold));
+					if (entity instanceof LivingEntity _livEnt3 && _livEnt3.hasEffect(WitchercraftModMobEffects.DEV_LOG)) {
+						if (entity instanceof Player _player && !_player.level().isClientSide())
+							_player.displayClientMessage(
+									Component.literal(
+											("overdose za " + (1 + Math.round(entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftToxicity / entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).ToxicityOverdoseThreshold)))),
+									false);
+					}
 				}
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.TOXICITY_OVERDOSE_TICK, 1, 0));

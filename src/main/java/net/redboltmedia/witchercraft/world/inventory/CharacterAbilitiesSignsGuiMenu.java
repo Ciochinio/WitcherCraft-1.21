@@ -26,7 +26,7 @@ public class CharacterAbilitiesSignsGuiMenu extends AbstractContainerMenu implem
 	public final Map<String, Object> menuState = new HashMap<>() {
 		@Override
 		public Object put(String key, Object value) {
-			if (!this.containsKey(key) && this.size() >= 52)
+			if (!this.containsKey(key) && this.size() >= 53)
 				return null;
 			return super.put(key, value);
 		}

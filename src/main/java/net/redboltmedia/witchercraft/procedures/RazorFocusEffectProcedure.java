@@ -15,7 +15,7 @@ public class RazorFocusEffectProcedure {
 					_vars.witchercraftAbilitiesRazorFocus = true;
 					_vars.markSyncDirty();
 				}
-				CharacterAbilitiesCombatSkillPointUsedProcedure.execute(entity);
+				CharacterAbilitiesCombatSkillPointsUsedProcedure.execute(entity);
 			}
 		}
 	}
