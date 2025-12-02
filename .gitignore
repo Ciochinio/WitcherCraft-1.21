@@ -10,9 +10,13 @@ build/
 .mcreator/
 
 # Minecraft client/server files
-
+/run/logs
 
 # MCreator generator ignores
 
 # MacOS system files
 .DS_STORE
+/run/logs
+run/logs/latest.log
+run/logs/debug.log
+run/logs/debug-1.log.gz
