@@ -14,7 +14,10 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.tags.TagKey;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.Registries;
 
 import javax.annotation.Nullable;
 
@@ -38,9 +41,20 @@ public class ReflectCalculatorProcedure {
 		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(WitchercraftModMobEffects.DEV_LOG)) {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal(("hit" + amount)), false);
-			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal(("reflect damage" + amount * entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftReflectDamage * 0.01)), false);
+			if ((sourceentity.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("witchercraft:necrophage"))) || sourceentity.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("witchercraft:vampire"))))
+					&& entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(WitchercraftModMobEffects.BLACK_BLOOD_EFFECT)) {
+				if (entity instanceof Player _player && !_player.level().isClientSide())
+					_player.displayClientMessage(Component.literal(("reflect damage" + amount * (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftReflectDamage + 15) * 0.01)), false);
+			} else {
+				if (entity instanceof Player _player && !_player.level().isClientSide())
+					_player.displayClientMessage(Component.literal(("reflect damage" + amount * entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftReflectDamage * 0.01)), false);
+			}
 		}
-		sourceentity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.THORNS)), (float) (amount * entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftReflectDamage * 0.01));
+		if ((sourceentity.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("witchercraft:necrophage"))) || sourceentity.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("witchercraft:vampire"))))
+				&& entity instanceof LivingEntity _livEnt9 && _livEnt9.hasEffect(WitchercraftModMobEffects.BLACK_BLOOD_EFFECT)) {
+			sourceentity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.THORNS)), (float) (amount * (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftReflectDamage + 15) * 0.01));
+		} else {
+			sourceentity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.THORNS)), (float) (amount * entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftReflectDamage * 0.01));
+		}
 	}
 }

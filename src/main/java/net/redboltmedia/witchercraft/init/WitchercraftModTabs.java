@@ -81,5 +81,12 @@ public class WitchercraftModTabs {
 				tabData.accept(WitchercraftModItems.EKIMMARA_DECOCTION.get());
 				tabData.accept(WitchercraftModItems.KATAKAN_DECOCTION.get());
 				tabData.accept(WitchercraftModItems.LESHEN_DECOCTION.get());
+				tabData.accept(WitchercraftModItems.BLACK_BLOOD.get());
+				tabData.accept(WitchercraftModItems.FOGLET_DECOCTION.get());
+				tabData.accept(WitchercraftModItems.NEKKER_WARRIOR_DECOCTION.get());
+				tabData.accept(WitchercraftModItems.TROLL_DECOCTION.get());
+				tabData.accept(WitchercraftModItems.WRAITH_DECOCTION.get());
+				tabData.accept(WitchercraftModItems.WEREWOLF_DECOCTION.get());
+				tabData.accept(WitchercraftModItems.WYVERN_DECOCTION.get());
 			}).build());
 }

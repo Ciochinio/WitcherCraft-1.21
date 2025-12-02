@@ -41,7 +41,14 @@ public class PassiveStaminaRegenStartProcedure {
 				_vars.markSyncDirty();
 			}
 		}
-		if (entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(WitchercraftModMobEffects.PASSIVE_STAMINA_REGEN_TICK)) {
+		if (entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(WitchercraftModMobEffects.WEREWOLF_DECOCTION_EFFECT) && !world.getLevelData().isRaining() && !(world instanceof Level _lvl4 && _lvl4.isBrightOutside())) {
+			{
+				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
+				_vars.witchercraftPassiveStaminaRegeneration = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftPassiveStaminaRegeneration + 1;
+				_vars.markSyncDirty();
+			}
+		}
+		if (entity instanceof LivingEntity _livEnt5 && _livEnt5.hasEffect(WitchercraftModMobEffects.PASSIVE_STAMINA_REGEN_TICK)) {
 			WitchercraftMod.queueServerWork(40, () -> {
 				if (entity instanceof Player _player)
 					_player.getFoodData().setFoodLevel((int) ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) + entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftPassiveStaminaRegeneration));

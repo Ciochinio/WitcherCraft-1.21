@@ -79,6 +79,13 @@ public class WitchercraftModItems {
 	public static final DeferredItem<Item> EKIMMARA_DECOCTION;
 	public static final DeferredItem<Item> KATAKAN_DECOCTION;
 	public static final DeferredItem<Item> LESHEN_DECOCTION;
+	public static final DeferredItem<Item> BLACK_BLOOD;
+	public static final DeferredItem<Item> FOGLET_DECOCTION;
+	public static final DeferredItem<Item> NEKKER_WARRIOR_DECOCTION;
+	public static final DeferredItem<Item> TROLL_DECOCTION;
+	public static final DeferredItem<Item> WRAITH_DECOCTION;
+	public static final DeferredItem<Item> WEREWOLF_DECOCTION;
+	public static final DeferredItem<Item> WYVERN_DECOCTION;
 	static {
 		WHITE_HONEY = register("white_honey", WhiteHoneyItem::new);
 		BLIZZARD = register("blizzard", BlizzardItem::new);
@@ -144,6 +151,13 @@ public class WitchercraftModItems {
 		EKIMMARA_DECOCTION = register("ekimmara_decoction", EkimmaraDecoctionItem::new);
 		KATAKAN_DECOCTION = register("katakan_decoction", KatakanDecoctionItem::new);
 		LESHEN_DECOCTION = register("leshen_decoction", LeshenDecoctionItem::new);
+		BLACK_BLOOD = register("black_blood", BlackBloodItem::new);
+		FOGLET_DECOCTION = register("foglet_decoction", FogletDecoctionItem::new);
+		NEKKER_WARRIOR_DECOCTION = register("nekker_warrior_decoction", NekkerWarriorDecoctionItem::new);
+		TROLL_DECOCTION = register("troll_decoction", TrollDecoctionItem::new);
+		WRAITH_DECOCTION = register("wraith_decoction", WraithDecoctionItem::new);
+		WEREWOLF_DECOCTION = register("werewolf_decoction", WerewolfDecoctionItem::new);
+		WYVERN_DECOCTION = register("wyvern_decoction", WyvernDecoctionItem::new);
 	}
 
 	// Start of user code block custom items

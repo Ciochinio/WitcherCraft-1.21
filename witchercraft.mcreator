@@ -5868,6 +5868,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
@@ -8523,6 +8527,413 @@
         ]
       },
       "path": "~/Meditation/MeditationHandTimeNow"
+    },
+    {
+      "name": "BlackBlood",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_blood",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/item/BlackBloodItem.java",
+          "src/main/resources/assets/witchercraft/models/item/black_blood.json",
+          "src/main/resources/assets/witchercraft/items/black_blood.json"
+        ]
+      },
+      "path": "~/Alchemy/Potions/Black Blood"
+    },
+    {
+      "name": "BlackBloodEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_blood_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/BlackBloodEffectMobEffect.java"
+        ]
+      },
+      "path": "~/Alchemy/Potions/Black Blood"
+    },
+    {
+      "name": "BlackBloodUsed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_blood_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/BlackBloodUsedProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Potions/Black Blood"
+    },
+    {
+      "name": "FogletDecoction",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "foglet_decoction",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/witchercraft/models/item/foglet_decoction.json",
+          "src/main/resources/assets/witchercraft/items/foglet_decoction.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/FogletDecoctionItem.java"
+        ]
+      },
+      "path": "~/Alchemy/Decoctions/Foglet Decoction"
+    },
+    {
+      "name": "FogletDecoctionEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "foglet_decoction_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/FogletDecoctionEffectMobEffect.java"
+        ]
+      },
+      "path": "~/Alchemy/Decoctions/Foglet Decoction"
+    },
+    {
+      "name": "FogletDecoctionUsed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "foglet_decoction_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/FogletDecoctionUsedProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Decoctions/Foglet Decoction"
+    },
+    {
+      "name": "NekkerWarriorDecoction",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nekker_warrior_decoction",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/item/NekkerWarriorDecoctionItem.java",
+          "src/main/resources/assets/witchercraft/models/item/nekker_warrior_decoction.json",
+          "src/main/resources/assets/witchercraft/items/nekker_warrior_decoction.json"
+        ]
+      },
+      "path": "~/Alchemy/Decoctions/Nekker Warrior Decoction"
+    },
+    {
+      "name": "NekkerWarriorDecoctionEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nekker_warrior_decoction_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/NekkerWarriorDecoctionEffectMobEffect.java"
+        ]
+      },
+      "path": "~/Alchemy/Decoctions/Nekker Warrior Decoction"
+    },
+    {
+      "name": "NekkerWarriorDecoctionUsed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nekker_warrior_decoction_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/NekkerWarriorDecoctionUsedProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Decoctions/Nekker Warrior Decoction"
+    },
+    {
+      "name": "TrollDecoction",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "troll_decoction",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/witchercraft/items/troll_decoction.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/TrollDecoctionItem.java",
+          "src/main/resources/assets/witchercraft/models/item/troll_decoction.json"
+        ]
+      },
+      "path": "~/Alchemy/Decoctions/Troll Decoction"
+    },
+    {
+      "name": "TrollDecoctionEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "troll_decoction_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/TrollDecoctionEffectMobEffect.java"
+        ]
+      },
+      "path": "~/Alchemy/Decoctions/Troll Decoction"
+    },
+    {
+      "name": "TrollDecoctionUsed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "troll_decoction_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/TrollDecoctionUsedProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Decoctions/Troll Decoction"
+    },
+    {
+      "name": "WraithDecoction",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wraith_decoction",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/item/WraithDecoctionItem.java",
+          "src/main/resources/assets/witchercraft/items/wraith_decoction.json",
+          "src/main/resources/assets/witchercraft/models/item/wraith_decoction.json"
+        ]
+      },
+      "path": "~/Alchemy/Decoctions/Wraith Decoction"
+    },
+    {
+      "name": "WraithDecoctionEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wraith_decoction_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/WraithDecoctionEffectMobEffect.java"
+        ]
+      },
+      "path": "~/Alchemy/Decoctions/Wraith Decoction"
+    },
+    {
+      "name": "WraithDecoctionUsed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wraith_decoction_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/WraithDecoctionUsedProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Decoctions/Wraith Decoction"
+    },
+    {
+      "name": "WraithDecoctionHit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wraith_decoction_hit",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/WraithDecoctionHitProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Decoctions/Wraith Decoction"
+    },
+    {
+      "name": "WerewolfDecoction",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "werewolf_decoction",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/item/WerewolfDecoctionItem.java",
+          "src/main/resources/assets/witchercraft/items/werewolf_decoction.json",
+          "src/main/resources/assets/witchercraft/models/item/werewolf_decoction.json"
+        ]
+      },
+      "path": "~/Alchemy/Decoctions/Werewolf Decoction"
+    },
+    {
+      "name": "WerewolfDecoctionEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "werewolf_decoction_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/WerewolfDecoctionEffectMobEffect.java"
+        ]
+      },
+      "path": "~/Alchemy/Decoctions/Werewolf Decoction"
+    },
+    {
+      "name": "WerewolfDecoctionUsed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "werewolf_decoction_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/WerewolfDecoctionUsedProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Decoctions/Werewolf Decoction"
+    },
+    {
+      "name": "InCombat",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "in_combat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/InCombatMobEffect.java"
+        ]
+      },
+      "path": "~/Admin/InCombat"
+    },
+    {
+      "name": "PlayerInCombat",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_in_combat",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/PlayerInCombatProcedure.java"
+        ]
+      },
+      "path": "~/Admin/InCombat"
+    },
+    {
+      "name": "WyvernDecoction",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wyvern_decoction",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/item/WyvernDecoctionItem.java",
+          "src/main/resources/assets/witchercraft/items/wyvern_decoction.json",
+          "src/main/resources/assets/witchercraft/models/item/wyvern_decoction.json"
+        ]
+      },
+      "path": "~/Alchemy/Decoctions/Wyvern Decoction"
+    },
+    {
+      "name": "WyvernDecoctionEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wyvern_decoction_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/WyvernDecoctionEffectMobEffect.java"
+        ]
+      },
+      "path": "~/Alchemy/Decoctions/Wyvern Decoction"
+    },
+    {
+      "name": "WyvernDecoctionUsed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wyvern_decoction_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/WyvernDecoctionUsedProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Decoctions/Wyvern Decoction"
+    },
+    {
+      "name": "WyvernDecoctionHit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wyvern_decoction_hit",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/WyvernDecoctionHitProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Decoctions/Wyvern Decoction"
     }
   ],
   "variable_elements": [
@@ -8981,6 +9392,12 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
+    },
+    {
+      "name": "witchercraftWyvenDecoctionHit",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -9332,7 +9749,22 @@
       "gui.witchercraft.meditation_gui.czas_prefix": "",
       "gui.witchercraft.meditation_gui.MeditationTime_prefix": "",
       "gui.witchercraft.meditation_gui.MeditationTime_suffix": "",
-      "gui.witchercraft.meditation_gui.button_meditate": "Meditate"
+      "gui.witchercraft.meditation_gui.button_meditate": "Meditate",
+      "item.witchercraft.black_blood": "Black Blood",
+      "effect.witchercraft.black_blood_effect": "Black Blood",
+      "item.witchercraft.foglet_decoction": "Foglet Decoction",
+      "effect.witchercraft.foglet_decoction_effect": "Foglet Decoction ",
+      "item.witchercraft.nekker_warrior_decoction": "Nekker Warrior Decoction",
+      "effect.witchercraft.nekker_warrior_decoction_effect": "Nekker Warrior Decoction ",
+      "item.witchercraft.troll_decoction": "Troll Decoction",
+      "effect.witchercraft.troll_decoction_effect": "Troll Decoction ",
+      "item.witchercraft.wraith_decoction": "Wraith Decoction",
+      "effect.witchercraft.wraith_decoction_effect": "Wraith Decoction ",
+      "item.witchercraft.werewolf_decoction": "Werewolf Decoction",
+      "effect.witchercraft.werewolf_decoction_effect": "Werewolf Decoction ",
+      "effect.witchercraft.in_combat": "In Combat",
+      "item.witchercraft.wyvern_decoction": "Wyvern Decoction",
+      "effect.witchercraft.wyvern_decoction_effect": "Wyvern Decoction "
     }
   },
   "metadata": {
@@ -9401,6 +9833,10 @@
               },
               {
                 "name": "PetrisPhilter",
+                "children": []
+              },
+              {
+                "name": "Black Blood",
                 "children": []
               }
             ]
@@ -9509,6 +9945,30 @@
               },
               {
                 "name": "Leshen Decoction",
+                "children": []
+              },
+              {
+                "name": "Foglet Decoction",
+                "children": []
+              },
+              {
+                "name": "Nekker Warrior Decoction",
+                "children": []
+              },
+              {
+                "name": "Troll Decoction",
+                "children": []
+              },
+              {
+                "name": "Wraith Decoction",
+                "children": []
+              },
+              {
+                "name": "Werewolf Decoction",
+                "children": []
+              },
+              {
+                "name": "Wyvern Decoction",
                 "children": []
               }
             ]
@@ -10018,6 +10478,10 @@
           },
           {
             "name": "Calc",
+            "children": []
+          },
+          {
+            "name": "InCombat",
             "children": []
           }
         ]

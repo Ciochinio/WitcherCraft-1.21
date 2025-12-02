@@ -60,6 +60,14 @@ public class WitchercraftModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> EKIMMARA_DECOCTION_EFFECT = REGISTRY.register("ekimmara_decoction_effect", () -> new EkimmaraDecoctionEffectMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> KATAKAN_DECOCTION_EFFECT = REGISTRY.register("katakan_decoction_effect", () -> new KatakanDecoctionEffectMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> LESHEN_DECOCTION_EFFECT = REGISTRY.register("leshen_decoction_effect", () -> new LeshenDecoctionEffectMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> BLACK_BLOOD_EFFECT = REGISTRY.register("black_blood_effect", () -> new BlackBloodEffectMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> FOGLET_DECOCTION_EFFECT = REGISTRY.register("foglet_decoction_effect", () -> new FogletDecoctionEffectMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> NEKKER_WARRIOR_DECOCTION_EFFECT = REGISTRY.register("nekker_warrior_decoction_effect", () -> new NekkerWarriorDecoctionEffectMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> TROLL_DECOCTION_EFFECT = REGISTRY.register("troll_decoction_effect", () -> new TrollDecoctionEffectMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> WRAITH_DECOCTION_EFFECT = REGISTRY.register("wraith_decoction_effect", () -> new WraithDecoctionEffectMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> WEREWOLF_DECOCTION_EFFECT = REGISTRY.register("werewolf_decoction_effect", () -> new WerewolfDecoctionEffectMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> IN_COMBAT = REGISTRY.register("in_combat", () -> new InCombatMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> WYVERN_DECOCTION_EFFECT = REGISTRY.register("wyvern_decoction_effect", () -> new WyvernDecoctionEffectMobEffect());
 
 	@SubscribeEvent
 	public static void onEffectRemoved(MobEffectEvent.Remove event) {
