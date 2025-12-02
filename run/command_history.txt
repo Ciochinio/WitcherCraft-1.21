@@ -1,5 +1,3 @@
-/effect clear Dev witchercraft:swallow_effect
-/effect give Dev minecraft:luck 60
 /effect clear Dev minecraft:luck
 /effect give Dev minecraft:luck 60
 /effect clear Dev witchercraft:petris_philter_effect
@@ -48,3 +46,5 @@
 /effect give Dev witchercraft:in_combat 5
 /effect clear
 /effect clear Dev witchercraft:wyvern_decoction_effect
+/effect clear Dev witchercraft:succubus_decoction_effect_decoction_effect
+/effect clear Dev witchercraft:succubus_decoction_effect

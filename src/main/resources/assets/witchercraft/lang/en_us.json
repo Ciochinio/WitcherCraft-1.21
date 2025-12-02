@@ -283,5 +283,8 @@
   "effect.witchercraft.werewolf_decoction_effect": "Werewolf Decoction ",
   "effect.witchercraft.in_combat": "In Combat",
   "item.witchercraft.wyvern_decoction": "Wyvern Decoction",
-  "effect.witchercraft.wyvern_decoction_effect": "Wyvern Decoction "
+  "effect.witchercraft.wyvern_decoction_effect": "Wyvern Decoction ",
+  "item.witchercraft.succubus_decoction": "Succubus Decoction",
+  "effect.witchercraft.succubus_decoction_effect": "Succubus Decoction ",
+  "effect.witchercraft.succubus_decoction_tick": "Succubus Decoction Tick"
 }

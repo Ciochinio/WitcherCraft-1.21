@@ -86,6 +86,7 @@ public class WitchercraftModItems {
 	public static final DeferredItem<Item> WRAITH_DECOCTION;
 	public static final DeferredItem<Item> WEREWOLF_DECOCTION;
 	public static final DeferredItem<Item> WYVERN_DECOCTION;
+	public static final DeferredItem<Item> SUCCUBUS_DECOCTION;
 	static {
 		WHITE_HONEY = register("white_honey", WhiteHoneyItem::new);
 		BLIZZARD = register("blizzard", BlizzardItem::new);
@@ -158,6 +159,7 @@ public class WitchercraftModItems {
 		WRAITH_DECOCTION = register("wraith_decoction", WraithDecoctionItem::new);
 		WEREWOLF_DECOCTION = register("werewolf_decoction", WerewolfDecoctionItem::new);
 		WYVERN_DECOCTION = register("wyvern_decoction", WyvernDecoctionItem::new);
+		SUCCUBUS_DECOCTION = register("succubus_decoction", SuccubusDecoctionItem::new);
 	}
 
 	// Start of user code block custom items

@@ -4,6 +4,7 @@
 package net.redboltmedia.witchercraft.init;
 
 import net.redboltmedia.witchercraft.procedures.ToxicityOverdoseStartProcedure;
+import net.redboltmedia.witchercraft.procedures.SuccubusDecoctionTickStartProcedure;
 import net.redboltmedia.witchercraft.procedures.PassiveStaminaRegenStartProcedure;
 import net.redboltmedia.witchercraft.procedures.PassiveHealthRegenStartProcedure;
 import net.redboltmedia.witchercraft.potion.*;
@@ -68,6 +69,8 @@ public class WitchercraftModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> WEREWOLF_DECOCTION_EFFECT = REGISTRY.register("werewolf_decoction_effect", () -> new WerewolfDecoctionEffectMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> IN_COMBAT = REGISTRY.register("in_combat", () -> new InCombatMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> WYVERN_DECOCTION_EFFECT = REGISTRY.register("wyvern_decoction_effect", () -> new WyvernDecoctionEffectMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> SUCCUBUS_DECOCTION_EFFECT = REGISTRY.register("succubus_decoction_effect", () -> new SuccubusDecoctionEffectMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> SUCCUBUS_DECOCTION_TICK = REGISTRY.register("succubus_decoction_tick", () -> new SuccubusDecoctionTickMobEffect());
 
 	@SubscribeEvent
 	public static void onEffectRemoved(MobEffectEvent.Remove event) {
@@ -92,6 +95,8 @@ public class WitchercraftModMobEffects {
 			PassiveHealthRegenStartProcedure.execute(entity.level(), entity);
 		} else if (effectInstance.getEffect().is(PASSIVE_STAMINA_REGEN_TICK)) {
 			PassiveStaminaRegenStartProcedure.execute(entity.level(), entity);
+		} else if (effectInstance.getEffect().is(SUCCUBUS_DECOCTION_TICK)) {
+			SuccubusDecoctionTickStartProcedure.execute(entity.level(), entity);
 		}
 	}
 }

@@ -88,6 +88,9 @@ public class ToxicityProcedure {
 		if (entity instanceof LivingEntity _livEnt19 && _livEnt19.hasEffect(WitchercraftModMobEffects.WYVERN_DECOCTION_EFFECT)) {
 			sumToxicity = sumToxicity + 50;
 		}
+		if (entity instanceof LivingEntity _livEnt20 && _livEnt20.hasEffect(WitchercraftModMobEffects.SUCCUBUS_DECOCTION_EFFECT)) {
+			sumToxicity = sumToxicity + 50;
+		}
 		{
 			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
 			_vars.witchercraftToxicity = sumToxicity;

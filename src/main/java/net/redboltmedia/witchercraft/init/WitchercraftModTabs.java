@@ -88,5 +88,6 @@ public class WitchercraftModTabs {
 				tabData.accept(WitchercraftModItems.WRAITH_DECOCTION.get());
 				tabData.accept(WitchercraftModItems.WEREWOLF_DECOCTION.get());
 				tabData.accept(WitchercraftModItems.WYVERN_DECOCTION.get());
+				tabData.accept(WitchercraftModItems.SUCCUBUS_DECOCTION.get());
 			}).build());
 }

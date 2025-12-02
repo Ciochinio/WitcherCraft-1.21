@@ -47,6 +47,9 @@ public class IncreasedDamageProcedure {
 		if (entity instanceof LivingEntity _livEnt6 && _livEnt6.hasEffect(WitchercraftModMobEffects.WYVERN_DECOCTION_EFFECT)) {
 			sumIncreasedDamage = sumIncreasedDamage + entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftWyvenDecoctionHit;
 		}
+		if (entity instanceof LivingEntity _livEnt7 && _livEnt7.hasEffect(WitchercraftModMobEffects.SUCCUBUS_DECOCTION_EFFECT)) {
+			sumIncreasedDamage = sumIncreasedDamage + entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftSuccubusDecoctionTick;
+		}
 		{
 			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
 			_vars.witchercraftIncreasedDamage = sumIncreasedDamage;
