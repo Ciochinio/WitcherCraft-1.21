@@ -148,6 +148,7 @@ public class WitchercraftModVariables {
 			clone.witchercraftReflectDamage = original.witchercraftReflectDamage;
 			clone.witchercraftWyvenDecoctionHit = original.witchercraftWyvenDecoctionHit;
 			clone.witchercraftSuccubusDecoctionTick = original.witchercraftSuccubusDecoctionTick;
+			clone.witchercraftGraveHagDecoctionKill = original.witchercraftGraveHagDecoctionKill;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
 	}
@@ -232,6 +233,7 @@ public class WitchercraftModVariables {
 		public double witchercraftReflectDamage = 0;
 		public double witchercraftWyvenDecoctionHit = 0;
 		public double witchercraftSuccubusDecoctionTick = 0;
+		public double witchercraftGraveHagDecoctionKill = 0;
 
 		@Override
 		public void serialize(ValueOutput output) {
@@ -313,6 +315,7 @@ public class WitchercraftModVariables {
 			output.putDouble("witchercraftReflectDamage", witchercraftReflectDamage);
 			output.putDouble("witchercraftWyvenDecoctionHit", witchercraftWyvenDecoctionHit);
 			output.putDouble("witchercraftSuccubusDecoctionTick", witchercraftSuccubusDecoctionTick);
+			output.putDouble("witchercraftGraveHagDecoctionKill", witchercraftGraveHagDecoctionKill);
 		}
 
 		@Override
@@ -395,6 +398,7 @@ public class WitchercraftModVariables {
 			witchercraftReflectDamage = input.getDoubleOr("witchercraftReflectDamage", 0);
 			witchercraftWyvenDecoctionHit = input.getDoubleOr("witchercraftWyvenDecoctionHit", 0);
 			witchercraftSuccubusDecoctionTick = input.getDoubleOr("witchercraftSuccubusDecoctionTick", 0);
+			witchercraftGraveHagDecoctionKill = input.getDoubleOr("witchercraftGraveHagDecoctionKill", 0);
 		}
 
 		public void markSyncDirty() {

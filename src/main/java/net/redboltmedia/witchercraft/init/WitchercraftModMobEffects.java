@@ -71,6 +71,7 @@ public class WitchercraftModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> WYVERN_DECOCTION_EFFECT = REGISTRY.register("wyvern_decoction_effect", () -> new WyvernDecoctionEffectMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> SUCCUBUS_DECOCTION_EFFECT = REGISTRY.register("succubus_decoction_effect", () -> new SuccubusDecoctionEffectMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> SUCCUBUS_DECOCTION_TICK = REGISTRY.register("succubus_decoction_tick", () -> new SuccubusDecoctionTickMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> GRAVE_HAG_DECOCTION_EFFECT = REGISTRY.register("grave_hag_decoction_effect", () -> new GraveHagDecoctionEffectMobEffect());
 
 	@SubscribeEvent
 	public static void onEffectRemoved(MobEffectEvent.Remove event) {

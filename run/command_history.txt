@@ -1,7 +1,3 @@
-/effect clear Dev minecraft:luck
-/effect give Dev minecraft:luck 60
-/effect clear Dev witchercraft:petris_philter_effect
-/effect give @a witchercraft:school_of_the_griffin 60
 /xp add Dev 1000 points
 /lvlfix
 /effect give Dev minecraft:luck 10
@@ -48,3 +44,7 @@
 /effect clear Dev witchercraft:wyvern_decoction_effect
 /effect clear Dev witchercraft:succubus_decoction_effect_decoction_effect
 /effect clear Dev witchercraft:succubus_decoction_effect
+/kill
+/effect give Dev minecraft:instant_health
+/effect clear
+/kill
