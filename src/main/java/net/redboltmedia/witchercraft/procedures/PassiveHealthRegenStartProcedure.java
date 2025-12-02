@@ -23,7 +23,7 @@ public class PassiveHealthRegenStartProcedure {
 			{
 				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
 				_vars.witchercraftPassiveHealthRegeneration = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftPassiveHealthRegeneration
-						+ entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftGraveHagDecoctionKill / 2;
+						+ Math.round(entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftGraveHagDecoctionKill / 2);
 				_vars.markSyncDirty();
 			}
 		} else {
