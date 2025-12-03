@@ -11,7 +11,7 @@ import net.minecraft.world.entity.LivingEntity;
 
 public class GraveHagDecoctionItem extends Item {
 	public GraveHagDecoctionItem(Item.Properties properties) {
-		super(properties.stacksTo(3).food((new FoodProperties.Builder()).nutrition(4).saturationModifier(0.3f).alwaysEdible().build(), Consumables.DEFAULT_DRINK));
+		super(properties.stacksTo(3).food((new FoodProperties.Builder()).nutrition(0).saturationModifier(0.3f).alwaysEdible().build(), Consumables.DEFAULT_DRINK));
 	}
 
 	@Override

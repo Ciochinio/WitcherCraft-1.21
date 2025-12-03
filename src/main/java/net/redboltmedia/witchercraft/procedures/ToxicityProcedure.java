@@ -52,46 +52,49 @@ public class ToxicityProcedure {
 		if (entity instanceof LivingEntity _livEnt7 && _livEnt7.hasEffect(WitchercraftModMobEffects.PETRIS_PHILTER_EFFECT)) {
 			sumToxicity = sumToxicity + 20;
 		}
-		if (entity instanceof LivingEntity _livEnt8 && _livEnt8.hasEffect(WitchercraftModMobEffects.BLACK_BLOOD_EFFECT)) {
+		if (entity instanceof LivingEntity _livEnt8 && _livEnt8.hasEffect(WitchercraftModMobEffects.WHITE_RAFFARDS_DECOCTION_EFFECT)) {
 			sumToxicity = sumToxicity + 20;
 		}
-		if (entity instanceof LivingEntity _livEnt9 && _livEnt9.hasEffect(WitchercraftModMobEffects.CAT_EFFECT)) {
+		if (entity instanceof LivingEntity _livEnt9 && _livEnt9.hasEffect(WitchercraftModMobEffects.BLACK_BLOOD_EFFECT)) {
+			sumToxicity = sumToxicity + 20;
+		}
+		if (entity instanceof LivingEntity _livEnt10 && _livEnt10.hasEffect(WitchercraftModMobEffects.CAT_EFFECT)) {
 			sumToxicity = sumToxicity + 10;
 		}
-		if (entity instanceof LivingEntity _livEnt10 && _livEnt10.hasEffect(WitchercraftModMobEffects.WATER_HAG_DECOCTION_EFFECT)) {
+		if (entity instanceof LivingEntity _livEnt11 && _livEnt11.hasEffect(WitchercraftModMobEffects.WATER_HAG_DECOCTION_EFFECT)) {
 			sumToxicity = sumToxicity + 50;
 		}
-		if (entity instanceof LivingEntity _livEnt11 && _livEnt11.hasEffect(WitchercraftModMobEffects.EKIMMARA_DECOCTION_EFFECT)) {
+		if (entity instanceof LivingEntity _livEnt12 && _livEnt12.hasEffect(WitchercraftModMobEffects.EKIMMARA_DECOCTION_EFFECT)) {
 			sumToxicity = sumToxicity + 50;
 		}
-		if (entity instanceof LivingEntity _livEnt12 && _livEnt12.hasEffect(WitchercraftModMobEffects.KATAKAN_DECOCTION_EFFECT)) {
+		if (entity instanceof LivingEntity _livEnt13 && _livEnt13.hasEffect(WitchercraftModMobEffects.KATAKAN_DECOCTION_EFFECT)) {
 			sumToxicity = sumToxicity + 50;
 		}
-		if (entity instanceof LivingEntity _livEnt13 && _livEnt13.hasEffect(WitchercraftModMobEffects.LESHEN_DECOCTION_EFFECT)) {
+		if (entity instanceof LivingEntity _livEnt14 && _livEnt14.hasEffect(WitchercraftModMobEffects.LESHEN_DECOCTION_EFFECT)) {
 			sumToxicity = sumToxicity + 50;
 		}
-		if (entity instanceof LivingEntity _livEnt14 && _livEnt14.hasEffect(WitchercraftModMobEffects.FOGLET_DECOCTION_EFFECT)) {
+		if (entity instanceof LivingEntity _livEnt15 && _livEnt15.hasEffect(WitchercraftModMobEffects.FOGLET_DECOCTION_EFFECT)) {
 			sumToxicity = sumToxicity + 50;
 		}
-		if (entity instanceof LivingEntity _livEnt15 && _livEnt15.hasEffect(WitchercraftModMobEffects.NEKKER_WARRIOR_DECOCTION_EFFECT)) {
+		if (entity instanceof LivingEntity _livEnt16 && _livEnt16.hasEffect(WitchercraftModMobEffects.NEKKER_WARRIOR_DECOCTION_EFFECT)) {
 			sumToxicity = sumToxicity + 50;
 		}
-		if (entity instanceof LivingEntity _livEnt16 && _livEnt16.hasEffect(WitchercraftModMobEffects.TROLL_DECOCTION_EFFECT)) {
+		if (entity instanceof LivingEntity _livEnt17 && _livEnt17.hasEffect(WitchercraftModMobEffects.TROLL_DECOCTION_EFFECT)) {
 			sumToxicity = sumToxicity + 50;
 		}
-		if (entity instanceof LivingEntity _livEnt17 && _livEnt17.hasEffect(WitchercraftModMobEffects.WRAITH_DECOCTION_EFFECT)) {
+		if (entity instanceof LivingEntity _livEnt18 && _livEnt18.hasEffect(WitchercraftModMobEffects.WRAITH_DECOCTION_EFFECT)) {
 			sumToxicity = sumToxicity + 50;
 		}
-		if (entity instanceof LivingEntity _livEnt18 && _livEnt18.hasEffect(WitchercraftModMobEffects.WEREWOLF_DECOCTION_EFFECT)) {
+		if (entity instanceof LivingEntity _livEnt19 && _livEnt19.hasEffect(WitchercraftModMobEffects.WEREWOLF_DECOCTION_EFFECT)) {
 			sumToxicity = sumToxicity + 50;
 		}
-		if (entity instanceof LivingEntity _livEnt19 && _livEnt19.hasEffect(WitchercraftModMobEffects.WYVERN_DECOCTION_EFFECT)) {
+		if (entity instanceof LivingEntity _livEnt20 && _livEnt20.hasEffect(WitchercraftModMobEffects.WYVERN_DECOCTION_EFFECT)) {
 			sumToxicity = sumToxicity + 50;
 		}
-		if (entity instanceof LivingEntity _livEnt20 && _livEnt20.hasEffect(WitchercraftModMobEffects.SUCCUBUS_DECOCTION_EFFECT)) {
+		if (entity instanceof LivingEntity _livEnt21 && _livEnt21.hasEffect(WitchercraftModMobEffects.SUCCUBUS_DECOCTION_EFFECT)) {
 			sumToxicity = sumToxicity + 50;
 		}
-		if (entity instanceof LivingEntity _livEnt21 && _livEnt21.hasEffect(WitchercraftModMobEffects.GRAVE_HAG_DECOCTION_EFFECT)) {
+		if (entity instanceof LivingEntity _livEnt22 && _livEnt22.hasEffect(WitchercraftModMobEffects.GRAVE_HAG_DECOCTION_EFFECT)) {
 			sumToxicity = sumToxicity + 50;
 		}
 		{

@@ -13,5 +13,6 @@ public class EkimmaraDecoctionUsedProcedure {
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.EKIMMARA_DECOCTION_EFFECT, (int) (7200 * (1 + entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftPotionDuration * 0.01)), 0));
+		DecoctionUsedProcedure.execute(entity);
 	}
 }

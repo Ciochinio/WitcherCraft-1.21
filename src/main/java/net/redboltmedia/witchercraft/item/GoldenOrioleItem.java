@@ -12,7 +12,7 @@ import net.minecraft.world.entity.LivingEntity;
 
 public class GoldenOrioleItem extends Item {
 	public GoldenOrioleItem(Item.Properties properties) {
-		super(properties.stacksTo(3).food((new FoodProperties.Builder()).nutrition(4).saturationModifier(0.3f).alwaysEdible().build(), Consumables.DEFAULT_DRINK).usingConvertsTo(Items.GLASS_BOTTLE));
+		super(properties.stacksTo(3).food((new FoodProperties.Builder()).nutrition(0).saturationModifier(0.3f).alwaysEdible().build(), Consumables.DEFAULT_DRINK).usingConvertsTo(Items.GLASS_BOTTLE));
 	}
 
 	@Override

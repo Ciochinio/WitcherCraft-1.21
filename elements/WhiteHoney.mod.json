@@ -5,6 +5,7 @@
     "renderType": 0,
     "texture": "white_honey",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "animations": [],
@@ -49,7 +50,7 @@
     },
     "projectileDisableAmmoCheck": false,
     "isFood": true,
-    "nutritionalValue": 4,
+    "nutritionalValue": 0,
     "saturation": 0.3,
     "eatResultItem": {
       "value": ""
@@ -58,6 +59,10 @@
     "isAlwaysEdible": true,
     "animation": "drink",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0,
     "providedBannerPatterns": []

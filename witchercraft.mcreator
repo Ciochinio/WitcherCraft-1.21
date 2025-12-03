@@ -301,9 +301,9 @@
       "registry_name": "white_honey",
       "metadata": {
         "files": [
+          "src/main/resources/assets/witchercraft/items/white_honey.json",
           "src/main/java/net/redboltmedia/witchercraft/item/WhiteHoneyItem.java",
-          "src/main/resources/assets/witchercraft/models/item/white_honey.json",
-          "src/main/resources/assets/witchercraft/items/white_honey.json"
+          "src/main/resources/assets/witchercraft/models/item/white_honey.json"
         ]
       },
       "path": "~/Alchemy/Potions/WhiteHoney"
@@ -316,9 +316,9 @@
       "registry_name": "blizzard",
       "metadata": {
         "files": [
-          "src/main/resources/assets/witchercraft/models/item/blizzard.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/BlizzardItem.java",
           "src/main/resources/assets/witchercraft/items/blizzard.json",
-          "src/main/java/net/redboltmedia/witchercraft/item/BlizzardItem.java"
+          "src/main/resources/assets/witchercraft/models/item/blizzard.json"
         ]
       },
       "path": "~/Alchemy/Potions/Blizzard"
@@ -331,9 +331,9 @@
       "registry_name": "cat",
       "metadata": {
         "files": [
-          "src/main/resources/assets/witchercraft/items/cat.json",
           "src/main/java/net/redboltmedia/witchercraft/item/CatItem.java",
-          "src/main/resources/assets/witchercraft/models/item/cat.json"
+          "src/main/resources/assets/witchercraft/models/item/cat.json",
+          "src/main/resources/assets/witchercraft/items/cat.json"
         ]
       },
       "path": "~/Alchemy/Potions/Cat"
@@ -346,9 +346,9 @@
       "registry_name": "swallow",
       "metadata": {
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/item/SwallowItem.java",
+          "src/main/resources/assets/witchercraft/models/item/swallow.json",
           "src/main/resources/assets/witchercraft/items/swallow.json",
-          "src/main/resources/assets/witchercraft/models/item/swallow.json"
+          "src/main/java/net/redboltmedia/witchercraft/item/SwallowItem.java"
         ]
       },
       "path": "~/Alchemy/Potions/Swallow"
@@ -377,8 +377,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/witchercraft/models/item/thunderbolt.json",
-          "src/main/java/net/redboltmedia/witchercraft/item/ThunderboltItem.java",
-          "src/main/resources/assets/witchercraft/items/thunderbolt.json"
+          "src/main/resources/assets/witchercraft/items/thunderbolt.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/ThunderboltItem.java"
         ]
       },
       "path": "~/Alchemy/Potions/Thunderbolt"
@@ -391,9 +391,9 @@
       "registry_name": "white_raffards_decoction",
       "metadata": {
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/item/WhiteRaffardsDecoctionItem.java",
+          "src/main/resources/assets/witchercraft/items/white_raffards_decoction.json",
           "src/main/resources/assets/witchercraft/models/item/white_raffards_decoction.json",
-          "src/main/resources/assets/witchercraft/items/white_raffards_decoction.json"
+          "src/main/java/net/redboltmedia/witchercraft/item/WhiteRaffardsDecoctionItem.java"
         ]
       },
       "path": "~/Alchemy/Potions/WhiteRaffardsDecoction"
@@ -422,8 +422,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/witchercraft/models/item/killer_whale.json",
-          "src/main/resources/assets/witchercraft/items/killer_whale.json",
-          "src/main/java/net/redboltmedia/witchercraft/item/KillerWhaleItem.java"
+          "src/main/java/net/redboltmedia/witchercraft/item/KillerWhaleItem.java",
+          "src/main/resources/assets/witchercraft/items/killer_whale.json"
         ]
       },
       "path": "~/Alchemy/Potions/KillerWhale"
@@ -9181,6 +9181,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -9237,6 +9241,10 @@
       "registry_name": "devils_puffball_explosion",
       "metadata": {
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "x",
             "type": "number"
@@ -9330,6 +9338,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -9418,6 +9430,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -9439,6 +9455,57 @@
         ]
       },
       "path": "~/Alchemy/Bombs/DimeritiumBomb"
+    },
+    {
+      "name": "Blindness",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blindness",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/BlindnessMobEffect.java"
+        ]
+      },
+      "path": "~/StatusEffects/Blindness"
+    },
+    {
+      "name": "PotionUsed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potion_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/PotionUsedProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy"
+    },
+    {
+      "name": "DecoctionUsed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "decoction_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/DecoctionUsedProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy"
     }
   ],
   "variable_elements": [
@@ -9992,8 +10059,7 @@
     ],
     "ENTITIES:mod:relict": [
       "EntitySlime"
-    ],
-    "DAMAGE_TYPES:mod:ranged": []
+    ]
   },
   "tab_element_order": {},
   "language_map": {
@@ -10290,7 +10356,8 @@
       "effect.witchercraft.grave_hag_decoction_effect": "Grave Hag Decoction ",
       "death.attack.bomb": "%1$s exploded",
       "death.attack.bomb.item": "%1$s was killed by %2$s using %3$s",
-      "death.attack.bomb.player": "%1$s died whilst trying to escape %2$s"
+      "death.attack.bomb.player": "%1$s died whilst trying to escape %2$s",
+      "effect.witchercraft.blindness": "Blindness"
     }
   },
   "metadata": {
@@ -11031,6 +11098,10 @@
           },
           {
             "name": "InstantKill",
+            "children": []
+          },
+          {
+            "name": "Blindness",
             "children": []
           }
         ]

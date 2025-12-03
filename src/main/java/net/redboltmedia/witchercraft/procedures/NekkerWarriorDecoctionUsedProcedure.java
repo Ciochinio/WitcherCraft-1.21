@@ -13,5 +13,6 @@ public class NekkerWarriorDecoctionUsedProcedure {
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.NEKKER_WARRIOR_DECOCTION_EFFECT, (int) (7200 * (1 + entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftPotionDuration * 0.01)), 0));
+		DecoctionUsedProcedure.execute(entity);
 	}
 }

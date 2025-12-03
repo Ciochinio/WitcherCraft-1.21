@@ -1,16 +1,3 @@
-/effect clear Dev witchercraft:ekimmara_decoction_effect
-/effect clear Dev witchercraft:katakan_decoction_effect
-/weather clear
-/effect give Dev minecraft:luck 300
-/effect clear
-/time set day
-/time set 300
-/time set 23400
-/gamerule doDaylightCycle true
-/time set night
-/time set 23600
-/gamerule doDaylightCycle false
-/effect give Dev minecraft:luck
 /effect give Dev minecraft:luck 60
 /weather clear
 /weather thunder
@@ -46,5 +33,18 @@
 /lvlfix
 /weather thunder
 /effect clear Dev witchercraft:thunderbolt_effect
+/weather thunder
+/weather clear
+/effect clear Dev minecraft:regeneration
+/devtool
+/xp add Dev 1000 points
+/lvlfix
+/devtool
+/weather thunder
+/effect clear
+/xp add Dev 1000 points
+/lvlfix
+/xp add Dev 1000 points
+/lvlfix
 /weather thunder
 /weather clear

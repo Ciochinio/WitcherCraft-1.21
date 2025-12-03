@@ -13,5 +13,6 @@ public class FullMoonUsedProcedure {
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.FULL_MOON_EFFECT, (int) (3600 * (1 + entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftPotionDuration * 0.01)), 0));
+		PotionUsedProcedure.execute(entity);
 	}
 }

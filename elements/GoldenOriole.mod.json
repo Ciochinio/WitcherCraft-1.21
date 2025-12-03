@@ -50,7 +50,7 @@
     },
     "projectileDisableAmmoCheck": false,
     "isFood": true,
-    "nutritionalValue": 4,
+    "nutritionalValue": 0,
     "saturation": 0.3,
     "eatResultItem": {
       "value": "Items.GLASS_BOTTLE"
