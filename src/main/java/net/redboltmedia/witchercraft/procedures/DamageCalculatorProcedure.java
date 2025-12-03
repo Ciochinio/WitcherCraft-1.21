@@ -49,7 +49,7 @@ public class DamageCalculatorProcedure {
 				}
 				WitchercraftMod.queueServerWork(1, () -> {
 					entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK)), (float) ((amount + sourceentity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAdditionalDamage)
-							* (1 + sourceentity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftIncreasedDamage * 0.01) * sourceentity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftCritDamage * 0.01 - amount));
+							* (1 + sourceentity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftIncreasedDamage * 0.01) * sourceentity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftCritDamage * 0.01));
 					if (sourceentity instanceof LivingEntity _entity)
 						_entity.setHealth((float) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)
 								+ (amount + sourceentity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAdditionalDamage) * (1 + sourceentity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftIncreasedDamage * 0.01)
@@ -72,8 +72,7 @@ public class DamageCalculatorProcedure {
 			}
 			WitchercraftMod.queueServerWork(1, () -> {
 				entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK)),
-						(float) ((amount + sourceentity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAdditionalDamage) * (1 + sourceentity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftIncreasedDamage * 0.01)
-								- amount));
+						(float) ((amount + sourceentity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAdditionalDamage) * (1 + sourceentity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftIncreasedDamage * 0.01) * 1));
 				if (sourceentity instanceof LivingEntity _entity)
 					_entity.setHealth((float) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + (amount + sourceentity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAdditionalDamage)
 							* (1 + sourceentity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftIncreasedDamage * 0.01) * sourceentity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftLifeSteal * 0.01));
