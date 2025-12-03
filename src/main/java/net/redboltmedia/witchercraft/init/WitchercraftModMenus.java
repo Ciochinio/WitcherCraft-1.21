@@ -31,7 +31,6 @@ public class WitchercraftModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<BestiaryMenuGuiMenu>> BESTIARY_MENU_GUI = REGISTRY.register("bestiary_menu_gui", () -> IMenuTypeExtension.create(BestiaryMenuGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<CharacterGuiMenu>> CHARACTER_GUI = REGISTRY.register("character_gui", () -> IMenuTypeExtension.create(CharacterGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<SignGuiMenu>> SIGN_GUI = REGISTRY.register("sign_gui", () -> IMenuTypeExtension.create(SignGuiMenu::new));
-	public static final DeferredHolder<MenuType<?>, MenuType<AlchemyGuiPotionsMenu>> ALCHEMY_GUI_POTIONS = REGISTRY.register("alchemy_gui_potions", () -> IMenuTypeExtension.create(AlchemyGuiPotionsMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<CharactersAbilietesGeneralGuiMenu>> CHARACTERS_ABILIETES_GENERAL_GUI = REGISTRY.register("characters_abilietes_general_gui",
 			() -> IMenuTypeExtension.create(CharactersAbilietesGeneralGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<CharacterAbilitiesCombatGuiMenu>> CHARACTER_ABILITIES_COMBAT_GUI = REGISTRY.register("character_abilities_combat_gui",

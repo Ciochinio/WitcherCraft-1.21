@@ -39,7 +39,7 @@
             "name": "RefreshmentShow"
           },
           "x": 132,
-          "y": 62,
+          "y": 53,
           "locked": false
         }
       },
@@ -56,7 +56,7 @@
             "name": "DelayedRecoveryShow"
           },
           "x": 132,
-          "y": 107,
+          "y": 89,
           "locked": false
         }
       },
@@ -73,7 +73,7 @@
             "name": "SideEffectsShow"
           },
           "x": 132,
-          "y": 152,
+          "y": 125,
           "locked": false
         }
       },
@@ -89,8 +89,8 @@
           "displayCondition": {
             "name": "PoisonedBladesShow"
           },
-          "x": 195,
-          "y": 62,
+          "x": 168,
+          "y": 53,
           "locked": false
         }
       },
@@ -106,8 +106,8 @@
           "displayCondition": {
             "name": "ProtectiveCoatingShow"
           },
-          "x": 195,
-          "y": 107,
+          "x": 168,
+          "y": 89,
           "locked": false
         }
       },
@@ -123,8 +123,8 @@
           "displayCondition": {
             "name": "HunterInstinctShow"
           },
-          "x": 195,
-          "y": 152,
+          "x": 168,
+          "y": 125,
           "locked": false
         }
       },
@@ -140,8 +140,8 @@
           "displayCondition": {
             "name": "PyrotechnicsShow"
           },
-          "x": 258,
-          "y": 62,
+          "x": 204,
+          "y": 53,
           "locked": false
         }
       },
@@ -157,8 +157,8 @@
           "displayCondition": {
             "name": "EfficiencyShow"
           },
-          "x": 258,
-          "y": 107,
+          "x": 204,
+          "y": 89,
           "locked": false
         }
       },
@@ -174,8 +174,8 @@
           "displayCondition": {
             "name": "ClusterBombsShow"
           },
-          "x": 258,
-          "y": 152,
+          "x": 204,
+          "y": 125,
           "locked": false
         }
       },
@@ -252,8 +252,8 @@
           },
           "width": 24,
           "height": 24,
-          "x": 135,
-          "y": 66,
+          "x": 132,
+          "y": 53,
           "locked": false
         }
       },
@@ -266,8 +266,8 @@
           },
           "width": 24,
           "height": 24,
-          "x": 137,
-          "y": 112,
+          "x": 132,
+          "y": 89,
           "locked": false
         }
       },
@@ -280,8 +280,8 @@
           },
           "width": 24,
           "height": 24,
-          "x": 135,
-          "y": 155,
+          "x": 132,
+          "y": 125,
           "locked": false
         }
       },
@@ -294,8 +294,8 @@
           },
           "width": 24,
           "height": 24,
-          "x": 200,
-          "y": 66,
+          "x": 168,
+          "y": 53,
           "locked": false
         }
       },
@@ -308,8 +308,8 @@
           },
           "width": 24,
           "height": 24,
-          "x": 200,
-          "y": 111,
+          "x": 168,
+          "y": 89,
           "locked": false
         }
       },
@@ -322,8 +322,8 @@
           },
           "width": 24,
           "height": 24,
-          "x": 199,
-          "y": 156,
+          "x": 168,
+          "y": 125,
           "locked": false
         }
       },
@@ -336,8 +336,8 @@
           },
           "width": 24,
           "height": 24,
-          "x": 260,
-          "y": 65,
+          "x": 204,
+          "y": 53,
           "locked": false
         }
       },
@@ -350,8 +350,8 @@
           },
           "width": 24,
           "height": 24,
-          "x": 262,
-          "y": 111,
+          "x": 204,
+          "y": 89,
           "locked": false
         }
       },
@@ -364,8 +364,8 @@
           },
           "width": 24,
           "height": 24,
-          "x": 262,
-          "y": 158,
+          "x": 204,
+          "y": 125,
           "locked": false
         }
       },
@@ -375,7 +375,7 @@
           "image": "refreshmentbought.png",
           "use1Xscale": false,
           "x": 132,
-          "y": 62,
+          "y": 53,
           "locked": false
         }
       },
@@ -385,7 +385,7 @@
           "image": "delayedrecoverybought.png",
           "use1Xscale": false,
           "x": 132,
-          "y": 107,
+          "y": 89,
           "locked": false
         }
       },
@@ -395,7 +395,7 @@
           "image": "sideeffectsbought.png",
           "use1Xscale": false,
           "x": 132,
-          "y": 152,
+          "y": 125,
           "locked": false
         }
       },
@@ -404,8 +404,8 @@
         "data": {
           "image": "poisonedbladesbought.png",
           "use1Xscale": false,
-          "x": 195,
-          "y": 62,
+          "x": 168,
+          "y": 53,
           "locked": false
         }
       },
@@ -414,8 +414,8 @@
         "data": {
           "image": "protectivecoatingbought.png",
           "use1Xscale": false,
-          "x": 195,
-          "y": 107,
+          "x": 168,
+          "y": 89,
           "locked": false
         }
       },
@@ -424,8 +424,8 @@
         "data": {
           "image": "hunterinstinctsbought.png",
           "use1Xscale": false,
-          "x": 195,
-          "y": 152,
+          "x": 168,
+          "y": 125,
           "locked": false
         }
       },
@@ -434,8 +434,8 @@
         "data": {
           "image": "pyrotechnicsbought.png",
           "use1Xscale": false,
-          "x": 258,
-          "y": 62,
+          "x": 204,
+          "y": 53,
           "locked": false
         }
       },
@@ -444,8 +444,8 @@
         "data": {
           "image": "efficencybought.png",
           "use1Xscale": false,
-          "x": 258,
-          "y": 107,
+          "x": 204,
+          "y": 89,
           "locked": false
         }
       },
@@ -454,8 +454,8 @@
         "data": {
           "image": "clusterbombsbought.png",
           "use1Xscale": false,
-          "x": 258,
-          "y": 152,
+          "x": 204,
+          "y": 125,
           "locked": false
         }
       },
@@ -482,7 +482,7 @@
             "falpha": 0.0
           },
           "x": 312,
-          "y": 62,
+          "y": 44,
           "locked": false
         }
       },
@@ -499,7 +499,7 @@
             "falpha": 0.0
           },
           "x": 312,
-          "y": 71,
+          "y": 53,
           "locked": false
         }
       }

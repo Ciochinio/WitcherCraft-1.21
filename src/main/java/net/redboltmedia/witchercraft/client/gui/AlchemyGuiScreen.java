@@ -97,12 +97,6 @@ public class AlchemyGuiScreen extends AbstractContainerScreen<AlchemyGuiMenu> im
 		}).bounds(this.leftPos + 250, this.topPos + 174, 46, 20).build();
 		this.addRenderableWidget(button_back);
 		button_potions = Button.builder(Component.translatable("gui.witchercraft.alchemy_gui.button_potions"), e -> {
-			int x = AlchemyGuiScreen.this.x;
-			int y = AlchemyGuiScreen.this.y;
-			if (true) {
-				ClientPacketDistributor.sendToServer(new AlchemyGuiButtonMessage(2, x, y, z));
-				AlchemyGuiButtonMessage.handleButtonAction(entity, 2, x, y, z);
-			}
 		}).bounds(this.leftPos + -92, this.topPos + 12, 61, 20).build();
 		this.addRenderableWidget(button_potions);
 		button_bombs = Button.builder(Component.translatable("gui.witchercraft.alchemy_gui.button_bombs"), e -> {

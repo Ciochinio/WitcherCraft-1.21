@@ -4,11 +4,7 @@ import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
 import net.redboltmedia.witchercraft.network.WitchercraftModVariables;
-import net.redboltmedia.witchercraft.init.WitchercraftModTabs;
-import net.redboltmedia.witchercraft.init.WitchercraftModMobEffects;
-import net.redboltmedia.witchercraft.init.WitchercraftModMenus;
-import net.redboltmedia.witchercraft.init.WitchercraftModItems;
-import net.redboltmedia.witchercraft.init.WitchercraftModEntities;
+import net.redboltmedia.witchercraft.init.*;
 
 import net.neoforged.neoforge.network.registration.PayloadRegistrar;
 import net.neoforged.neoforge.network.handling.IPayloadHandler;
@@ -56,6 +52,7 @@ public class WitchercraftMod {
 		WitchercraftModVariables.ATTACHMENT_TYPES.register(modEventBus);
 		WitchercraftModMobEffects.REGISTRY.register(modEventBus);
 		WitchercraftModMenus.REGISTRY.register(modEventBus);
+		WitchercraftModParticleTypes.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

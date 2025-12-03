@@ -51,7 +51,7 @@ public record SignCastKeybindMessage(int eventType, int pressedms) implements Cu
 			return;
 		if (type == 0) {
 
-			SignCastProcedure.execute(entity);
+			SignCastProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

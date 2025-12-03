@@ -121,8 +121,8 @@
       "registry_name": "alchemy_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/client/gui/AlchemyGuiScreen.java",
           "src/main/java/net/redboltmedia/witchercraft/world/inventory/AlchemyGuiMenu.java",
+          "src/main/java/net/redboltmedia/witchercraft/client/gui/AlchemyGuiScreen.java",
           "src/main/java/net/redboltmedia/witchercraft/network/AlchemyGuiButtonMessage.java"
         ]
       },
@@ -2272,6 +2272,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2310,6 +2326,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2383,56 +2415,6 @@
           "src/main/java/net/redboltmedia/witchercraft/client/screens/TestmedallionOverlay.java"
         ]
       }
-    },
-    {
-      "name": "AlchemyGuiPotions",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "alchemy_gui_potions",
-      "metadata": {
-        "files": [
-          "src/main/java/net/redboltmedia/witchercraft/world/inventory/AlchemyGuiPotionsMenu.java",
-          "src/main/java/net/redboltmedia/witchercraft/client/gui/AlchemyGuiPotionsScreen.java",
-          "src/main/java/net/redboltmedia/witchercraft/network/AlchemyGuiPotionsButtonMessage.java"
-        ]
-      },
-      "path": "~/Alchemy/AlchemyMenu"
-    },
-    {
-      "name": "AlchemyGuiPotionsOpen",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "alchemy_gui_potions_open",
-      "metadata": {
-        "files": [
-          "src/main/java/net/redboltmedia/witchercraft/procedures/AlchemyGuiPotionsOpenProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Alchemy/AlchemyMenu"
     },
     {
       "name": "CharaterAbilitesGeneralGuiOpen",
@@ -9506,6 +9488,20 @@
         ]
       },
       "path": "~/Alchemy"
+    },
+    {
+      "name": "YrdenParticle",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yrden_particle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/witchercraft/particles/yrden_particle.json",
+          "src/main/java/net/redboltmedia/witchercraft/client/particle/YrdenParticleParticle.java"
+        ]
+      },
+      "path": "~/Signs/Yrden"
     }
   ],
   "variable_elements": [
@@ -10184,7 +10180,6 @@
       "item.witchercraft.ursine_armor_helmet": "Ursine Armor Helmet",
       "gui.witchercraft.character_abilities_alchemy_gui.tooltip_bombs_have_increased_area_of_eff": "BOMBS HAVE INCREASED AREA OF EFFECT ",
       "gui.witchercraft.character_gui.label_crit_chance": "Crit Chance",
-      "gui.witchercraft.alchemy_gui_potions.button_brew": "Brew",
       "item.witchercraft.feline_armor_chestplate": "Feline Armor Chestplate",
       "gui.witchercraft.character_abilities_signs_gui.tooltip_increase_diameter_of_effect": "INCREASE DIAMETER OF EFFECT",
       "gui.witchercraft.rotfiend_gui.label_type_hostile": "Type: Hostile",
@@ -10205,7 +10200,6 @@
       "gui.witchercraft.character_abilities_combat_gui.tooltip_increase_crit_rate_by_12_and_cr": "INCREASE CRIT RATE BY 12% AND CRIT DAMAGE BY 75%",
       "gui.witchercraft.character_abilities_combat_gui.tooltip_apply_bleed_effect_on_hit": "APPLY BLEED EFFECT ON HIT ",
       "effect.witchercraft.full_moon_effect": "Full Moon ",
-      "gui.witchercraft.alchemy_gui_potions.button_back": "Back",
       "effect.witchercraft.school_of_the_bear": "School Of The Bear",
       "gui.witchercraft.character_abilities_signs_gui.tooltip_when_end_deal_damage_to_everyon": "WHEN END, DEAL DAMAGE TO EVERYONE NEARBY",
       "gui.witchercraft.sign_gui.button_igni": "IGNI",
@@ -10366,6 +10360,8 @@
       "src/main/java/net/redboltmedia/witchercraft/init/WitchercraftModScreens.java",
       "src/main/java/net/redboltmedia/witchercraft/network/MenuStateUpdateMessage.java",
       "src/main/java/net/redboltmedia/witchercraft/init/WitchercraftModKeyMappings.java",
+      "src/main/java/net/redboltmedia/witchercraft/init/WitchercraftModParticles.java",
+      "src/main/java/net/redboltmedia/witchercraft/init/WitchercraftModParticleTypes.java",
       "src/main/java/net/redboltmedia/witchercraft/init/WitchercraftModMobEffects.java",
       "src/main/java/net/redboltmedia/witchercraft/init/WitchercraftModItems.java",
       "src/main/java/net/redboltmedia/witchercraft/init/WitchercraftModEntityRenderers.java",

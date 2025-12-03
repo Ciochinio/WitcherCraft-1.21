@@ -2,7 +2,6 @@ package net.redboltmedia.witchercraft.network;
 
 import net.redboltmedia.witchercraft.procedures.PauseMenuGuiBackButtonProcedure;
 import net.redboltmedia.witchercraft.procedures.AlchemyMenuBrewButtonProcedure;
-import net.redboltmedia.witchercraft.procedures.AlchemyGuiPotionsOpenProcedure;
 import net.redboltmedia.witchercraft.WitchercraftMod;
 
 import net.neoforged.neoforge.network.handling.IPayloadContext;
@@ -56,10 +55,6 @@ public record AlchemyGuiButtonMessage(int buttonID, int x, int y, int z) impleme
 		if (buttonID == 1) {
 
 			PauseMenuGuiBackButtonProcedure.execute(world, x, y, z, entity);
-		}
-		if (buttonID == 2) {
-
-			AlchemyGuiPotionsOpenProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

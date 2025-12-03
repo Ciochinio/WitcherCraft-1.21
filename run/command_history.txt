@@ -1,17 +1,3 @@
-/effect give Dev minecraft:luck 60
-/weather clear
-/weather thunder
-/gamerule mobGriefing false
-/time set day
-/weather clear
-/effect clear Dev witchercraft:dev_log
-/weather thunder
-/weather clear
-/devtool
-/effect give Dev witchercraft:in_combat 5
-/effect clear
-/effect clear Dev witchercraft:wyvern_decoction_effect
-/effect clear Dev witchercraft:succubus_decoction_effect_decoction_effect
 /effect clear Dev witchercraft:succubus_decoction_effect
 /kill
 /effect give Dev minecraft:instant_health
@@ -48,3 +34,17 @@
 /lvlfix
 /weather thunder
 /weather clear
+/xp add Dev 1000 points
+/weather clear
+/effect clear Dev minecraft:absorption
+/effect clear Dev witchercraft:dev_log
+/effect clear
+/xp add @a 1000 levels
+/lvlfix
+/devtool
+/xp add @a 1000 points
+/devtool
+/xp add @a 1000 points
+/lvlfix
+/effect give @a witchercraft:dev_log
+/effect clear @a witchercraft:wraith_decoction_effect
