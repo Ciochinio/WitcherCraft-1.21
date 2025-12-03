@@ -17,7 +17,7 @@ import net.minecraft.server.level.ServerLevel;
 
 public class GrapeshotItem extends Item {
 	public GrapeshotItem(Item.Properties properties) {
-		super(properties);
+		super(properties.stacksTo(3));
 	}
 
 	@Override

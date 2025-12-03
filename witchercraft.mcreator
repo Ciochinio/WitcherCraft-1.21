@@ -466,9 +466,9 @@
       "registry_name": "dancing_star",
       "metadata": {
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/item/DancingStarItem.java",
+          "src/main/resources/assets/witchercraft/items/dancing_star.json",
           "src/main/resources/assets/witchercraft/models/item/dancing_star.json",
-          "src/main/resources/assets/witchercraft/items/dancing_star.json"
+          "src/main/java/net/redboltmedia/witchercraft/item/DancingStarItem.java"
         ]
       },
       "path": "~/Alchemy/Bombs/DancingStar"
@@ -496,9 +496,9 @@
       "registry_name": "northern_wind",
       "metadata": {
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/item/NorthernWindItem.java",
+          "src/main/resources/assets/witchercraft/items/northern_wind.json",
           "src/main/resources/assets/witchercraft/models/item/northern_wind.json",
-          "src/main/resources/assets/witchercraft/items/northern_wind.json"
+          "src/main/java/net/redboltmedia/witchercraft/item/NorthernWindItem.java"
         ]
       },
       "path": "~/Alchemy/Bombs/NorthernWind"
@@ -526,8 +526,8 @@
       "registry_name": "dimeritium_bomb",
       "metadata": {
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/item/DimeritiumBombItem.java",
           "src/main/resources/assets/witchercraft/models/item/dimeritium_bomb.json",
+          "src/main/java/net/redboltmedia/witchercraft/item/DimeritiumBombItem.java",
           "src/main/resources/assets/witchercraft/items/dimeritium_bomb.json"
         ]
       },
@@ -9215,6 +9215,230 @@
         ]
       },
       "path": "~/Alchemy/Bombs"
+    },
+    {
+      "name": "DevilsPuffballProjectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "devils_puffball_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/entity/DevilsPuffballProjectileEntity.java"
+        ]
+      },
+      "path": "~/Alchemy/Bombs/DevilsPuffball"
+    },
+    {
+      "name": "DevilsPuffballExplosion",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "devils_puffball_explosion",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/DevilsPuffballExplosionProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Bombs/DevilsPuffball"
+    },
+    {
+      "name": "DancingStarProjectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dancing_star_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/entity/DancingStarProjectileEntity.java"
+        ]
+      },
+      "path": "~/Alchemy/Bombs/DancingStar"
+    },
+    {
+      "name": "DancingStarExplosion",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dancing_star_explosion",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/DancingStarExplosionProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Bombs/DancingStar"
+    },
+    {
+      "name": "NorthernWindProjectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "northern_wind_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/entity/NorthernWindProjectileEntity.java"
+        ]
+      },
+      "path": "~/Alchemy/Bombs/NorthernWind"
+    },
+    {
+      "name": "NorthernWindExplosion",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "northern_wind_explosion",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/NorthernWindExplosionProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Bombs/NorthernWind"
+    },
+    {
+      "name": "SamumProjectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "samum_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/entity/SamumProjectileEntity.java"
+        ]
+      },
+      "path": "~/Alchemy/Bombs/Samum"
+    },
+    {
+      "name": "SamumExplosion",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "samum_explosion",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/SamumExplosionProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Bombs/Samum"
+    },
+    {
+      "name": "DimeritiumBombProjectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dimeritium_bomb_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/entity/DimeritiumBombProjectileEntity.java"
+        ]
+      },
+      "path": "~/Alchemy/Bombs/DimeritiumBomb"
+    },
+    {
+      "name": "DimeritiumBombExplosion",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dimeritium_bomb_explosion",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/DimeritiumBombExplosionProcedure.java"
+        ]
+      },
+      "path": "~/Alchemy/Bombs/DimeritiumBomb"
     }
   ],
   "variable_elements": [

@@ -15,5 +15,10 @@ public class WitchercraftModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(WitchercraftModEntities.GRAPESHOT_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(WitchercraftModEntities.DEVILS_PUFFBALL_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(WitchercraftModEntities.DANCING_STAR_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(WitchercraftModEntities.NORTHERN_WIND_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(WitchercraftModEntities.SAMUM_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(WitchercraftModEntities.DIMERITIUM_BOMB_PROJECTILE.get(), ThrownItemRenderer::new);
 	}
 }
