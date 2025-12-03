@@ -222,7 +222,6 @@
   "gui.witchercraft.player_stats_overlay.label_healthregen": "HealthRegen",
   "gui.witchercraft.player_stats_overlay.label_toxicity": "Toxicity",
   "gui.witchercraft.player_stats_overlay.label_maxtoxicity": "MaxToxicity",
-  "effect.witchercraft.toxicity_overdose_tick": "Toxicity Overdose",
   "effect.witchercraft.passive_health_regen_tick": "Passive Health Regen Tick",
   "effect.witchercraft.passive_stamina_regen_tick": "Passive Stamina Regen",
   "gui.witchercraft.player_stats_overlay.label_additionaldamage": "IncreasedDamage",
@@ -290,5 +289,6 @@
   "death.attack.bomb": "%1$s exploded",
   "death.attack.bomb.item": "%1$s was killed by %2$s using %3$s",
   "death.attack.bomb.player": "%1$s died whilst trying to escape %2$s",
-  "effect.witchercraft.blindness": "Blindness"
+  "effect.witchercraft.blindness": "Blindness",
+  "effect.witchercraft.toxicity_tick": "Toxicity "
 }

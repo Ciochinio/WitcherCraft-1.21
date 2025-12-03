@@ -1,5 +1,6 @@
 package net.redboltmedia.witchercraft.procedures;
 
+import net.redboltmedia.witchercraft.network.WitchercraftModVariables;
 import net.redboltmedia.witchercraft.init.WitchercraftModMobEffects;
 
 import net.minecraft.world.entity.LivingEntity;
@@ -55,6 +56,11 @@ public class WhiteHoneyPlayerUsedProcedure {
 			_entity.removeEffect(WitchercraftModMobEffects.BLACK_BLOOD_EFFECT);
 		if (entity instanceof LivingEntity _entity)
 			_entity.removeEffect(WitchercraftModMobEffects.PETRIS_PHILTER_EFFECT);
+		{
+			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
+			_vars.witchercraftToxicity = 0;
+			_vars.markSyncDirty();
+		}
 		PotionUsedProcedure.execute(entity);
 	}
 }

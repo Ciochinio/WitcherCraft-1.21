@@ -1,11 +1,3 @@
-/effect clear Dev witchercraft:succubus_decoction_effect
-/kill
-/effect give Dev minecraft:instant_health
-/effect clear
-/kill
-/xp add Dev 1000 points
-/lvlfix
-/xp add Dev 1000 points
 /lvlfix
 /effect clear Dev witchercraft:swallow_effect
 /xp add Dev 1000 points
@@ -48,3 +40,11 @@
 /lvlfix
 /effect give @a witchercraft:dev_log
 /effect clear @a witchercraft:wraith_decoction_effect
+/effect clear Dev witchercraft:cat_effect
+/effect clear @a witchercraft:cat_effect
+/effect clear @a witchercraft:golden_oriole_effect_effect
+/effect clear @a witchercraft:golden_oriole_effect
+/devtool
+/effect clear Dev witchercraft:golden_oriole_effect
+/devtool
+/effect clear Dev minecraft:absorption

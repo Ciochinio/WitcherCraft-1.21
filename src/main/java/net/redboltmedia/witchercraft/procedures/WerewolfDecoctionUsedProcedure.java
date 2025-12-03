@@ -13,6 +13,11 @@ public class WerewolfDecoctionUsedProcedure {
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.WEREWOLF_DECOCTION_EFFECT, (int) (7200 * (1 + entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftPotionDuration * 0.01)), 0));
+		{
+			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
+			_vars.witchercraftToxicity = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftToxicity + 50;
+			_vars.markSyncDirty();
+		}
 		DecoctionUsedProcedure.execute(entity);
 	}
 }

@@ -13,6 +13,11 @@ public class SwallowUsedProcedure {
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.SWALLOW_EFFECT, (int) (3600 * (1 + entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftPotionDuration * 0.01)), 0));
+		{
+			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
+			_vars.witchercraftToxicity = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftToxicity + 25;
+			_vars.markSyncDirty();
+		}
 		PotionUsedProcedure.execute(entity);
 	}
 }

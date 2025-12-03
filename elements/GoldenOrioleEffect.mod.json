@@ -16,9 +16,6 @@
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
     "isCuredbyHoney": false,
-    "modifiers": [],
-    "onActiveTick": {
-      "name": "GoldenOrioleEffectActive"
-    }
+    "modifiers": []
   }
 }
