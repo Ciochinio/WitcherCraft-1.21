@@ -9535,6 +9535,149 @@
         ]
       },
       "path": "~/Signs/SignCast"
+    },
+    {
+      "name": "AltIgniCast",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alt_igni_cast",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/AltIgniCastProcedure.java"
+        ]
+      },
+      "path": "~/Signs/Igni"
+    },
+    {
+      "name": "AltYrdenCast",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alt_yrden_cast",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/AltYrdenCastProcedure.java"
+        ]
+      },
+      "path": "~/Signs/Yrden"
+    },
+    {
+      "name": "AltAxiiCast",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alt_axii_cast",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/AltAxiiCastProcedure.java"
+        ]
+      },
+      "path": "~/Signs/Axii"
+    },
+    {
+      "name": "AltQuenCast",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alt_quen_cast",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/AltQuenCastProcedure.java"
+        ]
+      },
+      "path": "~/Signs/Quen"
+    },
+    {
+      "name": "AltAardCast",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alt_aard_cast",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/AltAardCastProcedure.java"
+        ]
+      },
+      "path": "~/Signs/Aard"
+    },
+    {
+      "name": "SignHold",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sign_hold",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/SignHoldMobEffect.java"
+        ]
+      },
+      "path": "~/Signs/SignCast"
+    },
+    {
+      "name": "SignCost",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sign_cost",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/SignCostProcedure.java"
+        ]
+      },
+      "path": "~/Signs/SignCast"
     }
   ],
   "variable_elements": [
@@ -10398,7 +10541,8 @@
       "effect.witchercraft.blindness": "Blindness",
       "effect.witchercraft.toxicity_tick": "Toxicity ",
       "effect.witchercraft.sign_cooldown": "Sign Cooldown",
-      "gui.witchercraft.player_stats_overlay.label_signhold": "SignHold"
+      "gui.witchercraft.player_stats_overlay.label_signhold": "SignHold",
+      "effect.witchercraft.sign_hold": "Sign Hold"
     }
   },
   "metadata": {

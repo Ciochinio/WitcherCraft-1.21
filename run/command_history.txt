@@ -1,6 +1,3 @@
-/effect clear Dev witchercraft:swallow_effect
-/xp add Dev 1000 points
-/lvlfix
 /weather clear
 /weather thunder
 /devtool
@@ -48,3 +45,6 @@
 /devtool
 /effect clear Dev minecraft:absorption
 /effect clear Dev witchercraft:igni_sign
+/weather clear
+/effect clear Dev witchercraft:sign_hold
+/weather clear

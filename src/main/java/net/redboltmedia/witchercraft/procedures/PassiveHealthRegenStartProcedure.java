@@ -56,7 +56,7 @@ public class PassiveHealthRegenStartProcedure {
 			}
 		}
 		if (entity instanceof LivingEntity _livEnt5 && _livEnt5.hasEffect(WitchercraftModMobEffects.PASSIVE_HEALTH_REGEN_TICK) && (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) > 0) {
-			WitchercraftMod.queueServerWork(40, () -> {
+			WitchercraftMod.queueServerWork(20, () -> {
 				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) > 0) {
 					if (entity instanceof LivingEntity _entity)
 						_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftPassiveHealthRegeneration));

@@ -1,6 +1,7 @@
 package net.redboltmedia.witchercraft.procedures;
 
 import net.redboltmedia.witchercraft.network.WitchercraftModVariables;
+import net.redboltmedia.witchercraft.init.WitchercraftModMobEffects;
 
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -30,6 +31,18 @@ public class MovementSpeedProcedure {
 		if (entity == null)
 			return;
 		double sumMovementSpeed = 0;
+		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(WitchercraftModMobEffects.SIGN_HOLD)) {
+			if (entity instanceof LivingEntity _entity) {
+				AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("witchercraft:signcast"), (0 - 0.5), AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL);
+				if (!_entity.getAttribute(Attributes.MOVEMENT_SPEED).hasModifier(modifier.id())) {
+					_entity.getAttribute(Attributes.MOVEMENT_SPEED).addPermanentModifier(modifier);
+				}
+			}
+		} else {
+			if (entity instanceof LivingEntity _entity) {
+				_entity.getAttribute(Attributes.MOVEMENT_SPEED).removeModifier(ResourceLocation.parse("witchercraft:signcast"));
+			}
+		}
 		if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesFleetFooted == true) {
 			if (entity instanceof LivingEntity _entity) {
 				AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("witchercraft:fleetfooted"), 0.15, AttributeModifier.Operation.ADD_MULTIPLIED_BASE);
@@ -44,7 +57,7 @@ public class MovementSpeedProcedure {
 		}
 		{
 			WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-			_vars.witchercraftMovementSpeed = entity instanceof LivingEntity _livingEntity2 && _livingEntity2.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity2.getAttribute(Attributes.MOVEMENT_SPEED).getValue() : 0;
+			_vars.witchercraftMovementSpeed = entity instanceof LivingEntity _livingEntity5 && _livingEntity5.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity5.getAttribute(Attributes.MOVEMENT_SPEED).getValue() : 0;
 			_vars.markSyncDirty();
 		}
 	}
