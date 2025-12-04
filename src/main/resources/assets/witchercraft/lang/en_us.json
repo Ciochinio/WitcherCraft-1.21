@@ -290,5 +290,6 @@
   "death.attack.bomb.item": "%1$s was killed by %2$s using %3$s",
   "death.attack.bomb.player": "%1$s died whilst trying to escape %2$s",
   "effect.witchercraft.blindness": "Blindness",
-  "effect.witchercraft.toxicity_tick": "Toxicity "
+  "effect.witchercraft.toxicity_tick": "Toxicity ",
+  "effect.witchercraft.sign_cooldown": "Sign Cooldown"
 }

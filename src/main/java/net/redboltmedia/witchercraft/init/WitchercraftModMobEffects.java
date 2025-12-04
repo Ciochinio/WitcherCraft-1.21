@@ -73,6 +73,7 @@ public class WitchercraftModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> GRAVE_HAG_DECOCTION_EFFECT = REGISTRY.register("grave_hag_decoction_effect", () -> new GraveHagDecoctionEffectMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> BLINDNESS = REGISTRY.register("blindness", () -> new BlindnessMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> TOXICITY_TICK = REGISTRY.register("toxicity_tick", () -> new ToxicityTickMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> SIGN_COOLDOWN = REGISTRY.register("sign_cooldown", () -> new SignCooldownMobEffect());
 
 	@SubscribeEvent
 	public static void onEffectRemoved(MobEffectEvent.Remove event) {

@@ -9483,6 +9483,19 @@
         ]
       },
       "path": "~/Alchemy/ Toxicity/ToxicityTick"
+    },
+    {
+      "name": "SignCooldown",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sign_cooldown",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/SignCooldownMobEffect.java"
+        ]
+      },
+      "path": "~/Signs/SignCast"
     }
   ],
   "variable_elements": [
@@ -10332,7 +10345,8 @@
       "death.attack.bomb.item": "%1$s was killed by %2$s using %3$s",
       "death.attack.bomb.player": "%1$s died whilst trying to escape %2$s",
       "effect.witchercraft.blindness": "Blindness",
-      "effect.witchercraft.toxicity_tick": "Toxicity "
+      "effect.witchercraft.toxicity_tick": "Toxicity ",
+      "effect.witchercraft.sign_cooldown": "Sign Cooldown"
     }
   },
   "metadata": {
