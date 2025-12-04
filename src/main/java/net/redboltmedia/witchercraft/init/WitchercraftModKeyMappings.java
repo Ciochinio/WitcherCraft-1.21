@@ -56,10 +56,16 @@ public class WitchercraftModKeyMappings {
 			if (isDownOld != isDown && isDown) {
 				ClientPacketDistributor.sendToServer(new SignCastKeybindMessage(0, 0));
 				SignCastKeybindMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+				SIGN_CAST_KEYBIND_LASTPRESS = System.currentTimeMillis();
+			} else if (isDownOld != isDown && !isDown) {
+				int dt = (int) (System.currentTimeMillis() - SIGN_CAST_KEYBIND_LASTPRESS);
+				ClientPacketDistributor.sendToServer(new SignCastKeybindMessage(1, dt));
+				SignCastKeybindMessage.pressAction(Minecraft.getInstance().player, 1, dt);
 			}
 			isDownOld = isDown;
 		}
 	};
+	private static long SIGN_CAST_KEYBIND_LASTPRESS = 0;
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {

@@ -633,6 +633,41 @@
           "y": 161,
           "locked": false
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_signhold",
+          "text": {
+            "fixedValue": "SignHold"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 6,
+          "y": 170,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_sign_key_hold_time",
+          "text": {
+            "fixedValue": "",
+            "name": "SignKeyHoldTime"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 105,
+          "y": 170,
+          "locked": false
+        }
       }
     ],
     "baseTexture": "",

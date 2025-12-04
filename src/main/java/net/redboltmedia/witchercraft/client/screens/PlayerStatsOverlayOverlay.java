@@ -105,6 +105,10 @@ public class PlayerStatsOverlayOverlay {
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
 					CharacterGuiReflectDamageProcedure.execute(entity), w / 2 + -108, h / 2 + 41, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.witchercraft.player_stats_overlay.label_signhold"), w / 2 + -207, h / 2 + 50, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+
+					SignKeyHoldTimeProcedure.execute(entity), w / 2 + -108, h / 2 + 50, -1, false);
 		}
 	}
 }

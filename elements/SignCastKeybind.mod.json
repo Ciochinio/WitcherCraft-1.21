@@ -6,7 +6,10 @@
     "keyBindingName": "Sign Cast Keybind",
     "keyBindingCategoryKey": "witchercraft",
     "onKeyPressed": {
-      "name": "SignCast"
+      "name": "SignCastKeyPress"
+    },
+    "onKeyReleased": {
+      "name": "SignCastKeyRelease"
     }
   }
 }

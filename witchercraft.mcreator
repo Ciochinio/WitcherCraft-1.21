@@ -2259,41 +2259,6 @@
       "path": "~/Signs/SignCast"
     },
     {
-      "name": "SignCast",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sign_cast",
-      "metadata": {
-        "files": [
-          "src/main/java/net/redboltmedia/witchercraft/procedures/SignCastProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Signs/SignCast"
-    },
-    {
       "name": "IgniCast",
       "type": "procedure",
       "compiles": true,
@@ -9496,6 +9461,80 @@
         ]
       },
       "path": "~/Signs/SignCast"
+    },
+    {
+      "name": "SignKeyHoldTime",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sign_key_hold_time",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/SignKeyHoldTimeProcedure.java"
+        ]
+      },
+      "path": "~/Signs/SignCast"
+    },
+    {
+      "name": "SignCastKeyRelease",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sign_cast_key_release",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/SignCastKeyReleaseProcedure.java"
+        ]
+      },
+      "path": "~/Signs/SignCast"
+    },
+    {
+      "name": "SignCastKeyPress",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sign_cast_key_press",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/SignCastKeyPressProcedure.java"
+        ]
+      },
+      "path": "~/Signs/SignCast"
     }
   ],
   "variable_elements": [
@@ -9972,6 +10011,18 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
+    },
+    {
+      "name": "witchercraftSignKeyHoldTime",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "witchercraftSignKeyHold",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
     }
   ],
   "sound_elements": [],
@@ -10346,7 +10397,8 @@
       "death.attack.bomb.player": "%1$s died whilst trying to escape %2$s",
       "effect.witchercraft.blindness": "Blindness",
       "effect.witchercraft.toxicity_tick": "Toxicity ",
-      "effect.witchercraft.sign_cooldown": "Sign Cooldown"
+      "effect.witchercraft.sign_cooldown": "Sign Cooldown",
+      "gui.witchercraft.player_stats_overlay.label_signhold": "SignHold"
     }
   },
   "metadata": {

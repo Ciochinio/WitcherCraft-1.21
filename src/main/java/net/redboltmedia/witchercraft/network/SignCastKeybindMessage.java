@@ -1,6 +1,7 @@
 package net.redboltmedia.witchercraft.network;
 
-import net.redboltmedia.witchercraft.procedures.SignCastProcedure;
+import net.redboltmedia.witchercraft.procedures.SignCastKeyReleaseProcedure;
+import net.redboltmedia.witchercraft.procedures.SignCastKeyPressProcedure;
 import net.redboltmedia.witchercraft.WitchercraftMod;
 
 import net.neoforged.neoforge.network.handling.IPayloadContext;
@@ -51,7 +52,11 @@ public record SignCastKeybindMessage(int eventType, int pressedms) implements Cu
 			return;
 		if (type == 0) {
 
-			SignCastProcedure.execute(world, x, y, z, entity);
+			SignCastKeyPressProcedure.execute(entity);
+		}
+		if (type == 1) {
+
+			SignCastKeyReleaseProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

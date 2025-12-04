@@ -149,6 +149,8 @@ public class WitchercraftModVariables {
 			clone.witchercraftWyvenDecoctionHit = original.witchercraftWyvenDecoctionHit;
 			clone.witchercraftSuccubusDecoctionTick = original.witchercraftSuccubusDecoctionTick;
 			clone.witchercraftGraveHagDecoctionKill = original.witchercraftGraveHagDecoctionKill;
+			clone.witchercraftSignKeyHoldTime = original.witchercraftSignKeyHoldTime;
+			clone.witchercraftSignKeyHold = original.witchercraftSignKeyHold;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
 	}
@@ -234,6 +236,8 @@ public class WitchercraftModVariables {
 		public double witchercraftWyvenDecoctionHit = 0;
 		public double witchercraftSuccubusDecoctionTick = 0;
 		public double witchercraftGraveHagDecoctionKill = 0;
+		public double witchercraftSignKeyHoldTime = 0;
+		public boolean witchercraftSignKeyHold = false;
 
 		@Override
 		public void serialize(ValueOutput output) {
@@ -316,6 +320,8 @@ public class WitchercraftModVariables {
 			output.putDouble("witchercraftWyvenDecoctionHit", witchercraftWyvenDecoctionHit);
 			output.putDouble("witchercraftSuccubusDecoctionTick", witchercraftSuccubusDecoctionTick);
 			output.putDouble("witchercraftGraveHagDecoctionKill", witchercraftGraveHagDecoctionKill);
+			output.putDouble("witchercraftSignKeyHoldTime", witchercraftSignKeyHoldTime);
+			output.putBoolean("witchercraftSignKeyHold", witchercraftSignKeyHold);
 		}
 
 		@Override
@@ -399,6 +405,8 @@ public class WitchercraftModVariables {
 			witchercraftWyvenDecoctionHit = input.getDoubleOr("witchercraftWyvenDecoctionHit", 0);
 			witchercraftSuccubusDecoctionTick = input.getDoubleOr("witchercraftSuccubusDecoctionTick", 0);
 			witchercraftGraveHagDecoctionKill = input.getDoubleOr("witchercraftGraveHagDecoctionKill", 0);
+			witchercraftSignKeyHoldTime = input.getDoubleOr("witchercraftSignKeyHoldTime", 0);
+			witchercraftSignKeyHold = input.getBooleanOr("witchercraftSignKeyHold", false);
 		}
 
 		public void markSyncDirty() {

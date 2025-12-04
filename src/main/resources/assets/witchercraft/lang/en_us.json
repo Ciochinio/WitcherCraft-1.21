@@ -291,5 +291,6 @@
   "death.attack.bomb.player": "%1$s died whilst trying to escape %2$s",
   "effect.witchercraft.blindness": "Blindness",
   "effect.witchercraft.toxicity_tick": "Toxicity ",
-  "effect.witchercraft.sign_cooldown": "Sign Cooldown"
+  "effect.witchercraft.sign_cooldown": "Sign Cooldown",
+  "gui.witchercraft.player_stats_overlay.label_signhold": "SignHold"
 }
