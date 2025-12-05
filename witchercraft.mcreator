@@ -2326,6 +2326,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -9601,6 +9605,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
@@ -9678,6 +9686,28 @@
         ]
       },
       "path": "~/Signs/SignCast"
+    },
+    {
+      "name": "Rot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rot",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/RotProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -10166,6 +10196,12 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
+    },
+    {
+      "name": "test",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
     }
   ],
   "sound_elements": [],

@@ -1,11 +1,3 @@
-/weather clear
-/weather thunder
-/devtool
-/weather clear
-/weather thunder
-/xp add Dev 1000 points
-/lvlfix
-/weather thunder
 /effect clear Dev witchercraft:thunderbolt_effect
 /weather thunder
 /weather clear
@@ -47,4 +39,12 @@
 /effect clear Dev witchercraft:igni_sign
 /weather clear
 /effect clear Dev witchercraft:sign_hold
+/weather clear
+/xp add @a 1000 points
+/lvlfix
+/devtool
+/xp add @a 1000 points
+/lvlfix
+/kill
+/weather clearw
 /weather clear

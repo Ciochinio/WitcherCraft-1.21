@@ -25,7 +25,7 @@ public class SignCastKeyReleaseProcedure {
 					} else if (entity instanceof LivingEntity _livEnt8 && _livEnt8.hasEffect(WitchercraftModMobEffects.IGNI_SIGN)) {
 						AltIgniCastProcedure.execute(entity);
 					} else if (entity instanceof LivingEntity _livEnt9 && _livEnt9.hasEffect(WitchercraftModMobEffects.AXII_SIGN)) {
-						AltAxiiCastProcedure.execute(entity);
+						AltAxiiCastProcedure.execute(world, entity);
 					} else if (entity instanceof LivingEntity _livEnt10 && _livEnt10.hasEffect(WitchercraftModMobEffects.QUEN_SIGN)) {
 						AltQuenCastProcedure.execute(entity);
 					} else if (entity instanceof LivingEntity _livEnt11 && _livEnt11.hasEffect(WitchercraftModMobEffects.AARD_SIGN)) {
@@ -47,9 +47,9 @@ public class SignCastKeyReleaseProcedure {
 					} else if (entity instanceof LivingEntity _livEnt16 && _livEnt16.hasEffect(WitchercraftModMobEffects.IGNI_SIGN)) {
 						IgniCastProcedure.execute(entity);
 					} else if (entity instanceof LivingEntity _livEnt17 && _livEnt17.hasEffect(WitchercraftModMobEffects.AXII_SIGN)) {
-						AxiiCastProcedure.execute(entity);
+						AxiiCastProcedure.execute(world, entity);
 					} else if (entity instanceof LivingEntity _livEnt18 && _livEnt18.hasEffect(WitchercraftModMobEffects.QUEN_SIGN)) {
-						AxiiCastProcedure.execute(entity);
+						AxiiCastProcedure.execute(world, entity);
 					} else if (entity instanceof LivingEntity _livEnt19 && _livEnt19.hasEffect(WitchercraftModMobEffects.AARD_SIGN)) {
 						AardCastProcedure.execute(entity);
 					}

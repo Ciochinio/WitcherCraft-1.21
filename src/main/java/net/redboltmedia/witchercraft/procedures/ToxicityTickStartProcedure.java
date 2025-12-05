@@ -19,7 +19,7 @@ public class ToxicityTickStartProcedure {
 			return;
 		double sumPassiveHealthRegeneration = 0;
 		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(WitchercraftModMobEffects.TOXICITY_TICK)) {
-			WitchercraftMod.queueServerWork(40, () -> {
+			WitchercraftMod.queueServerWork(20, () -> {
 				if (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftToxicity > 0) {
 					{
 						WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
