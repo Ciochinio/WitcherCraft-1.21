@@ -2,13 +2,11 @@ package net.redboltmedia.witchercraft.procedures;
 
 import net.redboltmedia.witchercraft.network.WitchercraftModVariables;
 import net.redboltmedia.witchercraft.init.WitchercraftModMobEffects;
-import net.redboltmedia.witchercraft.WitchercraftMod;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffectInstance;
 
 public class PassiveHealthRegenStartProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
@@ -55,15 +53,9 @@ public class PassiveHealthRegenStartProcedure {
 				_vars.markSyncDirty();
 			}
 		}
-		if (entity instanceof LivingEntity _livEnt5 && _livEnt5.hasEffect(WitchercraftModMobEffects.PASSIVE_HEALTH_REGEN_TICK) && (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) > 0) {
-			WitchercraftMod.queueServerWork(20, () -> {
-				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) > 0) {
-					if (entity instanceof LivingEntity _entity)
-						_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftPassiveHealthRegeneration));
-				}
-				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.PASSIVE_HEALTH_REGEN_TICK, 1, 0));
-			});
+		if (entity.isAlive()) {
+			if (entity instanceof LivingEntity _entity)
+				_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftPassiveHealthRegeneration));
 		}
 	}
 }

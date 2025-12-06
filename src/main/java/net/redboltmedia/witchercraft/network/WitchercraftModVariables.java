@@ -152,6 +152,7 @@ public class WitchercraftModVariables {
 			clone.witchercraftSignKeyHoldTime = original.witchercraftSignKeyHoldTime;
 			clone.witchercraftSignKeyHold = original.witchercraftSignKeyHold;
 			clone.test = original.test;
+			clone.witchercraftTick = original.witchercraftTick;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
 	}
@@ -240,6 +241,7 @@ public class WitchercraftModVariables {
 		public double witchercraftSignKeyHoldTime = 0;
 		public boolean witchercraftSignKeyHold = false;
 		public double test = 0;
+		public double witchercraftTick = 0;
 
 		@Override
 		public void serialize(ValueOutput output) {
@@ -325,6 +327,7 @@ public class WitchercraftModVariables {
 			output.putDouble("witchercraftSignKeyHoldTime", witchercraftSignKeyHoldTime);
 			output.putBoolean("witchercraftSignKeyHold", witchercraftSignKeyHold);
 			output.putDouble("test", test);
+			output.putDouble("witchercraftTick", witchercraftTick);
 		}
 
 		@Override
@@ -411,6 +414,7 @@ public class WitchercraftModVariables {
 			witchercraftSignKeyHoldTime = input.getDoubleOr("witchercraftSignKeyHoldTime", 0);
 			witchercraftSignKeyHold = input.getBooleanOr("witchercraftSignKeyHold", false);
 			test = input.getDoubleOr("test", 0);
+			witchercraftTick = input.getDoubleOr("witchercraftTick", 0);
 		}
 
 		public void markSyncDirty() {

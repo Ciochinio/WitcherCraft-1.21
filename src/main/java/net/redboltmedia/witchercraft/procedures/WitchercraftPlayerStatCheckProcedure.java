@@ -1,15 +1,11 @@
 package net.redboltmedia.witchercraft.procedures;
 
-import net.redboltmedia.witchercraft.init.WitchercraftModMobEffects;
-
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffectInstance;
 
 import javax.annotation.Nullable;
 
@@ -28,11 +24,5 @@ public class WitchercraftPlayerStatCheckProcedure {
 		if (entity == null)
 			return;
 		WitchercraftPlayerBaseStatsProcedure.execute(entity);
-		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.PASSIVE_HEALTH_REGEN_TICK, 1, 0));
-		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.PASSIVE_STAMINA_REGEN_TICK, 1, 0));
-		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.TOXICITY_TICK, 1, 0));
 	}
 }

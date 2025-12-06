@@ -3,10 +3,7 @@
  */
 package net.redboltmedia.witchercraft.init;
 
-import net.redboltmedia.witchercraft.procedures.ToxicityTickStartProcedure;
 import net.redboltmedia.witchercraft.procedures.SuccubusDecoctionTickStartProcedure;
-import net.redboltmedia.witchercraft.procedures.PassiveStaminaRegenStartProcedure;
-import net.redboltmedia.witchercraft.procedures.PassiveHealthRegenStartProcedure;
 import net.redboltmedia.witchercraft.potion.*;
 import net.redboltmedia.witchercraft.WitchercraftMod;
 
@@ -45,8 +42,6 @@ public class WitchercraftModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> AARD_SIGN = REGISTRY.register("aard_sign", () -> new AardSignMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> QUEN_SIGN = REGISTRY.register("quen_sign", () -> new QuenSignMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> DEV_LOG = REGISTRY.register("dev_log", () -> new DevLogMobEffect());
-	public static final DeferredHolder<MobEffect, MobEffect> PASSIVE_HEALTH_REGEN_TICK = REGISTRY.register("passive_health_regen_tick", () -> new PassiveHealthRegenTickMobEffect());
-	public static final DeferredHolder<MobEffect, MobEffect> PASSIVE_STAMINA_REGEN_TICK = REGISTRY.register("passive_stamina_regen_tick", () -> new PassiveStaminaRegenTickMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> BLEED = REGISTRY.register("bleed", () -> new BleedMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> BLEED_COOLDOWN = REGISTRY.register("bleed_cooldown", () -> new BleedCooldownMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> ENEMY_NEARBY = REGISTRY.register("enemy_nearby", () -> new EnemyNearbyMobEffect());
@@ -72,7 +67,6 @@ public class WitchercraftModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> SUCCUBUS_DECOCTION_TICK = REGISTRY.register("succubus_decoction_tick", () -> new SuccubusDecoctionTickMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> GRAVE_HAG_DECOCTION_EFFECT = REGISTRY.register("grave_hag_decoction_effect", () -> new GraveHagDecoctionEffectMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> BLINDNESS = REGISTRY.register("blindness", () -> new BlindnessMobEffect());
-	public static final DeferredHolder<MobEffect, MobEffect> TOXICITY_TICK = REGISTRY.register("toxicity_tick", () -> new ToxicityTickMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> SIGN_COOLDOWN = REGISTRY.register("sign_cooldown", () -> new SignCooldownMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> SIGN_HOLD = REGISTRY.register("sign_hold", () -> new SignHoldMobEffect());
 
@@ -93,14 +87,8 @@ public class WitchercraftModMobEffects {
 	}
 
 	private static void expireEffects(Entity entity, MobEffectInstance effectInstance) {
-		if (effectInstance.getEffect().is(PASSIVE_HEALTH_REGEN_TICK)) {
-			PassiveHealthRegenStartProcedure.execute(entity.level(), entity);
-		} else if (effectInstance.getEffect().is(PASSIVE_STAMINA_REGEN_TICK)) {
-			PassiveStaminaRegenStartProcedure.execute(entity.level(), entity);
-		} else if (effectInstance.getEffect().is(SUCCUBUS_DECOCTION_TICK)) {
+		if (effectInstance.getEffect().is(SUCCUBUS_DECOCTION_TICK)) {
 			SuccubusDecoctionTickStartProcedure.execute(entity.level(), entity);
-		} else if (effectInstance.getEffect().is(TOXICITY_TICK)) {
-			ToxicityTickStartProcedure.execute(entity.level(), entity);
 		}
 	}
 }
