@@ -1,7 +1,5 @@
 package net.redboltmedia.witchercraft.procedures;
 
-import net.redboltmedia.witchercraft.network.WitchercraftModVariables;
-
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
@@ -22,11 +20,6 @@ public class AltAxiiCastProcedure {
 						(entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(50)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getY()),
 						(entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(50)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getZ())))
 				.inflate(5 / 2d), e -> true).isEmpty()) {
-			{
-				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-				_vars.test = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).test + 1;
-				_vars.markSyncDirty();
-			}
 			if (!(findEntityInWorldRange(world, Mob.class,
 					(entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(50)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getX()),
 					(entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(50)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getY()),
@@ -40,11 +33,10 @@ public class AltAxiiCastProcedure {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("ALT AXII"), false);
 		} else {
-			{
-				WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
-				_vars.test = 0;
-				_vars.markSyncDirty();
-			}
+			if (entity instanceof Player _player && !_player.level().isClientSide())
+				_player.displayClientMessage(Component.literal("NO ENEMIES DETECTED"), false);
+			AltAxiiRefundProcedure.execute(entity);
+			AltAxiiRefundProcedure.execute(entity);
 		}
 	}
 

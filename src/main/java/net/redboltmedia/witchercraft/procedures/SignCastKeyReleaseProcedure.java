@@ -45,11 +45,11 @@ public class SignCastKeyReleaseProcedure {
 					if (entity instanceof LivingEntity _livEnt15 && _livEnt15.hasEffect(WitchercraftModMobEffects.YRDEN_SIGN)) {
 						YrdenCastProcedure.execute(world, x, y, z, entity);
 					} else if (entity instanceof LivingEntity _livEnt16 && _livEnt16.hasEffect(WitchercraftModMobEffects.IGNI_SIGN)) {
-						IgniCastProcedure.execute(entity);
+						IgniCastProcedure.execute(world, x, y, z, entity);
 					} else if (entity instanceof LivingEntity _livEnt17 && _livEnt17.hasEffect(WitchercraftModMobEffects.AXII_SIGN)) {
 						AxiiCastProcedure.execute(world, entity);
 					} else if (entity instanceof LivingEntity _livEnt18 && _livEnt18.hasEffect(WitchercraftModMobEffects.QUEN_SIGN)) {
-						AxiiCastProcedure.execute(world, entity);
+						QuenCastProcedure.execute(entity);
 					} else if (entity instanceof LivingEntity _livEnt19 && _livEnt19.hasEffect(WitchercraftModMobEffects.AARD_SIGN)) {
 						AardCastProcedure.execute(entity);
 					}

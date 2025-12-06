@@ -2272,6 +2272,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -9708,6 +9724,44 @@
           "src/main/java/net/redboltmedia/witchercraft/procedures/RotProcedure.java"
         ]
       }
+    },
+    {
+      "name": "AxiiRefund",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "axii_refund",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/AxiiRefundProcedure.java"
+        ]
+      },
+      "path": "~/Signs/Axii"
+    },
+    {
+      "name": "AltAxiiRefund",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alt_axii_refund",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/AltAxiiRefundProcedure.java"
+        ]
+      },
+      "path": "~/Signs/Axii"
     }
   ],
   "variable_elements": [
@@ -10578,7 +10632,8 @@
       "effect.witchercraft.toxicity_tick": "Toxicity ",
       "effect.witchercraft.sign_cooldown": "Sign Cooldown",
       "gui.witchercraft.player_stats_overlay.label_signhold": "SignHold",
-      "effect.witchercraft.sign_hold": "Sign Hold"
+      "effect.witchercraft.sign_hold": "Sign Hold",
+      "gui.witchercraft.testmedallion.label_sekund": "Sekund"
     }
   },
   "metadata": {
