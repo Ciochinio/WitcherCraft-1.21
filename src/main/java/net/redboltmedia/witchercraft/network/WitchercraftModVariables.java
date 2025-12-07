@@ -33,6 +33,8 @@ import java.util.function.Supplier;
 public class WitchercraftModVariables {
 	public static final DeferredRegister<AttachmentType<?>> ATTACHMENT_TYPES = DeferredRegister.create(NeoForgeRegistries.Keys.ATTACHMENT_TYPES, WitchercraftMod.MODID);
 	public static final Supplier<AttachmentType<PlayerVariables>> PLAYER_VARIABLES = ATTACHMENT_TYPES.register("player_variables", () -> AttachmentType.serializable(() -> new PlayerVariables()).build());
+	public static double sekund = 0;
+	public static double minut = 0;
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
@@ -153,6 +155,7 @@ public class WitchercraftModVariables {
 			clone.witchercraftSignKeyHold = original.witchercraftSignKeyHold;
 			clone.test = original.test;
 			clone.witchercraftTick = original.witchercraftTick;
+			clone.witchercraftSignNoCast = original.witchercraftSignNoCast;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
 	}
@@ -242,6 +245,7 @@ public class WitchercraftModVariables {
 		public boolean witchercraftSignKeyHold = false;
 		public double test = 0;
 		public double witchercraftTick = 0;
+		public boolean witchercraftSignNoCast = false;
 
 		@Override
 		public void serialize(ValueOutput output) {
@@ -328,6 +332,7 @@ public class WitchercraftModVariables {
 			output.putBoolean("witchercraftSignKeyHold", witchercraftSignKeyHold);
 			output.putDouble("test", test);
 			output.putDouble("witchercraftTick", witchercraftTick);
+			output.putBoolean("witchercraftSignNoCast", witchercraftSignNoCast);
 		}
 
 		@Override
@@ -415,6 +420,7 @@ public class WitchercraftModVariables {
 			witchercraftSignKeyHold = input.getBooleanOr("witchercraftSignKeyHold", false);
 			test = input.getDoubleOr("test", 0);
 			witchercraftTick = input.getDoubleOr("witchercraftTick", 0);
+			witchercraftSignNoCast = input.getBooleanOr("witchercraftSignNoCast", false);
 		}
 
 		public void markSyncDirty() {

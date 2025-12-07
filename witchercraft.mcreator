@@ -2272,22 +2272,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -2384,6 +2368,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2444,8 +2444,8 @@
       "registry_name": "characters_abilietes_general_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/client/gui/CharactersAbilietesGeneralGuiScreen.java",
           "src/main/java/net/redboltmedia/witchercraft/world/inventory/CharactersAbilietesGeneralGuiMenu.java",
+          "src/main/java/net/redboltmedia/witchercraft/client/gui/CharactersAbilietesGeneralGuiScreen.java",
           "src/main/java/net/redboltmedia/witchercraft/network/CharactersAbilietesGeneralGuiButtonMessage.java"
         ]
       },
@@ -9509,6 +9509,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
@@ -9624,6 +9640,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
@@ -9697,6 +9729,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
@@ -9745,7 +9781,65 @@
         "files": [
           "src/main/java/net/redboltmedia/witchercraft/procedures/TimeTickProcedure.java"
         ]
-      }
+      },
+      "path": "~/Admin"
+    },
+    {
+      "name": "SunAndStarsTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sun_and_stars_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/SunAndStarsTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Character Abilities/GeneralPerks/SUN AND STARS"
+    },
+    {
+      "name": "AxiiGlow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "axii_glow",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/AxiiGlowProcedure.java"
+        ]
+      },
+      "path": "~/Signs/Axii"
+    },
+    {
+      "name": "SignCastHold",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sign_cast_hold",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/SignCastHoldProcedure.java"
+        ]
+      },
+      "path": "~/Signs/SignCast"
     }
   ],
   "variable_elements": [
@@ -10246,6 +10340,24 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
+    },
+    {
+      "name": "sekund",
+      "type": "number",
+      "scope": "global",
+      "value": "0"
+    },
+    {
+      "name": "minut",
+      "type": "number",
+      "scope": "global",
+      "value": "0"
+    },
+    {
+      "name": "witchercraftSignNoCast",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
     }
   ],
   "sound_elements": [],

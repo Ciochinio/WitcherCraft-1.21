@@ -44,20 +44,6 @@
         }
       },
       {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_during_day_add_1_to_health_rege",
-          "text": {
-            "fixedValue": "DURING DAY ADD +1 TO HEALTH REGEN, DURING NIGHT +1 TO STAMINA REGENERATION"
-          },
-          "width": 24,
-          "height": 29,
-          "x": 136,
-          "y": 61,
-          "locked": false
-        }
-      },
-      {
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_survivalinstict",
@@ -83,8 +69,8 @@
           },
           "width": 24,
           "height": 24,
-          "x": 200,
-          "y": 63,
+          "x": 195,
+          "y": 62,
           "locked": false
         }
       },
@@ -114,8 +100,8 @@
           },
           "width": 24,
           "height": 24,
-          "x": 255,
-          "y": 65,
+          "x": 249,
+          "y": 62,
           "locked": false
         }
       },
@@ -145,8 +131,8 @@
           },
           "width": 24,
           "height": 24,
-          "x": 136,
-          "y": 112,
+          "x": 132,
+          "y": 107,
           "locked": false
         }
       },
@@ -176,8 +162,8 @@
           },
           "width": 24,
           "height": 24,
-          "x": 200,
-          "y": 111,
+          "x": 195,
+          "y": 107,
           "locked": false
         }
       },
@@ -207,8 +193,8 @@
           },
           "width": 24,
           "height": 24,
-          "x": 254,
-          "y": 112,
+          "x": 249,
+          "y": 107,
           "locked": false
         }
       },
@@ -360,6 +346,21 @@
           },
           "x": 313,
           "y": 42,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_sun_and_stars_tooltip",
+          "text": {
+            "fixedValue": "",
+            "name": "SunAndStarsTooltip"
+          },
+          "width": 30,
+          "height": 31,
+          "x": 133,
+          "y": 62,
           "locked": false
         }
       }

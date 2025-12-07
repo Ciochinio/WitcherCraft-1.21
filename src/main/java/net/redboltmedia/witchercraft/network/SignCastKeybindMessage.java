@@ -52,7 +52,7 @@ public record SignCastKeybindMessage(int eventType, int pressedms) implements Cu
 			return;
 		if (type == 0) {
 
-			SignCastKeyPressProcedure.execute(entity);
+			SignCastKeyPressProcedure.execute(world, x, y, z, entity);
 		}
 		if (type == 1) {
 

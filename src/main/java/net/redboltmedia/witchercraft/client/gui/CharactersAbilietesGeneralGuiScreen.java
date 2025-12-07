@@ -19,6 +19,9 @@ import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
+import java.util.stream.Collectors;
+import java.util.Arrays;
+
 public class CharactersAbilietesGeneralGuiScreen extends AbstractContainerScreen<CharactersAbilietesGeneralGuiMenu> implements WitchercraftModScreens.ScreenAccessor {
 	private final Level world;
 	private final int x, y, z;
@@ -59,28 +62,31 @@ public class CharactersAbilietesGeneralGuiScreen extends AbstractContainerScreen
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		boolean customTooltipShown = false;
-		if (mouseX > leftPos + 10 && mouseX < leftPos + 34 && mouseY > topPos + 24 && mouseY < topPos + 53) {
-			guiGraphics.setTooltipForNextFrame(font, Component.translatable("gui.witchercraft.characters_abilietes_general_gui.tooltip_during_day_add_1_to_health_rege"), mouseX, mouseY);
-			customTooltipShown = true;
-		}
-		if (mouseX > leftPos + 74 && mouseX < leftPos + 98 && mouseY > topPos + 26 && mouseY < topPos + 50) {
+		if (mouseX > leftPos + 69 && mouseX < leftPos + 93 && mouseY > topPos + 25 && mouseY < topPos + 49) {
 			guiGraphics.setTooltipForNextFrame(font, Component.translatable("gui.witchercraft.characters_abilietes_general_gui.tooltip_increases_max_hp_by_15"), mouseX, mouseY);
 			customTooltipShown = true;
 		}
-		if (mouseX > leftPos + 129 && mouseX < leftPos + 153 && mouseY > topPos + 28 && mouseY < topPos + 52) {
+		if (mouseX > leftPos + 123 && mouseX < leftPos + 147 && mouseY > topPos + 25 && mouseY < topPos + 49) {
 			guiGraphics.setTooltipForNextFrame(font, Component.translatable("gui.witchercraft.characters_abilietes_general_gui.tooltip_1_to_stamina_regen"), mouseX, mouseY);
 			customTooltipShown = true;
 		}
-		if (mouseX > leftPos + 10 && mouseX < leftPos + 34 && mouseY > topPos + 75 && mouseY < topPos + 99) {
+		if (mouseX > leftPos + 6 && mouseX < leftPos + 30 && mouseY > topPos + 70 && mouseY < topPos + 94) {
 			guiGraphics.setTooltipForNextFrame(font, Component.translatable("gui.witchercraft.characters_abilietes_general_gui.tooltip_while_school_of_the_cat_effect"), mouseX, mouseY);
 			customTooltipShown = true;
 		}
-		if (mouseX > leftPos + 74 && mouseX < leftPos + 98 && mouseY > topPos + 74 && mouseY < topPos + 98) {
+		if (mouseX > leftPos + 69 && mouseX < leftPos + 93 && mouseY > topPos + 70 && mouseY < topPos + 94) {
 			guiGraphics.setTooltipForNextFrame(font, Component.translatable("gui.witchercraft.characters_abilietes_general_gui.tooltip_while_school_of_the_griffin_ef"), mouseX, mouseY);
 			customTooltipShown = true;
 		}
-		if (mouseX > leftPos + 128 && mouseX < leftPos + 152 && mouseY > topPos + 75 && mouseY < topPos + 99) {
+		if (mouseX > leftPos + 123 && mouseX < leftPos + 147 && mouseY > topPos + 70 && mouseY < topPos + 94) {
 			guiGraphics.setTooltipForNextFrame(font, Component.translatable("gui.witchercraft.characters_abilietes_general_gui.tooltip_while_school_of_the_bear_effec"), mouseX, mouseY);
+			customTooltipShown = true;
+		}
+		if (mouseX > leftPos + 7 && mouseX < leftPos + 37 && mouseY > topPos + 25 && mouseY < topPos + 56) {
+			String hoverText = SunAndStarsTooltipProcedure.execute();
+			if (hoverText != null) {
+				guiGraphics.setComponentTooltipForNextFrame(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
+			}
 			customTooltipShown = true;
 		}
 		if (!customTooltipShown)

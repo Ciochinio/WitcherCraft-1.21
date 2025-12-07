@@ -34,7 +34,7 @@ public class AxiiCastProcedure {
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("NO ENEMIES DETECTED"), false);
-			AxiiRefundProcedure.execute(entity);
+			AxiiRefundProcedure.execute(world, entity);
 		}
 	}
 

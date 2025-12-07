@@ -1,6 +1,7 @@
 package net.redboltmedia.witchercraft.procedures;
 
 import net.redboltmedia.witchercraft.network.WitchercraftModVariables;
+import net.redboltmedia.witchercraft.init.WitchercraftModMobEffects;
 
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -8,9 +9,8 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.Component;
 
 import javax.annotation.Nullable;
 
@@ -33,11 +33,18 @@ public class TimeTickProcedure {
 			_vars.witchercraftTick = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftTick + 1;
 			_vars.markSyncDirty();
 		}
+		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(WitchercraftModMobEffects.IN_COMBAT)) {
+			if ((entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftTick / 20) % 6 == 0) {
+				PassiveHealthRegenStartProcedure.execute(world, entity);
+				PassiveStaminaRegenStartProcedure.execute(world, entity);
+			}
+		} else {
+			if ((entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftTick / 20) % 3 == 0) {
+				PassiveHealthRegenStartProcedure.execute(world, entity);
+				PassiveStaminaRegenStartProcedure.execute(world, entity);
+			}
+		}
 		if ((entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftTick / 20) % 3 == 0) {
-			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal("i cyk 3 sekundy"), false);
-			PassiveHealthRegenStartProcedure.execute(world, entity);
-			PassiveStaminaRegenStartProcedure.execute(world, entity);
 			ToxicityTickStartProcedure.execute(world, entity);
 		}
 		return "" + (entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftTick / 20) % 3;
