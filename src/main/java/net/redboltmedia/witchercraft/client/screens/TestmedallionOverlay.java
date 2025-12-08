@@ -2,6 +2,7 @@ package net.redboltmedia.witchercraft.client.screens;
 
 import org.checkerframework.checker.units.qual.h;
 
+import net.redboltmedia.witchercraft.procedures.SignCastHoldCostProcedure;
 import net.redboltmedia.witchercraft.procedures.PlayerModelDisplayProcedure;
 
 import net.neoforged.neoforge.client.event.RenderGuiEvent;
@@ -13,6 +14,7 @@ import net.neoforged.api.distmarker.Dist;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.InventoryScreen;
 import net.minecraft.client.Minecraft;
 
@@ -34,6 +36,10 @@ public class TestmedallionOverlay {
 			z = entity.getZ();
 		}
 		if (true) {
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.witchercraft.testmedallion.label_koszt_znakow"), w / 2 + -180, h / 2 + 86, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+
+					SignCastHoldCostProcedure.execute(entity), w / 2 + -117, h / 2 + 86, -1, false);
 			if (PlayerModelDisplayProcedure.execute(entity) instanceof LivingEntity livingEntity) {
 				InventoryScreen.renderEntityInInventoryFollowsAngle(event.getGuiGraphics(), w / 2 + -1000, h - 1025, w / 2 + 1000, h - -975, 10, -livingEntity.getBbHeight() / (2.0f * livingEntity.getScale()), 0f, 0, livingEntity);
 			}

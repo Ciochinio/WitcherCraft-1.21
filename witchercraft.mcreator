@@ -9833,6 +9833,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
@@ -9840,6 +9856,112 @@
         ]
       },
       "path": "~/Signs/SignCast"
+    },
+    {
+      "name": "SignCastHoldCost",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sign_cast_hold_cost",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/SignCastHoldCostProcedure.java"
+        ]
+      },
+      "path": "~/Signs/SignCast"
+    },
+    {
+      "name": "SignCastHoldCostTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sign_cast_hold_cost_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/SignCastHoldCostTickProcedure.java"
+        ]
+      },
+      "path": "~/Signs/SignCast"
+    },
+    {
+      "name": "Air",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "air",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/entity/AirEntity.java"
+        ]
+      },
+      "path": "~/Signs/Igni"
+    },
+    {
+      "name": "AirWhileProjectileFlyingTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "air_while_projectile_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/AirWhileProjectileFlyingTickProcedure.java"
+        ]
+      },
+      "path": "~/Signs/Igni"
+    },
+    {
+      "name": "AirProjectileHitsLivingEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "air_projectile_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/AirProjectileHitsLivingEntityProcedure.java"
+        ]
+      },
+      "path": "~/Signs/Igni"
     }
   ],
   "variable_elements": [
@@ -10358,6 +10480,12 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
+    },
+    {
+      "name": "witchercraftSignCastHoldCost",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -10732,7 +10860,8 @@
       "effect.witchercraft.sign_cooldown": "Sign Cooldown",
       "gui.witchercraft.player_stats_overlay.label_signhold": "SignHold",
       "effect.witchercraft.sign_hold": "Sign Hold",
-      "gui.witchercraft.testmedallion.label_sekund": "Sekund"
+      "gui.witchercraft.testmedallion.label_sekund": "Sekund",
+      "gui.witchercraft.testmedallion.label_koszt_znakow": "koszt znaków"
     }
   },
   "metadata": {

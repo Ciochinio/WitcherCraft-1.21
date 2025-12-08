@@ -156,6 +156,7 @@ public class WitchercraftModVariables {
 			clone.test = original.test;
 			clone.witchercraftTick = original.witchercraftTick;
 			clone.witchercraftSignNoCast = original.witchercraftSignNoCast;
+			clone.witchercraftSignCastHoldCost = original.witchercraftSignCastHoldCost;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
 	}
@@ -246,6 +247,7 @@ public class WitchercraftModVariables {
 		public double test = 0;
 		public double witchercraftTick = 0;
 		public boolean witchercraftSignNoCast = false;
+		public double witchercraftSignCastHoldCost = 0;
 
 		@Override
 		public void serialize(ValueOutput output) {
@@ -333,6 +335,7 @@ public class WitchercraftModVariables {
 			output.putDouble("test", test);
 			output.putDouble("witchercraftTick", witchercraftTick);
 			output.putBoolean("witchercraftSignNoCast", witchercraftSignNoCast);
+			output.putDouble("witchercraftSignCastHoldCost", witchercraftSignCastHoldCost);
 		}
 
 		@Override
@@ -421,6 +424,7 @@ public class WitchercraftModVariables {
 			test = input.getDoubleOr("test", 0);
 			witchercraftTick = input.getDoubleOr("witchercraftTick", 0);
 			witchercraftSignNoCast = input.getBooleanOr("witchercraftSignNoCast", false);
+			witchercraftSignCastHoldCost = input.getDoubleOr("witchercraftSignCastHoldCost", 0);
 		}
 
 		public void markSyncDirty() {

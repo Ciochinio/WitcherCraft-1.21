@@ -20,5 +20,6 @@ public class WitchercraftModEntityRenderers {
 		event.registerEntityRenderer(WitchercraftModEntities.NORTHERN_WIND_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(WitchercraftModEntities.SAMUM_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(WitchercraftModEntities.DIMERITIUM_BOMB_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(WitchercraftModEntities.AIR.get(), ThrownItemRenderer::new);
 	}
 }
