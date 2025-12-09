@@ -2368,22 +2368,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -9621,6 +9605,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
@@ -9897,24 +9897,37 @@
       "path": "~/Signs/SignCast"
     },
     {
-      "name": "Air",
+      "name": "IgniParticles",
       "type": "projectile",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "air",
+      "registry_name": "igni_particles",
       "metadata": {
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/entity/AirEntity.java"
+          "src/main/java/net/redboltmedia/witchercraft/entity/IgniParticlesEntity.java"
         ]
       },
       "path": "~/Signs/Igni"
     },
     {
-      "name": "AirWhileProjectileFlyingTick",
+      "name": "AardParticles",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aard_particles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/entity/AardParticlesEntity.java"
+        ]
+      },
+      "path": "~/Signs/Aard"
+    },
+    {
+      "name": "IgniParticlesTick",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "air_while_projectile_flying_tick",
+      "registry_name": "igni_particles_tick",
       "metadata": {
         "dependencies": [
           {
@@ -9939,29 +9952,122 @@
           }
         ],
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/procedures/AirWhileProjectileFlyingTickProcedure.java"
+          "src/main/java/net/redboltmedia/witchercraft/procedures/IgniParticlesTickProcedure.java"
         ]
       },
       "path": "~/Signs/Igni"
     },
     {
-      "name": "AirProjectileHitsLivingEntity",
+      "name": "AardParticlesTick",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "air_projectile_hits_living_entity",
+      "registry_name": "aard_particles_tick",
       "metadata": {
         "dependencies": [
           {
             "name": "immediatesourceentity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/procedures/AirProjectileHitsLivingEntityProcedure.java"
+          "src/main/java/net/redboltmedia/witchercraft/procedures/AardParticlesTickProcedure.java"
         ]
       },
-      "path": "~/Signs/Igni"
+      "path": "~/Signs/Aard"
+    },
+    {
+      "name": "QuenHoldParticles",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quen_hold_particles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/client/particle/QuenHoldParticlesParticle.java",
+          "src/main/resources/assets/witchercraft/particles/quen_hold_particles.json"
+        ]
+      },
+      "path": "~/Signs/Quen"
+    },
+    {
+      "name": "QuenParticles",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quen_particles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/client/particle/QuenParticlesParticle.java",
+          "src/main/resources/assets/witchercraft/particles/quen_particles.json"
+        ]
+      },
+      "path": "~/Signs/Quen"
+    },
+    {
+      "name": "QuenEffectTimer",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quen_effect_timer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/QuenEffectTimerMobEffect.java"
+        ]
+      },
+      "path": "~/Signs/Quen"
+    },
+    {
+      "name": "QuenEffectParticles",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quen_effect_particles",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/procedures/QuenEffectParticlesProcedure.java"
+        ]
+      },
+      "path": "~/Signs/Quen"
+    },
+    {
+      "name": "QuenEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quen_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/redboltmedia/witchercraft/potion/QuenEffectMobEffect.java"
+        ]
+      },
+      "path": "~/Signs/Quen"
     }
   ],
   "variable_elements": [
@@ -10861,7 +10967,9 @@
       "gui.witchercraft.player_stats_overlay.label_signhold": "SignHold",
       "effect.witchercraft.sign_hold": "Sign Hold",
       "gui.witchercraft.testmedallion.label_sekund": "Sekund",
-      "gui.witchercraft.testmedallion.label_koszt_znakow": "koszt znaków"
+      "gui.witchercraft.testmedallion.label_koszt_znakow": "koszt znaków",
+      "effect.witchercraft.quen_effect_timer": "Quen Effect Timer",
+      "effect.witchercraft.quen_effect": "Quen Effect"
     }
   },
   "metadata": {

@@ -1,7 +1,7 @@
 package net.redboltmedia.witchercraft.procedures;
 
 import net.redboltmedia.witchercraft.init.WitchercraftModEntities;
-import net.redboltmedia.witchercraft.entity.AirEntity;
+import net.redboltmedia.witchercraft.entity.IgniParticlesEntity;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.enchantment.Enchantments;
@@ -18,15 +18,17 @@ public class IgniCastProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		{
-			Entity _shootFrom = entity;
-			Level projectileLevel = _shootFrom.level();
-			if (!projectileLevel.isClientSide()) {
-				Projectile _entityToSpawn = initArrowProjectile(new AirEntity(WitchercraftModEntities.AIR.get(), 0, 0, 0, projectileLevel, createArrowWeaponItemStack(projectileLevel, 0, (byte) 5)), null, 0, true, false, false,
-						AbstractArrow.Pickup.DISALLOWED);
-				_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
-				_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 5, 40);
-				projectileLevel.addFreshEntity(_entityToSpawn);
+		for (int index0 = 0; index0 < 50; index0++) {
+			{
+				Entity _shootFrom = entity;
+				Level projectileLevel = _shootFrom.level();
+				if (!projectileLevel.isClientSide()) {
+					Projectile _entityToSpawn = initArrowProjectile(new IgniParticlesEntity(WitchercraftModEntities.IGNI_PARTICLES.get(), 0, 0, 0, projectileLevel, createArrowWeaponItemStack(projectileLevel, 0, (byte) 5)), null, 0, true, false,
+							false, AbstractArrow.Pickup.DISALLOWED);
+					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 4, 30);
+					projectileLevel.addFreshEntity(_entityToSpawn);
+				}
 			}
 		}
 		if (entity instanceof Player _player && !_player.level().isClientSide())

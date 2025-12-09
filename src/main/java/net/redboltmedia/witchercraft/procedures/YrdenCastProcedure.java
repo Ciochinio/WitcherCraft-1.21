@@ -19,13 +19,13 @@ public class YrdenCastProcedure {
 		if (world instanceof ServerLevel _level)
 			_level.sendParticles(ParticleTypes.WITCH, x, y, z, 300, 2, 0.05, 2, 0.002);
 		for (int index0 = 0; index0 < 5; index0++) {
-			world.addParticle((SimpleParticleType) (WitchercraftModParticleTypes.YRDEN_PARTICLE.get()), (x + 0), (y + 0.5), (z - 3), 0, 1, 0);
-			world.addParticle((SimpleParticleType) (WitchercraftModParticleTypes.YRDEN_PARTICLE.get()), (x - 2), (y + 0.5), (z - 2), 0, 1, 0);
-			world.addParticle((SimpleParticleType) (WitchercraftModParticleTypes.YRDEN_PARTICLE.get()), (x - 2.5), (y + 0.5), (z + 0), 0, 1, 0);
-			world.addParticle((SimpleParticleType) (WitchercraftModParticleTypes.YRDEN_PARTICLE.get()), (x - 1.5), (y + 0.5), (z + 2), 0, 1, 0);
-			world.addParticle((SimpleParticleType) (WitchercraftModParticleTypes.YRDEN_PARTICLE.get()), (x + 1.5), (y + 0.5), (z + 2), 0, 1, 0);
-			world.addParticle((SimpleParticleType) (WitchercraftModParticleTypes.YRDEN_PARTICLE.get()), (x + 2.5), (y + 0.5), (z + 0), 0, 1, 0);
-			world.addParticle((SimpleParticleType) (WitchercraftModParticleTypes.YRDEN_PARTICLE.get()), (x + 2), (y + 0.5), (z - 2), 0, 1, 0);
+			world.addParticle((SimpleParticleType) (WitchercraftModParticleTypes.YRDEN_PARTICLE.get()), (x + 0), (y + 0.5), (z - 4), 0, 1, 0);
+			world.addParticle((SimpleParticleType) (WitchercraftModParticleTypes.YRDEN_PARTICLE.get()), (x - 2.5), (y + 0.5), (z - 2.5), 0, 1, 0);
+			world.addParticle((SimpleParticleType) (WitchercraftModParticleTypes.YRDEN_PARTICLE.get()), (x - 3), (y + 0.5), (z + 0), 0, 1, 0);
+			world.addParticle((SimpleParticleType) (WitchercraftModParticleTypes.YRDEN_PARTICLE.get()), (x - 2), (y + 0.5), (z + 2.5), 0, 1, 0);
+			world.addParticle((SimpleParticleType) (WitchercraftModParticleTypes.YRDEN_PARTICLE.get()), (x + 2), (y + 0.5), (z + 2.5), 0, 1, 0);
+			world.addParticle((SimpleParticleType) (WitchercraftModParticleTypes.YRDEN_PARTICLE.get()), (x + 3), (y + 0.5), (z + 0), 0, 1, 0);
+			world.addParticle((SimpleParticleType) (WitchercraftModParticleTypes.YRDEN_PARTICLE.get()), (x + 2.5), (y + 0.5), (z - 2.5), 0, 1, 0);
 		}
 	}
 }

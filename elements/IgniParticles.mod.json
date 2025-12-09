@@ -9,7 +9,7 @@
     "actionSound": {
       "value": ""
     },
-    "igniteFire": false,
+    "igniteFire": true,
     "disableGravity": false,
     "power": 0.0,
     "damage": 0.0,
@@ -18,17 +18,8 @@
     "customModelTexture": "",
     "modelWidth": 0.5,
     "modelHeight": 0.5,
-    "onHitsBlock": {
-      "name": "AirProjectileHitsLivingEntity"
-    },
-    "onHitsPlayer": {
-      "name": "AirProjectileHitsLivingEntity"
-    },
-    "onHitsEntity": {
-      "name": "AirProjectileHitsLivingEntity"
-    },
     "onFlyingTick": {
-      "name": "AirWhileProjectileFlyingTick"
+      "name": "IgniParticlesTick"
     }
   }
 }

@@ -1,11 +1,11 @@
-[08Dec2025 03:57:37.525] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, neoforgeclientdev, --version, 21.8.31, --assetIndex, 26, --assetsDir, C:\\Users\\Ciochu\\.mcreator\\gradle\\caches\\neoformruntime\\assets, --fml.fmlVersion, 9.0.16, --fml.mcVersion, 1.21.8, --fml.neoForgeVersion, 21.8.31, --fml.neoFormVersion, 20250717.133445]
-[08Dec2025 03:57:37.530] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.8+9-LTS
-[08Dec2025 03:57:37.531] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 9.0 starting: java version 21.0.8 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
-[08Dec2025 03:57:37.713] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
-[08Dec2025 03:57:38.321] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/Ciochu/.mcreator/gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23157!/ Service=ModLauncher Env=CLIENT
-[08Dec2025 03:57:38.679] [fml-loadingscreen/INFO] [net.neoforged.fml.earlydisplay.render.LoadingScreenRenderer/]: GL info: NVIDIA GeForce RTX 3070 Laptop GPU/PCIe/SSE2 GL version 3.2.0 NVIDIA 581.80, NVIDIA Corporation
-[08Dec2025 03:57:38.852] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
-[08Dec2025 03:57:38.856] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
+[09Dec2025 17:45:07.424] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, neoforgeclientdev, --version, 21.8.31, --assetIndex, 26, --assetsDir, C:\\Users\\Ciochu\\.mcreator\\gradle\\caches\\neoformruntime\\assets, --fml.fmlVersion, 9.0.16, --fml.mcVersion, 1.21.8, --fml.neoForgeVersion, 21.8.31, --fml.neoFormVersion, 20250717.133445]
+[09Dec2025 17:45:07.430] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.8+9-LTS
+[09Dec2025 17:45:07.431] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 9.0 starting: java version 21.0.8 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[09Dec2025 17:45:07.589] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[09Dec2025 17:45:08.187] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/Ciochu/.mcreator/gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23157!/ Service=ModLauncher Env=CLIENT
+[09Dec2025 17:45:08.513] [fml-loadingscreen/INFO] [net.neoforged.fml.earlydisplay.render.LoadingScreenRenderer/]: GL info: NVIDIA GeForce RTX 3070 Laptop GPU/PCIe/SSE2 GL version 3.2.0 NVIDIA 581.80, NVIDIA Corporation
+[09Dec2025 17:45:08.848] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
+[09Dec2025 17:45:08.853] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
      Mod List:
 		Name Version (Mod Id)
 
@@ -13,284 +13,384 @@
 		NeoForge 21.8.31 (neoforge)
 		WitcherCraft 1.0.0 (witchercraft)
 		YDM's Mob Health Bar 1.0.0 (mobhealthbar)
-[08Dec2025 03:57:40.453] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
-[08Dec2025 03:57:40.465] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'neoforgeclientdev' with arguments [--version, 21.8.31, --assetsDir, C:\Users\Ciochu\.mcreator\gradle\caches\neoformruntime\assets, --assetIndex, 26]
-[08Dec2025 03:57:43.787] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 272 Datafixer optimizations took 708 milliseconds
-[08Dec2025 03:57:44.211] [pool-7-thread-1/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
-[08Dec2025 03:57:51.959] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[08Dec2025 03:57:51.960] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[08Dec2025 03:57:51.964] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[08Dec2025 03:57:51.966] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[08Dec2025 03:57:51.966] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[08Dec2025 03:57:51.969] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [waypoint, modify, waypoint, color, reset] and [waypoint, modify, waypoint, color, color] with inputs: [reset]
-[08Dec2025 03:57:52.117] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.8.31, for MC 1.21.8
-[08Dec2025 03:57:53.284] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Ciochu/Documents/GitHub/WitcherCraft-1.21/build/moddev/artifacts/neoforge-21.8.31.jar%23213!/assets/.mcassetsroot' uses unexpected schema
-[08Dec2025 03:57:53.287] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Ciochu/Documents/GitHub/WitcherCraft-1.21/build/moddev/artifacts/neoforge-21.8.31.jar%23213!/data/.mcassetsroot' uses unexpected schema
-[08Dec2025 03:57:53.353] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[08Dec2025 03:57:53.363] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[08Dec2025 03:57:53.595] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
-[08Dec2025 03:57:53.810] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Using optional rendering extensions: GL_ARB_buffer_storage, GL_KHR_debug, GL_ARB_vertex_attrib_binding, GL_ARB_direct_state_access
-[08Dec2025 03:57:55.295] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/neoforge, mod/witchercraft, mod/mobhealthbar
-[08Dec2025 03:57:55.627] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-16.0.03.hex, loading
-[08Dec2025 03:57:55.627] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_pua-16.0.03.hex, loading
-[08Dec2025 03:57:55.887] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-16.0.03.hex, loading
-[08Dec2025 03:57:57.893] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Słuchawki (Arctis Pro Wireless Game)
-[08Dec2025 03:57:57.898] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
-[08Dec2025 03:57:58.075] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x2 minecraft:textures/atlas/blocks.png-atlas
-[08Dec2025 03:57:58.085] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/signs.png-atlas
-[08Dec2025 03:57:58.086] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/shield_patterns.png-atlas
-[08Dec2025 03:57:58.086] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/banner_patterns.png-atlas
-[08Dec2025 03:57:58.087] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x2 minecraft:textures/atlas/armor_trims.png-atlas
-[08Dec2025 03:57:58.091] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x2 minecraft:textures/atlas/decorated_pot.png-atlas
-[08Dec2025 03:57:58.096] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/chest.png-atlas
-[08Dec2025 03:57:58.096] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/beds.png-atlas
-[08Dec2025 03:57:58.097] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/shulker_boxes.png-atlas
-[08Dec2025 03:57:58.100] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
-[08Dec2025 03:57:58.252] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[08Dec2025 03:57:58.253] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
-[08Dec2025 03:57:58.253] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x0 minecraft:textures/atlas/gui.png-atlas
-[08Dec2025 03:57:58.259] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
-[08Dec2025 03:58:30.806] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1407 recipes
-[08Dec2025 03:58:30.827] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1520 advancements
-[08Dec2025 03:58:30.831] [Render thread/INFO] [net.neoforged.neoforge.common.crafting.RecipePriorityManager/]: Loaded 0 recipe priority overrides
-[08Dec2025 03:58:31.106] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.8
-[08Dec2025 03:58:31.107] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[08Dec2025 03:58:32.523] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[08Dec2025 03:58:33.204] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[08Dec2025 03:58:33.204] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[08Dec2025 03:58:33.480] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
-[08Dec2025 03:58:33.482] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 957 ms
-[08Dec2025 03:58:33.628] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 5, from 10
-[08Dec2025 03:58:33.628] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
-[08Dec2025 03:58:35.367] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:01941eba] logged in with entity id 60 at (-62.32736699302888, 72.0, 4.438698587490092)
-[08Dec2025 03:58:35.503] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
-[08Dec2025 03:58:35.831] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 218 advancements
-[08Dec2025 03:58:36.169] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 2 reached during a single frame. New capacity will be 4.
-[08Dec2025 03:58:36.281] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 4 reached during a single frame. New capacity will be 8.
-[08Dec2025 03:58:36.755] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 8 reached during a single frame. New capacity will be 16.
-[08Dec2025 03:58:36.758] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 16 reached during a single frame. New capacity will be 32.
-[08Dec2025 03:58:37.064] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 32 reached during a single frame. New capacity will be 64.
-[08Dec2025 03:58:37.205] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 64 reached during a single frame. New capacity will be 128.
-[08Dec2025 03:58:37.361] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 128 reached during a single frame. New capacity will be 256.
-[08Dec2025 03:58:37.502] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 256 reached during a single frame. New capacity will be 512.
-[08Dec2025 03:58:39.140] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] IGNI
-[08Dec2025 03:58:42.304] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] IGNI
-[08Dec2025 03:58:47.471] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[0, 7]:
-  AirEntity['entity.witchercraft.air'/229, l='ServerLevel[New World]', x=3.09, y=61.20, z=114.54]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/230, l='ServerLevel[New World]', x=10.78, y=65.18, z=112.27]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/231, l='ServerLevel[New World]', x=1.07, y=202.82, z=112.86]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:58:47.476] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[-3, 7]:
-  AirEntity['entity.witchercraft.air'/268, l='ServerLevel[New World]', x=-38.31, y=75.59, z=113.87]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/269, l='ServerLevel[New World]', x=-38.05, y=70.29, z=115.19]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/270, l='ServerLevel[New World]', x=-41.82, y=80.76, z=115.56]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:58:47.478] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[1, 7]AirEntity['entity.witchercraft.air'/232, l='ServerLevel[New World]', x=16.36, y=67.69, z=114.44]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:58:47.482] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[-1, 7]:
-  AirEntity['entity.witchercraft.air'/225, l='ServerLevel[New World]', x=-14.94, y=70.39, z=114.78]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/226, l='ServerLevel[New World]', x=-15.00, y=70.50, z=114.61]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/227, l='ServerLevel[New World]', x=-3.21, y=91.82, z=114.24]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/228, l='ServerLevel[New World]', x=-5.46, y=151.89, z=113.40]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:58:47.485] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[-4, 7]AirEntity['entity.witchercraft.air'/271, l='ServerLevel[New World]', x=-62.32, y=170.66, z=113.21]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:58:47.488] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[-2, 7]:
-  AirEntity['entity.witchercraft.air'/257, l='ServerLevel[New World]', x=-27.48, y=59.55, z=112.38]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/258, l='ServerLevel[New World]', x=-25.59, y=62.29, z=112.20]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/259, l='ServerLevel[New World]', x=-30.05, y=65.90, z=115.79]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/260, l='ServerLevel[New World]', x=-27.25, y=70.51, z=114.23]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/261, l='ServerLevel[New World]', x=-22.12, y=67.99, z=113.64]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/262, l='ServerLevel[New World]', x=-16.66, y=72.33, z=115.14]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/263, l='ServerLevel[New World]', x=-24.96, y=104.88, z=112.59]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/264, l='ServerLevel[New World]', x=-31.68, y=117.13, z=113.47]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/265, l='ServerLevel[New World]', x=-25.69, y=166.12, z=113.07]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/266, l='ServerLevel[New World]', x=-25.34, y=185.45, z=112.98]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/267, l='ServerLevel[New World]', x=-23.18, y=218.34, z=112.88]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:58:47.491] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[-5, 7]AirEntity['entity.witchercraft.air'/254, l='ServerLevel[New World]', x=-70.58, y=194.47, z=112.12]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:58:47.986] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[08Dec2025 03:58:48.043] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[08Dec2025 03:58:48.088] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[-6, -8]AirEntity['entity.witchercraft.air'/561, l='ServerLevel[New World]', x=-88.19, y=74.61, z=-112.03]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:58:48.090] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[-2, -7]AirEntity['entity.witchercraft.air'/437, l='ServerLevel[New World]', x=-21.71, y=72.46, z=-98.17]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:58:48.100] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[1, 6]:
-  AirEntity['entity.witchercraft.air'/205, l='ServerLevel[New World]', x=25.43, y=62.28, z=96.87]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/206, l='ServerLevel[New World]', x=16.98, y=67.52, z=109.05]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:58:48.107] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[-11, -8]:
-  AirEntity['entity.witchercraft.air'/529, l='ServerLevel[New World]', x=-172.30, y=102.03, z=-112.66]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/530, l='ServerLevel[New World]', x=-167.98, y=119.70, z=-113.40]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:58:48.109] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[-11, -5]AirEntity['entity.witchercraft.air'/344, l='ServerLevel[New World]', x=-160.49, y=109.67, z=-76.90]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:58:48.111] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[08Dec2025 03:58:48.112] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[08Dec2025 03:58:50.304] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] IGNI
-[08Dec2025 03:58:50.694] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 512 reached during a single frame. New capacity will be 1024.
-[08Dec2025 03:58:50.696] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[-6, -8]AirEntity['entity.witchercraft.air'/561, l='ServerLevel[New World]', x=-88.19, y=74.61, z=-112.03]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:58:50.700] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[-11, -8]:
-  AirEntity['entity.witchercraft.air'/529, l='ServerLevel[New World]', x=-172.30, y=102.03, z=-112.66]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/530, l='ServerLevel[New World]', x=-167.98, y=119.70, z=-113.40]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:58:57.043] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
-[08Dec2025 03:58:57.046] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Survival Mode
-[08Dec2025 03:58:58.945] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[0, 7]:
-  AirEntity['entity.witchercraft.air'/579, l='ServerLevel[New World]', x=3.09, y=61.20, z=114.54]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/580, l='ServerLevel[New World]', x=10.78, y=65.18, z=112.27]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/581, l='ServerLevel[New World]', x=1.07, y=202.82, z=112.86]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:58:58.946] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[-3, 7]:
-  AirEntity['entity.witchercraft.air'/615, l='ServerLevel[New World]', x=-38.31, y=75.59, z=113.87]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/616, l='ServerLevel[New World]', x=-38.05, y=70.29, z=115.19]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/617, l='ServerLevel[New World]', x=-41.82, y=80.76, z=115.56]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:58:58.947] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[1, 7]AirEntity['entity.witchercraft.air'/578, l='ServerLevel[New World]', x=16.36, y=67.69, z=114.44]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:58:58.950] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[-1, 7]:
-  AirEntity['entity.witchercraft.air'/588, l='ServerLevel[New World]', x=-14.94, y=70.39, z=114.78]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/589, l='ServerLevel[New World]', x=-15.00, y=70.50, z=114.61]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/590, l='ServerLevel[New World]', x=-3.21, y=91.82, z=114.24]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/591, l='ServerLevel[New World]', x=-5.46, y=151.89, z=113.40]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:58:58.951] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[-4, 7]AirEntity['entity.witchercraft.air'/597, l='ServerLevel[New World]', x=-62.32, y=170.66, z=113.21]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:58:58.953] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[-2, 7]:
-  AirEntity['entity.witchercraft.air'/604, l='ServerLevel[New World]', x=-27.48, y=59.55, z=112.38]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/605, l='ServerLevel[New World]', x=-25.59, y=62.29, z=112.20]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/606, l='ServerLevel[New World]', x=-30.05, y=65.90, z=115.79]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/607, l='ServerLevel[New World]', x=-27.25, y=70.51, z=114.23]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/608, l='ServerLevel[New World]', x=-22.12, y=67.99, z=113.64]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/609, l='ServerLevel[New World]', x=-16.66, y=72.33, z=115.14]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/610, l='ServerLevel[New World]', x=-24.96, y=104.88, z=112.59]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/611, l='ServerLevel[New World]', x=-31.68, y=117.13, z=113.47]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/612, l='ServerLevel[New World]', x=-25.69, y=166.12, z=113.07]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/613, l='ServerLevel[New World]', x=-25.34, y=185.45, z=112.98]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/614, l='ServerLevel[New World]', x=-23.18, y=218.34, z=112.88]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:58:58.953] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[-5, 7]AirEntity['entity.witchercraft.air'/592, l='ServerLevel[New World]', x=-70.58, y=194.47, z=112.12]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:58:59.337] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Saturation to Dev]
-[08Dec2025 03:58:59.348] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Saturation to Dev]
-[08Dec2025 03:59:00.228] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
-[08Dec2025 03:59:00.231] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Creative Mode
-[08Dec2025 03:59:01.300] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] IGNI
-[08Dec2025 03:59:01.692] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[-6, -8]AirEntity['entity.witchercraft.air'/738, l='ServerLevel[New World]', x=-88.19, y=74.61, z=-112.03]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:59:01.693] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[-11, -8]:
-  AirEntity['entity.witchercraft.air'/702, l='ServerLevel[New World]', x=-172.30, y=102.03, z=-112.66]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/703, l='ServerLevel[New World]', x=-167.98, y=119.70, z=-113.40]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:59:03.236] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[08Dec2025 03:59:03.258] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[08Dec2025 03:59:03.262] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[-10, 0]AirEntity['entity.witchercraft.air'/750, l='ServerLevel[New World]', x=-148.12, y=88.47, z=3.94]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:59:03.265] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[-4, 7]AirEntity['entity.witchercraft.air'/774, l='ServerLevel[New World]', x=-62.32, y=170.66, z=113.21]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:59:03.268] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[-1, 7]:
-  AirEntity['entity.witchercraft.air'/765, l='ServerLevel[New World]', x=-14.94, y=70.39, z=114.78]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/766, l='ServerLevel[New World]', x=-15.00, y=70.50, z=114.61]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/767, l='ServerLevel[New World]', x=-3.21, y=91.82, z=114.24]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/768, l='ServerLevel[New World]', x=-5.46, y=151.89, z=113.40]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:59:03.271] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[0, 7]:
-  AirEntity['entity.witchercraft.air'/756, l='ServerLevel[New World]', x=3.09, y=61.20, z=114.54]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/757, l='ServerLevel[New World]', x=10.78, y=65.18, z=112.27]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/758, l='ServerLevel[New World]', x=1.07, y=202.82, z=112.86]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:59:03.273] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[-2, -7]AirEntity['entity.witchercraft.air'/437, l='ServerLevel[New World]', x=-21.71, y=72.46, z=-98.17]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:59:03.281] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[-3, 7]:
-  AirEntity['entity.witchercraft.air'/792, l='ServerLevel[New World]', x=-38.31, y=75.59, z=113.87]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/793, l='ServerLevel[New World]', x=-38.05, y=70.29, z=115.19]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/794, l='ServerLevel[New World]', x=-41.82, y=80.76, z=115.56]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:59:03.284] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[-5, 7]AirEntity['entity.witchercraft.air'/769, l='ServerLevel[New World]', x=-70.58, y=194.47, z=112.12]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:59:03.290] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[1, 6]:
-  AirEntity['entity.witchercraft.air'/205, l='ServerLevel[New World]', x=25.43, y=62.28, z=96.87]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/575, l='ServerLevel[New World]', x=25.08, y=60.97, z=96.32]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/206, l='ServerLevel[New World]', x=16.98, y=67.52, z=109.05]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:59:03.293] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[-2, 7]:
-  AirEntity['entity.witchercraft.air'/781, l='ServerLevel[New World]', x=-27.48, y=59.55, z=112.38]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/782, l='ServerLevel[New World]', x=-25.59, y=62.29, z=112.20]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/783, l='ServerLevel[New World]', x=-30.05, y=65.90, z=115.79]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/784, l='ServerLevel[New World]', x=-27.25, y=70.51, z=114.23]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/785, l='ServerLevel[New World]', x=-22.12, y=67.99, z=113.64]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/786, l='ServerLevel[New World]', x=-16.66, y=72.33, z=115.14]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/787, l='ServerLevel[New World]', x=-24.96, y=104.88, z=112.59]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/788, l='ServerLevel[New World]', x=-31.68, y=117.13, z=113.47]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/789, l='ServerLevel[New World]', x=-25.69, y=166.12, z=113.07]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/790, l='ServerLevel[New World]', x=-25.34, y=185.45, z=112.98]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/791, l='ServerLevel[New World]', x=-23.18, y=218.34, z=112.88]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:59:03.295] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[1, 7]AirEntity['entity.witchercraft.air'/755, l='ServerLevel[New World]', x=16.36, y=67.69, z=114.44]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:59:03.299] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[-11, -5]AirEntity['entity.witchercraft.air'/344, l='ServerLevel[New World]', x=-160.49, y=109.67, z=-76.90]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:59:03.299] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[08Dec2025 03:59:03.299] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[08Dec2025 03:59:03.748] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
-[08Dec2025 03:59:03.796] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
-[08Dec2025 03:59:03.796] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
-[08Dec2025 03:59:03.820] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
-[08Dec2025 03:59:03.840] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[08Dec2025 03:59:03.840] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[08Dec2025 03:59:03.841] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[08Dec2025 03:59:03.896] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[08Dec2025 03:59:03.935] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[-10, 0]AirEntity['entity.witchercraft.air'/750, l='ServerLevel[New World]', x=-148.12, y=88.47, z=3.94]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:59:03.939] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[-4, 7]AirEntity['entity.witchercraft.air'/774, l='ServerLevel[New World]', x=-62.32, y=170.66, z=113.21]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:59:03.942] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[-1, 7]:
-  AirEntity['entity.witchercraft.air'/765, l='ServerLevel[New World]', x=-14.94, y=70.39, z=114.78]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/766, l='ServerLevel[New World]', x=-15.00, y=70.50, z=114.61]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/767, l='ServerLevel[New World]', x=-3.21, y=91.82, z=114.24]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/768, l='ServerLevel[New World]', x=-5.46, y=151.89, z=113.40]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:59:03.943] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[0, 7]:
-  AirEntity['entity.witchercraft.air'/756, l='ServerLevel[New World]', x=3.09, y=61.20, z=114.54]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/757, l='ServerLevel[New World]', x=10.78, y=65.18, z=112.27]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/758, l='ServerLevel[New World]', x=1.07, y=202.82, z=112.86]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:59:03.944] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[-2, -7]AirEntity['entity.witchercraft.air'/437, l='ServerLevel[New World]', x=-21.71, y=72.46, z=-98.17]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:59:03.947] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[-3, 7]:
-  AirEntity['entity.witchercraft.air'/792, l='ServerLevel[New World]', x=-38.31, y=75.59, z=113.87]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/793, l='ServerLevel[New World]', x=-38.05, y=70.29, z=115.19]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/794, l='ServerLevel[New World]', x=-41.82, y=80.76, z=115.56]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:59:03.948] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[-5, 7]AirEntity['entity.witchercraft.air'/769, l='ServerLevel[New World]', x=-70.58, y=194.47, z=112.12]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:59:03.953] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[1, 6]:
-  AirEntity['entity.witchercraft.air'/205, l='ServerLevel[New World]', x=25.43, y=62.28, z=96.87]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/575, l='ServerLevel[New World]', x=25.08, y=60.97, z=96.32]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/206, l='ServerLevel[New World]', x=16.98, y=67.52, z=109.05]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:59:03.956] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[-2, 7]:
-  AirEntity['entity.witchercraft.air'/781, l='ServerLevel[New World]', x=-27.48, y=59.55, z=112.38]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/782, l='ServerLevel[New World]', x=-25.59, y=62.29, z=112.20]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/783, l='ServerLevel[New World]', x=-30.05, y=65.90, z=115.79]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/784, l='ServerLevel[New World]', x=-27.25, y=70.51, z=114.23]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/785, l='ServerLevel[New World]', x=-22.12, y=67.99, z=113.64]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/786, l='ServerLevel[New World]', x=-16.66, y=72.33, z=115.14]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/787, l='ServerLevel[New World]', x=-24.96, y=104.88, z=112.59]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/788, l='ServerLevel[New World]', x=-31.68, y=117.13, z=113.47]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/789, l='ServerLevel[New World]', x=-25.69, y=166.12, z=113.07]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/790, l='ServerLevel[New World]', x=-25.34, y=185.45, z=112.98]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-  AirEntity['entity.witchercraft.air'/791, l='ServerLevel[New World]', x=-23.18, y=218.34, z=112.88]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:59:03.958] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[1, 7]AirEntity['entity.witchercraft.air'/755, l='ServerLevel[New World]', x=16.36, y=67.69, z=114.44]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:59:03.959] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.EntityStorage/]: [net.minecraft.world.level.chunk.storage.EntityStorage] Serialization errors:
-chunk@[-11, -5]AirEntity['entity.witchercraft.air'/344, l='ServerLevel[New World]', x=-160.49, y=109.67, z=-76.90]: Failed to encode value '0 minecraft:air' to field 'item': Value must be within range [1;99]: 0; Item must not be minecraft:air
-[08Dec2025 03:59:04.037] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[08Dec2025 03:59:04.047] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[08Dec2025 03:59:04.065] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
-[08Dec2025 03:59:04.066] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[08Dec2025 03:59:04.066] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[08Dec2025 03:59:04.066] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[09Dec2025 17:45:10.046] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[09Dec2025 17:45:10.059] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'neoforgeclientdev' with arguments [--version, 21.8.31, --assetsDir, C:\Users\Ciochu\.mcreator\gradle\caches\neoformruntime\assets, --assetIndex, 26]
+[09Dec2025 17:45:13.408] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 272 Datafixer optimizations took 735 milliseconds
+[09Dec2025 17:45:13.777] [pool-7-thread-1/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[09Dec2025 17:45:21.615] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[09Dec2025 17:45:21.617] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[09Dec2025 17:45:21.622] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[09Dec2025 17:45:21.623] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[09Dec2025 17:45:21.625] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[09Dec2025 17:45:21.628] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [waypoint, modify, waypoint, color, reset] and [waypoint, modify, waypoint, color, color] with inputs: [reset]
+[09Dec2025 17:45:21.743] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.8.31, for MC 1.21.8
+[09Dec2025 17:45:22.653] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Ciochu/Documents/GitHub/WitcherCraft-1.21/build/moddev/artifacts/neoforge-21.8.31.jar%23213!/assets/.mcassetsroot' uses unexpected schema
+[09Dec2025 17:45:22.654] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Ciochu/Documents/GitHub/WitcherCraft-1.21/build/moddev/artifacts/neoforge-21.8.31.jar%23213!/data/.mcassetsroot' uses unexpected schema
+[09Dec2025 17:45:22.731] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[09Dec2025 17:45:22.743] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[09Dec2025 17:45:22.923] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
+[09Dec2025 17:45:23.139] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Using optional rendering extensions: GL_ARB_buffer_storage, GL_KHR_debug, GL_ARB_vertex_attrib_binding, GL_ARB_direct_state_access
+[09Dec2025 17:45:24.830] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/neoforge, mod/witchercraft, mod/mobhealthbar
+[09Dec2025 17:45:25.134] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-16.0.03.hex, loading
+[09Dec2025 17:45:25.134] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_pua-16.0.03.hex, loading
+[09Dec2025 17:45:25.521] [resourceLoad/ERROR] [net.minecraft.Util/]: Invalid path in pack: witchercraft:textures/particle/output-onlinepngtools (1).png, ignoring
+[09Dec2025 17:45:25.809] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-16.0.03.hex, loading
+[09Dec2025 17:45:27.374] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Słuchawki (Arctis Pro Wireless Game)
+[09Dec2025 17:45:27.376] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[09Dec2025 17:45:27.513] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x2 minecraft:textures/atlas/blocks.png-atlas
+[09Dec2025 17:45:27.522] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/signs.png-atlas
+[09Dec2025 17:45:27.522] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/shield_patterns.png-atlas
+[09Dec2025 17:45:27.524] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/banner_patterns.png-atlas
+[09Dec2025 17:45:27.524] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x2 minecraft:textures/atlas/armor_trims.png-atlas
+[09Dec2025 17:45:27.527] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/chest.png-atlas
+[09Dec2025 17:45:27.531] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x2 minecraft:textures/atlas/decorated_pot.png-atlas
+[09Dec2025 17:45:27.531] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/beds.png-atlas
+[09Dec2025 17:45:27.532] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/shulker_boxes.png-atlas
+[09Dec2025 17:45:27.536] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[09Dec2025 17:45:27.645] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 4096x2048x0 minecraft:textures/atlas/particles.png-atlas
+[09Dec2025 17:45:27.654] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[09Dec2025 17:45:27.655] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x0 minecraft:textures/atlas/gui.png-atlas
+[09Dec2025 17:45:27.661] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
+[09Dec2025 17:45:34.324] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1407 recipes
+[09Dec2025 17:45:34.345] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1520 advancements
+[09Dec2025 17:45:34.349] [Render thread/INFO] [net.neoforged.neoforge.common.crafting.RecipePriorityManager/]: Loaded 0 recipe priority overrides
+[09Dec2025 17:45:34.618] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.8
+[09Dec2025 17:45:34.620] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[09Dec2025 17:45:35.907] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[09Dec2025 17:45:36.514] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09Dec2025 17:45:36.514] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09Dec2025 17:45:36.784] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[09Dec2025 17:45:36.792] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 842 ms
+[09Dec2025 17:45:36.867] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 5, from 10
+[09Dec2025 17:45:36.867] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[09Dec2025 17:45:38.551] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:b09b77a9] logged in with entity id 40 at (-82.69999998807907, 70.0, -8.300000011920929)
+[09Dec2025 17:45:38.684] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[09Dec2025 17:45:38.999] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 218 advancements
+[09Dec2025 17:45:39.389] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 2 reached during a single frame. New capacity will be 4.
+[09Dec2025 17:45:39.587] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 4 reached during a single frame. New capacity will be 8.
+[09Dec2025 17:45:39.891] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 8 reached during a single frame. New capacity will be 16.
+[09Dec2025 17:45:39.923] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 16 reached during a single frame. New capacity will be 32.
+[09Dec2025 17:45:39.960] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 32 reached during a single frame. New capacity will be 64.
+[09Dec2025 17:45:40.031] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 64 reached during a single frame. New capacity will be 128.
+[09Dec2025 17:45:40.326] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 128 reached during a single frame. New capacity will be 256.
+[09Dec2025 17:45:40.633] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 256 reached during a single frame. New capacity will be 512.
+[09Dec2025 17:45:41.190] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[09Dec2025 17:45:41.261] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[09Dec2025 17:45:41.356] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[09Dec2025 17:45:41.356] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[09Dec2025 17:45:44.339] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] YRDEN
+[09Dec2025 17:45:58.763] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] YRDEN
+[09Dec2025 17:46:13.499] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 512 reached during a single frame. New capacity will be 1024.
+[09Dec2025 17:46:28.153] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] YRDEN
+[09Dec2025 17:47:04.979] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] YRDEN
+[09Dec2025 17:47:51.552] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] IGNI
+[09Dec2025 17:47:54.637] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] IGNI
+[09Dec2025 17:49:40.942] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] IGNI
+[09Dec2025 17:49:54.398] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:54.449] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:54.495] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:54.542] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:54.596] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:54.646] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:54.694] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:54.744] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:54.795] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:54.846] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:54.894] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:54.945] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:54.995] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:55.045] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:55.095] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:55.146] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:55.195] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:55.244] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:55.297] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:55.346] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:55.397] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:55.443] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:55.494] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:55.543] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:55.596] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:55.645] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:55.697] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:55.745] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:55.796] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:55.845] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:55.895] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:55.944] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:55.995] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:56.045] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:56.099] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:56.147] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:56.195] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:56.244] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:56.296] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:56.345] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:56.395] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:56.445] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:56.494] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:56.543] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:56.596] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:56.647] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:56.694] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:56.742] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:56.797] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:56.845] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:56.895] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:49:56.944] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT IGNI
+[09Dec2025 17:50:00.499] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] YRDEN
+[09Dec2025 17:50:39.713] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:50:47.076] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:50:49.655] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:50:51.900] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:50:53.982] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:50:57.140] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:50:59.854] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:51:06.247] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:51:09.057] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:51:11.331] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:51:13.553] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:52:51.539] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[09Dec2025 17:52:51.559] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[09Dec2025 17:52:51.569] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[09Dec2025 17:52:51.569] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[09Dec2025 17:52:54.447] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:52:57.145] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:53:00.254] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:53:05.163] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT AARD
+[09Dec2025 17:53:11.506] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT AARD
+[09Dec2025 17:53:27.684] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:53:42.461] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:53:52.961] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:54:08.531] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:54:16.623] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:54:18.761] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:54:21.003] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:54:30.774] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:54:32.924] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:54:57.729] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:55:01.777] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:55:05.158] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:55:17.136] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:55:33.162] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:55:40.361] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:55:43.120] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:55:52.951] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:55:57.786] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:56:06.698] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:57:05.739] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[09Dec2025 17:57:05.759] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[09Dec2025 17:57:05.767] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[09Dec2025 17:57:05.768] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[09Dec2025 17:57:21.290] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[09Dec2025 17:57:21.307] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[09Dec2025 17:57:21.315] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[09Dec2025 17:57:21.315] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[09Dec2025 17:57:32.563] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:57:37.569] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:57:40.151] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:57:42.868] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:57:45.107] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:57:59.767] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:58:14.170] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:58:16.715] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:58:28.915] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:58:47.843] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:58:54.190] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[09Dec2025 17:58:54.204] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[09Dec2025 17:58:54.213] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[09Dec2025 17:58:54.214] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[09Dec2025 17:59:00.973] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:59:05.857] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Received passengers for unknown entity
+[09Dec2025 17:59:07.707] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Damage to Dev]
+[09Dec2025 17:59:07.717] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Damage to Dev]
+[09Dec2025 17:59:15.171] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AARD
+[09Dec2025 17:59:15.340] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Damage to Dev]
+[09Dec2025 17:59:15.345] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Damage to Dev]
+[09Dec2025 17:59:21.481] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] QUEN
+[09Dec2025 17:59:21.496] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Message
+[09Dec2025 17:59:23.443] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Message
+[09Dec2025 17:59:25.396] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Message
+[09Dec2025 17:59:27.347] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Message
+[09Dec2025 17:59:29.297] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Message
+[09Dec2025 17:59:31.243] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Message
+[09Dec2025 17:59:31.695] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:31.746] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:31.794] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:31.846] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:31.894] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:31.943] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:31.998] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:32.044] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:32.092] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:32.144] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:32.197] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:32.243] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:32.293] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:32.344] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:32.392] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:32.443] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:32.494] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:32.543] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:32.593] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:32.642] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:32.698] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:32.743] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:32.794] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:32.847] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:32.894] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:32.945] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:32.995] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:33.047] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:33.094] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:33.144] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:33.194] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:33.245] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:33.293] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:33.345] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:33.395] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:33.444] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:33.498] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:33.542] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:33.596] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:33.645] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:33.701] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:33.745] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:33.795] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:33.844] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:33.895] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:33.946] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:33.998] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:34.042] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:34.098] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:34.146] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:34.194] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:34.245] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:34.291] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:34.345] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:34.398] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:34.446] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:34.495] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:34.542] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:34.594] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:34.644] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:34.694] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:34.746] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:34.795] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:34.845] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:34.896] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:34.945] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:34.998] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:35.044] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:35.094] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:35.145] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:35.196] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:35.242] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:35.295] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:35.342] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:35.395] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:35.444] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:35.496] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:35.544] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:35.597] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:35.648] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:35.692] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:35.743] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:35.795] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:35.845] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:35.902] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:35.947] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:35.992] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:36.045] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:36.094] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:36.145] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:36.192] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:36.242] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:36.294] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:36.343] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:36.392] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:36.444] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:36.494] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:36.543] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:36.593] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:36.642] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:36.694] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:36.743] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:36.800] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:36.853] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:36.894] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:36.943] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:36.996] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:37.042] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:37.094] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:37.146] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:37.193] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:37.244] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:37.293] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:37.346] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:37.395] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:37.446] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:37.497] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:37.543] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:37.595] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:37.643] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:37.694] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:37.746] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:37.794] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:37.846] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:37.895] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:37.945] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:37.994] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:38.044] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:38.095] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:38.145] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:38.195] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:38.244] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:38.294] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:38.345] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:38.393] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:38.446] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:38.494] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:38.545] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:38.596] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:38.647] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:38.696] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT QUEN
+[09Dec2025 17:59:40.941] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[09Dec2025 17:59:40.947] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[09Dec2025 17:59:42.710] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] instant kill roll>>>66.0
+[09Dec2025 17:59:42.712] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] instant kill chance>>>0.0
+[09Dec2025 17:59:42.745] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] crit roll:45.0
+[09Dec2025 17:59:42.746] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] crit chance:5.0
+[09Dec2025 17:59:42.746] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Baza1.0
+[09Dec2025 17:59:42.746] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Additional Flat0.0
+[09Dec2025 17:59:42.746] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Combined Damage1.0
+[09Dec2025 17:59:42.746] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Steal:0.0
+[09Dec2025 17:59:53.895] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AXII
+[09Dec2025 18:00:01.022] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ALT AXII
+[09Dec2025 18:01:14.440] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[09Dec2025 18:01:14.457] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[09Dec2025 18:01:14.476] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[09Dec2025 18:01:14.476] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[09Dec2025 18:06:56.340] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[09Dec2025 18:06:56.357] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[09Dec2025 18:06:56.365] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[09Dec2025 18:06:56.365] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[09Dec2025 18:07:00.924] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] AXII
+[09Dec2025 18:07:47.290] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[09Dec2025 18:07:47.306] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[09Dec2025 18:07:47.314] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[09Dec2025 18:07:47.316] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[09Dec2025 18:07:47.846] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[09Dec2025 18:07:47.895] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[09Dec2025 18:07:47.896] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[09Dec2025 18:07:47.918] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[09Dec2025 18:07:47.939] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[09Dec2025 18:07:47.940] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[09Dec2025 18:07:47.940] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[09Dec2025 18:07:48.003] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[09Dec2025 18:07:48.142] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[09Dec2025 18:07:48.153] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[09Dec2025 18:07:48.176] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
+[09Dec2025 18:07:48.176] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[09Dec2025 18:07:48.176] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[09Dec2025 18:07:48.176] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved

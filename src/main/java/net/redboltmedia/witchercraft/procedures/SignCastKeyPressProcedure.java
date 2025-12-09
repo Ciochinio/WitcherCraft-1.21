@@ -29,7 +29,7 @@ public class SignCastKeyPressProcedure {
 				_vars.markSyncDirty();
 			}
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.SIGN_HOLD, 1000, 0));
+				_entity.addEffect(new MobEffectInstance(WitchercraftModMobEffects.SIGN_HOLD, 10000, 0));
 			if (!(entity instanceof LivingEntity _livEnt3 && _livEnt3.hasEffect(WitchercraftModMobEffects.SIGN_COOLDOWN))) {
 				{
 					WitchercraftModVariables.PlayerVariables _vars = entity.getData(WitchercraftModVariables.PLAYER_VARIABLES);
@@ -52,7 +52,7 @@ public class SignCastKeyPressProcedure {
 						if (entity instanceof LivingEntity _entity)
 							_entity.removeEffect(WitchercraftModMobEffects.SIGN_HOLD);
 					} else if (entity instanceof LivingEntity _livEnt11 && _livEnt11.hasEffect(WitchercraftModMobEffects.AARD_SIGN) && !entity.getData(WitchercraftModVariables.PLAYER_VARIABLES).witchercraftAbilitiesFarReachingAard) {
-						AardCastProcedure.execute(world, x, y, z, entity);
+						AardCastProcedure.execute(entity);
 						SignCostProcedure.execute(entity);
 						if (entity instanceof LivingEntity _entity)
 							_entity.removeEffect(WitchercraftModMobEffects.SIGN_HOLD);

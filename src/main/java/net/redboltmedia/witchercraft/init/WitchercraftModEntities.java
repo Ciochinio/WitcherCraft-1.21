@@ -30,8 +30,10 @@ public class WitchercraftModEntities {
 			EntityType.Builder.<SamumProjectileEntity>of(SamumProjectileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final DeferredHolder<EntityType<?>, EntityType<DimeritiumBombProjectileEntity>> DIMERITIUM_BOMB_PROJECTILE = register("dimeritium_bomb_projectile",
 			EntityType.Builder.<DimeritiumBombProjectileEntity>of(DimeritiumBombProjectileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final DeferredHolder<EntityType<?>, EntityType<AirEntity>> AIR = register("air",
-			EntityType.Builder.<AirEntity>of(AirEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<IgniParticlesEntity>> IGNI_PARTICLES = register("igni_particles",
+			EntityType.Builder.<IgniParticlesEntity>of(IgniParticlesEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<AardParticlesEntity>> AARD_PARTICLES = register("aard_particles",
+			EntityType.Builder.<AardParticlesEntity>of(AardParticlesEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
