@@ -10984,11 +10984,11 @@
       "src/main/java/net/redboltmedia/witchercraft/init/WitchercraftModItems.java",
       "src/main/java/net/redboltmedia/witchercraft/init/WitchercraftModEntityRenderers.java",
       "src/main/java/net/redboltmedia/witchercraft/init/WitchercraftModEntities.java",
+      "src/main/resources/pack.mcmeta",
       "src/main/java/net/redboltmedia/witchercraft/WitchercraftMod.java",
       "src/main/java/net/redboltmedia/witchercraft/network/WitchercraftModVariables.java",
-      "src/main/java/net/redboltmedia/witchercraft/init/WitchercraftModTabs.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/pack.mcmeta"
+      "src/main/java/net/redboltmedia/witchercraft/init/WitchercraftModTabs.java"
     ]
   },
   "foldersRoot": {
