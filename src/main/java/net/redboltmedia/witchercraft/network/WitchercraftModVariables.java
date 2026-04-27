@@ -153,7 +153,6 @@ public class WitchercraftModVariables {
 			clone.witchercraftGraveHagDecoctionKill = original.witchercraftGraveHagDecoctionKill;
 			clone.witchercraftSignKeyHoldTime = original.witchercraftSignKeyHoldTime;
 			clone.witchercraftSignKeyHold = original.witchercraftSignKeyHold;
-			clone.test = original.test;
 			clone.witchercraftTick = original.witchercraftTick;
 			clone.witchercraftSignNoCast = original.witchercraftSignNoCast;
 			clone.witchercraftSignCastHoldCost = original.witchercraftSignCastHoldCost;
@@ -244,7 +243,6 @@ public class WitchercraftModVariables {
 		public double witchercraftGraveHagDecoctionKill = 0;
 		public double witchercraftSignKeyHoldTime = 0;
 		public boolean witchercraftSignKeyHold = false;
-		public double test = 0;
 		public double witchercraftTick = 0;
 		public boolean witchercraftSignNoCast = false;
 		public double witchercraftSignCastHoldCost = 0;
@@ -332,7 +330,6 @@ public class WitchercraftModVariables {
 			output.putDouble("witchercraftGraveHagDecoctionKill", witchercraftGraveHagDecoctionKill);
 			output.putDouble("witchercraftSignKeyHoldTime", witchercraftSignKeyHoldTime);
 			output.putBoolean("witchercraftSignKeyHold", witchercraftSignKeyHold);
-			output.putDouble("test", test);
 			output.putDouble("witchercraftTick", witchercraftTick);
 			output.putBoolean("witchercraftSignNoCast", witchercraftSignNoCast);
 			output.putDouble("witchercraftSignCastHoldCost", witchercraftSignCastHoldCost);
@@ -421,7 +418,6 @@ public class WitchercraftModVariables {
 			witchercraftGraveHagDecoctionKill = input.getDoubleOr("witchercraftGraveHagDecoctionKill", 0);
 			witchercraftSignKeyHoldTime = input.getDoubleOr("witchercraftSignKeyHoldTime", 0);
 			witchercraftSignKeyHold = input.getBooleanOr("witchercraftSignKeyHold", false);
-			test = input.getDoubleOr("test", 0);
 			witchercraftTick = input.getDoubleOr("witchercraftTick", 0);
 			witchercraftSignNoCast = input.getBooleanOr("witchercraftSignNoCast", false);
 			witchercraftSignCastHoldCost = input.getDoubleOr("witchercraftSignCastHoldCost", 0);

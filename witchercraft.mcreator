@@ -2374,18 +2374,6 @@
       "path": "~/Signs/Aard"
     },
     {
-      "name": "Testmedallion",
-      "type": "overlay",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "testmedallion",
-      "metadata": {
-        "files": [
-          "src/main/java/net/redboltmedia/witchercraft/client/screens/TestmedallionOverlay.java"
-        ]
-      }
-    },
-    {
       "name": "CharaterAbilitesGeneralGuiOpen",
       "type": "procedure",
       "compiles": true,
@@ -4414,9 +4402,9 @@
       "registry_name": "drowner_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/redboltmedia/witchercraft/world/inventory/DrownerGuiMenu.java",
+          "src/main/java/net/redboltmedia/witchercraft/network/DrownerGuiButtonMessage.java",
           "src/main/java/net/redboltmedia/witchercraft/client/gui/DrownerGuiScreen.java",
-          "src/main/java/net/redboltmedia/witchercraft/network/DrownerGuiButtonMessage.java"
+          "src/main/java/net/redboltmedia/witchercraft/world/inventory/DrownerGuiMenu.java"
         ]
       },
       "path": "~/Bestiary/Necrophages/Drowner"
@@ -9697,28 +9685,6 @@
       "path": "~/Signs/SignCast"
     },
     {
-      "name": "Rot",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rot",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/redboltmedia/witchercraft/procedures/RotProcedure.java"
-        ]
-      }
-    },
-    {
       "name": "AxiiRefund",
       "type": "procedure",
       "compiles": true,
@@ -10558,12 +10524,6 @@
       "value": "false"
     },
     {
-      "name": "test",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "0"
-    },
-    {
       "name": "witchercraftTick",
       "type": "number",
       "scope": "player_lifetime",
@@ -10967,9 +10927,9 @@
       "gui.witchercraft.player_stats_overlay.label_signhold": "SignHold",
       "effect.witchercraft.sign_hold": "Sign Hold",
       "gui.witchercraft.testmedallion.label_sekund": "Sekund",
-      "gui.witchercraft.testmedallion.label_koszt_znakow": "koszt znaków",
       "effect.witchercraft.quen_effect_timer": "Quen Effect Timer",
-      "effect.witchercraft.quen_effect": "Quen Effect"
+      "effect.witchercraft.quen_effect": "Quen Effect",
+      "gui.witchercraft.drowner_gui.label_weak_to_igni": "Weak to: Igni"
     }
   },
   "metadata": {
@@ -10984,11 +10944,11 @@
       "src/main/java/net/redboltmedia/witchercraft/init/WitchercraftModItems.java",
       "src/main/java/net/redboltmedia/witchercraft/init/WitchercraftModEntityRenderers.java",
       "src/main/java/net/redboltmedia/witchercraft/init/WitchercraftModEntities.java",
-      "src/main/resources/pack.mcmeta",
       "src/main/java/net/redboltmedia/witchercraft/WitchercraftMod.java",
       "src/main/java/net/redboltmedia/witchercraft/network/WitchercraftModVariables.java",
+      "src/main/java/net/redboltmedia/witchercraft/init/WitchercraftModTabs.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/redboltmedia/witchercraft/init/WitchercraftModTabs.java"
+      "src/main/resources/pack.mcmeta"
     ]
   },
   "foldersRoot": {

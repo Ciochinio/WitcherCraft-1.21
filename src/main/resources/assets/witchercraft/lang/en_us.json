@@ -292,7 +292,7 @@
   "gui.witchercraft.player_stats_overlay.label_signhold": "SignHold",
   "effect.witchercraft.sign_hold": "Sign Hold",
   "gui.witchercraft.testmedallion.label_sekund": "Sekund",
-  "gui.witchercraft.testmedallion.label_koszt_znakow": "koszt znaków",
   "effect.witchercraft.quen_effect_timer": "Quen Effect Timer",
-  "effect.witchercraft.quen_effect": "Quen Effect"
+  "effect.witchercraft.quen_effect": "Quen Effect",
+  "gui.witchercraft.drowner_gui.label_weak_to_igni": "Weak to: Igni"
 }

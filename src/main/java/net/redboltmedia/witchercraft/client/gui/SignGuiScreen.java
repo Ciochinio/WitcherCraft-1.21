@@ -70,7 +70,6 @@ public class SignGuiScreen extends AbstractContainerScreen<SignGuiMenu> implemen
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.witchercraft.sign_gui.label_sign_menu"), 60, -11, -12829636, false);
 	}
 
 	@Override

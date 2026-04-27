@@ -11,22 +11,6 @@
     "doesPauseGame": false,
     "components": [
       {
-        "type": "label",
-        "data": {
-          "name": "label_sign_menu",
-          "text": {
-            "fixedValue": "sign menu"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 186,
-          "y": 26,
-          "locked": false
-        }
-      },
-      {
         "type": "button",
         "data": {
           "name": "button_yrden",

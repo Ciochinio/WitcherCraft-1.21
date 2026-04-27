@@ -16,8 +16,8 @@
           "image": "book.png",
           "use1Xscale": true,
           "x": 42,
-          "y": -1,
-          "locked": false
+          "y": 8,
+          "locked": true
         }
       },
       {
@@ -31,8 +31,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 96,
-          "y": 26,
+          "x": 87,
+          "y": 35,
           "locked": false
         }
       },
@@ -45,8 +45,8 @@
           "onClick": {
             "name": "RotfiendGuiOpen"
           },
-          "x": 276,
-          "y": 161,
+          "x": 375,
+          "y": 206,
           "locked": false
         }
       },
@@ -71,8 +71,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 96,
-          "y": 44,
+          "x": 87,
+          "y": 53,
           "locked": false
         }
       },
@@ -87,8 +87,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 96,
-          "y": 71,
+          "x": 87,
+          "y": 62,
           "locked": false
         }
       },
@@ -103,8 +103,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 96,
-          "y": 98,
+          "x": 87,
+          "y": 71,
           "locked": false
         }
       },
@@ -117,8 +117,8 @@
           "onClick": {
             "name": "BestiaryMenuGuiOpen"
           },
-          "x": 285,
-          "y": 17,
+          "x": 275,
+          "y": 14,
           "locked": false
         }
       },
@@ -128,19 +128,8 @@
           "name": "imagebutton_bookmarkleft",
           "image": "bookmarkleft.png",
           "hoveredImage": "",
-          "x": 51,
-          "y": 17,
-          "locked": false
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_drownerfacesmall",
-          "image": "drownerfacesmall.png",
-          "hoveredImage": "",
-          "x": 69,
-          "y": 17,
+          "x": 47,
+          "y": 35,
           "locked": false
         }
       },
@@ -161,8 +150,8 @@
           "name": "imagebutton_arrowback",
           "image": "arrowback.png",
           "hoveredImage": "",
-          "x": 96,
-          "y": 161,
+          "x": -3,
+          "y": 206,
           "locked": false
         }
       },
@@ -251,6 +240,33 @@
           "hoveredImage": "",
           "x": 51,
           "y": 179,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_drownerfacesmall",
+          "image": "drownerfacesmall.png",
+          "hoveredImage": "",
+          "x": 61,
+          "y": 37,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_weak_to_igni",
+          "text": {
+            "fixedValue": "Weak to: Igni"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 87,
+          "y": 80,
           "locked": false
         }
       }
