@@ -84,6 +84,8 @@ public class DrownerGuiScreen extends AbstractContainerScreen<DrownerGuiMenu> im
 		guiGraphics.drawString(this.font, Component.translatable("gui.witchercraft.drowner_gui.label_health_20"), 8, 25, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.witchercraft.drowner_gui.label_atack_damage_5"), 8, 34, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.witchercraft.drowner_gui.label_weak_to_igni"), 8, 43, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.witchercraft.drowner_gui.label_loot_monster_brain_monster_too"), 8, 52, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.witchercraft.drowner_gui.label_spawning_swamp"), 8, 61, -12829636, false);
 	}
 
 	@Override
@@ -104,7 +106,7 @@ public class DrownerGuiScreen extends AbstractContainerScreen<DrownerGuiMenu> im
 			}
 		};
 		this.addRenderableWidget(imagebutton_arrowforword);
-		imagebutton_bookmark = new ImageButton(this.leftPos + 196, this.topPos + -23, 32, 32,
+		imagebutton_bookmark = new ImageButton(this.leftPos + 195, this.topPos + -12, 32, 32,
 				new WidgetSprites(ResourceLocation.parse("witchercraft:textures/screens/bookmark.png"), ResourceLocation.parse("witchercraft:textures/screens/bookmark.png")), e -> {
 					int x = DrownerGuiScreen.this.x;
 					int y = DrownerGuiScreen.this.y;

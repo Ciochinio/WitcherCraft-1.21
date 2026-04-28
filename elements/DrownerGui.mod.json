@@ -117,8 +117,8 @@
           "onClick": {
             "name": "BestiaryMenuGuiOpen"
           },
-          "x": 275,
-          "y": 14,
+          "x": 274,
+          "y": 25,
           "locked": false
         }
       },
@@ -269,6 +269,38 @@
           "y": 80,
           "locked": false
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_loot_monster_brain_monster_too",
+          "text": {
+            "fixedValue": "Loot: Monster Brain"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 87,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_spawning_swamp",
+          "text": {
+            "fixedValue": "Spawning: Swamp"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 87,
+          "y": 98,
+          "locked": false
+        }
       }
     ],
     "gridSettings": {
@@ -276,7 +308,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": true
+      "snapOnGrid": false
     }
   }
 }

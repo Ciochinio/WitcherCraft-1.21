@@ -1,6 +1,3 @@
-/summon minecraft:zombie -83.13 70.00 6.89 {NoAI: 1b,Silent:1b,}
-/effect give Dev minecraft:saturation infinite
-/xp add Dev 1000 points
 /lvlfix
 /effect clear Dev minecraft:saturation
 /xp add Dev 1000 points
@@ -48,3 +45,6 @@
 /witchercraftstats
 /effect clear
 /xp set Dev 6 levels
+/effect give @a minecraft:speed infinite 255
+/effect clear
+/time set day

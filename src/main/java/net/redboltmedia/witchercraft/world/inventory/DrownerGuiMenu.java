@@ -26,7 +26,7 @@ public class DrownerGuiMenu extends AbstractContainerMenu implements Witchercraf
 	public final Map<String, Object> menuState = new HashMap<>() {
 		@Override
 		public Object put(String key, Object value) {
-			if (!this.containsKey(key) && this.size() >= 21)
+			if (!this.containsKey(key) && this.size() >= 23)
 				return null;
 			return super.put(key, value);
 		}
