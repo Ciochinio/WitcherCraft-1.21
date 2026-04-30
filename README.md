@@ -1,99 +1,140 @@
 <div align="center">
 
-# CyberCraft
+<img src="https://raw.githubusercontent.com/Ciochinio/WitcherCraft-1.21/main/src/main/resources/assets/witchercraft/textures/logo.png" alt="WitcherCraft Logo" width="120">
 
-### A faithful recreation of the Cyberpunk 2077 universe within Minecraft
+# WitcherCraft
 
-[![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-green?style=flat-square)](https://minecraft.net)
-[![NeoForge](https://img.shields.io/badge/NeoForge-21.1.190%2B-blue?style=flat-square)](https://neoforged.net)
-[![Version](https://img.shields.io/badge/Version-1.0.0%20Early%20Access-yellow?style=flat-square)]()
-[![License](https://img.shields.io/badge/License-AFL%20v3.0-purple?style=flat-square)]()
+### A faithful recreation of The Witcher universe within Minecraft
 
-*Wake the f*** up, Samurai. We have 2B2T to burn.*
+[![CurseForge](https://img.shields.io/badge/CurseForge-25k%20downloads-orange?style=flat-square&logo=curseforge)](https://www.curseforge.com/minecraft/mc-mods/witchercraft)
+[![Modrinth](https://img.shields.io/badge/Modrinth-Available-brightgreen?style=flat-square&logo=modrinth)](https://modrinth.com/mod/witchercraft)
+[![Minecraft](https://img.shields.io/badge/Minecraft-1.21-green?style=flat-square)](https://minecraft.net)
+[![NeoForge](https://img.shields.io/badge/NeoForge-1.21%20compatible-blue?style=flat-square)](https://neoforged.net)
+[![License](https://img.shields.io/badge/License-Non--commercial%20fan%20project-red?style=flat-square)](https://www.cdprojektred.com/en/fan-content)
+
+**[Wiki](https://witchercraft.com) · [Documentation](https://witchercraft.com/documentation.html) · [CurseForge](https://www.curseforge.com/minecraft/mc-mods/witchercraft) · [Modrinth](https://modrinth.com/mod/witchercraft) · [Discord](https://discord.com/invite/xReJfktHS2)**
+
+---
+
+*If you ever wanted to feel like Geralt while playing Minecraft — this mod is for you.*
 
 </div>
 
 ---
 
-## What is CyberCraft?
+## What is WitcherCraft?
 
-CyberCraft is a NeoForge mod for Minecraft 1.21.1 that brings the world of **Cyberpunk 2077** into the Minecraft engine. It recreates the core RPG systems of Night City from the ground up — a full Cyberware implant system with body-slot management, a custom combat and shooting system, and a living progression framework built around build variety.
+WitcherCraft is a NeoForge mod for Minecraft 1.21 that brings the world of **The Witcher 3: Wild Hunt** into the Minecraft engine. It recreates the core RPG systems of the Witcher universe from the ground up — Signs, Alchemy, a multi-tab Skill Tree, custom combat mechanics, Witcher School armor sets, and a living Bestiary of monsters.
 
-> CyberCraft is currently in early development. This repository reflects active work in progress. Features and balance are subject to change.
+> WitcherCraft is currently undergoing a full rework. This repository reflects active development. All content is subject to change.
 
 ---
 
 ## Features
 
-### Cyberware System
-The heart of CyberCraft. Install cybernetic implants into specific body slots via the dedicated **Cyberware Menu** (`F8`). Each slot accepts different implants that modify your stats, abilities, and playstyle.
+### Witcher Signs
+Five Signs from The Witcher 3, each implemented as an active ability with custom particle systems and a dedicated cooldown:
 
-Cyberware is organised into body systems, mirroring the ripperdoc screen from Cyberpunk 2077:
+| Sign | Effect |
+|------|--------|
+| **Aard** | Telekinetic cone blast — knocks back enemies |
+| **Igni** | Fire stream — applies burning on hit |
+| **Quen** | Absorbing shield — hold state with separate particle system |
+| **Yrden** | Magical trap — slows enemies in radius |
+| **Axii** | Charm Sign — manipulates enemies |
 
-| Body System | Implants |
-|-------------|----------|
-| **Operating System** | Sandevistan |
-| **Nervous System** | Deepfield Visual Interface, Atomic Sensors, NeoFiber, Adrenaline Converter, Stabber, Tyrosine Injector |
-| **Circulatory System** | Second Heart, ThreatEvac, Adrenaline Booster, Biomonitor, Black Mamba, Heal On Kill, Microrotors, Isometric Stabilizer |
-| **Integumentary System** | Countershell, Subdermal Armor, Nano Plating, Chitin, Shock-n-Awe, Pain Editor, ProxiShield, Painducer, RangeGuard |
-| **Skeleton** | Dense Marrow, Epimorphic Skeleton, Bionic Joints |
-| **Legs** | Fortified Ankles, Leeroy Ligament System, Reinforced Tendons, Lynx Paws |
-| **Arms** | *(in development)* |
-| **Hands** | *(in development)* |
-| **Face** | *(in development)* |
-| **Frontal Cortex** | *(in development)* |
-
-#### Notable Implants
-
-- **Sandevistan** — the iconic Operating System that triggers a time-slowing effect with a cooldown
-- **Second Heart** — saves your life on lethal damage, then enters a cooldown before reactivating
-- **Biomonitor** — monitors your health and triggers an automatic heal when you drop below a threshold
-- **Lynx Paws** — eliminates fall damage and enables a double jump
-- **Countershell** — chance to mitigate incoming damage on hit
-- **ProxiShield** — activates a protective effect when enemies are detected nearby
-- **ThreatEvac** — emergency response implant that triggers at a configurable health threshold
-- **Black Mamba** — applies a chemical damage-over-time effect to enemies on hit
+Open the Sign Menu with `Tab`, select your Sign, cast with `R`.
 
 ---
 
-### Combat System
-A custom shooting system with real projectile entities, ammo consumption, and recoil mechanics applied as status effects. Recoil is directional and scales with weapon type — currently the system distinguishes between low and high recoil fire.
+### Alchemy System
+A full alchemy system accessible anywhere in the world via the in-game menus. No crafting table required.
 
+- **Potions** — 12 potions including Swallow, Thunderbolt, Cat, White Honey and more
+- **Decoctins** — 12 powerful monster-derived brews including Ekimmara, Katakan, Troll, Wyvern and more
+- **Oils** — 10 weapon enchantments targeting specific enemy archetypes
+- **Bombs** — 6 throwable projectile entities: Grapeshot, Dancing Star, Devil's Puffball, Northern Wind, Samum, Dimeritium Bomb
+
+All alchemy use is governed by the **Toxicity system** — overuse drains health.
 
 ---
 
-### Custom Stats & Damage Model
-A fully custom stat backend tracks per-player values including armor, crit chance, crit damage, attack speed, and damage mitigation. A dedicated `/cybercraftstats` command lets you inspect your current character stats at any time.
+### Toxicity System
+Every potion and decoction raises your Toxicity level. Exceed your Maximum Toxicity and your health will drain. White Honey resets everything. Maximum Toxicity can be increased through the Alchemy Skill Tree.
+
+This system exists to prevent mindless potion stacking and reward genuine preparation.
 
 ---
 
-## Planned Features
+### Witcher School Armor Sets
+Six complete armor sets (Helmet, Chestplate, Leggings, Boots), each with a custom 3D renderer and a unique **School Effect** active when the full set is worn:
 
-- **Skill Tree** — a multi-path progression system built around distinct playstyles (netrunner, solo, techie)
-- **Hacking** — an active quickhack system for disrupting enemies and the environment
-- **Additional Cyberware slots** — Arms, Hands, Face, and Frontal Cortex expansions
-- **More weapons** — expanded ranged and melee arsenal
-- **More implants** — deeper build variety across all body systems
+| Set | School Effect |
+|-----|--------------|
+| **Wolven** | Balanced combat and Sign bonuses |
+| **Feline** | +50% critical hit damage |
+| **Griffin** | +20% Sign Intensity, reduced Sign cooldown |
+| **Ursine** | +20% maximum health |
+| **Viper** | Enhanced oil effectiveness |
+| **Manticore** | Boosted potion duration and Alchemy power |
+
+---
+
+### Skill Tree & Progression
+A multi-tab Skill Tree with **Combat**, **Signs**, **Alchemy**, and **General** tabs.
+
+> **Build decisions matter.** Maximum level is 30 — you earn 1 skill point per level. With 30+ perks available across all trees, it is impossible to unlock everything. Choose your playstyle carefully.
+
+Perks are arranged in 3 tiers per tab. Tier 2 unlocks after 3 spent points, Tier 3 after 6.
+
+---
+
+### Custom Damage Model
+A fully custom `DamageCalculatorProcedure` replacing Minecraft's default combat:
+
+```
+Normal:  finalDamage = (baseDamage + additionalDamage) x (1 + increasedDamage x 0.01)
+Crit:    finalDamage = above x (critDamage x 0.01)   [if random(1,100) <= critChance]
+Heal:    healthRestored = finalDamage x lifeSteal x 0.01
+```
+
+Stats: flat bonus damage, % increased damage, crit chance, crit damage multiplier, life steal.
+
+---
+
+### Bestiary & More
+- **Bestiary** — in-game monster encyclopedia with lore, stats, and weakness data
+- **Glossary** — Witcher universe terminology reference
+- **Meditation** — fast-travel to Sunrise, Noon, Sunset, or Midnight
+- **Custom HUD** — live display of all player stats
+
+---
+
+## Monsters
+
+WitcherCraft adds a variety of monsters drawn from The Witcher universe, each belonging to a specific category — Necrophages, Vampires, Specters, Relicts, and Draconids. Currently implemented monsters have full Bestiary entries with lore, health, attack data, and oil weaknesses. Several additional monsters have completed 3D models and are currently being integrated with full AI behavior, spawning logic, and attack patterns.
+
+Full monster details and the complete Bestiary are available on the [wiki](https://witchercraft.com/monsters.html).
 
 ---
 
 ## Installation
 
-1. Download and install **[NeoForge 21.1.190+](https://neoforged.net)** for Minecraft 1.21.1
-2. Place the `CyberCraft` `.jar` into your `/mods/` folder
+1. Download and install **[NeoForge](https://neoforged.net)** for Minecraft 1.21
+2. Place the WitcherCraft `.jar` file into your `/mods/` folder
 3. Launch Minecraft with the NeoForge profile
 4. In-game keybinds:
-   - `C` — Open the Cyberware Menu
-   - `V` — Activate your Operating System (e.g. Sandevistan)
+   - `Tab` — Open Sign Menu
+   - `R` — Cast selected Sign
+   - `B` — Open the Pause Menu (access Alchemy, Skill Tree, Character, Bestiary, Glossary, Meditation)
 
 ---
 
-## Compatibility
+## Documentation
 
-| Dependency | Version |
-|------------|---------|
-| Minecraft | 1.21.1 |
-| NeoForge | 21.1.190+ |
+Full system design documentation including damage formula, skill tree perk list, alchemy effects, and technical architecture is available at:
+
+**[witchercraft.com/documentation.html](https://witchercraft.com/documentation.html)**
 
 ---
 
@@ -101,24 +142,27 @@ A fully custom stat backend tracks per-player values including armor, crit chanc
 
 | | |
 |--|--|
+| Wiki & Docs | [witchercraft.com](https://witchercraft.com) |
+| CurseForge | [https://www.curseforge.com/minecraft/mc-mods/witchercraft] |
+| Modrinth | [https://modrinth.com/mod/witchercraft] |
 | Discord | [https://discord.com/invite/xReJfktHS2] |
-| WitcherCraft | [https://www.curseforge.com/minecraft/mc-mods/witchercraft](https://www.curseforge.com/minecraft/mc-mods/witchercraft) |
-| DMC Weapons Reborn | [https://www.curseforge.com/minecraft/mc-mods/devil-may-cry-weapons-reborn](https://www.curseforge.com/minecraft/mc-mods/devil-may-cry-weapons-reborn) |
+| DMC Weapons Mod | [https://www.curseforge.com/minecraft/mc-mods/devil-may-cry-weapons-reborn] |
 
 ---
 
 ## Legal
 
-CyberCraft is an independent fan modification for Minecraft, created with permission from **CD Projekt Red** under their fan content guidelines.
+WitcherCraft is an independent fan modification for Minecraft, created with permission from **CD Projekt Red** under their fan content guidelines.
 
 - This project is **fully non-commercial**
-- Cyberpunk 2077® is a registered trademark of **CD Projekt Red S.A.**
 - CD Projekt Red is **not** an official partner or co-creator of this project
+- The Witcher® is a registered trademark of CD Projekt Red S.A.
+- All visual assets currently in the mod are **temporary placeholders** — final assets will be original works created in a Minecraft pixel art style
 
 ---
 
 <div align="center">
 
-© 2024–2026 Red Bolt Media
+© 2021–2026 Red Bolt Media
 
 </div>
