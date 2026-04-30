@@ -17,7 +17,7 @@
 
 ## What is CyberCraft?
 
-CyberCraft is a NeoForge mod for Minecraft 1.21.1 that brings the world of **Cyberpunk 2077** into the Minecraft engine. It recreates the core RPG systems of Night City from the ground up — a full Cyberware implant system with body-slot management, a custom combat and shooting system, and a living progression framework built around build variety.
+CyberCraft is a NeoForge mod for Minecraft 1.21.1 that brings the world of **Cyberpunk 2077** into the Minecraft engine. It recreates the core RPG systems of Night City from the ground up - a full Cyberware implant system with body-slot management, a custom combat and shooting system, and a living progression framework built around build variety.
 
 > CyberCraft is currently in early development. This repository reflects active work in progress. Features and balance are subject to change.
 
@@ -45,19 +45,19 @@ Cyberware is organised into body systems, mirroring the ripperdoc screen from Cy
 
 #### Notable Implants
 
-- **Sandevistan** — the iconic Operating System that triggers a time-slowing effect with a cooldown
-- **Second Heart** — saves your life on lethal damage, then enters a cooldown before reactivating
-- **Biomonitor** — monitors your health and triggers an automatic heal when you drop below a threshold
-- **Lynx Paws** — eliminates fall damage and enables a double jump
-- **Countershell** — chance to mitigate incoming damage on hit
-- **ProxiShield** — activates a protective effect when enemies are detected nearby
-- **ThreatEvac** — emergency response implant that triggers at a configurable health threshold
-- **Black Mamba** — applies a chemical damage-over-time effect to enemies on hit
+- **Sandevistan** - the iconic Operating System that triggers a time-slowing effect with a cooldown
+- **Second Heart** - saves your life on lethal damage, then enters a cooldown before reactivating
+- **Biomonitor** - monitors your health and triggers an automatic heal when you drop below a threshold
+- **Lynx Paws** - eliminates fall damage and enables a double jump
+- **Countershell** - chance to mitigate incoming damage on hit
+- **ProxiShield** - activates a protective effect when enemies are detected nearby
+- **ThreatEvac** - emergency response implant that triggers at a configurable health threshold
+- **Black Mamba** - applies a chemical damage-over-time effect to enemies on hit
 
 ---
 
 ### Combat System
-A custom shooting system with real projectile entities, ammo consumption, and recoil mechanics applied as status effects. Recoil is directional and scales with weapon type — currently the system distinguishes between low and high recoil fire.
+A custom shooting system with real projectile entities, ammo consumption, and recoil mechanics applied as status effects. Recoil is directional and scales with weapon type - currently the system distinguishes between low and high recoil fire.
 
 
 ---
@@ -69,11 +69,11 @@ A fully custom stat backend tracks per-player values including armor, crit chanc
 
 ## Planned Features
 
-- **Skill Tree** — a multi-path progression system built around distinct playstyles (netrunner, solo, techie)
-- **Hacking** — an active quickhack system for disrupting enemies and the environment
-- **Additional Cyberware slots** — Arms, Hands, Face, and Frontal Cortex expansions
-- **More weapons** — expanded ranged and melee arsenal
-- **More implants** — deeper build variety across all body systems
+- **Skill Tree** - a multi-path progression system built around distinct playstyles (netrunner, solo, techie)
+- **Hacking** - an active quickhack system for disrupting enemies and the environment
+- **Additional Cyberware slots** - Arms, Hands, Face, and Frontal Cortex expansions
+- **More weapons** - expanded ranged and melee arsenal
+- **More implants** - deeper build variety across all body systems
 
 ---
 
@@ -83,8 +83,8 @@ A fully custom stat backend tracks per-player values including armor, crit chanc
 2. Place the `CyberCraft` `.jar` into your `/mods/` folder
 3. Launch Minecraft with the NeoForge profile
 4. In-game keybinds:
-   - `C` — Open the Cyberware Menu
-   - `V` — Activate your Operating System (e.g. Sandevistan)
+   - `C` - Open the Cyberware Menu
+   - `V` - Activate your Operating System (e.g. Sandevistan)
 
 ---
 
